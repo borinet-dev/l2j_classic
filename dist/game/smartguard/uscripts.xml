@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<list>
+    <!-- 이 단계에서는 Interlude 및 HighFive만 지원됩니다! -->
+    <config>
+        <!--
+            운영 모드:
+                CHECKLIST - 지정된 스크립트만 확인하고 나머지는 허용
+                WHITELIST - 게임 클라이언트에서 로드할 수 있는 스크립트를 목록화
+         -->
+        <mode value="CHECKLIST" />
+        <!-- 하나 이상의 스크립트 확인이 실패할 때 열리는 URL입니다 -->
+        <failUrl value="https://l2wassub.org" />
+
+    </config>
+
+    <!--
+    <uscript name="interface.u">
+        <sha1 val="f91f8af4fa87159a3f82617e75b123f5e71f6527"/>
+        <sha1 val="9b2a881b3fa8b75c0f01bec058015384451344d4"/>
+    </uscript>
+    <uscript name="engine.u">
+        <sha1 val="b708beb5cbfbb2b7858417e6f338e49e3ac710b4"/>
+    </uscript>
+    -->
+</list>

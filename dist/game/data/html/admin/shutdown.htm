@@ -1,0 +1,35 @@
+<html><title>Shutdown Server</title><body>
+<table width=270><tr>
+<td width=45><button value="메인" action="bypass -h admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>Server Management</center></td>
+<td width=45><button value="뒤로" action="bypass -h admin_admin4" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<table width=270><tr>
+<td width=100>시간(초):</td>
+<td><edit var="qbox" width=120 height=15 type=number></td>
+<td width=100>또는</td>
+</tr></table><br><br>
+<table width=270><tr>
+<td width=10 height=30></td>
+<td><edit var="wbox" width=40 height=15 type=number></td>
+<td width=20>월</td>
+<td><edit var="dbox" width=40 height=15 type=number></td>
+<td width=20>일</td>
+<td><edit var="hbox" width=40 height=15 type=number></td>
+<td width=20>시</td>
+<td><edit var="mbox" width=40 height=15 type=number></td>
+<td width=20>분</td>
+</tr></table><br><br>
+<table width=270>
+<tr><td>현재 접속자:</td><td>%count% 명</td></tr>
+<tr><td>낚시:</td><td>%fishing% 명</td></tr>
+<tr><td>사용 메모리:</td><td>%used%</td></tr>
+<tr><td>게임 시간:</td><td>%time%</td></tr>
+<tr><td>게임 시간:</td><td>%serverTime%</td></tr>
+</table><br><br>
+<center><table><tr><td>
+<button value="서버다운" action="bypass -h admin_server_shutdown $qbox $wbox $dbox $hbox $mbox" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td><td>
+<button value="재시작" action="bypass -h admin_server_restart $qbox $wbox $dbox $hbox $mbox" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td><td>
+<button value="취소" action="bypass -h admin_server_abort" width=80 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td></tr>
+</table></center>
+</body></html>

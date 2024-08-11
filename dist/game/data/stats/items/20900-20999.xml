@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="20900" name="흰 수염 산타 모자" additionalName="14일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_xmas_gawibawibo_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="20160" />
+	</item>
+	<item id="20901" name="흰 수염 산타 모자 세트" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20900" min="1" max="1" chance="100" /> 
+			<item id="14611" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20902" name="여왕개미의 반지 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20205" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20903" name="붉은 장미 허브" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="22158" level="1" /> 
+		</skills>
+	</item>
+	<item id="20904" name="장미 에센스" type="EtcItem">
+		<set name="icon" val="BranchSys2.br_essence_rose_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="20905" name="붉은 장미꽃 한 송이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="500" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20906" name="파란 장미꽃 한 송이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="500" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20907" name="흰 장미꽃 한 송이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="500" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20908" name="드셀로프 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20909" name="흄 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20910" name="레캉 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20911" name="릴리아스 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20912" name="라팜 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20913" name="마퓸 장미의 목걸이 - 이벤트" additionalName="소환시간 3시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_event" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20914" name="향상된 장미의 정령 교환권 - 5시간" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20915" name="향상된 드셀로프 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20916" name="향상된 흄 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20917" name="향상된 레캉 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20918" name="향상된 릴리아스 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20919" name="향상된 라팜 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20920" name="향상된 마퓸 장미의 목걸이" additionalName="소환시간 5시간" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_necklace_of_rose_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="SummonItems" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="20921" name="장미의 정령 실험 기록서" additionalName="24시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_royal_membership_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="1440" />
+	</item>
+	<item id="20922" name="탐험가 모자" type="Armor">
+		<set name="icon" val="icon.accessory_explorer_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20923" name="베스페르 슬래셔" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22159" level="1" /> 
+		</skills>
+	</item>
+	<item id="20924" name="베스페르 캐스터" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22160" level="1" /> 
+		</skills>
+	</item>
+	<item id="20925" name="베스페르 듀얼 소드" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22161" level="1" /> 
+		</skills>
+	</item>
+	<item id="20926" name="후지산 허브" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_fuji_herb_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22162" level="1" /> 
+		</skills>
+	</item>
+	<item id="20927" name="매 허브" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_hawk_herb_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22163" level="1" /> 
+		</skills>
+	</item>
+	<item id="20928" name="가지 허브" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_eggplant_herb_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22164" level="1" /> 
+		</skills>
+	</item>
+	<item id="20929" name="로얄 크라운 오브 베스페르" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20930" name="로얄 서클릿 오브 베스페르" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20931" name="노블레스 오블리주" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20932" name="로얄 크라운 오브 베스페르" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="20933" name="로얄 서클릿 오브 베스페르" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="20934" name="노블레스 오블리주" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="20935" name="로얄 크라운 오브 베스페르" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20936" name="로얄 서클릿 오브 베스페르" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20937" name="노블레스 오블리주" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20938" name="제트 바이크 탑승용 팔찌" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_z_bike_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> 
+			<skill id="21171" level="1" /> 
+		</skills>
+	</item>
+	<item id="20939" name="제트 바이크 탑승용 팔찌" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_z_bike_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> 
+			<skill id="21171" level="1" /> 
+		</skills>
+	</item>
+	<item id="20940" name="피닉스 아가시온 봉인 팔찌" additionalName="열반재생" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_china_phoenix_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="50" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="21191" level="1" /> 
+			<skill id="23171" level="1" /> 
+			<skill id="23172" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20941" name="피닉스 아가시온 봉인 팔찌" additionalName="유봉래의" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_china_phoenix_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="50" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="21191" level="1" /> 
+			<skill id="23171" level="1" /> 
+			<skill id="23173" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20942" name="여우 가면" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20943" name="여우 가면" additionalName="사일런트 무브 - 7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_fox_japan_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="21192" level="1" /> 
+		</skills>
+	</item>
+	<item id="20944" name="배만족 모자" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20945" name="배만족 모자" additionalName="수호신의 힘 - 7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_paiwan_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="21193" level="1" /> 
+		</skills>
+	</item>
+	<item id="20946" name="제트 바이크 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20938" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20947" name="제트 바이크 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20939" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20948" name="피닉스 아가시온 7일 팩" additionalName="열반재생" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20940" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20949" name="피닉스 아가시온 7일 팩" additionalName="유봉래의" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20941" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20950" name="여우 가면 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20942" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20951" name="여우 가면 7일 팩" additionalName="사일런트 무브" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20943" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20952" name="배만족 모자 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20944" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20953" name="배만족 모자 7일 팩" additionalName="수호신의 힘" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20945" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20954" name="소형 프라시드" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22165" level="1" /> 
+		</skills>
+	</item>
+	<item id="20955" name="중형 프라시드" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_shield_bread_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22166" level="1" /> 
+		</skills>
+	</item>
+	<item id="20956" name="아가시온 봉인팔찌 - 강시" additionalName="소울 스텔스 - 7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_gangsi_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="21133" level="1" /> 
+			<skill id="23117" level="1" /> 
+			<skill id="23175" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20957" name="강시 아가시온 7일 팩" additionalName="소울 스텔스" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20956" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20958" name="만우절 특별 선물 - 이벤트용" type="EtcItem">
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="22167" level="1" /> 
+		</skills>
+	</item>
+	<item id="20959" name="로얄 크라운 오브 베스페르 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20929" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20960" name="로얄 서클릿 오브 베스페르 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20930" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20961" name="노블레스 오블리주 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20931" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20962" name="로얄 크라운 오브 베스페르 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20932" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20963" name="로얄 서클릿 오브 베스페르 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20933" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20964" name="노블레스 오블리주 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20934" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20965" name="로얄 크라운 오브 베스페르 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20935" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20966" name="로얄 서클릿 오브 베스페르 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20936" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20967" name="노블레스 오블리주 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20937" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20968" name="아가시온 봉인 팔찌 - 관공" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_aga_warriorgod_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21142" level="1" /> 
+			<skill id="23123" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20969" name="관공 아가시온 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20968" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20970" name="아가시온 봉인팔찌 - 삼두용" additionalName="프리미엄" type="Armor">
+		<set name="icon" val="BranchIcon.icon.br_babayaga_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="21194" level="1" /> 
+			<skill id="27779" level="1" /> 
+			<skill id="27780" level="1" /> 
+			<skill id="27781" level="1" /> 
+			<skill id="27782" level="1" /> 
+			<skill id="27783" level="1" /> 
+			<skill id="27784" level="1" /> 
+			<skill id="27785" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20971" name="트레주오 변신 막대기" additionalName="축복받은 어린이 변신" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_blessed_taiboy_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> 
+			<skill id="21195" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="20972" name="수진 변신 막대기" additionalName="축복받은 어린이 변신" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_blessed_taigirl_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> 
+			<skill id="21196" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="20973" name="경극 마스크 - 유비" additionalName="인덕의 버프, 삼국의 살" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_a_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21200" level="1" /> 
+			<skill id="21197" level="1" /> 
+		</skills>
+	</item>
+	<item id="20974" name="경극 마스크 - 관우" additionalName="충의의 무성, 삼국의 살" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21200" level="1" /> 
+			<skill id="21198" level="1" /> 
+		</skills>
+	</item>
+	<item id="20975" name="경극 마스크 - 장비" additionalName="금강의 활력, 삼국의 살" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_mask_c_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21200" level="1" /> 
+			<skill id="21199" level="1" /> 
+		</skills>
+	</item>
+	<item id="20976" name="용사의 증표" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_symbol_a_i00" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="20977" name="우애의 증표" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_pekingopera_symbol_b_i00" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="20978" name="쫑쯔 - B 그레이드" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_a_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="2517" level="1" /> 
+		</skills>
+	</item>
+	<item id="20979" name="쫑쯔 - A 그레이드" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_b_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="2518" level="1" /> 
+		</skills>
+	</item>
+	<item id="20980" name="쫑쯔 - S 그레이드" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_taiwan_riceball_c_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="2519" level="1" /> 
+		</skills>
+	</item>
+	<item id="20981" name="드래곤 보트" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_dragonboat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+	</item>
+	<item id="20982" name="드래곤 보트" additionalName="헤이스트 - 7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_dragonboat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="21201" level="1" /> 
+		</skills>
+	</item>
+	<item id="20983" name="아가시온 봉인팔찌 - 볼 트래핑 그노시안" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_male_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21202" level="1" /> 
+			<skill id="23201" level="1" /> 
+			<skill id="23183" level="1" /> 
+			<skill id="23184" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20984" name="아가시온 봉인팔찌 - 볼 트래핑 오로드리엘" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_female_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21203" level="1" /> 
+			<skill id="23202" level="1" /> 
+			<skill id="23185" level="1" /> 
+			<skill id="23186" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20985" name="아가시온 봉인팔찌 - 패널티 킥" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_ball_kick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21204" level="1" /> 
+			<skill id="23203" level="1" /> 
+			<skill id="23187" level="1" /> 
+			<skill id="23188" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20986" name="아가시온 봉인팔찌 - 볼 트래핑 그노시안" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_male_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21205" level="1" /> 
+			<skill id="23204" level="1" /> 
+			<skill id="23189" level="1" /> 
+			<skill id="23190" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20987" name="아가시온 봉인팔찌 - 볼 트래핑 오로드리엘" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_female_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21206" level="1" /> 
+			<skill id="23205" level="1" /> 
+			<skill id="23191" level="1" /> 
+			<skill id="23192" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20988" name="아가시온 봉인팔찌 - 패널티 킥" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_jball_kick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21207" level="1" /> 
+			<skill id="23206" level="1" /> 
+			<skill id="23193" level="1" /> 
+			<skill id="23194" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20989" name="아가시온 봉인팔찌 - 볼 트래핑 그노시안" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_male_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21208" level="1" /> 
+			<skill id="23207" level="1" /> 
+			<skill id="23195" level="1" /> 
+			<skill id="23196" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20990" name="아가시온 봉인팔찌 - 볼 트래핑 오로드리엘" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_female_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21209" level="1" /> 
+			<skill id="23208" level="1" /> 
+			<skill id="23197" level="1" /> 
+			<skill id="23198" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20991" name="아가시온 봉인팔찌 - 패널티 킥" additionalName="응원의 축구공, 응원의 버프" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_kball_kick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="21210" level="1" /> 
+			<skill id="23209" level="1" /> 
+			<skill id="23199" level="1" /> 
+			<skill id="23200" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="20992" name="승리의 갈증 해소 음료" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_victory_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22168" level="1" /> 
+		</skills>
+	</item>
+	<item id="20993" name="응원의 축구공" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_soccer_ball_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="22169" level="1" /> 
+		</skills>
+	</item>
+	<item id="20994" name="삼두용 아가시온 팩" additionalName="윈드 워크" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20970" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20995" name="유비 경극 마스크 팩" additionalName="인덕의 버프, 삼국의 살" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20973" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20996" name="관우 경극 마스크 팩" additionalName="충의의 무성, 삼국의 살" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20974" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20997" name="장비 경극 마스크 팩" additionalName="금강의 활력, 삼국의 살" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20975" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20998" name="드래곤 보트 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20981" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="20999" name="드래곤 보트 7일 팩" additionalName="헤이스트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20982" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+</list>

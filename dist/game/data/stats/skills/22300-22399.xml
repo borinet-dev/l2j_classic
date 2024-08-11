@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22357" toLevel="1" name="S80-grade Weapon Pack">
+		<itemConsumeId>22202</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="9.0909">
+						<item id="15558" count="1" /> <!-- Periel Sword -->
+					</item>
+					<item chance="9.0909">
+						<item id="15559" count="1" /> <!-- Skull Edge -->
+					</item>
+					<item chance="9.0909">
+						<item id="15560" count="1" /> <!-- Vigwik Axe -->
+					</item>
+					<item chance="9.0909">
+						<item id="15561" count="1" /> <!-- Devilish Maul -->
+					</item>
+					<item chance="9.0909">
+						<item id="15562" count="1" /> <!-- Feather Eye Blade -->
+					</item>
+					<item chance="9.0909">
+						<item id="15563" count="1" /> <!-- Octo Claw -->
+					</item>
+					<item chance="9.0909">
+						<item id="15564" count="1" /> <!-- Doubletop Spear -->
+					</item>
+					<item chance="9.0909">
+						<item id="15565" count="1" /> <!-- Rising Star -->
+					</item>
+					<item chance="9.0909">
+						<item id="15566" count="1" /> <!-- Black Visage -->
+					</item>
+					<item chance="9.0909">
+						<item id="15567" count="1" /> <!-- Veniplant Sword -->
+					</item>
+					<item chance="9.0909">
+						<item id="15568" count="1" /> <!-- Skull Carnium Bow -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22358" toLevel="1" name="Vorpal Armor Pack">
+		<itemConsumeId>22203</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="5.8824">
+						<item id="15743" count="1" /> <!-- Sealed Vorpal Helmet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15744" count="1" /> <!-- Sealed Vorpal Leather Helmet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15745" count="1" /> <!-- Sealed Vorpal Circlet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15746" count="1" /> <!-- Sealed Vorpal Breastplate -->
+					</item>
+					<item chance="5.8824">
+						<item id="15747" count="1" /> <!-- Sealed Vorpal Leather Breastplate -->
+					</item>
+					<item chance="5.8824">
+						<item id="15748" count="1" /> <!-- Sealed Vorpal Tunic -->
+					</item>
+					<item chance="5.8824">
+						<item id="15749" count="1" /> <!-- Sealed Vorpal Gaiters -->
+					</item>
+					<item chance="5.8824">
+						<item id="15750" count="1" /> <!-- Sealed Vorpal Leather Leggings -->
+					</item>
+					<item chance="5.8824">
+						<item id="15751" count="1" /> <!-- Sealed Vorpal Stockings -->
+					</item>
+					<item chance="5.8824">
+						<item id="15752" count="1" /> <!-- Sealed Vorpal Gauntlets -->
+					</item>
+					<item chance="5.8824">
+						<item id="15753" count="1" /> <!-- Sealed Vorpal Leather Gloves -->
+					</item>
+					<item chance="5.8824">
+						<item id="15754" count="1" /> <!-- Sealed Vorpal Gloves -->
+					</item>
+					<item chance="5.8824">
+						<item id="15755" count="1" /> <!-- Sealed Vorpal Boots -->
+					</item>
+					<item chance="5.8824">
+						<item id="15756" count="1" /> <!-- Sealed Vorpal Leather Boots -->
+					</item>
+					<item chance="5.8824">
+						<item id="15757" count="1" /> <!-- Sealed Vorpal Shoes -->
+					</item>
+					<item chance="5.8824">
+						<item id="15758" count="1" /> <!-- Sealed Vorpal Shield -->
+					</item>
+					<item chance="5.8824">
+						<item id="15759" count="1" /> <!-- Sealed Vorpal Sigil -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22361" toLevel="1" name="Solid Scroll: Enchant Weapon (A-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22362" toLevel="1" name="Solid Scroll: Enchant Armor (A-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22374" toLevel="1" name="달콤한 초콜릿">
+		<!-- For 30 min., Vitality is replenished when XP is acquired through hunting. -->
+		<icon>BranchSys.icon.br_valentine_darkchoco_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLevel>8</abnormalLevel>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>1000</reuseDelay>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22235</itemConsumeId>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+	</skill>
+</list>

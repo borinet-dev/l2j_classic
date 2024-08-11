@@ -1,0 +1,1736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="30300" name="각인의 비전서 - 망각편" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_forgetting" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30301" name="각인의 비전서 사본" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30302" name="각인의 비전서 사본 - 숙련편" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_dexterity" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30303" name="각인의 비전서 사본 - 수련편" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_training" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30304" name="각인의 비전서 사본 - 망각편" type="EtcItem">
+		<set name="icon" val="icon.codex_of_incuse_forgetting" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30305" name="확인 테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.weapon_vesper_shaper_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="30306" name="하거인의 정수" type="EtcItem">
+		<set name="icon" val="icon.essence_of_giant" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30307" name="R99(Rare) 벨트" type="Armor">
+		<set name="icon" val="icon.armor_belt_i03" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="waist" />
+		<set name="crystal_type" val="R99" />
+		<set name="crystal_count" val="758" />
+		<set name="weight" val="440" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BELT" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="35565000" />
+		<set name="material" val="CLOTH" />
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="30308" name="R99(Rare) 팔찌" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_s_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R99" />
+		<set name="crystal_count" val="75" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="commissionItemType" val="BRACELET" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="3556000" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="3326" level="1" /> 
+		</skills>
+	</item>
+	<item id="30309" name="R99(Rare) 셔츠" type="Armor">
+		<set name="icon" val="icon.etc_stripe_shirts_s_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R99" />
+		<set name="crystal_count" val="1517" />
+		<set name="weight" val="130" />
+		<set name="bodypart" val="underwear" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="UNDERWEAR" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="71131000" />
+		<set name="material" val="CRYSTAL" />
+		<stats>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="30310" name="아벨리우스의 망토" additionalName="시겔 나이트" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="148, 149, 150, 151" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30311" name="사피로스의 망토" additionalName="티르 워리어" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="152, 153, 154, 155, 156, 157" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30312" name="카이슈나가의 망토" additionalName="오셀 로그" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="158, 159, 160, 161" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30313" name="크론비스트의 망토" additionalName="율 아처" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="162, 163, 164, 165" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30314" name="솔트크리그의 망토" additionalName="페오 위저드" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="166, 167, 168, 169, 170" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30315" name="나비아로프의 망토" additionalName="윈 서머너" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="176, 177, 178" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30316" name="라이스터의 망토" additionalName="이스 인챈터" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="171, 172, 173, 174, 175" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30317" name="라키시스의 망토" additionalName="에오로 힐러" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player class_id_restriction="179, 180, 181" />
+		</cond>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30318" name="황혼의 보고서" type="EtcItem">
+		<set name="icon" val="icon.etc_old_evil_book_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SHOW_HTML" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="30319" name="노력의 증표" type="EtcItem">
+		<set name="icon" val="icon.armor_soul_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="30320" name="탐린 오크의 표식" type="EtcItem">
+		<set name="icon" val="icon.etc_badge_silver_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="30321" name="메모리얼 크리스탈" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_cave_crystal_i02" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="30322" name="화염의 재" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_crystal_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="30323" name="경험의 수정" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_cave_crystal_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="30324" name="향상된 파이라카 반지" type="EtcItem">
+		<set name="icon" val="icon.accessary_mithril_ring_i00" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30325" name="돌아온 모험가의 증표" type="EtcItem">
+		<set name="icon" val="icon.etc_permit_card_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="2" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30326" name="안타라스의 문양 염료" type="EtcItem">
+		<set name="icon" val="icon.dragon_dye_i01" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="30327" name="발라카스의 문양 염료" type="EtcItem">
+		<set name="icon" val="icon.dragon_dye_i01" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="30328" name="어스웜의 문양 염료" type="EtcItem">
+		<set name="icon" val="icon.etc_str_hena_i02" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="30329" name="사신 전용 무기" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="crystal_type" val="D" />
+		<set name="crystal_count" val="743" />
+		<set name="weight" val="300" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="for_npc" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="30330" name="최상급 글루디오 물의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="waterRes">30</stat>
+		</stats>
+	</item>
+	<item id="30331" name="최상급 디온 신성의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="holyRes">30</stat>
+		</stats>
+	</item>
+	<item id="30332" name="최상급 기란 바람의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="windRes">30</stat>
+		</stats>
+	</item>
+	<item id="30333" name="최상급 오렌 암흑의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="darkRes">30</stat>
+		</stats>
+	</item>
+	<item id="30334" name="최상급 아덴 대지의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="earthRes">30</stat>
+		</stats>
+	</item>
+	<item id="30335" name="최상급 인나드릴 물의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="waterRes">30</stat>
+		</stats>
+	</item>
+	<item id="30336" name="최상급 고다드 불의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="fireRes">30</stat>
+		</stats>
+	</item>
+	<item id="30337" name="최상급 루운 불의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="fireRes">30</stat>
+		</stats>
+	</item>
+	<item id="30338" name="최상급 슈트가르트 바람의 수호 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">158</stat>
+			<stat type="windRes">30</stat>
+		</stats>
+	</item>
+	<item id="30339" name="최상급 글루디오 물의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8786" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30340" name="최상급 디온 신성의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8787" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30341" name="최상급 기란 바람의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8788" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30342" name="최상급 오렌 암흑의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8789" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30343" name="최상급 아덴 대지의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8790" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30344" name="최상급 인나드릴 물의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8791" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30345" name="최상급 고다드 불의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8792" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30346" name="최상급 루운 불의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8793" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30347" name="최상급 슈트가르트 바람의 수호 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8794" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">118</stat>
+		</stats>
+	</item>
+	<item id="30348" name="최상급 글루디오 대지의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8795" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30349" name="최상급 디온 물의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8796" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30350" name="최상급 기란 불의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8797" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30351" name="최상급 오렌 대지의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8798" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30352" name="최상급 아덴 신성의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8799" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30353" name="최상급 인나드릴 신성의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8800" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30354" name="최상급 고다드 암흑의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8801" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30355" name="최상급 루운 바람의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8802" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30356" name="최상급 슈트가르트 암흑의 수호 반지" type="Armor">
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8803" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">79</stat>
+		</stats>
+	</item>
+	<item id="30357" name="생명의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="17500" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2287" level="7" /> 
+		</skills>
+	</item>
+	<item id="30358" name="정신의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="18800" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2288" level="7" /> 
+		</skills>
+	</item>
+	<item id="30359" name="투지의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="7000" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2289" level="7" /> 
+		</skills>
+	</item>
+	<item id="30360" name="초강력 생명의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="7" /> 
+		</skills>
+	</item>
+	<item id="30361" name="초강력 정신의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="7" /> 
+		</skills>
+	</item>
+	<item id="30362" name="초강력 투지의 비약 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="weight" val="5" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="R" />
+		<set name="is_event_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="7" /> 
+		</skills>
+	</item>
+	<item id="30363" name="집혼석" type="EtcItem">
+		<set name="icon" val="icon.etc_soul_stone_i00" />
+		<set name="is_questitem" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="commissionItemType" val="SOUL_CRYSTAL" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="weight" val="20" />
+		<set name="is_depositable" val="false" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="2096" level="1" /> 
+		</skills>
+	</item>
+	<item id="30364" name="생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_general_i00" />
+		<set name="weight" val="2" />
+		<set name="price" val="5000" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="30365" name="투구" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="25" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="530" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pDef">114</stat>
+		</stats>
+	</item>
+	<item id="30366" name="장화" type="Armor">
+		<set name="icon" val="icon.armor_t97_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="17" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1070" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+	<item id="30367" name="장갑" type="Armor">
+		<set name="icon" val="icon.armor_t97_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="17" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="510" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+	<item id="30368" name="티셔츠" type="Armor">
+		<set name="icon" val="icon.etc_stripe_shirts_s_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="85" />
+		<set name="weight" val="130" />
+		<set name="bodypart" val="underwear" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="UNDERWEAR" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="3997000" />
+		<set name="material" val="CRYSTAL" />
+		<stats>
+			<stat type="pDef">38</stat>
+		</stats>
+	</item>
+	<item id="30369" name="벨트" type="Armor">
+		<set name="icon" val="icon.armor_belt_i03" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="waist" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="42" />
+		<set name="weight" val="440" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BELT" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="1998000" />
+		<set name="material" val="CLOTH" />
+		<stats>
+			<stat type="pDef">19</stat>
+		</stats>
+	</item>
+	<item id="30370" name="팔찌" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_s_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="75" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="commissionItemType" val="BRACELET" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="3556000" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="3326" level="1" /> 
+		</skills>
+	</item>
+	<item id="30371" name="마력이 깃든 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="15211" min="1" max="1" chance="100" /> 
+			<item id="13273" min="1" max="1" chance="100" /> 
+			<item id="15426" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<skills>
+			<skill id="12184" level="1" /> 
+		</skills>
+	</item>
+	<item id="30372" name="영웅의 망토" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="220" />
+		<set name="material" val="CLOTH" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13136" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">100</stat>
+			<stat type="mDef">80</stat>
+		</stats>
+	</item>
+	<item id="30373" name="명예의 망토" type="Armor">
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="220" />
+		<set name="material" val="CLOTH" />
+		<skills>
+			<skill id="13137" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">50</stat>
+			<stat type="mDef">40</stat>
+		</stats>
+	</item>
+	<item id="30374" name="마력이 충만한 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="15211" min="1" max="1" chance="100" /> 
+			<item id="13273" min="1" max="1" chance="100" /> 
+			<item id="15426" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<skills>
+			<skill id="12185" level="1" /> 
+		</skills>
+	</item>
+	<item id="30375" name="무한의 오리칼쿰 화살통" additionalName="추가 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="ARROW" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30376" name="무한의 오리칼쿰 화살통" additionalName="크리티컬 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="ARROW" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30377" name="무한의 오리칼쿰 화살통" additionalName="출혈 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_arrows_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="ARROW" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30378" name="무한의 오리칼쿰 볼트통" additionalName="추가 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="BOLT" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30379" name="무한의 오리칼쿰 볼트통" additionalName="크리티컬 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="BOLT" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30380" name="무한의 오리칼쿰 볼트통" additionalName="출혈 타격" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_quiver_of_mithril_bolts_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="BOLT" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="crystal_type" val="R" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="30381" name="무기용 강화 보조석 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_potion_violet_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9207" level="1" /> 
+		</skills>
+	</item>
+	<item id="30382" name="방어구용 강화 보조석 - R그레이드" type="EtcItem">
+		<set name="icon" val="icon.ench_am_potion_violet_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9208" level="1" /> 
+		</skills>
+	</item>
+	<item id="30383" name="멘토 링" type="Armor">
+		<set name="icon" val="icon.accessary_enchanted_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<stats>
+			<stat type="mDef">55</stat>
+		</stats>
+	</item>
+	<item id="30384" name="다짐의 증서" type="EtcItem">
+		<set name="icon" val="icon.item_normal52" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30385" name="생명의 증서" type="EtcItem">
+		<set name="icon" val="icon.item_normal52" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30386" name="영웅의 증서" type="EtcItem">
+		<set name="icon" val="icon.item_normal52" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30387" name="지옥의 증서" type="EtcItem">
+		<set name="icon" val="icon.item_normal52" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="30388" name="돌아온 모험가용 지원 상자 - S그레이드" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="30389" name="돌아온 모험가용 지원 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="30390" name="돌아온 모험가용 지원 상자 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="30391" name="돌아온 모험가용 지원 상자 - C그레이드" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="30392" name="인피니티 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13146" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">827</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30393" name="인피니티 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13147" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">917</stat>
+			<stat type="mAtk">149</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30394" name="인피니티 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13148" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1117</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30395" name="인피니티 어벤져" type="Weapon">
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="FINE_STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13149" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">917</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30396" name="인피니티 파이터" type="Weapon">
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13150" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1117</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30397" name="인피니티 스토머" type="Weapon">
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="BRONZE" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="3599" level="1" /> 
+			<skill id="13151" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">917</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30398" name="인피니티 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13152" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1811</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+	<item id="30399" name="인피니티 슈트제" type="Weapon">
+		<set name="icon" val="icon.weapon_infinity_shooter_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="crystal_type" val="R" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="reuse_delay" val="1350" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1300" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player isHero="true" />
+		</cond>
+		<skills>
+			<skill id="13153" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1516</stat>
+			<stat type="mAtk">489</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="holyPower">450</stat>
+		</stats>
+	</item>
+</list>

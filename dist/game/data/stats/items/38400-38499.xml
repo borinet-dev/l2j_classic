@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="38400" name="엑스퍼티즈 룬 상자" additionalName="C" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38399" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38401" name="엑스퍼티즈 룬 - B" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17571" level="1" /> 
+		</skills>
+	</item>
+	<item id="38402" name="엑스퍼티즈 룬 상자" additionalName="B" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38401" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38403" name="엑스퍼티즈 룬 - A" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17572" level="1" /> 
+		</skills>
+	</item>
+	<item id="38404" name="엑스퍼티즈 룬 상자" additionalName="A" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38403" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38405" name="엑스퍼티즈 룬 - S" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17573" level="1" /> 
+		</skills>
+	</item>
+	<item id="38406" name="엑스퍼티즈 룬 상자" additionalName="S" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38405" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38407" name="엑스퍼티즈 룬 - S80" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17574" level="1" /> 
+		</skills>
+	</item>
+	<item id="38408" name="엑스퍼티즈 룬 상자" additionalName="S80" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38407" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38409" name="엑스퍼티즈 룬 - R" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17575" level="1" /> 
+		</skills>
+	</item>
+	<item id="38410" name="엑스퍼티즈 룬 상자" additionalName="R" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38409" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38411" name="엑스퍼티즈 룬 - R95" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17576" level="1" /> 
+		</skills>
+	</item>
+	<item id="38412" name="엑스퍼티즈 룬 상자" additionalName="R95" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38411" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38413" name="엑스퍼티즈 룬 - R99" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="120" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17577" level="1" /> 
+		</skills>
+	</item>
+	<item id="38414" name="엑스퍼티즈 룬 상자" additionalName="R99" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="38413" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38415" name="고등어 가공석 - 듀얼 블런트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38416" name="트럼펫 피쉬 가공석 - 듀얼 대거" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38417" name="고등어 가공석 - 듀얼 블런트" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38418" name="트럼펫 피쉬 가공석 - 듀얼 대거" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38419" name="고등어 가공석 - 한손 둔기" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38420" name="고등어 가공석 - 한손 둔기" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualblunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38421" name="고등어 - 한손 둔기" type="Weapon">
+		<set name="icon" val="icon.wp_fishing1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="172" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38422" name="트럼펫 피쉬 - 듀얼 대거" type="Weapon">
+		<set name="icon" val="icon.wp_fishing13" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="205" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">107</stat>
+			<stat type="mAtk">181</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38423" name="고등어 - 듀얼 블런트" type="Weapon">
+		<set name="icon" val="icon.wp_fishing11" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="250" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">125</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38424" name="몬스터 전용_암덴검" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_1hs_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="144" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38425" name="몬스터 전용_암덴둔기" type="Weapon">
+		<set name="icon" val="BranchSys3.Icon.g_beam_dualblunt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="250" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">125</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38426" name="몬스터 전용_암덴활" type="Weapon">
+		<set name="icon" val="icon.pailaka_invader_bow_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="6" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="181" />
+		<set name="material" val="STEEL" />
+		<set name="mp_consume" val="2" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38427" name="몬스터 전용_켄타무기" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_1hs_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="144" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38428" name="몬스터 전용_미노대거" type="Weapon">
+		<set name="icon" val="icon.Deathslayer_a_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="106" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38429" name="몬스터 전용_타이가검" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_1hs_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="144" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38430" name="몬스터 전용_타이가활" type="Weapon">
+		<set name="icon" val="icon.pailaka_invader_bow_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="6" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="181" />
+		<set name="material" val="STEEL" />
+		<set name="mp_consume" val="2" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38431" name="몬스터 전용_타이가대거" type="Weapon">
+		<set name="icon" val="icon.Deathslayer_a_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="106" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38432" name="몬스터 전용_타이가보석" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_1hs_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="144" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38433" name="몬스터 전용_타이가둔기" type="Weapon">
+		<set name="icon" val="BranchSys3.Icon.g_beam_dualblunt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="250" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">125</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38434" name="몬스터 전용_타이가폴암" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_pole_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="205" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38435" name="몬스터 전용_타이가방패" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="200" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="38436" name="몬스터 전용_타이가시길" type="Armor">
+		<set name="icon" val="icon.Summon_orc_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="200" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="38437" name="몬스터 전용_타이가스태프" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_pole_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="205" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38438" name="처녀자리 아가시온 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38439" name="처녀자리 아가시온 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38440" name="처녀자리 아가시온 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38441" name="처녀자리 아가시온 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38442" name="처녀자리 아가시온 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38443" name="몬스터 전용_켄타도끼" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_1hs_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="144" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38444" name="몬스터 전용_켄타방패" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_shield_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="200" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="38445" name="몬스터 전용_한손둔기" type="Weapon">
+		<set name="icon" val="BranchSys3.Icon.g_beam_dualblunt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="250" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">125</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38446" name="몬스터 전용_켄타투척창" type="Weapon">
+		<set name="icon" val="icon.Deathslayer_a_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="106" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38447" name="몬스터 전용_미노폴" type="Weapon">
+		<set name="icon" val="icon.Summon_orc_pole_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="205" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">92</stat>
+			<stat type="mAtk">54</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38448" name="몬스터 전용_미노양손도끼" type="Weapon">
+		<set name="icon" val="BranchSys3.Icon.g_beam_dualdagger" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="205" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">107</stat>
+			<stat type="mAtk">181</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38449" name="염소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17611" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38450" name="염소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17611" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38451" name="염소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17611" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38452" name="염소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17611" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38453" name="염소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17611" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38454" name="천칭자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17612" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38455" name="천칭자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17612" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38456" name="천칭자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17612" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38457" name="천칭자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17612" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38458" name="천칭자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17612" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38459" name="양자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17613" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38460" name="양자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17613" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38461" name="양자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17613" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38462" name="양자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17613" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38463" name="양자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17613" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38464" name="황소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17614" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38465" name="황소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17614" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38466" name="황소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17614" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38467" name="황소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17614" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38468" name="황소자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17614" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38469" name="사자자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17615" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38470" name="사자자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17615" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38471" name="사자자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17615" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38472" name="사자자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17615" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38473" name="사자자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17615" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38474" name="쌍둥이자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17616" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38475" name="쌍둥이자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17616" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38476" name="쌍둥이자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17616" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38477" name="쌍둥이자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17616" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38478" name="쌍둥이자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17616" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38479" name="전갈자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17617" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38480" name="전갈자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17617" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38481" name="전갈자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17617" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38482" name="전갈자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17617" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38483" name="전갈자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17617" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38484" name="물병자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17618" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38485" name="물병자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17618" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38486" name="물병자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17618" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38487" name="물병자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17618" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38488" name="물병자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17618" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38489" name="물고기자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38490" name="물고기자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38491" name="물고기자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38492" name="물고기자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38493" name="물고기자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38494" name="사수자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17620" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38495" name="사수자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17620" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38496" name="사수자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17620" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38497" name="사수자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17620" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38498" name="사수자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17620" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38499" name="게자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17621" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+</list>

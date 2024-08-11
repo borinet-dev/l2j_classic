@@ -1,0 +1,2577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="21900" name="정신의 토템" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.totem_of_mind" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="600000" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22295" level="1" /> 
+		</skills>
+	</item>
+	<item id="21901" name="용기의 토템" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.totem_of_bravery" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="600000" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22296" level="1" /> 
+		</skills>
+	</item>
+	<item id="21902" name="불굴의 토템" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.totem_of_fortitude" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="600000" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22297" level="1" /> 
+		</skills>
+	</item>
+	<item id="21903" name="정제된 용의 붉은 피" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.refined_red_blood_of_dragon" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="shared_reuse_group" val="-1" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_questitem" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="300000" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22298" level="1" /> 
+		</skills>
+	</item>
+	<item id="21904" name="정제된 용의 푸른 피" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.refined_blue_blood_of_dragon" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="shared_reuse_group" val="-1" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_questitem" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="300000" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22299" level="1" /> 
+		</skills>
+	</item>
+	<item id="21905" name="속이 비치는 수정구" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21906" name="텅빈 수정구" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21907" name="지룡의 기운이 깃든 수정구" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21908" name="화룡의 기운이 깃든 수정구" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21909" name="라바사우르스의 동력석 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21910" name="라바사우르스의 머리 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21911" name="라바사우르스의 몸통 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21912" name="라바사우르스의 뿔 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21913" name="붉은 액체" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21914" name="푸른 액체" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21915" name="얼음사탕 조각" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_valentine_cream_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21916" name="슈퍼 캣더캣Z 소환 목걸이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.g_supercat_cat_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="21917" name="슈퍼 퀸오브캣Z 소환 목걸이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.g_supercat_queen_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="21918" name="슈퍼 뮤더캣Z 소환 목걸이" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.g_supercat_mew_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> 
+		</skills>
+	</item>
+	<item id="21919" name="칼라드볼그" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21920" name="칼라드볼그" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> 
+			<skill id="3564" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21921" name="칼라드볼그" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21922" name="칼라드볼그" additionalName="포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> 
+			<skill id="3566" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21923" name="칼라드볼그 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3653" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3552" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21924" name="칼라드볼그 {대인용} - 헤이스트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3564" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21925" name="칼라드볼그 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21926" name="칼라드볼그 {대인용} - 포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3566" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21927" name="칼라드볼그 - 천둥" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> 
+			<skill id="3828" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21928" name="칼라드볼그 - 천둥" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3564" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21929" name="칼라드볼그 - 천둥" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21930" name="칼라드볼그 - 천둥" additionalName="포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3566" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21931" name="칼라드볼그 - 천둥 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3653" level="1" /> 
+			<skill id="3851" level="2" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3552" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21932" name="칼라드볼그 - 천둥 {대인용} - 헤이스트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3564" level="3" /> 
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21933" name="칼라드볼그 - 천둥 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3013" level="3" /> 
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21934" name="칼라드볼그 - 천둥 {대인용} - 포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3566" level="3" /> 
+			<skill id="3828" level="1" /> 
+			<skill id="21252" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21935" name="하부의 식칼" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="price" val="121780000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="DUAL_DAGGER" />
+		<cond msgId="1518">
+			<and>
+				<player level="80" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="21253" level="1" /> 
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21936" name="하부의 식칼 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<and>
+				<player level="80" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3651" level="1" /> 
+			<skill id="3652" level="1" /> 
+			<skill id="3552" level="3" /> 
+			<skill id="21253" level="1" /> 
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21937" name="하부의 식칼 - 혼란" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="price" val="121780000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DUAL_DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<and>
+				<player level="80" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3858" level="3" /> 
+			<skill id="21253" level="1" /> 
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21938" name="하부의 식칼 - 혼란 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<and>
+				<player level="80" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3858" level="3" /> 
+			<skill id="3552" level="3" /> 
+			<skill id="3651" level="1" /> 
+			<skill id="3652" level="1" /> 
+			<skill id="21253" level="1" /> 
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21939" name="티아테논" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21940" name="티아테논" additionalName="HP드레인" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> 
+			<skill id="3568" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21941" name="티아테논" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21942" name="티아테논" additionalName="HP리제네레이션" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> 
+			<skill id="3569" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21943" name="티아테논 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3552" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21944" name="티아테논 {대인용} - HP드레인" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3568" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21945" name="티아테논 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21946" name="티아테논 {대인용} - HP리제네레이션" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3650" level="1" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3569" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21947" name="티아테논 - 산사태" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> 
+			<skill id="3885" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21948" name="티아테논 - 산사태" additionalName="HP드레인" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3568" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21949" name="티아테논 - 산사태" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21950" name="티아테논 - 산사태" additionalName="HP리제네레이션" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3569" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21951" name="티아테논 - 산사태 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3552" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21952" name="티아테논 - 산사태 {대인용} - HP드레인" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3568" level="2" /> 
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21953" name="티아테논 - 산사태 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3013" level="3" /> 
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21954" name="티아테논 - 산사태 {대인용} - HP리제네레이션" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3650" level="1" /> 
+			<skill id="3569" level="2" /> 
+			<skill id="3885" level="2" /> 
+			<skill id="21254" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21955" name="아스타로트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="21255" level="1" /> 
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21956" name="아스타로트 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3656" level="1" /> 
+			<skill id="3552" level="3" /> 
+			<skill id="21255" level="1" /> 
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21957" name="아스타로트 - 대지" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> 
+			<skill id="3836" level="2" /> 
+			<skill id="21255" level="1" /> 
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21958" name="아스타로트 - 대지 {대인용}" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="3836" level="2" /> 
+			<skill id="3656" level="1" /> 
+			<skill id="3552" level="3" /> 
+			<skill id="21255" level="1" /> 
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21959" name="티르빙" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21960" name="티르빙" additionalName="포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> 
+			<skill id="3566" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21961" name="티르빙" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21962" name="티르빙" additionalName="라이트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3498" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21963" name="티르빙 {대인용} - 포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3653" level="1" /> 
+			<skill id="3552" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3566" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21964" name="티르빙 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3653" level="1" /> 
+			<skill id="3552" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21965" name="티르빙 {대인용} - 라이트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="3" /> 
+			<skill id="3498" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3653" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21966" name="티르빙 - 질풍" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> 
+			<skill id="3840" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21967" name="티르빙 - 질풍" additionalName="포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3566" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21968" name="티르빙 - 질풍" additionalName="헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21969" name="티르빙 - 질풍" additionalName="라이트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3498" level="1" /> 
+			<skill id="3840" level="2" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21970" name="티르빙 - 질풍 {대인용} - 포커스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> 
+			<skill id="3653" level="1" /> 
+			<skill id="3552" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3566" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21971" name="티르빙 - 질풍 {대인용} - 헬스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> 
+			<skill id="3653" level="1" /> 
+			<skill id="3552" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3013" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21972" name="티르빙 - 질풍 {대인용} - 라이트" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3653" level="1" /> 
+			<skill id="3552" level="3" /> 
+			<skill id="3498" level="1" /> 
+			<skill id="21256" level="1" /> 
+			<skill id="3840" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21973" name="마르딜의 바람" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21974" name="마르딜의 바람" additionalName="매직파워" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> 
+			<skill id="3073" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21975" name="마르딜의 바람" additionalName="매직사일런스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3074" level="2" type_chance="10" type="ON_MAGIC_SKILL" /> 
+			<skill id="21257" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21976" name="마르딜의 바람" additionalName="아큐멘" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> 
+			<skill id="3047" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21977" name="마르딜의 바람 - 성령" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> 
+			<skill id="3856" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21978" name="마르딜의 바람 - 성령" additionalName="매직파워" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3856" level="1" /> 
+			<skill id="21257" level="1" /> 
+			<skill id="3073" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21979" name="마르딜의 바람 - 성령" additionalName="매직사일런스" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3074" level="2" type_chance="10" type="ON_MAGIC_SKILL" /> 
+			<skill id="3856" level="1" /> 
+			<skill id="21257" level="1" /> 
+			<skill id="3552" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21980" name="마르딜의 바람 - 성령" additionalName="아큐멘" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3856" level="1" /> 
+			<skill id="21257" level="1" /> 
+			<skill id="3047" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21981" name="세련된 물고기 모자" type="Armor">
+		<set name="icon" val="icon.accessory_fish_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21982" name="세련된 천사 링" type="Armor">
+		<set name="icon" val="icon.accessory_angel_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21983" name="세련된 마법사 모자" type="Armor">
+		<set name="icon" val="icon.accessory_magician_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21984" name="세련된 광대 모자" type="Armor">
+		<set name="icon" val="icon.accessory_jester_cap_2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21985" name="세련된 로맨틱 샤프롱" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="600000" />
+	</item>
+	<item id="21986" name="아가시온 봉인팔찌 - 안타라스" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="8521" level="1" /> 
+			<skill id="6916" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="21987" name="해적모자" type="Armor">
+		<set name="icon" val="icon.Accessary_sea_robber_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21988" name="빛나는 조명 단상 소환 팔찌" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.br_shiny_platform_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> 
+			<skill id="21232" level="1" /> 
+		</skills>
+	</item>
+	<item id="21989" name="따듯한 곰 모자" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_polar_bear_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21990" name="따듯한 곰발" type="Weapon">
+		<set name="icon" val="BranchSys2.icon.br_polar_bear_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="450" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21991" name="타라스크 드래곤의 가죽 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_yellow_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21992" name="베히모스 드래곤의 가죽 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_yellow_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21993" name="라바사우러스 퍼스트본의 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_gold_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21994" name="활력 충전 음료 9개 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21995" name="활력 충전 음료 12개 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="12" max="12" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21996" name="활력 충전 음료 15개 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21997" name="깨어진 뼛조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_gold_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21998" name="카니발 스타카토 대장의 발톱" type="EtcItem">
+		<set name="icon" val="icon.etc_parasite_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21999" name="아나이스의 두루마리" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.g_ancient_book_piece_high" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

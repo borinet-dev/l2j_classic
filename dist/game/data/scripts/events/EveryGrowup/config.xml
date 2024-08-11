@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="EveryGrowup Event" active="05 15 07 00-05 25 00 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="41275" min="1" max="1" chance="1.02%" minLevel="80" maxLevel="99" isDrop="true" />
+	</droplist>
+	<messages>
+		<add type="onEnd" text="모두의 성장 이벤트가 종료되었습니다!" />
+		<add type="onEnter" text="모두의 성장 이벤트가 진행 중 입니다!" />
+	</messages>
+</event>

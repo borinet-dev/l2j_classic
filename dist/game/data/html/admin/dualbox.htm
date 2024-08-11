@@ -1,0 +1,30 @@
+<html><title>다계정 검사</title><body>
+<center>
+<table width=270>
+<tr>
+<td width=45><button value="Main" action="bypass -h admin_admin" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=180><center>듀얼박스 메뉴</center></td>
+<td width=45><button value="Back" action="bypass -h admin_admin6" width=45 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<button value="캐릭터 목록으로 돌아가기" action="bypass -h admin_show_characters 0" width=150 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+<br>
+동시접속 IP (%multibox%):
+<br>
+%results%
+<br><br>
+다계정 찾기:<br1>
+<table width=220>
+<tr>
+<td><button value="2+ 계정" action="bypass -h admin_%strict%find_dualbox 2" width=110 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="3+ 계정" action="bypass -h admin_%strict%find_dualbox 3" width=110 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><button value="4+ 계정" action="bypass -h admin_%strict%find_dualbox 4" width=110 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="5+ 계정" action="bypass -h admin_%strict%find_dualbox 5" width=110 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+</center>
+</body></html>

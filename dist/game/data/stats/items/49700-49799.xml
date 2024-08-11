@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="49700" name="바이움 황제의 강화 주문서 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49701" name="강철 팔찌 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_vacualite_noglow_white_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49702" name="결계의 팔찌 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_vacualite_noglow_gold_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49703" name="결계의 팔찌" type="Armor">
+		<set name="icon" val="icon.dimension_bracelet_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="53" />
+		<set name="material" val="SILVER" />
+		<set name="price" val="5400000" />
+		<set name="commissionItemType" val="BRACELET" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="49704" name="결계의 탈리스만 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_armor_soul_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49705" name="금단의 결계 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49706" name="암흑 탈리스만 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_pirate_king_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39147" level="1" /> 
+		</skills>
+	</item>
+	<item id="49707" name="암흑의 탈리스만 - 공격력" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3272" level="3" /> 
+		</skills>
+	</item>
+	<item id="49708" name="암흑의 탈리스만 - 마법력" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3276" level="3" /> 
+		</skills>
+	</item>
+	<item id="49709" name="암흑의 탈리스만 - 방어력" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3273" level="3" /> 
+		</skills>
+	</item>
+	<item id="49710" name="암흑의 탈리스만 - 마법저항" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3277" level="3" /> 
+		</skills>
+	</item>
+	<item id="49711" name="암흑의 탈리스만 - 물리스킬회피" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3274" level="3" /> 
+		</skills>
+	</item>
+	<item id="49712" name="암흑의 탈리스만 - 마법스킬회피" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3278" level="3" /> 
+		</skills>
+	</item>
+	<item id="49713" name="암흑의 탈리스만 - HP증가" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3279" level="3" /> 
+		</skills>
+	</item>
+	<item id="49714" name="암흑의 탈리스만 - MP증가" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3280" level="3" /> 
+		</skills>
+	</item>
+	<item id="49715" name="암흑의 탈리스만 - 받는 힐량 증가" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3293" level="1" /> 
+		</skills>
+	</item>
+	<item id="49716" name="암흑의 탈리스만 - 주는 힐량 증가" additionalName="1시간 기간제" type="Armor">
+		<set name="icon" val="icon.etc_wise_man_stone_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="60" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="3294" level="1" /> 
+		</skills>
+	</item>
+	<item id="49717" name="암흑의 탈리스만 상자 - 공격력" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49707" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49718" name="암흑의 탈리스만 상자 - 마법력" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49708" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49719" name="암흑의 탈리스만 상자 - 방어력" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49709" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49720" name="암흑의 탈리스만 상자 - 마법저항" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49710" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49721" name="암흑의 탈리스만 상자 - 물리스킬회피" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49711" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49722" name="암흑의 탈리스만 상자 - 마법스킬회피" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49712" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49723" name="암흑의 탈리스만 상자 - HP증가" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49713" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49724" name="암흑의 탈리스만 상자 - MP증가" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49714" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49725" name="암흑의 탈리스만 상자 - 받는 힐량 증가" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49715" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49726" name="암흑의 탈리스만 상자 - 주는 힐량 증가" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="60" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49716" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="49727" name="결계의 탈리스만 Lv1" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="1" /> 
+		</skills>
+	</item>
+	<item id="49728" name="결계의 탈리스만 Lv2" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="2" /> 
+		</skills>
+	</item>
+	<item id="49729" name="결계의 탈리스만 Lv3" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="3" /> 
+		</skills>
+	</item>
+	<item id="49730" name="결계의 탈리스만 Lv4" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="4" /> 
+		</skills>
+	</item>
+	<item id="49731" name="결계의 탈리스만 Lv5" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="5" /> 
+		</skills>
+	</item>
+	<item id="49732" name="결계의 탈리스만 Lv6" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="6" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49733" name="결계의 탈리스만 Lv7" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="7" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49734" name="결계의 탈리스만 Lv8" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="8" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49735" name="결계의 탈리스만 Lv9" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="9" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49736" name="결계의 탈리스만 Lv10" type="Armor">
+		<set name="icon" val="icon.bm_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="10" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49737" name="축복받은 결계의 탈리스만" type="Armor">
+		<set name="icon" val="icon.bm_blessed_magic_square_talisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="talisman" />
+		<skills>
+			<skill id="35024" level="11" /> 
+			<skill id="35025" level="1" /> 
+		</skills>
+	</item>
+	<item id="49738" name="봉인된 축복받은 결계의 탈리스만" type="EtcItem">
+		<set name="icon" val="icon.bm_blessed_magic_square_talisman" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39148" level="1" /> 
+		</skills>
+	</item>
+	<item id="49739" name="축복받은 무급 정령탄" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_white_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="3" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8915" level="1" /> 
+		</skills>
+	</item>
+	<item id="49740" name="축복받은 정령탄 - D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_blue_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8916" level="1" /> 
+		</skills>
+	</item>
+	<item id="49741" name="축복받은 정령탄 - C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_green_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8917" level="1" /> 
+		</skills>
+	</item>
+	<item id="49742" name="축복받은 정령탄 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_red_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8918" level="1" /> 
+		</skills>
+	</item>
+	<item id="49743" name="축복받은 정령탄 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_silver_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8919" level="1" /> 
+		</skills>
+	</item>
+	<item id="49744" name="신비한 축복받은 무급 정령탄" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_white_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8910" level="1" /> 
+		</skills>
+	</item>
+	<item id="49745" name="신비한 축복받은 정령탄 - D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_blue_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8911" level="1" /> 
+		</skills>
+	</item>
+	<item id="49746" name="신비한 축복받은 정령탄 - C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_green_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8912" level="1" /> 
+		</skills>
+	</item>
+	<item id="49747" name="신비한 축복받은 정령탄 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_red_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8913" level="1" /> 
+		</skills>
+	</item>
+	<item id="49748" name="신비한 축복받은 정령탄 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_bless_spirit_bullet_silver_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSoulShots" />
+		<skills>
+			<skill id="8907" level="1" /> 
+		</skills>
+	</item>
+	<item id="49749" name="신비한 마정탄 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_red_i00" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="SpiritShot" />
+		<skills>
+			<skill id="8908" level="1" /> 
+		</skills>
+	</item>
+	<item id="49750" name="신비한 마정탄 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_silver_i00" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="SpiritShot" />
+		<skills>
+			<skill id="8909" level="1" /> 
+		</skills>
+	</item>
+	<item id="49751" name="레시피: 축복받은 정령탄 - D그레이드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="4000" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="49752" name="레시피: 축복받은 정령탄 - C그레이드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="4001" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="49753" name="레시피: 축복받은 정령탄 - B그레이드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="4002" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="49754" name="레시피: 축복받은 정령탄 - A그레이드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="4003" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="49755" name="바이움의 탈리스만 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39149" level="1" /> 
+		</skills>
+	</item>
+	<item id="49756" name="퀼트 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_shirt_green_i00" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="130000" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49757" name="사이하의 성수" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i09" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49758" name="피의 결정" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_crystal_1_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49759" name="천공의 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_crystal_1_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49760" name="방어구 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39151" level="1" />
+		</skills>
+	</item>
+	<item id="49761" name="액세서리 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39152" level="1" />
+		</skills>
+	</item>
+	<item id="49762" name="방어구 재료 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39153" level="1" />
+		</skills>
+	</item>
+	<item id="49763" name="액세서리 재료 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39154" level="1" />
+		</skills>
+	</item>
+	<item id="49764" name="2만 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll3_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49765" name="수호탑의 축복 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_aidcharm_cancel_valbreath_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="1800000" />
+		<skills>
+			<skill id="39155" level="1" /> 
+		</skills>
+	</item>
+	<item id="49766" name="수상한 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_magical_stone_i00" />
+		<set name="material" val="PAPER" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="39157" level="1" /> 
+		</skills>
+	</item>
+	<item id="49767" name="천공의 부서진 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49768" name="천공의 보호 주문서" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_verification_i08" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="39156" level="1" /> 
+		</skills>
+	</item>
+	<item id="49769" name="향상된 바이움 황제의 강화 주문서 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49770" name="사이하의 기운" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_water_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LIQUID" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49771" name="바이움 황제의 숨겨진 보물" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49772" name="무디의 멜로디 주문서" type="EtcItem">
+		<set name="icon" val="icon.bm_magmeld" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="39164" level="1" /> 
+		</skills>
+	</item>
+	<item id="49773" name="해적단의 전투 열매 - 공격형" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i09" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="reuse_delay" val="60000" />
+		<skills>
+			<skill id="39162" level="1" /> 
+		</skills>
+	</item>
+	<item id="49774" name="해적단의 전투 열매 - 방어형" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_i09" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="reuse_delay" val="60000" />
+		<skills>
+			<skill id="39163" level="1" /> 
+		</skills>
+	</item>
+	<item id="49775" name="레드 스피넬" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49776" name="그린 스피넬" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_ep" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49777" name="하급 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39180" level="1" /> 
+		</skills>
+	</item>
+	<item id="49778" name="중급 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39181" level="1" /> 
+		</skills>
+	</item>
+	<item id="49779" name="상급 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39182" level="1" /> 
+		</skills>
+	</item>
+	<item id="49780" name="최상급 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39183" level="1" /> 
+		</skills>
+	</item>
+	<item id="49781" name="슈퍼 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39184" level="1" /> 
+		</skills>
+	</item>
+	<item id="49782" name="발터스의 기사단 보급품" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_kalie_treasure_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="ItemDays" />
+		<skills>
+			<skill id="39170" level="1" /> 
+		</skills>
+	</item>
+	<item id="49783" name="행운 주화" type="EtcItem">
+		<set name="icon" val="icon.ev_balthus_coin" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="49784" name="발터스 기사단의 증표" type="EtcItem">
+		<set name="icon" val="icon.ev_balthus_token" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="reuse_delay" val="60000" /> 
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="false" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39171" level="1" /> 
+		</skills>
+	</item>
+	<item id="49785" name="A그레이드 무기 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39172" level="1" /> 
+		</skills>
+	</item>
+	<item id="49786" name="A그레이드 방어구 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39173" level="1" /> 
+		</skills>
+	</item>
+	<item id="49787" name="안정된 강화 주문서 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49788" name="고급 강화 주문서 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="49789" name="+8 B그레이드 무기 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39174" level="1" /> 
+		</skills>
+	</item>
+	<item id="49790" name="+16 C그레이드 무기 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39175" level="1" /> 
+		</skills>
+	</item>
+	<item id="49791" name="차파 변신 팔찌 - 프로핏" additionalName="1일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
+	</item>
+	<item id="49792" name="차파 변신 팔찌 - 실리엔엘더" additionalName="1일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
+	</item>
+	<item id="49793" name="차파 변신 팔찌 - 엘더" additionalName="1일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
+	</item>
+	<item id="49794" name="차파 변신 팔찌 - 프로핏" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="49795" name="차파 변신 팔찌 - 실리엔엘더" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="49796" name="차파 변신 팔찌 - 엘더" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="49797" name="속이 꽉 찬 차파의 선물" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_ev_draco_gift_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="49798" name="응원 수술" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.ev_12th_weapon" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="3266" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">12</stat>
+			<stat type="mAtk">12</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">200</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="49799" name="고속 버스 패스 카드" type="EtcItem">
+		<set name="icon" val="icon.card_hidden" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

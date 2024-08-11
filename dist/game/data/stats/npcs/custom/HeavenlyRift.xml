@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/npcs.xsd">
+	<npc id="18004" level="83" type="Tower" name="수호탑">
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire sp="1" />
+		<stats str="40" int="21" dex="30" wit="20" con="66" men="10">
+			<vitals hp="712000" hpRegen="5.5" mp="1345" mpRegen="2.1" />
+			<attack physical="290.45" magical="198.34" random="30" critical="4" accuracy="20" attackSpeed="257" type="BOW" range="50" distance="80" width="120" />
+			<defence physical="2750.66" magical="143.18" />
+			<speed>
+				<walk ground="0" />
+				<run ground="0" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" attackable="true" canMove="false" />
+		<skillList>
+			<skill id="4273" level="3" /> <!-- Resist Daggers/Rapier Weapon -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Weak Point -->
+			<skill id="4408" level="7" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="12" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="9" /> <!-- Bows -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4444" level="2" /> <!-- Higher Resist Bow/Crossbow Weapons -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450" />
+		<collision>
+			<radius normal="7" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="36697" level="85" type="Monster" name="정령 천사" title="한손검 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="1" /> <!-- 한손검 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36698" level="85" type="Monster" name="정령 천사" title="양손검 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="2" /> <!-- 양손검 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36699" level="85" type="Monster" name="정령 천사" title="이도류 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="3" /> <!-- 이도류 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36700" level="85" type="Monster" name="정령 천사" title="단검 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="4" /> <!-- 단검 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36701" level="85" type="Monster" name="정령 천사" title="둔기류 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="5" /> <!-- 둔기류 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36702" level="85" type="Monster" name="정령 천사" title="격투 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="6" /> <!-- 격투 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36703" level="85" type="Monster" name="정령 천사" title="창 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="7" /> <!-- 창 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36704" level="85" type="Monster" name="정령 천사" title="활 무기 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="8" /> <!-- 활 무기 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+	<npc id="36705" level="85" type="Monster" name="정령 천사" title="공격 마법 내성">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="243344" sp="7300" />
+		<equipment rhand="148" />
+		<stats str="40" int="21" dex="44" wit="20" con="43" men="10">
+			<vitals hp="8254.61235426567" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<attack physical="1468.507942" magical="651.015134" random="10" critical="14" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2325.507567" magical="238.192317" />
+			<speed>
+				<walk ground="60" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="true" />
+		<skillList>
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4408" level="16" /> <!-- HP Increase (1x) -->
+			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
+			<skill id="4411" level="19" /> <!-- Extremely Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="12" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="30263" level="9" /> <!-- 공격 마법 내성 -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="2000" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13.5" />
+			<height normal="36.5" />
+		</collision>
+	</npc>
+</list>

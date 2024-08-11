@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="5126" name="듀얼 소드 제작 인지" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="5127" name="몹전용(다일라온)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5128" name="몹전용(크로키안)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;300;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5129" name="몹전용(돌 블레이더)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">200</stat>
+			<stat type="mAtk">6</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5130" name="몹전용(노스)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;300;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5131" name="몹전용(parhit)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;300;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5132" name="몹전용(wgiant)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;300;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="300" />
+		<set name="price" val="10000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5133" name="크로노 탬버린" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_tambourine_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5134" name="무급 정령탄압축팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="600" />
+		<set name="price" val="2300" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2078" level="1" /> 
+		</skills>
+	</item>
+	<item id="5135" name="정령탄압축팩-D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="3300" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2079" level="1" /> 
+		</skills>
+	</item>
+	<item id="5136" name="정령탄압축팩-C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="4950" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2080" level="1" /> 
+		</skills>
+	</item>
+	<item id="5137" name="정령탄압축팩-B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="16500" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2081" level="1" /> 
+		</skills>
+	</item>
+	<item id="5138" name="정령탄압축팩-A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="26400" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2082" level="1" /> 
+		</skills>
+	</item>
+	<item id="5139" name="정령탄압축팩-S그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="33000" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SOULSHOT" />
+		<skills>
+			<skill id="2083" level="1" /> 
+		</skills>
+	</item>
+	<item id="5140" name="무급 마정탄압축팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="750" />
+		<set name="price" val="4950" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2084" level="1" /> 
+		</skills>
+	</item>
+	<item id="5141" name="마정탄압축팩-D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="750" />
+		<set name="price" val="5940" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2085" level="1" /> 
+		</skills>
+	</item>
+	<item id="5142" name="마정탄압축팩-C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="11550" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2086" level="1" /> 
+		</skills>
+	</item>
+	<item id="5143" name="마정탄압축팩-B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="33000" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2087" level="1" /> 
+		</skills>
+	</item>
+	<item id="5144" name="마정탄압축팩-A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="39600" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2088" level="1" /> 
+		</skills>
+	</item>
+	<item id="5145" name="마정탄압축팩-S그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="49500" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2089" level="1" /> 
+		</skills>
+	</item>
+	<item id="5146" name="무급 축마정탄압축팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="750" />
+		<set name="price" val="11550" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2090" level="1" /> 
+		</skills>
+	</item>
+	<item id="5147" name="축마정탄압축팩-D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="750" />
+		<set name="price" val="14850" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2091" level="1" /> 
+		</skills>
+	</item>
+	<item id="5148" name="축마정탄압축팩-C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="29700" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2092" level="1" /> 
+		</skills>
+	</item>
+	<item id="5149" name="축마정탄압축팩-B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="450" />
+		<set name="price" val="80850" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2093" level="1" /> 
+		</skills>
+	</item>
+	<item id="5150" name="축마정탄압축팩-A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="95700" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2094" level="1" /> 
+		</skills>
+	</item>
+	<item id="5151" name="축마정탄압축팩-S그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="200" />
+		<set name="price" val="115500" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2095" level="1" /> 
+		</skills>
+	</item>
+	<item id="5152" name="마법의 압축기" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="price" val="100" />
+	</item>
+	<item id="5153" name="레시피: 정령탄(D) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="5000" />
+		<set name="recipe_id" val="480" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5154" name="레시피: 정령탄(C) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="60000" />
+		<set name="recipe_id" val="481" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5155" name="레시피: 정령탄(B) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="100000" />
+		<set name="recipe_id" val="482" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5156" name="레시피: 정령탄(A) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="150000" />
+		<set name="recipe_id" val="483" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5157" name="레시피: 정령탄(S) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="450000" />
+		<set name="recipe_id" val="484" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5158" name="레시피: 마정탄(D) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="5000" />
+		<set name="recipe_id" val="485" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5159" name="레시피: 마정탄(C) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="60000" />
+		<set name="recipe_id" val="486" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5160" name="레시피: 마정탄(B) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="100000" />
+		<set name="recipe_id" val="487" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5161" name="레시피: 마정탄(A) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="150000" />
+		<set name="recipe_id" val="488" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5162" name="레시피: 마정탄(S) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="450000" />
+		<set name="recipe_id" val="489" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5163" name="레시피: 축마정탄(D) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="5000" />
+		<set name="recipe_id" val="490" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5164" name="레시피: 축마정탄(C) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="60000" />
+		<set name="recipe_id" val="491" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5165" name="레시피: 축마정탄(B) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="100000" />
+		<set name="recipe_id" val="492" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5166" name="레시피: 축마정탄(A) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="150000" />
+		<set name="recipe_id" val="493" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="5167" name="레시피: 축마정탄(S) 압축팩(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="450000" />
+		<set name="recipe_id" val="494" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+		<set name="commissionItemType" val="RECIPE" />
+	</item>
+	<item id="5168" name="스트라이더용 사료" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="200" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="PetFood" />
+		<set name="commissionItemType" val="PET_SUPPLIES" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<skills>
+			<skill id="2101" level="1" /> 
+		</skills>
+	</item>
+	<item id="5169" name="고급 스트라이더 사료" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="300" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="PetFood" />
+		<set name="commissionItemType" val="PET_SUPPLIES" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<skills>
+			<skill id="2102" level="1" /> 
+		</skills>
+	</item>
+	<item id="5170" name="미스릴 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i08" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="412500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">41</stat>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="5171" name="브리건딘 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i09" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="598500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">44</stat>
+			<stat type="pDef">44</stat>
+		</stats>
+	</item>
+	<item id="5172" name="드라코닉 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i09" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="928500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">46</stat>
+			<stat type="pDef">46</stat>
+		</stats>
+	</item>
+	<item id="5173" name="블러드 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i10" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="1335500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">49</stat>
+			<stat type="pDef">49</stat>
+		</stats>
+	</item>
+	<item id="5174" name="오피디언 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i10" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="2032000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">52</stat>
+			<stat type="pDef">52</stat>
+		</stats>
+	</item>
+	<item id="5175" name="인페르노 팬저코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i11" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="2784000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="mDef">54</stat>
+			<stat type="pDef">54</stat>
+		</stats>
+	</item>
+	<item id="5176" name="서펜타인 스파이크" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i08" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="800000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">17</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5177" name="드레이크 혼" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i09" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="1150000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">19</stat>
+			<stat type="mAtk">24</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5178" name="어썰트 알리콘" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i09" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="1700000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">21</stat>
+			<stat type="mAtk">27</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5179" name="드라코닉 슬라이서" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i10" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="2450000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">23</stat>
+			<stat type="mAtk">30</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5180" name="오피니언 랜서" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i10" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="3650000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">25</stat>
+			<stat type="mAtk">34</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5181" name="다이아몬드 드릴" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i11" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="5000000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="STRIDER" />
+		</cond>
+		<stats>
+			<stat type="pAtk">27</stat>
+			<stat type="mAtk">37</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5182" name="해츨링용 고르곤 코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="598500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">44</stat>
+			<stat type="pDef">44</stat>
+		</stats>
+	</item>
+	<item id="5183" name="해츨링용 오피디언 플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="928500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">46</stat>
+			<stat type="pDef">46</stat>
+		</stats>
+	</item>
+	<item id="5184" name="해츨링용 크림슨 플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="1335500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">49</stat>
+			<stat type="pDef">49</stat>
+		</stats>
+	</item>
+	<item id="5185" name="해츨링용 드라코닉 플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="2032000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">52</stat>
+			<stat type="pDef">52</stat>
+		</stats>
+	</item>
+	<item id="5186" name="해츨링용 인페르노 플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i07" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="2784000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">54</stat>
+			<stat type="pDef">54</stat>
+		</stats>
+	</item>
+	<item id="5187" name="서펜타인 그라인더" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="1150000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">19</stat>
+			<stat type="mAtk">24</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5188" name="다하크의 이빨" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="1700000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">21</stat>
+			<stat type="mAtk">27</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5189" name="크림슨 블러드팽" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="2450000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">23</stat>
+			<stat type="mAtk">30</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5190" name="드라코닉 쵸퍼" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="3650000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">25</stat>
+			<stat type="mAtk">34</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5191" name="디아볼릭 그라인더" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i07" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="4000000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">27</stat>
+			<stat type="mAtk">37</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="5192" name="마법의 밧줄 - D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="100" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="5193" name="마법의 밧줄 - C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="5194" name="마법의 밧줄 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="250" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="5195" name="마법의 밧줄 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_braided_hemp_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="400" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="5196" name="마법의 밧줄 - S그레이드" type="EtcItem">
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="400" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="5197" name="상자 열쇠 - 8급" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="70" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2065" level="1" /> 
+		</skills>
+	</item>
+	<item id="5198" name="상자 열쇠 - 7급" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="760" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2065" level="2" /> 
+		</skills>
+	</item>
+	<item id="5199" name="상자 열쇠 - 6급" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="1200" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2065" level="3" /> 
+		</skills>
+	</item>
+</list>

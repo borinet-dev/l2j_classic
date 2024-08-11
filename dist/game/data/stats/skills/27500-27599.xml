@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="27585" toLevel="1" name="Adventurer's Shirt Effect">
+		<!-- INT +2, STR +2, Speed +7 -->
+		<icon>BranchIcon.icon.shirt_of_explorer_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Speed">
+				<amount>7</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27588" toLevel="1" name="Adventurer's Circlet">
+		<!-- P. Atk. +3%, M. Atk. +6% -->
+		<icon>BranchSys.icon.br_valkyrie_cap_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27597" toLevel="1" name="Summon Riding Wolf">
+		<icon>icon.skill0083</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>36952</itemConsumeId>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>1500</hitTime>
+		<hitCancelTime>0.5</hitCancelTime>
+		<magicLevel>99</magicLevel>
+		<isMagic>2</isMagic>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<conditions>
+			<condition name="OpMainjob" />
+			<condition name="CheckLevel">
+				<minLevel>99</minLevel>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>27596</skillId> <!-- Riding Wolf -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>27596</skillId> <!-- Riding Wolf -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27598" toLevel="1" name="Perfect Swing">
+		<!-- Allows to concentrate on the ball and strike it with enough force to do a home run. -->
+		<icon>icon.homerun</icon>
+		<operateType>A2</operateType>
+		<effectPoint>687</effectPoint>
+		<hitTime>5500</hitTime>
+		<coolTime>400</coolTime>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="27599" toLevel="1" name="Perfect Pitch">
+		<!-- Allows to serve the ball with enough force to stop the batter from hitting it. -->
+		<icon>icon.strikeout</icon>
+		<operateType>A2</operateType>
+		<effectPoint>687</effectPoint>
+		<hitTime>5500</hitTime>
+		<coolTime>400</coolTime>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+</list>

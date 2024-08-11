@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="14509" toLevel="2" name="HP Transfer">
+		<!-- Connects souls and recovers HP. -->
+		<icon>icon.skill1042</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>600000</hitTime>
+	</skill>
+	<skill id="14516" toLevel="1" name="Darkness Scream">
+		<!-- Fear status. -->
+		<icon>icon.skill0763</icon>
+		<operateType>A2</operateType>
+		<castRange>500</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>TURN_FLEE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1000</effectRange>
+		<magicLevel>96</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>10</abnormalTime>
+		<trait>DERANGEMENT</trait>
+		<affectRange>500</affectRange>
+		<abnormalVisualEffect>TURN_FLEE</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Fear" />
+			<effect name="BlockControl" />
+			<effect name="DamOverTime">
+				<power>300</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14519" toLevel="1" name="Fire Pit of Hell">
+		<!-- HP is decreased. -->
+		<icon>icon.skill1296</icon>
+		<operateType>A2</operateType>
+		<castRange>500</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-2</effectPoint>
+		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
+		<abnormalType>BLEEDING</abnormalType>
+		<abnormalResists>TURN_FLEE;KNOCKDOWN;DEPORT;SILENCE;PARALYZE;ABSORB;DISARM;SILENCE_PHYSICAL;SILENCE_ALL;CHANGEBODY;TURN_STONE;DERANGEMENT;AIRBIND;SLEEP;OBLIVION;MIRAGE;MIRAGE_TRAP;ROOT_MAGICALLY;ROOT_PHYSICALLY;STUN;PUBLIC_SLOT</abnormalResists>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1000</effectRange>
+		<magicLevel>96</magicLevel>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>10</abnormalTime>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>250</affectRange>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>306</power>
+			</effect>
+			<effect name="DamOverTime">
+				<power>300</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14520" toLevel="1" name="Ice Box of Hell">
+		<!-- HP is decreased. -->
+		<icon>icon.skill1296</icon>
+		<operateType>A2</operateType>
+		<castRange>500</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>STUN</abnormalType>
+		<abnormalResists>TURN_FLEE;KNOCKDOWN;DEPORT;SILENCE;PARALYZE;ABSORB;DISARM;SILENCE_PHYSICAL;SILENCE_ALL;CHANGEBODY;TURN_STONE;DERANGEMENT;AIRBIND;SLEEP;OBLIVION;MIRAGE;MIRAGE_TRAP;ROOT_MAGICALLY;ROOT_PHYSICALLY;STUN;PUBLIC_SLOT</abnormalResists>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1000</effectRange>
+		<magicLevel>96</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>2</abnormalTime>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>250</affectRange>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>437</power>
+			</effect>
+			<effect name="KnockBack">
+				<distance>200</distance>
+				<speed>400</speed>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="14559" toLevel="1" name="Soul Drain Status">
+		<!-- HP is being absorbed. -->
+		<icon>icon.skill1042</icon>
+		<operateType>A2</operateType>
+		<castRange>500</castRange>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>PHYSICAL_STANCE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1000</effectRange>
+		<magicLevel>90</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>10</abnormalTime>
+		<abnormalVisualEffect>DOT_POISON</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamOverTime">
+				<power>1</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14574" toLevel="1" name="Energy Bomb">
+		<operateType>A1</operateType>
+		<effectPoint>-100</effectPoint>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>180</attributeValue>
+		<affectRange>700</affectRange>
+		<hitTime>100</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<isSuicideAttack>true</isSuicideAttack>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>100000</power>
+			</effect>
+		</effects>
+	</skill>
+</list>

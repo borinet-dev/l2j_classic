@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="29500" name="마력의 반지" type="Armor">
+		<set name="icon" val="icon.accessary_enchanted_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="mDef">18</stat>
+		</stats>
+	</item>
+	<item id="29501" name="흑진주 반지" type="Armor">
+		<set name="icon" val="icon.accessary_black_pearl_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="mDef">20</stat>
+		</stats>
+	</item>
+	<item id="29502" name="엘븐 링" type="Armor">
+		<set name="icon" val="icon.accessary_elven_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="mDef">22</stat>
+		</stats>
+	</item>
+	<item id="29503" name="미스릴 반지" type="Armor">
+		<set name="icon" val="icon.accessary_mithril_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="mDef">24</stat>
+		</stats>
+	</item>
+	<item id="29504" name="헌신의 반지" type="Armor">
+		<set name="icon" val="icon.accessary_ring_of_devotion_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="mDef">16</stat>
+		</stats>
+	</item>
+	<item id="29505" name="일반 VIP충전 주문서" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_bm_vip_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29506" name="중급 VIP충전 주문서" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_bm_vip_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29507" name="상급 VIP충전 주문서" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_bm_vip_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29508" name="최상급 VIP충전 주문서" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_bm_vip_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29509" name="축복의 깃털-npc용 임시" type="EtcItem">
+		<set name="icon" val="icon.blessed_feather_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29510" name="초보자 패키지 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="34603" min="5000" max="5000" chance="100" /> 
+			<item id="34610" min="1000" max="1000" chance="100" /> 
+			<item id="49032" min="1" max="1" chance="100" /> 
+			<item id="49000" min="1" max="1" chance="100" /> 
+			<item id="29511" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29511" name="초보자 패키지 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29512" min="1" max="1" chance="100" /> 
+			<item id="41245" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="10" />
+		</cond>
+	</item>
+	<item id="29512" name="초보자 패키지 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29527" min="1" max="1" chance="100" /> 
+			<item id="34604" min="9000" max="9000" chance="100" /> 
+			<item id="34611" min="2000" max="2000" chance="100" /> 
+			<item id="29513" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="20" />
+		</cond>
+	</item>
+	<item id="29513" name="초보자 패키지 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29529" min="1" max="1" chance="100" /> 
+			<item id="34604" min="9000" max="9000" chance="100" /> 
+			<item id="34611" min="2000" max="2000" chance="100" /> 
+			<item id="29514" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="25" />
+		</cond>
+	</item>
+	<item id="29514" name="초보자 패키지 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29530" min="1" max="1" chance="100" /> 
+			<item id="34604" min="9000" max="9000" chance="100" /> 
+			<item id="34611" min="2000" max="2000" chance="100" /> 
+			<item id="29515" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="30" />
+		</cond>
+	</item>
+	<item id="29515" name="초보자 패키지 - 6단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29519" min="10" max="10" chance="100" /> 
+			<item id="34604" min="9000" max="9000" chance="100" /> 
+			<item id="34611" min="2000" max="2000" chance="100" /> 
+			<item id="29516" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="35" />
+		</cond>
+	</item>
+	<item id="29516" name="초보자 패키지 - 7단계" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49573" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+		<cond msgId="113" addName="1">
+			<player level="40" />
+		</cond>
+	</item>
+	<item id="29517" name="축복받은 귀환 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29518" name="축복받은 부활 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_resurrection_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29519" name="EXP/SP 부스트 주문서 - 중급" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55000" level="3" /> 
+		</skills>
+	</item>
+	<item id="29520" name="VIP 코인" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_vip_coin_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29521" name="신비한 무급 정령탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_a_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29023" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29522" name="신비한 무급 축복받은 마정탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_a_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29024" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29523" name="신비한 D급 정령탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_d_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29025" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29524" name="신비한 D급 축복받은 마정탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29026" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29525" name="신비한 C급 정령탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_c_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29027" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29526" name="신비한 C급 축복받은 마정탄 1000개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_c_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29028" min="1000" max="1000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29527" name="세이버*엘븐소드" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2510" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="pAtk">96</stat>
+			<stat type="mAtk">47</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="29528" name="엘븐 링 제작 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29529" name="마력의 목걸이 제작 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="1900" min="5" max="5" chance="100" /> 
+			<item id="1886" min="1" max="1" chance="100" /> 
+			<item id="1878" min="15" max="15" chance="100" /> 
+			<item id="1865" min="3" max="3" chance="100" /> 
+			<item id="1458" min="18" max="18" chance="100" /> 
+			<item id="2130" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29530" name="타이거 아이 제작 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="1901" min="6" max="6" chance="100" /> 
+			<item id="1886" min="1" max="1" chance="100" /> 
+			<item id="1884" min="30" max="30" chance="100" /> 
+			<item id="1865" min="6" max="6" chance="100" /> 
+			<item id="1458" min="22" max="22" chance="100" /> 
+			<item id="2130" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29531" name="신비한 무급 격수 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29023" min="5000" max="5000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29532" name="신비한 무급 법사 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29024" min="1000" max="1000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29533" name="신비한 D급 격수 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29025" min="5000" max="5000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29534" name="신비한 D급 법사 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29026" min="1000" max="1000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29535" name="신비한 C급 격수 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29027" min="5000" max="5000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29536" name="신비한 C급 법사 사냥 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29028" min="1000" max="1000" chance="100" /> 
+			<item id="29009" min="15" max="15" chance="100" /> 
+			<item id="29011" min="15" max="15" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29537" name="헤어 액세서리용 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_ball_silver_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29538" name="무급 정령탄" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_etc_soulshot_i01" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29539" name="축복받은 무급 마정탄" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_etc_spiritshot_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29540" name="정령탄 - D그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_soulshot_d_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29541" name="축복받은 마정탄 - D그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_spiritshot_d_i00" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29542" name="정령탄 - C그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_soulshot_c_i00" />
+		<set name="default_action" val="SOULSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29543" name="축복받은 마정탄 - C그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_spiritshot_c_i00" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29544" name="크로니클 계승자의 고급 반지" type="Armor">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="mDef">14</stat>
+		</stats>
+	</item>
+	<item id="29545" name="축복받은 귀환 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29546" name="축복받은 부활 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_resurrection_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29547" name="무기 강화 주문서-D그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_scrl_of_ench_wp_d_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29548" name="갑옷 강화 주문서-D그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_scrl_of_ench_am_d_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29549" name="무기 강화 주문서-C그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_scrl_of_ench_wp_c_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29550" name="갑옷 강화 주문서-C그레이드" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_scrl_of_ench_am_c_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29551" name="크로니클 계승자의 반지 조각" type="EtcItem">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29552" name="1차 전직 버프 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="55035" level="1" /> 
+		</skills>
+	</item>
+	<item id="29553" name="2차 전직 버프 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="price" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="55036" level="2" /> 
+		</skills>
+	</item>
+	<item id="29554" name="순간 체력 회복제" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_gold_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="price" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55037" level="1" /> 
+		</skills>
+	</item>
+	<item id="29555" name="고급 순간 체력 회복제" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_gold_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55038" level="1" /> 
+		</skills>
+	</item>
+	<item id="29556" name="크로니클 상자" type="EtcItem">
+		<set name="icon" val="icon.new_user_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29557" name="신비한 무급 정령탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_a_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29558" name="신비한 무급 축복받은 마정탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_a_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29559" name="신비한 D급 정령탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_d_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29560" name="신비한 D급 축복받은 마정탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_d_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29561" name="신비한 C급 정령탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_soulshot_c_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29562" name="신비한 C급 축복받은 마정탄 100개 팩" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_pack_of_spiritshot_c_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29563" name="럭키 코인" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_premium_coin_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29564" name="출석 코인" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_att_coin_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29565" name="EXP/SP 부스트 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_exp_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55041" level="1" /> 
+		</skills>
+	</item>
+	<item id="29566" name="출석보상 경험치의 룬" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="55042" level="1" /> 
+		</skills>
+	</item>
+	<item id="29567" name="6일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29568" name="7일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29569" name="13일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29570" name="14일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29571" name="20일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29572" name="21일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29573" name="27일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29574" name="28일차 출석 선물" additionalName="Attendance Reward" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29575" name="여왕개미의 반지" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_queen_ant_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="commissionItemType" val="RING" />
+		<skills>
+			<skill id="3562" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">32</stat>
+			<stat type="maxMp">9</stat>
+		</stats>
+	</item>
+	<item id="29576" name="오르펜의 귀걸이" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_orfen_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="commissionItemType" val="EARRING" />
+		<skills>
+			<skill id="3560" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">51</stat>
+			<stat type="maxMp">19</stat>
+		</stats>
+	</item>
+	<item id="29577" name="코어의 반지" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_core_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="commissionItemType" val="RING" />
+		<skills>
+			<skill id="3563" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">32</stat>
+			<stat type="maxMp">9</stat>
+		</stats>
+	</item>
+	<item id="29578" name="레어 액세서리 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39058" level="1" /> 
+		</skills>
+	</item>
+	<item id="29579" name="소어링 버드" type="Armor">
+		<set name="icon" val="icon.bm_soaring_bird" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="39025" level="1" /> 
+		</skills>
+	</item>
+	<item id="29580" name="dreamin7 쿠폰" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29581" name="LineageII 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55044" level="1" /> 
+		</skills>
+	</item>
+	<item id="29582" name="Chronicle 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55045" level="1" /> 
+		</skills>
+	</item>
+	<item id="29583" name="Memories 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="55046" level="1" /> 
+		</skills>
+	</item>
+	<item id="29584" name="앤젤 캣의 축복 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35669" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="29585" name="세련된 로맨틱 샤프롱" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="55047" level="1" /> 
+			<skill id="55048" level="1" /> 
+		</skills>
+	</item>
+	<item id="29586" name="세련된 로맨틱 샤프롱(30일) 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="29587" name="아가시온 봉인 팔찌 - 싱어/댄서" type="Armor">
+		<set name="icon" val="BranchSys2.icon.br_aga_singer_dancer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="true" />
+		<set name="price" val="50000" />
+		<skills>
+			<skill id="21233" level="1" type="ON_EQUIP" /> 
+			<skill id="23234" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+			<skill id="55270" level="1" /> 
+			<skill id="55271" level="1" /> 
+			<skill id="55272" level="1" /> 
+		</skills>
+	</item>
+	<item id="29588" name="블랙 싸울아비 30일 박스" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="29589" name="블랙 싸울아비 30일 박스" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="29590" name="블랙 싸울아비" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2340" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">155</stat>
+			<stat type="mAtk">70</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="29591" name="블랙 싸울아비" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2340" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">155</stat>
+			<stat type="mAtk">70</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="29592" name="소어링 버드 30일 박스" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="29593" name="소어링 버드 30일 박스" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="29594" name="크로니클 계승자의 고급 반지" additionalName="3 days" type="Armor">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="mDef">14</stat>
+		</stats>
+	</item>
+	<item id="29595" name="크로니클 계승자의 고급 반지" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<stats>
+			<stat type="mDef">14</stat>
+		</stats>
+	</item>
+	<item id="29596" name="크로니클 계승자의 고급 반지" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<stats>
+			<stat type="mDef">14</stat>
+		</stats>
+	</item>
+	<item id="29597" name="크로니클 계승자의 고급 반지" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.event_classic_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">14</stat>
+		</stats>
+	</item>
+	<item id="29598" name="크로니클 계승자의 고급 장비 랜덤박스" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="29599" name="크로니클 계승자의 고급 장비 랜덤박스" type="EtcItem">
+		<set name="icon" val="icon.ev_10th_present2" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

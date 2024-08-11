@@ -1,0 +1,1596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="9900" name="조용한 발걸음 반지" type="Armor">
+		<set name="icon" val="icon.accessary_ring_of_mana_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="400" />
+		<set name="useSkillDisTime" val="8" />
+		<skills>
+			<skill id="3407" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">7</stat>
+		</stats>
+	</item>
+	<item id="9901" name="향상된 펄션" type="Weapon">
+		<set name="icon" val="icon.weapon_falchion_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="1530" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">31</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9902" name="향상된 장창" type="Weapon">
+		<set name="icon" val="icon.weapon_long_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="2120" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">31</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="9903" name="향상된 쇠망치" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">31</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9904" name="향상된 소드 브레이커" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_breaker_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1110" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">27</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9905" name="향상된 독사 이빨" type="Weapon">
+		<set name="icon" val="icon.weapon_vipers_canine_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">38</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9906" name="향상된 합성 활" type="Weapon">
+		<set name="icon" val="icon.weapon_composition_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1880" />
+		<set name="soulshots" val="7" />
+		<set name="spiritshots" val="2" />
+		<set name="mp_consume" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">64</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="9907" name="향상된 버지건" type="Weapon">
+		<set name="icon" val="icon.weapon_buzdygan_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1800" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">31</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9908" name="향상된 법사의 지팡이" type="Weapon">
+		<set name="icon" val="icon.weapon_apprentices_staff_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1050" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchanted" val="15" />
+		<stats>
+			<stat type="pAtk">30</stat>
+			<stat type="mAtk">31</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="9909" name="아가시온 봉인 팔찌" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="700" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="5458" level="1" /> 
+			<skill id="3361" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="9910" name="피의 맹세" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9911" name="피의 결의" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9912" name="기사의 견장" type="EtcItem">
+		<set name="icon" val="icon.etc_shoulder_strap_of_knight_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="1000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_depositable" val="false" />
+	</item>
+	<item id="9913" name="탈리스만_테스트" type="Armor">
+		<set name="icon" val="icon.etc_crystal_ball_silver_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+	</item>
+	<item id="9914" name="청색 탈리스만 - 공격력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3271" level="1" /> 
+		</skills>
+	</item>
+	<item id="9915" name="청색 탈리스만 - 마법 크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="75" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3277" level="1" /> 
+		</skills>
+	</item>
+	<item id="9916" name="청색 탈리스만 - 버서커" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3285" level="1" /> 
+		</skills>
+	</item>
+	<item id="9917" name="적색 탈리스만 - 사용MP 소폭 감소" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3281" level="1" /> 
+		</skills>
+	</item>
+	<item id="9918" name="적색 탈리스만 - 사용MP 대폭 감소" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="74" />
+		<set name="useSkillDisTime" val="15" />
+		<skills>
+			<skill id="3282" level="1" /> 
+		</skills>
+	</item>
+	<item id="9919" name="청색 탈리스만 - 대미지 반사" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3410" level="1" /> 
+		</skills>
+	</item>
+	<item id="9920" name="청색 탈리스만 - 투명화" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="64" />
+		<set name="useSkillDisTime" val="3" />
+		<skills>
+			<skill id="3280" level="1" /> 
+		</skills>
+	</item>
+	<item id="9921" name="청색 탈리스만 - 방패 방어" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3274" level="1" /> 
+		</skills>
+	</item>
+	<item id="9922" name="검은색 탈리스만 - 붕대" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3286" level="1" /> 
+		</skills>
+	</item>
+	<item id="9923" name="검은색 탈리스만 - 탈출" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3289" level="1" /> 
+		</skills>
+	</item>
+	<item id="9924" name="청색 탈리스만 - 힐 위력 증가" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="64" />
+		<set name="useSkillDisTime" val="5" />
+		<skills>
+			<skill id="3283" level="1" /> 
+		</skills>
+	</item>
+	<item id="9925" name="적색 탈리스만 - HP/CP 회복" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="64" />
+		<set name="useSkillDisTime" val="5" />
+		<skills>
+			<skill id="3273" level="1" /> 
+		</skills>
+	</item>
+	<item id="9926" name="청색 탈리스만 - 방어력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3272" level="1" /> 
+		</skills>
+	</item>
+	<item id="9927" name="청색 탈리스만 - 마법 방어력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3276" level="1" /> 
+		</skills>
+	</item>
+	<item id="9928" name="적색 탈리스만 - MP 회복 속도" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3278" level="1" /> 
+		</skills>
+	</item>
+	<item id="9929" name="청색 탈리스만 - 방패 방어율 증가" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3275" level="1" /> 
+		</skills>
+	</item>
+	<item id="9930" name="청색 탈리스만 - 회피" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3321" level="1" /> 
+		</skills>
+	</item>
+	<item id="9931" name="적색 탈리스만 - MP 릴렉스" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="74" />
+		<set name="useSkillDisTime" val="15" />
+		<skills>
+			<skill id="3279" level="1" /> 
+		</skills>
+	</item>
+	<item id="9932" name="청색 탈리스만 - 가호" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="74" />
+		<set name="useSkillDisTime" val="15" />
+		<skills>
+			<skill id="3284" level="1" /> 
+		</skills>
+	</item>
+	<item id="9933" name="황색 탈리스만 - 공격력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3293" level="1" /> 
+		</skills>
+	</item>
+	<item id="9934" name="황색 탈리스만 - 공격속도" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3301" level="1" /> 
+		</skills>
+	</item>
+	<item id="9935" name="황색 탈리스만 - 마법 방어력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3296" level="1" /> 
+		</skills>
+	</item>
+	<item id="9936" name="황색 탈리스만 - 마법력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3294" level="1" /> 
+		</skills>
+	</item>
+	<item id="9937" name="황색 탈리스만 - 마법속도" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3302" level="1" /> 
+		</skills>
+	</item>
+	<item id="9938" name="황색 탈리스만 - 명중" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3297" level="1" /> 
+		</skills>
+	</item>
+	<item id="9939" name="황색 탈리스만 - 방어력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3295" level="1" /> 
+		</skills>
+	</item>
+	<item id="9940" name="황색 탈리스만 - 속도 증가" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3313" level="1" /> 
+		</skills>
+	</item>
+	<item id="9941" name="황색 탈리스만 - 이동속도" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3300" level="1" /> 
+		</skills>
+	</item>
+	<item id="9942" name="황색 탈리스만 - 크리티컬 감소" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3317" level="1" /> 
+		</skills>
+	</item>
+	<item id="9943" name="황색 탈리스만 - 크리티컬 위력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3299" level="1" /> 
+		</skills>
+	</item>
+	<item id="9944" name="황색 탈리스만 - 크리티컬 회피" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3316" level="1" /> 
+		</skills>
+	</item>
+	<item id="9945" name="황색 탈리스만 - 회피" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3298" level="1" /> 
+		</skills>
+	</item>
+	<item id="9946" name="황색 탈리스만 - 힐 위력" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3312" level="1" /> 
+		</skills>
+	</item>
+	<item id="9947" name="황색 탈리스만 - CP 회복량" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3311" level="1" /> 
+		</skills>
+	</item>
+	<item id="9948" name="황색 탈리스만 - HP 회복량" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3310" level="1" /> 
+		</skills>
+	</item>
+	<item id="9949" name="황색 탈리스만 - MP 회복량" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3320" level="1" /> 
+		</skills>
+	</item>
+	<item id="9950" name="회색 탈리스만 - 무게 게이지" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i07" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3314" level="1" /> 
+		</skills>
+	</item>
+	<item id="9951" name="회색 탈리스만 - 중급 낚시 숙련" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i07" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3315" level="1" /> 
+		</skills>
+	</item>
+	<item id="9952" name="주황색 탈리스만 - 온천 투지의 물약" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="price" val="15000" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="64" />
+		<set name="useSkillDisTime" val="5" />
+		<skills>
+			<skill id="3332" level="1" /> 
+		</skills>
+	</item>
+	<item id="9953" name="주황색 탈리스만 - 생명의 비약" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="64" />
+		<set name="useSkillDisTime" val="5" />
+		<skills>
+			<skill id="3333" level="1" /> 
+		</skills>
+	</item>
+	<item id="9954" name="주황색 탈리스만 - 정신의 비약" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3334" level="1" /> 
+		</skills>
+	</item>
+	<item id="9955" name="검은색 탈리스만 - 마법 침묵 해제" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3291" level="1" /> 
+		</skills>
+	</item>
+	<item id="9956" name="검은색 탈리스만 - 마법 탈출" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3288" level="1" /> 
+		</skills>
+	</item>
+	<item id="9957" name="검은색 탈리스만 - 물리 탈출" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3287" level="1" /> 
+		</skills>
+	</item>
+	<item id="9958" name="검은색 탈리스만 - 물리 침묵 해제" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3290" level="1" /> 
+		</skills>
+	</item>
+	<item id="9959" name="검은색 탈리스만 - 침묵 해제" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="65" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="3292" level="1" /> 
+		</skills>
+	</item>
+	<item id="9960" name="흰색 탈리스만 - 공포 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3306" level="1" /> 
+		</skills>
+	</item>
+	<item id="9961" name="흰색 탈리스만 - 마비 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3307" level="1" /> 
+		</skills>
+	</item>
+	<item id="9962" name="흰색 탈리스만 - 쇼크 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3305" level="1" /> 
+		</skills>
+	</item>
+	<item id="9963" name="흰색 탈리스만 - 수면 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3304" level="1" /> 
+		</skills>
+	</item>
+	<item id="9964" name="흰색 탈리스만 - 출혈 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3303" level="1" /> 
+		</skills>
+	</item>
+	<item id="9965" name="흰색 탈리스만 - 캔슬 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3309" level="1" /> 
+		</skills>
+	</item>
+	<item id="9966" name="흰색 탈리스만 - 홀드 내성" type="Armor">
+		<set name="icon" val="icon.etc_talisman_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="60" />
+		<set name="useSkillDisTime" val="1" />
+		<skills>
+			<skill id="3308" level="1" /> 
+		</skills>
+	</item>
+	<item id="9967" name="레시피: 다이너스티 소드(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="872" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9968" name="레시피: 다이너스티 블레이드(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="873" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9969" name="레시피: 다이너스티 팬텀(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="874" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9970" name="레시피: 다이너스티 보우(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="875" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Recipes" />
+		<set name="commissionItemType" val="RECIPE" />
+	</item>
+	<item id="9971" name="레시피: 다이너스티 나이프(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="876" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9972" name="레시피: 다이너스티 핼버드(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="877" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9973" name="레시피: 다이너스티 커젤(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="878" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9974" name="레시피: 다이너스티 메이스(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="879" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9975" name="레시피: 다이너스티 바그나우(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="recipe_id" val="880" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9976" name="레시피: 다이너스티 소드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9977" name="레시피: 다이너스티 블레이드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9978" name="레시피: 다이너스티 팬텀(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9979" name="레시피: 다이너스티 보우(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9980" name="레시피: 다이너스티 나이프(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9981" name="레시피: 다이너스티 핼버드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9982" name="레시피: 다이너스티 커젤(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9983" name="레시피: 다이너스티 메이스(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9984" name="레시피: 다이너스티 바그나우(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="1493000" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9985" name="레시피: 봉인된 다이너스티 이어링(70%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="243700" />
+		<set name="recipe_id" val="897" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9986" name="레시피: 봉인된 다이너스티 네크리스(70%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="324920" />
+		<set name="recipe_id" val="898" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9987" name="레시피: 봉인된 다이너스티 링(70%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="162460" />
+		<set name="recipe_id" val="899" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="9988" name="레시피: 봉인된 다이너스티 이어링(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="243700" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9989" name="레시피: 봉인된 다이너스티 네크리스(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="324920" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9990" name="레시피: 봉인된 다이너스티 링(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="162460" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9991" name="봉인된 다이너스티 이어링 젬" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_ball_gold_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="56866" />
+		<set name="commissionItemType" val="MAJOR_CRAFTING_INGREDIENTS" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9992" name="봉인된 다이너스티 네크리스 젬" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="74095" />
+		<set name="commissionItemType" val="MAJOR_CRAFTING_INGREDIENTS" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9993" name="봉인된 다이너스티 링 젬" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_box_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="price" val="40464" />
+		<set name="commissionItemType" val="MAJOR_CRAFTING_INGREDIENTS" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="9994" name="헬바운드의 지도" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="9995" name="핸드 보우건" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="122" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1850" />
+		<set name="price" val="99100" />
+		<set name="change_weaponId" val="276" />
+		<set name="soulshots" val="4" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="isAppearanceable" val="true" />
+		<set name="reuse_delay" val="400" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">64</stat>
+			<stat type="mAtk">32</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">400</stat>
+		</stats>
+	</item>
+	<item id="9996" name="핸드 보우건" type="Weapon">
+		<set name="icon" val="icon.weapon_hunting_gun_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="122" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1850" />
+		<set name="price" val="99100" />
+		<set name="change_weaponId" val="277" />
+		<set name="soulshots" val="4" />
+		<set name="spiritshots" val="2" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="isAppearanceable" val="true" />
+		<set name="reuse_delay" val="400" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">64</stat>
+			<stat type="mAtk">32</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">400</stat>
+		</stats>
+	</item>
+	<item id="9997" name="불 속성 강화 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2335" level="1" /> 
+		</skills>
+	</item>
+	<item id="9998" name="물 속성 강화 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_water_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2336" level="1" /> 
+		</skills>
+	</item>
+	<item id="9999" name="땅 속성 강화 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_earth_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="price" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2338" level="1" /> 
+		</skills>
+	</item>
+</list>

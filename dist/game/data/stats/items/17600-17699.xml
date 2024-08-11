@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="17600" name="명도의 서" type="EtcItem">
+		<set name="icon" val="icon.q10338_book_of_hades" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="17601" name="어스웜의 심장 조각" type="EtcItem">
+		<set name="icon" val="icon.earthworm_heart" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="17602" name="생체 에너지 결정" type="EtcItem">
+		<set name="icon" val="icon.high_star_stone_piece_i02" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17603" name="레시피: 나무 영양제(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_white_i00" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="17604" name="글리머 수정" type="EtcItem">
+		<set name="icon" val="icon.glimmer_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="reuse_delay" val="10000" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12001" level="1" /> 
+		</skills>
+	</item>
+	<item id="17605" name="10000000 아데나" type="EtcItem">
+		<set name="icon" val="icon.fairy_adena_joke" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17606" name="거점의 파편" type="EtcItem">
+		<set name="icon" val="icon.gd_square_fragment" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="60" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12003" level="1" /> 
+		</skills>
+	</item>
+	<item id="17607" name="보석의 홀 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_key_i00" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12010" level="1" /> 
+		</skills>
+	</item>
+	<item id="17608" name="에너지 제어 장치" type="EtcItem">
+		<set name="icon" val="icon.etc_medicine_of_growth_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="14224" level="1" /> 
+		</skills>
+	</item>
+	<item id="17609" name="(사용안함)이스티나의 목걸이" type="Armor">
+		<set name="icon" val="icon.accessary_queen_of_ice_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="S80" />
+		<set name="crystal_count" val="486" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<set name="immediate_effect" val="true" />
+		<set name="price" val="15192000" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="8459" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">125</stat>
+		</stats>
+	</item>
+	<item id="17610" name="생체 에너지 잔류물" type="EtcItem">
+		<set name="icon" val="icon.etc_bark_green_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17611" name="거대탄환" type="EtcItem">
+		<set name="icon" val="icon.mde_big_bullet" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17612" name="기억의 파편" type="EtcItem">
+		<set name="icon" val="icon.mde_memory_fragment" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17613" name="잊혀진 기억의 파편" type="EtcItem">
+		<set name="icon" val="icon.mde_memory_fragment02" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17614" name="판테온의 서" type="EtcItem">
+		<set name="icon" val="icon.si_phanteon_book" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17615" name="벨리스의 증표" type="EtcItem">
+		<set name="icon" val="icon.bel_mark_clear" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17616" name="영혼의 초" type="EtcItem">
+		<set name="icon" val="icon.darkelf_campaign_candle" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17617" name="보석 상자" type="EtcItem">
+		<set name="icon" val="icon.darkelf_campaign_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17618" name="포르투나 지도" type="EtcItem">
+		<set name="icon" val="icon.fortuna_enter" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="17619" name="유물 탐색기" type="EtcItem">
+		<set name="icon" val="icon.summon_object_finder" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="reuse_delay" val="30000" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12004" level="1" /> 
+		</skills>
+	</item>
+	<item id="17620" name="벌레 퇴치약" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_a" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12005" level="1" /> 
+		</skills>
+	</item>
+	<item id="17621" name="벌레 퇴치약" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_b" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12006" level="1" /> 
+		</skills>
+	</item>
+	<item id="17622" name="벌레 퇴치약" type="EtcItem">
+		<set name="icon" val="icon.bug_spray_c" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<skills>
+			<skill id="12007" level="1" /> 
+		</skills>
+	</item>
+	<item id="17623" name="어스웜 심장 반지" type="Armor">
+		<set name="icon" val="icon.ring_earthworm_heart" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="price" val="15192000" />
+		<set name="enchant_enabled" val="true" />
+		<set name="equip_reuse_delay" val="7200" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="RING" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="13318" level="1" /> 
+			<skill id="13319" level="1" /> 
+			<skill id="13317" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">108</stat>
+		</stats>
+	</item>
+	<item id="17624" name="오만의 토큰" type="EtcItem">
+		<set name="icon" val="icon.token_of_oman" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="17625" name="Lv1 거인의 힘문양 염료" additionalName="Str+3 Dex-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17626" name="Lv1 거인의 민첩문양 염료" additionalName="Dex+3 Con-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17627" name="Lv1 거인의 체력문양 염료" additionalName="Con+3 Str-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17628" name="Lv1 거인의 지능문양 염료" additionalName="Int+3 Wit-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17629" name="Lv1 거인의 재치문양 염료" additionalName="Wit+3 Men-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17630" name="Lv1 거인의 정신문양 염료" additionalName="Men+3 Int-2" type="EtcItem">
+		<set name="icon" val="icon.lv1_1_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="488300" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17631" name="Lv1 고대의 힘문양 염료" additionalName="Str+3 Dex-2 불속성 내성 +5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17632" name="Lv1 고대의 민첩문양 염료" additionalName="Dex+3 Con-2 대지속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17633" name="Lv1 고대의 체력문양 염료" additionalName="Con+3 Str-2 암흑속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17634" name="Lv1 고대의 지능문양 염료" additionalName="Int+3 Wit-2 물속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17635" name="Lv1 고대의 재치문양 염료" additionalName="Wit+3 Men-2 바람속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17636" name="Lv1 고대의 정신문양 염료" additionalName="Men+3 Int-2 신성속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_2_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="692400" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17637" name="Lv1 전설의 힘문양 염료" additionalName="Str+3 Dex-1 불속성 내성 +5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17638" name="Lv1 전설의 민첩문양 염료" additionalName="Dex+3 Con-1 대지속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17639" name="Lv1 전설의 체력문양 염료" additionalName="Con+3 Str-1 암흑속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17640" name="Lv1 전설의 지능문양 염료" additionalName="Int+3 Wit-1 물속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17641" name="Lv1 전설의 재치문양 염료" additionalName="Wit+3 Men-1 바람속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17642" name="Lv1 전설의 정신문양 염료" additionalName="Men+3 Int-1 신성속성 내성+5" type="EtcItem">
+		<set name="icon" val="icon.lv1_3_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="896400" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17643" name="Lv2 거인의 힘문양 염료" additionalName="Str+4 Dex-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17644" name="Lv2 거인의 민첩문양 염료" additionalName="Dex+4 Con-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17645" name="Lv2 거인의 체력문양 염료" additionalName="Con+4 Str-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17646" name="Lv2 거인의 지능문양 염료" additionalName="Int+4 Wit-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17647" name="Lv2 거인의 재치문양 염료" additionalName="Wit+4 Men-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17648" name="Lv2 거인의 정신문양 염료" additionalName="Men+4 Int-3" type="EtcItem">
+		<set name="icon" val="icon.lv2_1_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="1097700" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17649" name="Lv2 고대의 힘문양 염료" additionalName="Str+4 Dex-3 불속성 내성 +10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17650" name="Lv2 고대의 민첩문양 염료" additionalName="Dex+4 Con-3 대지속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17651" name="Lv2 고대의 체력문양 염료" additionalName="Con+4 Str-3 암흑속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17652" name="Lv2 고대의 지능문양 염료" additionalName="Int+4 Wit-3 물속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17653" name="Lv2 고대의 재치문양 염료" additionalName="Wit+4 Men-3 바람속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17654" name="Lv2 고대의 정신문양 염료" additionalName="Men+4 Int-3 신성속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_2_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="1496100" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17655" name="Lv2 전설의 힘문양 염료" additionalName="Str+4 Dex-2 불속성 내성 +10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17656" name="Lv2 전설의 민첩문양 염료" additionalName="Dex+4 Con-2 대지속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17657" name="Lv2 전설의 체력문양 염료" additionalName="Con+4 Str-2 암흑속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17658" name="Lv2 전설의 지능문양 염료" additionalName="Int+4 Wit-2 물속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17659" name="Lv2 전설의 재치문양 염료" additionalName="Wit+4 Men-2 바람속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17660" name="Lv2 전설의 정신문양 염료" additionalName="Men+4 Int-2 신성속성 내성+10" type="EtcItem">
+		<set name="icon" val="icon.lv2_3_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="1894500" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17661" name="Lv3 거인의 힘문양 염료" additionalName="Str+5 Dex-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17662" name="Lv3 거인의 민첩문양 염료" additionalName="Dex+5 Con-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17663" name="Lv3 거인의 체력문양 염료" additionalName="Con+5 Str-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17664" name="Lv3 거인의 지능문양 염료" additionalName="Int+5 Wit-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17665" name="Lv3 거인의 재치문양 염료" additionalName="Wit+5 Men-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17666" name="Lv3 거인의 정신문양 염료" additionalName="Men+5 Int-4" type="EtcItem">
+		<set name="icon" val="icon.lv3_1_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="2518000" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17667" name="Lv3 고대의 힘문양 염료" additionalName="Str+5 Dex-4 불속성 내성 +15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17668" name="Lv3 고대의 민첩문양 염료" additionalName="Dex+5 Con-4 대지속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17669" name="Lv3 고대의 체력문양 염료" additionalName="Con+5 Str-4 암흑속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17670" name="Lv3 고대의 지능문양 염료" additionalName="Int+5 Wit-4 물속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17671" name="Lv3 고대의 재치문양 염료" additionalName="Wit+5 Men-4 바람속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17672" name="Lv3 고대의 정신문양 염료" additionalName="Men+5 Int-4 신성속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_2_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="3295800" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17673" name="Lv3 전설의 힘문양 염료" additionalName="Str+5 Dex-3 불속성 내성 +15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17674" name="Lv3 전설의 민첩문양 염료" additionalName="Dex+5 Con-3 대지속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17675" name="Lv3 전설의 체력문양 염료" additionalName="Con+5 Str-3 암흑속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17676" name="Lv3 전설의 지능문양 염료" additionalName="Int+5 Wit-3 물속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17677" name="Lv3 전설의 재치문양 염료" additionalName="Wit+5 Men-3 바람속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17678" name="Lv3 전설의 정신문양 염료" additionalName="Men+5 Int-3 신성속성 내성+15" type="EtcItem">
+		<set name="icon" val="icon.lv3_3_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="4073600" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17679" name="Lv4 거인의 힘문양 염료" additionalName="Str+5 Dex-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17680" name="Lv4 거인의 민첩문양 염료" additionalName="Dex+5 Con-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17681" name="Lv4 거인의 체력문양 염료" additionalName="Con+5 Str-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17682" name="Lv4 거인의 지능문양 염료" additionalName="Int+5 Wit-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17683" name="Lv4 거인의 재치문양 염료" additionalName="Wit+5 Men-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17684" name="Lv4 거인의 정신문양 염료" additionalName="Men+5 Int-2" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="11334400" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17685" name="Lv4 고대의 힘문양 염료" additionalName="Str+5 Dex-2 불속성 내성 +20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17686" name="Lv4 고대의 민첩문양 염료" additionalName="Dex+5 Con-2 대지속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17687" name="Lv4 고대의 체력문양 염료" additionalName="Con+5 Str-2 암흑속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17688" name="Lv4 고대의 지능문양 염료" additionalName="Int+5 Wit-2 물속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17689" name="Lv4 고대의 재치문양 염료" additionalName="Wit+5 Men-2 바람속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17690" name="Lv4 고대의 정신문양 염료" additionalName="Men+5 Int-2 신성속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_2_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="12966700" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17691" name="Lv4 전설의 힘문양 염료" additionalName="Str+5 Dex-1 불속성 내성 +20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17692" name="Lv4 전설의 민첩문양 염료" additionalName="Dex+5 Con-1 대지속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17693" name="Lv4 전설의 체력문양 염료" additionalName="Con+5 Str-1 암흑속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17694" name="Lv4 전설의 지능문양 염료" additionalName="Int+5 Wit-1 물속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_int" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17695" name="Lv4 전설의 재치문양 염료" additionalName="Wit+5 Men-1 바람속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_wit" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17696" name="Lv4 전설의 정신문양 염료" additionalName="Men+5 Int-1 신성속성 내성+20" type="EtcItem">
+		<set name="icon" val="icon.lv4_3_dye_men" />
+		<set name="weight" val="150" />
+		<set name="price" val="14598900" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17697" name="Lv5 거인의 힘문양 염료" additionalName="Str+5" type="EtcItem">
+		<set name="icon" val="icon.lv5_1_dye_str" />
+		<set name="weight" val="150" />
+		<set name="price" val="35884300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17698" name="Lv5 거인의 민첩문양 염료" additionalName="Dex+5" type="EtcItem">
+		<set name="icon" val="icon.lv5_1_dye_dex" />
+		<set name="weight" val="150" />
+		<set name="price" val="35884300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="17699" name="Lv5 거인의 체력문양 염료" additionalName="Con+5" type="EtcItem">
+		<set name="icon" val="icon.lv5_1_dye_con" />
+		<set name="weight" val="150" />
+		<set name="price" val="35884300" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="DYE" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="DYES" />
+		<set name="material" val="LIQUID" />
+	</item>
+</list>

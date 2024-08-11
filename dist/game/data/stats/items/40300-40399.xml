@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="40300" name="프레야의 회복 물약" type="EtcItem">
+		<set name="icon" val="icon.freya_potion" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="18155" level="1" /> 
+		</skills>
+	</item>
+	<item id="40301" name="Buff 헬멧" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.buff_helmet" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="40302" name="Buff 헬멧" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.buff_helmet" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="40303" name="스파시아 입장권 - 일반" type="EtcItem">
+		<set name="icon" val="icon.etc_kalie_instantzone_re" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="86400000" />
+		<set name="is_depositable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="40304" name="스파시아 입장권 - 극한" type="EtcItem">
+		<set name="icon" val="icon.etc_kalie_instantzone_re" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="86400000" />
+		<set name="is_depositable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="40305" name="엑스퍼티즈 룬 - R99" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="43200" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17577" level="1" /> 
+		</skills>
+	</item>
+	<item id="40306" name="엑스퍼티즈 룬(R99) 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="40305" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="40307" name="다이나믹 듀얼 마스터 선물 패키지" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40308" name="다이나믹 듀얼 나이트 선물 패키지" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40309" name="드워프 마을 귀환서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="18167" level="1" /> 
+		</skills>
+	</item>
+	<item id="40310" name="산타 모자 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC_FIXED" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="40311" name="노엘르의 선물" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_choco" />
+		<set name="weight" val="5" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="16423" level="1" /> 
+		</skills>
+	</item>
+	<item id="40312" name="산타 망토" type="Armor">
+		<set name="icon" val="BranchSys3.icon.g_christmas_cloak" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="220" />
+		<set name="material" val="CLOTH" />
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="40313" name="산타의 증표" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_xmas_present_fun_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="40314" name="산타 모자" additionalName="힘" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9554" level="1" /> 
+		</skills>
+	</item>
+	<item id="40315" name="산타 모자" additionalName="민첩" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9555" level="1" /> 
+		</skills>
+	</item>
+	<item id="40316" name="산타 모자" additionalName="체력" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9556" level="1" /> 
+		</skills>
+	</item>
+	<item id="40317" name="산타 모자" additionalName="정신" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9557" level="1" /> 
+		</skills>
+	</item>
+	<item id="40318" name="산타 모자" additionalName="지능" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9558" level="1" /> 
+		</skills>
+	</item>
+	<item id="40319" name="산타 모자" additionalName="재치" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9559" level="1" /> 
+		</skills>
+	</item>
+	<item id="40320" name="산타 모자" additionalName="크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9560" level="1" /> 
+		</skills>
+	</item>
+	<item id="40321" name="산타 모자" additionalName="크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9561" level="1" /> 
+		</skills>
+	</item>
+	<item id="40322" name="산타 모자" additionalName="물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9562" level="1" /> 
+		</skills>
+	</item>
+	<item id="40323" name="산타 모자" additionalName="마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9563" level="1" /> 
+		</skills>
+	</item>
+	<item id="40324" name="산타 모자" additionalName="회피" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9564" level="1" /> 
+		</skills>
+	</item>
+	<item id="40325" name="산타 모자" additionalName="물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9565" level="1" /> 
+		</skills>
+	</item>
+	<item id="40326" name="산타 모자" additionalName="마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9566" level="1" /> 
+		</skills>
+	</item>
+	<item id="40327" name="산타 모자" additionalName="명중" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="9567" level="1" /> 
+		</skills>
+	</item>
+	<item id="40328" name="산타 모자" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="18048" level="1" /> 
+		</skills>
+	</item>
+	<item id="40329" name="산타 모자" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="18049" level="1" /> 
+		</skills>
+	</item>
+	<item id="40330" name="산타 복장 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="40331" name="우정의 마법 지팡이 세트" additionalName="90일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40332" name="우정의 세계수의 가지" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="A" />
+		<set name="weight" val="900" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">226</stat>
+			<stat type="mAtk">167</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40333" name="우정의 사령의 지팡이" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_staff_of_evil_sprit_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="B" />
+		<set name="weight" val="930" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">189</stat>
+			<stat type="mAtk">145</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40334" name="우정의 인페르노 스탭" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_inferno_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="C" />
+		<set name="weight" val="1000" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">135</stat>
+			<stat type="mAtk">111</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40335" name="우정의 아투바 메이스" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_atuba_mace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="D" />
+		<set name="weight" val="1010" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">90</stat>
+			<stat type="mAtk">79</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40336" name="우정의 임페리얼 스텝" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_imperial_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="910" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">274</stat>
+			<stat type="mAtk">193</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40337" name="우정의 다이너스티 스태프" additionalName="90일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="1080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">325</stat>
+			<stat type="mAtk">222</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40338" name="아르테이아 파이터 계열 장비 세트" additionalName="90일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40339" name="아르테이아 위저드 계열 장비 세트" additionalName="90일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40340" name="우정의 격투무기 세트" additionalName="90일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="129600" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40341" name="우정의 격투무기 세트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40342" name="우정의 마법 지팡이 세트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40343" name="우정의 세계수의 가지" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="A" />
+		<set name="weight" val="900" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">226</stat>
+			<stat type="mAtk">167</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40344" name="우정의 사령의 지팡이" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_staff_of_evil_sprit_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="B" />
+		<set name="weight" val="930" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">189</stat>
+			<stat type="mAtk">145</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40345" name="우정의 인페르노 스탭" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_inferno_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="C" />
+		<set name="weight" val="1000" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">135</stat>
+			<stat type="mAtk">111</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40346" name="우정의 아투바 메이스" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_atuba_mace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="D" />
+		<set name="weight" val="1010" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">90</stat>
+			<stat type="mAtk">79</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40347" name="우정의 임페리얼 스텝" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_imperial_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="910" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">274</stat>
+			<stat type="mAtk">193</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40348" name="우정의 다이너스티 스태프" additionalName="30일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="1080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">325</stat>
+			<stat type="mAtk">222</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40349" name="아르테이아 파이터 계열 장비 세트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40350" name="아르테이아 위저드 계열 장비 세트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40351" name="우정의 격투무기 세트" additionalName="10일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40352" name="우정의 마법 지팡이 세트" additionalName="10일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40353" name="우정의 세계수의 가지" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="A" />
+		<set name="weight" val="900" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">226</stat>
+			<stat type="mAtk">167</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40354" name="우정의 사령의 지팡이" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_staff_of_evil_sprit_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="B" />
+		<set name="weight" val="930" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">189</stat>
+			<stat type="mAtk">145</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40355" name="우정의 인페르노 스탭" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_inferno_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="C" />
+		<set name="weight" val="1000" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">135</stat>
+			<stat type="mAtk">111</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40356" name="우정의 아투바 메이스" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_atuba_mace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="D" />
+		<set name="weight" val="1010" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">90</stat>
+			<stat type="mAtk">79</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40357" name="우정의 임페리얼 스텝" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_imperial_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="910" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">274</stat>
+			<stat type="mAtk">193</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40358" name="우정의 다이너스티 스태프" additionalName="10일 기간제" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="S" />
+		<set name="weight" val="1080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">325</stat>
+			<stat type="mAtk">222</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="40359" name="아르테이아 파이터 계열 장비 세트" additionalName="10일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40360" name="아르테이아 위저드 계열 장비 세트" additionalName="10일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="14400" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="40361" name="버프준 아가시온 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="48133" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="40362" name="버프준 아가시온 팔찌 - 30일 기간제" type="Armor">
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="SILVER" />
+		<set name="bodypart" val="agathion" />
+	</item>
+	<item id="40363" name="당근" type="EtcItem">
+		<set name="icon" val="icon.ev_carrot" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="GOLD" />
+	</item>
+	<item id="40364" name="당근 주머니" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_gold_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="40363" min="7" max="63" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="40365" name="배고프의 특별한 복주머니" type="EtcItem">
+		<set name="icon" val="icon.card_event_luck_pocket" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="material" val="PAPER" />
+		<capsuled_items>
+			<item id="22887" min="1" max="1" chance="0.82" /> 
+			<item id="22265" min="1" max="1" chance="0.82" /> 
+			<item id="39738" min="1" max="1" chance="0.82" /> 
+			<item id="37008" min="1" max="1" chance="11" /> 
+			<item id="37009" min="1" max="1" chance="11" /> 
+			<item id="37010" min="1" max="1" chance="11" /> 
+			<item id="39381" min="1" max="1" chance="0.82" /> 
+			<item id="39382" min="1" max="1" chance="0.82" /> 
+			<item id="39383" min="1" max="1" chance="0.82" /> 
+			<item id="39384" min="1" max="1" chance="0.82" /> 
+			<item id="39385" min="1" max="1" chance="0.82" /> 
+			<item id="39386" min="1" max="1" chance="0.82" /> 
+			<item id="39387" min="1" max="1" chance="0.82" /> 
+			<item id="39388" min="1" max="1" chance="0.82" /> 
+			<item id="39389" min="1" max="1" chance="0.82" /> 
+			<item id="39390" min="1" max="1" chance="0.82" /> 
+			<item id="40063" min="1" max="1" chance="6" /> 
+			<item id="23861" min="1" max="1" chance="0.82" /> 
+			<item id="23862" min="1" max="1" chance="0.82" /> 
+			<item id="23863" min="1" max="1" chance="0.82" /> 
+			<item id="23864" min="1" max="1" chance="0.82" /> 
+			<item id="23865" min="1" max="1" chance="0.82" /> 
+			<item id="23866" min="1" max="1" chance="0.82" /> 
+			<item id="23867" min="1" max="1" chance="0.82" /> 
+			<item id="36513" min="1" max="1" chance="0.82" /> 
+			<item id="3936" min="1" max="1" chance="21" /> 
+			<item id="1538" min="1" max="1" chance="21" /> 
+			<item id="23860" min="1" max="1" chance="0.82" /> 
+			<item id="23977" min="1" max="1" chance="0.82" /> 
+		</capsuled_items>
+	</item>
+	<item id="40366" name="배고프의 선물 주머니" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="40367" name="앤젤 캣의 축복 상자" type="EtcItem">
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21726" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="40368" name="BUFF 프로모션 선물상자" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_love_pack" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="40369" name="나폴레옹 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_napoleonic_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="40370" name="달콤한 치즈 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_goldrat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="40371" name="조로 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.zorocap" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="40372" name="#N/A" additionalName="30일 기간제" type="Armor">
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="time" val="43200" />
+	</item>
+</list>

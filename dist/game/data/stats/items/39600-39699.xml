@@ -1,0 +1,1492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="39600" name="한 서린 영혼" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_ball_silver_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="weight" val="30" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="39601" name="영혼병" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_ball_silver_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="weight" val="30" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="39602" name="차원의 안타라스 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dagger_i01" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17790" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2523</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39603" name="차원의 안타라스 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_twohand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1740" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17791" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39604" name="차원의 안타라스 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_bow_i01" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17792" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">5678</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39605" name="차원의 안타라스 버스터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_magic_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17793" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2307</stat>
+			<stat type="mAtk">1676</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39606" name="차원의 안타라스 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17794" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39607" name="차원의 안타라스 스토머" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_spear_i01" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="2010" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="13115" level="1" /> 
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17795" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39608" name="차원의 안타라스 파이터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_fist_i01" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1550" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17796" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39609" name="차원의 안타라스 어벤져" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_blunt_i01" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1740" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17797" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="39610" name="차원의 안타라스 듀얼블런트" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dual_blunt_i01" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1740" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17798" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="39611" name="차원의 안타라스 듀얼소드" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dual_sword_i01" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8893" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8895" level="1" /> 
+			<skill id="17799" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39612" name="차원의 발라카스 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_dagger_i01" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17800" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2523</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39613" name="차원의 발라카스 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17801" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39614" name="차원의 발라카스 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_twohand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1740" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17802" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39615" name="차원의 발라카스 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_bow_i01" />
+		<set name="weapon_type" val="BOW" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17803" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">5678</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39616" name="차원의 발라카스 버스터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_magic_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17804" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2307</stat>
+			<stat type="mAtk">1676</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39617" name="차원의 발라카스 캐스터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_magic_blunt_i01" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1080" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17805" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2307</stat>
+			<stat type="mAtk">1676</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="39621" name="차원의 발라카스 레트리뷰터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_twohand_magic_blunt_i01" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1080" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="8896" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="8897" level="1" /> 
+			<skill id="17806" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2809</stat>
+			<stat type="mAtk">1843</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="accMagic">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="39622" name="차원의 린드비오르 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_dagger_i01" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17807" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2523</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39623" name="차원의 린드비오르 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_bow_i01" />
+		<set name="weapon_type" val="BOW" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17808" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">5678</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39624" name="차원의 린드비오르 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_twohand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1740" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17809" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">3509</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39625" name="차원의 린드비오르 캐스터" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_onehand_magic_blunt_i01" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17810" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2307</stat>
+			<stat type="mAtk">1676</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39626" name="차원의 린드비오르 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_onehand_sword_i01" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1520" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17811" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39627" name="차원의 린드비오르 슈트제" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_crossbow_i01" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1580" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17812" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">5113</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="39628" name="차원의 린드비오르 듀얼대거" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_dual_dagger_i01" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="2050" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="8899" level="1" /> 
+			<skill id="8898" level="1" /> 
+			<skill id="8890" level="1" /> 
+			<skill id="17813" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">2884</stat>
+			<stat type="mAtk">1257</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="39629" name="포츈 포켓 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<cond msgId="1902">
+			<player levelRange="1;84" />
+		</cond>
+		<skills>
+			<skill id="18017" level="1" /> 
+		</skills>
+	</item>
+	<item id="39630" name="포츈 포켓 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<cond msgId="1902">
+			<player levelRange="1;84" />
+		</cond>
+		<skills>
+			<skill id="18018" level="1" /> 
+		</skills>
+	</item>
+	<item id="39631" name="포츈 포켓 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<cond msgId="1902">
+			<player levelRange="1;84" />
+		</cond>
+		<skills>
+			<skill id="18019" level="1" /> 
+			<skill id="18020" level="1" /> 
+		</skills>
+	</item>
+	<item id="39632" name="포츈 포켓 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<cond msgId="1902">
+			<player levelRange="85;107" />
+		</cond>
+		<skills>
+			<skill id="18021" level="1" /> 
+		</skills>
+	</item>
+	<item id="39633" name="포츈 포켓 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<cond msgId="1902">
+			<player levelRange="85;107" />
+		</cond>
+		<skills>
+			<skill id="18022" level="1" /> 
+			<skill id="18023" level="1" /> 
+		</skills>
+	</item>
+	<item id="39634" name="베니르의 탈리스만" additionalName="1단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="price" val="1000000" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="1" /> 
+		</skills>
+	</item>
+	<item id="39635" name="베니르의 탈리스만" additionalName="2단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="2" /> 
+		</skills>
+	</item>
+	<item id="39636" name="베니르의 탈리스만" additionalName="3단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="3" /> 
+		</skills>
+	</item>
+	<item id="39637" name="베니르의 탈리스만" additionalName="4단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="4" /> 
+		</skills>
+	</item>
+	<item id="39638" name="베니르의 탈리스만" additionalName="5단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="5" /> 
+		</skills>
+	</item>
+	<item id="39639" name="고귀한 베니르의 탈리스만" additionalName="1단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="6" /> 
+		</skills>
+	</item>
+	<item id="39640" name="베니르의 탈리스만" additionalName="Stage 7" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="7" /> 
+		</skills>
+	</item>
+	<item id="39641" name="베니르의 탈리스만" additionalName="Stage 8" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="8" /> 
+		</skills>
+	</item>
+	<item id="39642" name="고귀한 베니르의 탈리스만" additionalName="2단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="7" /> 
+		</skills>
+	</item>
+	<item id="39643" name="고귀한 베니르의 탈리스만" additionalName="3단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="8" /> 
+		</skills>
+	</item>
+	<item id="39644" name="고귀한 베니르의 탈리스만" additionalName="4단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="9" /> 
+		</skills>
+	</item>
+	<item id="39645" name="고귀한 베니르의 탈리스만" additionalName="5단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="10" /> 
+		</skills>
+	</item>
+	<item id="39646" name="고귀한 베니르의 탈리스만" additionalName="6단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="11" /> 
+		</skills>
+	</item>
+	<item id="39647" name="영롱한 베니르의 탈리스만" additionalName="1단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="12" /> 
+		</skills>
+	</item>
+	<item id="39648" name="베니르의 탈리스만" additionalName="Stage 15" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="15" /> 
+		</skills>
+	</item>
+	<item id="39649" name="베니르의 탈리스만" additionalName="Stage 16" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="16" /> 
+		</skills>
+	</item>
+	<item id="39650" name="영롱한 베니르의 탈리스만" additionalName="2단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="13" /> 
+		</skills>
+	</item>
+	<item id="39651" name="영롱한 베니르의 탈리스만" additionalName="3단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="14" /> 
+		</skills>
+	</item>
+	<item id="39652" name="영롱한 베니르의 탈리스만" additionalName="4단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="15" /> 
+		</skills>
+	</item>
+	<item id="39653" name="영롱한 베니르의 탈리스만" additionalName="5단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="16" /> 
+		</skills>
+	</item>
+	<item id="39654" name="영롱한 베니르의 탈리스만" additionalName="6단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="17" /> 
+		</skills>
+	</item>
+	<item id="39655" name="영롱한 베니르의 탈리스만" additionalName="7단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="18" /> 
+		</skills>
+	</item>
+	<item id="39656" name="베니르의 탈리스만" additionalName="Stage 23" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="23" /> 
+		</skills>
+	</item>
+	<item id="39657" name="베니르의 탈리스만" additionalName="Stage 24" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_allstat_talisman_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18024" level="18" /> 
+		</skills>
+	</item>
+	<item id="39658" name="럭키 팬던트" type="EtcItem">
+		<set name="icon" val="icon.etc_hairacc_pandent_i00" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="39659" name="카리스마 팬던트" type="EtcItem">
+		<set name="icon" val="icon.etc_hairacc_pandent_i00" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="39660" name="토끼 귀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39661" name="토끼 귀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39662" name="너구리 귀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39663" name="너구리 귀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39664" name="고양이 귀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_cat_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39665" name="고양이 귀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_cat_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39666" name="로맨틱 샤프롱" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_romantic_chaperon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39667" name="로맨틱 샤프롱" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_romantic_chaperon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39668" name="천사서클릿" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39669" name="천사서클릿" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39670" name="악마서클릿" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.Accessary_demon_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39671" name="악마서클릿" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.Accessary_demon_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39672" name="해적의 안대" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_eye_bandage_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39673" name="해적의 안대" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_eye_bandage_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39674" name="무법자의 안대" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39675" name="무법자의 안대" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39676" name="애꾸눈" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.Accessary_one_eye_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39677" name="애꾸눈" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.Accessary_one_eye_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39678" name="꼬깔모자" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_party_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39679" name="꼬깔모자" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_party_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39680" name="세련된 천사 링" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_angel_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39681" name="세련된 천사 링" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_angel_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39682" name="세련된 악마 뿔" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_devil_horn_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39683" name="세련된 악마 뿔" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_devil_horn_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39684" name="영광의 붉은 뿔" additionalName="럭키(이벤트)" type="Armor">
+		<set name="icon" val="icon.london_olympic_hair" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39685" name="영광의 붉은 뿔" additionalName="카리스마(이벤트)" type="Armor">
+		<set name="icon" val="icon.london_olympic_hair" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39686" name="9주년 기념 로켓포 모자 - 연발 폭죽" additionalName="럭키" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_rocket_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39687" name="9주년 기념 로켓포 모자 - 연발 폭죽" additionalName="카리스마" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_rocket_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="39688" name="귀부인의 헤어핀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39689" name="귀부인의 헤어핀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39690" name="파티 마스크" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.etc_party_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39691" name="파티 마스크" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.etc_party_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39692" name="모노클" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_glasses_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39693" name="모노클" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_glasses_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="39694" name="숙녀의 헤어핀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_maidens_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39695" name="숙녀의 헤어핀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_maidens_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39696" name="물망초 헤어핀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39697" name="물망초 헤어핀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39698" name="데이지 꽃 헤어핀" additionalName="럭키" type="Armor">
+		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+	<item id="39699" name="데이지 꽃 헤어핀" additionalName="카리스마" type="Armor">
+		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="price" val="50000" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair2" />
+	</item>
+</list>

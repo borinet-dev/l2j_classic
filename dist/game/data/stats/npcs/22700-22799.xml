@@ -1,0 +1,1074 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="22789" level="86" type="Monster" name="Solina Guide">
+		<parameters>
+			<skill name="Skill01_ID" id="6303" level="1" />
+			<skill name="Skill02_ID" id="6304" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8212" /> <!-- Monster Only (Solina Brother Mace) -->
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.35377026075" magical="698.508232785223" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="353.892821031345" magical="259.340990965503" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="61" />
+				<run ground="180" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4445" level="3" /> <!-- Greater Spear Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6303" level="1" /> <!-- Trial of the Coup -->
+			<skill id="6304" level="1" /> <!-- Stun -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>SOLINA_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9551" min="1" max="3" chance="0.03" /> <!-- Holy Stone -->
+				<item id="9557" min="1" max="1" chance="0.003" /> <!-- Holy Crystal -->
+				<item id="19315" min="1" max="1" chance="1.3" /> <!-- 제작 용해제 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.266" /> <!-- 카데이라 헬멧 재료 -->
+				<item id="19257" min="1" max="1" chance="0.266" /> <!-- 카데이라 레더 헬멧 재료 -->
+				<item id="19262" min="1" max="1" chance="0.266" /> <!-- 카데이라 서클릿 재료 -->
+				<item id="19390" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 흉갑 (60%) -->
+				<item id="19396" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 레더 흉갑 (60%) -->
+				<item id="19401" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 튜닉 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="9" />
+			<height normal="23.4" />
+		</collision>
+	</npc>
+	<npc id="22790" level="86" type="Monster" name="Solina Seeker">
+		<parameters>
+			<skill name="Skill01_ID" id="6305" level="1" />
+			<skill name="Skill02_ID" id="6306" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8213" /> <!-- Monster Only (Solina Father Mace) -->
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.55397527068" magical="698.626516480486" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="354.192166462668" magical="259.056937306176" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="70" />
+				<run ground="170" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4445" level="3" /> <!-- Greater Spear Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6305" level="1" /> <!-- Divine Gnosis -->
+			<skill id="6306" level="1" /> <!-- Solina Strike -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>SOLINA_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9551" min="1" max="3" chance="0.03" /> <!-- Holy Stone -->
+				<item id="9557" min="1" max="1" chance="0.003" /> <!-- Holy Crystal -->
+				<item id="19315" min="1" max="1" chance="1.3" /> <!-- 제작 용해제 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.266" /> <!-- 카데이라 흉갑 재료 -->
+				<item id="19258" min="1" max="1" chance="0.266" /> <!-- 카데이라 레더 아머 재료 -->
+				<item id="19263" min="1" max="1" chance="0.266" /> <!-- 카데이라 튜닉 재료 -->
+				<item id="19391" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 각반 (60%) -->
+				<item id="19397" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 레더 레깅스 (60%) -->
+				<item id="19402" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 호즈 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="11" />
+			<height normal="25.4" />
+		</collision>
+	</npc>
+	<npc id="22791" level="86" type="Monster" name="Solina Savior">
+		<parameters>
+			<skill name="Skill01_ID" id="6307" level="1" />
+			<skill name="Skill02_ID" id="6308" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.55397527068" magical="698.626516480486" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="283.812729498164" magical="304.772867419031" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="65" />
+				<run ground="180" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4445" level="3" /> <!-- Greater Spear Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6307" level="1" /> <!-- Opus of the Hand -->
+			<skill id="6308" level="1" /> <!-- Opus of the Wave -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>SOLINA_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="960" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="9551" min="1" max="1" chance="0.03" /> <!-- Holy Stone -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9551" min="1" max="3" chance="0.03" /> <!-- Holy Stone -->
+				<item id="9557" min="1" max="1" chance="0.003" /> <!-- Holy Crystal -->
+				<item id="19315" min="1" max="1" chance="1.3" /> <!-- 제작 용해제 -->
+				<item id="959" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19253" min="1" max="1" chance="0.266" /> <!-- 카데이라 각반 재료 -->
+				<item id="19259" min="1" max="1" chance="0.266" /> <!-- 카데이라 레더 레깅스 재료 -->
+				<item id="19264" min="1" max="1" chance="0.266" /> <!-- 카데이라 호즈 재료 -->
+				<item id="19392" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 건틀렛 (60%) -->
+				<item id="19398" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 레더 글로브 (60%) -->
+				<item id="19403" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 글로브 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="9" />
+			<height normal="15.6" />
+		</collision>
+	</npc>
+	<npc id="22792" level="86" type="Monster" name="Solina Disciple">
+		<parameters>
+			<skill name="Skill01_ID" id="6309" level="1" />
+			<skill name="Skill02_ID" id="6677" level="1" />
+			<skill name="Skill03_ID" id="6678" level="1" />
+		</parameters>
+		<race>HUMAN</race>
+		<sex>MALE</sex>
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.55397527068" magical="698.508232785223" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="354.441019893528" magical="259.081909056446" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="120" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="14" /> <!-- Humans -->
+			<skill id="4445" level="3" /> <!-- Greater Spear Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6309" level="1" /> <!-- Pain of the Ascetic -->
+			<skill id="6677" level="1" /> <!-- Hold -->
+			<skill id="6678" level="1" /> <!-- Cancel Hold -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>SOLINA_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="13467" min="1" max="1" chance="0.0009" /> <!-- Vesper Thrower -->
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9551" min="1" max="3" chance="0.03" /> <!-- Holy Stone -->
+				<item id="9557" min="1" max="1" chance="0.003" /> <!-- Holy Crystal -->
+				<item id="19315" min="1" max="1" chance="1.3" /> <!-- 제작 용해제 -->
+				<item id="959" min="1" max="1" chance="0.009" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="15644" min="1" max="1" chance="0.009" /> <!-- Vesper Thrower Piece -->
+			</drop>
+			<spoil>
+				<item id="15644" min="1" max="1" chance="0.5" /> <!-- Vesper Thrower Piece -->
+				<item id="15825" min="1" max="1" chance="9" /> <!-- Recipe: Vesper Thrower (60%) -->
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19254" min="1" max="1" chance="0.266" /> <!-- 카데이라 건틀렛 재료 -->
+				<item id="19260" min="1" max="1" chance="0.266" /> <!-- 카데이라 레더 글로브 재료 -->
+				<item id="19265" min="1" max="1" chance="0.266" /> <!-- 카데이라 글로브 재료 -->
+				<item id="19393" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 부츠 (60%) -->
+				<item id="19399" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 레더 부츠 (60%) -->
+				<item id="19404" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 슈즈 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="15" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="22793" level="86" type="Monster" name="Solina Ascetic">
+		<parameters>
+			<skill name="Skill01_ID" id="6310" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8212" /> <!-- Monster Only (Solina Brother Mace) -->
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.2378620971" magical="698.508232785223" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="354.441019893528" magical="259.081909056446" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="61" />
+				<run ground="180" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4445" level="3" /> <!-- Greater Spear Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6310" level="1" /> <!-- Loss of Quest -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>SOLINA_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9551" min="1" max="3" chance="0.03" /> <!-- Holy Stone -->
+				<item id="9557" min="1" max="1" chance="0.003" /> <!-- Holy Crystal -->
+				<item id="19315" min="1" max="1" chance="1.3" /> <!-- 제작 용해제 -->
+				<item id="960" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="9551" min="1" max="1" chance="0.03" /> <!-- Holy Stone -->
+				<item id="959" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.275" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19255" min="1" max="1" chance="0.266" /> <!-- 카데이라 부츠 재료 -->
+				<item id="19261" min="1" max="1" chance="0.266" /> <!-- 카데이라 레더 부츠 재료 -->
+				<item id="19266" min="1" max="1" chance="0.266" /> <!-- 카데이라 슈즈 재료 -->
+				<item id="19394" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 실드 (60%) -->
+				<item id="19405" min="1" max="1" chance="0.011" /> <!-- 레시피: 카데이라 시길 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="9" />
+			<height normal="23.4" />
+		</collision>
+	</npc>
+	<npc id="22794" level="87" type="Monster" name="Divinity Judge">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6314" level="1" />
+			<skill name="Skill02_ID" id="6315" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="148" /> <!-- Sword of Valhalla -->
+		<acquire exp="674522" sp="10842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32744.4794952681" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.86348879563" magical="3703.95250521489" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="458.08162023556" magical="739.784187175901" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="13" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="4458" level="2" /> <!-- Spear Vulnerability -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="9" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6314" level="1" /> <!-- Divine Judgment -->
+			<skill id="6315" level="1" /> <!-- Divine Blow -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DIVINE_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.26" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18185" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 헬멧 -->
+				<item id="18191" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 헬멧 -->
+				<item id="18196" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 서클릿 -->
+				<item id="18201" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 시길 -->
+				<item id="18190" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 실드 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.06" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19256" min="1" max="1" chance="0.152" /> <!-- 카데이라 실드 재료 -->
+				<item id="19267" min="1" max="1" chance="0.152" /> <!-- 카데이라 시길 재료 -->
+				<item id="19389" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 헬멧 (60%) -->
+				<item id="19395" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 레더 헬멧 (60%) -->
+				<item id="19400" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 서클릿 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="13.5" grown="16" />
+			<height normal="36.5" grown="42.5" />
+		</collision>
+	</npc>
+	<npc id="22795" level="87" type="Monster" name="Divinity Manager">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6309" level="1" />
+			<skill name="Skill03_ID" id="6316" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="97" /> <!-- Lance -->
+		<acquire exp="974522" sp="10842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32744.4794952681" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.90566010402" magical="3703.9078404776" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="572.779821334735" magical="628.831124546384" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<hitTime>760</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="11" /> <!-- Spear -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="4458" level="2" /> <!-- Spear Vulnerability -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="6309" level="1" /> <!-- Pain of the Ascetic -->
+			<skill id="6316" level="1" /> <!-- Execution of Authority -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DIVINE_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.26" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18185" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 헬멧 -->
+				<item id="18191" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 헬멧 -->
+				<item id="18196" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 서클릿 -->
+				<item id="18186" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 흉갑 -->
+				<item id="18192" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 흉갑 -->
+				<item id="18197" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 튜닉 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.275" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.06" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.182" /> <!-- 카데이라 헬멧 재료 -->
+				<item id="19257" min="1" max="1" chance="0.182" /> <!-- 카데이라 레더 헬멧 재료 -->
+				<item id="19262" min="1" max="1" chance="0.182" /> <!-- 카데이라 서클릿 재료 -->
+				<item id="19390" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 흉갑 (60%) -->
+				<item id="19396" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 레더 흉갑 (60%) -->
+				<item id="19401" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 튜닉 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="15" />
+			<height normal="80" />
+		</collision>
+	</npc>
+	<npc id="22796" level="87" type="Monster" name="Divinity Supervisor">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6317" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8221" /> <!-- Monster Only (Grail Apostle Spear) -->
+		<acquire exp="974522" sp="10842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32744.4794952681" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.86348879563" magical="3703.9078404776" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="572.779821334735" magical="628.831124546384" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="220" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="11" /> <!-- Spear -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="4458" level="2" /> <!-- Spear Vulnerability -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="6317" level="1" /> <!-- Divinity Tacit -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DIVINE_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.26" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18186" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 흉갑 -->
+				<item id="18192" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 흉갑 -->
+				<item id="18197" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 튜닉 -->
+				<item id="18187" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 각반 -->
+				<item id="18193" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레깅스 -->
+				<item id="18198" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 호즈 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.06" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.182" /> <!-- 카데이라 흉갑 재료 -->
+				<item id="19258" min="1" max="1" chance="0.182" /> <!-- 카데이라 레더 아머 재료 -->
+				<item id="19263" min="1" max="1" chance="0.182" /> <!-- 카데이라 튜닉 재료 -->
+				<item id="19391" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 각반 (60%) -->
+				<item id="19397" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 레더 레깅스 (60%) -->
+				<item id="19402" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 호즈 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="13" />
+			<height normal="47" />
+		</collision>
+	</npc>
+	<npc id="22797" level="87" type="Monster" name="Divinity Worshipper">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6327" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>FEMALE</sex>
+		<acquire exp="974522" sp="10842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32744.4794952681" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.90566010402" magical="3703.95250521489" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="458.12831414513" magical="739.784187175901" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="13" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="4458" level="2" /> <!-- Spear Vulnerability -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="9" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6327" level="1" /> <!-- Divinity Worship -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DIVINE_N</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.26" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18187" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 각반 -->
+				<item id="18193" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레깅스 -->
+				<item id="18198" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 호즈 -->
+				<item id="18188" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 건틀렛 -->
+				<item id="18194" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 건틀렛 -->
+				<item id="18199" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 글로브 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.06" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.07" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.271" /> <!-- Mold Hardener -->
+				<item id="19253" min="1" max="1" chance="0.182" /> <!-- 카데이라 각반 재료 -->
+				<item id="19259" min="1" max="1" chance="0.182" /> <!-- 카데이라 레더 레깅스 재료 -->
+				<item id="19264" min="1" max="1" chance="0.182" /> <!-- 카데이라 호즈 재료 -->
+				<item id="19392" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 건틀렛 (60%) -->
+				<item id="19398" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 레더 글로브 (60%) -->
+				<item id="19403" min="1" max="1" chance="0.021" /> <!-- 레시피: 카데이라 글로브 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="24" />
+			<height normal="49" />
+		</collision>
+	</npc>
+	<npc id="22798" level="90" type="Monster" name="신성 수호자">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6318" level="1" />
+			<skill name="Skill02_ID" id="6319" level="1" />
+			<skill name="Skill03_ID" id="6316" level="1" />
+			<skill name="Skill04_ID" id="6686" level="1" />
+			<skill name="Skill05_ID" id="6502" level="17" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="974522" sp="10842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="42744.1640378549" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.7460566278" magical="3703.87071696382" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="533.447105239013" magical="588.816559099516" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="4" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4285" level="4" /> <!-- Sleep Resistance -->
+			<skill id="4287" level="4" /> <!-- Hold Resistance -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="17" /> <!-- Very Strong P. Atk. -->
+			<skill id="4411" level="16" /> <!-- Very Strong M. Atk. -->
+			<skill id="4412" level="6" /> <!-- Very Weak P. Def. -->
+			<skill id="4413" level="13" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="6316" level="1" /> <!-- Execution of Authority -->
+			<skill id="6318" level="1" /> <!-- Holy Shield Defense -->
+			<skill id="6319" level="1" /> <!-- Divine Magic Protection -->
+			<skill id="6502" level="17" /> <!-- Holy Shot -->
+			<skill id="6686" level="1" /> <!-- Cancel Holy Protection -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="500" isAggressive="true">
+			<clanList>
+				<clan>N_DIVINE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.36" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18188" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 건틀렛 -->
+				<item id="18194" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 건틀렛 -->
+				<item id="18199" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 글로브 -->
+				<item id="18189" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 부츠 -->
+				<item id="18195" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 부츠 -->
+				<item id="18200" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 슈즈 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.075" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.07" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.08" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.252" /> <!-- 카데이라 헬멧 재료 -->
+				<item id="19257" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 헬멧 재료 -->
+				<item id="19262" min="1" max="1" chance="0.252" /> <!-- 카데이라 서클릿 재료 -->
+				<item id="19251" min="1" max="1" chance="0.252" /> <!-- 카데이라 흉갑 재료 -->
+				<item id="19258" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 아머 재료 -->
+				<item id="19263" min="1" max="1" chance="0.252" /> <!-- 카데이라 튜닉 재료 -->
+				<item id="19253" min="1" max="1" chance="0.252" /> <!-- 카데이라 각반 재료 -->
+				<item id="19259" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 레깅스 재료 -->
+				<item id="19264" min="1" max="1" chance="0.252" /> <!-- 카데이라 호즈 재료 -->
+				<item id="19254" min="1" max="1" chance="0.252" /> <!-- 카데이라 건틀렛 재료 -->
+				<item id="19260" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 글로브 재료 -->
+				<item id="19265" min="1" max="1" chance="0.252" /> <!-- 카데이라 글로브 재료 -->
+				<item id="19255" min="1" max="1" chance="0.252" /> <!-- 카데이라 부츠 재료 -->
+				<item id="19261" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 부츠 재료 -->
+				<item id="19266" min="1" max="1" chance="0.252" /> <!-- 카데이라 슈즈 재료 -->
+				<item id="19256" min="1" max="1" chance="0.252" /> <!-- 카데이라 실드 재료 -->
+				<item id="19267" min="1" max="1" chance="0.252" /> <!-- 카데이라 시길 재료 -->
+				<item id="19393" min="1" max="1" chance="0.321" /> <!-- 레시피: 카데이라 부츠 (60%) -->
+				<item id="19399" min="1" max="1" chance="0.321" /> <!-- 레시피: 카데이라 레더 부츠 (60%) -->
+				<item id="19404" min="1" max="1" chance="0.321" /> <!-- 레시피: 카데이라 슈즈 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="18" />
+			<height normal="44" />
+		</collision>
+	</npc>
+	<npc id="22799" level="90" type="Monster" name="신성 투사">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6328" level="1" />
+			<skill name="Skill02_ID" id="6329" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>FEMALE</sex>
+		<acquire exp="1086675" sp="20842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="42744.1640378549" hpRegen="110.577296732991" mp="1812.65206812652" mpRegen="3" />
+			<attack physical="8055.6852044663" magical="3703.9078404776" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="533.447105239013" magical="588.816559099516" />
+			<attribute>
+				<attack type="HOLY" value="200" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="200" dark="-100" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="4" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4285" level="4" /> <!-- Sleep Resistance -->
+			<skill id="4287" level="4" /> <!-- Hold Resistance -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="12" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="4441" level="5" /> <!-- Greater Mental Attack Resistance -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="6328" level="1" /> <!-- Fighter Judgement -->
+			<skill id="6329" level="1" /> <!-- Fighter Blow -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="500" isAggressive="true">
+			<clanList>
+				<clan>N_DIVINE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="31069" chance="100" /> <!-- Adena -->
+				<item id="41079" min="1" max="3" chance="0.36" /> <!-- 수도원 유물 -->
+				<item id="1865" min="1" max="3" chance="22.76" /> <!-- Varnish -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="33478" min="1" max="1" chance="0.015" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="18189" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 부츠 -->
+				<item id="18195" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 레더 부츠 -->
+				<item id="18200" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 슈즈 -->
+				<item id="18190" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 실드 -->
+				<item id="18201" min="1" max="1" chance="0.0005" /> <!-- 미확인의 카데이라 시길 -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.075" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.07" /> <!-- 파멸 R 데이 -->
+				<item id="33479" min="1" max="1" chance="0.08" /> <!-- 파멸 R 젤 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19251" min="1" max="1" chance="0.252" /> <!-- 카데이라 헬멧 재료 -->
+				<item id="19257" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 헬멧 재료 -->
+				<item id="19262" min="1" max="1" chance="0.252" /> <!-- 카데이라 서클릿 재료 -->
+				<item id="19251" min="1" max="1" chance="0.252" /> <!-- 카데이라 흉갑 재료 -->
+				<item id="19258" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 아머 재료 -->
+				<item id="19263" min="1" max="1" chance="0.252" /> <!-- 카데이라 튜닉 재료 -->
+				<item id="19253" min="1" max="1" chance="0.252" /> <!-- 카데이라 각반 재료 -->
+				<item id="19259" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 레깅스 재료 -->
+				<item id="19264" min="1" max="1" chance="0.252" /> <!-- 카데이라 호즈 재료 -->
+				<item id="19254" min="1" max="1" chance="0.252" /> <!-- 카데이라 건틀렛 재료 -->
+				<item id="19260" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 글로브 재료 -->
+				<item id="19265" min="1" max="1" chance="0.252" /> <!-- 카데이라 글로브 재료 -->
+				<item id="19255" min="1" max="1" chance="0.252" /> <!-- 카데이라 부츠 재료 -->
+				<item id="19261" min="1" max="1" chance="0.252" /> <!-- 카데이라 레더 부츠 재료 -->
+				<item id="19266" min="1" max="1" chance="0.252" /> <!-- 카데이라 슈즈 재료 -->
+				<item id="19256" min="1" max="1" chance="0.252" /> <!-- 카데이라 실드 재료 -->
+				<item id="19267" min="1" max="1" chance="0.852" /> <!-- 카데이라 시길 재료 -->
+				<item id="19394" min="1" max="1" chance="0.321" /> <!-- 레시피: 카데이라 실드 (60%) -->
+				<item id="19405" min="1" max="1" chance="0.321" /> <!-- 레시피: 카데이라 시길 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="24" />
+			<height normal="49" />
+		</collision>
+	</npc>
+</list>

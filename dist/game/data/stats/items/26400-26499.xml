@@ -1,0 +1,1135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="26400" name="봉인된 섀도우 스로워" type="EtcItem">
+		<set name="icon" val="icon.weapon_shadow_bow" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26401" name="봉인된 섀도우 슈트제" type="EtcItem">
+		<set name="icon" val="icon.weapon_shadow_crossbow" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26402" name="봉인된 섀도우 버스터" type="EtcItem">
+		<set name="icon" val="icon.weapon_shadow_magic_sword" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26403" name="봉인된 섀도우 레트리뷰터" type="EtcItem">
+		<set name="icon" val="icon.weapon_shadow_magic_blunt" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26404" name="봉인된 섀도우 듀얼소드" type="EtcItem">
+		<set name="icon" val="icon.weapon_shadow_dual_sword" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26405" name="외계인의 재료 상자" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26406" name="네비트의 룬(용의 승천) 1시간 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26407" name="네비트의 룬(용의 승천) 1시간 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="STEEL" />
+		<capsuled_items>
+<item chance="100.0" id="26408" max="1" min="1" /> 
+		</capsuled_items>
+	</item>
+	<item id="26408" name="네비트의 룬(용의 승천)" additionalName="1시간 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27422" level="1" /> 
+		</skills>
+	</item>
+	<item id="26409" name="네비트의 룬(용의 승천) 1일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26410" name="네비트의 룬(용의 승천) 1일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26411" name="네비트의 룬(용의 승천)" additionalName="1일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27422" level="1" /> 
+		</skills>
+	</item>
+	<item id="26412" name="네비트의 룬(용의 승천) 7일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26413" name="네비트의 룬(용의 승천) 7일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26414" name="네비트의 룬(용의 승천)" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27422" level="1" /> 
+		</skills>
+	</item>
+	<item id="26415" name="네비트의 룬(용의 승천) 30일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26416" name="네비트의 룬(용의 승천) 30일 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26417" name="네비트의 룬(용의 승천)" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27422" level="1" /> 
+		</skills>
+	</item>
+	<item id="26418" name="레시피: 상급 풍요의 탈리스만 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5004" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26419" name="레시피: 상급 풍요의 탈리스만 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5005" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26420" name="레시피: 상급 풍요의 탈리스만 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5006" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26421" name="레시피: 상급 풍요의 탈리스만 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5007" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26422" name="럭키박스 1" additionalName="여정의 서막" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26423" name="럭키박스 2" additionalName="여정의 서막" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26424" name="럭키박스 3" additionalName="여정의 서막" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26425" name="진멸의 탈리스만 한방 제작 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26426" name="업화의 탈리스만 업그레이드 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26427" name="원해의 탈리스만 업그레이드 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26428" name="동경의 탈리스만 업그레이드 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26429" name="금목의 탈리스만 업그레이드 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26430" name="불변의 비전서 서장" type="EtcItem">
+		<set name="icon" val="icon.esagira_telepo_01" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26431" name="불변의 비전서 1장" type="EtcItem">
+		<set name="icon" val="icon.esagira_telepo_01" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26432" name="불변의 비전서 2장" type="EtcItem">
+		<set name="icon" val="icon.esagira_telepo_01" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26433" name="별이 담긴 병 - 테스트용" additionalName="테스트용" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_sign_agathion_feed_yellow_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="26434" name="테스트용 카드 - 탈리스만" type="Armor">
+		<set name="icon" val="icon.card2_event_giyotine" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="26435" name="테스트용 카드 - 팔찌" type="Armor">
+		<set name="icon" val="icon.card2_event_giyotine" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="price" val="3556000" />
+		<set name="material" val="SILVER" />
+		<set name="bodypart" val="rbracelet" />
+	</item>
+	<item id="26436" name="테스트용 카드 - 룬" type="EtcItem">
+		<set name="icon" val="icon.card2_event_giyotine" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="CARD_EVENT" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26437" name="섀도우 셰이퍼 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27426" level="1" /> 
+		</skills>
+	</item>
+	<item id="26438" name="섀도우 커터 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27427" level="1" /> 
+		</skills>
+	</item>
+	<item id="26439" name="섀도우 슬래셔 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27428" level="1" /> 
+		</skills>
+	</item>
+	<item id="26440" name="섀도우 파이터 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27429" level="1" /> 
+		</skills>
+	</item>
+	<item id="26441" name="섀도우 스토머 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27430" level="1" /> 
+		</skills>
+	</item>
+	<item id="26442" name="섀도우 스로워 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27431" level="1" /> 
+		</skills>
+	</item>
+	<item id="26443" name="섀도우 슈트제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27432" level="1" /> 
+		</skills>
+	</item>
+	<item id="26444" name="섀도우 버스터 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27433" level="1" /> 
+		</skills>
+	</item>
+	<item id="26445" name="섀도우 레트리뷰터 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27434" level="1" /> 
+		</skills>
+	</item>
+	<item id="26446" name="섀도우 듀얼소드 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="27435" level="1" /> 
+		</skills>
+	</item>
+	<item id="26447" name="풍요의 탈리스만" additionalName="전쟁" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="1" /> 
+		</skills>
+	</item>
+	<item id="26448" name="풍요의 탈리스만" additionalName="전술" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="2" /> 
+		</skills>
+	</item>
+	<item id="26449" name="풍요의 탈리스만" additionalName="사기" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="3" /> 
+		</skills>
+	</item>
+	<item id="26450" name="풍요의 탈리스만" additionalName="체능" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="4" /> 
+		</skills>
+	</item>
+	<item id="26451" name="추격자의 탈리스만" additionalName="풍요" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="5" /> 
+			<skill id="21365" level="1" type="ON_EQUIP" /> 
+			<skill id="21373" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="26452" name="학살자의 탈리스만" additionalName="풍요" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="6" /> 
+			<skill id="21370" level="1" type="ON_EQUIP" /> 
+			<skill id="21374" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="26453" name="정복자의 탈리스만" additionalName="풍요" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="7" /> 
+			<skill id="21371" level="1" type="ON_EQUIP" /> 
+			<skill id="21375" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="26454" name="무법자의 탈리스만" additionalName="풍요" type="Armor">
+		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="is_freightable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="8" /> 
+			<skill id="21372" level="1" type="ON_EQUIP" /> 
+			<skill id="21376" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="26455" name="상급 풍요의 탈리스만 - 1단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.g_therich_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="9" /> 
+			<skill id="21477" level="1" /> 
+		</skills>
+	</item>
+	<item id="26456" name="상급 풍요의 탈리스만 - 2단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.g_therich_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="10" /> 
+			<skill id="21477" level="2" /> 
+		</skills>
+	</item>
+	<item id="26457" name="상급 풍요의 탈리스만 - 3단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.g_therich_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="11" /> 
+			<skill id="21477" level="3" /> 
+		</skills>
+	</item>
+	<item id="26458" name="상급 풍요의 탈리스만 - 4단계" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.g_therich_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="bodypart" val="deco1" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="21364" level="12" /> 
+			<skill id="21477" level="4" /> 
+		</skills>
+	</item>
+	<item id="26459" name="레시피: 상급 풍요의 탈리스만 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5008" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26460" name="레시피: 상급 풍요의 탈리스만 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5009" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26461" name="레시피: 상급 풍요의 탈리스만 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5010" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26462" name="레시피: 상급 풍요의 탈리스만 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5011" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26463" name="레시피: 상급 풍요의 탈리스만 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5012" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26464" name="레시피: 상급 풍요의 탈리스만 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5013" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26465" name="레시피: 상급 풍요의 탈리스만 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5014" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26466" name="레시피: 상급 풍요의 탈리스만 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="5015" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="26467" name="풍요의 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26468" name="린드비오르의 귀걸이" additionalName="3일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="4320" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="13524" level="1" /> 
+			<skill id="13542" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">170</stat>
+		</stats>
+	</item>
+	<item id="26469" name="린드비오르의 귀걸이" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="13524" level="1" /> 
+			<skill id="13542" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">170</stat>
+		</stats>
+	</item>
+	<item id="26470" name="린드비오르의 귀걸이" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="13524" level="1" /> 
+			<skill id="13542" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">170</stat>
+		</stats>
+	</item>
+	<item id="26471" name="린드비오르의 귀걸이" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="13524" level="1" /> 
+			<skill id="13542" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">170</stat>
+		</stats>
+	</item>
+	<item id="26472" name="린드비오르의 귀걸이 랜덤박스" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="4320" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26473" name="린드비오르의 귀걸이 랜덤박스" type="EtcItem">
+		<set name="icon" val="icon.event_big_july_seven_park_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="4320" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26474" name="라비앙로즈의 영롱한 브로치" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="13659" level="1" /> 
+			<skill id="13924" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">101</stat>
+		</stats>
+	</item>
+	<item id="26475" name="영롱한 보석 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_piece" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="26476" name="바이탈스톤" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18568" level="1" /> 
+		</skills>
+	</item>
+	<item id="26477" name="바이탈스톤" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18568" level="2" /> 
+		</skills>
+	</item>
+	<item id="26478" name="바이탈스톤" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18568" level="3" /> 
+			<skill id="27439" level="1" /> 
+		</skills>
+	</item>
+	<item id="26479" name="바이탈스톤" additionalName="Lv4" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18568" level="4" /> 
+			<skill id="27439" level="2" /> 
+		</skills>
+	</item>
+	<item id="26480" name="바이탈스톤" additionalName="Lv5" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18568" level="5" /> 
+			<skill id="27439" level="3" /> 
+			<skill id="21439" level="1" /> 
+		</skills>
+	</item>
+	<item id="26481" name="가넷" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18566" level="1" /> 
+		</skills>
+	</item>
+	<item id="26482" name="가넷" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18566" level="2" /> 
+		</skills>
+	</item>
+	<item id="26483" name="가넷" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18566" level="3" /> 
+		</skills>
+	</item>
+	<item id="26484" name="가넷" additionalName="Lv4" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18566" level="4" /> 
+		</skills>
+	</item>
+	<item id="26485" name="가넷" additionalName="Lv5" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18566" level="5" /> 
+			<skill id="18567" level="1" /> 
+		</skills>
+	</item>
+	<item id="26486" name="탄자나이트" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18565" level="1" /> 
+		</skills>
+	</item>
+	<item id="26487" name="탄자나이트" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18565" level="2" /> 
+		</skills>
+	</item>
+	<item id="26488" name="탄자나이트" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18565" level="3" /> 
+		</skills>
+	</item>
+	<item id="26489" name="탄자나이트" additionalName="Lv4" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18565" level="4" /> 
+		</skills>
+	</item>
+	<item id="26490" name="탄자나이트" additionalName="Lv5" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="18565" level="5" /> 
+		</skills>
+	</item>
+	<item id="26491" name="라비앙로즈의 바이탈스톤 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_vital" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26476" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26492" name="라비앙로즈의 가넷 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_garnet" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26481" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26493" name="라비앙로즈의 탄자나이트 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_tanzanite" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26486" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26494" name="라비앙로즈의 영롱한 브로치 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_belief_pack" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26474" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26495" name="샤다이의 보석함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="26496" name="빛나는 보석 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_piece" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="26497" name="캐츠아이" additionalName="Lv1" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27440" level="1" /> 
+		</skills>
+	</item>
+	<item id="26498" name="캐츠아이" additionalName="Lv2" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27440" level="2" /> 
+		</skills>
+	</item>
+	<item id="26499" name="캐츠아이" additionalName="Lv3" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27440" level="3" /> 
+		</skills>
+	</item>
+</list>

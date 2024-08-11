@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list isChanceMultisell="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
+	<npcs>
+		<npc>30012</npc> <!-- Fishing Guildsman -->
+	</npcs>
+	<item>
+		<ingredient id="49587" count="1" /> <!-- 황금 인어의 낚싯대 --> 
+		<ingredient id="29564" count="250" /> <!-- 출석 코인 -->
+		<ingredient id="57" count="150000000" /> <!-- 아데나 -->
+		<production id="70120" count="1" chance="1" /> <!-- 황금 인어의 명품 낚싯대 -->
+		<production id="70120" count="1" chance="29" /> <!-- 황금 인어의 명품 낚싯대 -->
+		<production id="49587" count="1" chance="70" /> <!-- 황금 인어의 낚싯대 --> 
+	</item>
+	<item>
+		<ingredient id="47557" count="1" /> <!-- 강태공 낚싯대 - Stage 1 --> 
+		<ingredient id="29564" count="100" /> <!-- 출석 코인 -->
+		<ingredient id="57" count="100000000" /> <!-- 아데나 -->
+		<production id="47558" count="1" chance="1" /> <!-- 강태공 낚싯대 - Stage 2 -->
+		<production id="47558" count="1" chance="29" /> <!-- 강태공 낚싯대 - Stage 2 -->
+		<production id="47557" count="1" chance="70" /> <!-- 강태공 낚싯대 - Stage 1 --> 
+	</item>
+	<item>
+		<ingredient id="47558" count="1" /> <!-- 강태공 낚싯대 - Stage 2 --> 
+		<ingredient id="29564" count="150" /> <!-- 출석 코인 -->
+		<ingredient id="57" count="200000000" /> <!-- 아데나 -->
+		<production id="47559" count="1" chance="1" /> <!-- 강태공 낚싯대 - Stage 3 -->
+		<production id="47559" count="1" chance="29" /> <!-- 강태공 낚싯대 - Stage 3 -->
+		<production id="47558" count="1" chance="70" /> <!-- 강태공 낚싯대 - Stage 2 --> 
+	</item>
+	<item>
+		<ingredient id="47559" count="1" /> <!-- 강태공 낚싯대 - Stage 3 --> 
+		<ingredient id="29564" count="200" /> <!-- 출석 코인 -->
+		<ingredient id="57" count="300000000" /> <!-- 아데나 -->
+		<production id="47560" count="1" chance="1" /> <!-- 강태공 낚싯대 - Stage 4 -->
+		<production id="47560" count="1" chance="29" /> <!-- 강태공 낚싯대 - Stage 4 -->
+		<production id="47559" count="1" chance="70" /> <!-- 강태공 낚싯대 - Stage 3 --> 
+	</item>
+	<item>
+		<ingredient id="47560" count="1" /> <!-- 강태공 낚싯대 - Stage 4 --> 
+		<ingredient id="29564" count="250" /> <!-- 출석 코인 -->
+		<ingredient id="57" count="400000000" /> <!-- 아데나 -->
+		<production id="47561" count="1" chance="1" /> <!-- 강태공 낚싯대 - Stage 5 -->
+		<production id="47561" count="1" chance="29" /> <!-- 강태공 낚싯대 - Stage 5 -->
+		<production id="47560" count="1" chance="70" /> <!-- 강태공 낚싯대 - Stage 4 --> 
+	</item>
+</list>

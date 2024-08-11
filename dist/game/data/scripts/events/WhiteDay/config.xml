@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="WhiteDay Event" active="03 14 00 00-03 15 00 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="17137" min="1" max="1" chance="3.72%" />
+	</droplist>
+	<spawnlist>
+		<add npc="33829" x="83441" y="149097" z="-3393" heading="31167" /> <!-- 기란 -->
+		<add npc="33829" x="-84019" y="243115" z="-3728" heading="9231" /> <!-- 말섬 -->
+		<add npc="33829" x="18136" y="145410" z="-3072" heading="5636" /> <!-- 디온 -->
+		<add npc="33829" x="-14140" y="123307" z="-3105" heading="31644" /> <!-- 글성 -->
+		<add npc="33829" x="117008" y="76653" z="-2720" heading="30084" /> <!-- 사냥꾼 -->
+		<add npc="33829" x="147640" y="25937" z="-2001" heading="32381" /> <!-- 아덴 -->
+		<add npc="33829" x="82747" y="53809" z="-1473" heading="33419" /> <!-- 오렌 -->
+		<add npc="33829" x="-82081" y="150834" z="-3105" heading="28502" /> <!-- 글루딘 -->
+		<add npc="33829" x="17510" y="170455" z="-3496" heading="50534" /> <!-- 플로란 -->
+		<add npc="33829" x="147487" y="-55507" z="-2736" heading="49586" /> <!-- 고다드 -->
+	</spawnlist>
+	<destroyItemsOnEnd>
+		<item id="17137" />
+	</destroyItemsOnEnd>
+	<messages>
+		<add type="onEnd" text="화이트데이 이벤트가 종료되었습니다!" />
+	</messages>
+</event>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="91600" name="Dimensional Talisman Lv. 9" type="Armor">
+		<set name="icon" val="icon.bm_dimension_tallisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="deco1" />
+	</item>
+	<item id="91601" name="Dimensional Talisman Lv. 10" type="Armor">
+		<set name="icon" val="icon.bm_dimension_tallisman" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="deco1" />
+	</item>
+	<item id="91602" name="봉인된 결계의 인형 - 프린테사" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.bm_doll_frintessa_30d" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="91603" name="결계의 인형 - 프린테사" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.bm_doll_frintessa_30d" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="91604" name="프린테사 인형" additionalName="Lv1" type="EtcItem">
+		<set name="icon" val="icon.bm_doll_frintessa_30d" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="51297" level="1" /> 
+		</skills>
+	</item>
+	<item id="91605" name="프린테사 인형" additionalName="Lv2" type="EtcItem">
+		<set name="icon" val="icon.bm_doll_frintessa_30d" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="51297" level="2" /> 
+		</skills>
+	</item>
+</list>

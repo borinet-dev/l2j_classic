@@ -1,0 +1,22 @@
+﻿<html noscrollbar><body><br>
+<center>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32>
+<font color="LEVEL">동맹 창설</font></td><br>
+<table>
+	<tr>
+		<td><edit var="name" width=117  height=18></td>
+		<td><button value="동맹을 창설한다" action="bypass -h npc_%objectId%_create_ally $name" width=130 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg"></td>
+	</tr>
+</table>
+<br>
+<img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="동맹을 해산한다" action="bypass -h npc_%objectId%_dissolve_ally" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg">
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_2" width=300 height=32>
+<table>
+	<tr>
+		<td><br><br><br><br><br><br><br><br><br><br><br><br><br><br><Button ALIGN=LEFT ICON="RETURN" action="bypass -h npc_%objectId%_Chat 0">뒤로가기</Button></td>
+	</tr>
+</table>
+</center>
+</body></html>

@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/DailyMission.xsd">
+	<reward id="1" reward_id="1000" name="2레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="2" dailyReset="false">
+	<!-- 초보자 패키지 1 지급 -->
+		<handler name="level">
+			<param name="level">2</param>
+		</handler>
+		<items>
+			<item id="49000" count="1" /> <!-- Agathion Singer & Dancer - Not Available -->
+			<item id="49032" count="1" /> <!-- Eva's Mark - 30-day -->
+			<item id="34603" count="1" /> <!-- Mysterious No-grade Soulshot -->
+			<item id="34610" count="1" /> <!-- Mysterious Blessed No-grade Spiritshot -->
+		</items>
+	</reward>
+	<reward id="2" reward_id="1001" name="10레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="10" dailyReset="false">
+	<!-- 축귀 10장, D젤/데이 5장씩 지급 -->
+		<handler name="level">
+			<param name="level">10</param>
+		</handler>
+		<items>
+			<item id="41245" count="10" /> <!-- 축복받은 귀환 주문서 -->
+			<item id="955" count="5" />
+			<item id="956" count="5" />
+		</items>
+	</reward>
+	<reward id="3" reward_id="1002" name="20레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="20" dailyReset="false">
+	<!-- 축귀 5장, 버프주문서 10장씩 지급 -->
+		<handler name="level">
+			<param name="level">20</param>
+		</handler>
+		<items>
+			<item id="40367" count="2" />
+			<item id="29013" count="10" />
+			<item id="29014" count="10" />
+			<item id="41245" count="5" /> <!-- 축복받은 귀환 주문서 -->
+		</items>
+	</reward>
+	<reward id="4" reward_id="1003" name="30레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="30" dailyReset="false">
+	<!-- 스탯증가룬(향상의 룬) 7일기간제 지급 -->
+		<handler name="level">
+			<param name="level">30</param>
+		</handler>
+		<items>
+			<item id="70106" count="1" />
+		</items>
+	</reward>
+	<reward id="5" reward_id="1004" name="40레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="40" dailyReset="false">
+	<!-- C급 무기/방어구 교환권 지급 -->
+		<handler name="level">
+			<param name="level">40</param>
+		</handler>
+		<items>
+			<item id="39375" count="1" />
+			<item id="41004" count="1" />
+			<item id="41007" count="1" />
+		</items>
+	</reward>
+	<reward id="6" reward_id="1005" name="52레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="52" dailyReset="false">
+	<!-- B급 무기/방어구 교환권 지급 -->
+		<handler name="level">
+			<param name="level">52</param>
+		</handler>
+		<items>
+			<item id="41005" count="1" />
+			<item id="41008" count="1" />
+		</items>
+	</reward>
+	<reward id="7" reward_id="1006" name="61레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="61" dailyReset="false">
+	<!-- A급 무기/방어구 교환권 지급 -->
+		<handler name="level">
+			<param name="level">61</param>
+		</handler>
+		<items>
+			<item id="41006" count="1" />
+			<item id="41009" count="1" />
+		</items>
+	</reward>
+	<reward id="8" reward_id="1007" name="70레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="70" dailyReset="false">
+		<handler name="level">
+			<param name="level">70</param>
+		</handler>
+		<items>
+			<item id="49488" count="20" />
+			<item id="90415" count="20" />
+			<item id="29817" count="5" />
+			<item id="29010" count="3" />
+			<item id="90793" count="2" />
+			<item id="70112" count="1" />
+		</items>
+	</reward>
+	<reward id="9" reward_id="1008" name="76레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="76" dailyReset="false">
+		<handler name="level">
+			<param name="level">76</param>
+		</handler>
+		<items>
+			<item id="49488" count="30" />
+			<item id="90415" count="30" />
+			<item id="29817" count="5" />
+			<item id="90157" count="1" />
+			<item id="20940" count="1" />
+			<item id="90836" count="1" />
+		</items>
+	</reward>
+	<reward id="10" reward_id="1009" name="80레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="80" dailyReset="false">
+		<handler name="level">
+			<param name="level">80</param>
+		</handler>
+		<items>
+			<item id="70773" count="1" />
+			<item id="70774" count="1" />
+			<item id="70775" count="1" />
+			<item id="70776" count="1" />
+			<item id="70777" count="1" />
+		</items>
+	</reward>
+	<reward id="11" reward_id="1010" name="84레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="84" dailyReset="false">
+		<handler name="level">
+			<param name="level">84</param>
+		</handler>
+		<items>
+			<item id="40367" count="5" />
+			<item id="49533" count="30" />
+			<item id="90415" count="30" />
+		</items>
+	</reward>
+	<reward id="12" reward_id="1011" name="85레벨 도달" classRace="0" isMainClassOnly="true" requiredCompletion="85" dailyReset="false">
+		<handler name="level">
+			<param name="level">85</param>
+		</handler>
+		<items>
+			<item id="40367" count="5" />
+		</items>
+	</reward>
+	<reward id="224" reward_id="100" name="주말 접속" classRace="0" isMainClassOnly="false" requiredCompletion="1" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="loginweekend" />
+		<items>
+			<item id="49499" count="1" />
+		</items>
+	</reward>
+	<reward id="225" reward_id="200" name="월간 접속" classRace="0" isMainClassOnly="false" requiredCompletion="1" isOneTime="false" dailyReset="false" monthReset="true">
+		<handler name="loginmonth" />
+		<items>
+			<item id="29584" count="2" />
+		</items>
+	</reward>
+	<reward id="226" reward_id="1" name="퀘스트 매니아" classRace="0" isMainClassOnly="false" requiredCompletion="2" isOneTime="false" missionMania="true">
+		<handler name="quest" />
+		<items>
+			<item id="29009" count="1" />
+			<item id="8594" count="1" />
+		</items>
+	</reward>
+	<reward id="231" reward_id="2" name="낚시를 하자" classRace="0" isMainClassOnly="false" requiredCompletion="5" isOneTime="false" missionMania="true">
+		<handler name="fishing" />
+		<items>
+			<item id="49508" count="300" />
+		</items>
+	</reward>
+	<reward id="232" reward_id="300" name="혈맹 가입" classRace="0" isMainClassOnly="false" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<handler name="clan">
+			<param name="minLevel">40</param>
+			<param name="maxLevel">85</param>
+		</handler>
+		<items>
+			<item id="29978" count="1" />
+		</items>
+	</reward>
+	<reward id="233" reward_id="3" name="올림피아드 1회 참가" classRace="0" requiredCompletion="1" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="olympiad" />
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="234" reward_id="4" name="올림피아드 10회 참가" classRace="0" requiredCompletion="10" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="olympiad" />
+		<items>
+			<item id="90499" count="5" />
+		</items>
+	</reward>
+<!-- <reward id="235" reward_id="5" name="올림피아드 30회 참가" classRace="0" requiredCompletion="30" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="olympiad" />
+		<items>
+			<item id="70280" count="1" />
+		</items>
+	</reward>
+	<reward id="241" reward_id="6" name="올림피아드 15회 우승" classRace="0" requiredCompletion="15" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="olympiad">
+			<param name="winOnly">true</param>
+		</handler>
+		<items>
+			<item id="70024" count="15" />
+		</items>
+	</reward> -->
+	<reward id="250" reward_id="301" name="악마섬 탐험" classRace="0" isMainClassOnly="true" requiredCompletion="100" isOneTime="true" dailyReset="false">
+		<handler name="special">
+			<param name="ids">24050,24051,24052,24053,24054,24055,24025,24026,24027,24028,24029,24030,24031,24032,24033,24034,24035,24036,24037,24038,24039,24040,24046,24047,24048,24049</param>
+			<param name="minLevel">65</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="2" />
+			<item id="29010" count="1" />
+		</items>
+	</reward>
+	<reward id="251" reward_id="302" name="자켄 토벌" classRace="0" isMainClassOnly="true" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<handler name="special">
+			<param name="ids">29022</param>
+			<param name="minLevel">65</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90767" count="1" />
+		</items>
+	</reward>
+	<reward id="252" reward_id="101" name="공성전 참가" classRace="0" isMainClassOnly="false" requiredCompletion="1" dailyReset="false" weeklyReset="true">
+		<handler name="siege" />
+		<items>
+			<item id="29009" count="1" />
+		</items>
+	</reward>
+	<reward id="253" reward_id="102" name="강화는 나의 삶" classRace="0" isMainClassOnly="false" requiredCompletion="5" dailyReset="false" weeklyReset="true">
+		<handler name="enchantitem">
+			<param name="minLevel">10</param>
+			<param name="minGrade">A</param>
+			<param name="isMaster">0</param>
+		</handler>
+		<items>
+			<item id="29010" count="2" />
+			<item id="8594" count="3" />
+		</items>
+	</reward>
+	<reward id="254" reward_id="7" name="일일 사냥 (Lv. 20 미만)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">1</param>
+			<param name="maxLevel">20</param>
+			<param name="minLevelMob">1</param>
+			<param name="maxLevelMob">22</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="255" reward_id="8" name="일일 사냥 (Lv. 21-40)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">21</param>
+			<param name="maxLevel">40</param>
+			<param name="minLevelMob">16</param>
+			<param name="maxLevelMob">44</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="256" reward_id="9" name="일일 사냥 (Lv. 41-50)" classRace="0" isMainClassOnly="false" requiredCompletion="40" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">41</param>
+			<param name="maxLevel">50</param>
+			<param name="minLevelMob">36</param>
+			<param name="maxLevelMob">52</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="257" reward_id="10" name="일일 사냥 (Lv. 51-60)" classRace="0" isMainClassOnly="false" requiredCompletion="50" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">51</param>
+			<param name="maxLevel">60</param>
+			<param name="minLevelMob">46</param>
+			<param name="maxLevelMob">68</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="258" reward_id="11" name="일일 사냥 (Lv. 61-70)" classRace="0" isMainClassOnly="false" requiredCompletion="60" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">61</param>
+			<param name="maxLevel">70</param>
+			<param name="minLevelMob">56</param>
+			<param name="maxLevelMob">75</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="259" reward_id="12" name="일일 사냥 (Lv. 71-75)" classRace="0" isMainClassOnly="false" requiredCompletion="80" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">71</param>
+			<param name="maxLevel">75</param>
+			<param name="minLevelMob">66</param>
+			<param name="maxLevelMob">80</param>
+		</handler>
+		<items>
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="260" reward_id="13" name="일일 사냥 (Lv. 76 이상)" classRace="0" isMainClassOnly="false" requiredCompletion="100" missionMania="true">
+		<handler name="monster">
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+			<param name="minLevelMob">71</param>
+			<param name="maxLevelMob">99</param>
+		</handler>
+		<items>
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="261" reward_id="103" name="주간 사냥 (Lv. 20 or lower)" classRace="0" isMainClassOnly="true" requiredCompletion="100" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">1</param>
+			<param name="maxLevel">20</param>
+			<param name="minLevelMob">1</param>
+			<param name="maxLevelMob">2</param>
+		</handler>
+		<items>
+			<item id="29009" count="1" />
+		</items>
+	</reward>
+	<reward id="262" reward_id="104" name="주간 사냥 (Lv. 21-40)" classRace="0" isMainClassOnly="true" requiredCompletion="150" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">21</param>
+			<param name="maxLevel">40</param>
+			<param name="minLevelMob">16</param>
+			<param name="maxLevelMob">44</param>
+		</handler>
+		<items>
+			<item id="29009" count="2" />
+		</items>
+	</reward>
+	<reward id="263" reward_id="105" name="주간 사냥 (Lv. 41-50)" classRace="0" isMainClassOnly="false" requiredCompletion="200" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">41</param>
+			<param name="maxLevel">50</param>
+			<param name="minLevelMob">36</param>
+			<param name="maxLevelMob">52</param>
+		</handler>
+		<items>
+			<item id="29009" count="3" />
+		</items>
+	</reward>
+	<reward id="264" reward_id="106" name="주간 사냥 (Lv. 51-60)" classRace="0" isMainClassOnly="false" requiredCompletion="250" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">51</param>
+			<param name="maxLevel">60</param>
+			<param name="minLevelMob">46</param>
+			<param name="maxLevelMob">68</param>
+		</handler>
+		<items>
+			<item id="29519" count="2" />
+		</items>
+	</reward>
+	<reward id="265" reward_id="107" name="주간 사냥 (Lv. 61-70)" classRace="0" isMainClassOnly="false" requiredCompletion="300" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">61</param>
+			<param name="maxLevel">70</param>
+			<param name="minLevelMob">56</param>
+			<param name="maxLevelMob">75</param>
+		</handler>
+		<items>
+			<item id="29519" count="3" />
+		</items>
+	</reward>
+	<reward id="266" reward_id="108" name="주간 사냥 (Lv. 71-75)" classRace="0" isMainClassOnly="false" requiredCompletion="400" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">71</param>
+			<param name="maxLevel">75</param>
+			<param name="minLevelMob">66</param>
+			<param name="maxLevelMob">80</param>
+		</handler>
+		<items>
+			<item id="29010" count="2" />
+		</items>
+	</reward>
+	<reward id="267" reward_id="109" name="주간 사냥 (Lv. 76 이상)" classRace="0" isMainClassOnly="false" requiredCompletion="500" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+			<param name="minLevelMob">71</param>
+			<param name="maxLevelMob">99</param>
+		</handler>
+		<items>
+			<item id="29010" count="3" />
+		</items>
+	</reward>
+	<reward id="1095" reward_id="110" name="혈맹 레이드 공략" classRace="0" isMainClassOnly="false" requiredCompletion="1" dailyReset="false" weeklyReset="true">
+		<!-- Receive it when you defeat 1 enemy on Clan Arena. The quest for this reward available only once per week. For characters that reached Lv. 40 or higher. -->
+		<handler name="monster">
+			<param name="ids">25794,25795,25796,25797,25798,25799,25800,25801,25802,25803,25804,25805,25806,25807,25808,25809,25810,25811,25812,25813</param>
+			<param name="minLevel">40</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="29010" count="3" />
+		</items>
+	</reward>
+	<reward id="1096" reward_id="303" name="혈맹 레이드 토벌" classRace="0" isMainClassOnly="false" requiredCompletion="20" isOneTime="true" dailyReset="false">
+		<!-- Receive it when you defeat 20 enemies on Clan Arena. You can get a reward only once. For characters that reached Lv. 40 or higher. -->
+		<handler name="monster">
+			<param name="ids">25794,25795,25796,25797,25798,25799,25800,25801,25802,25803,25804,25805,25806,25807,25808,25809,25810,25811,25812,25813</param>
+			<param name="minLevel">40</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="57" count="500000000" />
+			<item id="10649" count="50" />
+		</items>
+	</reward>
+	<reward id="1097" reward_id="304" name="잊혀진 섬 모험" classRace="0" isMainClassOnly="true" requiredCompletion="300" isOneTime="true" dailyReset="false">
+		<!-- Receive it when you kill any 300 monsters on the Forgotten Island. You can complete the quest for this reward only once. For characters that reached Lv. 74 or higher. -->
+		<handler name="special">
+			<param name="ids">21733,21734,21735,21736,21737,21738,21739,21740,21741,21742,21743,21744,21745,21746,21747,21748,21749,21750,21752,21753,21754,21755,21756,21757,21759,21760</param>
+			<param name="minLevel">74</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="3" />
+		</items>
+	</reward>
+	<reward id="1102" reward_id="806" name="스페셜 일일 사냥 (Lv. 35-50)" classRace="0" isMainClassOnly="true" requiredCompletion="100" missionMania="true">
+		<handler name="special">
+			<param name="ids">20135,20804,20805,20806,20807,20808,20991,20992,20993,20793</param>
+			<param name="minLevel">35</param>
+			<param name="maxLevel">50</param>
+		</handler>
+		<items>
+			<item id="90917" count="3" />
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="1103" reward_id="807" name="스페셜 일일 사냥 (Lv. 45-60)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<!-- Receive it when you kill 30 Earth Guardians Harits in Forest of Mirrors. -->
+		<handler name="special">
+			<param name="ids">21658</param>
+			<param name="minLevel">45</param>
+			<param name="maxLevel">60</param>
+		</handler>
+		<items>
+			<item id="90917" count="6" />
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="1104" reward_id="808" name="스페셜 일일 사냥 (Lv. 55-70)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<!-- Receive it when you kill 30 Earth Guardians Palibati near Seal of Shilen. -->
+		<handler name="special">
+			<param name="ids">21660</param>
+			<param name="minLevel">55</param>
+			<param name="maxLevel">70</param>
+		</handler>
+		<items>
+			<item id="90917" count="8" />
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="1105" reward_id="809" name="스페셜 일일 사냥 (Lv. 65-75)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<!-- Receive it when you kill 30 Sharp Talon Tigers in Forsaken Plains. -->
+		<handler name="special">
+			<param name="ids">21021</param>
+			<param name="minLevel">65</param>
+			<param name="maxLevel">75</param>
+		</handler>
+		<items>
+			<item id="90918" count="2" />
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="1106" reward_id="810" name="스페셜 일일 사냥 (Lv. 76+)" classRace="0" isMainClassOnly="true" requiredCompletion="100" missionMania="true">
+		<!-- Receive it when you kill 100 monsters from the list in Hot Springs: Ruler of Hot Springs Hot Springs Yeti, Hot Springs Buffalo, Hot Springs Grendel. -->
+		<handler name="special">
+			<param name="ids">21839,21834,21842</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="1117" reward_id="811" name="거인의 동굴 탐험" classRace="0" isMainClassOnly="true" requiredCompletion="200" isOneTime="true" dailyReset="false">
+		<!-- Receive it when you kill 200 monsters at the top and lower levels of the Giant's Cave ex?ept the Giant's Cave entrance. (For characters that reached Lv. 76 or higher.) -->
+		<handler name="special">
+			<param name="ids">20646,20647,20648,20649,20650,20651,20652,20653,20654,20656,20657,20658,24015,24016,24020,24021,24022,20655,20771,21058</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91030" count="2" />
+			<item id="90918" count="3" />
+		</items>
+	</reward>
+	<reward id="1119" reward_id="813" name="바르카 실레노스 주둔지 탐험" classRace="0" isMainClassOnly="true" requiredCompletion="300" isOneTime="true" dailyReset="false">
+		<!-- Receive it when you kill 300 monsters in Varka Silenos Barracks. (For characters that reached Lv. 78 or higher.) -->
+		<handler name="special">
+			<param name="ids">21869,21870,21871,21872,21873,21874,21875,21876,21877,21878,21879,21880,21881,21882,21883,21884,21885,21886,21887,21888,21890,21892,18926</param>
+			<param name="minLevel">78</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91030" count="2" />
+			<item id="90917" count="3" />
+		</items>
+	</reward>
+	<reward id="1120" reward_id="814" name="케트라 오크 전진기지 모험" classRace="0" isMainClassOnly="true" requiredCompletion="300" isOneTime="true" dailyReset="false">
+		<!-- Receive it when you kill 300 monsters in Ketra Orc Outpost. (For characters that reached Lv. 78 or higher.) -->
+		<handler name="special">
+			<param name="ids">21843,21844,21845,21846,21847,21848,21849,21850,21851,21852,21853,21854,21855,21856,21857,21858,21859,21860,21861,21862,21864,21866</param>
+			<param name="minLevel">78</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91030" count="2" />
+			<item id="90917" count="3" />
+		</items>
+	</reward>
+	<reward id="1121" reward_id="815" name="정령왕 킹 이그니스 처치" classRace="0" isMainClassOnly="true" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<!-- You can get a reward once for killing of Spirit King Ignis in his residence 10 times. (Only for characters that reached Lv. 76 and higher). -->
+		<handler name="special">
+			<param name="ids">29105</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91125" count="10" />
+		</items>
+	</reward>
+	<reward id="1122" reward_id="816" name="정령왕 퀸 네불라 처치" classRace="0" isMainClassOnly="true" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<!-- You can get a reward once for killing of Spirit Queen Nebula in her Residence 10 times. (Only for characters that reached Lv. 76 and higher). -->
+		<handler name="special">
+			<param name="ids">29106</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91126" count="10" />
+		</items>
+	</reward>
+	<reward id="1123" reward_id="817" name="정령왕 킹 프로첼라 처치" classRace="0" isMainClassOnly="true" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<!-- You can get a reward once for killing of Spirit King Procella in his Residence 10 times. (Only for characters that reached Lv. 76 and higher). -->
+		<handler name="special">
+			<param name="ids">29107</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91127" count="10" />
+		</items>
+	</reward>
+	<reward id="1124" reward_id="818" name="정령왕 킹 페트람 처치" classRace="0" isMainClassOnly="true" requiredCompletion="1" isOneTime="true" dailyReset="false">
+		<!-- You can get a reward once for killing of Spirit King Petram in his Residence 10 times. (Only for characters that reached Lv. 76 and higher). -->
+		<handler name="special">
+			<param name="ids">29108</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="91128" count="10" />
+		</items>
+	</reward>
+	<reward id="1140" reward_id="826" name="제국의 무덤 탐사" classRace="0" isMainClassOnly="true" requiredCompletion="200" missionMania="true">
+		<!-- Receive it when you kill 500 monsters in Imperial Tomb. (For characters that reached Lv. 78 or higher.) -->
+		<handler name="monster">
+			<param name="ids">21396,21397,21398,21399,21400,21401,21402,21403,21404,21405,21406,21407,21408,21410,21411,21412,21413,21414,21415,21416,21417,21418,21420,21421,21424,21426,21427,21428,21429,21430,21431,21432,21434,21438,21439,21440</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="2" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<!-- 
+	<reward id="1141" reward_id="827" name="침묵의 수도원 탐험" classRace="0" isMainClassOnly="false" requiredCompletion="2500" dailyReset="false" weeklyReset="true">
+		<handler name="monster">
+			<param name="ids">22794,22795,22796,22797,22798,22799,22800</param>
+			<param name="minLevel">80</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="39331" count="1" />
+			<item id="41079" count="30" />
+		</items>
+	</reward>
+	<reward id="1142" reward_id="828" name="침묵의 수도원 탐험 - 파티" classRace="0" isMainClassOnly="false" requiredCompletion="500" dailyReset="false" weeklyReset="true">
+		<handler name="monsterparty">
+			<param name="ids">22794,22795,22796,22797,22798,22799,22800</param>
+			<param name="minLevel">80</param>
+			<param name="maxLevel">99</param>
+			<param name="minParty">8</param>
+		</handler>
+		<items>
+			<item id="39331" count="1" />
+			<item id="41079" count="150" />
+		</items>
+	</reward>
+	<reward id="1143" reward_id="829" name="잊혀진 섬 모험 - 파티" classRace="0" isMainClassOnly="false" requiredCompletion="1000" dailyReset="false" weeklyReset="true">
+		<handler name="monsterparty">
+			<param name="ids">21733,21734,21735,21736,21737,21738,21739,21740,21741,21742,21743,21744,21745,21746,21747,21748,21749,21750,21752,21753,21754,21755,21756,21757,21759,21760</param>
+			<param name="minLevel">74</param>
+			<param name="maxLevel">99</param>
+			<param name="minParty">5</param>
+		</handler>
+		<items>
+			<item id="30288" count="1" />
+			<item id="41073" count="500" />
+		</items>
+	</reward>
+	-->
+	<reward id="1144" reward_id="830" name="스페셜 일일 사냥 (Lv. 40-55)" classRace="0" isMainClassOnly="true" requiredCompletion="100" missionMania="true">
+		<handler name="special">
+			<param name="ids">20238,20239,20146,20236,20239,20272,20235,20279,20240,20241,20758,20274,20275,20280,20276,20286,20273,20283,20284,20285,20287,20277,20281,20282,20242,20243,20244,20245,20137,20246,20134,20142</param>
+			<param name="minLevel">40</param>
+			<param name="maxLevel">55</param>
+		</handler>
+		<items>
+			<item id="90917" count="4" />
+			<item id="90499" count="2" />
+		</items>
+	</reward>
+	<reward id="1145" reward_id="831" name="스페셜 일일 사냥 (Lv. 81)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="special">
+			<param name="ids">19328</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="34742" count="3" />
+			<item id="90499" count="1" />
+			<item id="23768" count="5" />
+		</items>
+	</reward>
+	<reward id="1146" reward_id="832" name="스페셜 일일 사냥 (Lv. 81)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="special">
+			<param name="ids">19330</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="34742" count="3" />
+			<item id="90499" count="1" />
+			<item id="23768" count="5" />
+		</items>
+	</reward>
+	<reward id="1147" reward_id="833" name="스페셜 일일 사냥 (Lv. 81)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="special">
+			<param name="ids">19332</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="34742" count="3" />
+			<item id="90499" count="1" />
+			<item id="23768" count="5" />
+		</items>
+	</reward>
+	<reward id="1148" reward_id="834" name="스페셜 일일 사냥 (Lv. 81)" classRace="0" isMainClassOnly="true" requiredCompletion="10" missionMania="true">
+		<handler name="special">
+			<param name="ids">22545</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="34742" count="3" />
+			<item id="90499" count="1" />
+			<item id="23768" count="5" />
+		</items>
+	</reward>
+	<reward id="1149" reward_id="835" name="스페셜 일일 사냥 (Lv. 81)" classRace="0" isMainClassOnly="true" requiredCompletion="30" missionMania="true">
+		<handler name="special">
+			<param name="ids">19344</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="34742" count="3" />
+			<item id="90499" count="1" />
+			<item id="23768" count="5" />
+		</items>
+	</reward>
+	<reward id="1150" reward_id="836" name="엘프의 지하요새 모험 - 파티" classRace="0" isMainClassOnly="false" requiredCompletion="1500" dailyReset="false" weeklyReset="true">
+		<handler name="monsterparty">
+			<param name="ids">19307,19306,19309,19327,19329,19331,19336,19337,19338,19339,19340,19341,19342,19343,19345,19346,19347,19348,19349,19350,19351,19352,19353,19354,19357,19358,19359,19360,19361,19362,19363,22546,22547,22548,22549,22550,22551,22552,22593,22596,22597,22868,22869,22870,22875,22876,22877,22878,22884,22885,22886,22892,22893,22894,22900,22901,22902,22908,22909,22910,22928,22929,22930,22950,22952,22953,22954,22957,22958,22959,22960,22961,22963,22964,22966,22965,22967,22968,22969,22970,22980,22981,22983,19328,19330,19332,19344,22545</param>
+			<param name="minLevel">81</param>
+			<param name="maxLevel">99</param>
+			<param name="minParty">5</param>
+		</handler>
+		<items>
+			<item id="41234" count="1" />
+			<item id="35669" count="5" />
+		</items>
+	</reward>
+	<reward id="1151" reward_id="837" name="저 푸른 바다로" classRace="0" isMainClassOnly="false" requiredCompletion="1" missionMania="true">
+		<handler name="boatMania">
+			<param name="minLevel">21</param>
+		</handler>
+		<items>
+			<item id="41000" count="10" />
+			<item id="41255" count="5" />
+			<item id="35669" count="5" />
+			<item id="37608" count="1" />
+		</items>
+	</reward>
+	<reward id="1152" reward_id="838" name="나는 야 무적! (Lv. 21 이상)" classRace="0" isMainClassOnly="false" requiredCompletion="3" dailyReset="false" weeklyReset="true">
+		<handler name="useitem">
+			<param name="itemIds">41235</param>
+			<param name="minLevel">21</param>
+		</handler>
+		<items>
+			<item id="35669" count="1" />
+			<item id="8594" count="1" />
+		</items>
+	</reward>
+	<reward id="1153" reward_id="839" name="드래곤의 기운 (Lv. 21 이상)" classRace="0" isMainClassOnly="false" requiredCompletion="10" dailyReset="false" weeklyReset="true">
+		<handler name="useitem">
+			<param name="itemIds">90499</param>
+			<param name="minLevel">21</param>
+		</handler>
+		<items>
+			<item id="90499" count="1" />
+		</items>
+	</reward>
+	<reward id="1154" reward_id="840" name="나보다 강한 적 (Lv. 40 이상)" classRace="1" isMainClassOnly="false" requiredCompletion="100" missionMania="true">
+		<handler name="monsterlvlover">
+			<param name="minLevel">40</param>
+			<param name="classRace">1</param>
+		</handler>
+		<items>
+			<item id="728" count="25" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<reward id="1155" reward_id="841" name="나보다 강한 적 (Lv. 40 이상)" classRace="2" isMainClassOnly="false" requiredCompletion="100" missionMania="true">
+		<handler name="monsterlvlover">
+			<param name="minLevel">40</param>
+			<param name="classRace">2</param>
+		</handler>
+		<items>
+			<item id="1539" count="20" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<reward id="1156" reward_id="842" name="도신을 꿈꾸며 (Lv. 76 이상)" classRace="0" isMainClassOnly="false" requiredCompletion="5" dailyReset="false" weeklyReset="true">
+		<handler name="gamble">
+			<param name="minLevel">76</param>
+		</handler>
+		<items>
+			<item id="23767" count="20" />
+			<item id="23768" count="10" />
+		</items>
+	</reward>
+	<reward id="1157" reward_id="843" name="강화 전도사!" classRace="0" isMainClassOnly="false" requiredCompletion="1" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="enchantitem">
+			<param name="minLevel">15</param>
+			<param name="minGrade">R</param>
+			<param name="isMaster">1</param>
+		</handler>
+		<items>
+			<item id="90499" count="3" />
+			<item id="29584" count="2" />
+			<item id="49496" count="1" />
+		</items>
+	</reward>
+	<reward id="1158" reward_id="844" name="강화 마스터!" classRace="0" isMainClassOnly="false" requiredCompletion="3" isOneTime="false" dailyReset="false" monthReset="true">
+		<handler name="enchantitem">
+			<param name="minLevel">15</param>
+			<param name="minGrade">R</param>
+			<param name="isMaster">2</param>
+		</handler>
+		<items>
+			<item id="41236" count="1" />
+		</items>
+	</reward>
+	<reward id="1159" reward_id="845" name="미션 매니아" classRace="0" isMainClassOnly="false" requiredCompletion="10" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="missionMania">
+			<param name="minLevel">35</param>
+		</handler>
+		<items>
+			<item id="29817" count="10" />
+		</items>
+	</reward>
+	<reward id="1160" reward_id="846" name="천공의 틈새 매니아" classRace="0" isMainClassOnly="false" requiredCompletion="20" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="riftMania">
+			<param name="minLevel">76</param>
+		</handler>
+		<items>
+			<item id="41253" count="10" />
+			<item id="49756" count="20" />
+		</items>
+	</reward>
+	<reward id="1161" reward_id="847" name="나는 야 광부!" classRace="0" isMainClassOnly="false" requiredCompletion="50" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="MineMania">
+			<param name="minLevel">80</param>
+		</handler>
+		<items>
+			<item id="41253" count="20" />
+			<item id="29817" count="10" />
+		</items>
+	</reward>
+	<reward id="1162" reward_id="848" name="카마로카 정복자" classRace="0" isMainClassOnly="false" requiredCompletion="15" isOneTime="false" dailyReset="false" weeklyReset="true">
+		<handler name="KamalokaMania">
+			<param name="minLevel">50</param>
+		</handler>
+		<items>
+			<item id="90499" count="10" />
+			<item id="29817" count="10" />
+		</items>
+	</reward>
+	<reward id="1163" reward_id="849" name="심연의 간수장" classRace="0" isMainClassOnly="false" requiredCompletion="200" missionMania="true">
+		<handler name="monster">
+			<param name="ids">21638,21639,21640,21641,21642,21644,21645,21646,21647,21648</param>
+			<param name="minLevel">40</param>
+			<param name="maxLevel">49</param>
+		</handler>
+		<items>
+			<item id="39375" count="1" />
+			<item id="90917" count="5" />
+			<item id="29010" count="2" />
+		</items>
+	</reward>
+	<reward id="1164" reward_id="850" name="사형집행관" classRace="0" isMainClassOnly="false" requiredCompletion="100" missionMania="true">
+		<handler name="monster">
+			<param name="ids">21643,21649</param>
+			<param name="minLevel">40</param>
+			<param name="maxLevel">49</param>
+		</handler>
+		<items>
+			<item id="39375" count="1" />
+			<item id="90917" count="5" />
+			<item id="29010" count="2" />
+		</items>
+	</reward>
+	<reward id="1165" reward_id="851" name="스페셜 일일 사냥 (Lv. 76+)" classRace="0" isMainClassOnly="true" requiredCompletion="200" missionMania="true">
+		<handler name="special">
+			<param name="ids">21776,21777,21778,21779,21780,21781,21782,21783,21784,21785,21786,21787,21788,21789,21790,21791,21792,21793</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="2" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<reward id="1166" reward_id="852" name="스페셜 일일 사냥 (Lv. 76+)" classRace="0" isMainClassOnly="true" requiredCompletion="200" missionMania="true">
+		<handler name="special">
+			<param name="ids">21764,21765,21766,21774,21775,21746,21813,21814,21815,21816,21817,21818,21819,21820,21821,21822,21823,21824,21825,21826,21827,21828,21829,21830,21831</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="2" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<reward id="1167" reward_id="853" name="스페셜 일일 사냥 (Lv. 76+)" classRace="0" isMainClassOnly="true" requiredCompletion="200" missionMania="true">
+		<handler name="special">
+			<param name="ids">21661,21662,21663,21664,21665,21666,21667,21668,21669,21670,21671,21672,21673,21674,21675,21676,21678,21685,21686,21761,21762</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="2" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+	<reward id="1168" reward_id="854" name="스페셜 일일 사냥 (Lv. 76+)" classRace="0" isMainClassOnly="true" requiredCompletion="200" missionMania="true">
+		<handler name="special">
+			<param name="ids">20792,20794,20795,20796,20797,20798,20799,20800,20801,20802,20803,20849,20994,20995,21767,21768,21769</param>
+			<param name="minLevel">76</param>
+			<param name="maxLevel">99</param>
+		</handler>
+		<items>
+			<item id="90918" count="3" />
+			<item id="29010" count="2" />
+			<item id="35669" count="2" />
+		</items>
+	</reward>
+</list>

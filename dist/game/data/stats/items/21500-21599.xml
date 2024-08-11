@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="21500" name="카이 더 캣 모자 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21506" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21501" name="카이 더 캣 모자" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21502" name="카이 더 캣 모자" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21503" name="카이 더 캣 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21504" name="카이 더 캣 모자" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21505" name="카이 더 캣 모자" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21506" name="카이 더 캣 모자" additionalName="이벤트" type="Armor">
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21507" name="퀸 오브 캣 모자 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21513" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21508" name="퀸 오브 캣 모자 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21514" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21509" name="퀸 오브 캣 모자 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21515" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21510" name="퀸 오브 캣 모자 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21516" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21511" name="퀸 오브 캣 모자 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21517" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21512" name="퀸 오브 캣 모자 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21518" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21513" name="퀸 오브 캣 모자" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21514" name="퀸 오브 캣 모자" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21515" name="퀸 오브 캣 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21516" name="퀸 오브 캣 모자" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21517" name="퀸 오브 캣 모자" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21518" name="퀸 오브 캣 모자" additionalName="이벤트" type="Armor">
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21519" name="킹 오브 캣 모자 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21525" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21520" name="킹 오브 캣 모자 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21526" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21521" name="킹 오브 캣 모자 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21527" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21522" name="킹 오브 캣 모자 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21528" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21523" name="킹 오브 캣 모자 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21529" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21524" name="킹 오브 캣 모자 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21530" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21525" name="킹 오브 캣 모자" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21526" name="킹 오브 캣 모자" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21527" name="킹 오브 캣 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21528" name="킹 오브 캣 모자" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21529" name="킹 오브 캣 모자" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21530" name="킹 오브 캣 모자" additionalName="이벤트" type="Armor">
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21531" name="리본 헤어밴드 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21537" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21532" name="리본 헤어밴드 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21538" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21533" name="리본 헤어밴드 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21539" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21534" name="리본 헤어밴드 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21540" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21535" name="리본 헤어밴드 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21541" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21536" name="리본 헤어밴드 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21542" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21537" name="리본 헤어밴드" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21538" name="리본 헤어밴드" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21539" name="리본 헤어밴드" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21540" name="리본 헤어밴드" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="43200" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21541" name="리본 헤어밴드" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21542" name="리본 헤어밴드" additionalName="이벤트" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<player sex="0" />
+		</cond>
+	</item>
+	<item id="21543" name="세련된 맵시꾼의 모자 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21549" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21544" name="세련된 맵시꾼의 모자 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21550" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21545" name="세련된 맵시꾼의 모자 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21551" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21546" name="세련된 맵시꾼의 모자 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21552" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21547" name="세련된 맵시꾼의 모자 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21548" name="세련된 맵시꾼의 모자 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21554" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21549" name="세련된 맵시꾼의 모자" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21550" name="세련된 맵시꾼의 모자" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21551" name="세련된 맵시꾼의 모자" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21552" name="세련된 맵시꾼의 모자" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21553" name="세련된 맵시꾼의 모자" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21554" name="세련된 맵시꾼의 모자" additionalName="이벤트" type="Armor">
+		<set name="icon" val="icon.accessory_dandy_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21555" name="발키리 서클릿 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21561" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21556" name="발키리 서클릿 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21562" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21557" name="발키리 서클릿 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21563" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21558" name="발키리 서클릿 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21564" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21559" name="발키리 서클릿 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21565" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21560" name="발키리 서클릿 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21566" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21561" name="발키리 서클릿" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21562" name="발키리 서클릿" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21563" name="발키리 서클릿" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21564" name="발키리 서클릿" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21565" name="발키리 서클릿" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21566" name="발키리 서클릿" additionalName="이벤트" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21567" name="플라스틱 헤어 7일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21573" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21568" name="플라스틱 헤어 7일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21574" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21569" name="플라스틱 헤어 30일 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21575" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21570" name="플라스틱 헤어 30일 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21576" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21571" name="플라스틱 헤어 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21577" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21572" name="플라스틱 헤어 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21578" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21573" name="플라스틱 헤어" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21574" name="플라스틱 헤어" additionalName="7일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="10080" />
+	</item>
+	<item id="21575" name="플라스틱 헤어" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="21576" name="플라스틱 헤어" additionalName="30일 기간제(이벤트)" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="21577" name="플라스틱 헤어" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21578" name="플라스틱 헤어" additionalName="이벤트" type="Armor">
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="21579" name="새롬의 구슬 - S84" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.etc_warding_orb_gold_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21580" name="올프의 티셔츠" type="Armor">
+		<set name="icon" val="BranchSys2.icon.7anni_shirt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="enchant_enabled" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">28</stat>
+		</stats>
+	</item>
+	<item id="21581" name="올프의 티셔츠 강화 주문서" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.etc_scroll_of_enchant_shirt_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="22247" level="1" /> 
+		</skills>
+	</item>
+	<item id="21582" name="축복받은 올프의 티셔츠 강화 주문서" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.etc_scroll_of_enchant_shirt_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="22248" level="1" /> 
+		</skills>
+	</item>
+	<item id="21583" name="축제의 망토 - 트루 블랙" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">25</stat>
+			<stat type="fireRes">7</stat>
+			<stat type="waterRes">7</stat>
+			<stat type="windRes">7</stat>
+			<stat type="earthRes">7</stat>
+			<stat type="holyRes">7</stat>
+			<stat type="darkRes">7</stat>
+		</stats>
+	</item>
+	<item id="21584" name="축제의 망토 - 트루 블랙 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21583" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21585" name="축제의 망토 - 트루 블랙" additionalName="이벤트" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">25</stat>
+			<stat type="fireRes">7</stat>
+			<stat type="waterRes">7</stat>
+			<stat type="windRes">7</stat>
+			<stat type="earthRes">7</stat>
+			<stat type="holyRes">7</stat>
+			<stat type="darkRes">7</stat>
+		</stats>
+	</item>
+	<item id="21586" name="축제의 망토 - 트루 블랙 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21585" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21587" name="축제의 망토 - 블러디 레드" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">25</stat>
+			<stat type="fireRes">7</stat>
+			<stat type="waterRes">7</stat>
+			<stat type="windRes">7</stat>
+			<stat type="earthRes">7</stat>
+			<stat type="holyRes">7</stat>
+			<stat type="darkRes">7</stat>
+		</stats>
+	</item>
+	<item id="21588" name="축제의 망토 - 펄 화이트" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">25</stat>
+			<stat type="fireRes">7</stat>
+			<stat type="waterRes">7</stat>
+			<stat type="windRes">7</stat>
+			<stat type="earthRes">7</stat>
+			<stat type="holyRes">7</stat>
+			<stat type="darkRes">7</stat>
+		</stats>
+	</item>
+	<item id="21589" name="축제의 망토 - 펄 화이트 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21588" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21590" name="축제의 망토 - 펄 화이트" additionalName="이벤트" type="Armor">
+		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<stats>
+			<stat type="pDef">25</stat>
+			<stat type="fireRes">7</stat>
+			<stat type="waterRes">7</stat>
+			<stat type="windRes">7</stat>
+			<stat type="earthRes">7</stat>
+			<stat type="holyRes">7</stat>
+			<stat type="darkRes">7</stat>
+		</stats>
+	</item>
+	<item id="21591" name="축제의 망토 - 펄 화이트 팩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21590" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21592" name="마법방어 액세서리 5종 팩" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="21222" min="1" max="1" chance="100" /> 
+			<item id="21221" min="1" max="1" chance="100" /> 
+			<item id="21220" min="1" max="1" chance="100" /> 
+			<item id="21219" min="1" max="1" chance="100" /> 
+			<item id="21218" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21593" name="지고의 보석" type="EtcItem">
+		<set name="icon" val="icon.etc_jewel_red_i00" />
+		<set name="material" val="CRYSTAL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21594" name="생일 모자" type="Armor">
+		<set name="icon" val="icon.accessory_birthday_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+	</item>
+	<item id="21595" name="생일 케이크" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_birthday_cake_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<cond addName="1" msgId="113">
+			<player vehicleMounted="false" />
+		</cond>
+		<skills>
+			<skill id="22249" level="1" /> 
+		</skills>
+	</item>
+	<item id="21596" name="축복 패키지 100" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> 
+			<item id="10649" min="6" max="6" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21597" name="사냥 패키지 100" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> 
+			<item id="14065" min="6" max="6" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21598" name="축복 패키지 200" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> 
+			<item id="10649" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="21599" name="사냥 패키지 200" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> 
+			<item id="14065" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+</list>

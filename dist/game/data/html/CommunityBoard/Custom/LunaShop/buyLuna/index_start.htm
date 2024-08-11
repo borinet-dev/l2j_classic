@@ -1,0 +1,126 @@
+<html noscrollbar><title>커뮤니티 보드 - 루나상점</title>
+	<body><br>
+%header%
+		<table width=20>
+			<tr>
+				<td>
+					%menu%
+				</td>
+				<td>
+					<center>
+						<table border=0 cellpadding=0 cellspacing=0 width=524 height=416 background="L2UI_CT1.Windows_DF_TooltipBG">
+							<tr>
+								<td align="center">
+
+
+<table border=0 width=490 height=330>
+	<tr>
+		<td align="center">
+<table width=456>
+<tr>
+<td height=25 align="center"><br><br>
+<font name="hs16" color="CDB67F">루나 구매 진행</font>
+</td>
+</tr>
+<tr>
+<td>
+<center><img src="L2UI.SquareGray" width=250 height=1><br></center>
+</td>
+</tr>
+</table>
+
+<table width=456>
+<tr>
+<td height=25 align="left">
+<br>
+1. 구매 캐릭터는 <font color=LEVEL>%charname%</font> 입니다.<br1>
+2. 이름 입력란에는 <font color=LEVEL>입금자 성명</font>을 적어주시기 바랍니다.<br1>
+3. 입력한 이름과 실제 입금자가 상이할 경우에는 처리지연이 되거나 처리가 되지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;않을 수 있습니다.<br1>
+4. 입금 후 1시간 이내에 지급받지 못한경우 <font color=LEVEL>10%</font>를 더 지급받을 수 있습니다.<br1>
+5. 입금자 이름은 <font color=LEVEL>10자리까지 입력가능</font>하며, 띄워쓰기는 하지마십시오.<br><br>
+</td>
+</tr>
+<tr>
+<td>
+<center><img src="L2UI.SquareGray" width=456 height=1><br></center>
+</td>
+</tr>
+</table>
+			<table border=0 width=450>
+				<tr>
+					<td align=right width=60 height=30>
+						입금자 이름: 
+					</td>
+					<td align=left width=100>
+						 <edit var="name" type="numer" width="130" height="12" length="10">
+					</td>
+					<td align=right width=50 height=30>
+						구매 금액: 
+					</td>
+					<td width=150 height=30>
+						<combobox var="price" list=1만원;3만원;5만원;7만원;10만원;15만원;20만원;30만원;50만원;100만원;150만원;200만원 width="130" height="12" length="25"><br><Br>
+					</td>
+				</tr>
+			</table>
+			<table border=1 width=450 cellpadding=5 cellspacing=5>
+				<tr>
+					<td align=left width=120>
+						1만원: 100루나<br1>
+					</td>
+					<td align=left width=120>
+						3만원: 330루나<br1>
+					</td>
+					<td align=left width=120>
+						5만원: 600루나<br1>
+					</td>
+				</tr>
+				<tr>
+					<td align=left width=120>
+						7만원: 900루나<br1>
+					</td>
+					<td align=left width=120>
+						10만원: 1,300루나<br1>
+					</td>
+					<td align=left width=120>
+						15만원: 2,000루나<br1>
+					</td>
+				</tr>
+				<tr>
+					<td align=left width=120>
+						20만원: 3,000루나
+					</td>
+					<td align=left width=120>
+						30만원: 5,000루나
+					</td>
+					<td align=left width=120>
+						50만원: 10,000루나
+					</td>
+				</tr>
+				<tr>
+					<td align=left width=120>
+						100만원: 23,000루나
+					</td>
+					<td align=left width=120>
+						150만원: 36,000루나
+					</td>
+					<td align=left width=120>
+						200만원: 50,000루나
+					</td>
+				</tr>
+			</table>
+
+
+		</td>
+	</tr>
+</table>
+<br><br>
+<button ALIGN=LEFT ICON="NORMAL" action="bypass buyLunaFinish $name $price">동의 후 완료하기</Button>
+						</center>
+					</td>
+				</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+	</body>
+</html>

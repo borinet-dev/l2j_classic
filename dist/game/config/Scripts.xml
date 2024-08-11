@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../data/xsd/Scripts.xsd">
+	<!-- 스크립트 로딩에서 이 파일 이름들을 건너뜁니다. 다른 방법을 사용하여 이미 로드되었기 때문입니다. -->
+	<exclude file="package-info.java" />
+	<exclude file="handlers" />
+	
+	<!--
+	이 파일을 사용하여 스크립트 디렉터리 내에서 특정 폴더/파일을 제외하거나 포함할 수 있습니다.
+	
+	폴더/파일을 제외하려면 다음과 같은 줄을 추가하십시오:
+	<exclude file="{여기에 폴더/파일 이름}" />
+	예를 들어 퀘스트 디렉터리를 제외하려면 다음을 사용합니다:
+	<exclude file="quests" />
+	
+	특정 디렉터리 내의 모든 파일을 제외하되 특정 파일을 포함하려면 다음과 같이 할 수 있습니다:
+	<exclude file="{폴더 이름}">
+		<include file="{여기에 폴더/파일 이름}" />
+		<include file="{여기에 폴더/파일 이름}" />
+		...
+	</exclude>
+	예를 들어 Valakas 스크립트를 제외한 ForgeOfTheGods 폴더를 제외하려면 다음을 사용합니다:
+	<exclude file="ForgeOfTheGods">
+		<include file="Valakas.java" />
+	</exclude>
+	-->
+</list>

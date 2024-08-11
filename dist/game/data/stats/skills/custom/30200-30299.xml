@@ -1,0 +1,4388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/skills.xsd">
+	<skill id="30200" toLevel="10" name="공격력">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">180</value>
+					<value level="2">190</value>
+					<value level="3">200</value>
+					<value level="4">210</value>
+					<value level="5">220</value>
+					<value level="6">230</value>
+					<value level="7">240</value>
+					<value level="8">250</value>
+					<value level="9">260</value>
+					<value level="10">270</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30201" toLevel="10" name="마법력">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">180</value>
+					<value level="2">190</value>
+					<value level="3">200</value>
+					<value level="4">210</value>
+					<value level="5">220</value>
+					<value level="6">230</value>
+					<value level="7">240</value>
+					<value level="8">250</value>
+					<value level="9">260</value>
+					<value level="10">270</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30202" toLevel="10" name="방어력">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">130</value>
+					<value level="2">140</value>
+					<value level="3">150</value>
+					<value level="4">160</value>
+					<value level="5">170</value>
+					<value level="6">180</value>
+					<value level="7">190</value>
+					<value level="8">200</value>
+					<value level="9">210</value>
+					<value level="10">220</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30203" toLevel="10" name="마법저항">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">230</value>
+					<value level="2">240</value>
+					<value level="3">250</value>
+					<value level="4">260</value>
+					<value level="5">270</value>
+					<value level="6">280</value>
+					<value level="7">290</value>
+					<value level="8">300</value>
+					<value level="9">310</value>
+					<value level="10">320</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30204" toLevel="10" name="명중">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">12</value>
+					<value level="7">14</value>
+					<value level="8">16</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">12</value>
+					<value level="7">14</value>
+					<value level="8">16</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30205" toLevel="10" name="회피">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">12</value>
+					<value level="7">14</value>
+					<value level="8">16</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">12</value>
+					<value level="7">14</value>
+					<value level="8">16</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30206" toLevel="10" name="공격속도">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30207" toLevel="10" name="마법속도">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+
+	<skill id="30211" toLevel="5" name="STR">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30212" toLevel="5" name="DEX">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30213" toLevel="5" name="CON">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30214" toLevel="5" name="INT">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30215" toLevel="5" name="WIT">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>WIT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30216" toLevel="5" name="MEN">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30217" toLevel="1" name="혈맹 명성치 주문서">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41012</itemConsumeId>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveClanFame">
+				<fame>1000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30218" toLevel="1" name="혈맹 명성치 주문서">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41013</itemConsumeId>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveClanFame">
+				<fame>3000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30219" toLevel="1" name="혈맹 명성치 주문서">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41014</itemConsumeId>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveClanFame">
+				<fame>5000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30220" toLevel="1" name="혈맹 명성치 주문서">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41015</itemConsumeId>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveClanFame">
+				<fame>10000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30221" toLevel="1" name="테러리스트 칸">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>10</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>10</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>10</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SLEEP>20</SLEEP>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30222" toLevel="30" name="서버도우미">
+		<icon>borinet.helper_rune</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">11</value>
+					<value level="7">12</value>
+					<value level="8">13</value>
+					<value level="9">14</value>
+					<value level="10">15</value>
+					<value fromLevel="11" toLevel="30">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">10</value>
+					<value level="6">11</value>
+					<value level="7">12</value>
+					<value level="8">13</value>
+					<value level="9">14</value>
+					<value level="10">15</value>
+					<value fromLevel="11" toLevel="30">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="BonusDropAdena">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+					<value level="11">11</value>
+					<value level="12">12</value>
+					<value level="13">13</value>
+					<value level="14">14</value>
+					<value level="15">15</value>
+					<value level="16">16</value>
+					<value level="17">17</value>
+					<value level="18">18</value>
+					<value level="19">19</value>
+					<value fromLevel="20" toLevel="30">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="BonusSpoilRate">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+					<value level="11">11</value>
+					<value level="12">12</value>
+					<value level="13">13</value>
+					<value level="14">14</value>
+					<value level="15">15</value>
+					<value level="16">16</value>
+					<value level="17">17</value>
+					<value level="18">18</value>
+					<value level="19">19</value>
+					<value fromLevel="20" toLevel="30">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">3</value>
+					<value level="6">3</value>
+					<value level="7">4</value>
+					<value level="8">4</value>
+					<value fromLevel="9" toLevel="30">5</value>
+				</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+					<value level="11">11</value>
+					<value level="12">12</value>
+					<value level="13">13</value>
+					<value level="14">14</value>
+					<value level="15">15</value>
+					<value level="16">16</value>
+					<value level="17">17</value>
+					<value level="18">18</value>
+					<value level="19">19</value>
+					<value fromLevel="20" toLevel="30">20</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+					<value level="11">11</value>
+					<value level="12">12</value>
+					<value level="13">13</value>
+					<value level="14">14</value>
+					<value level="15">15</value>
+					<value level="16">16</value>
+					<value level="17">17</value>
+					<value level="18">18</value>
+					<value level="19">19</value>
+					<value fromLevel="20" toLevel="30">20</value>
+				</amount>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="11">2</value>
+					<value level="12">4</value>
+					<value level="13">6</value>
+					<value level="14">8</value>
+					<value level="15">10</value>
+					<value level="16">11</value>
+					<value level="17">12</value>
+					<value level="18">13</value>
+					<value level="19">14</value>
+					<value fromLevel="20" toLevel="30">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="11">2</value>
+					<value level="12">4</value>
+					<value level="13">6</value>
+					<value level="14">8</value>
+					<value level="15">10</value>
+					<value level="16">11</value>
+					<value level="17">12</value>
+					<value level="18">13</value>
+					<value level="19">14</value>
+					<value fromLevel="20" toLevel="30">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">3</value>
+					<value level="22">6</value>
+					<value level="23">9</value>
+					<value level="24">12</value>
+					<value level="25">15</value>
+					<value level="26">18</value>
+					<value level="27">21</value>
+					<value level="28">24</value>
+					<value level="29">27</value>
+					<value level="30">30</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">3</value>
+					<value level="22">6</value>
+					<value level="23">9</value>
+					<value level="24">12</value>
+					<value level="25">15</value>
+					<value level="26">18</value>
+					<value level="27">21</value>
+					<value level="28">24</value>
+					<value level="29">27</value>
+					<value level="30">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDerangement">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistStun">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">2</value>
+					<value level="22">4</value>
+					<value level="23">6</value>
+					<value level="24">8</value>
+					<value level="25">10</value>
+					<value level="26">12</value>
+					<value level="27">14</value>
+					<value level="28">16</value>
+					<value level="29">18</value>
+					<value level="30">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistTurnStone">
+				<amount>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">2</value>
+					<value level="22">4</value>
+					<value level="23">6</value>
+					<value level="24">8</value>
+					<value level="25">10</value>
+					<value level="26">12</value>
+					<value level="27">14</value>
+					<value level="28">16</value>
+					<value level="29">18</value>
+					<value level="30">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SLEEP>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</SLEEP>
+				<DERANGEMENT>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</DERANGEMENT>
+				<SHOCK>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">5</value>
+					<value level="22">10</value>
+					<value level="23">15</value>
+					<value level="24">20</value>
+					<value level="25">25</value>
+					<value level="26">30</value>
+					<value level="27">35</value>
+					<value level="28">40</value>
+					<value level="29">45</value>
+					<value level="30">50</value>
+				</SHOCK>
+				<PARALYZE>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">2</value>
+					<value level="22">4</value>
+					<value level="23">6</value>
+					<value level="24">8</value>
+					<value level="25">10</value>
+					<value level="26">12</value>
+					<value level="27">14</value>
+					<value level="28">16</value>
+					<value level="29">18</value>
+					<value level="30">20</value>
+				</PARALYZE>
+				<TURN_STONE>
+					<value fromLevel="1" toLevel="20">1</value>
+					<value level="21">2</value>
+					<value level="22">4</value>
+					<value level="23">6</value>
+					<value level="24">8</value>
+					<value level="25">10</value>
+					<value level="26">12</value>
+					<value level="27">14</value>
+					<value level="28">16</value>
+					<value level="29">18</value>
+					<value level="30">20</value>
+				</TURN_STONE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30223" toLevel="1" name="탱커방어">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="ResistStun">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>70</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>70</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistHold">
+				<amount>70</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>100</SHOCK>
+				<PARALYZE>70</PARALYZE>
+				<SLEEP>70</SLEEP>
+				<HOLD>70</HOLD>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillEvasion">
+				<magicType>0</magicType>
+				<amount>40</amount>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30224" toLevel="1" name="미확인의 R그레이드 장비 상자">
+		<itemConsumeId>41034</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1">
+						<item id="18137" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18138" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18139" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18140" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18141" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18142" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18143" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18145" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18146" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18147" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18148" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18149" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="1">
+						<item id="18150" count="1" /> <!-- 미확인의 아포칼립스 무기 -->
+					</item>
+					<item chance="4">
+						<item id="18185" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18186" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18187" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18188" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18189" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18190" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18191" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18192" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18193" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18194" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18195" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18196" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18197" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18198" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18199" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18200" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="4">
+						<item id="18201" count="1" /> <!-- 미확인의 카데이라 방어구 -->
+					</item>
+					<item chance="6">
+						<item id="18202" count="1" /> <!-- 미확인의 카데이라 악세 -->
+					</item>
+					<item chance="6">
+						<item id="18203" count="1" /> <!-- 미확인의 카데이라 악세 -->
+					</item>
+					<item chance="7">
+						<item id="18204" count="1" /> <!-- 미확인의 카데이라 악세 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30225" toLevel="1" name="내성 증가">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ResistSleep">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDerangement">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistStun">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SLEEP>20</SLEEP>
+				<DERANGEMENT>20</DERANGEMENT>
+				<SHOCK>20</SHOCK>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30226" toLevel="1" name="신규자혈맹 어드밴트">
+		<icon>icon.skill19009</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>NEWBIE_CLAN_ADVENT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>-2</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>-1</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>1000</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>5</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>5</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30227" toLevel="1" name="프린테사 망토">
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>85</magicLevel>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-8</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30228" toLevel="1" name="할리샤의 투구">
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>85</magicLevel>
+		<effects>
+			<effect name="ExpModify">
+				<amount>-10</amount>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30229" toLevel="1" name="페이즈 2">
+		<!-- This barrier can be removed only after hit 500 times. If you fail to hit it 500 times within 15 sec., the Raid Boss fully recovers HP. -->
+		<icon>icon.skill3123</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>100</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>867</effectPoint>
+		<abnormalType>INVINCIBILITY_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLevel>40</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>-1</abnormalTime>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>INFINITE_SHIELD4_AVE_2</abnormalVisualEffect>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>27</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30230" toLevel="1" name="망토 - 축복받은 귀환">
+		<!-- Can use Blessed Escape every hr. -->
+		<operateType>A1</operateType>
+		<magicLevel>1</magicLevel>
+		<hitTime>200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30231" toLevel="8" name="나이트의 망토">
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>85</magicLevel>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30232" toLevel="1" name="절망적인 희망">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="BonusDropAdena">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30233" toLevel="1" name="Master's Blessing - Haste">
+		<!-- The GM is always by your side. Atk. Spd. +33% for 1 h. -->
+		<icon>icon.skill1086</icon>
+		<abnormalLevel>3</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>52</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>33</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30234" toLevel="1" name="Master's Blessing - Guidance">
+		<!-- The GM is always by your side. P. Accuracy +4 for 1 h. -->
+		<icon>icon.skill1240</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>HIT_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>56</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30235" toLevel="1" name="Master's Blessing - Acumen">
+		<!-- The GM is always by your side. Casting Spd. +30% for 1 h. -->
+		<icon>icon.skill1085</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>48</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30236" toLevel="1" name="Master's Blessing - Greater Might">
+		<!-- The GM is always by your side. P. Atk. +10% for 1 h. -->
+		<icon>icon.skill1388</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PA_UP2</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>74</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30237" toLevel="1" name="Master's Blessing - Greater Shield">
+		<!-- The GM is always by your side. P. Def. +15% for 1 h. -->
+		<icon>icon.skill1389</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PD_UP2</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>74</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30238" toLevel="1" name="Master's Blessing - Sharpen Edge">
+		<!-- The GM is always by your side. Sharpens a bladed weapon to get P. Atk. +5% and P. Critical Rate +20% for 1 h. -->
+		<icon>icon.skill0825</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MASTER_ATTACK_BUFF</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<magicLevel>49</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BIGSWORD</item>
+					<item>DUAL</item>
+					<item>ANCIENTSWORD</item>
+					<item>RAPIER</item>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+					<item>POLE</item>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BIGSWORD</item>
+					<item>DUAL</item>
+					<item>ANCIENTSWORD</item>
+					<item>RAPIER</item>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+					<item>POLE</item>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30239" toLevel="1" name="Master's Blessing - Chant of Victory">
+		<!-- The GM is always by your side. For 1 h., Max CP +12%, CP Recovery Bonus +40%, P. Accuracy +4, P. Evasion +4, P./ M. Atk. +20%, Casting/ Atk. Spd. +10%, P./ M. Critical Rate +20%, P./ M. Critical Damage +15%. -->
+		<icon>icon.skill1363</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>78</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HpRegen">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30240" toLevel="1" name="Master's Blessing - Wild Magic">
+		<!-- The GM is always by your side. For 1 h., M. Critical Rate +20. -->
+		<icon>icon.skill1303</icon>
+		<abnormalLevel>3</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MAGIC_CRITICAL_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>70</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30241" toLevel="1" name="Master's Blessing - Berserker Spirit">
+		<!-- The GM is always by your side. For 1 h., party member's P. Def. -8%, M. Def. -16%, and P. Evasion -4. P. Atk. +8%, M. Atk. +16%, Atk. Spd. +8%, Casting Spd. +8%, and Speed +8. -->
+		<icon>icon.skill1062</icon>
+		<abnormalLevel>3</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>BERSERKER</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>52</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>16</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-16</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>-4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30242" toLevel="1" name="Master's Blessing - Improve Combat">
+		<!-- The GM is always by your side. Combine P. Atk. increase and P. Def. increase to have more advanced combat power increase effect. For 1 h., P. Atk. +15% and P. Def. +15%. -->
+		<icon>icon.skill1499</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_PA_PD_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>70</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>PA_UP,9;PD_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>PA_UP;PD_UP</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30243" toLevel="1" name="Master's Blessing - Improve Shield Defense">
+		<!-- The GM is always by your side. Combine Shield Defense rate increase and Shield Defense increase to have more advanced shield ability increase effect. For 1 h., shield defense rate +30% and Shield Defense +50%. -->
+		<icon>icon.skill1503</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_SHIELD_RATE_DEFENCE_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>70</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SHIELD_PROB_UP,9;SHIELD_DEFENCE_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>SHIELD_PROB_UP;SHIELD_DEFENCE_UP</slot>
+			</effect>
+			<effect name="ShieldDefenceRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ShieldDefence">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30244" toLevel="1" name="Master's Blessing - Improve Magic">
+		<!-- The GM is always by your side. Combine M. Atk. increase and M. Def. increase to have more advanced magic ability increase effect. For 1 h., M. Atk. +75% and M. Def. +30%. -->
+		<icon>icon.skill1500</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_MA_MD_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>74</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>MA_UP,9;MD_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>MA_UP;MD_UP</slot>
+			</effect>
+			<effect name="MAtk">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30245" toLevel="1" name="Master's Blessing - Improve Condition">
+		<!-- The GM is always by your side. Combine maximum HP increase and maximum MP increase to have more advanced mental and physical power. For 1 h., Max HP +35% and Max MP +35%. -->
+		<icon>icon.skill1501</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_HP_MP_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>72</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>MAX_HP_UP,9;MAX_MP_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>MAX_HP_UP;MAX_MP_UP</slot>
+			</effect>
+			<effect name="MaxMp">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30246" toLevel="1" name="Master's Blessing - Improve Critical Attack">
+		<!-- The GM is always by your side. Combines P. Critical Rate increase and P. Critical Damage increase to have more advanced critical increase effect. For 1 h., P. Critical Rate +30% and P. Critical Damage +35%. -->
+		<icon>icon.skill1502</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_CRT_RATE_DMG_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>74</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>CRITICAL_PROB_UP,9;CRITICAL_DMG_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>CRITICAL_PROB_UP;CRITICAL_DMG_UP</slot>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30247" toLevel="1" name="Master's Blessing - Improve Movement">
+		<!-- The GM is always by your side. Combine Speed increase and P. Evasion increase to have more advanced movement increase effect. For 1 h., Speed +33 and P. Evasion +4. -->
+		<icon>icon.skill1504</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>IMPROVE_SPEED_AVOID_UP</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>72</magicLevel>
+		<mpConsume>1</mpConsume>
+		<mpInitialConsume>1</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SPEED_UP,9;AVOID_UP,9</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>SPEED_UP;AVOID_UP</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30248" toLevel="1" name="Master's Blessing - Clarity">
+		<!-- The GM is always by your side. For 1 h., physical skill MP consumption -20%, magic skill's MP consumption -10%, and song/ dance skill's MP consumption -20%. -->
+		<icon>icon.skill1397</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>74</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30249" toLevel="1" name="Master's Blessing - Noblesse Blessing">
+		<!-- The GM is always by your side. The target's buff/ de-buff doesn't disappear at death but is maintained. But the Noblesse Blessing and the Amulet of Luck disappear. -->
+		<icon>icon.skill1323</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PRESERVE_ABNORMAL</abnormalType>
+		<canBeDispelled>false</canBeDispelled>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>1500</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<mpConsume>2</mpConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="NoblesseBless" />
+		</effects>
+	</skill>
+	<skill id="30250" toLevel="1" name="즉사 내성 20% 증가">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="InstantKillResist">
+				<amount>20</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30251" toLevel="3" name="무기 업그레이드">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30252" toLevel="3" name="방어구 업그레이드 - 상의">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30253" toLevel="3" name="방어구 업그레이드 - 하의">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30254" toLevel="3" name="방어구 업그레이드 - 헬멧">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30255" toLevel="3" name="방어구 업그레이드 - 글러브">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30256" toLevel="3" name="방어구 업그레이드 - 부츠">
+		<icon>icon.skill4285</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+			</effect>
+			<effect name="FatalBlowRateDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30257" toLevel="1" name="아키서스의 주문서">
+		<icon>icon.scrl_of_ench_acc</icon>
+		<operateType>A2</operateType>
+		<abnormalType>AKISUS_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>300</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41235</itemConsumeId>
+		<effects>
+			<effect name="ResistBleed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDerangement">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistHold">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPoison">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistStun">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistTurnStone">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSilence">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<BLEED>100</BLEED>
+				<DERANGEMENT>100</DERANGEMENT>
+				<HOLD>100</HOLD>
+				<PARALYZE>100</PARALYZE>
+				<POISON>100</POISON>
+				<SLEEP>100</SLEEP>
+				<SHOCK>100</SHOCK>
+				<TURN_STONE>100</TURN_STONE>
+				<SILENCE>100</SILENCE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30258" toLevel="1" name="가정의 달 기념 선물 상자">
+		<itemConsumeId>41240</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="41237" count="3" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="9">
+						<item id="41238" count="3" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="9">
+						<item id="41239" count="3" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="8">
+						<item id="48848" count="2" /> <!-- 프레야의 얼음 장미 -->
+					</item>
+					<item chance="8">
+						<item id="48642" count="2" /> <!-- 빛나는 네비트의 황금 모래시계 -->
+					</item>
+					<item chance="8">
+						<item id="48497" count="2" /> <!-- 빛나는 드래곤의 속성수 -->
+					</item>
+					<item chance="7">
+						<item id="41237" count="6" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="7">
+						<item id="41238" count="6" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="7">
+						<item id="41239" count="6" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="4">
+						<item id="48848" count="4" /> <!-- 프레야의 얼음 장미 -->
+					</item>
+					<item chance="4">
+						<item id="48642" count="4" /> <!-- 빛나는 네비트의 황금 모래시계 -->
+					</item>
+					<item chance="4">
+						<item id="48497" count="4" /> <!-- 빛나는 드래곤의 속성수 -->
+					</item>
+					<item chance="3">
+						<item id="41237" count="10" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="3">
+						<item id="41238" count="10" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="3">
+						<item id="41239" count="10" /> <!-- 바나나 쉐이크 -->
+					</item>
+					<item chance="2">
+						<item id="48848" count="6" /> <!-- 프레야의 얼음 장미 -->
+					</item>
+					<item chance="2">
+						<item id="48642" count="6" /> <!-- 빛나는 네비트의 황금 모래시계 -->
+					</item>
+					<item chance="2">
+						<item id="48497" count="6" /> <!-- 빛나는 드래곤의 속성수 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30259" toLevel="1" name="빛나는 드래곤의 속성수">
+		<icon>icon.bm_dragon_posion_special</icon>
+		<operateType>A2</operateType>
+		<abnormalType>GLOWING_DRAGON_POTION</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<isMagic>4</isMagic>
+		<reuseDelay>300000</reuseDelay>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeId>48497</itemConsumeId> <!-- Shining Nevit's Gold Hourglass -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>70</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="ExpModify">
+				<amount>25</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>25</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30260" toLevel="1" name="카네이션">
+		<icon>guide.etc_carnation</icon>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>NONE</abnormalType>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>52</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30261" toLevel="1" name="Adventurer's Bracelet">
+		<!-- MEN/ WIT/ CON/ INT/ DEX/ STR +1. Can equip 3 Talismans. -->
+		<icon>BranchIcon.icon.bracelet_of_explorer_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="TalismanSlot">
+				<slots>4</slots>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30262" toLevel="1" name="축복받은 귀환 주문서">
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41245</itemConsumeId>
+		<hitTime>200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="45241" toLevel="20" name="Divine Beam">
+		<!-- Purifies with holy light. Inflicts magic damage with 126 power. Deals heavy damage to demons and undead. -->
+		<icon>icon.skill11773</icon>
+		<castRange>700</castRange>
+		<attributeType>HOLY</attributeType>
+		<attributeValue>20</attributeValue>
+		<effectPoint>
+			<value level="1">-1140</value>
+			<value level="2">-1155</value>
+			<value level="3">-1170</value>
+			<value level="4">-1185</value>
+			<value level="5">-1200</value>
+			<value level="6">-1215</value>
+			<value level="7">-1230</value>
+			<value level="8">-1245</value>
+			<value level="9">-1260</value>
+			<value level="10">-1275</value>
+			<value level="11">-1290</value>
+			<value level="12">-1305</value>
+			<value level="13">-1320</value>
+			<value level="14">-1335</value>
+			<value level="15">-1350</value>
+			<value level="16">-1365</value>
+			<value level="17">-1380</value>
+			<value level="18">-1395</value>
+			<value level="19">-1410</value>
+			<value level="20">-1425</value>
+		</effectPoint>
+		<effectRange>1200</effectRange>
+		<hitTime>3000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>
+			<value level="1">76</value>
+			<value level="2">77</value>
+			<value level="3">78</value>
+			<value level="4">79</value>
+			<value level="5">80</value>
+			<value level="6">81</value>
+			<value level="7">82</value>
+			<value level="8">83</value>
+			<value level="9">84</value>
+			<value level="10">85</value>
+			<value level="11">86</value>
+			<value level="12">87</value>
+			<value level="13">88</value>
+			<value level="14">89</value>
+			<value level="15">90</value>
+			<value level="16">91</value>
+			<value level="17">92</value>
+			<value level="18">93</value>
+			<value level="19">94</value>
+			<value level="20">95</value>
+		</magicLevel>
+		<mpConsume>
+			<value level="1">43</value>
+			<value level="2">43</value>
+			<value level="3">44</value>
+			<value level="4">44</value>
+			<value level="5">45</value>
+			<value level="6">45</value>
+			<value level="7">46</value>
+			<value level="8">46</value>
+			<value level="9">47</value>
+			<value level="10">47</value>
+			<value level="11">48</value>
+			<value level="12">48</value>
+			<value level="13">49</value>
+			<value level="14">49</value>
+			<value level="15">50</value>
+			<value level="16">53</value>
+			<value level="17">56</value>
+			<value level="18">59</value>
+			<value level="19">62</value>
+			<value level="20">65</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">13</value>
+			<value level="2">14</value>
+			<value level="3">14</value>
+			<value level="4">14</value>
+			<value level="5">14</value>
+			<value level="6">14</value>
+			<value level="7">14</value>
+			<value level="8">14</value>
+			<value level="9">15</value>
+			<value level="10">15</value>
+			<value level="11">15</value>
+			<value level="12">15</value>
+			<value level="13">15</value>
+			<value level="14">15</value>
+			<value level="15">15</value>
+			<value level="16">15</value>
+			<value level="17">15</value>
+			<value level="18">15</value>
+			<value level="19">15</value>
+			<value level="20">15</value>
+		</mpInitialConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>ROOT_MAGICALLY</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">85</value>
+					<value level="2">90</value>
+					<value level="3">95</value>
+					<value level="4">100</value>
+					<value level="5">102</value>
+					<value level="6">110</value>
+					<value level="7">115</value>
+					<value level="8">120</value>
+					<value level="9">125</value>
+					<value level="10">130</value>
+					<value level="11">135</value>
+					<value level="12">140</value>
+					<value level="13">145</value>
+					<value level="14">150</value>
+					<value level="15">155</value>
+					<value level="16">160</value>
+					<value level="17">165</value>
+					<value level="18">170</value>
+					<value level="19">175</value>
+					<value level="20">180</value>
+				</power>
+				<raceModifier>1.3</raceModifier>
+				<races>DEMONIC;UNDEAD</races>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>ROOT_MAGICALLY,-1</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="45242" toLevel="15" name="Mass Dryad Root">
+		<!-- <Hold Skill>. The effect lasts for 5 sec. Inflicts Hold on the enemy. -->
+		<icon>icon.skill1508</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>ROOT_MAGICALLY</abnormalType>
+		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
+		<activateRate>40</activateRate>
+		<affectLimit>9-10</affectLimit>
+		<affectRange>200</affectRange>
+		<basicProperty>MAGIC</basicProperty>
+		<castRange>600</castRange>
+		<effectPoint>
+			<value level="1">-1140</value>
+			<value level="2">-1155</value>
+			<value level="3">-1170</value>
+			<value level="4">-1185</value>
+			<value level="5">-1200</value>
+			<value level="6">-1215</value>
+			<value level="7">-1230</value>
+			<value level="8">-1245</value>
+			<value level="9">-1260</value>
+			<value level="10">-1275</value>
+			<value level="11">-1290</value>
+			<value level="12">-1305</value>
+			<value level="13">-1320</value>
+			<value level="14">-1335</value>
+			<value level="15">-1350</value>
+		</effectPoint>
+		<effectRange>1000</effectRange>
+		<hitTime>3000</hitTime>
+		<isDebuff>true</isDebuff>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<lvlBonusRate>30</lvlBonusRate>
+		<magicLevel>
+			<value level="1">76</value>
+			<value level="2">77</value>
+			<value level="3">78</value>
+			<value level="4">79</value>
+			<value level="5">80</value>
+			<value level="6">81</value>
+			<value level="7">82</value>
+			<value level="8">83</value>
+			<value level="9">84</value>
+			<value level="10">85</value>
+			<value level="11">86</value>
+			<value level="12">87</value>
+			<value level="13">88</value>
+			<value level="14">89</value>
+			<value level="15">90</value>
+		</magicLevel>
+		<mpConsume>
+			<value level="1">140</value>
+			<value level="2">145</value>
+			<value level="3">150</value>
+			<value level="4">155</value>
+			<value level="5">160</value>
+			<value level="6">165</value>
+			<value level="7">170</value>
+			<value level="8">175</value>
+			<value level="9">180</value>
+			<value level="10">185</value>
+			<value level="11">190</value>
+			<value level="12">195</value>
+			<value level="13">200</value>
+			<value level="14">215</value>
+			<value level="15">220</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">12</value>
+			<value level="2">16</value>
+			<value level="3">18</value>
+			<value level="4">19</value>
+			<value level="5">20</value>
+			<value level="6">21</value>
+			<value level="7">21</value>
+			<value level="8">21</value>
+			<value level="9">21</value>
+			<value level="10">21</value>
+			<value level="11">21</value>
+			<value level="12">21</value>
+			<value level="13">21</value>
+			<value level="14">21</value>
+			<value level="15">21</value>
+		</mpInitialConsume>
+		<operateType>A2</operateType>
+		<removedOnDamage>true</removedOnDamage>
+		<reuseDelay>30000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<trait>HOLD</trait>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Root" />
+			<effect name="DefenceTrait">
+				<HOLD>100</HOLD>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="45243" toLevel="15" name="Mass Wind Shackles">
+		<!-- <Suppression skill>. Slows enemies down. The effect lasts for 30 sec. Atk. Spd. -23%. Casting Spd. -23% -->
+		<icon>icon.skill30523</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ATTACK_TIME_UP</abnormalType>
+		<activateRate>80</activateRate>
+		<affectLimit>9-10</affectLimit>
+		<affectRange>200</affectRange>
+		<basicProperty>MAGIC</basicProperty>
+		<castRange>600</castRange>
+		<effectPoint>
+			<value level="1">-1140</value>
+			<value level="2">-1155</value>
+			<value level="3">-1170</value>
+			<value level="4">-1185</value>
+			<value level="5">-1200</value>
+			<value level="6">-1215</value>
+			<value level="7">-1230</value>
+			<value level="8">-1245</value>
+			<value level="9">-1260</value>
+			<value level="10">-1275</value>
+			<value level="11">-1290</value>
+			<value level="12">-1305</value>
+			<value level="13">-1320</value>
+			<value level="14">-1335</value>
+			<value level="15">-1350</value>
+		</effectPoint>
+		<effectRange>1000</effectRange>
+		<hitTime>3000</hitTime>
+		<isDebuff>true</isDebuff>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<lvlBonusRate>30</lvlBonusRate>
+		<magicLevel>
+			<value level="1">76</value>
+			<value level="2">77</value>
+			<value level="3">78</value>
+			<value level="4">79</value>
+			<value level="5">80</value>
+			<value level="6">81</value>
+			<value level="7">82</value>
+			<value level="8">83</value>
+			<value level="9">84</value>
+			<value level="10">85</value>
+			<value level="11">86</value>
+			<value level="12">87</value>
+			<value level="13">88</value>
+			<value level="14">89</value>
+			<value level="15">90</value>
+		</magicLevel>
+		<mpConsume>
+			<value level="1">140</value>
+			<value level="2">145</value>
+			<value level="3">150</value>
+			<value level="4">155</value>
+			<value level="5">160</value>
+			<value level="6">165</value>
+			<value level="7">170</value>
+			<value level="8">175</value>
+			<value level="9">180</value>
+			<value level="10">185</value>
+			<value level="11">190</value>
+			<value level="12">195</value>
+			<value level="13">200</value>
+			<value level="14">215</value>
+			<value level="15">220</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">12</value>
+			<value level="2">16</value>
+			<value level="3">18</value>
+			<value level="4">19</value>
+			<value level="5">20</value>
+			<value level="6">21</value>
+			<value level="7">21</value>
+			<value level="8">21</value>
+			<value level="9">21</value>
+			<value level="10">21</value>
+			<value level="11">21</value>
+			<value level="12">21</value>
+			<value level="13">21</value>
+			<value level="14">21</value>
+			<value level="15">21</value>
+		</mpInitialConsume>
+		<operateType>A2</operateType>
+		<removedOnDamage>true</removedOnDamage>
+		<reuseDelay>10000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>300</affectRange>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">-17</value>
+					<value level="2">-20</value>
+					<value level="3">-20</value>
+					<value level="4">-20</value>
+					<value level="5">-20</value>
+					<value level="6">-23</value>
+					<value level="7">-23</value>
+					<value level="8">-23</value>
+					<value level="9">-23</value>
+					<value level="10">-23</value>
+					<value level="11">-23</value>
+					<value level="12">-23</value>
+					<value level="13">-23</value>
+					<value level="14">-23</value>
+					<value level="15">-23</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">-17</value>
+					<value level="2">-20</value>
+					<value level="3">-20</value>
+					<value level="4">-20</value>
+					<value level="5">-20</value>
+					<value level="6">-23</value>
+					<value level="7">-23</value>
+					<value level="8">-23</value>
+					<value level="9">-23</value>
+					<value level="10">-23</value>
+					<value level="11">-23</value>
+					<value level="12">-23</value>
+					<value level="13">-23</value>
+					<value level="14">-23</value>
+					<value level="15">-23</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30263" toLevel="9" name="무기 내성">
+		<icon>icon.skill11833</icon>
+		<magicLevel>1</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<effects>
+			<effect name="ResistSword">
+				<amount>
+					<value level="1">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBigSword">
+				<amount>
+					<value level="2">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDual">
+				<amount>
+					<value level="3">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDagger">
+				<amount>
+					<value level="4">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBlunt">
+				<amount>
+					<value level="5">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDualFist">
+				<amount>
+					<value level="6">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPole">
+				<amount>
+					<value level="7">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBow">
+				<amount>
+					<value level="8">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistMagicDam">
+				<amount>
+					<value level="9">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30264" toLevel="9" name="무기 내성">
+		<icon>icon.skill11833</icon>
+		<magicLevel>1</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<effects>
+			<effect name="ResistSword">
+				<amount>
+					<value level="1">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBigSword">
+				<amount>
+					<value level="2">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDual">
+				<amount>
+					<value level="3">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDagger">
+				<amount>
+					<value level="4">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBlunt">
+				<amount>
+					<value level="5">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDualFist">
+				<amount>
+					<value level="6">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPole">
+				<amount>
+					<value level="7">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBow">
+				<amount>
+					<value level="8">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistMagicDam">
+				<amount>
+					<value level="9">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30265" toLevel="9" name="무기 내성">
+		<icon>icon.skill11833</icon>
+		<magicLevel>1</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<effects>
+			<effect name="ResistSword">
+				<amount>
+					<value level="1">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBigSword">
+				<amount>
+					<value level="2">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDual">
+				<amount>
+					<value level="3">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDagger">
+				<amount>
+					<value level="4">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBlunt">
+				<amount>
+					<value level="5">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDualFist">
+				<amount>
+					<value level="6">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPole">
+				<amount>
+					<value level="7">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistBow">
+				<amount>
+					<value level="8">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistMagicDam">
+				<amount>
+					<value level="9">100</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30266" toLevel="1" name="카마로카 주문서">
+		<icon>icon.scrl_of_ench_acc</icon>
+		<operateType>A2</operateType>
+		<abnormalType>KAMALOKA_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41254</itemConsumeId>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>200</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>200</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30267" toLevel="1" name="빛의 가호">
+		<icon>nIcon.skill30267</icon>
+		<operateType>A2</operateType>
+		<abnormalType>BLESSING_OF_LIGHT</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>200</amount>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="ExpModify">
+				<amount>15</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>15</amount>
+			</effect>
+			<effect name="HpRegen">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22851" toLevel="2" name="초콜릿 도넛">
+		<!-- Maintains Vitality for 30 min. -->
+		<icon>BranchSys3.icon1.g_chocolate_doughnut_pl</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_KEEP</abnormalType>
+		<specialLevel>-1</specialLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLevel>3</abnormalLevel>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<isDebuff>false</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>23627</itemConsumeId>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+	</skill>
+	<skill id="30268" toLevel="1" name="청룡의 가호">
+		<icon>icon.skill30268</icon>
+		<operateType>A2</operateType>
+		<abnormalType>BLUE_DRAGON</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>10800</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41255</itemConsumeId>
+		<effects>
+			<effect name="ExpModify">
+				<amount>15</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>15</amount>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30269" toLevel="1" name="별처럼 반짝이는 룬">
+		<icon>icon.star_agathion_cube_peice</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>6</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>6</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30270" toLevel="3" name="새콤달콤 쌉쌀한 허브">
+		<icon>nIcon.skill30270</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>PA_UP_HERB</abnormalType>
+		<magicLevel>1</magicLevel>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PveMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30271" toLevel="1" name="새콤한 롤리팝">
+		<icon>nIcon.skill30271</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>ROLLIPOP_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>5</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>5</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30272" toLevel="1" name="달콤한 롤리팝">
+		<icon>nIcon.skill30272</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>ROLLIPOP_BUFF2</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>5</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>5</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30273" toLevel="3" name="꽃 비가 내리는 아름다운 밤">
+		<icon>nIcon.skill30273</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SPRING_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<eventCallSkill>true</eventCallSkill>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>
+					<value level="1">30273</value>
+					<value level="2">30273</value>
+					<value level="3">30274</value>
+				</skillId>
+				<skillLevel>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+				</skillLevel>
+			</effect>
+		</endEffects>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>30275</skillId>
+				<skillLevel>1</skillLevel>
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="30274" toLevel="4" name="꽃 비가 내리는 아름다운 밤">
+		<icon>nIcon.skill30273</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>BR_EVENT_BUFF7</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<eventCallSkill>true</eventCallSkill>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>30275</skillId>
+				<skillLevel>1</skillLevel>
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="30275" toLevel="1" name="꽃 비가 내리는 아름다운 밤">
+		<icon>nIcon.skill30273</icon>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<eventCallSkill>true</eventCallSkill>
+		<magicLevel>85</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Restoration">
+				<itemId>41257</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14980" toLevel="1" name="Vesper Transformation">
+		<!-- For 2 min., the equipped weapon and armor are changed into a Vesper Set. -->
+		<icon>BranchSys2.icon.br_royal_crown_of_vesper_i00</icon>
+		<operateType>A2</operateType>
+		<hitTime>100</hitTime>
+		<effectPoint>100</effectPoint>
+		<abnormalType>WP_CHANGE_EVENT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLevel>1</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>120</abnormalTime>
+		<abnormalVisualEffect>CHANGE_VES_S</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30276" toLevel="1" name="천하무적 짜장면">
+		<icon>nIcon.blackdays-jjajang</icon>
+		<operateType>A2</operateType>
+		<abnormalType>RESURRECTION_BUFF1</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41264</itemConsumeId>
+		<effects>
+			<effect name="ResistBleed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistDerangement">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistHold">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPoison">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistStun">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistTurnStone">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSilence">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<BLEED>100</BLEED>
+				<DERANGEMENT>100</DERANGEMENT>
+				<HOLD>100</HOLD>
+				<PARALYZE>100</PARALYZE>
+				<POISON>100</POISON>
+				<SLEEP>100</SLEEP>
+				<SHOCK>100</SHOCK>
+				<TURN_STONE>100</TURN_STONE>
+				<SILENCE>100</SILENCE>
+			</effect>
+			<effect name="ExpModify">
+				<amount>8</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>8</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30277" toLevel="1" name="자동 아이템">
+		<icon>icon.skill0226</icon>
+		<magicLevel>5</magicLevel>
+		<abnormalType>AUTO_ITEM</abnormalType>
+		<mpConsume>2</mpConsume>
+		<operateType>T</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>NONE</targetType>
+		<effects>
+			<effect name="AutoItem" />
+		</effects>
+	</skill>
+	<skill id="30278" toLevel="1" name="새콤달콤 성장의 허브">
+		<icon>nIcon.skill30278</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>PA_UP_HERB</abnormalType>
+		<magicLevel>1</magicLevel>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>25</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>25</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30279" toLevel="23" name="얼음 꽃이 피었습니다">
+		<icon>nIcon.freyaBuff</icon>
+		<operateType>A2</operateType>
+		<abnormalType>RESURRECTION_BUFF1</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<effects>
+			<effect name="PAtk">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>8</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>8</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30280" toLevel="1" name="기란성 소유">
+		<icon>L2UI_CT1.Clan_DF_territorywaricon_giran</icon>
+		<magicLevel>85</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="Accuracy">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistStun">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30281" toLevel="1" name="아덴성 소유">
+		<icon>L2UI_CT1.Clan_DF_territorywaricon_aden</icon>
+		<magicLevel>85</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistTurnStone">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30282" toLevel="10" name="프레야의 얼음 인형">
+		<icon>nIcon.freyaDoll</icon>
+		<magicLevel>80</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30283" toLevel="1" name="드래곤 버서커">
+		<icon>icon.bm2018_dragon_i01</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalType>RANDOM_TRANSFORMATION_SCROLL</abnormalType>
+		<abnormalVisualEffect>TRANS_DECO_R</abnormalVisualEffect>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>4</isMagic>
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>6</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30284" toLevel="1" name="하이 프리스트">
+		<icon>icon.bm2018_healer_i01</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalType>RANDOM_TRANSFORMATION_SCROLL</abnormalType>
+		<abnormalVisualEffect>TRANS_DECO_W</abnormalVisualEffect>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>4</isMagic>
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="PAtk">
+				<amount>60</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>60</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30285" toLevel="1" name="캣더캣">
+		<icon>icon.sayha2017_cat</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalType>RANDOM_TRANSFORMATION_SCROLL</abnormalType>
+		<abnormalVisualEffect>CHANGESHAPE_TRANSFORM_8</abnormalVisualEffect>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>4</isMagic>
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="PAtk">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>20</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>20</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30286" toLevel="1" name="곰돌이">
+		<icon>icon.gomdori_chest_change</icon>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalType>RANDOM_TRANSFORMATION_SCROLL</abnormalType>
+		<abnormalVisualEffect>CHANGESHAPE_TRANSFORM_6</abnormalVisualEffect>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>4</isMagic>
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>20</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>20</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30287" toLevel="1" name="성장의 축복">
+		<icon>nIcon.BlessingGrowth</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>1</effectPoint>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>10800</abnormalTime>
+		<abnormalType>EXP_UP_SCROLL</abnormalType>
+		<magicLevel>1</magicLevel>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30288" toLevel="1" name="운수 좋은 날">
+		<icon>nIcon.LuckyDay</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>10800</abnormalTime>
+		<abnormalType>BIG_HEAD</abnormalType>
+		<abnormalVisualEffect>BIG_HEAD</abnormalVisualEffect>
+		<magicLevel>1</magicLevel>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CannotUseInTransform">
+				<transformId>103</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="30289" toLevel="1" name="공격력 강화 주문서">
+		<icon>nIcon.ATK_Scroll</icon>
+		<operateType>A2</operateType>
+		<abnormalType>ATK_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41368</itemConsumeId>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30290" toLevel="1" name="방어력 강화 주문서">
+		<icon>nIcon.ATK_Scroll</icon>
+		<operateType>A2</operateType>
+		<abnormalType>DEF_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41369</itemConsumeId>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>200</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>200</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30291" toLevel="1" name="경험치 향상 주문서">
+		<icon>nIcon.EXP_Scroll</icon>
+		<operateType>A2</operateType>
+		<abnormalType>EXP_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41370</itemConsumeId>
+		<effects>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30292" toLevel="1" name="버서커 주문서">
+		<icon>nIcon.BERSERKER_Scroll</icon>
+		<operateType>A2</operateType>
+		<abnormalType>BERSERK_SCROLL</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41371</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="PAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-80</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-80</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30293" toLevel="1" name="수리취떡">
+		<icon>nIcon.dano_ricecake1</icon>
+		<operateType>A2</operateType>
+		<abnormalType>DANO_BUFF1</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41378</itemConsumeId>
+		<effects>
+			<effect name="BonusDropAdena">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="BonusDropRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30294" toLevel="1" name="망개떡">
+		<icon>nIcon.dano_ricecake2</icon>
+		<operateType>A2</operateType>
+		<abnormalType>DANO_BUFF2</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41379</itemConsumeId>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30295" toLevel="1" name="비단결처럼 곱고 소담한 머릿결">
+		<icon>nIcon.dano_hairbuff</icon>
+		<operateType>A2</operateType>
+		<abnormalType>DANO_BUFF3</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<abnormalTime>86400</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+</list>

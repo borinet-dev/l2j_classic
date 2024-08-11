@@ -1,0 +1,96 @@
+<html noscrollbar>
+<body>
+<title>관리자 메뉴</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+<table width=270 border=0 bgcolor="444444">
+<tr>
+<td><button value="메인" action="bypass -h admin_admin" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="캐릭터" action="bypass -h admin_admin6" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="게임" action="bypass -h admin_admin2" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="GM" action="bypass -h admin_admin7" width=65 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table><br>
+		<br><br>
+			<center>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="리로드" action="bypass -h admin_reload" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="텔레포트" action="bypass -h admin_move_to" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="아이템생성" action="bypass -h admin_create_item" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"><br></td>
+					</tr>
+					<tr>
+						<td><button value="인첸트" action="bypass -h admin_enchant" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="죽이기" action="bypass -h admin_kill" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="부활" action="bypass -h admin_res" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="투명모드" action="bypass -h admin_invis_menu" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="무적모드" action="bypass -h admin_invul" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="귓속말" action="bypass -h admin_silence" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="주변스캔" action="bypass -h admin_scan $qbox" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="PC포인트" action="bypass -h admin_pccafepoints" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="프리미엄" action="bypass -h admin_premium_menu" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+					<td><button value="힐링" action="bypass -h admin_heal" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="NPC 리콜" action="bypass -h admin_recall_npc" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="스폰" action="bypass -h admin_spawn_monster $qbox" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="열기" action="bypass -h admin_open" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="수감자보기" action="bypass -h admin_punishment_allplayer" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="스마트가드" action="bypass -h admin_sg" width=80 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				</table>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="진정보기" action="bypass -h admin_view_petitions" width=80 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+						<td><button value="오토신고" action="bypass -h admin_captcha" width=80 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+						<td><button value="공지사항" action="bypass -h admin_announces list" width=80 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+				</table>
+			<br>
+		    <br>
+				<table cellpadding=0 cellspacing=-5 width=260>
+					<tr>
+						<td><font color="LEVEL">GM 스피드:</font><br></td>
+						<td><button value="1" action="bypass -h admin_speed 1" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="2" action="bypass -h admin_speed 2" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="3" action="bypass -h admin_speed 3" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="4" action="bypass -h admin_speed 4" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="끄기" action="bypass -h admin_speed 0" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"><br></td>
+					</tr>
+				</table>
+			    <br>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td>아이디:</td>
+						<td>수량:</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><edit var="id_1" width=70 height=12></td>
+						<td><edit var="count_2" width=70 height=12 type=number></td>
+						<td><button value="아이템 생성" action="bypass -h admin_create_item $id_1 $count_2" width=100 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+			<br>
+			</center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="46400" name="NPC전용 페오 위자드 변신체 망토" type="Armor">
+		<set name="icon" val="icon.armor_back04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="240" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="back" />
+		<stats>
+			<stat type="pDef">7</stat>
+		</stats>
+	</item>
+	<item id="46401" name="NPC전용 이스 인챈터 변신체 망토" type="Armor">
+		<set name="icon" val="icon.armor_back04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="240" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="back" />
+		<stats>
+			<stat type="pDef">7</stat>
+		</stats>
+	</item>
+	<item id="46402" name="NPC전용 윈 서머너 변신체 망토" type="Armor">
+		<set name="icon" val="icon.armor_back04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="240" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="back" />
+		<stats>
+			<stat type="pDef">7</stat>
+		</stats>
+	</item>
+	<item id="46403" name="NPC전용 에오로 힐러 변신체 망토" type="Armor">
+		<set name="icon" val="icon.armor_back04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="240" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="back" />
+		<stats>
+			<stat type="pDef">7</stat>
+		</stats>
+	</item>
+	<item id="46404" name="긴급 신호 피리 - 아덴 선봉대" type="EtcItem">
+		<set name="icon" val="icon.etc_dragon_flute_i00" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46405" name="신의 손 Mr.k의 선물 바구니" type="EtcItem">
+		<set name="icon" val="icon.mrk_basket_i00" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46406" name="앤젤 캣의 기운" type="EtcItem">
+		<set name="icon" val="icon.skilltransform4" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="weight" val="5" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46407" name="수도승의 누더기" type="EtcItem">
+		<set name="icon" val="icon.etc_leather_gray_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46408" name="횃불" type="EtcItem">
+		<set name="icon" val="icon.etc_torch_on_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46409" name="평원 공룡의 뼈" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_bone_black_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46410" name="공룡 생체 조직" type="EtcItem">
+		<set name="icon" val="icon.etc_bodypart_heart_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46411" name="고대의 알" type="EtcItem">
+		<set name="icon" val="icon.etc_dragon_egg_i05" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46412" name="부서진 골렘의 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_plate_white_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46413" name="공룡 이빨 목걸이" type="EtcItem">
+		<set name="icon" val="icon.etc_ketra_friendship_1_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46414" name="양 모자 - 물리형" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="46415" name="양 모자 - 마법형" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="46416" name="양 모자 - 방어형" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="46417" name="구텐하겐의 무기 레시피 교환증" type="EtcItem">
+		<set name="icon" val="BranchSys2.Icon.br_weddin_ticket_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46418" name="MOPP 피아식별 부적" additionalName="14일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.lcon.g_rune_itemdrop_up" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="price" val="5000" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="20160" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46419" name="양 모자" type="Armor">
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="46420" name="미끼양" type="EtcItem">
+		<set name="icon" val="icon.etc_night_normal_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46421" name="R 미끼양" type="EtcItem">
+		<set name="icon" val="icon.etc_night_normal_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46422" name="R95 미끼양" type="EtcItem">
+		<set name="icon" val="icon.etc_night_normal_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46423" name="R99 미끼양" type="EtcItem">
+		<set name="icon" val="icon.etc_night_normal_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46424" name="양 모자" additionalName="14일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_sheep_cap_white_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="20160" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="46425" name="미끼양 교환권" type="EtcItem">
+		<set name="icon" val="branchsys2.action5016" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46426" name="NPC전용_오른손 술잔" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="bodypart" val="rhand" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">31.0</stat>
+			<stat type="mAtk">21.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="46427" name="NPC전용_오른손 컵" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="bodypart" val="rhand" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">31.0</stat>
+			<stat type="mAtk">21.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="46428" name="NPC전용_오른손 고기" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="bodypart" val="rhand" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">31.0</stat>
+			<stat type="mAtk">21.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="46429" name="NPC전용_왼손 술잔" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<stats>
+			<stat type="pAtk">31.0</stat>
+			<stat type="mAtk">21.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="46430" name="NPC전용_왼손 고기" type="Weapon">
+		<set name="icon" val="icon.weapon_iron_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="1850" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="material" val="STEEL" />
+		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<stats>
+			<stat type="pAtk">31.0</stat>
+			<stat type="mAtk">21.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="46431" name="하르프의 보상 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46432" name="신성한 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46433" name="저주받은 부장품" type="EtcItem">
+		<set name="icon" val="icon.etc_totem_black_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46434" name="카루다의 보상 물품 교환증" type="EtcItem">
+		<set name="icon" val="BranchSys2.Icon.br_weddin_ticket_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46435" name="하이네스 특제 미끼(85~89)" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_i00" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46436" name="하이네스 특제 미끼(90~94)" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_i00" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46437" name="하이네스 특제 미끼(95~98)" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_i00" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46438" name="하이네스 특제 미끼(99~)" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_i00" />
+		<set name="bodypart" val="lhand" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="46439" name="하이네스 특제 미끼 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_ticket" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="46440" name="하이네스 보물 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46441" name="시드 팔찌 상자 - 30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46442" name="하이네스 특제 낚시 도구 - 300회 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46443" name="하이네스 특제 낚시 도구 - 3,000회 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_lure_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="46444" name="카인의 집혼석 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46445" name="카인의 집혼석 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46446" name="카인의 집혼석 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46447" name="카인의 집혼석 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46448" name="카인의 집혼석 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46449" name="카인의 집혼석 - 6단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46450" name="카인의 집혼석 - 7단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46451" name="카인의 집혼석 - 8단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46452" name="카인의 집혼석 - 9단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46453" name="카인의 집혼석 - 10단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46454" name="카인의 집혼석 - 11단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46455" name="카인의 집혼석 - 12단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46456" name="카인의 집혼석 - 13단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46457" name="카인의 집혼석 - 14단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46458" name="카인의 집혼석 - 15단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46459" name="메르메덴의 집혼석 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46460" name="메르메덴의 집혼석 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46461" name="메르메덴의 집혼석 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46462" name="메르메덴의 집혼석 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46463" name="메르메덴의 집혼석 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46464" name="메르메덴의 집혼석 - 6단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46465" name="메르메덴의 집혼석 - 7단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46466" name="메르메덴의 집혼석 - 8단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46467" name="메르메덴의 집혼석 - 9단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46468" name="메르메덴의 집혼석 - 10단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46469" name="메르메덴의 집혼석 - 11단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46470" name="메르메덴의 집혼석 - 12단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46471" name="메르메덴의 집혼석 - 13단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46472" name="메르메덴의 집혼석 - 14단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46473" name="메르메덴의 집혼석 - 15단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_m" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46474" name="리오나의 집혼석 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46475" name="리오나의 집혼석 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46476" name="리오나의 집혼석 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46477" name="리오나의 집혼석 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46478" name="리오나의 집혼석 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46479" name="리오나의 집혼석 - 6단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46480" name="리오나의 집혼석 - 7단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46481" name="리오나의 집혼석 - 8단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46482" name="리오나의 집혼석 - 9단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46483" name="리오나의 집혼석 - 10단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46484" name="리오나의 집혼석 - 11단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46485" name="리오나의 집혼석 - 12단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46486" name="리오나의 집혼석 - 13단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46487" name="리오나의 집혼석 - 14단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46488" name="리오나의 집혼석 - 15단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_pp" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46489" name="판테온의 집혼석 - 1단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46490" name="판테온의 집혼석 - 2단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46491" name="판테온의 집혼석 - 3단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46492" name="판테온의 집혼석 - 4단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46493" name="판테온의 집혼석 - 5단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46494" name="판테온의 집혼석 - 6단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46495" name="판테온의 집혼석 - 7단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46496" name="판테온의 집혼석 - 8단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46497" name="판테온의 집혼석 - 9단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46498" name="판테온의 집혼석 - 10단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="46499" name="판테온의 집혼석 - 11단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_mm" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+</list>

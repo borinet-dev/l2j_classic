@@ -1,0 +1,70 @@
+<html noscrollbar>
+	<title>E-Mail 설정</title>
+<body>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=357 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+			<table cellpadding=0 cellspacing=0 width=290 height=40 background="l2ui_ct1.Windows_DF_TooltipBG">
+				<tr>
+					<td align=center width=280>
+						<font name=hs12 color=LEVEL>E-mail 주소 설정</font>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<table cellpadding=0 cellspacing=0 width=260 height=130>
+				<tr>
+					<td align=center width=280>
+						<font color=LEVEL>이 계정에 대한 이메일 주소를 등록해야합니다.</font><br>
+						분실 한 비밀번호를 복구하거나 계정 문제를 해결하려면 유효한 이메일 주소가 필요합니다. <br>
+						비밀번호 분실시 <font color=LEVEL>[홈페이지 - 계정관리]</font> 페이지를 통해 복구가 가능합니다.
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td width=285 align=center>
+			<table width=285>
+				<tr>
+					<td align=center>
+						<table width=280>
+							<tr>
+								<td align=center width=280><font color=00FF99>E-Mail 주소 입력</font></td>
+							</tr>
+							<tr>
+								<td align=center><multiedit var="mail" width=280 height=17 length=50></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=center><br><br>
+						<table width=280>
+							<tr>
+								<td align=center width=280><font color=00FF99>E-Mail 주소 확인</font></td>
+							</tr>
+							<tr>
+								<td align=center><multiedit var="mail2" width=280 height=17 length=50></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=center><br><br>
+						<table>
+							<tr>
+								<td><Button ALIGN=LEFT ICON="NORMAL" action="bypass -h Quest Q00255_Tutorial setemail $mail $mail2">E-mail 주소를 등록한다.</Button></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

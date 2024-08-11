@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="45372" name="축복의 물고기자리 아가시온 팔찌" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17619" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="45373" name="최고급 시드 팔찌" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="material" val="PAPER" />
+		<capsuled_items>
+			<item id="45372" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="45374" name="광선총" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.invasion_gun" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="100" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="45375" name="우주전투식량" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ev_invasion_buff_box" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45376" name="바이탈 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.general_fuel_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45377" name="L2B2의 선물 상자" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45378" name="파티형 활력 회복 허브" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.general_fuel_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45379" name="몬스터 연구 결과" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45380" name="외계인의 장난감총" additionalName="1시간 기간제" type="Weapon">
+		<set name="icon" val="icon.invasion_gun" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="60" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="45381" name="외계인의 장난아닌총" additionalName="1시간 기간제" type="Weapon">
+		<set name="icon" val="icon.invasion_gun" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="60" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="45382" name="마술사 모자" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.accessory_magicial_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="45383" name="큐티 메이드 헤어 밴드" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.maid_hairband" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="45384" name="근로자 모자" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.people_cap" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="45385" name="폭주족 마스크" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.crazy_driving_mask" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hair" />
+	</item>
+	<item id="45386" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45387" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45388" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45389" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45390" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45391" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45392" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45393" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45394" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45395" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45396" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45397" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45398" name="국가별 교환 드롭 설정 비교용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="45399" name="자동 툴팁 확인용" additionalName="테스트용 아이템" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="price" val="300000" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+</list>

@@ -1,0 +1,43 @@
+<html><body>
+<center>아지트 정보</center> <img src="L2UI.SquareWhite" width=270 height=1> <img src="L2UI.SquareBlank" width=1 height=3>
+<table width=270 border=0>
+<tr><td width=90><font color="a2a0a2">아지트 이름:</font></td><td width=180><font color="b09979">&%%id%;</font></td></tr>
+<tr><td><font color="a2a0a2">소유자:</font></td><td><font color="b09979">%owner%</font></td></tr>
+<tr><td><font color="a2a0a2">군주:</font></td><td><font color="b09979">%clanLeader%</font></td></tr>
+<tr><td><font color="a2a0a2">크기: </font></td><td><font color="b09979">%grade% 평</font></td></tr>
+<tr><td><font color="a2a0a2">비용: </font></td><td><font color="b09979">%rent%</font> 아데나<font color="LEVEL">/주</font></td></tr>
+<tr><td><font color="a2a0a2">위치:</font></td><td>&*%id%;</td></tr>
+</table>
+<img src="L2UI.SquareGray" width=270 height=1><img src="L2UI.SquareBlank" width=1 height=3>
+<table width=270 border=0>
+<tr>
+	<td width=90><font color="a2a0a2">경매 종료일: </font></td>
+	<td width=180><font color="b09979">%auctionEnd%</font></td>
+</tr>
+<tr>
+	<td><font color="a2a0a2">남은 시간: </font></td>
+	<td><font color="b09979">%hours%시간 %minutes%분</font></td>
+</tr>
+<tr>
+	<td><font color="a2a0a2">최소 입찰가: </font></td>
+	<td><font color="b09979">%minBid%</font> 아데나</td>
+</tr>
+<tr>
+	<td><font color="a2a0a2">현재 입찰가: </font></td>
+	<td><font color="b09979">%bidNumber%</font></td>
+</tr>
+</table>
+<table width=270 border=0 bgcolor=333333>
+	<tr><td width=270></td></tr>
+</table>
+<img src="L2UI.SquareBlank" width=270 height=10><img src="L2UI.SquareWhite" width=270 height=1><img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr><td width=30></td>
+<td width=80 align=center>
+<button action="bypass -h Quest ClanHallAuctioneer auctionList" value="이전" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center>
+<button action="bypass -h Quest ClanHallAuctioneer listBidder id=%id%" value="입찰자" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center>
+<button action="bypass -h Quest ClanHallAuctioneer bid id=%id%" value="입찰" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td></tr>
+</table>
+</body></html>

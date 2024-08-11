@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="1901" toLevel="1" name="Aim">
+		<!-- Elemental Resistance +10. -->
+		<icon>icon.skill1901</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1902" toLevel="1" name="Mental Fortress">
+		<!-- Debuff Resistance +1%. -->
+		<icon>icon.skill1902</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-1</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1906" toLevel="1" name="Blessing of Water">
+		<!-- Increases Water resistance by 20. -->
+		<icon>icon.skill1906</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1908" toLevel="1" name="Delicacy">
+		<!-- P. Critical Rate +10 and M. Critical Rate +10. -->
+		<icon>icon.skill1908</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1909" toLevel="1" name="Sharpness">
+		<!-- Increases P. Critical Damage and M. Critical Damage by 1%. -->
+		<icon>icon.skill1909</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1911" toLevel="1" name="Blessing of Wind">
+		<!-- Increases Wind resistance by 20. -->
+		<icon>icon.skill1911</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1915" toLevel="1" name="Blessing of Fire">
+		<!-- Increases Fire resistance by 20. -->
+		<icon>icon.skill1915</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1916" toLevel="1" name="Energetic">
+		<!-- HP/ MP/ CP +1%. -->
+		<icon>icon.skill1916</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1919" toLevel="1" name="Dexterity">
+		<!-- Skill Cooldown -1%. -->
+		<icon>icon.skill1919</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>-1</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-1</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-1</amount>
+				<mode>PER</mode>
+				<magicType>22</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1921" toLevel="1" name="Blessing of Earth">
+		<!-- Increases Earth resistance by 20. -->
+		<icon>icon.skill1921</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1956" toLevel="4" name="서브 - 공격력/마법력 증가">
+		<!-- P. Atk. + $s1, M. Atk. + $s2. -->
+		<icon>icon.skill0816</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1957" toLevel="4" name="서브 - 방어력/마법저항 증가">
+		<!-- P. Def. + $s1, M. Def. + $s2. -->
+		<icon>icon.skill0439</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1958" toLevel="4" name="서브 - 공격속도/마법속도 속도 증가">
+		<!-- Atk. Spd. + $s1, Casting Spd. + $s2. -->
+		<icon>icon.skill0817</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1959" toLevel="4" name="서브 - 물리/마법 크리티컬 확률 증가">
+		<!-- P. Critical Rate/ M. Critical Rate + $s1. -->
+		<icon>icon.skill0814</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1960" toLevel="4" name="서브 - 물리 공격 명중/마법 적중 증가">
+		<!-- P. Accuracy + $s1, M. Accuracy + $s2. -->
+		<icon>icon.skill1240</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1961" toLevel="4" name="서브 - 물리 공격 회피/마법 회피 증가">
+		<!-- P. Evasion + $s1, M. Evasion + $s2. -->
+		<icon>icon.skill0198</icon>
+		<operateType>P</operateType>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

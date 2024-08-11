@@ -1,0 +1,1464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="8200" name="낚시꾼의 물약 - 흰색" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="100" />
+		<set name="price" val="5000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_event_restricted" val="true" />
+		<skills>
+			<skill id="2274" level="8" /> 
+		</skills>
+	</item>
+	<item id="8201" name="낚시꾼의 물약 - 검은색" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_black_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="100" />
+		<set name="price" val="5000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+	</item>
+	<item id="8202" name="낚시꾼의 회복 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_oblivion_black_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="100" />
+		<set name="price" val="5000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2275" level="1" /> 
+		</skills>
+	</item>
+	<item id="8203" name="몹전용(benom_sword)" additionalName="" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8204" name="몹전용(follower_of_frintessa_calibur)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="bodypart" val="rhand" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8205" name="몹전용(heretic_priest_sickle)" type="Armor">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1920" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="8206" name="몹전용(heretic_priest_sword)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8207" name="몹전용(heretic_privates_axe)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8208" name="몹전용(heretic_privates_staff)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="8209" name="몹전용(lidia_von_helmann_sword)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8210" name="몹전용(monk_warrior_shield)" type="Armor">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="4800" />
+		<set name="commissionItemType" val="SHIELD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rEvas">-8</stat>
+			<stat type="rShld">20</stat>
+			<stat type="sDef">230</stat>
+		</stats>
+	</item>
+	<item id="8211" name="몹전용(monk_warrior_sword)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8212" name="몹전용(solina_brother_mace)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1570" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8213" name="몹전용(solina_father_mace)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1570" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8214" name="몹전용(solina_priest_pole)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1920" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="8215" name="몹전용(zombie_enlisted_man_sword)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2090" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8216" name="몹전용(zombie_enlisted_man_claw)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8217" name="몹전용(zombie_gateguard_spear)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8218" name="몹전용(zombie_laborer_axe)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1570" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8219" name="몹전용(zombie_laborer_sword)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8220" name="몹전용(apostle_grail_bow)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1950" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="mp_consume" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="8221" name="몹전용(apostle_grail_spear)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1920" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="8222" name="몹전용(follower_of_frintessa_tran_calibur)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1560" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<stats>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="8223" name="쌍둥 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8224" name="대왕 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="75" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8225" name="사막 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8226" name="푸른 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_blue_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="400" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8227" name="붉은 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="500" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8228" name="황금 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="650" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8229" name="사막 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_desert_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="750" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8230" name="개량 쌍둥 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8231" name="개량 대왕 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="75" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8232" name="개량 사막 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8233" name="개량 푸른 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_blue_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="400" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8234" name="개량 붉은 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_red_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="500" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8235" name="개량 황금 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_golden_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="650" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8236" name="개량 사막 코바 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_desert_coba_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="750" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8237" name="어둠의 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8238" name="붉은 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8239" name="냉기의 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8240" name="푸른 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8241" name="황금 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8242" name="비파 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8243" name="사막 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8244" name="붉은 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8245" name="냉기의 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="25" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8246" name="푸른 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8247" name="가시 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8248" name="황금 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8249" name="대왕 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8250" name="붉은 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="40" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8251" name="바다 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8252" name="냉기의 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="40" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8253" name="푸른 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8254" name="쌍둥 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8255" name="개량 어둠의 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8256" name="개량 붉은 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8257" name="개량 냉기의 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8258" name="개량 푸른 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8259" name="개량 황금 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8260" name="개량 비파 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8261" name="개량 사막 코다 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_coda_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="1" /> 
+		</skills>
+	</item>
+	<item id="8262" name="개량 붉은 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8263" name="개량 냉기의 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="25" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8264" name="개량 푸른 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8265" name="개량 가시 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8266" name="개량 황금 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8267" name="개량 대왕 코볼 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_cobol_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="2" /> 
+		</skills>
+	</item>
+	<item id="8268" name="개량 붉은 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="40" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8269" name="개량 바다 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8270" name="개량 냉기의 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="40" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8271" name="개량 푸른 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8272" name="개량 쌍둥 코드란 씨앗" type="EtcItem">
+		<set name="icon" val="icon.etc_codran_seed_i00" />
+		<set name="default_action" val="SEED" />
+		<set name="etcitem_type" val="SEED2" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Seed" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2097" level="3" /> 
+		</skills>
+	</item>
+	<item id="8273" name="대기실 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_questitem" val="true" />
+		<set name="is_depositable" val="false" />
+		<skills>
+			<skill id="2235" level="1" /> 
+		</skills>
+	</item>
+	<item id="8274" name="예배당 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2236" level="1" /> 
+		</skills>
+	</item>
+	<item id="8275" name="어둠의 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_old_key_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2237" level="1" /> 
+		</skills>
+	</item>
+	<item id="8276" name="세키나의 비늘" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8277" name="테미스의 비늘" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8278" name="버밀리온의 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_bark_gold_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8279" name="헤카톤 프라임의 중추" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8280" name="타이폰의 파편" type="EtcItem">
+		<set name="icon" val="icon.etc_gargoyle_claw_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8281" name="글라키의 중추" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8282" name="라하의 송곳니" type="EtcItem">
+		<set name="icon" val="icon.etc_fang_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8283" name="거대 독 말벌의 침" type="EtcItem">
+		<set name="icon" val="icon.etc_sting_a_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8284" name="클라우디 젬" type="EtcItem">
+		<set name="icon" val="icon.etc_oriharukon_ore_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8285" name="어린 에레니드의 발톱" type="EtcItem">
+		<set name="icon" val="icon.etc_claw_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8286" name="정령의 숨결을 위한 용기" type="EtcItem">
+		<set name="icon" val="icon.etc_dragons_blood_i01" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8287" name="스타스톤" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8288" name="유미의 편지" type="EtcItem">
+		<set name="icon" val="icon.etc_letter_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8289" name="스타스톤" type="EtcItem">
+		<set name="icon" val="icon.etc_crystal_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8290" name="파벨의 꽃" type="EtcItem">
+		<set name="icon" val="icon.etc_flower_i02" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8291" name="아틀란타의 심장" type="EtcItem">
+		<set name="icon" val="icon.etc_inf_ore_medium_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8292" name="웬디의 목걸이" type="EtcItem">
+		<set name="icon" val="icon.accessary_necklace_of_devotion_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8293" name="조련사 자격증" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_depositable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="8294" name="레시피: 강철검(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="8180" />
+		<set name="recipe_id" val="783" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="8295" name="레시피: 하거인의 검(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="5600" />
+		<set name="recipe_id" val="785" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="8296" name="레시피: 소드 오브 파아그리오(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="17200" />
+		<set name="recipe_id" val="789" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="8297" name="레시피: 가디언스 소드(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="52400" />
+		<set name="recipe_id" val="811" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="8298" name="레시피: 가디언스 소드(60%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="52400" />
+		<set name="recipe_id" val="810" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="8299" name="레시피: 인페르노 마스터(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="73200" />
+		<set name="recipe_id" val="815" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+</list>

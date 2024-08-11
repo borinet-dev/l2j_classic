@@ -1,0 +1,1730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="33800" name="멘티 증명서" type="EtcItem">
+		<set name="icon" val="icon.mentee_certificate" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33801" name="멘토링 안내서" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SHOW_HTML" />
+		<set name="handler" val="Book" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="33802" name="멘티 증명서 팩" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="33800" min="1" max="1" chance="100" /> 
+			<item id="33801" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="33803" name="멘티 쿠폰" type="EtcItem">
+		<set name="icon" val="icon.mentee_coupon" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33804" name="멘티의 징표" type="EtcItem">
+		<set name="icon" val="icon.mentee_mark" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33805" name="졸업의 증거" type="EtcItem">
+		<set name="icon" val="icon.mentee_graduate_proof" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33806" name="거인의 무기 강화 주문서-D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_d" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9244" level="1" /> 
+		</skills>
+	</item>
+	<item id="33807" name="거인의 무기 강화 주문서-C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_c" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9246" level="1" /> 
+		</skills>
+	</item>
+	<item id="33808" name="거인의 무기 강화 주문서-B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_b" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9248" level="1" /> 
+		</skills>
+	</item>
+	<item id="33809" name="거인의 무기 강화 주문서-A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_a" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9250" level="1" /> 
+		</skills>
+	</item>
+	<item id="33810" name="거인의 무기 강화 주문서-S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_s" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9252" level="1" /> 
+		</skills>
+	</item>
+	<item id="33811" name="거인의 무기 강화 주문서-R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_wp_r" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_WEAPON" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9254" level="1" /> 
+		</skills>
+	</item>
+	<item id="33812" name="거인의 갑옷 강화 주문서-D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_d" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9245" level="1" /> 
+		</skills>
+	</item>
+	<item id="33813" name="거인의 갑옷 강화 주문서-C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_c" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9247" level="1" /> 
+		</skills>
+	</item>
+	<item id="33814" name="거인의 갑옷 강화 주문서-B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_b" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9249" level="1" /> 
+		</skills>
+	</item>
+	<item id="33815" name="거인의 갑옷 강화 주문서-A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_a" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9251" level="1" /> 
+		</skills>
+	</item>
+	<item id="33816" name="거인의 갑옷 강화 주문서-S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_s" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9253" level="1" /> 
+		</skills>
+	</item>
+	<item id="33817" name="거인의 갑옷 강화 주문서-R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_r" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9255" level="1" /> 
+		</skills>
+	</item>
+	<item id="33818" name="헤어 액세서리 강화 주문서" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9234" level="1" /> 
+		</skills>
+	</item>
+	<item id="33819" name="헤어 액세서리용 생명의 돌" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.life_dust_hairacc_general" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33820" name="속박 해제 주문서 - D 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33821" name="속박 해제 주문서 - C 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33822" name="속박 해제 주문서 - B 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33823" name="속박 해제 주문서 - A 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33824" name="속박 해제 주문서 - S 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33825" name="속박 해제 주문서 - S80 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33826" name="속박 해제 주문서 - R 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33827" name="속박 해제 주문서 - R95 그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.cursed_free_r95" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33828" name="집혼 변경석 - A" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_red_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33829" name="집혼 변경석 - S" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33830" name="집혼 변경석 - S80" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_silver_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33831" name="집혼 변경석 - R" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33832" name="집혼 변경석 - R95" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+	</item>
+	<item id="33833" name="속성 변경 수정 - S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.change_elemental_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="CHANGE_ATTR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<skills>
+			<skill id="12881" level="1" /> 
+		</skills>
+	</item>
+	<item id="33834" name="속성 변경 수정 - S80그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.change_elemental_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="CHANGE_ATTR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<skills>
+			<skill id="12881" level="1" /> 
+		</skills>
+	</item>
+	<item id="33835" name="속성 변경 수정 - R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.change_elemental_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="CHANGE_ATTR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<skills>
+			<skill id="12881" level="1" /> 
+		</skills>
+	</item>
+	<item id="33836" name="속성 변경 수정 - R95그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.change_elemental_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="CHANGE_ATTR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<skills>
+			<skill id="12881" level="1" /> 
+		</skills>
+	</item>
+	<item id="33837" name="속성 변경 수정 - R99그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.change_elemental_crystal" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="CHANGE_ATTR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<skills>
+			<skill id="12881" level="1" /> 
+		</skills>
+	</item>
+	<item id="33838" name="파멸의 무기 강화 주문서-D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_d_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22367" level="1" /> 
+		</skills>
+	</item>
+	<item id="33839" name="파멸의 무기 강화 주문서-C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_c_i02" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22365" level="1" /> 
+		</skills>
+	</item>
+	<item id="33840" name="파멸의 무기 강화 주문서-B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_b_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22363" level="1" /> 
+		</skills>
+	</item>
+	<item id="33841" name="파멸의 무기 강화 주문서-A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_a_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22361" level="1" /> 
+		</skills>
+	</item>
+	<item id="33842" name="파멸의 무기 강화 주문서-S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_s_i05" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22359" level="1" /> 
+		</skills>
+	</item>
+	<item id="33843" name="파멸의 무기 강화 주문서-R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_weapon_i06" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="12872" level="1" /> 
+		</skills>
+	</item>
+	<item id="33844" name="파멸의 갑옷 강화 주문서-D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_d_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22368" level="1" /> 
+		</skills>
+	</item>
+	<item id="33845" name="파멸의 갑옷 강화 주문서-C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_c_i02" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22366" level="1" /> 
+		</skills>
+	</item>
+	<item id="33846" name="파멸의 갑옷 강화 주문서-B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_b_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22364" level="1" /> 
+		</skills>
+	</item>
+	<item id="33847" name="파멸의 갑옷 강화 주문서-A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_a_i04" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22362" level="1" /> 
+		</skills>
+	</item>
+	<item id="33848" name="파멸의 갑옷 강화 주문서-S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_s_i05" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="22360" level="1" /> 
+		</skills>
+	</item>
+	<item id="33849" name="파멸의 갑옷 강화 주문서-R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_armor_i06" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="12873" level="1" /> 
+		</skills>
+	</item>
+	<item id="33850" name="무기용 강화 보조석 - D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_stone_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2515" level="1" /> 
+		</skills>
+	</item>
+	<item id="33851" name="무기용 강화 보조석 - C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_stone_i01" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2516" level="1" /> 
+		</skills>
+	</item>
+	<item id="33852" name="무기용 강화 보조석 - B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_stone_i02" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2517" level="1" /> 
+		</skills>
+	</item>
+	<item id="33853" name="무기용 강화 보조석 - A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_stone_i03" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2518" level="1" /> 
+		</skills>
+	</item>
+	<item id="33854" name="무기용 강화 보조석 - S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_stone_i04" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2519" level="1" /> 
+		</skills>
+	</item>
+	<item id="33855" name="무기용 강화 보조석 - R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_wp_potion_violet_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9207" level="1" /> 
+		</skills>
+	</item>
+	<item id="33856" name="방어구용 강화 보조석 - D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2520" level="1" /> 
+		</skills>
+	</item>
+	<item id="33857" name="방어구용 강화 보조석 - C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i01" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2521" level="1" /> 
+		</skills>
+	</item>
+	<item id="33858" name="방어구용 강화 보조석 - B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i02" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2522" level="1" /> 
+		</skills>
+	</item>
+	<item id="33859" name="방어구용 강화 보조석 - A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i03" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2523" level="1" /> 
+		</skills>
+	</item>
+	<item id="33860" name="방어구용 강화 보조석 - S그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i04" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="2524" level="1" /> 
+		</skills>
+	</item>
+	<item id="33861" name="방어구용 강화 보조석 - R그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.ench_am_potion_violet_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="9208" level="1" /> 
+		</skills>
+	</item>
+	<item id="33862" name="축복의 비약" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_super_potion_i03" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="crystal_type" val="R" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="reuse_delay" val="120000" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="9201" level="1" /> 
+			<skill id="9202" level="1" /> 
+			<skill id="9198" level="1" /> 
+			<skill id="9199" level="1" /> 
+		</skills>
+	</item>
+	<item id="33863" name="불의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12875" level="3" /> 
+		</skills>
+	</item>
+	<item id="33864" name="물의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_water_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12876" level="3" /> 
+		</skills>
+	</item>
+	<item id="33865" name="땅의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_earth_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12878" level="3" /> 
+		</skills>
+	</item>
+	<item id="33866" name="바람의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_wind_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12877" level="3" /> 
+		</skills>
+	</item>
+	<item id="33867" name="암흑의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12880" level="3" /> 
+		</skills>
+	</item>
+	<item id="33868" name="신성의 원석 - Super 60" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12879" level="3" /> 
+		</skills>
+	</item>
+	<item id="33869" name="불의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_fire_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12875" level="1" /> 
+		</skills>
+	</item>
+	<item id="33870" name="물의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_water_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12876" level="1" /> 
+		</skills>
+	</item>
+	<item id="33871" name="땅의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_earth_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12878" level="1" /> 
+		</skills>
+	</item>
+	<item id="33872" name="바람의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_wind_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12877" level="1" /> 
+		</skills>
+	</item>
+	<item id="33873" name="암흑의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12880" level="1" /> 
+		</skills>
+	</item>
+	<item id="33874" name="신성의 원석 - Super 150" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_holy_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantAttribute" />
+		<set name="commissionItemType" val="ATTRIBUTE_STONE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="12879" level="1" /> 
+		</skills>
+	</item>
+	<item id="33875" name="레퀴엠 셰이퍼" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_aspeda_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1520" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13279" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">369</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33876" name="레퀴엠 커터" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_estia_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1520" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13252" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">422</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33877" name="레퀴엠 슬래셔" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_polion_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1740" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13258" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">514</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33878" name="레퀴엠 어벤져" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_batista_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1740" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="13253" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">422</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33879" name="레퀴엠 파이터" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_fantasma_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1550" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13264" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">514</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33880" name="레퀴엠 스토머" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_soryu_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="2010" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="3599" level="1" /> 
+			<skill id="13263" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">422</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="33881" name="레퀴엠 스로워" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_grabathus_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="reuse_delay" val="1500" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1520" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13289" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">831</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="33882" name="레퀴엠 슈트제" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_shyayaka_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="reuse_delay" val="1350" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1580" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13294" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">748</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="33883" name="레퀴엠 버스터" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_kaynon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1520" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13295" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">338</stat>
+			<stat type="mAtk">245</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33884" name="레퀴엠 캐스터" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_anatrian_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1080" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="13296" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">338</stat>
+			<stat type="mAtk">245</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33885" name="레퀴엠 레트리뷰터" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_grangkaz_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1080" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="13301" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">411</stat>
+			<stat type="mAtk">270</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="accMagic">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33886" name="레퀴엠 듀얼소드" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1520" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13274" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">514</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33887" name="레퀴엠 듀얼대거" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="2050" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13284" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">422</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33888" name="레퀴엠 듀얼블런트" additionalName="이벤트" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1740" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="13269" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">514</stat>
+			<stat type="mAtk">186</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="33889" name="이모탈 헬멧" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="530" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pDef">114</stat>
+		</stats>
+	</item>
+	<item id="33890" name="이모탈 흉갑" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t501_u_i00" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="chest" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="7520" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="13063" level="1" /> 
+			<skill id="13310" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">304</stat>
+		</stats>
+	</item>
+	<item id="33891" name="이모탈 각반" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t501_l_i00" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="legs" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="3170" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<stats>
+			<stat type="pDef">190</stat>
+		</stats>
+	</item>
+	<item id="33892" name="이모탈 건틀렛" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t501_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="510" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+	<item id="33893" name="이모탈 부츠" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t501_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1070" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+	<item id="33894" name="이모탈 실드" additionalName="중갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.weapon_sacon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1130" />
+		<set name="material" val="DAMASCUS" />
+		<stats>
+			<stat type="sDef">415</stat>
+			<stat type="rShld">20</stat>
+			<stat type="rEvas">-8</stat>
+		</stats>
+	</item>
+	<item id="33895" name="이모탈 레더 헬멧" additionalName="경갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="530" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pDef">114</stat>
+		</stats>
+	</item>
+	<item id="33896" name="이모탈 레더 아머" additionalName="경갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t502_u_i00" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="chest" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="4140" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="13063" level="1" /> 
+			<skill id="13311" level="3" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">243</stat>
+			<stat type="rEvas">5</stat>
+			<stat type="mEvas">5</stat>
+		</stats>
+	</item>
+	<item id="33897" name="이모탈 레더 레깅스" additionalName="경갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t502_l_i00" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="legs" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1320" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<stats>
+			<stat type="pDef">152</stat>
+			<stat type="rEvas">3</stat>
+			<stat type="mEvas">3</stat>
+		</stats>
+	</item>
+	<item id="33898" name="이모탈 레더 글로브" additionalName="경갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t502_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="510" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+	<item id="33899" name="이모탈 레더 부츠" additionalName="경갑용 / 이벤트" type="Armor">
+		<set name="icon" val="icon.armor_t502_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="crystal_type" val="R" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="1070" />
+		<set name="material" val="LEATHER" />
+		<stats>
+			<stat type="pDef">76</stat>
+		</stats>
+	</item>
+</list>

@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="90500" name="드래곤의 보물 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_present" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90501" name="빛나는 드래곤의 보물 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_shinning_present" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90502" name="방어구 강화 보조석 - D그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.bless_ench_amr_stone_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90503" name="방어구 강화 보조석 - C그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.bless_ench_amr_stone_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90504" name="방어구 강화 보조석 - B그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.bless_ench_amr_stone_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90505" name="방어구 강화 보조석 - A그레이드" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.bless_ench_amr_stone_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90506" name="상급 발터스 기사단의 증표" type="EtcItem">
+		<set name="icon" val="icon.ev_balthus_token" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="39272" level="1" /> 
+		</skills>
+	</item>
+	<item id="90507" name="발터스의 드래곤 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_present" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90508" name="드래곤의 특별한 열매" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_fruit" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="55682" level="1" /> 
+		</skills>
+	</item>
+	<item id="90509" name="드래곤의 황금 열쇠" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_key" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90510" name="결계의 탈리스만 Lv5 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90511" name="결계의 탈리스만 Lv6 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90512" name="결계의 탈리스만 Lv7 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90513" name="결계의 탈리스만 Lv8 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90514" name="결계의 탈리스만 Lv9 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90515" name="결계의 탈리스만 Lv10 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90516" name="GM의 하급 축복상자" type="EtcItem">
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="90517" name="GM의 중급 축복상자" type="EtcItem">
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="90518" name="GM의 상급 축복상자" type="EtcItem">
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="90519" name="빛나는 무디의 멜로디 주문서" type="EtcItem">
+		<set name="icon" val="icon.bm_magmeld" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90520" name="화룡의 축복 주문서" type="EtcItem">
+		<set name="icon" val="icon.bm_blessing_dragon" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90521" name="황금 낚시 주머니" type="EtcItem">
+		<set name="icon" val="Icon.bm_gold_fishing_poket" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90522" name="황금 유물상자" type="EtcItem">
+		<set name="icon" val="icon.bm_gold_relic_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="90523" name="빛나는 낚시 키트 Lv1" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_gift_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49588" min="1" max="1" chance="100" /> 
+			<item id="90139" min="25920" max="25920" chance="100" /> 
+			<item id="90143" min="20" max="20" chance="100" /> 
+			<item id="90527" min="1" max="1" chance="100" /> 
+			<item id="90528" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="90524" name="방어구 보조석 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90525" name="방어구 보조석 상자 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90526" name="바이움 탈리스만 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.npoint_tauti_30day_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90527" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="90527" name="바이움 탈리스만" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.tallisman_baium" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="talisman" />
+		<set name="time" val="21600" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="113" addName="1">
+			<player level="60" />
+		</cond>
+		<skills>
+			<skill id="35020" level="1" type="ON_EQUIP" /> 
+			<skill id="35021" level="1" type="ON_UNEQUIP" /> 
+			<skill id="35017" level="7" /> 
+		</skills>
+	</item>
+	<item id="90528" name="빛나는 보석 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_wish_pack" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+		<set name="time" val="43200" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90529" min="1" max="1" chance="100" /> 
+			<item id="90530" min="1" max="1" chance="100" /> 
+			<item id="90531" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="90529" name="제이드 Lv5" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_jade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="90530" name="바이탈스톤 Lv5" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="18568" level="5" /> 
+			<skill id="21439" level="1" /> 
+		</skills>
+	</item>
+	<item id="90531" name="가넷 Lv5" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="18566" level="5" /> 
+			<skill id="18567" level="1" /> 
+		</skills>
+	</item>
+	<item id="90532" name="향상된 레어 액세서리 상자" type="EtcItem">
+		<set name="icon" val="icon.npoint_earthworm_30day_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90533" name="레어 액세서리 상자" type="EtcItem">
+		<set name="icon" val="icon.npoint_valakas_30day_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="90534" name="시겔의 룬 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90535" name="시겔의 룬 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90536" name="시겔의 룬 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90537" name="시겔의 룬 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90538" name="시겔의 룬 - 5단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90539" name="시겔의 룬 - 6단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90540" name="시겔의 룬 - 7단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90541" name="시겔의 룬 - 8단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90542" name="시겔의 룬 - 9단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90543" name="시겔의 룬 - 10단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90544" name="시겔의 룬 - 11단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90545" name="시겔의 룬 - 12단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90546" name="시겔의 룬 - 13단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90547" name="시겔의 룬 - 14단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90548" name="시겔의 룬 - 15단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_sigel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90549" name="시겔의 룬 - 16단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90550" name="시겔의 룬 - 17단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90551" name="시겔의 룬 - 18단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90552" name="시겔의 룬 - 19단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90553" name="시겔의 룬 - 20단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90554" name="티르의 룬 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90555" name="티르의 룬 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90556" name="티르의 룬 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90557" name="티르의 룬 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90558" name="티르의 룬 - 5단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv00" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90559" name="티르의 룬 - 6단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90560" name="티르의 룬 - 7단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90561" name="티르의 룬 - 8단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90562" name="티르의 룬 - 9단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90563" name="티르의 룬 - 10단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90564" name="티르의 룬 - 11단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90565" name="티르의 룬 - 12단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90566" name="티르의 룬 - 13단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90567" name="티르의 룬 - 14단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90568" name="티르의 룬 - 15단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_tir_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90569" name="티르의 룬 - 16단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90570" name="티르의 룬 - 17단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90571" name="티르의 룬 - 18단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90572" name="티르의 룬 - 19단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90573" name="티르의 룬 - 20단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90574" name="오셀의 룬 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90575" name="오셀의 룬 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90576" name="오셀의 룬 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90577" name="오셀의 룬 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90578" name="오셀의 룬 - 5단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90579" name="오셀의 룬 - 6단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90580" name="오셀의 룬 - 7단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90581" name="오셀의 룬 - 8단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90582" name="오셀의 룬 - 9단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90583" name="오셀의 룬 - 10단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90584" name="오셀의 룬 - 11단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv03" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90585" name="오셀의 룬 - 12단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv03" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90586" name="오셀의 룬 - 13단계" additionalName="Super" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv03" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90587" name="오셀의 룬 - 14단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv03" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90588" name="오셀의 룬 - 15단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_othel_lv03" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90589" name="오셀의 룬 - 16단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90590" name="오셀의 룬 - 17단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90591" name="오셀의 룬 - 18단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90592" name="오셀의 룬 - 19단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90593" name="오셀의 룬 - 20단계" type="EtcItem">
+		<set name="icon" val="icon.ensoul_big_p" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90594" name="율의 룬 - 1단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90595" name="율의 룬 - 2단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90596" name="율의 룬 - 3단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90597" name="율의 룬 - 4단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90598" name="율의 룬 - 5단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv01" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="90599" name="율의 룬 - 6단계" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.g_rune_yr_lv02" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+</list>

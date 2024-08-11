@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="18564" toLevel="1" name="Shiny Jewelry Box">
+		<icon>icon.etc_bm_jewelbox_main_i00</icon>
+		<itemConsumeId>46689</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20.0">
+						<item id="26491" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+					</item>
+					<item chance="20.0">
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+					</item>
+					<item chance="20.0">
+						<item id="26493" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+					</item>
+					<item chance="20.0">
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+					</item>
+					<item chance="20.0">
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18565" toLevel="10" name="Tanzanite - Barrier">
+		<!-- Creates a barrier that absorbs $s2 damage for $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_tanzanite</value>
+			<value level="2">icon.etc_bm_jewel_tanzanite</value>
+			<value level="3">icon.etc_bm_jewel_tanzanite</value>
+			<value level="4">icon.etc_bm_jewel_tanzanite</value>
+			<value level="5">icon.etc_bm_jewel_tanzanite</value>
+			<value level="6">icon.bm_jewel_tanzanite_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_tanzanite_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_tanzanite_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_tanzanite_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_tanzanite_high_lv1_lavianrose</value>
+		</icon>
+		<abnormalTime>
+			<value level="1">5</value>
+			<value level="2">5</value>
+			<value level="3">10</value>
+			<value level="4">10</value>
+			<value level="5">15</value>
+			<value level="6">15</value>
+			<value level="7">15</value>
+			<value level="8">15</value>
+			<value level="9">15</value>
+			<value level="10">15</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<effectPoint>1000</effectPoint>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="AbsorbDamage">
+				<damage>
+					<value level="1">5000</value>
+					<value level="2">10000</value>
+					<value level="3">15000</value>
+					<value level="4">30000</value>
+					<value level="5">50000</value>
+					<value level="6">50000</value>
+					<value level="7">55000</value>
+					<value level="8">60000</value>
+					<value level="9">65000</value>
+					<value level="10">70000</value>
+				</damage>
+			</effect>
+			<effect name="HealPercent" fromLevel="6" toLevel="10">
+				<power>15</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18566" toLevel="10" name="Garnet">
+		<!-- Stun/ Pulling/ Silence/ Paralyze/ Fear Resistance +$s1. -->
+		<!-- TODO: Resist to Fear and Silence -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_garnet</value>
+			<value level="2">icon.etc_bm_jewel_garnet</value>
+			<value level="3">icon.etc_bm_jewel_garnet</value>
+			<value level="4">icon.etc_bm_jewel_garnet</value>
+			<value level="5">icon.etc_bm_jewel_garnet</value>
+			<value level="6">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ResistStun">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">11</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">34</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">60</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistParalyze">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">11</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">34</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">60</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistPoison">
+				<amount>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistSleep">
+				<amount>
+					<value level="10">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">11</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">34</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">60</value>
+				</SHOCK>
+				<PULL>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">11</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">34</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">60</value>
+				</PULL>
+				<PARALYZE>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+					<value level="4">11</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">34</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">60</value>
+				</PARALYZE>
+				<POISON>
+					<value level="10">20</value>
+				</POISON>
+				<SLEEP>
+					<value level="10">20</value>
+				</SLEEP>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18567" toLevel="7" name="Garnet - Purge">
+		<!-- Removes all debuffs. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_garnet</value>
+			<value level="2">icon.etc_bm_jewel_garnet</value>
+			<value level="3">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="4">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="5">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="6">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>A2</operateType>
+		<abnormalType>SKILL_IGNORE</abnormalType>
+		<abnormalLevel>
+			<value level="1">2</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">3</value>
+			<value level="5">3</value>
+			<value level="6">3</value>
+			<value level="7">3</value>
+		</abnormalLevel>
+		<abnormalTime>
+			<value level="1">5</value>
+			<value level="2">15</value>
+			<value level="3">16</value>
+			<value level="4">17</value>
+			<value level="5">18</value>
+			<value level="6">20</value>
+			<value level="7">25</value>
+		</abnormalTime>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SKILL_IGNORE,9</dispel>
+			</effect>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="DebuffBlock" />
+		</effects>
+	</skill>
+	<skill id="18568" toLevel="10" name="Vital Stone">
+		<!-- Vitality Bonus +$s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_vital</value>
+			<value level="2">icon.etc_bm_jewel_vital</value>
+			<value level="3">icon.etc_bm_jewel_vital</value>
+			<value level="4">icon.etc_bm_jewel_vital</value>
+			<value level="5">icon.etc_bm_jewel_vital</value>
+			<value level="6">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-7</value>
+					<value level="5">-15</value>
+					<value level="6">-15</value>
+					<value level="7">-16</value>
+					<value level="8">-17</value>
+					<value level="9">-18</value>
+					<value level="10">-20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">12</value>
+					<value level="4">20</value>
+					<value level="5">30</value>
+					<value level="6">10</value>
+					<value level="7">10</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18569" toLevel="1" name="Reward Fishing Rod Pack">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="18570" toLevel="1" name="Scroll: Energy of Harmony">
+		<!-- Increases XP and SP acquisition by 50% for 30 min.(s). -->
+		<icon>icon.etc_london_olympic_scroll_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="18571" toLevel="1" name="Hero's Basics - I">
+		<!-- Acquired XP/ SP +3%. -->
+		<icon>icon.skill18571</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>3</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18572" toLevel="1" name="Hero's Basics - II">
+		<!-- Acquired XP/ SP +7%. -->
+		<icon>icon.skill18572</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>7</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>7</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18573" toLevel="1" name="Hero's Basics - III">
+		<!-- Acquired XP/ SP +7%. -->
+		<icon>icon.skill18572</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>3</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18575" toLevel="1" name="Call to Hunt - I">
+		<!-- Max HP/ MP/ CP +200, P./ M. Atk. +5%, P./ M. Def. +5%. -->
+		<icon>icon.skill18575</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="18576" toLevel="1" name="Call to Hunt - II">
+		<!-- P. Critical Damage +45, M. Critical +30, P. Critical Rate/ M. Critical Rate +10. -->
+		<icon>icon.skill18576</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="18577" toLevel="1" name="Call to Battle">
+		<!-- Received Damage in PvP -5%, Debuff Resistance +10%. -->
+		<icon>icon.skill18577</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="18578" toLevel="1" name="Song Contest">
+		<!-- World Chat Points +20. -->
+		<icon>icon.skill18578</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="18588" toLevel="1" name="Fortune Brooch">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+	</skill>
+</list>

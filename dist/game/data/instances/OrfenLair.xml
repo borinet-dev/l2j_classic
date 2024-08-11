@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance id="202" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="0" />
+	<locations>
+		<enter type="FIXED">
+		<location x="45450" y="17460" z="-4384" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="PartyCommand" />
+		<condition type="PartyCommandLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="8" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="100" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="76" />
+			<param name="max" value="85" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="19" minute="30" />
+		<reset day="WEDNESDAY" hour="19" minute="30" />
+		<reset day="FRIDAY" hour="19" minute="30" />
+	</reenter>
+		<spawnlist>
+		<group>
+			<npc id="18029" x="44580" y="16606" z="-4385" heading="7579" />
+			<npc id="18030" x="44809" y="17071" z="-4385" heading="50119" />  <!-- Escort Ant -->
+			<npc id="18031" x="44598" y="17408" z="-4385" heading="6711" />  <!-- Royal Guard Ant -->
+			<npc id="18032" x="44219" y="17220" z="-4385" heading="1241" />  <!-- Escort Ant -->
+			<npc id="18033" x="44398" y="17079" z="-4385" heading="57277" />  <!-- Royal Guard Ant -->
+			<npc id="18030" x="44389" y="16871" z="-4385" heading="37557" />  <!-- Escort Ant -->
+			<npc id="18031" x="44775" y="17665" z="-4385" heading="48268" />  <!-- Royal Guard Ant -->
+			<npc id="18032" x="44116" y="17568" z="-4385" heading="12298" />  <!-- Escort Ant -->
+			<npc id="18033" x="45092" y="17070" z="-4385" heading="59140" />  <!-- Royal Guard Ant -->
+			<npc id="18030" x="44944" y="16480" z="-4385" heading="39026" />  <!-- Escort Ant -->
+		</group>
+	</spawnlist>
+</instance>

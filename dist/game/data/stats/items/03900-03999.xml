@@ -1,0 +1,1552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="3900" name="늑대용 럭셔리플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="283000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">38</stat>
+			<stat type="pDef">43</stat>
+		</stats>
+	</item>
+	<item id="3901" name="늑대용 미스릴 아머" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="412500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">41</stat>
+			<stat type="pDef">47</stat>
+		</stats>
+	</item>
+	<item id="3902" name="유령의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="30500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">11</stat>
+			<stat type="mAtk">10</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3903" name="미스릴 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="50000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">16</stat>
+			<stat type="mAtk">14</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3904" name="숲의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="80000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">23</stat>
+			<stat type="mAtk">18</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3905" name="오리하르콘 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="120000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">31</stat>
+			<stat type="mAtk">24</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3906" name="솔티독의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="175000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">40</stat>
+			<stat type="mAtk">30</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3907" name="켈베로스의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="225000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">49</stat>
+			<stat type="mAtk">36</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3908" name="코요테의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="285000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">58</stat>
+			<stat type="mAtk">42</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3909" name="얼음결정의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="360000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">69</stat>
+			<stat type="mAtk">50</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3910" name="푸른늑대의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="550000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">80</stat>
+			<stat type="mAtk">58</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3911" name="펜릴의 송곳니" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="750000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="ALL_WOLF_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">93</stat>
+			<stat type="mAtk">66</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3912" name="해츨링용 소프트레더" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="58500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">26</stat>
+			<stat type="pDef">26</stat>
+		</stats>
+	</item>
+	<item id="3913" name="해츨링용 스케일 메일" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="86000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">29</stat>
+			<stat type="pDef">29</stat>
+		</stats>
+	</item>
+	<item id="3914" name="해츨링용 브리건딘" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="113000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">31</stat>
+			<stat type="pDef">31</stat>
+		</stats>
+	</item>
+	<item id="3915" name="해츨링용 브론즈 코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="145500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">33</stat>
+			<stat type="pDef">33</stat>
+		</stats>
+	</item>
+	<item id="3916" name="해츨링용 스틸 코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="186000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">36</stat>
+			<stat type="pDef">36</stat>
+		</stats>
+	</item>
+	<item id="3917" name="해츨링용 섀도우플레이트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="283000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">38</stat>
+			<stat type="pDef">38</stat>
+		</stats>
+	</item>
+	<item id="3918" name="해츨링용 미스릴 코트" type="Armor">
+		<set name="icon" val="icon.etc_pet_armor_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="160" />
+		<set name="price" val="412500" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="mDef">41</stat>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="3919" name="서펜트팽" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="100000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">8</stat>
+			<stat type="mAtk">7</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3920" name="바이퍼바이트" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="155000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">9</stat>
+			<stat type="mAtk">10</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3921" name="섀도우팽" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="210000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">10</stat>
+			<stat type="mAtk">11</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3922" name="알리야의 이빨" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="285000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">12</stat>
+			<stat type="mAtk">13</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3923" name="토쳐러" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="380000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">13</stat>
+			<stat type="mAtk">16</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3924" name="우눅 알헤이의 이빨" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="550000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">15</stat>
+			<stat type="mAtk">18</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3925" name="안티프라그" type="Weapon">
+		<set name="icon" val="icon.etc_pet_arms_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="price" val="800000" />
+		<set name="commissionItemType" val="PET_EQUIPMENT" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond msgId="1518">
+			<player categoryType="HATCHLING_GROUP" />
+		</cond>
+		<stats>
+			<stat type="pAtk">17</stat>
+			<stat type="mAtk">21</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">277</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="3926" name="L2day 가이던스 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2050" level="1" /> 
+		</skills>
+	</item>
+	<item id="3927" name="L2day 데스 위스퍼 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2051" level="1" /> 
+		</skills>
+	</item>
+	<item id="3928" name="L2day 포커스 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2052" level="1" /> 
+		</skills>
+	</item>
+	<item id="3929" name="L2day 그레이터 아큐멘 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2053" level="1" /> 
+		</skills>
+	</item>
+	<item id="3930" name="L2day 헤이스트 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2054" level="1" /> 
+		</skills>
+	</item>
+	<item id="3931" name="L2day 어질리티 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2055" level="1" /> 
+		</skills>
+	</item>
+	<item id="3932" name="L2day 엠파워 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2056" level="1" /> 
+		</skills>
+	</item>
+	<item id="3933" name="L2day 마이트 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2057" level="1" /> 
+		</skills>
+	</item>
+	<item id="3934" name="L2day 윈드 워크 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2058" level="1" /> 
+		</skills>
+	</item>
+	<item id="3935" name="L2day 실드 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2059" level="1" /> 
+		</skills>
+	</item>
+	<item id="3936" name="축복받은 부활 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_resurrection_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="400000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="2049" level="1" /> 
+		</skills>
+	</item>
+	<item id="3937" name="몹전용(하거인)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="300" />
+		<set name="price" val="400000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">50</stat>
+			<stat type="mAtk">26</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="3938" name="몹전용(하거인마법사 무기)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="300" />
+		<set name="price" val="400000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">50</stat>
+			<stat type="mAtk">26</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="3939" name="몹전용(벤쉬)" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="101" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="300" />
+		<set name="price" val="400000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="isAppearanceable" val="true" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">50</stat>
+			<stat type="mAtk">26</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="3940" name="설계도 - 서먼 시즈 골렘" type="EtcItem">
+		<set name="icon" val="icon.etc_plan_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="100000" />
+		<set name="commissionItemType" val="SPELLBOOK" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3941" name="마법서 - 매스 리저렉션" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="4600" />
+		<set name="commissionItemType" val="SPELLBOOK" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3942" name="마법서 - 파티 리콜" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="100000" />
+		<set name="commissionItemType" val="SPELLBOOK" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3943" name="부적 - 하트 오브 파아그리오" type="EtcItem">
+		<set name="icon" val="icon.etc_orcish_talisman_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="3850" />
+		<set name="commissionItemType" val="SPELLBOOK" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3944" name="마법서 - 디크리즈 웨이트" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_books_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="price" val="43681" />
+		<set name="commissionItemType" val="SPELLBOOK" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3945" name="말하는 섬 발 - 기란 행 배표" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_destroyable" val="false" />
+		<set name="weight" val="20" />
+		<set name="price" val="303400" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3946" name="기란 발 - 말하는 섬 행 배표" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_destroyable" val="false" />
+		<set name="weight" val="20" />
+		<set name="price" val="197870" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="3947" name="축복받은 무급 마정탄" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_white_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="4" />
+		<set name="price" val="35" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<skills>
+			<skill id="2061" level="1" /> 
+		</skills>
+	</item>
+	<item id="3948" name="축복받은 마정탄 - D그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_blue_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="4" />
+		<set name="price" val="45" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="crystal_type" val="D" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<skills>
+			<skill id="2160" level="1" /> 
+		</skills>
+	</item>
+	<item id="3949" name="축복받은 마정탄 - C그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_green_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="90" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="crystal_type" val="C" />
+		<set name="enchant_enabled" val="true" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<skills>
+			<skill id="2161" level="1" /> 
+		</skills>
+	</item>
+	<item id="3950" name="축복받은 마정탄 - B그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_red_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="2" />
+		<set name="price" val="245" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="crystal_type" val="B" />
+		<set name="enchant_enabled" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2162" level="1" /> 
+		</skills>
+	</item>
+	<item id="3951" name="축복받은 마정탄 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_silver_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="290" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="crystal_type" val="A" />
+		<set name="enchant_enabled" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2163" level="1" /> 
+		</skills>
+	</item>
+	<item id="3952" name="축복받은 마정탄 - S그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_spell_shot_gold_i01" />
+		<set name="default_action" val="SPIRITSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="350" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="BlessedSpiritShot" />
+		<set name="crystal_type" val="S" />
+		<set name="enchant_enabled" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="commissionItemType" val="SPIRITSHOT" />
+		<skills>
+			<skill id="2164" level="1" /> 
+		</skills>
+	</item>
+	<item id="3953" name="레시피: 축복받은 마정탄(D)(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_blue_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="5000" />
+		<set name="recipe_id" val="323" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="3954" name="레시피: 축복받은 마정탄(C)(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_yellow_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="60000" />
+		<set name="recipe_id" val="324" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="3955" name="레시피: 축복받은 마정탄(B)(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_red_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="100000" />
+		<set name="recipe_id" val="325" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="3956" name="레시피: 축복받은 마정탄(A)(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_violet_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="150000" />
+		<set name="recipe_id" val="326" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="3957" name="레시피: 축복받은 마정탄(S)(100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="450000" />
+		<set name="recipe_id" val="327" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="3958" name="L2day 축복받은 귀환 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="2036" level="2" /> 
+		</skills>
+	</item>
+	<item id="3959" name="L2day 축복받은 부활 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_resurrection_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="2062" level="1" /> 
+		</skills>
+	</item>
+	<item id="3960" name="용병배치표(칼/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3961" name="용병배치표(창/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3962" name="용병배치표(활/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3963" name="용병배치표(클레릭/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3964" name="용병배치표(위자드/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3965" name="용병배치표(칼/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3966" name="용병배치표(창/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3967" name="용병배치표(활/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3968" name="용병배치표(클레릭/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3969" name="용병배치표(위자드/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3970" name="용병배치표(텔레포터1)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3971" name="용병배치표(텔레포터2)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3972" name="용병배치표(텔레포터3)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3973" name="용병배치표(칼/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3974" name="용병배치표(창/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3975" name="용병배치표(활/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3976" name="용병배치표(클레릭/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3977" name="용병배치표(위자드/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3978" name="용병배치표(칼/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3979" name="용병배치표(창/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3980" name="용병배치표(활/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3981" name="용병배치표(클레릭/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3982" name="용병배치표(위자드/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3983" name="용병배치표(텔레포터1)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3984" name="용병배치표(텔레포터2)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3985" name="용병배치표(텔레포터3)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3986" name="용병배치표(칼/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3987" name="용병배치표(창/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3988" name="용병배치표(활/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3989" name="용병배치표(클레릭/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3990" name="용병배치표(위자드/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3991" name="용병배치표(칼/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3992" name="용병배치표(창/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_pole_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3993" name="용병배치표(활/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_bow_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="40000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3994" name="용병배치표(클레릭/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_cleric_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3995" name="용병배치표(위자드/이동)" type="EtcItem">
+		<set name="icon" val="icon.mticket_wizard_move_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="100000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3996" name="용병배치표(텔레포터1)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3997" name="용병배치표(텔레포터2)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3998" name="용병배치표(텔레포터3)" type="EtcItem">
+		<set name="icon" val="icon.mticket_teleporter_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="500000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+	<item id="3999" name="용병배치표(칼/고정)" type="EtcItem">
+		<set name="icon" val="icon.mticket_sword_fix_i00" />
+		<set name="etcitem_type" val="CASTLE_GUARD" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="20000" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="handler" val="MercTicket" />
+	</item>
+</list>

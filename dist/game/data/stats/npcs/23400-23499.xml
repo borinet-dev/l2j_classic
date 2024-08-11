@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="23421" level="35" type="Monster" name="Chertuba Mirage">
+		<race>HUMANOID</race>
+		<sex>FEMALE</sex>
+		<acquire exp="7276" sp="1" />
+		<equipment rhand="78" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="1183.59621451104" hpRegen="4.5" mp="610.705596107056" mpRegen="1.8" />
+			<speed>
+				<walk ground="36" />
+				<run ground="170" />
+			</speed>
+			<attack physical="129.704301075269" magical="88.6845697509428" critical="4" attackSpeed="253" range="40" />
+			<defence physical="137.238256932654" magical="100.070638097481" />
+		</stats>
+		<skillList>
+			<skill id="4173" level="3" /> <!-- Might -->
+			<skill id="4177" level="3" /> <!-- Cancellation -->
+			<skill id="4412" level="5" /> <!-- Very Weak P. Def. -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4722" level="3" /> <!-- Power Strike -->
+			<skill id="4737" level="3" /> <!-- Spinning Slasher -->
+		</skillList>
+		<collision>
+			<radius normal="24" />
+			<height normal="51" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="69" min="1" max="1" chance="0.0075" /> <!-- Bastard Sword -->
+				<item id="125" min="1" max="1" chance="0.0075" /> <!-- Spinebone Sword -->
+				<item id="126" min="1" max="1" chance="0.0075" /> <!-- Artisan's Sword -->
+				<item id="128" min="1" max="1" chance="0.0075" /> <!-- Knight's Sword -->
+				<item id="57" min="269" max="631" chance="70" /> <!-- Adena -->
+				<item id="1872" min="1" max="1" chance="9.052" /> <!-- Animal Bone -->
+				<item id="1871" min="1" max="1" chance="6.816" /> <!-- Charcoal -->
+				<item id="1870" min="1" max="1" chance="6.794" /> <!-- Coal -->
+				<item id="1879" min="1" max="1" chance="1.094" /> <!-- Cokes -->
+				<item id="1881" min="1" max="1" chance="0.75" /> <!-- Coarse Bone Powder -->
+				<item id="1875" min="1" max="1" chance="0.3" /> <!-- Stone of Purity -->
+				<item id="2021" min="1" max="1" chance="0.3" /> <!-- Spinebone Sword Blade -->
+				<item id="955" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+			</drop>
+			<spoil>
+				<item id="1936" min="1" max="1" chance="12.89" /> <!-- White Tunic Pattern -->
+				<item id="2267" min="1" max="1" chance="1.654" /> <!-- Recipe: Gastraphetes -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="23422" level="35" type="Monster" name="Chertuba Illusion">
+		<race>HUMANOID</race>
+		<sex>FEMALE</sex>
+		<acquire exp="7276" sp="1" />
+		<equipment rhand="78" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="1183.59621451104" hpRegen="4.5" mp="610.705596107056" mpRegen="1.8" />
+			<speed>
+				<walk ground="36" />
+				<run ground="170" />
+			</speed>
+			<attack physical="129.704301075269" magical="88.6845697509428" critical="4" attackSpeed="253" range="40" />
+			<defence physical="137.096774193548" magical="100.977137399132" />
+		</stats>
+		<skillList>
+			<skill id="4173" level="3" /> <!-- Might -->
+			<skill id="4177" level="3" /> <!-- Cancellation -->
+			<skill id="4413" level="5" /> <!-- Very Weak M. Def. -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4722" level="3" /> <!-- Power Strike -->
+			<skill id="4737" level="3" /> <!-- Spinning Slasher -->
+		</skillList>
+		<collision>
+			<radius normal="24" />
+			<height normal="51" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="69" min="1" max="1" chance="0.0075" /> <!-- Bastard Sword -->
+				<item id="125" min="1" max="1" chance="0.0075" /> <!-- Spinebone Sword -->
+				<item id="126" min="1" max="1" chance="0.0075" /> <!-- Artisan's Sword -->
+				<item id="128" min="1" max="1" chance="0.0075" /> <!-- Knight's Sword -->
+				<item id="57" min="269" max="631" chance="70" /> <!-- Adena -->
+				<item id="1872" min="1" max="1" chance="9.052" /> <!-- Animal Bone -->
+				<item id="1871" min="1" max="1" chance="6.816" /> <!-- Charcoal -->
+				<item id="1870" min="1" max="1" chance="6.794" /> <!-- Coal -->
+				<item id="1879" min="1" max="1" chance="1.094" /> <!-- Cokes -->
+				<item id="1881" min="1" max="1" chance="0.75" /> <!-- Coarse Bone Powder -->
+				<item id="1875" min="1" max="1" chance="0.3" /> <!-- Stone of Purity -->
+				<item id="2021" min="1" max="1" chance="0.3" /> <!-- Spinebone Sword Blade -->
+				<item id="955" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+			</drop>
+			<spoil>
+				<item id="1936" min="1" max="1" chance="12.89" /> <!-- White Tunic Pattern -->
+				<item id="2267" min="1" max="1" chance="1.654" /> <!-- Recipe: Gastraphetes -->
+			</spoil>
+		</dropLists>
+	</npc>
+</list>

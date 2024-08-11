@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="Blackday Event" active="04 14 00 00-04 15 00 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="41265" min="1" max="1" chance="3.72%" minLevel="20" maxLevel="99" />
+		<add item="41266" min="1" max="1" chance="4.72%" minLevel="20" maxLevel="99" />
+		<add item="41267" min="1" max="1" chance="4.72%" minLevel="20" maxLevel="99" />
+		<add item="41268" min="1" max="1" chance="3.72%" minLevel="20" maxLevel="99" />
+		<add item="41269" min="1" max="1" chance="4.72%" minLevel="20" maxLevel="99" />
+		<add item="41271" min="1" max="1" chance="4.72%" minLevel="20" maxLevel="99" />
+	</droplist>
+	<destroyItemsOnEnd>
+		<item id="41265" />
+		<item id="41266" />
+		<item id="41267" />
+		<item id="41268" />
+		<item id="41269" />
+		<item id="41270" />
+		<item id="41271" />
+	</destroyItemsOnEnd>
+	<messages>
+		<add type="onEnd" text="블랙데이 이벤트가 종료되었습니다!" />
+	</messages>
+</event>

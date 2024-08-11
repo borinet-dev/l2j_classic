@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="32486" toLevel="1" name="Orfen Slasher">
+		<!-- Orfen's Normal Physical Range Attack -->
+		<castRange>300</castRange>
+		<hitTime>1300</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>800</affectRange>
+		<magicLevel>108</magicLevel>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>30000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32487" toLevel="1" name="Orfen Fatal Slasher">
+		<!-- Orfen's Powerful Physical Range Attack -->
+		<castRange>300</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>800</affectRange>
+		<magicLevel>108</magicLevel>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>50000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32488" toLevel="1" name="Orfen Energy Scatter">
+		<!-- Orfen's Normal Magic Range Attack -->
+		<castRange>300</castRange>
+		<hitTime>1300</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+		<operateType>A1</operateType>
+		<magicLevel>108</magicLevel>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>10-10</affectLimit>
+		<affectRange>500</affectRange>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>10000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32489" toLevel="1" name="Orfen Fury Energy Wave">
+		<!-- Momentarily immobilized due to Orfen's attack. -->
+		<castRange>700</castRange>
+		<abnormalType>STUN</abnormalType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>10</abnormalTime>
+		<affectLimit>10-25</affectLimit>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>90</activateRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<affectRange>400</affectRange>
+		<effectRange>1100</effectRange>
+		<hitTime>4000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+		<operateType>A2</operateType>
+		<magicLevel>108</magicLevel>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<isDebuff>true</isDebuff>
+		<effects>
+		<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;30516</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32493" toLevel="1" name="Orfen Raise Spore">
+		<!-- Attacking abilities have been crippled by spores stirred up by Orfen. Decreases Atk. Spd./ Casting Spd. by 20%. -->
+		<icon>icon.skill1072</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>20</abnormalTime>
+		<abnormalType>ATTACK_TIME_UP</abnormalType>
+		<activateRate>90</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<lvlBonusRate>1</lvlBonusRate>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<operateType>A2</operateType>
+		<magicLevel>108</magicLevel>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>32494</skillId> <!-- Hallucinating Dust -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32494" toLevel="1" name="Hallucinating Dust">
+		<!-- Attacking abilities have been crippled by spores stirred up by Orfen. Decreases Atk. Spd./ Casting Spd. by 500, Speed by 100. -->
+		<icon>icon.skill0412</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>20</abnormalTime>
+		<abnormalType>ATTACK_TIME_UP</abnormalType>
+		<activateRate>90</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<lvlBonusRate>1</lvlBonusRate>
+		<castRange>400</castRange>
+		<effectRange>900</effectRange>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<operateType>A2</operateType>
+		<magicLevel>108</magicLevel>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

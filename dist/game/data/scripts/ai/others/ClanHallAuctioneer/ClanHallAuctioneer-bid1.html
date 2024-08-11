@@ -1,0 +1,26 @@
+<html><body>경매관리인:<br>
+<font color="LEVEL">한 번에 하나의 아지트에만 입찰 할 수 있습니다.</font><br1>
+입찰금액의 <font color="LEVEL">10%는 수수료</font>로 제외됩니다.<br1>
+입찰이 취소되더라도 수수료를 제외한 금액만 환불됩니다.<br>
+입찰가는 <font color="LEVEL">최소입찰가</font>(또는 재입찰시 이전 입찰가)보다 높아야 합니다.<br1>
+경매종료시 최고입찰가를 제출한 혈맹이 가져갑니다.<br>
+현재 혈맹창고에는 <font color="aaccff">%clanAdena%</font> 아데나가 있습니다.<br1>
+최소입찰가는 <font color="aaccff">%minBid%</font> 아데나이며, 현재입찰가보다 높게 입찰하셔야 합니다.<br>
+얼마에 입찰하시겠습니까?
+<table width=270 border=0>
+<tr>
+<td width=220 align=right><edit var=bidprice width=230 align=right type=number></td>
+<td width=40 align=right>아데나</td>
+</tr>
+</table>
+<img src="L2UI.SquareBlank" width=270 height=10>
+<img src="L2UI.SquareWhite" width=270 height=1>
+<img src="L2UI.SquareBlank" width=270 height=5>
+<table width=270 border=0>
+<tr>
+<td width=110></td>
+<td width=80 align=center><button action="bypass -h Quest ClanHallAuctioneer auctionList id=%id%" value="뒤로" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=80 align=center><button action="bypass -h Quest ClanHallAuctioneer bid id=%id% bid=' $bidprice '	" value="입찰" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</body></html>

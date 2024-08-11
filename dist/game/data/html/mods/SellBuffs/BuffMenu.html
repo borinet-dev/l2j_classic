@@ -1,0 +1,36 @@
+<html><title>버프 판매</title>
+	<body><br>
+<table align="center" width=785 height=545 background="L2UI_CH3.refinewnd_back_Pattern">
+<tr><td>
+<center>
+	<table border=0 cellpadding=0 cellspacing=0>
+		<tr><td height=30></td></tr>
+		<tr>
+			<td width=750 height=186 background="guides.jobimage_C_97_02">
+			<br><br><br><br><br><br><br><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font name="hs16" color="LEVEL">버프의 개당 최소 판매가격은<br1>
+			&nbsp;&nbsp;&nbsp;<?min_price?> 아데나입니다.</font>
+		</td></tr>
+	</table>
+	<br><br><br><br><br><br><br>
+	<table border=0 cellpadding=0 cellspacing=0 width=292 height=50>
+		<tr><td height=10></td></tr>
+		<tr>
+			<td><button action="bypass -h sellbuffadd" value="버프 추가" width=200 height=31 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_CT1.OlympiadWnd_DF_Apply"></td>
+			<td><button action="bypass -h sellbuffedit" value="버프 설정" width=200 height=31 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_CT1.OlympiadWnd_DF_Apply"></td>
+		</tr>
+	</table>
+	<br><br>
+	<table border=0 cellpadding=0 cellspacing=0 width=292 height=50>
+		<tr>
+			<td align=center>버프상점 이름</td>
+		</tr>
+		<tr>
+			<td align=center><edit var="title" width=120></td>
+		</tr>
+	</table>
+	<button action="bypass -h sellbuffstart $title" value="버프판매 시작하기" width=200 height=31 back="L2UI_CT1.OlympiadWnd_DF_Watch_Down" fore="L2UI_CT1.OlympiadWnd_DF_Watch">
+</center>
+</td></tr>
+</table>
+</html>

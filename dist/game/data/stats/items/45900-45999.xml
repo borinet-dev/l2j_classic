@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="45900" name="꼬꼬의 알" type="EtcItem">
+		<set name="icon" val="icon.egg_white" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="45901" name="꼬꼬의 반짝이는 알" type="EtcItem">
+		<set name="icon" val="icon.egg_twinkle" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="45902" name="꼬꼬의 황금 알" type="EtcItem">
+		<set name="icon" val="icon.egg_gold" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="45903" name="아포칼립스 무기 상자 교환권" type="EtcItem">
+		<set name="icon" val="icon.fairy_encounter_letter" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45904" name="삐삐의 셔츠" type="Armor">
+		<set name="icon" val="icon.r1_shirt_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="130" />
+		<set name="material" val="CLOTH" />
+		<skills>
+			<skill id="18374" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">38</stat>
+		</stats>
+	</item>
+	<item id="45905" name="꼬꼬의 셔츠" type="Armor">
+		<set name="icon" val="icon.r1_shirt_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="130" />
+		<set name="material" val="CLOTH" />
+		<skills>
+			<skill id="18375" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">38</stat>
+		</stats>
+	</item>
+	<item id="45906" name="삐삐의 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i03" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="waist" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="440" />
+		<set name="material" val="CLOTH" />
+		<skills>
+			<skill id="18376" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="45907" name="꼬꼬의 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i03" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="waist" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="440" />
+		<set name="material" val="CLOTH" />
+		<skills>
+			<skill id="18377" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="45908" name="아포칼립스 셰이퍼 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45909" name="아포칼립스 커터 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45910" name="아포칼립스 슬래셔 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45911" name="아포칼립스 어벤져 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45912" name="아포칼립스 파이터 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45913" name="아포칼립스 스토머 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45914" name="아포칼립스 스로워 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45915" name="아포칼립스 슈트제 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45916" name="아포칼립스 버스터 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45917" name="아포칼립스 캐스터 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45918" name="아포칼립스 레트리뷰터 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45919" name="아포칼립스 듀얼소드 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45920" name="아포칼립스 듀얼대거 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45921" name="아포칼립스 듀얼블런트 상자" type="EtcItem">
+		<set name="icon" val="icon.ev_charge_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45922" name="마법서 - 디그니티 오브 아너스" additionalName="Lv1" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i02" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18345" level="1" /> 
+		</skills>
+	</item>
+	<item id="45923" name="마법서 - 디그니티 오브 아너스" additionalName="Lv2" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i02" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18345" level="2" /> 
+		</skills>
+	</item>
+	<item id="45924" name="마법서 - 디그니티 오브 아너스" additionalName="Lv3" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i02" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18345" level="3" /> 
+		</skills>
+	</item>
+	<item id="45925" name="마법서 - 블리프 오브 아너스" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18348" level="1" /> 
+		</skills>
+	</item>
+	<item id="45926" name="마법서 - 블레싱 오브 아너스" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18349" level="1" /> 
+		</skills>
+	</item>
+	<item id="45927" name="마법서 - 서먼 배틀 포션" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i01" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18350" level="1" /> 
+		</skills>
+	</item>
+	<item id="45928" name="마법서 - 페이버 오브 아너스" additionalName="Lv1" type="EtcItem">
+		<set name="icon" val="icon.giant_book_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18351" level="1" /> 
+		</skills>
+	</item>
+	<item id="45929" name="영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_46" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="536000" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="46" />
+		</cond>
+	</item>
+	<item id="45930" name="중급 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="2985120" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="85" />
+		</cond>
+	</item>
+	<item id="45931" name="상급 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r95" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="5970240" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="95" />
+		</cond>
+	</item>
+	<item id="45932" name="최상급 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r99" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="7164300" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="99" />
+		</cond>
+	</item>
+	<item id="45933" name="액세서리 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_46" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="536000" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="46" />
+		</cond>
+	</item>
+	<item id="45934" name="중급 액세서리 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="2985120" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="85" />
+		</cond>
+	</item>
+	<item id="45935" name="상급 액세서리 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r95" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="5970240" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="95" />
+		</cond>
+	</item>
+	<item id="45936" name="최상급 액세서리 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r99" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="7164300" />
+		<set name="weight" val="2" />
+		<cond msgId="113" addName="1">
+			<player level="99" />
+		</cond>
+	</item>
+	<item id="45937" name="헤어 액세서리 영혼의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_hairacc" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="price" val="7164300" />
+		<set name="weight" val="100" />
+		<cond msgId="113" addName="1">
+			<player level="46" />
+		</cond>
+	</item>
+	<item id="45938" name="차원의 주화" type="EtcItem">
+		<set name="icon" val="icon.etc_gold_knight_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45939" name="차원의 주화" type="EtcItem">
+		<set name="icon" val="icon.etc_gold_knight_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45940" name="차원의 주화" type="EtcItem">
+		<set name="icon" val="icon.etc_gold_knight_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45941" name="차원의 주화" type="EtcItem">
+		<set name="icon" val="icon.etc_gold_knight_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="45942" name="아스타틴 에너지 합성 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45943" name="강화된 아스타틴 에너지 합성 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45944" name="차원의 영웅 보급 상자" type="EtcItem">
+		<set name="icon" val="icon.new_user_box" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45945" name="결전의 회복 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_gold_i00" />
+		<set name="weight" val="10" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="reuse_delay" val="500" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="16453" level="1" /> 
+		</skills>
+	</item>
+	<item id="45946" name="우정의 시르 블레이드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_sirr_blade_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45947" name="우정의 다마스커스 검 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_sword_of_damascus_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45948" name="우정의 싸울아비 장검 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_samurai_longsword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45949" name="우정의 다이너스티 소드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_blade_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45950" name="우정의 탈룸 블레이드*다마스커스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45951" name="우정의 싸울아비*싸울아비 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45952" name="우정의 스피릿츠 소드*레이드 소드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45953" name="우정의 다이너스티 듀얼 소드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45954" name="우정의 타이폰 스피어 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45955" name="우정의 랜시아 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_lancia_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45956" name="우정의 오키쉬 폴액스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_orcish_poleaxe_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45957" name="우정의 다이너스티 핼버드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_spear_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45958" name="우정의 바라키엘 엑스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_barakiel_axe_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45959" name="우정의 아트 오브 배틀액스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_art_of_battle_axe_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45960" name="우정의 야크샤 메이스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_yaksa_mace_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45961" name="우정의 다이너스티 커젤 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_spear_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45962" name="우정의 소드 오브 이포스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_sword_of_ipos_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45963" name="우정의 가디언스 소드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_guardians_sword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45964" name="우정의 버서커 블레이드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_berserker_blade_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45965" name="우정의 다이너스티 블레이드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_twohand_sword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45966" name="우정의 소베크 허리케인 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45967" name="우정의 벨리온 세스터스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_bellion_cestus_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45968" name="우정의 그레이트파타 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_great_pata_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45969" name="우정의 다이너스티 바그나우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_jamadhr_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45970" name="우정의 나가 스톰 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_naga_storm_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45971" name="우정의 크리스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_kris_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45972" name="우정의 다크스크리머 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dark_screamer_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45973" name="우정의 다이너스티 나이프 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_dagger_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45974" name="우정의 샤이드 보우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_shyid_bow_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45975" name="우정의 해저드보우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_hazard_bow_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45976" name="우정의 에머넌스보우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_eminence_bow_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45977" name="우정의 다이너스티 보우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_bow_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45978" name="우정의 소드 오브 미라클 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_sword_of_miracle_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45979" name="우정의 티어스 오브 위자드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45980" name="우정의 호문쿨러스 소드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_homunkuluss_sword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45981" name="우정의 다이너스티 팬텀 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_magic_sword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45982" name="우정의 불트강 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_death_bringer_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45983" name="우정의 디스멘틀러 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dismantler_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45984" name="우정의 세이버투스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_invincible_blade_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45985" name="우정의 다이너스티 고대검 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_ancient_sword_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45986" name="우정의 에끌레르 비쥬 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_greed_stinger_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45987" name="우정의 콜리슈마르드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_colichemarde_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45988" name="우정의 아미랄 에스터크 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_blink_slasher_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45989" name="우정의 다이너스티 레이피어 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_rapier_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45990" name="우정의 버스트 어벤져 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_soul_shooter_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45991" name="우정의 헬 하운드 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_hell_hound_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45992" name="우정의 샤프 슈터 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_taslam_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45993" name="우정의 다이너스티 크로스보우 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_crossbow_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45994" name="아포칼립스 셰이퍼 포커스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_phasian_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45995" name="아포칼립스 커터 포커스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_pasis_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45996" name="아포칼립스 슬래셔 포커스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_volver_i01" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45997" name="아포칼립스 듀얼소드 대미지업 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_r_dualsword_i21" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45998" name="아포칼립스 듀얼대거 포커스 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_r_dualdagger_i21" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="45999" name="아포칼립스 듀얼블런트 대미지업 캡슐" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.weapon_r_dualblunt_i21" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+</list>

@@ -1,0 +1,1454 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="26500" name="캐츠아이" additionalName="Lv4" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27440" level="4" /> 
+		</skills>
+	</item>
+	<item id="26501" name="캐츠아이" additionalName="Lv5" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27440" level="5" /> 
+			<skill id="27441" level="1" /> 
+		</skills>
+	</item>
+	<item id="26502" name="아메시스트" additionalName="Lv1" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_amethyst_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27442" level="1" /> 
+		</skills>
+	</item>
+	<item id="26503" name="아메시스트" additionalName="Lv2" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_amethyst_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27442" level="2" /> 
+		</skills>
+	</item>
+	<item id="26504" name="아메시스트" additionalName="Lv3" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_amethyst_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27442" level="3" /> 
+		</skills>
+	</item>
+	<item id="26505" name="아메시스트" additionalName="Lv4" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_amethyst_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27442" level="4" /> 
+		</skills>
+	</item>
+	<item id="26506" name="아메시스트" additionalName="Lv5" type="Armor">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_amethyst_i00" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="5" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="27442" level="5" /> 
+			<skill id="27443" level="1" /> 
+		</skills>
+	</item>
+	<item id="26507" name="라비앙로즈의 캐츠아이 상자" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewelbox_catseye_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26497" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26508" name="라비앙로즈의 아메시스트 상자" type="EtcItem">
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewelbox_amethyst_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="26502" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26509" name="포모나 소환 주문서" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_star_scroll_baekisung" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="26510" name="출석 체크 활력수" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_recall_potion3" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_stackable" val="true" />
+		<set name="reuse_delay" val="3600000" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="27445" level="1" /> 
+		</skills>
+	</item>
+	<item id="26511" name="아나킴 세트 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="26388" min="1" max="1" chance="100" /> 
+			<item id="46186" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="26512" name="아르테이아의 신비한 바람 주문서 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="26513" name="Lv5 전설의 카리스마 염료 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="39415" min="1" max="1" chance="16" /> 
+			<item id="39416" min="1" max="1" chance="17" /> 
+			<item id="39417" min="1" max="1" chance="17" /> 
+			<item id="39418" min="1" max="1" chance="16" /> 
+			<item id="39419" min="1" max="1" chance="17" /> 
+			<item id="39420" min="1" max="1" chance="17" /> 
+		</capsuled_items>
+	</item>
+	<item id="26514" name="Lv5 전설의 행운 염료 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="39445" min="1" max="1" chance="16" /> 
+			<item id="39446" min="1" max="1" chance="17" /> 
+			<item id="39447" min="1" max="1" chance="17" /> 
+			<item id="39448" min="1" max="1" chance="16" /> 
+			<item id="39449" min="1" max="1" chance="17" /> 
+			<item id="39450" min="1" max="1" chance="17" /> 
+		</capsuled_items>
+	</item>
+	<item id="26515" name="Lv3 전설의 카리스마 염료 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="39403" min="1" max="1" chance="16" /> 
+			<item id="39404" min="1" max="1" chance="17" /> 
+			<item id="39405" min="1" max="1" chance="17" /> 
+			<item id="39406" min="1" max="1" chance="16" /> 
+			<item id="39407" min="1" max="1" chance="17" /> 
+			<item id="39408" min="1" max="1" chance="17" /> 
+		</capsuled_items>
+	</item>
+	<item id="26516" name="Lv3 전설의 행운 염료 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="39433" min="1" max="1" chance="16" /> 
+			<item id="39434" min="1" max="1" chance="17" /> 
+			<item id="39435" min="1" max="1" chance="17" /> 
+			<item id="39436" min="1" max="1" chance="16" /> 
+			<item id="39437" min="1" max="1" chance="17" /> 
+			<item id="39438" min="1" max="1" chance="17" /> 
+		</capsuled_items>
+	</item>
+	<item id="26517" name="환영의 돌 - 만능" type="EtcItem">
+		<set name="icon" val="icon.etc_life_stone_of_begining_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="26518" name="해적 선장 복장" type="Armor">
+		<set name="icon" val="BranchSys3.iconArmor.g_co_captain_i00" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="1000" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="alldress" />
+	</item>
+	<item id="26519" name="해적 선원 복장" type="Armor">
+		<set name="icon" val="BranchSys3.iconArmor.g_co_pirate_i00" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="1000" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="alldress" />
+	</item>
+	<item id="26520" name="해적 선장 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26521" name="해적 선원 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="26522" name="토끼 귀" additionalName="힘+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26523" name="토끼 귀" additionalName="민첩+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26524" name="토끼 귀" additionalName="체력+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26525" name="토끼 귀" additionalName="정신+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26526" name="토끼 귀" additionalName="지능+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26527" name="토끼 귀" additionalName="재치+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26528" name="토끼 귀" additionalName="힘+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26529" name="토끼 귀" additionalName="민첩+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26530" name="토끼 귀" additionalName="체력+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26531" name="토끼 귀" additionalName="정신+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26532" name="토끼 귀" additionalName="지능+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26533" name="토끼 귀" additionalName="재치+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26534" name="토끼 귀" additionalName="힘+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26535" name="토끼 귀" additionalName="민첩+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26536" name="토끼 귀" additionalName="체력+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26537" name="토끼 귀" additionalName="정신+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26538" name="토끼 귀" additionalName="지능+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26539" name="토끼 귀" additionalName="재치+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26540" name="토끼 귀" additionalName="힘+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26541" name="토끼 귀" additionalName="민첩+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26542" name="토끼 귀" additionalName="체력+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26543" name="토끼 귀" additionalName="정신+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26544" name="토끼 귀" additionalName="지능+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26545" name="토끼 귀" additionalName="재치+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26546" name="토끼 귀" additionalName="힘+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26547" name="토끼 귀" additionalName="민첩+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26548" name="토끼 귀" additionalName="체력+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26549" name="토끼 귀" additionalName="정신+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26550" name="토끼 귀" additionalName="지능+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26551" name="토끼 귀" additionalName="재치+회피" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26552" name="토끼 귀" additionalName="힘+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26553" name="토끼 귀" additionalName="민첩+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26554" name="토끼 귀" additionalName="체력+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26555" name="토끼 귀" additionalName="정신+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26556" name="토끼 귀" additionalName="지능+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26557" name="토끼 귀" additionalName="재치+물리 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12894" level="1" /> 
+		</skills>
+	</item>
+	<item id="26558" name="토끼 귀" additionalName="힘+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26559" name="토끼 귀" additionalName="민첩+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26560" name="토끼 귀" additionalName="체력+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26561" name="토끼 귀" additionalName="정신+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26562" name="토끼 귀" additionalName="지능+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26563" name="토끼 귀" additionalName="재치+마법 공격력" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12895" level="1" /> 
+		</skills>
+	</item>
+	<item id="26564" name="토끼 귀" additionalName="힘+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26565" name="토끼 귀" additionalName="민첩+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26566" name="토끼 귀" additionalName="체력+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26567" name="토끼 귀" additionalName="정신+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26568" name="토끼 귀" additionalName="지능+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26569" name="토끼 귀" additionalName="재치+명중" type="Armor">
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12896" level="1" /> 
+		</skills>
+	</item>
+	<item id="26570" name="너구리 귀" additionalName="힘+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26571" name="너구리 귀" additionalName="민첩+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26572" name="너구리 귀" additionalName="체력+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26573" name="너구리 귀" additionalName="정신+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26574" name="너구리 귀" additionalName="지능+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26575" name="너구리 귀" additionalName="재치+크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12889" level="1" /> 
+		</skills>
+	</item>
+	<item id="26576" name="너구리 귀" additionalName="힘+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26577" name="너구리 귀" additionalName="민첩+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26578" name="너구리 귀" additionalName="체력+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26579" name="너구리 귀" additionalName="정신+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26580" name="너구리 귀" additionalName="지능+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26581" name="너구리 귀" additionalName="재치+크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12890" level="1" /> 
+		</skills>
+	</item>
+	<item id="26582" name="너구리 귀" additionalName="힘+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26583" name="너구리 귀" additionalName="민첩+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26584" name="너구리 귀" additionalName="체력+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26585" name="너구리 귀" additionalName="정신+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26586" name="너구리 귀" additionalName="지능+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26587" name="너구리 귀" additionalName="재치+물리 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12891" level="1" /> 
+		</skills>
+	</item>
+	<item id="26588" name="너구리 귀" additionalName="힘+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26589" name="너구리 귀" additionalName="민첩+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26590" name="너구리 귀" additionalName="체력+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26591" name="너구리 귀" additionalName="정신+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26592" name="너구리 귀" additionalName="지능+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26593" name="너구리 귀" additionalName="재치+마법 방어력" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12892" level="1" /> 
+		</skills>
+	</item>
+	<item id="26594" name="너구리 귀" additionalName="힘+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12883" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26595" name="너구리 귀" additionalName="민첩+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12884" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26596" name="너구리 귀" additionalName="체력+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12885" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26597" name="너구리 귀" additionalName="정신+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12886" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26598" name="너구리 귀" additionalName="지능+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12887" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+	<item id="26599" name="너구리 귀" additionalName="재치+회피" type="Armor">
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="enchant_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="HAIR_ACCESSORY" />
+		<set name="weight" val="10" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="12888" level="1" /> 
+			<skill id="12893" level="1" /> 
+		</skills>
+	</item>
+</list>

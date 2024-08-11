@@ -1,0 +1,28 @@
+<html noscrollbar><body>
+<center>레이스 티켓 정산</center>
+<img src="L2UI.SquareWhite" width=290 height=1>
+<img src="L2UI.SquareBlank" width=1 height=3>
+<table width=290 border=0>
+<tr>
+<td width=230>%raceId%회차 티켓<br1>
+%raceId%회차 1위: <font color=LEVEL>%firstLane%</font>번 레인<br1>
+%raceId%회차 2위: <font color=LEVEL>%secondLane%</font>번 레인<br>
+나의 티켓: <font color=LEVEL>%lane%</font>번 레인 %winner%<br1>
+배팅금액: %bet% 아데나<br1>
+배당률: <font color=LEVEL>%odd%</font><br>
+정산금:<br1>
+%bet% x %odd% = <font color=LEVEL>%total%</font> 아데나
+</td>
+</tr>
+</table>
+<img src="L2UI.SquareBlank" width=290 height=10>
+<img src="L2UI.SquareWhite" width=290 height=1>
+<img src="L2UI.SquareBlank" width=290 height=5>
+
+<table width=290 border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td width=90 height=20><button value="이전" action="bypass -h npc_%objectId%_ShowTickets" back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df" width=110 height=25></td>
+<td width=30></td>
+<td width=90 align=right><button value="정산받기" action="bypass -h npc_%objectId%_CalculateWin %ticketObjectId%" back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df" width=110 height=25></td>
+</tr></table>
+</body></html>

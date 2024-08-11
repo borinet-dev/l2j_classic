@@ -1,0 +1,125 @@
+2024.08.11 11:10:56,701	INFO	1	org.l2jmobius.gameserver.GameServer	=============================================
+2024.08.11 11:10:56,713	INFO	1	org.l2jmobius.gameserver.GameServer	Copyright: ..................... L2j-borinet
+2024.08.11 11:10:56,713	INFO	1	org.l2jmobius.gameserver.GameServer	Chronicle: .......... Classic 2.8 SevenSigns
+2024.08.11 11:10:56,713	INFO	1	org.l2jmobius.gameserver.GameServer	Build date: ..................... 2024-08-11
+2024.08.11 11:10:56,714	INFO	1	org.l2jmobius.gameserver.GameServer	=============================================
+2024.08.11 11:10:56,715	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------------=[ 컨피그 설정 로드 ]
+2024.08.11 11:10:56,719	INFO	1	org.l2jmobius.commons.util.IXmlReader	네트워크 구성: ipconfig.xml 파일을 로딩합니다.
+2024.08.11 11:10:56,776	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-------------------------------------------------=[ 라이센스 체크 ]
+2024.08.11 11:10:57,264	INFO	1	org.l2jmobius.gameserver.GameServer	라이센스 검사를 할 필요 없습니다. 마스터 서버입니다.
+2024.08.11 11:10:57,697	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	------------------------------------------------=[ Database ]
+2024.08.11 11:10:57,698	INFO	1	org.l2jmobius.commons.database.DatabaseFactory	데이터베이스에 정상적으로 연결되었습니다.
+2024.08.11 11:10:57,698	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------=[ Thread Pool ]
+2024.08.11 11:10:57,712	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:10:57,712	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------------=[ 데이트베이스 정리 ]
+2024.08.11 11:10:57,871	INFO	1	org.l2jmobius.gameserver.instancemanager.IdManager	데이터베이스 정리: 정리할 데이터 베이스가 없습니다!
+2024.08.11 11:10:57,880	INFO	1	org.l2jmobius.gameserver.instancemanager.IdManager	데이터베이스 정리: 만료된 타임스템프가 없습니다.
+2024.08.11 11:10:57,924	INFO	1	org.l2jmobius.gameserver.instancemanager.IdManager	데이터베이스 정리: 1646592개의 데이터를 사용합니다.
+2024.08.11 11:10:57,969	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------=[ World - 로드.. ]
+2024.08.11 11:10:58,498	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:10:58,499	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------=[ Data - 로드.. ]
+2024.08.11 11:11:00,514	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:11:00,514	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------------=[ 스킬 - 로드.. ]
+2024.08.11 11:11:02,966	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:11:02,966	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	----------------------------------------------=[ 아이템 - 로드.. ]
+2024.08.11 11:11:03,709	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:11:03,709	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	----------------------------------------------=[ 캐릭터 - 로드.. ]
+2024.08.11 11:11:03,715	INFO	1	org.l2jmobius.gameserver.data.xml.ExperienceData	캐릭터 최대 레벨: 95레벨
+2024.08.11 11:11:03,715	INFO	1	org.l2jmobius.gameserver.data.xml.ExperienceData	펫 최대 레벨: 95레벨
+2024.08.11 11:11:03,831	INFO	1	org.l2jmobius.gameserver.data.sql.CharInfoTable	CharInfoTable: Loaded 460 char names.
+2024.08.11 11:11:04,015	INFO	1	org.l2jmobius.gameserver.GameServer	프리미엄 시스템이 활성화 되었습니다.
+2024.08.11 11:11:04,016	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------=[ 혈맹 관련 - 로드.. ]
+2024.08.11 11:11:04,142	INFO	1	org.l2jmobius.gameserver.data.xml.ClanHallData	총 46개의 아지트를 로드하였습니다.
+2024.08.11 11:11:04,143	INFO	1	org.l2jmobius.gameserver.instancemanager.ClanHallAuctionManager	아지트 경매가 시작되었습니다.
+2024.08.11 11:11:04,156	SEVERE	1	org.l2jmobius.gameserver.instancemanager.CustomClanManager	신규자 혈맹 아카데미 매니저가 로드하였습니다.
+2024.08.11 11:11:04,156	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-------------------------------------------------=[ Geodata ]
+2024.08.11 11:11:04,908	INFO	1	org.l2jmobius.gameserver.geoengine.GeoEngine	총 232개의 GeoData를 로드하였습니다.
+2024.08.11 11:11:04,908	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	----------------------------------------------=[ NPC - 로드.. ]
+2024.08.11 11:11:06,025	INFO	58	org.l2jmobius.gameserver.model.itemauction.ItemAuctionInstance	아이템경매: 제 18회 경매가 시작되었습니다.
+2024.08.11 11:11:06,036	INFO	63	org.l2jmobius.gameserver.model.itemauction.ItemAuctionInstance	아이템경매: 제 18회 경매가 종료되었습니다.
+2024.08.11 11:11:06,038	INFO	63	org.l2jmobius.gameserver.model.itemauction.ItemAuctionInstance	아이템경매: 다음 19회 경매 시작일은 2024년 08월 16일 17시 입니다.
+2024.08.11 11:11:06,103	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------------=[ 그랜드보스 ]
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	릴리스(25283): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	아나킴(25286): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	여왕 개미(29001): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	코어(29006): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	오르펜(29014): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	바이움(29020): 레이드 가능
+2024.08.11 11:11:06,104	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	자켄(29022): 레이드 가능
+2024.08.11 11:11:06,105	INFO	1	org.l2jmobius.gameserver.instancemanager.GrandBossManager	안타라스(29068): 레이드 가능
+2024.08.11 11:11:06,105	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------=[ Instance - 로드.. ]
+2024.08.11 11:11:06,105	INFO	1	org.l2jmobius.gameserver.GameServer	완료!
+2024.08.11 11:11:06,105	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------------=[ 올림피아드 ]
+2024.08.11 11:11:06,109	INFO	1	org.l2jmobius.gameserver.model.olympiad.Olympiad	올림피아드: 로딩 중....
+2024.08.11 11:11:06,109	INFO	1	org.l2jmobius.gameserver.model.olympiad.Olympiad	올림피아드: 0명의 노블레스를 로드하였습니다.
+2024.08.11 11:11:06,112	INFO	1	org.l2jmobius.gameserver.model.olympiad.Olympiad	올림피아드: 0일 10시간 48분 후 경기가 시작됩니다.
+2024.08.11 11:11:06,112	INFO	1	org.l2jmobius.gameserver.model.olympiad.Olympiad	올림피아드: 경기 시작시간: 2024년 08월 11일 22시 00분
+2024.08.11 11:11:06,116	INFO	1	org.l2jmobius.gameserver.model.olympiad.Hero	올림피아드: 0명의 영웅을 로드하였습니다.
+2024.08.11 11:11:06,116	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	------------------------------------------------------=[ 캐쉬 ]
+2024.08.11 11:11:06,117	INFO	1	org.l2jmobius.gameserver.cache.HtmCache	Cache[HTML]: Running lazy cache.
+2024.08.11 11:11:06,622	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 진정 매니저 ]
+2024.08.11 11:11:06,623	INFO	1	org.l2jmobius.gameserver.instancemanager.PetitionManager	진정 매니저를 로드하였습니다.
+2024.08.11 11:11:06,623	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-------------------------------------------------=[ 자동사냥 신고 ]
+2024.08.11 11:11:06,624	INFO	1	org.l2jmobius.gameserver.data.BotReportTable	사동사냥신고 기능을 활성화하였습니다.
+2024.08.11 11:11:06,624	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 버프 매니저 ]
+2024.08.11 11:11:06,626	INFO	1	org.l2jmobius.gameserver.instancemanager.SellBuffsManager	버프판매: 153개의 버프를 로드하였습니다.
+2024.08.11 11:11:06,628	INFO	1	org.l2jmobius.commons.util.IXmlReader	자동사냥: 215개의 버프스킬을 로드하였습니다.
+2024.08.11 11:11:06,629	INFO	1	org.l2jmobius.gameserver.instancemanager.AutoSkillManager	자동사냥: 98개의 공격스킬을 로드하였습니다.
+2024.08.11 11:11:06,630	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------=[ 스크립트 - 로드.. ]
+2024.08.11 11:11:06,630	INFO	1	org.l2jmobius.gameserver.model.events.SpecialEvents	커스텀 이벤트: 스크립트 엔진을 로드하였습니다.
+2024.08.11 11:11:06,631	INFO	1	org.l2jmobius.gameserver.model.events.WeekendEvent	주말 이벤트: 스크립트 엔진을 로드하였습니다.
+2024.08.11 11:11:06,814	INFO	1	org.l2jmobius.gameserver.model.events.WeekendEvent	주말배율 이벤트: 주말배율 이벤트가 시작 되었습니다.
+2024.08.11 11:11:06,816	INFO	1	org.l2jmobius.gameserver.instancemanager.games.MiniGameScoreManager	미니게임 매니저를 로드하였습니다.
+2024.08.11 11:11:08,354	INFO	1	handlers.MasterHandler	스크립트 핸들러 - 로드 중...
+2024.08.11 11:11:08,412	INFO	1	handlers.MasterHandler	MasterHandler - 로드 완료.
+2024.08.11 11:11:09,597	INFO	1	ai.areas.FantasyIsle.HandysBlockCheckerEvent	핸디의 블록체커: 활성화
+2024.08.11 11:11:09,725	INFO	1	custom.BossEvent.BossEvent	커스텀 이벤트: 랜덤보스 이벤트를 로드하였습니다.
+2024.08.11 11:11:09,734	INFO	1	org.l2jmobius.gameserver.model.quest.Quest	왕수박 이벤트: 왕수박 이벤트가 시작 되었습니다.
+2024.08.11 11:11:09,862	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 처벌 시스템 ]
+2024.08.11 11:11:09,864	INFO	1	org.l2jmobius.gameserver.instancemanager.PunishmentManager	0개의 진행중인 처벌과 0개의 만료된 처벌을 로드하였습니다.
+2024.08.11 11:11:09,864	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------------=[ 공성 - 로드.. ]
+2024.08.11 11:11:09,869	INFO	1	org.l2jmobius.gameserver.model.siege.Siege	글루디오성: 1970년 01월 01일 09시 00분
+2024.08.11 11:11:09,870	INFO	1	org.l2jmobius.gameserver.model.siege.Siege	디온성: 1970년 01월 01일 09시 00분
+2024.08.11 11:11:09,870	INFO	1	org.l2jmobius.gameserver.model.siege.Siege	기란성: 2024년 08월 11일 20시 00분
+2024.08.11 11:11:09,871	INFO	1	org.l2jmobius.gameserver.model.siege.Siege	오렌성: 1970년 01월 01일 09시 00분
+2024.08.11 11:11:09,871	INFO	1	org.l2jmobius.gameserver.model.siege.Siege	아덴성: 2024년 08월 11일 20시 00분
+2024.08.11 11:11:09,877	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-------------------------------------------------=[ 오프라인 상점 ]
+2024.08.11 11:11:09,880	INFO	1	org.l2jmobius.gameserver.data.sql.OfflineTraderTable	총 0개의 오프라인 상점을 로드하였습니다.
+2024.08.11 11:11:09,880	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	------------------------------------------------=[ Task 매니저 ]
+2024.08.11 11:11:09,884	INFO	1	org.l2jmobius.gameserver.taskmanager.TaskManager	Task 매니저: 2개의 Task를 로드하였습니다.
+2024.08.11 11:11:09,884	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------=[ 데일리/위클리 리셋 - 로드.. ]
+2024.08.11 11:11:09,987	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	혈맹 보너스가 초기화 되었습니다.
+2024.08.11 11:11:10,051	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	스킬 재사용이 초기화 되었습니다.
+2024.08.11 11:11:10,057	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	월드 채팅 포인트가 초기화 되었습니다.
+2024.08.11 11:11:10,061	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	출석 및 접속보상이 초기화 되었습니다.
+2024.08.11 11:11:10,062	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	왕립 훈련소가 초기화 되었습니다.
+2024.08.11 11:11:10,190	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	데이터베이스 정리: 정리할 데이터 베이스가 없습니다!
+2024.08.11 11:11:10,198	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	데이터베이스 정리: 만료된 타임스템프가 없습니다.
+2024.08.11 11:11:10,209	INFO	1	org.l2jmobius.gameserver.instancemanager.MailManager	총 58개의 우편을 로드하였습니다.
+2024.08.11 11:11:10,290	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	10명에게 생일 선물지급이 완료 되었습니다!
+2024.08.11 11:11:10,310	INFO	1	org.l2jmobius.gameserver.instancemanager.DailyTaskManager	추천 시스템이 초기화 되었습니다.
+2024.08.11 11:11:10,310	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 우편 시스템 ]
+2024.08.11 11:11:10,311	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 쿠폰 시스템 ]
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.instancemanager.CouponManager	쿠폰 시스템: 2개의 쿠폰 정보를 로드하였습니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	-------------------------------------------------=[ 정기선 시스템 ]
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	정기선 시스템: 선착장 관리인을 로드하였습니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	정기선 시스템: 2개의 정기선을 로드하였습니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	----------------------------------------------------=[ 라이센스 ]
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	라이센스 만료까지 남은 시간은 무기한 입니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	--------------------------------------------------=[ 스마트 가드 ]
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	스마트 가드가 실행됩니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	1대의 PC에서 동시 접속제한은 1대 입니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	가상환경에서의 접속이 허용되지 않습니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------------=[ 오토방지 문자 시스템 ]
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.GameServer	오토방지 문자 시스템을 사용하지 않습니다.
+2024.08.11 11:11:10,312	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	------------------------------------------------=[ 서버 연결 상태 ]
+2024.08.11 11:11:10,313	INFO	1	org.l2jmobius.gameserver.instancemanager.ServerRestartManager	다음 서버재시작 시간은 2024년 08월 12일 07시 00분 입니다.
+2024.08.11 11:11:10,625	INFO	1	org.l2jmobius.gameserver.GameServer	사용메모리: 16 GB 중 1.7 GB 사용
+2024.08.11 11:11:10,625	INFO	1	org.l2jmobius.gameserver.GameServer	서버 최대 접속허용 인원: 2000 명.
+2024.08.11 11:11:10,626	INFO	1	org.l2jmobius.gameserver.GameServer	서버로딩 시간: 14 초
+2024.08.11 11:11:10,738	INFO	1	org.l2jmobius.commons.network.NetworkManager	게임서버: [0.0.0.0:7777] 에 연결되었습니다.
+2024.08.11 11:11:10,740	INFO	201	org.l2jmobius.gameserver.LoginServerThread	로그인서버: [110.45.203.91:9014] 에 연결되었습니다.
+2024.08.11 11:11:10,854	INFO	201	org.l2jmobius.gameserver.LoginServerThread	서버가 2번 - Sieghardt 에 등록되었습니다. 
+2024.08.11 11:11:10,854	INFO	201	org.l2jmobius.gameserver.util.BorinetUtil	-----------------------------------------------=[ NPC 스폰... ]
+2024.08.11 11:11:14,132	INFO	1	org.l2jmobius.gameserver.data.xml.SpawnData	모든 스폰이 완료되었습니다!
+2024.08.11 11:11:14,132	INFO	1	org.l2jmobius.gameserver.util.BorinetUtil	---------------------------------------=[ 게임서버 로딩이 완료되었습니다. ]

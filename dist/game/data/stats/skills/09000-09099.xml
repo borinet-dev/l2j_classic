@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="9029" toLevel="1" name="Watermelon Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15366</itemConsumeId> <!-- Watermelon seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonMelon">
+				<npcId>13271</npcId> <!-- Young Watermelon -->
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9030" toLevel="1" name="Honey Watermelon Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15367</itemConsumeId> <!-- Honey Watermelon Seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonMelon">
+				<npcId>13275</npcId> <!-- Young Honey Watermelon -->
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9031" toLevel="1" name="Copied Watermelon Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15368</itemConsumeId> <!-- Copied Watermelon Seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonMelon">
+				<npcId>13271</npcId> <!-- Young Watermelon -->
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9032" toLevel="1" name="Copied Honey Watermelon Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15369</itemConsumeId> <!-- Copied Honey Watermelon Seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonMelon">
+				<npcId>13275</npcId> <!-- Young Honey Watermelon -->
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9049" toLevel="1" name="Golden Spice">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15474</itemConsumeId> <!-- Golden Spice -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18874</item>
+					<item>18875</item>
+					<item>18876</item>
+					<item>18877</item>
+					<item>18878</item>
+					<item>18879</item>
+					<item>18880</item>
+					<item>18881</item>
+					<item>18882</item>
+					<item>18883</item>
+					<item>18884</item>
+					<item>18885</item>
+					<item>18886</item>
+					<item>18887</item>
+					<item>18888</item>
+					<item>18889</item>
+					<item>18890</item>
+					<item>18891</item>
+					<item>18892</item>
+					<item>18893</item>
+					<item>18894</item>
+					<item>18895</item>
+					<item>18896</item>
+					<item>18897</item>
+					<item>18898</item>
+					<item>18899</item>
+					<item>18900</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9050" toLevel="1" name="Crystal Spice">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15475</itemConsumeId> <!-- Crystal Spice -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18874</item>
+					<item>18875</item>
+					<item>18876</item>
+					<item>18877</item>
+					<item>18878</item>
+					<item>18879</item>
+					<item>18880</item>
+					<item>18881</item>
+					<item>18882</item>
+					<item>18883</item>
+					<item>18884</item>
+					<item>18885</item>
+					<item>18886</item>
+					<item>18887</item>
+					<item>18888</item>
+					<item>18889</item>
+					<item>18890</item>
+					<item>18891</item>
+					<item>18892</item>
+					<item>18893</item>
+					<item>18894</item>
+					<item>18895</item>
+					<item>18896</item>
+					<item>18897</item>
+					<item>18898</item>
+					<item>18899</item>
+					<item>18900</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9051" toLevel="1" name="Blessed Golden Spice">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15476</itemConsumeId> <!-- Blessed Golden Spice -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18880</item>
+					<item>18887</item>
+					<item>18894</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9052" toLevel="1" name="Blessed Crystal Spice">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15477</itemConsumeId> <!-- Blessed Crystal Spice -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18880</item>
+					<item>18887</item>
+					<item>18894</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9053" toLevel="1" name="Golden Spice (S-grade)">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15478</itemConsumeId> <!-- Golden Spice (S-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18880</item>
+					<item>18887</item>
+					<item>18894</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9054" toLevel="1" name="Crystal Spice (S-grade)">
+		<castRange>400</castRange>
+		<effectPoint>-150</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15479</itemConsumeId> <!-- Crystal Spice (S-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18873</item>
+					<item>18880</item>
+					<item>18887</item>
+					<item>18894</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9055" toLevel="1" name="Golden Spice Capsule">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15482</itemConsumeId> <!-- Golden Spice Crate -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="90">
+						<item id="15474" count="50" /> <!-- Golden Spice -->
+					</item>
+					<item chance="5">
+						<item id="15474" count="40" /> <!-- Golden Spice -->
+						<item id="15476" count="5" /> <!-- Blessed Golden Spice -->
+					</item>
+					<item chance="5">
+						<item id="15474" count="40" /> <!-- Golden Spice -->
+						<item id="15478" count="5" /> <!-- Golden Spice (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9056" toLevel="1" name="Crystal Spice Capsule">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>15483</itemConsumeId> <!-- Crystal Spice Compressed Pack -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="90">
+						<item id="15475" count="50" /> <!-- Crystal Spice -->
+					</item>
+					<item chance="5">
+						<item id="15475" count="40" /> <!-- Crystal Spice -->
+						<item id="15477" count="5" /> <!-- Blessed Crystal Spice -->
+					</item>
+					<item chance="5">
+						<item id="15475" count="40" /> <!-- Crystal Spice -->
+						<item id="15479" count="5" /> <!-- Crystal Spice (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9059" toLevel="1" name="Torch Light">
+		<!-- Lights the Torch -->
+		<castRange>40</castRange>
+		<effectPoint>-10000</effectPoint>
+		<effectRange>400</effectRange>
+		<hitTime>2000</hitTime>
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+</list>

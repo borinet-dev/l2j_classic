@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="91300" name="봄의 기운 Lv3" type="EtcItem">
+		<set name="icon" val="icon.etc_leaf_green_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91301" name="사이하의 봄바람" type="EtcItem">
+		<set name="icon" val="icon.ev_magic_flame_game_wind1" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91302" name="봄의 축복 상자" type="EtcItem">
+		<set name="icon" val="icon.npoint_antaras_30day_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91303" name="Brooch" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55712" level="1" /> 
+			<skill id="55713" level="1" /> 
+		</skills>
+	</item>
+	<item id="91304" name="Brooch" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i06" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="59153" level="1" /> 
+			<skill id="59154" level="1" /> 
+		</skills>
+	</item>
+	<item id="91305" name="Greater Topaz" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91306" name="Greater Topaz" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91307" name="Greater Topaz" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91308" name="Greater Topaz" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91309" name="Greater Topaz" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91310" name="Greater Garnet" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55485" level="6" /> 
+		</skills>
+	</item>
+	<item id="91311" name="Greater Garnet" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55485" level="7" /> 
+		</skills>
+	</item>
+	<item id="91312" name="Greater Garnet" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55485" level="8" /> 
+		</skills>
+	</item>
+	<item id="91313" name="Greater Garnet" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55485" level="9" /> 
+		</skills>
+	</item>
+	<item id="91314" name="Greater Garnet" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55485" level="10" /> 
+		</skills>
+	</item>
+	<item id="91315" name="Greater Jade" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_speedup_lv1_high" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55474" level="6" /> 
+		</skills>
+	</item>
+	<item id="91316" name="Greater Jade" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_speedup_lv1_high" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55474" level="7" /> 
+		</skills>
+	</item>
+	<item id="91317" name="Greater Jade" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_speedup_lv1_high" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55474" level="8" /> 
+		</skills>
+	</item>
+	<item id="91318" name="Greater Jade" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_speedup_lv1_high" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55474" level="9" /> 
+		</skills>
+	</item>
+	<item id="91319" name="Greater Jade" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_speedup_lv1_high" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55474" level="10" /> 
+		</skills>
+	</item>
+	<item id="91320" name="Greater Ruby" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55477" level="6" /> 
+		</skills>
+	</item>
+	<item id="91321" name="Greater Ruby" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55477" level="7" /> 
+		</skills>
+	</item>
+	<item id="91322" name="Greater Ruby" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55477" level="8" /> 
+		</skills>
+	</item>
+	<item id="91323" name="Greater Ruby" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55477" level="9" /> 
+		</skills>
+	</item>
+	<item id="91324" name="Greater Ruby" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55477" level="10" /> 
+		</skills>
+	</item>
+	<item id="91325" name="Greater Sapphire" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55481" level="6" /> 
+		</skills>
+	</item>
+	<item id="91326" name="Greater Sapphire" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55481" level="7" /> 
+		</skills>
+	</item>
+	<item id="91327" name="Greater Sapphire" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55481" level="8" /> 
+		</skills>
+	</item>
+	<item id="91328" name="Greater Sapphire" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55481" level="9" /> 
+		</skills>
+	</item>
+	<item id="91329" name="Greater Sapphire" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55481" level="10" /> 
+		</skills>
+	</item>
+	<item id="91330" name="Greater Diamond" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55475" level="6" /> 
+		</skills>
+	</item>
+	<item id="91331" name="Greater Diamond" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55475" level="7" /> 
+		</skills>
+	</item>
+	<item id="91332" name="Greater Diamond" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55475" level="8" /> 
+		</skills>
+	</item>
+	<item id="91333" name="Greater Diamond" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55475" level="9" /> 
+		</skills>
+	</item>
+	<item id="91334" name="Greater Diamond" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55475" level="10" /> 
+		</skills>
+	</item>
+	<item id="91335" name="Greater Pearl" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55476" level="6" /> 
+		</skills>
+	</item>
+	<item id="91336" name="Greater Pearl" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55476" level="7" /> 
+		</skills>
+	</item>
+	<item id="91337" name="Greater Pearl" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55476" level="8" /> 
+		</skills>
+	</item>
+	<item id="91338" name="Greater Pearl" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55476" level="9" /> 
+		</skills>
+	</item>
+	<item id="91339" name="Greater Pearl" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55476" level="10" /> 
+		</skills>
+	</item>
+	<item id="91340" name="Greater Vital Stone" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55472" level="6" /> 
+		</skills>
+	</item>
+	<item id="91341" name="Greater Vital Stone" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55472" level="7" /> 
+		</skills>
+	</item>
+	<item id="91342" name="Greater Vital Stone" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55472" level="8" /> 
+		</skills>
+	</item>
+	<item id="91343" name="Greater Vital Stone" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55472" level="9" /> 
+		</skills>
+	</item>
+	<item id="91344" name="Greater Vital Stone" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="55472" level="10" /> 
+		</skills>
+	</item>
+	<item id="91345" name="Greater Aquamarine" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91346" name="Greater Aquamarine" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91347" name="Greater Aquamarine" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91348" name="Greater Aquamarine" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91349" name="Greater Aquamarine" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91350" name="Greater Cat's Eye" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91351" name="Greater Cat's Eye" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91352" name="Greater Cat's Eye" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91353" name="Greater Cat's Eye" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91354" name="Greater Cat's Eye" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91355" name="찬란한 보석함" type="EtcItem">
+		<set name="icon" val="icon.bm_2018_jewelbox_random" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91356" name="보석의 기운" type="EtcItem">
+		<set name="icon" val="icon.bm_blessed_jewel" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91357" name="Emerald" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91358" name="Emerald" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91359" name="Emerald" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91360" name="Emerald" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91361" name="Emerald" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91362" name="Greater Emerald" additionalName="Lv. 1" type="Armor">
+		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91363" name="Greater Emerald" additionalName="Lv. 2" type="Armor">
+		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91364" name="Greater Emerald" additionalName="Lv. 3" type="Armor">
+		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91365" name="Greater Emerald" additionalName="Lv. 4" type="Armor">
+		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91366" name="Greater Emerald" additionalName="Lv. 5" type="Armor">
+		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91367" name="에메랄드 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_emerald_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91368" name="에메랄드 Lv3 보석함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_emerald_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91369" name="에메랄드 Lv4 보석함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_emerald_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91370" name="에메랄드 Lv5 보석함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_emerald_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91371" name="찬란한 브로치 조각" type="EtcItem">
+		<set name="icon" val="icon.bm_2018_brooch_piece" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91372" name="은혜의 미끼" type="EtcItem">
+		<set name="icon" val="icon.fishing_cube_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="91373" name="은혜의 낚시 세트" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_love_pack" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="38154" min="85000" max="85000" chance="100" /> 
+			<item id="49588" min="1" max="1" chance="100" /> 
+			<item id="91372" min="85000" max="85000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="91374" name="은혜의 동전" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_coin_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91375" name="강태공의 룬 - 숙련" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="icon.fishing_zone_ticket_1" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="51239" level="1" />
+		</skills>
+	</item>
+	<item id="91376" name="강태공의 룬 - 거장" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="icon.fishing_zone_ticket_1" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="51239" level="2" />
+		</skills>
+	</item>
+	<item id="91377" name="강태공의 룬 - 초월" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="icon.fishing_zone_ticket_1" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="51239" level="3" />
+		</skills>
+	</item>
+	<item id="91378" name="Immortal Ant Queen's Ring" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_queen_ant_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">62</stat>
+			<stat type="maxMp">30</stat>
+		</stats>
+	</item>
+	<item id="91379" name="Immortal Orfen's Earring" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_orfen_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">83</stat>
+			<stat type="maxMp">40</stat>
+		</stats>
+	</item>
+	<item id="91380" name="Ring of Immortal Core" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_core_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">62</stat>
+			<stat type="maxMp">30</stat>
+		</stats>
+	</item>
+	<item id="91381" name="Immortal Baium's Ring" type="Armor">
+		<set name="icon" val="icon.accessory_ring_of_baium_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">70</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91382" name="Immortal Zaken's Earring" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_zaken_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">96</stat>
+			<stat type="maxMp">45</stat>
+		</stats>
+	</item>
+	<item id="91383" name="Immortal Antharas' Earring" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_antaras_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<stats>
+			<stat type="mDef">96</stat>
+			<stat type="maxMp">50</stat>
+		</stats>
+	</item>
+	<item id="91384" name="여왕개미 정수" type="EtcItem">
+		<set name="icon" val="icon.queen_ant_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91385" name="오르펜 정수" type="EtcItem">
+		<set name="icon" val="icon.earring_of_orfen_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91386" name="코어 정수" type="EtcItem">
+		<set name="icon" val="icon.ring_of_core_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91387" name="바이움 정수" type="EtcItem">
+		<set name="icon" val="icon.ring_of_baium_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91388" name="자켄 정수" type="EtcItem">
+		<set name="icon" val="icon.earring_of_zaken_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91389" name="안타라스 정수" type="EtcItem">
+		<set name="icon" val="icon.earring_of_antaras_essence_i01" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91390" name="토파즈 Lv. 5" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_topaz_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+	</item>
+	<item id="91391" name="피쉬 스튜 - 조합원의 보은 Lv2" type="EtcItem">
+		<set name="icon" val="icon.ev_invasion_buff_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39076" level="2" /> 
+		</skills>
+	</item>
+	<item id="91392" name="밤도깨비 약주" type="EtcItem">
+		<set name="icon" val="icon.bm_goblin_buff_herong" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91393" name="잊혀진 비술서 - 1장" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_white_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91394" name="잊혀진 비술서 - 2장" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91395" name="잊혀진 비술서 - 3장" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91396" name="잊혀진 비술서 - 4장" type="EtcItem">
+		<set name="icon" val="icon.etc_paper_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91397" name="비술서 조각 - 1장" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91398" name="비술서 조각 - 2장" type="EtcItem">
+		<set name="icon" val="icon.etc_piece_of_paper_gray_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91399" name="비술서 파편 - 2장" type="EtcItem">
+		<set name="icon" val="icon.letter_piece" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

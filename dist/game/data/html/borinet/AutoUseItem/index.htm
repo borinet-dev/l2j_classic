@@ -1,0 +1,230 @@
+<html noscrollbar><title>자동 포션/아이템 설정</title>
+<body><br>
+<table width=784>
+	<tr>
+		<td valign=top><img src="%mainbanner%" width=784 height=95></td>
+	</tr>
+</table>
+<table width=780>
+	<tr>
+		<center><td align=center valign=top>
+			<table border=0 cellpadding=0 cellspacing=0 width=778 height=450 background="L2UI_CH3.refinewnd_back_Pattern">
+				<tr>
+					<td height=28></td>
+				</tr>
+				<tr>
+					<td width=15></td>
+					<td width=160 align=right>
+						<table border=0 width=160 height=404 cellspacing=0 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+							<tr>
+								<td align=left><br>
+									<table width=160>
+										<tr>
+											<td width=5></td>
+											<td align=center><br>
+												<font name=hs16 color=LEVEL>자동 포션</font><br1><br><br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width=160 height=260 align=left valign=top>
+									<table width=160 height=304 border=0>
+										<tr>
+											<td width=5></td>
+											<td>
+												<table>
+													<tr>
+														<td align=left>HP 포션 선택:</td>
+													</tr>
+													<tr>
+														<td align=left width=140>%items%<br></td>
+													</tr>
+													<tr>
+														<td align=left><br>HP 포션 섭취 %:</td>
+													</tr>
+													<tr>
+														<td align=left width=140>%hp%<br></td>
+													</tr>
+													<tr>
+														<td align=left><br><br>MP 포션:</td>
+													</tr>
+													<tr>
+														<td align=left width=140><font color=LEVEL>강력 마나 치유약</font></td>
+													</tr>
+													<tr>
+														<td align=left><br>MP 포션 섭취 %:</td>
+													</tr>
+													<tr>
+														<td align=left width=140>%mp%<br></td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table border=0 cellpadding=0 cellspacing=0>
+										<tr>
+											<td align=left width=8></td>
+											<td align=center>
+												%startAutoPotion%<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width=290 align=right>
+						<table border=0 width=280 height=404 cellspacing=0 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+							<tr>
+								<td width=280 height=260 align=left valign=top>
+									<table width=280 height=200 border=0>
+										<tr>
+											<td align=left height=10></td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 1">드래곤의 특별한 열매</Button></td>
+											<td align=left width=50>%isDragon%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 2">해적단의 특별한 열매</Button></td>
+											<td align=left width=50>%isFirate%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 3">딸기 바나나 쉐이크</Button></td>
+											<td align=left width=50>%isStrawberry%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 4">망고 바나나 쉐이크</Button></td>
+											<td align=left width=50>%isMango%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 5">체리 바나나 쉐이크</Button></td>
+											<td align=left width=50>%isCherry%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 6">피쉬 스튜 - 마이트 Lv3</Button></td>
+											<td align=left width=50>%isMight%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 7">피쉬 스튜 - 실드 Lv3</Button></td>
+											<td align=left width=50>%isShield%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 12">피쉬 스튜 - 버서커 스피릿 Lv2</Button></td>
+											<td align=left width=50>%isBerserker%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 9">피쉬 스튜 - 뱀피릭 레이지 Lv3</Button></td>
+											<td align=left width=50>%isVamp%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 10">피쉬 스튜 - 엠파워 Lv3</Button></td>
+											<td align=left width=50>%isEmpower%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 11">피쉬 스튜 - 와일드 매직 Lv1</Button></td>
+											<td align=left width=50>%isWildMagic%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 8">피쉬 스튜 - 매직 배리어 Lv2</Button></td>
+											<td align=left width=50>%isBarrier%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 28">EXP/SP 부스트 주문서</Button></td>
+											<td align=left width=50>%isBoostN%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 29">성 EXP/SP 부스트 주문서</Button></td>
+											<td align=left width=50>%isBoostC%</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width=290>
+						<table border=0 width=280 height=404 cellspacing=0 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+							<tr>
+								<td width=280 height=260 align=left valign=top>
+									<table width=280 height=200 border=0>
+										<tr>
+											<td align=left height=10></td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 13">고등어 구이 - STR</Button></td>
+											<td align=left width=50>%isSTR%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 16">고등어 구이 - DEX</Button></td>
+											<td align=left width=50>%isDEX%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 15">고등어 구이 - CON</Button></td>
+											<td align=left width=50>%isCON%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 14">고등어 구이 - INT</Button></td>
+											<td align=left width=50>%isINT%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 18">고등어 구이 - WIT</Button></td>
+											<td align=left width=50>%isWIT%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 17">고등어 구이 - MEN</Button></td>
+											<td align=left width=50>%isMEN%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 19">조합원의 보은 - LV1</Button></td>
+											<td align=left width=50>%isGratitude1%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 20">조합원의 보은 - LV2</Button></td>
+											<td align=left width=50>%isGratitude2%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 21">앤젤 캣의 축복</Button></td>
+											<td align=left width=50>%isBlessAngel%</td>
+										</tr>
+										<tr>
+											<td align=left width=220 height=30><Button width=220 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .A자동아이템등록 22">앤젤 캣의 기운</Button></td>
+											<td align=left width=50>%isPowerAngel%</td>
+										</tr>
+										<tr>
+											<td align=left height=30></td>
+										</tr>
+										<tr>
+											<td align=right>%nextPage%</td>
+											<td align=left height=30></td>
+										</tr>
+									</table>
+									<table width=280>
+										<tr>
+											<td align=center valign=center>
+												<img src="L2UI.squaregray" width="270" height="1"/>
+											</td>
+										</tr>
+									</table><br>
+									<table width=250 cellpadding=0 cellspacing=0 border=0>
+										<tr>
+											<td align=left height=12></td>
+										</tr>
+										<tr>
+											<td align=left width=12></td>
+											<td>
+												%startAuto%
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body></html>

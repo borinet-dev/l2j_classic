@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22723" toLevel="1" name="Scroll: Enchant Weapon Pack">
+		<itemConsumeId>23396</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>100</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="959" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="729" count="1" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="947" count="1" /> <!-- Scroll: Enchant Weapon (B-grade) -->
+					</item>
+					<item chance="25">
+						<item id="951" count="1" /> <!-- Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="30">
+						<item id="955" count="1" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22724" toLevel="1" name="Scroll: Enchant Armor Pack">
+		<itemConsumeId>23397</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>100</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="960" count="1" /> <!-- Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="730" count="1" /> <!-- Scroll: Enchant Armor (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="948" count="1" /> <!-- Scroll: Enchant Armor (B-grade) -->
+					</item>
+					<item chance="25">
+						<item id="952" count="1" /> <!-- Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="30">
+						<item id="956" count="1" /> <!-- Scroll: Enchant Armor (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22725" toLevel="1" name="Blessed Scroll: Enchant Weapon Pack">
+		<itemConsumeId>23398</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>100</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="6577" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="6569" count="1" /> <!-- Blessed Scroll: Enchant Weapon (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="6571" count="1" /> <!-- Blessed Scroll: Enchant Weapon (B-grade) -->
+					</item>
+					<item chance="25">
+						<item id="6573" count="1" /> <!-- Blessed Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="30">
+						<item id="6575" count="1" /> <!-- Blessed Scroll: Enchant Weapon (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22726" toLevel="1" name="Blessed Scroll: Enchant Armor Pack">
+		<itemConsumeId>23399</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>100</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="6578" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="6570" count="1" /> <!-- Blessed Scroll: Enchant Armor (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="6572" count="1" /> <!-- Blessed Scroll: Enchant Armor (B-grade) -->
+					</item>
+					<item chance="25">
+						<item id="6574" count="1" /> <!-- Blessed Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="30">
+						<item id="6576" count="1" /> <!-- Blessed Scroll: Enchant Armor (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+</list>

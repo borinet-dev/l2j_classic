@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="14617" toLevel="1" name="Knock Down/ Knock Back Resistance">
+		<!-- Knock Down/ Knock Back Immunity -->
+		<icon>icon.skill10262</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<KNOCKDOWN>100</KNOCKDOWN>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14618" toLevel="1" name="Knock Down/ Knock Back Resistance">
+		<!-- Knock Down/ Knock Back Immunity -->
+		<icon>icon.skill10262</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<KNOCKBACK>100</KNOCKBACK>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14619" toLevel="1" name="Disarm Resistance">
+		<!-- Disarm Immunity -->
+		<icon>icon.skill0485</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<DISARM>100</DISARM>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14620" toLevel="4" name="Aerial Yoke Attack Resistance">
+		<!-- Resistant to Aerial Yoke attack. -->
+		<icon>icon.skill11050</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<AIRBIND>100</AIRBIND>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14621" toLevel="1" name="Pull Resistance">
+		<!-- Pull Immunity -->
+		<icon>icon.skill10015</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<PULL>100</PULL>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14622" toLevel="1" name="Banishment Resistance">
+		<!-- Banishment Immunity -->
+		<icon>icon.skill11273</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<DEPORT>100</DEPORT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="14623" toLevel="1" name="Mutation Resistance">
+		<!-- Mutation Immunity -->
+		<icon>icon.skill11537</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effects>
+			<effect name="DefenceTrait">
+				<CHANGEBODY>100</CHANGEBODY>
+			</effect>
+		</effects>
+	</skill>
+</list>

@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="22400" level="83" type="Monster" name="Parme's Healer">
+		<parameters>
+			<skill name="MagicHeal" id="4065" level="9" />
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>FEMALE</sex>
+		<equipment rhand="9639" lhand="9639" /> <!-- Tears r2 / Tears r2 -->
+		<acquire exp="160056" sp="3763" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="7835.33123028391" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1648.15891472868" magical="1662.745372583494" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="748.255813953488" magical="954.625700220676" />
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4065" level="9" /> <!-- Heal -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="MAGE" clanHelpRange="1000" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="27.5" />
+		</collision>
+		<dropLists>
+			<drop>
+				<!-- Also drops herbs. -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+			</drop>
+		</dropLists>
+	</npc>
+	<npc id="22402" level="83" type="Monster" name="Shadow Column">
+		<parameters>
+			<skill name="SelfRangeDDmagic" id="4614" level="9" />
+			<skill name="selfbuff" id="5417" level="1" />
+			<skill name="W_LongRangeDDMagic" id="4178" level="12" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="153814" sp="6453" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="11835.33123028391" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1948.15891472868" magical="862.745372583494" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1148.255813953488" magical="654.625700220676" />
+			<speed>
+				<walk ground="1" />
+				<run ground="100" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4178" level="12" /> <!-- Flame Strike -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magical Creatures -->
+			<skill id="4614" level="9" /> <!-- Death Bomb -->
+			<skill id="5417" level="1" /> <!-- Invincibility -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="CORPSE" clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="68" />
+			<height normal="80" />
+		</collision>
+		<dropLists>
+			<drop>
+				<!-- Also drops herbs. -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+			</drop>
+		</dropLists>
+	</npc>
+	<npc id="22485" level="29" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="100" />
+			<param name="MoveAroundSocial2" value="120" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="is_private" value="0" />
+			<param name="silhouette" value="22486" />
+			<param name="ai_type" value="kamaloka_29_a_false" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="2" />
+			<skill name="Skill02_ID" id="4047" level="2" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="127" /> <!-- Crimson Sword -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2981.07255520505" hpRegen="14.7623139950496" mp="315.490673154907" mpRegen="1.5" />
+			<attack physical="273.47036903474" magical="140.243521687815" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="184.745762711864" magical="202.07018846138" />
+			<speed>
+				<walk ground="70" />
+				<run ground="110" />
+			</speed>
+			<hitTime>480</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="2" /> <!-- Power Strike -->
+			<skill id="4047" level="2" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" grown="24" />
+			<height normal="37" grown="44.5" />
+		</collision>
+	</npc>
+	<npc id="22486" level="29" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="100" />
+			<param name="MoveAroundSocial2" value="120" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="2" />
+			<skill name="Skill02_ID" id="4047" level="2" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="127" /> <!-- Crimson Sword -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2981.07255520505" hpRegen="14.7623139950496" mp="315.490673154907" mpRegen="1.5" />
+			<attack physical="273.47036903474" magical="140.243521687815" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="184.745762711864" magical="202.07018846138" />
+			<speed>
+				<walk ground="70" />
+				<run ground="110" />
+			</speed>
+			<hitTime>480</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="2" /> <!-- Power Strike -->
+			<skill id="4047" level="2" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" grown="24" />
+			<height normal="37" grown="44.5" />
+		</collision>
+	</npc>
+	<npc id="22487" level="29" type="Monster" name="Lost Beholder">
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="100" />
+			<param name="MoveAroundSocial2" value="120" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_Type" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill03_Type" value="2" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="2" />
+			<skill name="Skill02_ID" id="4613" level="2" />
+			<skill name="Skill03_ID" id="4098" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="72" /> <!-- StormBringer -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="5963.40694006309" hpRegen="14.7623139950496" mp="315.490673154907" mpRegen="1.5" />
+			<attack physical="225.282485875706" magical="112.775135371029" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="184.229918938836" magical="202.576630036471" />
+			<speed>
+				<walk ground="70" />
+				<run ground="160" />
+			</speed>
+			<hitTime>650</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="2" /> <!-- Power Strike -->
+			<skill id="4098" level="3" /> <!-- Silence -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4613" level="2" /> <!-- Clan Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="38" />
+		</collision>
+	</npc>
+	<npc id="22488" level="39" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="60" />
+			<param name="MoveAroundSocial1" value="60" />
+			<param name="MoveAroundSocial2" value="60" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="is_private" value="0" />
+			<param name="silhouette" value="22489" />
+			<param name="ai_type" value="kamaloka_39_a_false" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="3" />
+			<skill name="Skill02_ID" id="4047" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="68" /> <!-- Falchion -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4390.53627760252" hpRegen="20.0374788857507" mp="463.098134630981" mpRegen="1.8" />
+			<attack physical="789.561170212766" magical="387.953938837697" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="195.3125" magical="315.317732932589" />
+			<speed>
+				<walk ground="37" />
+				<run ground="140" />
+			</speed>
+			<hitTime>280</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="3" /> <!-- Power Strike -->
+			<skill id="4047" level="3" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="32" />
+		</collision>
+	</npc>
+	<npc id="22489" level="39" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="60" />
+			<param name="MoveAroundSocial1" value="60" />
+			<param name="MoveAroundSocial2" value="60" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="3" />
+			<skill name="Skill02_ID" id="4047" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="68" /> <!-- Falchion -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4390.53627760252" hpRegen="20.0374788857507" mp="463.098134630981" mpRegen="1.8" />
+			<attack physical="789.561170212766" magical="387.953938837697" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="195.3125" magical="315.317732932589" />
+			<speed>
+				<walk ground="37" />
+				<run ground="140" />
+			</speed>
+			<hitTime>280</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="3" /> <!-- Power Strike -->
+			<skill id="4047" level="3" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="32" />
+		</collision>
+	</npc>
+	<npc id="22490" level="39" type="Monster" name="Lost Beholder">
+		<parameters>
+			<param name="MoveAroundSocial" value="120" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="120" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_Type" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill03_Type" value="2" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="3" />
+			<skill name="Skill02_ID" id="4613" level="3" />
+			<skill name="Skill03_ID" id="4098" level="4" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="16" /> <!-- Great Spear -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="8764.03785488959" hpRegen="20.0011107318101" mp="463.098134630981" mpRegen="1.8" />
+			<attack physical="653.645833333333" magical="320.0619995411" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="195.878623188406" magical="315.82776534868" />
+			<speed>
+				<walk ground="40" />
+				<run ground="140" />
+			</speed>
+			<hitTime>560</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="3" /> <!-- Power Strike -->
+			<skill id="4098" level="4" /> <!-- Silence -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4613" level="3" /> <!-- Clan Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13" grown="22" />
+			<height normal="35" grown="42.2" />
+		</collision>
+	</npc>
+	<npc id="22491" level="49" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="116" />
+			<param name="MoveAroundSocial1" value="116" />
+			<param name="MoveAroundSocial2" value="116" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="is_private" value="0" />
+			<param name="silhouette" value="22492" />
+			<param name="ai_type" value="kamaloka_49_a_false" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="4" />
+			<skill name="Skill02_ID" id="4047" level="4" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="9963.40694006309" hpRegen="42.1792057329358" mp="720.194647201946" mpRegen="2.1" />
+			<attack physical="1296.38195086854" magical="626.401440459648" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="376.086956521739" magical="298.961912252379" />
+			<speed>
+				<walk ground="23" />
+				<run ground="23" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="4" /> <!-- Power Strike -->
+			<skill id="4047" level="4" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="22492" level="49" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="116" />
+			<param name="MoveAroundSocial1" value="116" />
+			<param name="MoveAroundSocial2" value="116" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="4" />
+			<skill name="Skill02_ID" id="4047" level="4" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="9963.40694006309" hpRegen="42.1792057329358" mp="720.194647201946" mpRegen="2.1" />
+			<attack physical="1296.38195086854" magical="626.401440459648" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="376.086956521739" magical="298.961912252379" />
+			<speed>
+				<walk ground="23" />
+				<run ground="23" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="4" /> <!-- Power Strike -->
+			<skill id="4047" level="4" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="22493" level="49" type="Monster" name="Lost Beholder">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_Type" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill03_Type" value="2" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="4" />
+			<skill name="Skill02_ID" id="4613" level="4" />
+			<skill name="Skill03_ID" id="4098" level="5" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="19926.1829652997" hpRegen="42.1792057329358" mp="720.194647201946" mpRegen="2.1" />
+			<attack physical="1089.37198067633" magical="524.87648568351" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="375.971434572569" magical="299.230883833353" />
+			<speed>
+				<walk ground="20" />
+				<run ground="20" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="4" /> <!-- Power Strike -->
+			<skill id="4098" level="5" /> <!-- Silence -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4613" level="4" /> <!-- Clan Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="27" />
+			<height normal="52" />
+		</collision>
+	</npc>
+	<npc id="22494" level="59" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="is_private" value="0" />
+			<param name="silhouette" value="22495" />
+			<param name="ai_type" value="kamaloka_59_a_false" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="5" />
+			<skill name="Skill02_ID" id="4047" level="5" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="946" lhand="945" /> <!-- Skeleton Dagger / Skeleton Buckler -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="17981.072555205" hpRegen="70.9782228924142" mp="1007.29927007299" mpRegen="2.4" />
+			<attack physical="2932.71995399655" magical="1393.2682130017" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="388.513513513514" magical="426.886740755354" />
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="5" /> <!-- Power Strike -->
+			<skill id="4047" level="5" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="28.5" />
+		</collision>
+	</npc>
+	<npc id="22495" level="59" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="5" />
+			<skill name="Skill02_ID" id="4047" level="5" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="946" lhand="945" /> <!-- Skeleton Dagger / Skeleton Buckler -->
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="17981.072555205" hpRegen="70.9782228924142" mp="1007.29927007299" mpRegen="2.4" />
+			<attack physical="2932.71995399655" magical="1393.2682130017" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="388.513513513514" magical="426.886740755354" />
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="5" /> <!-- Power Strike -->
+			<skill id="4047" level="5" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="28.5" />
+		</collision>
+	</npc>
+	<npc id="22496" level="59" type="Monster" name="Lost Beholder">
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_Type" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill03_Type" value="2" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="5" />
+			<skill name="Skill02_ID" id="4613" level="5" />
+			<skill name="Skill03_ID" id="4098" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="35924.2902208202" hpRegen="70.9036355437913" mp="1007.29927007299" mpRegen="2.4" />
+			<attack physical="2658.78378378378" magical="1262.85830826474" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="311.398354876616" magical="502.18576353579" />
+			<speed>
+				<walk ground="80" />
+				<run ground="160" />
+			</speed>
+			<hitTime>560</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="5" /> <!-- Power Strike -->
+			<skill id="4098" level="6" /> <!-- Silence -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4613" level="5" /> <!-- Clan Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="42" />
+		</collision>
+	</npc>
+	<npc id="22497" level="69" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="78" />
+			<param name="MoveAroundSocial1" value="78" />
+			<param name="MoveAroundSocial2" value="78" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="is_private" value="0" />
+			<param name="silhouette" value="22498" />
+			<param name="ai_type" value="kamaloka_69_a_false" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="6" />
+			<skill name="Skill02_ID" id="4047" level="6" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="20810.094637224" hpRegen="76.9462041405843" mp="1314.6796431468" mpRegen="2.7" />
+			<attack physical="2336.25556375237" magical="2084.53893992919" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="466.455696202532" magical="511.770201320234" />
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+			<hitTime>490</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="6" /> <!-- Power Strike -->
+			<skill id="4047" level="6" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="4" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beast -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="18" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="22498" level="69" type="Monster" name="Lost Watchman">
+		<parameters>
+			<param name="MoveAroundSocial" value="78" />
+			<param name="MoveAroundSocial1" value="78" />
+			<param name="MoveAroundSocial2" value="78" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<param name="Skill02_Probablity" value="500" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="6" />
+			<skill name="Skill02_ID" id="4047" level="6" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="20810.094637224" hpRegen="76.9462041405843" mp="1314.6796431468" mpRegen="2.7" />
+			<attack physical="2336.25556375237" magical="2084.53893992919" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="466.455696202532" magical="511.770201320234" />
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+			<hitTime>490</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="6" /> <!-- Power Strike -->
+			<skill id="4047" level="6" /> <!-- Hold -->
+			<skill id="4410" level="3" /> <!-- Extremely Weak P. Atk. -->
+			<skill id="4411" level="3" /> <!-- Extremely Weak M. Atk. -->
+			<skill id="4415" level="4" /> <!-- One-handed Sword -->
+			<skill id="4416" level="3" /> <!-- Beast -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="18" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="22499" level="69" type="Monster" name="Lost Beholder">
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="90" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="IsAggressive" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_Type" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill03_Type" value="2" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="Skill01_ID" id="4032" level="6" />
+			<skill name="Skill02_ID" id="4613" level="6" />
+			<skill name="Skill03_ID" id="4098" level="7" />
+		</parameters>
+		<race>BEAST</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="41576.0252365931" hpRegen="76.8654232739137" mp="1314.6796431468" mpRegen="2.7" />
+			<attack physical="1991.98923744879" magical="2042.74660015911" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="465.969546872134" magical="511.959315579287" />
+			<speed>
+				<walk ground="30" />
+				<run ground="170" />
+			</speed>
+			<hitTime>240</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="6" /> <!-- Power Strike -->
+			<skill id="4098" level="7" /> <!-- Silence -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4415" level="6" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="3" /> <!-- Beast -->
+			<skill id="4613" level="6" /> <!-- Clan Heal -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" aggroRange="300" clanHelpRange="1000" isAggressive="true">
+			<clanList>
+				<clan>ABYSS</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="23.5" />
+		</collision>
+	</npc>
+</list>

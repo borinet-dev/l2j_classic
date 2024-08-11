@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="Chef Monkey Event" active="2022 01 01-2022 02 07" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="90167" min="1" max="1" chance="1.02%" /> <!-- Chef Monkeys' Banana Herb -->
+	</droplist>
+	<spawnlist>
+		<add npc="34292" x="-84430" y="243421" z="-3678" heading="61252" /> <!-- Talking Island -->
+		<add npc="34292" x="-80796" y="150259" z="-2975" heading="31195" /> <!-- Gluddin -->
+		<add npc="34292" x="-14089" y="123297" z="-3055" heading="26634" /> <!-- Gludio -->
+		<add npc="34292" x="18414" y="144989" z="-3014" heading="7924" /> <!-- Dion -->
+		<add npc="34292" x="82126" y="148126" z="-3466" heading="53308" /> <!-- Giran -->
+		<add npc="34292" x="82003" y="53791" z="-1438" heading="64904" /> <!-- Oren -->
+		<add npc="34292" x="147209" y="25967" z="-1951" heading="63334" /> <!-- Aden -->
+		<add npc="34292" x="117380" y="76684" z="-2622" heading="40961" /> <!-- Hunters Village -->
+		<add npc="34292" x="148039" y="-55341" z="-2686" heading="47484" /> <!-- Goddard -->
+	</spawnlist>
+<!-- 	<destroyItemsOnEnd>
+		<item id="90168" />
+		<item id="90169" />
+		<item id="90170" />
+		<item id="90171" />
+		<item id="70304" />
+		<item id="70305" />
+	</destroyItemsOnEnd> -->
+</event>

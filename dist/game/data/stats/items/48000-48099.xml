@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="48000" name="피쉬 크림 스튜 - 정신" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.fish_stew_residence_cha" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48001" name="피쉬 크림 스튜 - 민첩" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.fish_stew_residence_cha" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48002" name="피쉬 크림 스튜 - 힘" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.fish_stew_residence_cha" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48003" name="피쉬 크림 스튜 - 체력" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.fish_stew_residence_cha" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48004" name="화합의 기운 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_london_olympic_scroll_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48005" name="변화한 에너지" type="EtcItem">
+		<set name="icon" val="icon.drake_wing_lure_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="48006" name="사념의 정수" type="EtcItem">
+		<set name="icon" val="icon.cube_upgrade" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="48007" name="도전자의 팔찌" type="Armor">
+		<set name="icon" val="BranchIcon.icon.bracelet_of_explorer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="crystal_type" val="R" />
+	</item>
+	<item id="48008" name="프레야의 얼음 결정" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_crystal" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="48009" name="프레야의 설레이는 쇼핑백" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_bag_01" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48010" name="프레야 윈터 카드" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_winter_card" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48011" name="시르 윈터 카드" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_sirr_winter_card" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48012" name="스노우쿵 윈터 카드" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_snowman_winter_card" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48013" name="2016 프레야의 보은" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_2016_gift_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48014" name="프레야의 다크 룬(2시간) 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_dark_rune_box" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="immediate_effect" val="true" />
+		<capsuled_items>
+			<item id="48015" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48015" name="프레야의 다크 룬" additionalName="2시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_dark_rune" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="120" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="for_npc" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="35029" level="1" /> 
+		</skills>
+	</item>
+	<item id="48016" name="화이트 나이트 슈트" type="Armor">
+		<set name="icon" val="icon.white_knight_suit" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48017" name="힐러 의상" type="Armor">
+		<set name="icon" val="icon.healer_chest_change" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48018" name="슈발리에 의상" type="Armor">
+		<set name="icon" val="icon.chevalier_chest_change" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48019" name="캣더캣 의상" type="Armor">
+		<set name="icon" val="icon.cat_the_cat_change_0" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48020" name="바바리안 울프 의상" type="Armor">
+		<set name="icon" val="icon.barbarian_chest_change_0" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48021" name="발키리 의상" type="Armor">
+		<set name="icon" val="icon.valkyrie_chest_change_0" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48022" name="곰돌이 인형 의상" type="Armor">
+		<set name="icon" val="icon.gomdori_chest_change" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">400</stat>
+		</stats>
+	</item>
+	<item id="48023" name="화이트 나이트 슈트 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48024" name="힐러 의상 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48025" name="슈발리에 의상 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48026" name="캣더캣 의상 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48027" name="바바리안 울프 의상 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48028" name="발키리 의상 가공석" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48029" name="프레야의 카리스마 포션" type="EtcItem">
+		<set name="icon" val="icon.bm_freya_charisma_potion1" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+	</item>
+	<item id="48030" name="세력 우호의 증표" type="EtcItem">
+		<set name="icon" val="icon.faction_boost_reward" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48031" name="실렌의 제단 입장권" type="EtcItem">
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="86400000" />
+	</item>
+	<item id="48032" name="사이하의 탈리스만 8단계 상자" type="EtcItem">
+		<set name="icon" val="icon.bm_sayhas_talisman_box" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="28444" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48033" name="Test - 아가시온 아이템" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48034" name="Test - 팔찌 메인 1슬롯" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48035" name="Test - 팔찌 메인 1슬롯, 서브 1슬롯" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48036" name="Test - 팔찌 메인 1슬롯, 서브 2슬롯" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48037" name="Test - 팔찌 메인 1슬롯, 서브 3슬롯" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48038" name="Test - 팔찌 메인 1슬롯, 서브 4슬롯" type="Armor">
+		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_sep_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48039" name="아가시온 강화 주문서" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_armor_i06" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="39060" level="1" /> 
+		</skills>
+	</item>
+	<item id="48040" name="축복받은 아가시온 강화 주문서" type="EtcItem">
+		<set name="icon" val="icon.blessed_scroll_of_enchant_armor_i06" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="39061" level="1" /> 
+		</skills>
+	</item>
+	<item id="48041" name="거인의 아가시온 강화 주문서" type="EtcItem">
+		<set name="icon" val="icon.giant_scrl_of_ench_am_r" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48042" name="파멸의 아가시온 강화 주문서" type="EtcItem">
+		<set name="icon" val="icon.scroll_of_enchant_armor_i06" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="0" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="39209" level="1" /> 
+		</skills>
+	</item>
+	<item id="48043" name="아가시온 강화 보조석" type="EtcItem">
+		<set name="icon" val="icon.ench_am_stone_i04" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48044" name="축복받은 아가시온 강화 보조석" type="EtcItem">
+		<set name="icon" val="icon.bless_ench_amr_stone_i05" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48045" name="거인의 아가시온 강화 보조석" type="EtcItem">
+		<set name="icon" val="icon.giant_ench_armor_stone_r_i01" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48046" name="별자리 아가시온 성장의 서" type="EtcItem">
+		<set name="icon" val="icon.star_scrl_of_ench_ag" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_AM" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="28065" level="1" /> 
+		</skills>
+	</item>
+	<item id="48047" name="고대의 별자리 아가시온 성장의 서" type="EtcItem">
+		<set name="icon" val="icon.star_giantscrl_of_ench_ag" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="GIANT_ENCHT_AM" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="28066" level="1" /> 
+		</skills>
+	</item>
+	<item id="48048" name="처녀자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_virgo_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28118" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48049" name="염소자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_capr_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28119" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48050" name="천칭자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_lib_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28120" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48051" name="양자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_aries_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28121" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48052" name="황소자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_tau_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28122" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48053" name="사자자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_leo_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28123" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48054" name="쌍둥이자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_gem_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28124" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48055" name="전갈자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_sco_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28125" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48056" name="물병자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_aqu_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28126" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48057" name="물고기자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_pis_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28127" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48058" name="사수자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_sag_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28128" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48059" name="게자리 아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_can_star_1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="28129" level="1" type="ON_EQUIP" />
+			<skill id="28064" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48060" name="하급 시드 팔찌" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35069" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48061" name="중급 시드 팔찌" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35069" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48062" name="상급 시드 팔찌" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35069" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48063" name="최상급 시드 팔찌" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35069" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48064" name="최고급 시드 팔찌" additionalName="1단계" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35071" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="48065" name="별자리 큐브 조각" type="EtcItem">
+		<set name="icon" val="icon.star_agathion_cube_peice" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48066" name="별자리 아가시온 큐브" type="EtcItem">
+		<set name="icon" val="icon.star_agathion_cube" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48067" name="하급 시드 팔찌 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48060" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48068" name="중급 시드 팔찌 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48061" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48069" name="상급 시드 팔찌 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48062" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48070" name="최상급 시드 팔찌 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48063" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48071" name="최고급 시드 팔찌 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48064" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48072" name="하급 시드 팔찌" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<skills>
+			<skill id="35078" level="1" /> 
+			<skill id="35083" level="1" /> 
+			<skill id="35084" level="1" /> 
+			<skill id="35085" level="1" /> 
+			<skill id="35086" level="1" /> 
+		</skills>
+	</item>
+	<item id="48073" name="중급 시드 팔찌" additionalName="15일 기간제" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<skills>
+			<skill id="35079" level="1" /> 
+			<skill id="35083" level="1" /> 
+			<skill id="35084" level="1" /> 
+			<skill id="35085" level="1" /> 
+			<skill id="35086" level="1" /> 
+		</skills>
+	</item>
+	<item id="48074" name="상급 시드 팔찌" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="35080" level="1" /> 
+			<skill id="35083" level="1" /> 
+			<skill id="35084" level="1" /> 
+			<skill id="35085" level="1" /> 
+			<skill id="35086" level="1" /> 
+		</skills>
+	</item>
+	<item id="48075" name="최상급 시드 팔찌" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="35081" level="1" /> 
+			<skill id="35083" level="1" /> 
+			<skill id="35084" level="1" /> 
+			<skill id="35085" level="1" /> 
+			<skill id="35086" level="1" /> 
+		</skills>
+	</item>
+	<item id="48076" name="최고급 시드 팔찌" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.lbracelet_agathion_charm" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="35082" level="1" /> 
+			<skill id="35083" level="1" /> 
+			<skill id="35084" level="1" /> 
+			<skill id="35085" level="1" /> 
+			<skill id="35086" level="1" /> 
+		</skills>
+	</item>
+	<item id="48077" name="하급 시드 팔찌 상자" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48072" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48078" name="중급 시드 팔찌 상자" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48073" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48079" name="상급 시드 팔찌 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48074" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48080" name="최상급 시드 팔찌 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48075" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48081" name="최고급 시드 팔찌 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48076" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="48082" name="아가시온 참 - 레인보우 아지트" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player clanHall="62" />
+		</cond>
+	</item>
+	<item id="48083" name="아가시온 참 - 야수농장" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="7000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player clanHall="63" />
+		</cond>
+	</item>
+	<item id="48084" name="아가시온 참 - 글루디오" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{1}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="1" />
+</and>
+		</cond>
+	</item>
+	<item id="48085" name="아가시온 참 - 디온" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{2}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="2" />
+</and>
+		</cond>
+	</item>
+	<item id="48086" name="아가시온 참 - 기란" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{3}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="3" />
+</and>
+		</cond>
+	</item>
+	<item id="48087" name="아가시온 참 - 오렌" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{4}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="4" />
+</and>
+		</cond>
+	</item>
+	<item id="48088" name="아가시온 참 - 아덴" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{5}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="5" />
+</and>
+		</cond>
+	</item>
+	<item id="48089" name="아가시온 참 - 인나드릴" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{6}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="6" />
+</and>
+		</cond>
+	</item>
+	<item id="48090" name="아가시온 참 - 고다드" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{7}}}" />
+		<cond msgId="1518">
+<and>
+			<player castle="7" />
+</and>
+		</cond>
+	</item>
+	<item id="48091" name="아가시온 참 - 루운" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{8}}}" />
+		<cond msgId="1518">
+			<player castle="8" />
+		</cond>
+	</item>
+	<item id="48092" name="아가시온 참 - 슈트가르트" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="price" val="30000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_castle;1};{ec_castle_num;{9}}}" />
+		<cond msgId="1518">
+			<player castle="9" />
+		</cond>
+	</item>
+	<item id="48093" name="아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48094" name="아가시온 참 - 요새" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="equip_condition" val="{{ec_fortress;1}}" />
+		<cond msgId="1518">
+			<player fort="-1" />
+		</cond>
+	</item>
+	<item id="48095" name="아가시온 참" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48096" name="아가시온 참-리틀 엔젤" additionalName="폭죽" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48097" name="아가시온 참-리틀 엔젤" additionalName="대두" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48098" name="아가시온 참-리틀 엔젤" additionalName="귀환" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="48099" name="아가시온 참-리틀 엔젤" additionalName="부활" type="Armor">
+		<set name="icon" val="icon.agathion_base" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+</list>

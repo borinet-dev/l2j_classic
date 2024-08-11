@@ -1,0 +1,19 @@
+<html><body>
+<font color="LEVEL">[세율 조정]</font><br>
+현재 세율은 <font color="00FFFF">%tax_rate%%</font>입니다.<br>
+<font color="LEVEL">0% - %tax_limit%%</font> 범위에서 설정할 수 있으며, 변경한 세율은 즉시 적용됩니다.<br>
+<br>
+<center>
+	<table width=170 height=27 bgcolor="CCCCCC">
+		<tr>
+			<td width=40 align=center>세율:</td>
+			<td width=50 align=right><edit type=number var="tax_rate" width=30 length=2></td><td width=20 align=left>%</td>
+			<td>
+				<Button action="bypass -h Quest CastleChamberlain set_tax $tax_rate" value="확인" width=70 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></Button>
+			</td>
+		</tr>
+	</table>
+<br><br><br>
+<Button ALIGN=LEFT ICON="RETURN" action="bypass -h Quest CastleChamberlain chamberlain-01.html">뒤로가기</Button>
+</center>
+</body></html>

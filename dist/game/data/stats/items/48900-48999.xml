@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="48912" name="그랑카인의 무기 강화 주문서-R그레이드" type="EtcItem">
+		<set name="icon" val="icon.ev_shilen_scroll_of_enchant_wp" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="48954" name="아티팩트 북 - 1단계" type="Armor">
+		<set name="icon" val="icon.artifact_book_00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifactbook" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<skills>
+			<skill id="39393" level="1" /> 
+		</skills>
+	</item>
+	<item id="48955" name="아티팩트 북 - 2단계" type="Armor">
+		<set name="icon" val="icon.artifact_book_00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifactbook" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<cond msgId="113" addName="1">
+			<player level="105" />
+		</cond>
+		<skills>
+			<skill id="39394" level="1" /> 
+		</skills>
+	</item>
+	<item id="48956" name="아티팩트 북 - 3단계" type="Armor">
+		<set name="icon" val="icon.artifact_book_00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifactbook" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<cond msgId="113" addName="1">
+			<player level="110" />
+		</cond>
+		<skills>
+			<skill id="39395" level="1" /> 
+		</skills>
+	</item>
+	<item id="48957" name="아티팩트 공격력" additionalName="투지" type="Armor">
+		<set name="icon" val="icon.artifact_b_pa" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="1" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48958" name="아티팩트 마법력" additionalName="투지" type="Armor">
+		<set name="icon" val="icon.artifact_b_ma" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="1" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48959" name="아티팩트 공격 속도" additionalName="투지" type="Armor">
+		<set name="icon" val="icon.artifact_b_pa_speed" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="1" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48960" name="아티팩트 마법 속도" additionalName="투지" type="Armor">
+		<set name="icon" val="icon.artifact_b_ma_speed" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="1" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48961" name="아티팩트 방어력" additionalName="수호" type="Armor">
+		<set name="icon" val="icon.artifact_c_phy_def" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="2" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48962" name="아티팩트 마법 저항" additionalName="수호" type="Armor">
+		<set name="icon" val="icon.artifact_c_mag_def" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="2" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48963" name="아티팩트 최대 HP" additionalName="수호" type="Armor">
+		<set name="icon" val="icon.artifact_c_hp" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="2" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48964" name="아티팩트 최대 MP" additionalName="수호" type="Armor">
+		<set name="icon" val="icon.artifact_c_mp" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="2" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48965" name="아티팩트 EXP" additionalName="지원" type="Armor">
+		<set name="icon" val="icon.artifact_d_exp" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="3" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48966" name="아티팩트 뱀피릭 레이지" additionalName="지원" type="Armor">
+		<set name="icon" val="icon.artifact_d_vampiric_rage" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="3" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48967" name="아티팩트 이동 속도" additionalName="지원" type="Armor">
+		<set name="icon" val="icon.artifact_d_move_speed" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="3" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48968" name="아티팩트 받는 힐량 증가" additionalName="지원" type="Armor">
+		<set name="icon" val="icon.artifact_d_heal_effect" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="3" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48969" name="아티팩트 공격력" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_pa" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48970" name="아티팩트 마법력" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_ma" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48971" name="아티팩트 물리 명중" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_hit" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48972" name="아티팩트 마법 적중" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_mhit" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48973" name="아티팩트 일반 공격 크리티컬 확률" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_crt_per" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48974" name="아티팩트 물리 스킬 크리티컬 확률" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_crt_skill_per" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48975" name="아티팩트 마법 스킬 크리티컬 확률" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_crt_mag_per" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48976" name="아티팩트 회복 물약/영약 효과 보너스" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_hp_special" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48977" name="아티팩트 행동불가 시 피격 대미지 감소" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_block_act_dmg" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+	<item id="48980" name="아티팩트 공격 속성" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_attribute_att_up" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="35252" level="1" /> 
+		</skills>
+	</item>
+	<item id="48981" name="아티팩트 모든 방어 속성" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_attribute_def_up" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="35253" level="1" /> 
+		</skills>
+	</item>
+	<item id="48982" name="아티팩트 행동불가 시 피격 대미지 감소" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_block_act_dmg" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="35254" level="1" /> 
+		</skills>
+	</item>
+	<item id="48983" name="아티팩트 물리 스킬 위력" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_skill_power" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="35255" level="1" /> 
+		</skills>
+	</item>
+	<item id="48984" name="아티팩트 마법 스킬 위력" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_spell_power" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="35256" level="1" /> 
+		</skills>
+	</item>
+	<item id="48985" name="아티팩트 고정 대미지 감소" additionalName="균형" type="Armor">
+		<set name="icon" val="icon.artifact_a_dmg_by_atk" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="artifact" />
+		<set name="is_sellable" val="false" />
+		<set name="artifactSlot" val="4" />
+		<set name="material" val="SILVER" />
+	</item>
+</list>

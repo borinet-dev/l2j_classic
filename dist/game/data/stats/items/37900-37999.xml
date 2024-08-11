@@ -1,0 +1,1655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="37900" name="상급 SP의 룬 1일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37901" name="하급 SP의 룬 7일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37902" name="중급 SP의 룬 7일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37903" name="상급 SP의 룬 7일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="37897" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37904" name="10억 SP주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll3_i00" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="17270" level="1" /> 
+		</skills>
+	</item>
+	<item id="37905" name="캣더캣의 깜짝 선물" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37906" name="캣더캣의 장미 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_box_love_pack" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37907" name="돼지 막대 사탕 가공석 - 한손 도검" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37908" name="크로노 키타라 가공석 - 한손 도검" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37909" name="크로노 탬버린 가공석 - 격투 무기" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualfist" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37910" name="크로노 캄파나 가공석 - 창" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_pole" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37911" name="크로노 다부카 가공석 - 양손 둔기" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37912" name="크로노 마라카스 가공석 - 듀얼 소드" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37913" name="호박 단검 가공석 - 단검" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37914" name="호박 듀얼 대거 가공석 - 듀얼 대거" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualdagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37915" name="허수아비 마법검 가공석 - 마법검" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37916" name="호박 단검" type="Weapon">
+		<set name="icon" val="icon.weapon_pumpkin_stick_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37917" name="호박 듀얼 대거" type="Weapon">
+		<set name="icon" val="icon.weapon_pumpin_dualdagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="crystal_type" val="S80" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="price" val="121780000" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37918" name="허수아비 마법검" type="Weapon">
+		<set name="icon" val="icon.weapon_scarescow_stick_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37919" name="돼지 막대 사탕 가공석 - 한손 도검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37920" name="크로노 키타라 가공석 - 한손 도검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37921" name="크로노 탬버린 가공석 - 격투 무기" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualfist" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37922" name="크로노 캄파나 가공석 - 창" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_pole" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37923" name="크로노 다부카 가공석 - 양손 둔기" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37924" name="크로노 마라카스 가공석 - 듀얼 소드" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37925" name="호박 단검 가공석 - 단검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37926" name="호박 듀얼 대거 가공석 - 듀얼 대거" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualdagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37927" name="허수아비 검 가공석 - 마법검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37928" name="PC방 용 - 향상된 장미빛 유혹" type="EtcItem">
+		<set name="icon" val="BranchSys2.icon.br_rosalia_rose_blue_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="reuse_delay" val="300000" />
+		<set name="weight" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="26918" level="1" /> 
+		</skills>
+	</item>
+	<item id="37929" name="각성 용사의 블레이드 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">435</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37930" name="각성 용사의 클래버 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">529</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37931" name="각성 용사의 엑스 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">435</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37932" name="각성 용사의 로드 - 7일 기간제" additionalName="아큐멘" type="Weapon">
+		<set name="icon" val="icon.weapon_the_mace_of_hero_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">348</stat>
+			<stat type="mAtk">252</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37933" name="각성 용사의 크러셔 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_hammer_of_hero_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">643</stat>
+			<stat type="mAtk">230</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37934" name="각성 용사의 셉터 - 7일 기간제" additionalName="아큐멘" type="Weapon">
+		<set name="icon" val="icon.weapon_the_staff_of_hero_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">423</stat>
+			<stat type="mAtk">278</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37935" name="각성 용사의 스팅거 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">380</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37936" name="각성 용사의 팽 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i00" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">529</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37937" name="각성 용사의 보우 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i00" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="mp_consume" val="6" />
+		<stats>
+			<stat type="pAtk">856</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37938" name="각성 용사의 윙 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">529</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37939" name="각성 용사의 스피어 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i00" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">435</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37940" name="각성 용사의 레이피어 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_infinity_rapier_i00" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">479</stat>
+			<stat type="mAtk">230</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="37941" name="각성 용사의 소드 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_infinity_sword_i00" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">572</stat>
+			<stat type="mAtk">230</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="37942" name="각성 용사의 슈터 - 7일 기간제" additionalName="헤이스트" type="Weapon">
+		<set name="icon" val="icon.weapon_infinity_shooter_i00" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1300" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">771</stat>
+			<stat type="mAtk">189</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37943" name="각성 용사 7일 기간제 무기 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37944" name="제왕의 쿠키" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_sonata_cookie" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="reuse_delay" val="3600000" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17297" level="1" /> 
+			<skill id="17298" level="1" /> 
+			<skill id="17299" level="1" /> 
+		</skills>
+	</item>
+	<item id="37945" name="크로노 키타라" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_cithara_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="is_dropable" val="false" />
+		<set name="bodypart" val="rhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37946" name="크로노 탬버린" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_tambourine_i00" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="is_dropable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37947" name="크로노 캄파나" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_campana_i00" />
+		<set name="weapon_type" val="POLE" />
+		<set name="is_dropable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37948" name="크로노 다부카" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_darbuka_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="is_dropable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37949" name="크로노 마라카스" type="Weapon">
+		<set name="icon" val="icon.weapon_chrono_maracas_i00" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="is_dropable" val="false" />
+		<set name="bodypart" val="lrhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37950" name="레퀴엠 셰이퍼 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36732" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36794" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37951" name="레퀴엠 커터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36733" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36795" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37952" name="레퀴엠 슬래셔 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36734" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36796" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37953" name="레퀴엠 어벤져 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36735" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36797" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37954" name="레퀴엠 파이터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36736" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36798" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37955" name="레퀴엠 스토머 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36737" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36799" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37956" name="레퀴엠 스로워 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36738" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36800" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37957" name="레퀴엠 슈트제 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36739" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36801" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37958" name="레퀴엠 버스터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36740" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36802" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37959" name="레퀴엠 캐스터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36741" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36803" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37960" name="레퀴엠 레트리뷰터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="28" max="28" chance="100" /> 
+			<item id="36543" min="13" max="13" chance="100" /> 
+			<item id="17371" min="181" max="181" chance="100" /> 
+			<item id="36742" min="1" max="1" chance="100" /> 
+			<item id="19440" min="4" max="4" chance="100" /> 
+			<item id="36563" min="9" max="9" chance="100" /> 
+			<item id="36548" min="11" max="11" chance="100" /> 
+			<item id="36804" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37961" name="이모탈 헬멧 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="4" max="4" chance="100" /> 
+			<item id="36543" min="2" max="2" chance="100" /> 
+			<item id="17371" min="23" max="23" chance="100" /> 
+			<item id="36805" min="10" max="10" chance="100" /> 
+			<item id="36743" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37962" name="이모탈 흉갑 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ARMOR_TOP" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="9" max="9" chance="100" /> 
+			<item id="36543" min="5" max="5" chance="100" /> 
+			<item id="17371" min="59" max="59" chance="100" /> 
+			<item id="36806" min="10" max="10" chance="100" /> 
+			<item id="36744" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36563" min="3" max="3" chance="100" /> 
+			<item id="36553" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37963" name="이모탈 각반 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="6" max="6" chance="100" /> 
+			<item id="36543" min="3" max="3" chance="100" /> 
+			<item id="17371" min="37" max="37" chance="100" /> 
+			<item id="36807" min="10" max="10" chance="100" /> 
+			<item id="36745" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37964" name="이모탈 건틀렛 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="3" max="3" chance="100" /> 
+			<item id="36543" min="2" max="2" chance="100" /> 
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36808" min="10" max="10" chance="100" /> 
+			<item id="36746" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37965" name="이모탈 부츠 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="3" max="3" chance="100" /> 
+			<item id="36543" min="2" max="2" chance="100" /> 
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36809" min="10" max="10" chance="100" /> 
+			<item id="36747" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37966" name="이모탈 실드 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SHIELD" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="3" max="3" chance="100" /> 
+			<item id="36543" min="2" max="2" chance="100" /> 
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36810" min="10" max="10" chance="100" /> 
+			<item id="36748" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37967" name="이모탈 레더 헬멧 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="23" max="23" chance="100" /> 
+			<item id="36811" min="10" max="10" chance="100" /> 
+			<item id="36538" min="3" max="3" chance="100" /> 
+			<item id="36749" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36518" min="9" max="9" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37968" name="이모탈 레더 아머 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ARMOR_TOP" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="59" max="59" chance="100" /> 
+			<item id="36812" min="10" max="10" chance="100" /> 
+			<item id="36538" min="6" max="6" chance="100" /> 
+			<item id="36750" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36563" min="3" max="3" chance="100" /> 
+			<item id="36518" min="24" max="24" chance="100" /> 
+			<item id="36553" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37969" name="이모탈 레더 레깅스 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="37" max="37" chance="100" /> 
+			<item id="36813" min="10" max="10" chance="100" /> 
+			<item id="36538" min="4" max="4" chance="100" /> 
+			<item id="36751" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36518" min="15" max="15" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37970" name="이모탈 레더 글로브 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36814" min="10" max="10" chance="100" /> 
+			<item id="36538" min="2" max="2" chance="100" /> 
+			<item id="36752" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36518" min="6" max="6" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37971" name="이모탈 레더 부츠 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36815" min="10" max="10" chance="100" /> 
+			<item id="36538" min="2" max="2" chance="100" /> 
+			<item id="36753" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36518" min="6" max="6" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37972" name="이모탈 서클릿 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="23" max="23" chance="100" /> 
+			<item id="36816" min="10" max="10" chance="100" /> 
+			<item id="36528" min="10" max="10" chance="100" /> 
+			<item id="36754" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36533" min="3" max="3" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37973" name="이모탈 튜닉 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="59" max="59" chance="100" /> 
+			<item id="36817" min="10" max="10" chance="100" /> 
+			<item id="36528" min="26" max="26" chance="100" /> 
+			<item id="36755" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36533" min="8" max="8" chance="100" /> 
+			<item id="36563" min="3" max="3" chance="100" /> 
+			<item id="36553" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37974" name="이모탈 호즈 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="37" max="37" chance="100" /> 
+			<item id="36818" min="10" max="10" chance="100" /> 
+			<item id="36528" min="16" max="16" chance="100" /> 
+			<item id="36756" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36533" min="5" max="5" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36553" min="2" max="2" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37975" name="이모탈 글로브 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36819" min="10" max="10" chance="100" /> 
+			<item id="36528" min="7" max="7" chance="100" /> 
+			<item id="36757" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36533" min="2" max="2" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37976" name="이모탈 슈즈 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36820" min="10" max="10" chance="100" /> 
+			<item id="36528" min="7" max="7" chance="100" /> 
+			<item id="36758" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36533" min="2" max="2" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37977" name="이모탈 시길 제작 상자" additionalName="로브용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SIGIL" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36821" min="10" max="10" chance="100" /> 
+			<item id="36538" min="2" max="2" chance="100" /> 
+			<item id="36759" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+			<item id="36518" min="7" max="7" chance="100" /> 
+			<item id="36553" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37978" name="이모탈 목걸이 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="6" max="6" chance="100" /> 
+			<item id="36822" min="10" max="10" chance="100" /> 
+			<item id="17371" min="20" max="20" chance="100" /> 
+			<item id="36760" min="1" max="1" chance="100" /> 
+			<item id="36558" min="4" max="4" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37979" name="이모탈 귀걸이 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="5" max="5" chance="100" /> 
+			<item id="36823" min="10" max="10" chance="100" /> 
+			<item id="17371" min="15" max="15" chance="100" /> 
+			<item id="36761" min="1" max="1" chance="100" /> 
+			<item id="36558" min="3" max="3" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37980" name="이모탈 반지 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="3" max="3" chance="100" /> 
+			<item id="36824" min="10" max="10" chance="100" /> 
+			<item id="17371" min="10" max="10" chance="100" /> 
+			<item id="36762" min="1" max="1" chance="100" /> 
+			<item id="36558" min="2" max="2" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37981" name="아포칼립스 셰이퍼 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36763" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36825" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37982" name="아포칼립스 커터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36764" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36826" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37983" name="아포칼립스 슬래셔 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36765" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36827" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37984" name="아포칼립스 어벤져 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36766" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36828" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37985" name="아포칼립스 파이터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36767" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36829" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37986" name="아포칼립스 스토머 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36768" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36830" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37987" name="아포칼립스 스로워 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36769" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36831" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37988" name="아포칼립스 슈트제 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36770" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36832" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37989" name="아포칼립스 버스터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36771" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36833" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37990" name="아포칼립스 캐스터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36772" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36834" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37991" name="아포칼립스 레트리뷰터 제작 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="75" max="75" chance="100" /> 
+			<item id="36543" min="35" max="35" chance="100" /> 
+			<item id="17371" min="492" max="492" chance="100" /> 
+			<item id="36773" min="1" max="1" chance="100" /> 
+			<item id="19440" min="9" max="9" chance="100" /> 
+			<item id="36563" min="22" max="22" chance="100" /> 
+			<item id="36548" min="30" max="30" chance="100" /> 
+			<item id="36835" min="10" max="10" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37992" name="헬 헬멧 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="HELMET" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="10" max="10" chance="100" /> 
+			<item id="36543" min="5" max="5" chance="100" /> 
+			<item id="17371" min="60" max="60" chance="100" /> 
+			<item id="36836" min="10" max="10" chance="100" /> 
+			<item id="36774" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36563" min="3" max="3" chance="100" /> 
+			<item id="36553" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37993" name="헬 흉갑 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ARMOR_TOP" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="25" max="25" chance="100" /> 
+			<item id="36543" min="12" max="12" chance="100" /> 
+			<item id="17371" min="160" max="160" chance="100" /> 
+			<item id="36837" min="10" max="10" chance="100" /> 
+			<item id="36775" min="1" max="1" chance="100" /> 
+			<item id="19440" min="3" max="3" chance="100" /> 
+			<item id="36563" min="8" max="8" chance="100" /> 
+			<item id="36553" min="9" max="9" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37994" name="헬 각반 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="16" max="16" chance="100" /> 
+			<item id="36543" min="8" max="8" chance="100" /> 
+			<item id="17371" min="100" max="100" chance="100" /> 
+			<item id="36838" min="10" max="10" chance="100" /> 
+			<item id="36776" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36563" min="5" max="5" chance="100" /> 
+			<item id="36553" min="6" max="6" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37995" name="헬 건틀렛 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="7" max="7" chance="100" /> 
+			<item id="36543" min="3" max="3" chance="100" /> 
+			<item id="17371" min="40" max="40" chance="100" /> 
+			<item id="36839" min="10" max="10" chance="100" /> 
+			<item id="36777" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36553" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37996" name="헬 부츠 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="7" max="7" chance="100" /> 
+			<item id="36543" min="3" max="3" chance="100" /> 
+			<item id="17371" min="2" max="2" chance="100" /> 
+			<item id="36840" min="10" max="10" chance="100" /> 
+			<item id="36778" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36553" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37997" name="헬 실드 제작 상자" additionalName="중갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="SHIELD" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36523" min="7" max="7" chance="100" /> 
+			<item id="36543" min="3" max="3" chance="100" /> 
+			<item id="17371" min="3" max="3" chance="100" /> 
+			<item id="36841" min="10" max="10" chance="100" /> 
+			<item id="36779" min="1" max="1" chance="100" /> 
+			<item id="19440" min="1" max="1" chance="100" /> 
+			<item id="36563" min="2" max="2" chance="100" /> 
+			<item id="36553" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37998" name="헬 레더 헬멧 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="HELMET" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="60" max="60" chance="100" /> 
+			<item id="36842" min="10" max="10" chance="100" /> 
+			<item id="36538" min="6" max="6" chance="100" /> 
+			<item id="36780" min="1" max="1" chance="100" /> 
+			<item id="19440" min="2" max="2" chance="100" /> 
+			<item id="36563" min="3" max="3" chance="100" /> 
+			<item id="36518" min="24" max="24" chance="100" /> 
+			<item id="36553" min="4" max="4" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="37999" name="헬 레더 아머 제작 상자" additionalName="경갑용" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="ARMOR_TOP" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="17371" min="160" max="160" chance="100" /> 
+			<item id="36843" min="10" max="10" chance="100" /> 
+			<item id="36538" min="16" max="16" chance="100" /> 
+			<item id="36781" min="1" max="1" chance="100" /> 
+			<item id="19440" min="3" max="3" chance="100" /> 
+			<item id="36563" min="8" max="8" chance="100" /> 
+			<item id="36518" min="64" max="64" chance="100" /> 
+			<item id="36553" min="9" max="9" chance="100" /> 
+		</capsuled_items>
+	</item>
+</list>

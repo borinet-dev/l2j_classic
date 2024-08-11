@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="38100" name="리오나의 큐브 - 1회용" type="EtcItem">
+		<set name="icon" val="icon.etc_violet_crystal_cube_pc_i00" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38101" name="리오나의 100만 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll1_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17321" level="1" /> 
+		</skills>
+	</item>
+	<item id="38102" name="리오나의 500만 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll2_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17322" level="1" /> 
+		</skills>
+	</item>
+	<item id="38103" name="리오나의 1000만 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll3_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17323" level="1" /> 
+		</skills>
+	</item>
+	<item id="38104" name="리오나의 큐브 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i01" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38105" name="최고급 투지의 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_cp_potion_i00" />
+		<set name="weight" val="25" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38106" name="작은 삼치" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i02" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38107" name="작은 고등어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i04" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38108" name="작은 광어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i06" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38109" name="작은 우럭" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i08" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38110" name="작은 연어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i10" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38111" name="작은 새치" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i12" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38112" name="작은 참치" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i14" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38113" name="삼치" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i02" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38114" name="고등어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i04" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38115" name="광어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i06" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38116" name="우럭" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i08" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38117" name="연어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i10" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38118" name="새치" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i12" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38119" name="참치" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i14" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38120" name="커다란 삼치" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i02" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38121" name="커다란 고등어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i04" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38122" name="커다란 광어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i06" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38123" name="커다란 우럭" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i08" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38124" name="커다란 연어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i10" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38125" name="커다란 새치" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i12" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38126" name="커다란 참치" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i14" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38127" name="작은 송사리" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i01" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38128" name="작은 피라미" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i03" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38129" name="작은 쏘가리" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i05" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38130" name="작은 붕어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i07" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38131" name="작은 장어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i09" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38132" name="작은 메기" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i11" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38133" name="작은 잉어" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i13" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38134" name="송사리" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i01" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38135" name="피라미" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i03" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38136" name="쏘가리" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i05" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38137" name="붕어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i07" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38138" name="장어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i09" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38139" name="메기" type="EtcItem">
+		<set name="icon" val="icon.fish_small_i11" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38140" name="잉어" type="EtcItem">
+		<set name="icon" val="icon.fish_normal_i13" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38141" name="커다란 송사리" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i01" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38142" name="커다란 피라미" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i03" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38143" name="커다란 쏘가리" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i05" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38144" name="커다란 붕어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i07" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38145" name="커다란 장어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i09" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38146" name="커다란 메기" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i11" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38147" name="커다란 잉어" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i13" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38148" name="고래" type="EtcItem">
+		<set name="icon" val="icon.fish_huge_i15" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38149" name="일반 미끼" type="EtcItem">
+		<set name="icon" val="icon.etc_normal_lure" />
+		<set name="price" val="1000" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38150" name="월척 미끼" type="EtcItem">
+		<set name="icon" val="icon.etc_huge_lure" />
+		<set name="price" val="1300" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38151" name="야광 미끼" type="EtcItem">
+		<set name="icon" val="icon.etc_night_normal_lure" />
+		<set name="price" val="1500" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38152" name="야광 월척 미끼" type="EtcItem">
+		<set name="icon" val="icon.etc_night_huge_lure" />
+		<set name="price" val="1800" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38153" name="일반 월척탄" type="EtcItem">
+		<set name="icon" val="icon.etc_spirit_bullet_fish_i00" />
+		<set name="weight" val="3" />
+		<set name="price" val="300" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="FISHINGSHOT" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38154" name="월척탄" type="EtcItem">
+		<set name="icon" val="icon.etc_spirit_bullet_fish_i05" />
+		<set name="default_action" val="FISHINGSHOT" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
+		<set name="price" val="50" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SOULSHOT" />
+		<set name="handler" val="FishShots" />
+		<skills>
+			<skill id="17386" level="1" /> 
+		</skills>
+	</item>
+	<item id="38155" name="초보 낚싯대" type="Weapon">
+		<set name="icon" val="icon.weapon_fishing_rod_i00" />
+		<set name="weapon_type" val="FISHINGROD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="1000" />
+		<set name="bodypart" val="lrhand" />
+		<set name="price" val="2000000" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">1</stat>
+		</stats>
+	</item>
+	<item id="38156" name="중수 낚싯대" type="Weapon">
+		<set name="icon" val="icon.weapon_fishing_rod_i03" />
+		<set name="weapon_type" val="FISHINGROD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="1000" />
+		<set name="bodypart" val="lrhand" />
+		<set name="price" val="15000000" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">1</stat>
+		</stats>
+	</item>
+	<item id="38157" name="고수 낚싯대" type="Weapon">
+		<set name="icon" val="icon.weapon_fishing_rod_i01" />
+		<set name="weapon_type" val="FISHINGROD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="1000" />
+		<set name="bodypart" val="lrhand" />
+		<set name="price" val="200000000" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">1</stat>
+		</stats>
+	</item>
+	<item id="38158" name="영웅 낚싯대" type="Weapon">
+		<set name="icon" val="icon.weapon_fishing_rod_i04" />
+		<set name="weapon_type" val="FISHINGROD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="1000" />
+		<set name="material" val="BONE" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">1</stat>
+		</stats>
+	</item>
+	<item id="38159" name="환상의 낚시터 이용권 - 1시간" type="EtcItem">
+		<set name="icon" val="icon.fishing_zone_ticket" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38160" name="환상의 낚시터 이용권 - 2시간" type="EtcItem">
+		<set name="icon" val="icon.fishing_zone_ticket" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38161" name="처녀자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17610" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="26117" level="5" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38162" name="처녀자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17610" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17567" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38163" name="처녀자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17610" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="17568" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38164" name="처녀자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17610" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17551" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38165" name="처녀자리 아가시온 팔찌" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="weight" val="150" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="17610" level="1" /> 
+			<skill id="17547" level="1" /> 
+			<skill id="17548" level="1" /> 
+			<skill id="17549" level="1" /> 
+			<skill id="17550" level="1" /> 
+			<skill id="17622" level="1" /> 
+			<skill id="9606" level="1" /> 
+			<skill id="9606" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="38166" name="물고기 가시" type="EtcItem">
+		<set name="icon" val="icon.etc_fang_ivory_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38167" name="물고기 비늘" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_scale_i01" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38168" name="물고기 기름" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_oil_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38169" name="물고기 지느러미" type="EtcItem">
+		<set name="icon" val="icon.etc_gludio_fish_scale_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38170" name="물고기 보석" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_gem_i01" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38171" name="고래 기름" type="EtcItem">
+		<set name="icon" val="icon.etc_fish_oil_i02" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38172" name="레시피: 화살박힌 사과 (100%)" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_green_i00" />
+		<set name="weight" val="30" />
+		<set name="price" val="10000" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="is_stackable" val="true" />
+		<set name="recipe_id" val="4169" /> 
+		<set name="handler" val="Recipes" />
+		<set name="default_action" val="RECIPE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38173" name="화살박힌 사과 조각" type="EtcItem">
+		<set name="icon" val="icon.piece_apple" />
+		<set name="weight" val="60" />
+		<set name="price" val="5000" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38174" name="싸울아비 장검 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38175" name="견습사의 주문서 외형 가공석" type="EtcItem">
+		<set name="icon" val="Icon.special_look_change_book" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38176" name="크리스탈 단검 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dagger_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38177" name="칼라드볼그 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38178" name="하부의 식칼 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualdagger_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38179" name="티아테논 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_blunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38180" name="아스타로트 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dual_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38181" name="티르빙 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_twohand_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38182" name="마르딜의 바람 외형 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="Icon.shape_shifting_magic_blunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38183" name="칼라드볼그 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38184" name="하부의 식칼 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualdagger_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38185" name="티아테논 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_blunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38186" name="아스타로트 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dual_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38187" name="티르빙 외형 가공석" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_twohand_sword_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38188" name="마르딜의 바람 외형 가공석" type="EtcItem">
+		<set name="icon" val="Icon.shape_shifting_magic_blunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38189" name="고등어 가공석 - 한손 도검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38190" name="트럼펫 피쉬 가공석 - 단검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dagger_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38191" name="상어 가공석 - 양손 도검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_twohand_sword_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38192" name="오징어 가공석 - 창" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_pole_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38193" name="해마 가공석 - 양손 지팡이" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_magic_twohand_blunt_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38194" name="랍스터 가공석 - 격투 무기" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dualfist_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38195" name="대게 가공석 - 활" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_bow_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38196" name="가재 가공석 - 석궁" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_twohand_crossbow_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38197" name="불가사리 가공석 - 시길" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="Icon.shape_shifting_sigil_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38198" name="거북이 가공석 - 방패" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38199" name="고등어 가공석 - 듀얼 소드" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.shape_shifting_dual_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+</list>

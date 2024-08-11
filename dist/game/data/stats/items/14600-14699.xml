@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="14611" name="루돌프 코" type="Armor">
+		<set name="icon" val="icon.Accessory_nose_of_rudolph_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="20160" />
+	</item>
+	<item id="14612" name="크리스마스 빨간 양말" type="EtcItem">
+		<set name="icon" val="icon.xmas_present_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="2858" level="1" /> 
+		</skills>
+	</item>
+	<item id="14614" name="산타의 버프 선물 세트" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="for_npc" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2856" level="1" /> 
+		</skills>
+	</item>
+	<item id="14616" name="산타클로스의 선물" type="EtcItem">
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2859" level="1" /> 
+		</skills>
+	</item>
+	<item id="14617" name="아가시온 봉인 팔찌 - 루돌프" type="Armor">
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="50" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="20160" />
+		<skills>
+			<skill id="5537" level="1" /> 
+			<skill id="3425" level="1" /> 
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> 
+		</skills>
+	</item>
+	<item id="14619" name="산타클로스의 무기 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14620" name="산타클로스의 무기 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14621" name="산타클로스의 시르 블레이드" type="Weapon">
+		<set name="icon" val="icon.weapon_sirr_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14622" name="산타클로스의 소드 오브 이포스" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_ipos_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14623" name="산타클로스의 바라키엘 엑스" type="Weapon">
+		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14624" name="산타클로스의 베헤모스의 소리굽쇠" type="Weapon">
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14625" name="산타클로스의 나가 스톰" type="Weapon">
+		<set name="icon" val="icon.weapon_naga_storm_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">45</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14626" name="산타클로스의 타이폰 스피어" type="Weapon">
+		<set name="icon" val="icon.weapon_tiphon_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+		</stats>
+	</item>
+	<item id="14627" name="산타클로스의 샤이드 보우" type="Weapon">
+		<set name="icon" val="icon.weapon_shyid_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="mp_consume" val="6" />
+		<set name="reuse_delay" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">116</stat>
+			<stat type="mAtk">42</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">227</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="14628" name="산타클로스의 소베크 허리케인" type="Weapon">
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">41</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14629" name="산타클로스의 테미스의 혀" type="Weapon">
+		<set name="icon" val="icon.weapon_tongue_of_themis_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3047" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">41</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14630" name="산타클로스의 핸드 오브 카브리오" type="Weapon">
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3047" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">50</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14631" name="산타클로스의 데이몬의 결정" type="Weapon">
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3047" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">56</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14632" name="산타클로스의 에끌레르 비쥬" type="Weapon">
+		<set name="icon" val="icon.weapon_greed_stinger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1300" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3426" level="1" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">46</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14633" name="산타클로스의 버스트 어벤져" type="Weapon">
+		<set name="icon" val="icon.weapon_soul_shooter_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1640" />
+		<set name="reuse_delay" val="400" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">56</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">400</stat>
+		</stats>
+	</item>
+	<item id="14634" name="산타클로스의 불트강" type="Weapon">
+		<set name="icon" val="icon.weapon_death_bringer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="8315" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">65</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14674" name="산타클로스의 탈룸 블레이드*다마스커스" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> 
+			<skill id="8316" level="1" /> 
+			<skill id="8317" level="1" /> 
+			<skill id="8318" level="1" /> 
+			<skill id="8319" level="1" /> 
+			<skill id="8320" level="1" /> 
+			<skill id="8321" level="1" /> 
+			<skill id="8322" level="1" /> 
+			<skill id="3045" level="16" type="ON_ENCHANT" type_value="4" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">61</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14676" name="아가시온의 새해 선물" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2865" level="1" /> 
+		</skills>
+	</item>
+	<item id="14677" name="아가시온의 새해 선물" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2866" level="1" /> 
+		</skills>
+	</item>
+</list>

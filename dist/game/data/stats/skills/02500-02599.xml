@@ -1,0 +1,1218 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="2500" toLevel="1" name="Beast Soulshot Compressed Pack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>6645</itemId>
+				<itemCount>500</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2501" toLevel="1" name="Beast Spiritshot Compressed Pack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>6646</itemId>
+				<itemCount>500</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2502" toLevel="1" name="Blessed Beast Spiritshot Compressed Pack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>6647</itemId>
+				<itemCount>500</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2505" toLevel="1" name="Chant of Combat">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10608</itemConsumeId> <!-- Forgotten Scroll - Chant of Combat -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1517</skillId> <!-- Chant of Combat -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>WARCRYER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1517</skillId> <!-- Chant of Combat -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2506" toLevel="1" name="Chant of Critical">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10609</itemConsumeId> <!-- Forgotten Scroll - Chant of Critical -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>72</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1518</skillId> <!-- Chant of Critical -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>WARCRYER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1518</skillId> <!-- Chant of Critical -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2507" toLevel="1" name="Chant of Blood Awakening">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10610</itemConsumeId> <!-- Forgotten Scroll - Chant of Blood Awakening -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>74</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1519</skillId> <!-- Chant of Blood Awakening -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>WARCRYER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1519</skillId> <!-- Chant of Blood Awakening -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2508" toLevel="1" name="Squash Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10640</itemConsumeId> <!-- Cloned Squash Seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>12774</npcId> <!-- Young Squash -->
+				<npcCount>1</npcCount>
+				<despawnDelay>180000</despawnDelay>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2509" toLevel="1" name="Large Squash Seed">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10641</itemConsumeId> <!-- Cloned Large Squash Seed -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>12777</npcId> <!-- Large Young Squash -->
+				<npcCount>1</npcCount>
+				<despawnDelay>180000</despawnDelay>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2510" toLevel="1" name="Wondrous Cubic">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>-1</reuseDelay> <!-- TODO: Daily Reuse Reset ? -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="22">
+						<item id="10635" count="1" /> <!-- Cube Fragment Armor - B -->
+					</item>
+					<item chance="15">
+						<item id="10636" count="1" /> <!-- Cube Fragment Armor - A -->
+					</item>
+					<item chance="16">
+						<item id="10637" count="1" /> <!-- Cube Fragment Armor - S -->
+					</item>
+					<item chance="3">
+						<item id="34851" count="1" /> <!-- Cube Fragment Armor - R -->
+					</item>
+					<item chance="11">
+						<item id="10644" count="1" /> <!-- Cube Fragment Weapon - B -->
+					</item>
+					<item chance="6">
+						<item id="10645" count="1" /> <!-- Cube Fragment Weapon - A -->
+					</item>
+					<item chance="5">
+						<item id="10646" count="1" /> <!-- Cube Fragment Weapon - S -->
+					</item>
+					<item chance="0.0065">
+						<item id="34852" count="1" /> <!-- Cube Fragment Weapon - R -->
+					</item>
+					<item chance="7">
+						<item id="21098" count="1" /> <!-- Shiny Cube Fragment Armor (B-grade) -->
+					</item>
+					<item chance="8">
+						<item id="21099" count="1" /> <!-- Shiny Cube Fragment Armor (A-grade) -->
+					</item>
+					<item chance="2">
+						<item id="21100" count="1" /> <!-- Shiny Cube Fragment Armor (S-grade) -->
+					</item>
+					<item chance="0.003">
+						<item id="34853" count="1" /> <!-- Shiny Cube Fragment Armor - R -->
+					</item>
+					<item chance="3">
+						<item id="21103" count="1" /> <!-- Shiny Cube Fragment Weapon (B-grade) -->
+					</item>
+					<item chance="1">
+						<item id="21104" count="1" /> <!-- Shiny Cube Fragment Weapon (A-grade) -->
+					</item>
+					<item chance="0.989">
+						<item id="21105" count="1" /> <!-- Shiny Cube Fragment Weapon (S-grade) -->
+					</item>
+					<item chance="0.0015">
+						<item id="34854" count="1" /> <!-- Shiny Cube Fragment Weapon - R -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2512" toLevel="1" name="Herb of HP Drain">
+		<!-- Bestows the ability to recover HP using some of the damage inflicted on the enemy with a certain probability. Effect 4. -->
+		<icon>BranchSys2.icon.etc_vampiric_rage_herb_i01</icon>
+		<abnormalInstant>true</abnormalInstant>
+		<abnormalLevel>4</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>VAMPIRIC_ATTACK</abnormalType>
+		<effectPoint>100</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>40</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>100</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2513" toLevel="1" name="Mysterious Herb">
+		<!-- Head is enlarged. -->
+		<icon>icon.skill2513</icon>
+		<abnormalInstant>true</abnormalInstant>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>BIG_HEAD</abnormalType>
+		<abnormalVisualEffect>BIG_HEAD</abnormalVisualEffect>
+		<activateRate>0</activateRate>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<trait>ETC</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CannotUseInTransform">
+				<transformId>103</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="HpRegen">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2514" toLevel="1" name="Herb of Critical Attack - Damage">
+		<!-- Critical Damage is increased temporarily. Effect 3. -->
+		<icon>BranchSys2.icon.etc_crt_force_herb_i01</icon>
+		<abnormalInstant>true</abnormalInstant>
+		<abnormalLevel>3</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<effectPoint>100</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>48</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>100</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2515" toLevel="1" name="Lucky Clover (D-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2516" toLevel="1" name="Lucky Clover (C-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2517" toLevel="1" name="Lucky Clover (B-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2518" toLevel="1" name="Lucky Clover (A-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2519" toLevel="1" name="Lucky Clover (S-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2520" toLevel="1" name="Lucky Clover (D-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2521" toLevel="1" name="Lucky Clover (C-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2522" toLevel="1" name="Lucky Clover (B-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2523" toLevel="1" name="Lucky Clover (A-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2524" toLevel="1" name="Lucky Clover (S-grade)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2525" toLevel="1" name="Scroll of Escape: Kamael Village">
+		<hitTime>10000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12753</itemConsumeId> <!-- Kamael Village Teleportation Scroll -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>-120050</x>
+				<y>44500</y>
+				<z>360</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2526" toLevel="1" name="Evasion Counter">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12768</itemConsumeId> <!-- Forgotten Scroll - Evasion Counter -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>74</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>818</skillId> <!-- Evasion Counter -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ABYSS_WALKER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>818</skillId> <!-- Evasion Counter -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2527" toLevel="1" name="Evasion Chance">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12769</itemConsumeId> <!-- Forgotten Scroll - Evasion Chance -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>74</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>819</skillId> <!-- Evasion Chance -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>PLAINS_WALKER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>819</skillId> <!-- Evasion Chance -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2528" toLevel="1" name="Evasion Haste">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12770</itemConsumeId> <!-- Forgotten Scroll - Evasion Haste -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>74</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>820</skillId> <!-- Evasion Haste -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>TREASURE_HUNTER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>820</skillId> <!-- Evasion Haste -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2529" toLevel="1" name="Shadow Step">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12771</itemConsumeId> <!-- Forgotten Scroll - Shadow Step -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>TREASURE_HUNTER</item>
+					<item>PLAINS_WALKER</item>
+					<item>ABYSS_WALKER</item>
+					<item>ADVENTURER</item>
+					<item>WIND_RIDER</item>
+					<item>GHOST_HUNTER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>821</skillId> <!-- Shadow Step -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>821</skillId> <!-- Shadow Step -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2530" toLevel="1" name="Recovery Item (Battleground)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>12819</itemConsumeId> <!-- Recovery Spellbook for Combat Use -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>DEATH_PENALTY,-1</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2531" toLevel="1" name="Adventurer's Scroll of Escape">
+		<hitTime>20000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10650</itemConsumeId> <!-- Adventurer's Scroll of Escape -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2572" toLevel="1" name="Pathfinder's Reward">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13003</itemConsumeId> <!-- Pathfinder's Reward (D-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="3.2">
+						<item id="947" count="1" /> <!-- Scroll: Enchant Weapon (B-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2573" toLevel="1" name="Pathfinder's Reward">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13004</itemConsumeId> <!-- Pathfinder's Reward (C-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1.6111">
+						<item id="729" count="1" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2574" toLevel="1" name="Pathfinder's Reward">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13005</itemConsumeId> <!-- Pathfinder's Reward (B-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1.14">
+						<item id="959" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2575" toLevel="1" name="Pathfinder's Reward">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13006</itemConsumeId> <!-- Pathfinder's Reward (A-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="19.8">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="19.8">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="19.8">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="1.98">
+						<item id="959" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="0.1">
+						<item id="9442" count="1" /> <!-- Dynasty Sword -->
+					</item>
+					<item chance="0.1">
+						<item id="9443" count="1" /> <!-- Dynasty Blade -->
+					</item>
+					<item chance="0.1">
+						<item id="9444" count="1" /> <!-- Dynasty Phantom -->
+					</item>
+					<item chance="0.1">
+						<item id="9445" count="1" /> <!-- Dynasty Bow -->
+					</item>
+					<item chance="0.1">
+						<item id="9446" count="1" /> <!-- Dynasty Knife -->
+					</item>
+					<item chance="0.1">
+						<item id="9447" count="1" /> <!-- Dynasty Halberd -->
+					</item>
+					<item chance="0.1">
+						<item id="9448" count="1" /> <!-- Dynasty Cudgel -->
+					</item>
+					<item chance="0.1">
+						<item id="9449" count="1" /> <!-- Dynasty Mace -->
+					</item>
+					<item chance="0.1">
+						<item id="9450" count="1" /> <!-- Dynasty Bagh-Nakh -->
+					</item>
+					<item chance="0.1">
+						<item id="10252" count="1" /> <!-- Dynasty Staff -->
+					</item>
+					<item chance="0.1">
+						<item id="10253" count="1" /> <!-- Dynasty Crusher -->
+					</item>
+					<item chance="1">
+						<item id="15645" count="1" /> <!-- Sealed Moirai Helmet Piece -->
+					</item>
+					<item chance="1">
+						<item id="15646" count="1" /> <!-- Sealed Moirai Leather Helmet Piece -->
+					</item>
+					<item chance="1">
+						<item id="15647" count="1" /> <!-- Sealed Moirai Circlet Piece -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2576" toLevel="1" name="Pathfinder's Reward">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13007</itemConsumeId> <!-- Pathfinder's Reward (S-Grade) -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="26.4">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="26.4">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="26.4">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="3.84">
+						<item id="959" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="0.13">
+						<item id="10215" count="1" /> <!-- Icarus Sawsword -->
+					</item>
+					<item chance="0.13">
+						<item id="10216" count="1" /> <!-- Icarus Disperser -->
+					</item>
+					<item chance="0.13">
+						<item id="10217" count="1" /> <!-- Icarus Spirit -->
+					</item>
+					<item chance="0.13">
+						<item id="10218" count="1" /> <!-- Icarus Heavy Arms -->
+					</item>
+					<item chance="0.13">
+						<item id="10219" count="1" /> <!-- Icarus Trident -->
+					</item>
+					<item chance="0.13">
+						<item id="10220" count="1" /> <!-- Icarus Hammer -->
+					</item>
+					<item chance="0.13">
+						<item id="10221" count="1" /> <!-- Icarus Hand -->
+					</item>
+					<item chance="0.13">
+						<item id="10222" count="1" /> <!-- Icarus Hall -->
+					</item>
+					<item chance="0.13">
+						<item id="10223" count="1" /> <!-- Icarus Spitter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2577" toLevel="1" name="Instant Defense">
+		<!-- Becomes invincible momentarily. -->
+		<icon>icon.skill1418</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>INVINCIBILITY</abnormalType>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2578" toLevel="1" name="Cure Poison Paralyze">
+		<!-- Cures Poison Paralyze. -->
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>POISON,9</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2579" toLevel="1" name="Cure Death Clock">
+		<!-- Cures the Incense of Death. -->
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>DEATH_CLACK,1</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2580" toLevel="1" name="Vitality Replenishing Herb">
+		<!-- Restores Vitality points as you gain XP by hunting. -->
+		<icon>icon.skilltransform4</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>VP_UP</abnormalType>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>-1</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2581" toLevel="1" name="not_used">
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>-1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2582" toLevel="1" name="not_used">
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>-1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2583" toLevel="1" name="not_used">
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>-1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2584" toLevel="1" name="Item - Special Sound Crystal">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2585" toLevel="1" name="Item - Special Sound Crystal">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2586" toLevel="2" name="Vitality Replenishing Potion">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>
+					<value level="1">10000</value>
+					<value level="2">20000</value>
+				</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2587" toLevel="1" name="Increase number of teleport slots.">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13015</itemConsumeId> <!-- My Teleport Spellbook -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanBookmarkAddSlot">
+				<teleportBookmarkSlots>3</teleportBookmarkSlots>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="AddTeleportBookmarkSlot">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2588" toLevel="1" name="My Teleport">
+		<icon>icon.skill0000</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="TeleportToTeleportLocation" />
+		</effects>
+	</skill>
+	<skill id="2589" toLevel="1" name="Extra Pass: Kamaloka (Hall of the Abyss)">
+		<icon>icon.special_cube_i00</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13010</itemConsumeId> <!-- Extra Entrance Pass - Near Kamaloka -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="ResetInstanceEntry">
+				<instanceId>57;58;60;61;63;64;66;67;69;70;72</instanceId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2590" toLevel="1" name="Extra Pass: Near Kamaloka">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13011</itemConsumeId> <!-- Extra Entrance Pass - Near Kamaloka -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ResetInstanceEntry">
+				<instanceId>59;62;65;68;71</instanceId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2591" toLevel="1" name="Extra Pass: Kamaloka (Labyrinth of the Abyss)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13012</itemConsumeId> <!-- Extra Entrance Pass - Near Kamaloka -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="ResetInstanceEntry">
+				<instanceId>73;74;75;76;77;78;79;134</instanceId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2592" toLevel="1" name="Quick Healing Potion">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealPercent">
+				<power>30</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2594" toLevel="1" name="Scroll of Escape: Pailaka">
+		<hitTime>20000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13129</itemConsumeId> <!-- Scroll of Escape: Pailaka -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2595" toLevel="1" name="Gran Kain's Blessed Scroll of Escape">
+		<hitTime>200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13258</itemConsumeId> <!-- Gran Kain's Blessed Scroll of Escape -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2596" toLevel="1" name="Gran Kain's Blessed Scroll of Resurrection">
+		<castRange>400</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>13259</itemConsumeId> <!-- Gran Kain's Blessed Scroll of Resurrection -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<coolTime>500</coolTime>
+		<targetType>PC_BODY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpResurrection" />
+		</conditions>
+		<effects>
+			<effect name="Resurrection">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2597" toLevel="1" name="Gran Kain's Echo Crystal - Theme of Journey">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2598" toLevel="1" name="Gran Kain's Echo Crystal - Theme of Battle">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2599" toLevel="1" name="Gran Kain's Echo Crystal - Theme of Love">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+</list>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="90000" name="최고급 민첩의 염료(Dex+4 Con-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_dex" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90001" name="최고급 지능의 염료(Int+4 Men-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_int" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90002" name="최고급 지능의 염료(Int+4 Wit-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_int" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90003" name="최고급 정신의 염료(Men+4 Int-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_men" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90004" name="최고급 정신의 염료(Men+4 Wit-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_men" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90005" name="최고급 재치의 염료(Wit+4 Int-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_wit" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90006" name="최고급 재치의 염료(Wit+4 Men-2)" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.lv4_1_dye_wit" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="150" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90007" name="일반 생명의 돌" additionalName="이벤트" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_general_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="90008" name="죄의 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90009" name="죄의 형상" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90010" name="심연의 감옥 서쪽 심장부 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_dark_key_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90011" name="심연의 감옥 동쪽 심장부 열쇠" type="EtcItem">
+		<set name="icon" val="icon.etc_dark_key_i00" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90012" name="일반 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_general_i00" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+	</item>
+	<item id="90013" name="중급 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_special_i03" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+	</item>
+	<item id="90014" name="상급 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_rare_i03" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+	</item>
+	<item id="90015" name="최상급 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.etc_mineral_unique_i03" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+	</item>
+	<item id="90016" name="빛나는 생명의 돌" type="EtcItem">
+		<set name="icon" val="icon.renewal_mineral_r" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="LIFE_STONE" />
+	</item>
+	<item id="90017" name="무기 재료 상자 - A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90018" name="정예 몬스터 투기장 토큰" type="EtcItem">
+		<set name="icon" val="icon.etc_residence_token_royalguard" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90019" name="몬스터 투기장 토큰" type="EtcItem">
+		<set name="icon" val="icon.etc_residence_token_giantchaser" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90020" name="최고급 염료 상자" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_4_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90021" name="전사의 탈리스만 - 공격형" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.r90_sp_talisman_dr_mp_active" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="bodypart" val="deco1" />
+	</item>
+	<item id="90022" name="전사의 탈리스만 - 방어형" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.r99_talisman_pd_up_passive" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="bodypart" val="deco1" />
+	</item>
+	<item id="90023" name="벨트" type="Armor">
+		<set name="icon" val="icon.belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35040" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">10</stat>
+		</stats>
+	</item>
+	<item id="90024" name="천 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35041" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">10</stat>
+		</stats>
+	</item>
+	<item id="90025" name="가죽 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35042" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">10</stat>
+		</stats>
+	</item>
+	<item id="90026" name="강철 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35043" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">10</stat>
+		</stats>
+	</item>
+	<item id="90027" name="미스릴 벨트" type="Armor">
+		<set name="icon" val="icon.belt_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="500" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="35044" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">10</stat>
+		</stats>
+	</item>
+	<item id="90028" name="마법 핀" type="EtcItem">
+		<set name="icon" val="icon.pin_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="90029" name="중급 마법 핀" type="EtcItem">
+		<set name="icon" val="icon.pin_i01" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="90030" name="고급 마법 핀" type="EtcItem">
+		<set name="icon" val="icon.pin_i02" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="90031" name="상급 마법 핀" type="EtcItem">
+		<set name="icon" val="icon.pin_i03" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="90032" name="생명의 비약" type="EtcItem">
+		<set name="icon" val="icon.etc_super_hp_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90033" name="정신의 비약" type="EtcItem">
+		<set name="icon" val="icon.etc_super_mp_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90034" name="마법서 상자 - 3차 전직" type="EtcItem">
+		<set name="icon" val="icon.etc_readybox_silver" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90035" name="생명의 돌 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="FISH" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39203" level="1" /> 
+		</skills>
+	</item>
+	<item id="90036" name="용사의 탈리스만 - 공격형" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.r90_sp_talisman_dr_hp_active" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="talisman" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="35038" level="1" /> 
+		</skills>
+	</item>
+	<item id="90037" name="용사의 탈리스만 - 방어형" additionalName="30일 기간제" type="Armor">
+		<set name="icon" val="icon.r95_talisman_ca_down_active" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="talisman" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="35039" level="1" /> 
+		</skills>
+	</item>
+	<item id="90038" name="마법서 - 라이딩 골든 라이온" type="EtcItem">
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90039" name="마법서 - 라이딩 페가수스" type="EtcItem">
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90040" name="마법서 - 라이딩 세이버투스 쿠거" type="EtcItem">
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90041" name="마법서 - 라이딩 쿠쿠루" type="EtcItem">
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90042" name="마법서 - 라이딩 블랙 베어" type="EtcItem">
+		<set name="icon" val="icon.etc_spellbook_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90043" name="다크 어쌔신 변신 물약" type="EtcItem">
+		<set name="icon" val="icon.empty_bottle" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39205" level="1" /> 
+		</skills>
+	</item>
+	<item id="90044" name="차원의 축복" type="EtcItem">
+		<set name="icon" val="icon.etc_blessed_kalie_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<skills>
+			<skill id="39204" level="1" /> 
+		</skills>
+	</item>
+	<item id="90045" name="마력의 서판" type="EtcItem">
+		<set name="icon" val="icon.etc_hidden_1st_page_i00" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90046" name="비전서 - 벤젼스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90047" name="비전서 - 터치 오브 라이프" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90048" name="비전서 - 터치 오브 데스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90049" name="비전서 - 실드 오브 페이스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90050" name="비전서 - 실드 오브 새크리파이스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90051" name="비전서 - 인세인 크러셔" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90052" name="비전서 - 프로텍션 오브 에바" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90053" name="비전서 - 매스 라이트닝 스트라이크" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90054" name="비전서 - 리셋 무브먼트" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90055" name="비전서 - 크리티컬 운드" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90056" name="비전서 - 포커스 파워" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90057" name="비전서 - 포커스 챈스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90058" name="비전서 - 포커스 데스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90059" name="비전서 - 미라지" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90060" name="비전서 - 닷지 어택" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90061" name="비전서 - 카운터 어택" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90062" name="비전서 - 리얼 타겟" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90063" name="비전서 - 데스 스팅어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90064" name="비전서 - 플레임 호크" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90065" name="비전서 - 애로우 레인" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90066" name="비전서 - 고스트 피어싱" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90067" name="비전서 - 소닉 배리어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90068" name="비전서 - 언브레이커블 소닉" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90069" name="비전서 - 맥시멈 포커스 소닉" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90070" name="비전서 - 포스 배리어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90071" name="비전서 - 러시" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90072" name="비전서 - 맥시멈 포커스 포스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90073" name="비전서 - 디스트로이 로어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90074" name="비전서 - 오버 더 바디" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90075" name="비전서 - 데몰리션 임팩트" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90076" name="비전서 - 쇼크 블라스트" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90077" name="비전서 - 하울 스피어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90078" name="비전서 - 아머 크러쉬" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90079" name="비전서 - 스포일 크러쉬" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90080" name="비전서 - 파이널 시크릿" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90081" name="비전서 - 아케인 파워" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90082" name="비전서 - 파이어 보텍스 버스터" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90083" name="비전서 - 아이스 보텍스 크러셔" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90084" name="비전서 - 윈드 보텍스 슬러그" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90085" name="비전서 - 아케인 카오스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90086" name="비전서 - 아케인 실드" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90087" name="비전서 - 커스 오브 둠" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90088" name="비전서 - 커스 오브 어비스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90089" name="비전서 - 뱀피릭 미스트" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_red_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90090" name="비전서 - 송 오브 리뉴얼" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90091" name="비전서 - 송 오브 챔피언" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90092" name="비전서 - 송 오브 사일런스" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90093" name="비전서 - 송 오브 퓨리피케이션" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90094" name="비전서 - 댄스 오브 섀도우" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90095" name="비전서 - 댄스 오브 사이렌" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90096" name="비전서 - 댄스 오브 메두사" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90097" name="비전서 - 댄스 오브 버서커" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_blue_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90098" name="비전서 - 프로피시 오브 파이어" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_white_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="90099" name="비전서 - 블록 실드" type="EtcItem">
+		<set name="icon" val="icon.etc_magic_book_white_i00" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

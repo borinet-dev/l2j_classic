@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="47000" name="폴리네의 다이너스티 네크리스" additionalName="스킬 재사용 시간" type="Armor">
+		<set name="icon" val="icon.accessary_dynasty_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="76" />
+		</cond>
+		<skills>
+			<skill id="13934" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">108</stat>
+			<stat type="maxMp">46</stat>
+		</stats>
+	</item>
+	<item id="47001" name="폴리네의 다이너스티 이어링" additionalName="뱀피릭 레이지" type="Armor">
+		<set name="icon" val="icon.accessary_dynasty_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="76" />
+		</cond>
+		<skills>
+			<skill id="13935" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">81</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="47002" name="폴리네의 다이너스티 이어링" additionalName="소모MP" type="Armor">
+		<set name="icon" val="icon.accessary_dynasty_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="76" />
+		</cond>
+		<skills>
+			<skill id="13936" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">81</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="47003" name="폴리네의 다이너스티 링" additionalName="크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="76" />
+		</cond>
+		<skills>
+			<skill id="13937" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">54</stat>
+			<stat type="maxMp">23</stat>
+		</stats>
+	</item>
+	<item id="47004" name="폴리네의 다이너스티 링" additionalName="크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="76" />
+		</cond>
+		<skills>
+			<skill id="13938" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">54</stat>
+			<stat type="maxMp">23</stat>
+		</stats>
+	</item>
+	<item id="47005" name="낡은 아인하사드의 티셔츠" type="Armor">
+		<set name="icon" val="icon.etc_shirts_a_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13945" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">28</stat>
+		</stats>
+	</item>
+	<item id="47006" name="모험가를 위한 보급품" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47007" name="폴리네의 아포칼립스 셰이퍼" additionalName="사용안함" type="Weapon">
+		<set name="icon" val="icon.weapon_phasian_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">441</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47008" name="폴리네의 아포칼립스 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_pasis_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13939" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">519</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47009" name="폴리네의 아포칼립스 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_volver_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13940" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">632</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47010" name="폴리네의 아포칼립스 어벤져" type="Weapon">
+		<set name="icon" val="icon.weapon_raksilion_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13940" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">519</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47011" name="폴리네의 아포칼립스 파이터" type="Weapon">
+		<set name="icon" val="icon.weapon_kirche_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1550" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13940" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">632</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47012" name="폴리네의 아포칼립스 스토머" type="Weapon">
+		<set name="icon" val="icon.weapon_grave_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="2010" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="damage_range" val="0;0;66;120" />
+		<skills>
+			<skill id="3599" level="1" /> 
+			<skill id="13940" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">519</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47013" name="폴리네의 아포칼립스 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_spina_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="damage_range" val="0;0;10;0" />
+		<skills>
+			<skill id="13943" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1022</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47014" name="폴리네의 아포칼립스 슈트제" type="Weapon">
+		<set name="icon" val="icon.weapon_medianox_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1580" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13943" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">920</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47015" name="폴리네의 아포칼립스 버스터" additionalName="사용안함" type="Weapon">
+		<set name="icon" val="icon.weapon_imerose_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="13941" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">403</stat>
+			<stat type="mAtk">293</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47016" name="폴리네의 아포칼립스 캐스터" type="Weapon">
+		<set name="icon" val="icon.weapon_yuke_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="13941" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">415</stat>
+			<stat type="mAtk">293</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47017" name="폴리네의 아포칼립스 레트리뷰터" type="Weapon">
+		<set name="icon" val="icon.weapon_herencia_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1080" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="13944" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">505</stat>
+			<stat type="mAtk">322</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47018" name="폴리네의 아포칼립스 듀얼소드" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualsword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="13940" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">632</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47019" name="폴리네의 아포칼립스 듀얼대거" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualdagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2050" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="damage_range" val="0;0;44;120" />
+		<skills>
+			<skill id="13942" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">519</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47020" name="폴리네의 아포칼립스 듀얼블런트" additionalName="사용안함" type="Weapon">
+		<set name="icon" val="icon.weapon_r_dualblunt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">613</stat>
+			<stat type="mAtk">232</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="windPower">150</stat>
+		</stats>
+	</item>
+	<item id="47021" name="폴리네의 헬 헬멧" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.armor_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">130</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47022" name="폴리네의 헬 흉갑" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.armor_t601_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="7520" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">191</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47023" name="폴리네의 헬 각반" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.armor_t601_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="3170" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">119</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47024" name="폴리네의 헬 건틀렛" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.armor_t601_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47025" name="폴리네의 헬 부츠" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.armor_t601_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47026" name="폴리네의 헬 실드" additionalName="중갑용" type="Armor">
+		<set name="icon" val="icon.kratere_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1130" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="rEvas">-8</stat>
+			<stat type="rShld">20</stat>
+			<stat type="sDef">466</stat>
+		</stats>
+	</item>
+	<item id="47027" name="폴리네의 헬 레더 헬멧" additionalName="경갑용" type="Armor">
+		<set name="icon" val="icon.armor_leather_helmet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">130</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47028" name="폴리네의 헬 레더 아머" additionalName="경갑용" type="Armor">
+		<set name="icon" val="icon.armor_t602_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="4140" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">152</stat>
+			<stat type="rEvas">5</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47029" name="폴리네의 헬 레더 레깅스" additionalName="경갑용" type="Armor">
+		<set name="icon" val="icon.armor_t602_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="1320" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">95</stat>
+			<stat type="rEvas">3</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47030" name="폴리네의 헬 레더 글로브" additionalName="경갑용" type="Armor">
+		<set name="icon" val="icon.armor_t602_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47031" name="폴리네의 헬 레더 부츠" additionalName="경갑용" type="Armor">
+		<set name="icon" val="icon.armor_t602_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47032" name="폴리네의 헬 서클릿" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.armor_circlet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="head" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="530" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">130</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47033" name="폴리네의 헬 튜닉" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.armor_t603_u_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="chest" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="1750" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="mDef">41</stat>
+			<stat type="pDef">105</stat>
+			<stat type="maxMp">649</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47034" name="폴리네의 헬 호즈" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.armor_t603_l_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="bodypart" val="legs" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="SCALE_OF_DRAGON" />
+		<set name="weight" val="850" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="mDef">27</stat>
+			<stat type="pDef">65</stat>
+			<stat type="maxMp">427</stat>
+			<stat type="waterRes">60</stat>
+			<stat type="earthRes">60</stat>
+			<stat type="darkRes">60</stat>
+		</stats>
+	</item>
+	<item id="47035" name="폴리네의 헬 글로브" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.armor_t603_g_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="510" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47036" name="폴리네의 헬 슈즈" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.armor_t603_b_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="feet" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1070" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">87</stat>
+			<stat type="fireRes">60</stat>
+			<stat type="windRes">60</stat>
+			<stat type="holyRes">60</stat>
+		</stats>
+	</item>
+	<item id="47037" name="폴리네의 헬 시길" additionalName="로브용" type="Armor">
+		<set name="icon" val="icon.weapon_dynaksus_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="SIGIL" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="920" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">42</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="rEvas">-8</stat>
+		</stats>
+	</item>
+	<item id="47038" name="폴리네의 헬 목걸이" additionalName="스킬 재사용 시간" type="Armor">
+		<set name="icon" val="icon.r2_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<cond msgId="1518">
+			<player level="84" />
+		</cond>
+		<skills>
+			<skill id="13934" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">146</stat>
+			<stat type="maxMp">58</stat>
+		</stats>
+	</item>
+	<item id="47039" name="폴리네의 헬 귀걸이" additionalName="뱀피릭 레이지" type="Armor">
+		<set name="icon" val="icon.r2_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="84" />
+		</cond>
+		<skills>
+			<skill id="13935" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">109</stat>
+			<stat type="maxMp">43</stat>
+		</stats>
+	</item>
+	<item id="47040" name="폴리네의 헬 귀걸이" additionalName="소모MP" type="Armor">
+		<set name="icon" val="icon.r2_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="84" />
+		</cond>
+		<skills>
+			<skill id="13936" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">109</stat>
+			<stat type="maxMp">43</stat>
+		</stats>
+	</item>
+	<item id="47041" name="폴리네의 헬 반지" additionalName="크리티컬 대미지" type="Armor">
+		<set name="icon" val="icon.r2_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="84" />
+		</cond>
+		<skills>
+			<skill id="13937" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">73</stat>
+			<stat type="maxMp">29</stat>
+		</stats>
+	</item>
+	<item id="47042" name="폴리네의 헬 반지" additionalName="크리티컬 확률" type="Armor">
+		<set name="icon" val="icon.r2_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="1518">
+			<player level="84" />
+		</cond>
+		<skills>
+			<skill id="13938" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">73</stat>
+			<stat type="maxMp">29</stat>
+		</stats>
+	</item>
+	<item id="47043" name="벨로아의 보급품" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="47084" min="1" max="1" chance="100" /> 
+			<item id="19442" min="2000" max="2000" chance="100" /> 
+			<item id="17754" min="3000" max="3000" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47044" name="수색대원의 벨트" type="Armor">
+		<set name="icon" val="icon.event_energy_belt_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="440" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<skills>
+			<skill id="13946" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pDef">25</stat>
+		</stats>
+	</item>
+	<item id="47045" name="차원력 유지 장치" type="EtcItem">
+		<set name="icon" val="icon.etc_medicine_of_growth_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="47046" name="악어 가죽" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_green_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47047" name="파괴된 가고일 조각" type="EtcItem">
+		<set name="icon" val="icon.etc_debris_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47048" name="바실리스크의 비늘" type="EtcItem">
+		<set name="icon" val="icon.etc_scale_of_medusa_red_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47049" name="마훔 족 인식표" type="EtcItem">
+		<set name="icon" val="icon.etc_totem_necklace_black_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47050" name="포자 주머니" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47051" name="평원 마물의 증표" type="EtcItem">
+		<set name="icon" val="icon.etc_leash_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47052" name="평원 분지 마물의 증표" type="EtcItem">
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47053" name="학살자의 증표" type="EtcItem">
+		<set name="icon" val="icon.etc_ketra_friendship_1_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47054" name="티미니엘의 품 이동 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17945" level="2" /> 
+		</skills>
+	</item>
+	<item id="47055" name="티미니엘의 품 이동 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17946" level="2" /> 
+		</skills>
+	</item>
+	<item id="47056" name="하르나크의 지하유적 이동 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17991" level="1" /> 
+		</skills>
+	</item>
+	<item id="47057" name="피의 늪지대 이동 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17989" level="1" /> 
+		</skills>
+	</item>
+	<item id="47058" name="카르티아의 미궁 이동 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17992" level="1" /> 
+		</skills>
+	</item>
+	<item id="47059" name="이동 주문서 - 영혼의 섬" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17997" level="1" /> 
+		</skills>
+	</item>
+	<item id="47060" name="이동 주문서 - 실렌의 봉인" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17999" level="1" /> 
+		</skills>
+	</item>
+	<item id="47061" name="이동 주문서 - 사교의 신전" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="18124" level="1" /> 
+		</skills>
+	</item>
+	<item id="47062" name="이동 주문서 - 사왕의 국립묘지" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="18000" level="1" /> 
+		</skills>
+	</item>
+	<item id="47063" name="이동 주문서 - 화염의 늪" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="18220" level="1" /> 
+		</skills>
+	</item>
+	<item id="47064" name="축복받은 폴리네의 카데이라 중갑 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys.br_fortuna_box_s_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46864" min="1" max="1" chance="100" /> 
+			<item id="46865" min="1" max="1" chance="100" /> 
+			<item id="46866" min="1" max="1" chance="100" /> 
+			<item id="46867" min="1" max="1" chance="100" /> 
+			<item id="46868" min="1" max="1" chance="100" /> 
+			<item id="46869" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47065" name="축복받은 폴리네의 카데이라 경갑 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys.br_fortuna_box_s_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46870" min="1" max="1" chance="100" /> 
+			<item id="46871" min="1" max="1" chance="100" /> 
+			<item id="46872" min="1" max="1" chance="100" /> 
+			<item id="46873" min="1" max="1" chance="100" /> 
+			<item id="46874" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47066" name="축복받은 폴리네의 카데이라 로브 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys.br_fortuna_box_s_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46875" min="1" max="1" chance="100" /> 
+			<item id="46876" min="1" max="1" chance="100" /> 
+			<item id="46877" min="1" max="1" chance="100" /> 
+			<item id="46878" min="1" max="1" chance="100" /> 
+			<item id="46879" min="1" max="1" chance="100" /> 
+			<item id="46880" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47067" name="축복받은 폴리네의 카데이라 액세서리 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys.br_fortuna_box_s_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46881" min="1" max="1" chance="100" /> 
+			<item id="46882" min="1" max="1" chance="100" /> 
+			<item id="46883" min="1" max="1" chance="100" /> 
+			<item id="46884" min="1" max="1" chance="100" /> 
+			<item id="46885" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47068" name="PC방 용 - 폴리네의 카데이라 중갑 상자" additionalName="4시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46898" min="1" max="1" chance="100" /> 
+			<item id="46899" min="1" max="1" chance="100" /> 
+			<item id="46897" min="1" max="1" chance="100" /> 
+			<item id="46900" min="1" max="1" chance="100" /> 
+			<item id="46901" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47069" name="PC방 용 - 폴리네의 카데이라 경갑 상자" additionalName="4시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46904" min="1" max="1" chance="100" /> 
+			<item id="46905" min="1" max="1" chance="100" /> 
+			<item id="46903" min="1" max="1" chance="100" /> 
+			<item id="46906" min="1" max="1" chance="100" /> 
+			<item id="46907" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47070" name="PC방 용 - 폴리네의 카데이라 로브 상자" additionalName="4시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46909" min="1" max="1" chance="100" /> 
+			<item id="46910" min="1" max="1" chance="100" /> 
+			<item id="46908" min="1" max="1" chance="100" /> 
+			<item id="46911" min="1" max="1" chance="100" /> 
+			<item id="46912" min="1" max="1" chance="100" /> 
+			<item id="46913" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47071" name="PC방 용 - 폴리네의 카데이라 액세서리 상자" additionalName="4시간 기간제" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="46914" min="1" max="1" chance="100" /> 
+			<item id="46915" min="1" max="1" chance="100" /> 
+			<item id="46916" min="1" max="1" chance="100" /> 
+			<item id="46917" min="1" max="1" chance="100" /> 
+			<item id="46918" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="47072" name="축복받은 폴리네의 판타스마 듀얼소드 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47073" name="축복받은 폴리네의 판타스마 커터 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47074" name="축복받은 폴리네의 판타스마 슬래셔 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47075" name="축복받은 폴리네의 판타스마 어벤져 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47076" name="축복받은 폴리네의 판타스마 파이터 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47077" name="축복받은 폴리네의 판타스마 스토머 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47078" name="축복받은 폴리네의 판타스마 스로워 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47079" name="축복받은 폴리네의 판타스마 슈트제 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47080" name="축복받은 폴리네의 판타스마 듀얼대거 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47081" name="축복받은 폴리네의 판타스마 캐스터 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47082" name="축복받은 폴리네의 판타스마 레트리뷰터 상자" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_lucky_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="47083" name="보르메튜의 선물 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="47084" name="벨로아의 선물 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="36152" min="1" max="1" chance="33" /> 
+			<item id="47085" min="1" max="1" chance="33" /> 
+			<item id="47086" min="1" max="1" chance="33" /> 
+		</capsuled_items>
+	</item>
+	<item id="47085" name="각인의 비전서 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="30297" min="1" max="1" chance="33" /> 
+			<item id="30298" min="1" max="1" chance="33" /> 
+			<item id="30299" min="1" max="1" chance="33" /> 
+		</capsuled_items>
+	</item>
+	<item id="47086" name="베니르의 탈리스만 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="39634" min="1" max="1" chance="60" /> 
+			<item id="39635" min="1" max="1" chance="35" /> 
+			<item id="39636" min="1" max="1" chance="5" /> 
+		</capsuled_items>
+	</item>
+	<item id="47087" name="보석함" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="47088" name="아나킴의 힘이 담긴 크리스탈" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_PvE_empty" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="47089" name="아나킴 집혼석" additionalName="1단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47090" name="아나킴 집혼석" additionalName="2단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47091" name="아나킴 집혼석" additionalName="3단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47092" name="아나킴 집혼석" additionalName="4단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47093" name="아나킴 집혼석" additionalName="5단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47094" name="아나킴 집혼석" additionalName="6단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47095" name="아나킴 집혼석" additionalName="7단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47096" name="아나킴 집혼석" additionalName="8단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47097" name="아나킴 집혼석" additionalName="9단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47098" name="아나킴 집혼석" additionalName="10단계" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_pve" />
+		<set name="etcitem_type" val="ENSOUL_STONE" />
+		<set name="weight" val="20" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="CRYSTAL" />
+	</item>
+	<item id="47099" name="릴리스의 힘이 담긴 크리스탈" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_PvP_empty" />
+		<set name="weight" val="5" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+</list>

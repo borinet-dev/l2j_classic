@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/npcs.xsd">
+	<npc id="22678" level="86" type="Monster" name="도굴꾼 소환사" title="둔기류 마법 내성">
+		<parameters>
+			<minions name="Privates1">
+				<npc id="22683" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<minions name="Privates2">
+				<npc id="22684" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<skill name="Skill01_ID" id="4254" level="9" />
+			<skill name="SelfBuff" id="6145" level="1" />
+			<skill name="SelfDeBuff1" id="5699" level="7" />
+			<skill name="SelfDeBuff2" id="6146" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="603770" sp="148000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="34610.19873817035" hpRegen="8.5" mp="1708.02919708029" mpRegen="3" />
+			<attack physical="7897.05882352941" magical="12644.681721699323" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4450.882352941176" magical="1453.245106468762" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4254" level="9" /> <!-- Prominence -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4411" level="9" /> <!-- Slightly Weak M. Atk. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="5699" level="7" /> <!-- Decrease P. Def. -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="6146" level="1" /> <!-- Forfeiture of Will -->
+			<skill id="30263" level="9" /> <!-- 공격 마법 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="MAGE" clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill primaryId="6145" longRangeId="4254" longRangeChance="30" />
+			<clanList>
+				<clan>ROBBER</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19347" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 셰이퍼 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19347" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 셰이퍼 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22679" level="87" type="Monster" name="도굴꾼 마법사" title="둔기류 마법 내성">
+		<parameters>
+			<minions name="Privates1">
+				<npc id="22685" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<minions name="Privates2">
+				<npc id="22686" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<skill name="Skill01_ID" id="4254" level="9" />
+			<skill name="SelfBuff" id="6145" level="1" />
+			<skill name="SelfDeBuff1" id="5699" level="7" />
+			<skill name="SelfDeBuff2" id="6146" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="634140" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.62768031189" magical="12671.744775415187" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4500.292397660819" magical="1456.043418116869" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4254" level="9" /> <!-- Prominence -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4411" level="9" /> <!-- Slightly Weak M. Atk. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="5699" level="7" /> <!-- Decrease P. Def. -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="6146" level="1" /> <!-- Forfeiture of Will -->
+			<skill id="30263" level="9" /> <!-- 공격 마법 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="MAGE" clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill primaryId="6145" longRangeId="4254" longRangeChance="30" />
+			<clanList>
+				<clan>ROBBER</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.0072" /> <!-- 파멸 R 젤 -->
+				<item id="19348" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 커터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19348" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 커터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22680" level="86" type="Monster" name="도굴단 일꾼" title="한손검 무기 내성">
+		<parameters>
+			<skill name="Skill01_ID" id="5082" level="1" />
+			<skill name="SelfBuff" id="6145" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="520460" sp="128000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="34610.19873817035" hpRegen="8.5" mp="1708.02919708029" mpRegen="3" />
+			<attack physical="7397.2613838924" magical="12644.909013331973" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4150.308291991495" magical="1420.213136059793" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5082" level="1" /> <!-- Spinning Slasher -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="30263" level="1" /> <!-- 한손검 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill primaryId="6145" shortRangeId="5082" shortRangeChance="15" />
+			<clanList>
+				<clan>ROBBER</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19349" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 슬래셔 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19349" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 슬래셔 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22681" level="87" type="Monster" name="도굴꾼 전사" title="양손검 무기 내성">
+		<parameters>
+			<param name="DeBuffProb" value="2000" />
+			<skill name="Skill01_ID" id="5082" level="1" />
+			<skill name="DeBuff" id="6168" level="9" />
+			<skill name="SelfBuff" id="6145" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="546640" sp="138000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.34978170863" magical="12671.330034207694" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4190.925315296273" magical="1422.646450536408" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5082" level="1" /> <!-- Spinning Slasher -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="6168" level="9" /> <!-- Stun -->
+			<skill id="30263" level="2" /> <!-- 양손검 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill primaryId="6145" shortRangeId="6168" shortRangeChance="15" />
+			<clanList>
+				<clan>ROBBER</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.0072" /> <!-- 파멸 R 젤 -->
+				<item id="19350" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 어벤져 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19350" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 어벤져 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22682" level="87" type="Monster" name="도굴꾼 광전사" title="이도류 무기 내성">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="4643" level="9" />
+			<skill name="SelfBuff1" id="6145" level="1" />
+			<skill name="SelfBuff2" id="4048" level="2" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="604570" sp="148000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.49210746164" magical="12671.330034207694" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4200.129270544783" magical="1422.646450536408" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="120" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4048" level="2" /> <!-- Dash -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4643" level="9" /> <!-- Decrease Speed -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="30263" level="3" /> <!-- 이도류 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill primaryId="6145" shortRangeId="4643" shortRangeChance="15" />
+			<clanList>
+				<clan>ROBBER</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19351" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 파이터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19351" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 파이터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22683" level="86" type="Monster" name="어둠의 소환수" title="단검류 무기 내성">
+		<parameters>
+			<skill name="Skill01_ID" id="4643" level="9" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="662690" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="34610.19873817035" hpRegen="8.5" mp="1708.02919708029" mpRegen="3" />
+			<attack physical="7397.24310776942" magical="12644.909013331973" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4460.1210571185" magical="1453.245106468762" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="48" />
+				<run ground="140" />
+			</speed>
+			<hitTime>610</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4643" level="9" /> <!-- Decrease Speed -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="4" /> <!-- 단검 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill shortRangeId="4643" />
+			<clanList>
+				<clan>DARKNESS</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.0072" /> <!-- 파멸 R 젤 -->
+				<item id="19352" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 스토머 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19352" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 스토머 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="7" />
+			<height normal="33" />
+		</collision>
+	</npc>
+	<npc id="22684" level="86" type="Monster" name="어둠의 소환수" title="둔기류 무기 내성">
+		<parameters>
+			<skill name="Skill01_ID" id="4573" level="9" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="627850" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="34610.19873817035" hpRegen="8.5" mp="1708.02919708029" mpRegen="3" />
+			<attack physical="7397.24310776942" magical="12644.909013331973" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4460.1210571185" magical="1453.245106468762" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="140" />
+			</speed>
+			<hitTime>540</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4573" level="9" /> <!-- Sonic Blaster -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="5" /> <!-- 둔기류 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill primaryId="4573" />
+			<clanList>
+				<clan>DARKNESS</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19353" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 스로워 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19353" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 스로워 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="10" />
+			<height normal="25" />
+		</collision>
+	</npc>
+	<npc id="22685" level="87" type="Monster" name="어둠의 소환수" title="격투 무기 내성">
+		<parameters>
+			<skill name="Skill01_ID" id="4573" level="9" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="659440" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.49210746164" magical="12671.330034207694" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4500.029663530808" magical="1456.043418116869" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="150" />
+			</speed>
+			<hitTime>590</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4573" level="9" /> <!-- Sonic Blaster -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="6" /> <!-- 격투 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill primaryId="4573" />
+			<clanList>
+				<clan>DARKNESS</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.0072" /> <!-- 파멸 R 젤 -->
+				<item id="19355" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 버스터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19355" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 버스터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="10" />
+			<height normal="40" />
+		</collision>
+	</npc>
+	<npc id="22686" level="87" type="Monster" name="어둠의 소환수" title="창 무기 내성">
+		<parameters>
+			<skill name="Skill01_ID" id="4573" level="9" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="659440" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.49210746164" magical="12671.330034207694" random="10" critical="40" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="4500.029663530808" magical="1456.043418116869" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="160" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="7" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="11" /> <!-- Spear -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4573" level="9" /> <!-- Sonic Blaster -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="7" /> <!-- 창 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill primaryId="4573" />
+			<clanList>
+				<clan>DARKNESS</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19356" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 캐스터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19356" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 캐스터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="12.5" />
+			<height normal="33.5" />
+		</collision>
+	</npc>
+	<npc id="22687" level="86" type="Monster" name="광산의 부유령" title="활 무기 내성">
+		<parameters>
+			<param name="DeBuffProb" value="2000" />
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="4032" level="9" />
+			<skill name="DeBuff" id="4034" level="9" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>FEMALE</sex>
+		<acquire exp="593030" sp="148000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="34610.19873817035" hpRegen="8.5" mp="1708.02919708029" mpRegen="3" />
+			<attack physical="7397.2613838924" magical="12644.909013331973" random="20" critical="35" accuracy="30" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="4450.864661654135" magical="1453.245106468762" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="160" />
+			</speed>
+			<hitTime>560</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4032" level="9" /> <!-- Power Strike -->
+			<skill id="4034" level="9" /> <!-- Ice Bolt -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="8" /> <!-- 활 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill primaryId="4032" shortRangeId="4034" shortRangeChance="15" />
+			<clanList>
+				<clan>MINE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33479" min="1" max="1" chance="0.0072" /> <!-- 파멸 R 젤 -->
+				<item id="19357" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 레트리뷰터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33478" min="1" max="1" chance="0.0093" />	<!--파멸 무기 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19357" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 레트리뷰터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="10" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+	<npc id="22688" level="87" type="Monster" name="광산의 악령" title="양손검 무기 내성">
+		<parameters>
+			<param name="SelfRangeBuffProb" value="3333" />
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="4582" level="9" />
+			<skill name="SelfRangeBuff" id="5080" level="1" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="622860" sp="148000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.34978170863" magical="12671.330034207694" random="5" critical="40" accuracy="35" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="4490.997801521347" magical="1456.043418116869" />
+			<attribute>
+				<attack type="DARK" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="70" />
+				<run ground="155" />
+			</speed>
+			<hitTime>740</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4582" level="9" /> <!-- Poison -->
+			<skill id="5080" level="1" /> <!-- Haste Might -->
+			<skill id="5467" level="1" /> <!-- Dark Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="2" /> <!-- 양손검 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill shortRangeId="4582" shortRangeChance="15" />
+			<clanList>
+				<clan>MINE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19351" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 파이터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19351" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 파이터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="40" />
+		</collision>
+	</npc>
+	<npc id="22689" level="87" type="Monster" name="광산벌레" title="공격 마법 내성">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="SelfBuff" id="6145" level="1" />
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire exp="540240" sp="88000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36440.16403785489" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="5560.49210746164" magical="12671.330034207694" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4090.910589145039" magical="1406.043418116869" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="60" />
+			</speed>
+			<hitTime>350</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4116" level="9" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4408" level="8" /> <!-- HP Increase (1/ 4x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="6145" level="1" /> <!-- Earth Wyrm's Evil Aura -->
+			<skill id="30263" level="9" /> <!-- 공격 마법 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="400" clanHelpRange="300" isAggressive="true">
+			<skill primaryId="6145" />
+			<clanList>
+				<clan>MINE</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="9" />
+		</collision>
+	</npc>
+	<npc id="22690" level="87" type="Monster" name="어스웜의 후예" title="둔기류 무기 내성">
+		<parameters>
+			<param name="DeBuffProb" value="5000" />
+			<skill name="Skill01_ID" id="4582" level="9" />
+			<skill name="DeBuff" id="4035" level="9" />
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire exp="653350" sp="158000" />
+		<stats str="88" int="34" dex="42" wit="66" con="78" men="12">
+			<vitals hp="36430.53312302839" hpRegen="8.5" mp="1743.71451743715" mpRegen="3" />
+			<attack physical="7456.34978170863" magical="12671.330034207694" random="10" critical="40" accuracy="35" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4500.292397660819" magical="1456.043418116869" />
+			<attribute>
+				<attack type="EARTH" value="100" />
+				<defence fire="100" water="100" wind="50" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="25" />
+				<run ground="100" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4035" level="9" /> <!-- Poison -->
+			<skill id="4379" level="4" /> <!-- Spear Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+			<skill id="4582" level="9" /> <!-- Poison -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="5601" level="11" /> <!-- Melee Attack Resistance -->
+			<skill id="30263" level="5" /> <!-- 둔기류 무기 내성 -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="400" isAggressive="true">
+			<skill shortRangeId="4582" shortRangeChance="15" longRangeId="4035" longRangeChance="15" />
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="12887" max="51069" chance="100" /> <!-- Adena -->
+				<item id="1865" min="1" max="2" chance="10.1805" />	<!--연마제 -->
+				<item id="1866" min="1" max="2" chance="10.1755" />	<!--스웨이드 -->
+				<item id="1867" min="1" max="2" chance="10.1705" />	<!--피혁 -->
+				<item id="1869" min="4" max="12" chance="8.717" /> <!-- Iron Ore -->
+				<item id="1872" min="1" max="2" chance="10.1655" />	<!--동물뼈조각 -->
+				<item id="1873" min="2" max="6" chance="5.603" /> <!-- Silver Nugget -->
+				<item id="1874" min="1" max="1" chance="9.686" /> <!-- Oriharukon Ore -->
+				<item id="1875" min="1" max="2" chance="10.1605" />	<!--정화의 돌 -->
+				<item id="1870" min="3" max="9" chance="24.44" /> <!-- Coal -->
+				<item id="1875" min="1" max="1" chance="9.686" /> <!-- Stone of Purity -->
+				<item id="1876" min="1" max="2" chance="10.1595" />	<!--미스릴 원석 -->
+				<item id="1877" min="1" max="2" chance="10.1495" />	<!--아다만타이트 -->
+				<item id="1880" min="1" max="1" chance="6.956" /> <!-- Steel -->
+				<item id="19315" min="1" max="1" chance="1.9" /> <!-- 제작 용해제 -->
+				<item id="90015" min="1" max="3" chance="1.02" /> <!-- 최상급 생명의 돌 -->
+				<item id="41078" min="1" max="3" chance="1.01" /> <!-- 최상급 액세서리용 생명의 돌 -->
+				<item id="9557" min="1" max="1" chance="0.005" /> <!-- Holy Crystal -->
+				<item id="9551" min="1" max="3" chance="0.05" /> <!-- Holy Stone -->
+				<item id="33478" min="1" max="1" chance="0.0053" />	<!--파멸 무기 -->
+				<item id="19348" min="1" max="1" chance="0.02" /> <!-- 레시피: 미확인의 아포칼립스 커터 (60%) -->
+			</drop>
+			<spoil>
+				<item id="9557" min="1" max="1" chance="2.375" /> <!-- Holy Crystal -->
+				<item id="33479" min="1" max="1" chance="0.0127" />	<!--파멸 갑옷 -->
+				<item id="1867" min="7" max="21" chance="18.799" /> <!-- Animal Skin -->
+				<item id="1872" min="4" max="12" chance="16.99" /> <!-- Animal Bone -->
+				<item id="1881" min="1" max="1" chance="12.21" /> <!-- Coarse Bone Powder -->
+				<item id="1873" min="1" max="1" chance="79.83" /> <!-- Silver Nugget -->
+				<item id="1865" min="1" max="1" chance="91.025" /> <!-- Varnish -->
+				<item id="1864" min="1" max="1" chance="88.5" /> <!-- Stem -->
+				<item id="4048" min="1" max="1" chance="7.35" /> <!-- Durable Braid -->
+				<item id="4046" min="1" max="1" chance="5.25" /> <!-- Metallic Fiber -->
+				<item id="4044" min="1" max="1" chance="18.5" /> <!-- Thons -->
+				<item id="4041" min="1" max="1" chance="13.371" /> <!-- Mold Hardener -->
+				<item id="19348" min="1" max="1" chance="0.03" /> <!-- 레시피: 미확인의 아포칼립스 커터 (60%) -->
+			</spoil>
+		</dropLists>
+		<collision>
+			<radius normal="35" />
+			<height normal="35" />
+		</collision>
+	</npc>
+</list>

@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="91000" name="래쉬의 보급품 - 바이움" type="EtcItem">
+		<set name="icon" val="icon.bm_pirate_treasure_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91001" name="3레벨 보석 3종 셋트함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91002" name="4레벨 보석 5종 셋트함" type="EtcItem">
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91003" name="아가시온 팔찌 - 1단계" additionalName="1일 기간제" type="Armor">
+		<set name="icon" val="icon.agathion_magmeld_teleport" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
+		<skills>
+			<skill id="51025" level="1" /> 
+		</skills>
+	</item>
+	<item id="91004" name="속죄자 아가시온" type="Armor">
+		<set name="icon" val="icon.etc_leash_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="agathion" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="50" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91005" name="속죄의 증거" type="EtcItem">
+		<set name="icon" val="icon.etc_powder_white_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="91006" name="손상된 자켄의 귀걸이" type="Armor">
+		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="gloves" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="mDef">50</stat>
+		</stats>
+	</item>
+	<item id="91007" name="래쉬의 보급품 - 자켄" type="EtcItem">
+		<set name="icon" val="icon.bm_pirate_king_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91008" name="드래곤의 유물 상자" type="EtcItem">
+		<set name="icon" val="icon.card_event_blue_box" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91009" name="화룡의 유물 상자" type="EtcItem">
+		<set name="icon" val="icon.card_event_red_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91010" name="지룡의 유물 상자" type="EtcItem">
+		<set name="icon" val="icon.card_event_black_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91011" name="드래곤의 염료 상자" additionalName="3차 전직" type="EtcItem">
+		<set name="icon" val="icon.card_event_gold_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91012" name="최상급 A그레이드 무기 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91013" name="무기 재료/레시피 상자 - 최상급 A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91014" name="무기 레시피 상자 - 최상급 A그레이드" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91015" name="시르 블레이드 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91016" name="소드 오브 이포스 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91017" name="바라키엘 엑스 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91018" name="베헤모스의 소리굽쇠 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91019" name="나가 스톰 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91020" name="타이폰 스피어 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91021" name="샤이드 보우 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91022" name="소베크 허리케인 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91023" name="테미스의 혀 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91024" name="핸드 오브 카브리오 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91025" name="데이몬의 결정 재료/레시피 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91026" name="드래곤의 심장" type="EtcItem">
+		<set name="icon" val="icon.etc_heart_gragon" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91027" name="드래곤의 영약" type="EtcItem">
+		<set name="icon" val="icon.bm_dragon_posion_brave" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="91028" name="멜리사의 상급 회복 물약" additionalName="Not Available" type="EtcItem">
+		<set name="icon" val="icon.bm_melisa_hp_potion" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91029" name="히든 박스" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="91030" name="정령의 축복" type="EtcItem">
+		<set name="icon" val="icon.elemental_bless_scrl_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<skills>
+			<skill id="54028" level="1" /> 
+		</skills>
+	</item>
+	<item id="91031" name="물 정령 진화석" type="EtcItem">
+		<set name="icon" val="icon.elemental_evol_stone_water_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91032" name="불 정령 진화석" type="EtcItem">
+		<set name="icon" val="icon.elemental_evol_stone_fire_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91033" name="바람 정령 진화석" type="EtcItem">
+		<set name="icon" val="icon.elemental_evol_stone_wind_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91034" name="대지 정령 진화석" type="EtcItem">
+		<set name="icon" val="icon.elemental_evol_stone_earth_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91035" name="물 정령 원석" type="EtcItem">
+		<set name="icon" val="icon.elemental_water_stone_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="AddSpiritExp" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91036" name="불 정령 원석" type="EtcItem">
+		<set name="icon" val="icon.elemental_fire_stone_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="AddSpiritExp" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91037" name="바람 정령 원석" type="EtcItem">
+		<set name="icon" val="icon.elemental_wind_stone_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="AddSpiritExp" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91038" name="대지 정령 원석" type="EtcItem">
+		<set name="icon" val="icon.elemental_earth_stone_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="AddSpiritExp" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91039" name="물의 별 조각" type="EtcItem">
+		<set name="icon" val="icon.elemental_star_water_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91040" name="불의 별 조각" type="EtcItem">
+		<set name="icon" val="icon.elemental_star_fire_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91041" name="바람의 별 조각" type="EtcItem">
+		<set name="icon" val="icon.elemental_star_wind_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91042" name="대지의 별 조각" type="EtcItem">
+		<set name="icon" val="icon.elemental_star_earth_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="91043" name="낡은 네불라 목걸이" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_water_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54023" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91044" name="낡은 네불라 목걸이" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_water_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="2" /> 
+			<skill id="54023" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">90</stat>
+			<stat type="maxMp">37</stat>
+		</stats>
+	</item>
+	<item id="91045" name="낡은 네불라 목걸이" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_water_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="3" /> 
+			<skill id="54023" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">93</stat>
+			<stat type="maxMp">40</stat>
+		</stats>
+	</item>
+	<item id="91046" name="낡은 이그니스 목걸이" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_fire_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54024" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91047" name="낡은 이그니스 목걸이" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_fire_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="2" /> 
+			<skill id="54024" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">90</stat>
+			<stat type="maxMp">37</stat>
+		</stats>
+	</item>
+	<item id="91048" name="낡은 이그니스 목걸이" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_fire_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="3" /> 
+			<skill id="54024" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">93</stat>
+			<stat type="maxMp">40</stat>
+		</stats>
+	</item>
+	<item id="91049" name="낡은 프로첼라 목걸이" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_wind_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54025" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+			<stat type="windRes">20</stat>
+		</stats>
+	</item>
+	<item id="91050" name="낡은 프로첼라 목걸이" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_wind_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="2" /> 
+			<skill id="54025" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">90</stat>
+			<stat type="maxMp">37</stat>
+		</stats>
+	</item>
+	<item id="91051" name="낡은 프로첼라 목걸이" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_wind_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="3" /> 
+			<skill id="54025" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">93</stat>
+			<stat type="maxMp">40</stat>
+		</stats>
+	</item>
+	<item id="91052" name="낡은 페트람 목걸이" additionalName="Lv1" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_earth_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54026" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91053" name="낡은 페트람 목걸이" additionalName="Lv2" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_earth_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="2" /> 
+			<skill id="54026" level="2" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">90</stat>
+			<stat type="maxMp">37</stat>
+		</stats>
+	</item>
+	<item id="91054" name="낡은 페트람 목걸이" additionalName="Lv3" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_earth_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<skills>
+			<skill id="54027" level="3" /> 
+			<skill id="54026" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">93</stat>
+			<stat type="maxMp">40</stat>
+		</stats>
+	</item>
+	<item id="91055" name="낡은 네불라 목걸이 Lv1" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_water_i00" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<set name="time" val="10080" />
+		<set name="is_tradable" val="false" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54023" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91056" name="낡은 이그니스 목걸이 Lv1" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_fire_i00" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<set name="time" val="10080" />
+		<set name="is_tradable" val="false" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54024" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91057" name="낡은 프로첼라 목걸이 Lv1" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_wind_i00" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<set name="time" val="10080" />
+		<set name="is_tradable" val="false" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54025" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91058" name="낡은 페트람 목걸이 Lv1" additionalName="7일 기간제" type="Armor">
+		<set name="icon" val="icon.elemental_necklace_earth_i00" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="commissionItemType" val="NECKLACE" />
+		<set name="time" val="10080" />
+		<set name="is_tradable" val="false" />
+		<skills>
+			<skill id="54027" level="1" /> 
+			<skill id="54026" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+			<stat type="maxMp">35</stat>
+		</stats>
+	</item>
+	<item id="91059" name="권능의 탈리스만 조각" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_PvE_empty" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91060" name="권능의 팔찌" type="Armor">
+		<set name="icon" val="icon.ertheia_bracelet_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="91061" name="권능의 탈리스만 Lv1" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_g_Lv1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="1" /> 
+		</skills>
+	</item>
+	<item id="91062" name="권능의 탈리스만 Lv2" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_g_Lv2" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="2" /> 
+		</skills>
+	</item>
+	<item id="91063" name="권능의 탈리스만 Lv3" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_g_Lv3" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="3" /> 
+		</skills>
+	</item>
+	<item id="91064" name="권능의 탈리스만 Lv4" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_g_Lv4" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="4" /> 
+		</skills>
+	</item>
+	<item id="91065" name="권능의 탈리스만 Lv5" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_g_lv5" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="5" /> 
+		</skills>
+	</item>
+	<item id="91066" name="고귀한 권능의 탈리스만 Lv1" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pve_Lv1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="6" /> 
+		</skills>
+	</item>
+	<item id="91067" name="고귀한 권능의 탈리스만 Lv2" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pve_Lv2" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="7" /> 
+		</skills>
+	</item>
+	<item id="91068" name="고귀한 권능의 탈리스만 Lv3" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pve_Lv3" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="8" /> 
+		</skills>
+	</item>
+	<item id="91069" name="고귀한 권능의 탈리스만 Lv4" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pve_Lv4" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="9" /> 
+		</skills>
+	</item>
+	<item id="91070" name="고귀한 권능의 탈리스만 Lv5" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pve_lv5" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="10" /> 
+		</skills>
+	</item>
+	<item id="91071" name="영롱한 권능의 탈리스만 Lv1" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pvp_Lv1" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="11" /> 
+			<skill id="54022" level="1" /> 
+		</skills>
+	</item>
+	<item id="91072" name="영롱한 권능의 탈리스만 Lv2" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pvp_Lv2" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="12" /> 
+			<skill id="54022" level="1" /> 
+		</skills>
+	</item>
+	<item id="91073" name="영롱한 권능의 탈리스만 Lv3" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pvp_Lv3" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="13" /> 
+			<skill id="54022" level="1" /> 
+		</skills>
+	</item>
+	<item id="91074" name="영롱한 권능의 탈리스만 Lv4" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pvp_Lv4" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="14" /> 
+			<skill id="54022" level="1" /> 
+		</skills>
+	</item>
+	<item id="91075" name="영롱한 권능의 탈리스만 Lv5" type="Armor">
+		<set name="icon" val="icon.sayhas_talisman_pvp_lv5" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="deco1" />
+		<skills>
+			<skill id="54021" level="15" /> 
+			<skill id="54022" level="2" /> 
+		</skills>
+	</item>
+	<item id="91076" name="베니르의 탈리스만 조각" type="EtcItem">
+		<set name="icon" val="icon.bm_ensoul_stone_PvP_empty" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="91077" name="베니르의 탈리스만 Lv1" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="1" /> 
+		</skills>
+	</item>
+	<item id="91078" name="베니르의 탈리스만 Lv2" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="2" /> 
+		</skills>
+	</item>
+	<item id="91079" name="베니르의 탈리스만 Lv3" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="3" /> 
+		</skills>
+	</item>
+	<item id="91080" name="베니르의 탈리스만 Lv4" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="4" /> 
+		</skills>
+	</item>
+	<item id="91081" name="베니르의 탈리스만 Lv5" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="5" /> 
+		</skills>
+	</item>
+	<item id="91082" name="베니르의 탈리스만 Lv6" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="6" /> 
+		</skills>
+	</item>
+	<item id="91083" name="베니르의 탈리스만 Lv7" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="7" /> 
+		</skills>
+	</item>
+	<item id="91084" name="베니르의 탈리스만 Lv8" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="8" /> 
+		</skills>
+	</item>
+	<item id="91085" name="베니르의 탈리스만 Lv9" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="9" /> 
+		</skills>
+	</item>
+	<item id="91086" name="베니르의 탈리스만 Lv10" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="10" /> 
+		</skills>
+	</item>
+	<item id="91087" name="베니르의 탈리스만 Lv11" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="11" /> 
+		</skills>
+	</item>
+	<item id="91088" name="베니르의 탈리스만 Lv12" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="12" /> 
+		</skills>
+	</item>
+	<item id="91089" name="베니르의 탈리스만 Lv13" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="13" /> 
+		</skills>
+	</item>
+	<item id="91090" name="베니르의 탈리스만 Lv14" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="14" /> 
+		</skills>
+	</item>
+	<item id="91091" name="베니르의 탈리스만 Lv15" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="15" /> 
+		</skills>
+	</item>
+	<item id="91092" name="베니르의 탈리스만 Lv16" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="16" /> 
+		</skills>
+	</item>
+	<item id="91093" name="베니르의 탈리스만 Lv17" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="17" /> 
+		</skills>
+	</item>
+	<item id="91094" name="베니르의 탈리스만 Lv18" type="Armor">
+		<set name="icon" val="icon.etc_all_stat_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="material" val="GOLD" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<skills>
+			<skill id="18024" level="18" /> 
+		</skills>
+	</item>
+	<item id="91095" name="지룡의 벨트- 베니르의 축복 Lv1" type="Armor">
+		<set name="icon" val="icon.bm_antaras_belt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">14</stat>
+		</stats>
+	</item>
+	<item id="91096" name="지룡의 벨트- 베니르의 축복 Lv2" type="Armor">
+		<set name="icon" val="icon.bm_antaras_belt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">14</stat>
+		</stats>
+	</item>
+	<item id="91097" name="지룡의 벨트- 베니르의 축복 Lv3" type="Armor">
+		<set name="icon" val="icon.bm_antaras_belt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">14</stat>
+		</stats>
+	</item>
+	<item id="91098" name="화룡의 벨트- 베니르의 축복 Lv1" type="Armor">
+		<set name="icon" val="icon.bm_vallakas_belt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">14</stat>
+		</stats>
+	</item>
+	<item id="91099" name="화룡의 벨트- 베니르의 축복 Lv2" type="Armor">
+		<set name="icon" val="icon.bm_vallakas_belt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="LIGHT" />
+		<set name="bodypart" val="waist" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">14</stat>
+		</stats>
+	</item>
+</list>

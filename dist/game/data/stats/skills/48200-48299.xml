@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="48254" toLevel="1" name="Queen Ant's Rain of Stones">
+		<icon>icon.skill0000</icon>
+		<affectRange>1000</affectRange>
+		<castRange>900</castRange>
+		<coolTime>1000</coolTime>
+		<effectPoint>-300</effectPoint>
+		<effectRange>1200</effectRange>
+		<hitTime>2500</hitTime>
+		<magicLevel>80</magicLevel>
+		<operateType>A1</operateType>
+		<reuseDelay>2500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>1500</power>
+			</effect>
+		</effects>
+	</skill>
+</list>

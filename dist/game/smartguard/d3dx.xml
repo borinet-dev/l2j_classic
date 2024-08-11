@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    [string]
+        value: 표시할 텍스트
+        color: ARGB 16진수 형식의 색상
+        size: 폰트 크기
+        family: 폰트 패밀리 (예: Tahoma, Arial, ...)
+        pos: TopRight, TopLeft, TopCenter, MiddleRight, MiddleLeft, MiddleCenter, BottomRight, BottomLeft, BottomCenter
+        style:
+            Normal - 일반 텍스트
+            Shadowed - 그림자가 있는 텍스트
+
+        msgId:
+            None - 특별한 값 없음 (기본값)
+            FPS - 텍스트 내의 %d 자리에 현재 화면 새로고침률을 삽입
+            Time - 텍스트 내의 %s 자리에 현재 시간을 삽입
+
+        showtime: 텍스트가 표시될 시간(밀리초). 무제한으로 설정하려면 제거하거나 0으로 설정하세요.
+        fadein, fadeout: 텍스트가 나타나고 사라지는 데 걸리는 시간(밀리초). 비활성화하려면 제거하거나 0으로 설정하세요.
+
+        offset: 텍스트가 이동할 화면 픽셀 수
+                [pos] 값에 따라 텍스트가 이동됩니다
+            x - 가로 방향으로 픽셀 수
+            y - 세로 방향으로 픽셀 수
+
+
+     예시:
+
+        <string value="FPS %d | Welcome!" color="FF00F265" size="12" family="Tahoma" pos="TopRight" style="Shadowed">
+            <showtime value="60000"/>
+            <fadein value="500"/>
+            <fadeout value="1000"/>
+            <msgId value="FPS"/>
+        </string>
+
+        <string value="Time is: %s" color="FF00F265" size="12" family="Tahoma" pos="TopRight">
+            <showtime value="0"/>
+            <msgId value="Time"/>
+        </string>
+
+	<string value="현재시간: %s" color="FBFFD123" size="17" pos="BottomRight" style="Shadowed">
+		<showtime value="0"/>
+		<msgId value="Time"/>
+		<offset x="-160" y="-20"/>
+	</string>
+-->
+<list>
+	<string value="[스마트가드 실행 중...]" color="FFFF0123" size="17" pos="BottomRight" style="Shadowed">
+		<showtime value="30000"/>
+		<fadein value="1000"/>
+		<offset x="-160" y="-20"/>
+	</string>
+</list>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/npcs.xsd">
+	<!-- Sayha's Seer -->
+	<npc id="81009" level="99" type="Guard" name="노바" title="자경단">
+		<race>ERTHEIA</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="1885700" hpRegen="100.8" mp="3863" mpRegen="3.0" />
+			<attack physical="11242" magical="4784" random="30" critical="161" accuracy="1177" attackSpeed="227" reuseDelay="1200" type="BOW" range="1000" distance="80" width="120" />
+			<defence physical="993388" magical="992450" />
+			<attribute>
+				<defence fire="1250" water="1250" wind="1250" earth="1250" holy="1250" dark="1250" />
+				<attack type="WATER" value="550" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="181" />
+			</speed>
+		</stats>
+		<status fakePlayer="true" talkable="false" randomAnimation="true" randomWalk="true" attackable="false" />
+		<ai type="ARCHER" aggroRange="3000" isAggressive="true" /> <!-- FIGHTER, ARCHER, BALANCED, MAGE, HEALER -->
+		<collision>
+			<radius normal="6.5" />
+			<height normal="19.2" />
+		</collision>
+	</npc>
+</list>

@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="12400" name="혼돈의 카임 바눌의 뼈" type="EtcItem">
+		<set name="icon" val="icon.weapon_bone_of_kaim_vanul_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1570" />
+		<set name="price" val="2018280" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">194</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12401" name="혼돈의 콜리슈마르드" type="EtcItem">
+		<set name="icon" val="icon.weapon_colichemarde_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1350" />
+		<set name="price" val="2018280" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">176</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12402" name="혼돈의 티어스 오브 위자드" type="EtcItem">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1350" />
+		<set name="price" val="2018280" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">194</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12403" name="혼돈의 해저드보우" type="EtcItem">
+		<set name="icon" val="icon.weapon_hazard_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="2018280" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="4" />
+		<stats>
+			<stat type="pAtk">400</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12404" name="혼돈의 헬 하운드" type="EtcItem">
+		<set name="icon" val="icon.weapon_hell_hound_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1700" />
+		<set name="price" val="2018280" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">245</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12405" name="혼돈의 데스페리온의 지팡이" type="EtcItem">
+		<set name="icon" val="icon.weapon_dasparions_staff_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="920" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12406" name="혼돈의 둠 싱어" type="EtcItem">
+		<set name="icon" val="icon.weapon_doom_singer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">270</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12407" name="혼돈의 라이트닝 블레이즈" type="EtcItem">
+		<set name="icon" val="icon.weapon_lightning_blaze_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">193</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12408" name="혼돈의 미티어 샤워" type="EtcItem">
+		<set name="icon" val="icon.weapon_meteor_shower_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12409" name="혼돈의 블러드 토네이도" type="EtcItem">
+		<set name="icon" val="icon.weapon_blood_tornado_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="1370" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12410" name="혼돈의 블러디오키드" type="EtcItem">
+		<set name="icon" val="icon.weapon_bloody_orchid_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="weight" val="960" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12411" name="혼돈의 엘레멘탈 소드" type="EtcItem">
+		<set name="icon" val="icon.weapon_elemental_sword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="830" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12412" name="혼돈의 영혼의 눈" type="EtcItem">
+		<set name="icon" val="icon.weapon_eye_of_soul_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1550" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12413" name="혼돈의 인페르노 마스터" type="EtcItem">
+		<set name="icon" val="icon.weapon_inferno_master_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12414" name="혼돈의 카르니움 활" type="EtcItem">
+		<set name="icon" val="icon.weapon_carnium_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1670" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="4" />
+		<stats>
+			<stat type="pAtk">440</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12415" name="혼돈의 탈룸 블레이드" type="EtcItem">
+		<set name="icon" val="icon.weapon_tallum_blade_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12416" name="혼돈의 파괴자의 망치" type="EtcItem">
+		<set name="icon" val="icon.weapon_hammer_of_destroyer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1910" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12417" name="혼돈의 페인 오브 가드네스" type="EtcItem">
+		<set name="icon" val="icon.weapon_pain_of_godness_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">231</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12418" name="혼돈의 핼버드" type="EtcItem">
+		<set name="icon" val="icon.weapon_halbard_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1900" />
+		<set name="price" val="14098000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12419" name="혼돈의 그리드 스팅거" type="EtcItem">
+		<set name="icon" val="icon.weapon_greed_stinger_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">210</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12420" name="혼돈의 다크 레기온" type="EtcItem">
+		<set name="icon" val="icon.weapon_dark_legions_edge_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1320" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12421" name="혼돈의 데스브링거" type="EtcItem">
+		<set name="icon" val="icon.weapon_death_bringer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12422" name="혼돈의 둠 크러셔" type="EtcItem">
+		<set name="icon" val="icon.weapon_doom_crusher_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12423" name="혼돈의 드래곤 그라인더" type="EtcItem">
+		<set name="icon" val="icon.weapon_dragon_grinder_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12424" name="혼돈의 드래곤 슬레이어" type="EtcItem">
+		<set name="icon" val="icon.weapon_dragon_slayer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12425" name="혼돈의 드래곤 플레임 헤드" type="EtcItem">
+		<set name="icon" val="icon.weapon_dragon_flame_head_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1530" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12426" name="혼돈의 세계수의 가지" type="EtcItem">
+		<set name="icon" val="icon.weapon_worldtrees_branch_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="900" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12427" name="혼돈의 소드 오브 미라클" type="EtcItem">
+		<set name="icon" val="icon.weapon_sword_of_miracle_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12428" name="혼돈의 소울 슈터" type="EtcItem">
+		<set name="icon" val="icon.weapon_soul_shooter_i00" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1660" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">294</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12429" name="혼돈의 소울세퍼레이터" type="EtcItem">
+		<set name="icon" val="icon.weapon_soul_separator_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="950" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">203</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12430" name="혼돈의 엘리시온" type="EtcItem">
+		<set name="icon" val="icon.weapon_elysian_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1580" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12431" name="혼돈의 영혼의 활" type="EtcItem">
+		<set name="icon" val="icon.weapon_soul_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1660" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="5" />
+		<stats>
+			<stat type="pAtk">528</stat>
+			<stat type="mAtk">125</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">227</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12432" name="혼돈의 탈룸 글레이브" type="EtcItem">
+		<set name="icon" val="icon.weapon_tallum_glaive_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">232</stat>
+			<stat type="mAtk">114</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12433" name="혼돈의 나가 스톰" type="EtcItem">
+		<set name="icon" val="icon.weapon_naga_storm_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">220</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12434" name="혼돈의 데이몬의 결정" type="EtcItem">
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12435" name="혼돈의 바라키엘 엑스" type="EtcItem">
+		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12436" name="혼돈의 버스트 어벤져" type="EtcItem">
+		<set name="icon" val="icon.weapon_soul_shooter_i00" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1640" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">318</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12437" name="혼돈의 베헤모스의 소리굽쇠" type="EtcItem">
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12438" name="혼돈의 불트강" type="EtcItem">
+		<set name="icon" val="icon.weapon_death_bringer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">272</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12439" name="혼돈의 샤이드 보우" type="EtcItem">
+		<set name="icon" val="icon.weapon_shyid_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="5" />
+		<stats>
+			<stat type="pAtk">571</stat>
+			<stat type="mAtk">133</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">227</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12440" name="혼돈의 소드 오브 이포스" type="EtcItem">
+		<set name="icon" val="icon.weapon_sword_of_ipos_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12441" name="혼돈의 소베크 허리케인" type="EtcItem">
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12442" name="혼돈의 시르 블레이드" type="EtcItem">
+		<set name="icon" val="icon.weapon_sirr_blade_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12443" name="혼돈의 에끌레르 비쥬" type="EtcItem">
+		<set name="icon" val="icon.weapon_greed_stinger_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">228</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12444" name="혼돈의 타이폰 스피어" type="EtcItem">
+		<set name="icon" val="icon.weapon_tiphon_spear_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12445" name="혼돈의 테미스의 혀" type="EtcItem">
+		<set name="icon" val="icon.weapon_tongue_of_themis_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12446" name="혼돈의 핸드 오브 카브리오" type="EtcItem">
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="price" val="26968400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">251</stat>
+			<stat type="mAtk">121</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12447" name="혼돈의 그람" type="EtcItem">
+		<set name="icon" val="icon.weapon_gram_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1800" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">304</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12448" name="혼돈의 데몬 스플린터" type="EtcItem">
+		<set name="icon" val="icon.weapon_demon_splinter_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1350" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12449" name="혼돈의 드라코닉 보우" type="EtcItem">
+		<set name="icon" val="icon.weapon_draconic_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1650" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="6" />
+		<stats>
+			<stat type="pAtk">581</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12450" name="혼돈의 드래곤 헌터 액스" type="EtcItem">
+		<set name="icon" val="icon.weapon_dragon_hunter_axe_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1820" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12451" name="혼돈의 레바테인" type="EtcItem">
+		<set name="icon" val="icon.weapon_leavatein_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1300" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">255</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12452" name="혼돈의 바살트 배틀해머" type="EtcItem">
+		<set name="icon" val="icon.weapon_basalt_battlehammer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1570" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12453" name="혼돈의 사룽가" type="EtcItem">
+		<set name="icon" val="icon.weapon_sarnga_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1600" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">356</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12454" name="혼돈의 세인트 스피어" type="EtcItem">
+		<set name="icon" val="icon.weapon_saint_spear_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1800" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12455" name="혼돈의 아르카나 메이스" type="EtcItem">
+		<set name="icon" val="icon.weapon_arcana_mace_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1300" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12456" name="혼돈의 엔젤 슬레이어" type="EtcItem">
+		<set name="icon" val="icon.weapon_angel_slayer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="950" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">246</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12457" name="혼돈의 임페리얼 스텝" type="EtcItem">
+		<set name="icon" val="icon.weapon_imperial_staff_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="910" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12458" name="혼돈의 포가튼 블레이드" type="EtcItem">
+		<set name="icon" val="icon.weapon_forgotten_blade_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1300" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12459" name="혼돈의 헤븐스 디바이더" type="EtcItem">
+		<set name="icon" val="icon.weapon_heavens_divider_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1380" />
+		<set name="price" val="42759400" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12460" name="혼돈의 다이너스티 고대검" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_ancient_sword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1800" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">361</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12461" name="혼돈의 다이너스티 나이프" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_dagger_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">291</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12462" name="혼돈의 다이너스티 레이피어" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_rapier_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1280" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">302</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12463" name="혼돈의 다이너스티 메이스" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_staff_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1080" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12464" name="혼돈의 다이너스티 바그나우" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_jamadhr_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1550" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12465" name="혼돈의 다이너스티 보우" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_bow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="6" />
+		<stats>
+			<stat type="pAtk">654</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12466" name="혼돈의 다이너스티 블레이드" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_twohand_sword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12467" name="혼돈의 다이너스티 소드" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_blade_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12468" name="혼돈의 다이너스티 스태프" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1080" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12469" name="혼돈의 다이너스티 커젤" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_hammer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12470" name="혼돈의 다이너스티 크러셔" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_crusher_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="TWO_HAND_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12471" name="혼돈의 다이너스티 크로스보우" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_crossbow_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1580" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">401</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12472" name="혼돈의 다이너스티 팬텀" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_magic_sword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12473" name="혼돈의 다이너스티 핼버드" type="EtcItem">
+		<set name="icon" val="icon.weapon_dynasty_spear_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="2010" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12474" name="혼돈의 이카루스 디스퍼서" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_disperser_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="DAGGER" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">318</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12475" name="혼돈의 이카루스 소우소드" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_sowsword_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12476" name="혼돈의 이카루스 슈터" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_shooter_i00" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1580" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="CROSSBOW" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">422</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12477" name="혼돈의 이카루스 스팅거" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_stinger_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1280" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="RAPIER" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">329</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="12478" name="혼돈의 이카루스 스피릿" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_spirits_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12479" name="혼돈의 이카루스 스피터" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_spiter_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="BOW" />
+		<set name="mp_consume" val="6" />
+		<stats>
+			<stat type="pAtk">689</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12480" name="혼돈의 이카루스 윙블레이드" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_wing_blade_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1800" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="ANCIENT_SWORD" />
+		<set name="spiritshots" val="1" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">393</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="12481" name="혼돈의 이카루스 트라이던트" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_trident_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="2010" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="SPEAR" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12482" name="혼돈의 이카루스 해머" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_hammer_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12483" name="혼돈의 이카루스 핸드" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_knuckle_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1550" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="FIST_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="12484" name="혼돈의 이카루스 헤비 암스" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_heavy_arms_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="12485" name="혼돈의 이카루스 홀" type="EtcItem">
+		<set name="icon" val="icon.weapon_icarus_stick_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="1080" />
+		<set name="price" val="103439000" />
+		<set name="soulshots" val="1" />
+		<set name="crystal_type" val="S80" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_BLUNT_WEAPON" />
+		<set name="spiritshots" val="1" />
+		<stats>
+			<stat type="pAtk">363</stat>
+			<stat type="mAtk">163</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="12486" name="혼돈의 봉인된 쉬르노엔의 건틀렛" type="EtcItem">
+		<set name="icon" val="icon.armor_t64_g_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="590" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12487" name="혼돈의 봉인된 쉬르노엔의 부츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t64_b_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="1180" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12488" name="혼돈의 봉인된 아바돈 글로브" type="EtcItem">
+		<set name="icon" val="icon.armor_t66_g_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="590" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12489" name="혼돈의 봉인된 아바돈 부츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t66_b_i02" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="DAMASCUS" />
+		<set name="weight" val="1170" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12490" name="혼돈의 쉬르노엔 가죽 각반" type="EtcItem">
+		<set name="icon" val="icon.armor_t65_l_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="1480" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="ARMOR_PANTS" />
+		<set name="price" val="149660" />
+		<stats>
+			<stat type="pDef">73</stat>
+		</stats>
+	</item>
+	<item id="12491" name="혼돈의 쉬르노엔 레더 셔츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t65_u_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="4330" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="ARMOR_TOP" />
+		<set name="price" val="239400" />
+		<stats>
+			<stat type="pDef">117</stat>
+		</stats>
+	</item>
+	<item id="12492" name="혼돈의 쉬르노엔의 각반" type="EtcItem">
+		<set name="icon" val="icon.armor_t64_l_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="3570" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="ARMOR_PANTS" />
+		<set name="price" val="199540" />
+		<stats>
+			<stat type="pDef">98</stat>
+		</stats>
+	</item>
+	<item id="12493" name="혼돈의 쉬르노엔의 건틀렛" type="EtcItem">
+		<set name="icon" val="icon.armor_t64_g_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="590" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12494" name="혼돈의 쉬르노엔의 건틀렛" type="EtcItem">
+		<set name="icon" val="icon.armor_t65_g_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="590" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12495" name="혼돈의 쉬르노엔의 건틀렛" type="EtcItem">
+		<set name="icon" val="icon.armor_t56_g_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="590" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="GLOVES" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12496" name="혼돈의 쉬르노엔의 부츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t64_b_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="1180" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12497" name="혼돈의 쉬르노엔의 부츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t65_b_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="1180" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12498" name="혼돈의 쉬르노엔의 부츠" type="EtcItem">
+		<set name="icon" val="icon.armor_t56_b_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="1180" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="FEET" />
+		<set name="price" val="79820" />
+		<stats>
+			<stat type="pDef">41</stat>
+		</stats>
+	</item>
+	<item id="12499" name="혼돈의 쉬르노엔의 실드" type="EtcItem">
+		<set name="icon" val="icon.shield_shrnoens_shield_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="MITHRIL" />
+		<set name="weight" val="1210" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="SHIELD" />
+		<set name="price" val="83800" />
+		<stats>
+			<stat type="rEvas">-8</stat>
+			<stat type="rShld">20</stat>
+			<stat type="sDef">216</stat>
+		</stats>
+	</item>
+</list>

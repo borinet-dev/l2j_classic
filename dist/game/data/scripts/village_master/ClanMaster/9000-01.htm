@@ -1,0 +1,35 @@
+<html><body><br><center>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32>
+<table><tr>
+<td><edit var="name" width=125 height=18></td>
+<td><button value="혈맹을 창설한다" action="bypass -h npc_%objectId%_create_clan $name" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<table><tr>
+<td>
+<button value="혈맹스킬을 배운다" action="bypass -h npc_%objectId%_learn_clan_skills" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<button value="혈맹레벨을 올린다" action="bypass -h Quest ClanMaster 9000-03.htm" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+</td>
+<td>
+<button value="혈맹을 해산한다" action="bypass -h Quest ClanMaster 9000-04.htm" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<button value="혈맹을 복구한다" action="bypass -h Quest ClanMaster 9000-05.htm" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+</td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<table><tr>
+<td><edit var="leader" width=125 height=18></td>
+<td><button value="군주를 위임한다" action="bypass -h npc_%objectId%_change_clan_leader $leader" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<table><tr>
+<td><edit var="academy" width=125 height=18></td><br>
+<td><button value="아카데미 창설" action="bypass -h npc_%objectId%_create_academy $academy" width=125 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br>
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_2" width=300 height=32>
+<table cellspacing="-1"><tr>
+</tr></table>
+<br>
+<Button ALIGN=LEFT ICON="RETURN" action="bypass -h npc_%objectId%_Chat 0">뒤로가기</Button></center>
+</body></html>

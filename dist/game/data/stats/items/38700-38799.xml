@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="38700" name="강철의 솔다트 에스터크" type="Weapon">
+		<set name="icon" val="icon.weapon_soldat_estoc_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="weight" val="477" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">97</stat>
+			<stat type="mAtk">61</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="38701" name="강철의 알바레스트" type="Weapon">
+		<set name="icon" val="icon.weapon_arbalest_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="4" />
+		<set name="spiritshots" val="2" />
+		<set name="weight" val="597" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">135</stat>
+			<stat type="mAtk">61</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38702" name="강철의 플랑베르주" type="Weapon">
+		<set name="icon" val="icon.weapon_flamberge_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="weight" val="670" />
+		<set name="material" val="BRONZE" />
+		<stats>
+			<stat type="pAtk">130</stat>
+			<stat type="mAtk">61</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38703" name="강철의 차크람" type="Weapon">
+		<set name="icon" val="icon.weapon_chakram_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="C" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="weight" val="497" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">130</stat>
+			<stat type="mAtk">61</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38704" name="강철의 소드 오브 발할라" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_valhalla_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="300" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">140</stat>
+			<stat type="mAtk">122</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38705" name="강철의 스펠 브레이커" type="Weapon">
+		<set name="icon" val="icon.weapon_spell_breaker_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="540" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">140</stat>
+			<stat type="mAtk">122</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38706" name="강철의 스톰 브링거*극한의 검" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="747" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">197</stat>
+			<stat type="mAtk">86</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38707" name="강철의 티어스 오브 위자드" type="Weapon">
+		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="450" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">155</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38708" name="강철의 그레이트 액스" type="Weapon">
+		<set name="icon" val="icon.weapon_great_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="647" />
+		<set name="material" val="DAMASCUS" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">175</stat>
+			<stat type="mAtk">91</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38709" name="강철의 헬나이프" type="Weapon">
+		<set name="icon" val="icon.weapon_hell_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="247" />
+		<set name="material" val="BLOOD_STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">122</stat>
+			<stat type="mAtk">122</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38710" name="강철의 다크엘븐 롱보우" type="Weapon">
+		<set name="icon" val="icon.weapon_dark_elven_long_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="573" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="mp_consume" val="4" />
+		<stats>
+			<stat type="pAtk">397</stat>
+			<stat type="mAtk">100</stat>
+			<stat type="pAtkSpd">227</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38711" name="강철의 네임리스 빅토리" type="Weapon">
+		<set name="icon" val="icon.weapon_nameless_victory_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="643" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">190</stat>
+			<stat type="mAtk">91</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="38712" name="강철의 어설트 플뢰레" type="Weapon">
+		<set name="icon" val="icon.weapon_assult_fleuret_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="457" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">159</stat>
+			<stat type="mAtk">91</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="38713" name="강철의 헬 하운드" type="Weapon">
+		<set name="icon" val="icon.weapon_hell_hound_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="567" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">245</stat>
+			<stat type="mAtk">99</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38714" name="강철의 그레이트 소드" type="Weapon">
+		<set name="icon" val="icon.weapon_great_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="643" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">91</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38715" name="강철의 아스라네일" type="Weapon">
+		<set name="icon" val="icon.weapon_arthro_nail_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="B" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="473" />
+		<set name="material" val="BLOOD_STEEL" />
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">91</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38716" name="강철의 엘레멘탈 소드" type="Weapon">
+		<set name="icon" val="icon.weapon_elemental_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="277" />
+		<set name="material" val="MITHRIL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">170</stat>
+			<stat type="mAtk">143</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38717" name="강철의 영혼의 눈" type="Weapon">
+		<set name="icon" val="icon.weapon_eye_of_soul_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="517" />
+		<set name="material" val="BONE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">170</stat>
+			<stat type="mAtk">143</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38718" name="강철의 크샨베르크*크샨베르크" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="693" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">259</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38719" name="강철의 소드 오브 미라클" type="Weapon">
+		<set name="icon" val="icon.weapon_sword_of_miracle_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="280" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38720" name="강철의 핼버드" type="Weapon">
+		<set name="icon" val="icon.weapon_halbard_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="633" />
+		<set name="material" val="ORIHARUKON" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">213</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38721" name="강철의 블러디오키드" type="Weapon">
+		<set name="icon" val="icon.weapon_bloody_orchid_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="320" />
+		<set name="material" val="BLOOD_STEEL" />
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38722" name="강철의 카르니움 활" type="Weapon">
+		<set name="icon" val="icon.weapon_carnium_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="557" />
+		<set name="material" val="DAMASCUS" />
+		<set name="mp_consume" val="5" />
+		<stats>
+			<stat type="pAtk">440</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38723" name="강철의 라이트닝 블레이즈" type="Weapon">
+		<set name="icon" val="icon.weapon_lightning_blaze_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="443" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">193</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="38724" name="강철의 둠 싱어" type="Weapon">
+		<set name="icon" val="icon.weapon_doom_singer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="557" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">270</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38725" name="강철의 페인 오브 가드네스" type="Weapon">
+		<set name="icon" val="icon.weapon_pain_of_godness_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="633" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">231</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="38726" name="강철의 인페르노 마스터" type="Weapon">
+		<set name="icon" val="icon.weapon_inferno_master_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="633" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">259</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38727" name="강철의 블러드 토네이도" type="Weapon">
+		<set name="icon" val="icon.weapon_blood_tornado_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="457" />
+		<set name="material" val="BLOOD_STEEL" />
+		<stats>
+			<stat type="pAtk">259</stat>
+			<stat type="mAtk">107</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38728" name="강철의 포가튼 블레이드" type="Weapon">
+		<set name="icon" val="icon.weapon_forgotten_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="433" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38729" name="강철의 바살트 배틀해머" type="Weapon">
+		<set name="icon" val="icon.weapon_basalt_battlehammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="523" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38730" name="강철의 탈룸 블레이드*다크 레기온" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="693" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">342</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38731" name="강철의 아르카나 메이스" type="Weapon">
+		<set name="icon" val="icon.weapon_arcana_mace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="433" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">225</stat>
+			<stat type="mAtk">175</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38732" name="강철의 세인트 스피어" type="Weapon">
+		<set name="icon" val="icon.weapon_saint_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="600" />
+		<set name="material" val="ADAMANTAITE" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">281</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38733" name="강철의 엔젤 슬레이어" type="Weapon">
+		<set name="icon" val="icon.weapon_angel_slayer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="317" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">246</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38734" name="강철의 그람" type="Weapon">
+		<set name="icon" val="icon.weapon_gram_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="600" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">304</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="38735" name="강철의 레바테인" type="Weapon">
+		<set name="icon" val="icon.weapon_leavatein_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="433" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">255</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="38736" name="강철의 사룽가" type="Weapon">
+		<set name="icon" val="icon.weapon_sarnga_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="533" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">356</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38737" name="강철의 헤븐스 디바이더" type="Weapon">
+		<set name="icon" val="icon.weapon_heavens_divider_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="460" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">342</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38738" name="강철의 데몬 스플린터" type="Weapon">
+		<set name="icon" val="icon.weapon_demon_splinter_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="450" />
+		<set name="material" val="ADAMANTAITE" />
+		<stats>
+			<stat type="pAtk">342</stat>
+			<stat type="mAtk">132</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38739" name="강철의 다이너스티 팬텀" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_magic_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="510" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">267</stat>
+			<stat type="mAtk">202</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38740" name="강철의 다이너스티 커젤" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_hammer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="580" />
+		<set name="material" val="FINE_STEEL" />
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38741" name="강철의 다이너스티 듀얼 소드" type="Weapon">
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="510" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38742" name="강철의 다이너스티 핼버드" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="670" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="3599" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">333</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38743" name="강철의 다이너스티 나이프" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_dagger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="510" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">291</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38744" name="강철의 다이너스티 크로스보우" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_crossbow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="530" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">401</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38745" name="강철의 다이너스티 고대검" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_ancient_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="600" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">361</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">15</stat>
+		</stats>
+	</item>
+	<item id="38746" name="강철의 다이너스티 레이피어" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_rapier_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="430" />
+		<set name="material" val="STEEL" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<stats>
+			<stat type="pAtk">302</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">40</stat>
+		</stats>
+	</item>
+	<item id="38747" name="강철의 다이너스티 블레이드" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_twohand_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BIGSWORD" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="580" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38748" name="강철의 다이너스티 바그나우" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_jamadhr_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="520" />
+		<set name="material" val="STEEL" />
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38749" name="강철의 다이너스티 보우" type="Weapon">
+		<set name="icon" val="icon.weapon_dynasty_bow_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="weight" val="510" />
+		<set name="material" val="STEEL" />
+		<set name="mp_consume" val="6" />
+		<stats>
+			<stat type="pAtk">654</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38750" name="라라캣의 카드키" type="EtcItem">
+		<set name="icon" val="icon.cardkey_raracat" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38751" name="라라캣의 명함" type="EtcItem">
+		<set name="icon" val="icon.namecard_raracat" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38752" name="라라캣 팀장의 선물" type="EtcItem">
+		<set name="icon" val="icon.special_cube_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38753" name="라라캣 팀장의 고급 선물" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_ghost_magicalbox_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="38754" name="+8 반짝이는 아인하사드의 티셔츠 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38755" name="+7 반짝이는 아인하사드의 티셔츠 교환권" type="EtcItem">
+		<set name="icon" val="icon.etc_lottery_card_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="38756" name="혼돈의 정수 상자(기간제)" type="EtcItem">
+		<set name="icon" val="icon.darkelf_campaign_box" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="36949" min="1" max="1" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38757" name="축복받은 고급 무기 강화 보조석-R그레이드" type="EtcItem">
+		<set name="icon" val="icon.bless_high_ench_wp_stone_i02" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="BLESSED_ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17691" level="1" /> 
+		</skills>
+	</item>
+	<item id="38758" name="축복받은 고급 갑옷 강화 보조석-R그레이드" type="EtcItem">
+		<set name="icon" val="icon.bless_high_ench_amr_stone_i02" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="BLESSED_ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17692" level="1" /> 
+		</skills>
+	</item>
+	<item id="38759" name="축복받은 고급 무기 강화 보조석-S그레이드" type="EtcItem">
+		<set name="icon" val="icon.bless_high_ench_wp_stone_i01" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="BLESSED_ENCHT_ATTR_INC_PROP_ENCHT_WP" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17693" level="1" /> 
+		</skills>
+	</item>
+	<item id="38760" name="축복받은 고급 갑옷 강화 보조석-S그레이드" type="EtcItem">
+		<set name="icon" val="icon.bless_high_ench_amr_stone_i01" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="BLESSED_ENCHT_ATTR_INC_PROP_ENCHT_AM" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="17694" level="1" /> 
+		</skills>
+	</item>
+	<item id="38761" name="파괴의 기운 3개 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="35562" min="3" max="3" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38762" name="파괴의 기운 20개 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="35562" min="20" max="20" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38763" name="파괴의 기운 100개 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="material" val="FISH" />
+		<capsuled_items>
+			<item id="35562" min="100" max="100" chance="100" /> 
+		</capsuled_items>
+	</item>
+	<item id="38764" name="자유 텔레포트 패키지" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_box_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38765" name="라라캣의 카드키 꾸러미" additionalName="프리미엄" type="EtcItem">
+		<set name="icon" val="icon.etc_pouch_yellow_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="38766" name="라비앙로즈의 브로치" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="13656" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">17</stat>
+		</stats>
+	</item>
+	<item id="38767" name="라비앙로즈의 고귀한 브로치" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="13657" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">43</stat>
+		</stats>
+	</item>
+	<item id="38768" name="라비앙로즈의 화려한 브로치" type="Armor">
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i02" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="weight" val="10" />
+		<set name="is_dropable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="material" val="SILVER" />
+		<skills>
+			<skill id="13658" level="1" /> 
+			<skill id="13661" level="3" /> 
+		</skills>
+		<stats>
+			<stat type="mDef">87</stat>
+		</stats>
+	</item>
+	<item id="38769" name="테스트 쥬얼 Lv1" additionalName="1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_jade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38770" name="테스트 쥬얼 Lv2" additionalName="1" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_moonstone_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38771" name="테스트 쥬얼 Lv1" additionalName="2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_aquamarine_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38772" name="테스트 쥬얼 Lv2" additionalName="2" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_onyx_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38773" name="테스트 쥬얼 Lv1" additionalName="3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_garnet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38774" name="테스트 쥬얼 Lv2" additionalName="3" type="Armor">
+		<set name="icon" val="icon.etc_bm_jewel_Tourmaline_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<set name="bodypart" val="underwear" />
+	</item>
+	<item id="38775" name="단디가 빌린 봉인된 안타라스 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dagger_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17742" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">574</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38776" name="단디가 빌린 봉인된 안타라스 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_twohand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17743" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38777" name="단디가 빌린 봉인된 안타라스 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_bow_i00" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17744" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1291</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38778" name="단디가 빌린 봉인된 안타라스 버스터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_magic_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="17745" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">524</stat>
+			<stat type="mAtk">339</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38779" name="단디가 빌린 봉인된 안타라스 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17746" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38780" name="단디가 빌린 봉인된 안타라스 스토머" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_spear_i00" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="13115" level="1" /> 
+			<skill id="17747" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38781" name="단디가 빌린 봉인된 안타라스 파이터" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_fist_i00" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17748" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38782" name="단디가 빌린 봉인된 안타라스 어벤져" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_onehand_blunt_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="17749" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38783" name="단디가 빌린 봉인된 안타라스 듀얼블런트" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dual_blunt_i00" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="17750" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38784" name="단디가 빌린 봉인된 안타라스 듀얼소드" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dual_sword_i00" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17751" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38785" name="단디가 빌린 봉인된 발라카스 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_dagger_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17752" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">574</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38786" name="단디가 빌린 봉인된 발라카스 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17753" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38787" name="단디가 빌린 봉인된 발라카스 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_twohand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17754" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38788" name="단디가 빌린 봉인된 발라카스 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_bow_i00" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17755" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1291</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38789" name="단디가 빌린 봉인된 발라카스 버스터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_magic_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="17756" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">524</stat>
+			<stat type="mAtk">339</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38790" name="단디가 빌린 봉인된 발라카스 캐스터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_onehand_magic_blunt_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="17757" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">524</stat>
+			<stat type="mAtk">339</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38791" name="단디가 빌린 봉인된 발라카스 레트리뷰터" type="Weapon">
+		<set name="icon" val="icon.weapon_valrakas_twohand_magic_blunt_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="17758" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">638</stat>
+			<stat type="mAtk">372</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="accMagic">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="38792" name="단디가 빌린 봉인된 린드비오르 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_dagger_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17759" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">574</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38793" name="단디가 빌린 봉인된 린드비오르 스로워" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_bow_i00" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17760" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1291</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38794" name="단디가 빌린 봉인된 린드비오르 슬래셔" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_twohand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17761" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">798</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38795" name="단디가 빌린 봉인된 린드비오르 캐스터" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_onehand_magic_blunt_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<set name="is_magic_weapon" val="true" />
+		<skills>
+			<skill id="17762" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">524</stat>
+			<stat type="mAtk">339</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38796" name="단디가 빌린 봉인된 린드비오르 커터" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_onehand_sword_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17763" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38797" name="단디가 빌린 봉인된 린드비오르 슈트제" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_crossbow_i00" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17764" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1163</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="38798" name="단디가 빌린 봉인된 린드비오르 듀얼대거" type="Weapon">
+		<set name="icon" val="icon.weapon_lind_dual_dagger_i00" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17765" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">656</stat>
+			<stat type="mAtk">254</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="38799" name="단디가 빌린 안타라스 셰이퍼" type="Weapon">
+		<set name="icon" val="icon.weapon_antaras_dagger_i01" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<set name="time" val="60" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="17766" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">673</stat>
+			<stat type="mAtk">360</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+</list>

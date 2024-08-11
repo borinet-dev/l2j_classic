@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="18900" level="87" type="FeedableBeast" name="Full Grown Grendel">
+		<parameters>
+			<param name="my_type" value="4" />
+			<param name="my_grade" value="4" />
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6556" level="17" />
+			<skill name="Buff" id="4028" level="2" />
+			<skill name="DeBuff" id="4592" level="10" />
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<acquire exp="4490700" sp="1018000" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="693500.331230" hpRegen="80.5" mp="2777.777778" mpRegen="3" />
+			<attack physical="12800.04108345674" magical="3726.564202782258" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1158.381502890173" magical="661.895473956257" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="120" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="2" /> <!-- Might -->
+			<skill id="4071" level="3" /> <!-- Bow/ Crossbow Resistance -->
+			<skill id="4116" level="5" /> <!-- Magic Attack Resistance -->
+			<skill id="4379" level="5" /> <!-- Spear Resistance -->
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
+			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="16" /> <!-- Very Strong P. Def. -->
+			<skill id="4413" level="18" /> <!-- Extremely Strong M. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+			<skill id="4592" level="10" /> <!-- Decrease P. Def. -->
+			<skill id="5463" level="1" /> <!-- Water Attack -->
+			<skill id="5620" level="7" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6556" level="17" /> <!-- Water Attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="34" />
+			<height normal="32.5" />
+		</collision>
+	</npc>
+	<npc id="18906" level="88" type="Monster" name="비스트 리버">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6559" level="16" />
+			<skill name="SelfBuff" id="4028" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="4768700" sp="1100000" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="703900.192429" hpRegen="80.5" mp="3812.65206812652" mpRegen="3" />
+			<attack physical="12800.04108345674" magical="3726.564202782258" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1158.381502890173" magical="662.061141348935" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4028" level="3" /> <!-- Might -->
+			<skill id="4071" level="3" /> <!-- Bow/ Crossbow Resistance -->
+			<skill id="4116" level="5" /> <!-- Magic Attack Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5463" level="1" /> <!-- Water Attack -->
+			<skill id="5620" level="2" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6559" level="16" /> <!-- Water Attack -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true" />
+		<collision>
+			<radius normal="29" />
+			<height normal="37" />
+		</collision>
+	</npc>
+	<npc id="18907" level="89" type="Monster" name="비스트 디바우러">
+		<parameters>
+			<param name="IsAggressive" value="1" />
+			<skill name="Skill01_ID" id="6566" level="17" />
+			<skill name="SelfBuff" id="4074" level="2" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="5035900" sp="1200000" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="803900.92429" hpRegen="80.5" mp="4812.65206812652" mpRegen="3" />
+			<attack physical="14800.04108345674" magical="3926.564202782258" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="1158.381502890173" magical="762.061141348935" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4071" level="3" /> <!-- Bow/ Crossbow Resistance -->
+			<skill id="4074" level="2" /> <!-- Haste -->
+			<skill id="4116" level="5" /> <!-- Magic Attack Resistance -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5463" level="1" /> <!-- Water Attack -->
+			<skill id="5620" level="2" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6566" level="17" /> <!-- Water Shot -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true" />
+		<collision>
+			<radius normal="27" />
+			<height normal="31" />
+		</collision>
+	</npc>
+	<npc id="18909" level="85" type="Monster" name="솔리나 기사단원">
+		<parameters>
+			<skill name="PhysicalSpecial" id="6311" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<equipment rhand="8211" lhand="8210" /> <!-- Monster Only (Monk Warrior Sword) / Monster Only (Monk Warrior Shield) -->
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.01577287066" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.2378620971" magical="698.508232785223" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="353.948377204191" magical="259.340990965503" />
+			<attribute>
+				<attack type="HOLY" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="100" dark="50" />
+			</attribute>
+			<speed>
+				<walk ground="53" />
+				<run ground="150" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6311" level="1" /> <!-- Solina Thrust -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>N_SOLINA</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="14109" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Gauntlets -->
+				<item id="14110" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Boots -->
+				<item id="14113" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Leather Gloves -->
+				<item id="14114" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Leather Boots -->
+				<item id="14116" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Gloves -->
+				<item id="14117" min="1" max="1" chance="0.09" /> <!-- Sealed Vesper Shoes -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="28.4" />
+		</collision>
+	</npc>
+	<npc id="18910" level="85" type="Monster" name="Solina Knight Captain">
+		<parameters>
+			<skill name="PhysicalSpecial" id="6312" level="1" />
+			<skill name="Buff" id="6313" level="1" />
+		</parameters>
+		<race>DIVINE</race>
+		<sex>MALE</sex>
+		<acquire exp="364522" sp="9842" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="4835.12092534175" hpRegen="8.5" mp="1777.77777777778" mpRegen="3" />
+			<attack physical="1517.53477753" magical="698.626516480486" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="354.06976744186" magical="259.340990965503" />
+			<attribute>
+				<attack type="HOLY" value="100" />
+				<defence fire="100" water="100" wind="100" earth="100" holy="100" dark="50" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="66" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4276" level="5" /> <!-- Bow/ Crossbow Vulnerability -->
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="8" /> <!-- Angels -->
+			<skill id="5466" level="1" /> <!-- Holy Attacks -->
+			<skill id="5620" level="4" /> <!-- Melee Attack Vulnerability -->
+			<skill id="6312" level="1" /> <!-- Launch Holy Sword Energy -->
+			<skill id="6313" level="1" /> <!-- Solina Bless -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>N_SOLINA</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="57" min="6887" max="21069" chance="100" /> <!-- Adena -->
+				<item id="14109" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Gauntlets -->
+				<item id="14110" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Boots -->
+				<item id="14113" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Leather Gloves -->
+				<item id="14114" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Leather Boots -->
+				<item id="14116" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Gloves -->
+				<item id="14117" min="1" max="1" chance="0.03" /> <!-- Sealed Vesper Shoes -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="31.5" />
+		</collision>
+	</npc>
+	<npc id="18911" level="84" type="Monster" name="Abbey Treasure Chest">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="17" />
+			<height normal="13" />
+		</collision>
+	</npc>
+	<npc id="18912" level="1" type="Monster" name="허수아비">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai type="CORPSE" clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="27" />
+			<height normal="37.5" />
+		</collision>
+	</npc>
+	<npc id="18913" level="1" type="Folk" name="Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18914" level="1" type="Folk" name="Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18915" level="1" type="Folk" name="Divine Furnace">
+		<!-- Confirmed CT2.5 -->
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status talkable="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="18" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="18919" level="85" type="Monster">
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="4234" hpRegen="8.5" mp="1846" mpRegen="3" />
+			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="361.78814" magical="264.74086" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="false" targetable="false" showName="false" noSleepMode="true" canBeSown="true" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="0.1" />
+		</collision>
+	</npc>
+	<npc id="18926" level="80" type="Folk" name="용병궁수">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="8446" hpRegen="10.5" mp="1345" mpRegen="3.6" />
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="28" />
+			<height normal="55" />
+		</collision>
+	</npc>
+	<npc id="18927" level="80" type="Folk" name="모닥불">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="8446" hpRegen="10.5" mp="1812" mpRegen="3.6" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" talkable="false" targetable="false" showName="false" />
+		<collision>
+			<radius normal="0.1" />
+			<height normal="30.5" />
+		</collision>
+	</npc>
+	<npc id="18928" level="80" type="Folk" name="진멸 화로">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="8446" hpRegen="10.5" mp="21324" mpRegen="3.6" />
+			<speed>
+				<walk ground="1" />
+				<run ground="1" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="32" />
+			<height normal="17.5" />
+		</collision>
+	</npc>
+</list>

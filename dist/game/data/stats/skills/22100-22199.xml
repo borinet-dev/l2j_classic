@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22159" toLevel="1" name="베스페르의 괴력">
+		<!-- For 10 min., increases P. Atk. by 15%, M. Atk. by 20%, and Speed by 10. -->
+		<icon>BranchSys2.icon.br_royal_crown_of_vesper_i00</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>BREAD_HERB</abnormalType>
+		<abnormalVisualEffect>CHANGE_VES_S</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>BREAD_HERB,2</dispel>
+			</effect>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22160" toLevel="1" name="베스페르의 치명력">
+		<!-- For 10 min., increases P. Critical Rate by 15, M. Critical Rate by 2, and Speed by 10. Recovers 5% of the physical damage inflicted on the enemy as HP with a certain probability. -->
+		<icon>BranchSys2.icon.br_royal_circlet_of_vesper_i00</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>BREAD_HERB</abnormalType>
+		<abnormalVisualEffect>CHANGE_VES_C</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>BREAD_HERB,2</dispel>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>5</amount>
+				<chance>30</chance>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22161" toLevel="1" name="불패의 베스페르">
+		<!-- For 10 min., increases Atk. Spd. by 20%, Casting Spd. by 20%, and Speed by 20. -->
+		<icon>BranchSys2.icon.br_noblesse_oblige_of_vesper_i00</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>BREAD_HERB</abnormalType>
+		<abnormalVisualEffect>CHANGE_VES_D</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>BREAD_HERB,2</dispel>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

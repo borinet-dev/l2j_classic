@@ -1,0 +1,91 @@
+<html noscrollbar><title>커뮤니티 보드 - 드랍 검색</title>
+<body><br>
+%header%
+<center>
+<table border=0 align="center" width=769 height=390 background="L2UI_CT1.Windows_DF_TooltipBG">
+	<tr>
+		<td>
+			<table width=769>
+				<tr>
+					<td>
+						<table width=395>
+							<tr>
+								<td width=50>
+									<center><img src="Icon.etc_scroll_of_memory_i00" width=32 height=32></center>
+								</td>
+								<td width=460>
+									<table>
+										<tr>
+											<td>
+												<font name="__SYSTEMWORLDFONT" color="LEVEL">드랍 데이타베이스</font>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<font color=00FF00 name="__SYSTEMWORLDFONT">전체 몬스터 드랍아이템 및 스포일 정보를 확인할수 있습니다. </font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table width=250 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=20>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td width=60 align="left"></td>
+								<td valign="top" width=140 align="left"><font color="FFCC00"><br>아이템 이름</font></td>
+								<td align="left"><edit var="itemname" type="text" width=160 height=20 length=20></td>
+								<td width=100 align="left"><button value="검색" action="bypass voice .아이템검색 $itemname" width=80 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width=772 height=20 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td width=212>
+						<button value="몬스터이름" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=212 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=70>
+						<button value="레벨" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=70 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=100>
+						<button value="레이드" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=100 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=70>
+						<button value="타입" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=70 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=100>
+						<button value="드랍수량" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=100 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=90>
+						<button value="확률" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=90 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td width=130>
+						<button value="자세히보기" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=130 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+				</tr>
+			</table>
+				%itemResult%
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td align=center>
+			<table border=0>
+					%itempages%
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

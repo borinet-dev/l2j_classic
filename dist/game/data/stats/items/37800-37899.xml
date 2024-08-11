@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="37800" name="수호의 물약 - 공중 속박" additionalName="하급" type="EtcItem">
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i11" />
+		<set name="weight" val="10" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="17203" level="1" /> 
+		</skills>
+	</item>
+	<item id="37801" name="블러디 방어구 강화석 조각" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_fragment_pvp" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="37802" name="다크 방어구 강화석 조각" type="EtcItem">
+		<set name="icon" val="icon.energy_condenser_fragment_pve" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="LEATHER" />
+	</item>
+	<item id="37803" name="마스터 요기의 특별한 무기 강화 주문서" type="EtcItem">
+		<set name="icon" val="icon.yogi_scroll_of_enchant_weapon_grade_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37804" name="레플리카 티아라" type="Armor">
+		<set name="icon" val="icon.accessory_noblesse2_tiara_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hair2" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="13772" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="fireRes">15</stat>
+			<stat type="waterRes">15</stat>
+			<stat type="windRes">15</stat>
+			<stat type="earthRes">15</stat>
+			<stat type="holyRes">15</stat>
+			<stat type="darkRes">15</stat>
+		</stats>
+	</item>
+	<item id="37805" name="마스터 요기의 지팡이" type="Weapon">
+		<set name="icon" val="icon.yogi_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">11</stat>
+			<stat type="mAtk">12</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37806" name="마스터 요기의 지팡이" type="Weapon">
+		<set name="icon" val="icon.yogi_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">11</stat>
+			<stat type="mAtk">12</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37807" name="마스터 요기의 지팡이" type="Weapon">
+		<set name="icon" val="icon.yogi_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">11</stat>
+			<stat type="mAtk">12</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37808" name="마스터 요기의 지팡이" type="Weapon">
+		<set name="icon" val="icon.yogi_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">11</stat>
+			<stat type="mAtk">12</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37809" name="신비한 결정" type="EtcItem">
+		<set name="icon" val="icon.etc_unholy_crystal_1_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37810" name="메탈 슈트 헤어 액세서리" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_hair" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="CLOTH" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="37811" name="메탈 슈트 흉갑" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_u" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LEATHER" />
+		<set name="bodypart" val="chest" />
+	</item>
+	<item id="37812" name="메탈 슈트 각반" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_l" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LEATHER" />
+		<set name="bodypart" val="legs" />
+	</item>
+	<item id="37813" name="메탈 슈트 글로브" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_g" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LEATHER" />
+		<set name="bodypart" val="gloves" />
+	</item>
+	<item id="37814" name="메탈 슈트 부츠" type="Armor">
+		<set name="icon" val="BranchSys3.icon1.g_co_sf_b" />
+		<set name="default_action" val="EQUIP" />
+		<set name="material" val="LEATHER" />
+		<set name="bodypart" val="feet" />
+	</item>
+	<item id="37815" name="메탈 슈트 상자" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="PEEL" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37816" name="메탈 슈트 헤어 액세서리 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="time" val="43200" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37817" name="메탈 슈트 흉갑 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="time" val="43200" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37818" name="메탈 슈트 각반 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_legs" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="time" val="43200" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37819" name="메탈 슈트 글로브 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_gloves" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="time" val="43200" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37820" name="메탈 슈트 부츠 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_feet" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="time" val="43200" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37821" name="메탈 슈트 변신 포션" type="EtcItem">
+		<set name="icon" val="icon.etc_whiteday_herb" />
+		<set name="weight" val="5" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="LIQUID" />
+	</item>
+	<item id="37822" name="이동 주문서 - 헬바운드" type="EtcItem">
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="weight" val="30" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37823" name="리오나의 선물" type="EtcItem">
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37824" name="헤어 액세서리 가공석 교환권" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="icon..etc_level_bustup_ticket_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37825" name="헤어 액세서리 가공석 교환권" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon..etc_level_bustup_ticket_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37826" name="NC 다이노스 모자 가공석" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair1" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37827" name="NC 다이노스 모자 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair1" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37828" name="조로모자 가공석" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37829" name="조로모자 가공석" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37830" name="화이트 데이 무기 가공석 교환권" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37831" name="화이트 데이 무기 가공석 교환권" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37832" name="화이트 데이 가공석 - 단검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37833" name="화이트 데이 가공석 - 한손 도검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37834" name="화이트 데이 가공석 - 양손 도검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37835" name="화이트 데이 가공석 - 한손 둔기" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37836" name="화이트 데이 가공석 - 격투 무기" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualfist" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37837" name="화이트 데이 가공석 - 창" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_pole" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37838" name="화이트 데이 가공석 - 활" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_bow" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37839" name="화이트 데이 가공석 - 석궁" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_crossbow" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37840" name="화이트 데이 가공석 - 마법검" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37841" name="화이트 데이 가공석 - 한손 지팡이" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_magic_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37842" name="화이트 데이 가공석 - 양손 지팡이" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_magic_twohand_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37843" name="화이트 데이 가공석 - 듀얼 소드" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37844" name="화이트 데이 가공석 - 듀얼 대거" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualdagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37845" name="화이트 데이 가공석 - 듀얼 블런트" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualblunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37846" name="화이트 데이 가공석 - 방패" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_shield" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37847" name="화이트 데이 가공석 - 시길" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sigil" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="time" val="21600" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37848" name="화이트 데이 가공석 - 단검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37849" name="화이트 데이 가공석 - 한손 도검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37850" name="화이트 데이 가공석 - 양손 도검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37851" name="화이트 데이 가공석 - 한손 둔기" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37852" name="화이트 데이 가공석 - 격투 무기" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualfist" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37853" name="화이트 데이 가공석 - 창" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_pole" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37854" name="화이트 데이 가공석 - 활" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_bow" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37855" name="화이트 데이 가공석 - 석궁" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_twohand_crossbow" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37856" name="화이트 데이 가공석 - 마법검" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sword" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37857" name="화이트 데이 가공석 - 한손 지팡이" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_magic_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37858" name="화이트 데이 가공석 - 양손 지팡이" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_magic_twohand_blunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37859" name="화이트 데이 가공석 - 듀얼 소드" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37860" name="화이트 데이 가공석 - 듀얼 대거" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualdagger" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37861" name="화이트 데이 가공석 - 듀얼 블런트" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dualblunt" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37862" name="화이트 데이 가공석 - 방패" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_shield" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37863" name="화이트 데이 가공석 - 시길" additionalName="30일 기간제" type="EtcItem">
+		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sigil" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="time" val="43200" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37864" name="초보 영웅의 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll1_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37865" name="중수 영웅의 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll2_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37866" name="고수 영웅의 SP 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_sp_scroll3_i00" />
+		<set name="weight" val="30" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37867" name="영웅의 에피소드 주문서" type="EtcItem">
+		<set name="icon" val="icon.etc_cave_page_i00" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="17220" level="1" /> 
+		</skills>
+	</item>
+	<item id="37868" name="영웅의 무기 - 단검" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_dagger_of_hero" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13570" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">881</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37869" name="영웅의 무기 - 한손 도검" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13571" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37870" name="영웅의 무기 - 양손 도검" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13572" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37871" name="영웅의 무기 - 한손 둔기" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_axe_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="13573" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37872" name="영웅의 무기 - 격투 무기" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_fist_of_hero" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13574" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37873" name="영웅의 무기 - 창" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_pole_of_hero" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="BRONZE" />
+		<skills>
+			<skill id="13115" level="1" /> 
+			<skill id="13575" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">100</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37874" name="영웅의 무기 - 활" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_bow_of_hero" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="reuse_delay" val="1500" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13576" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1983</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37875" name="영웅의 무기 - 석궁" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_infinity_shooter" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="reuse_delay" val="1350" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13577" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1786</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37876" name="영웅의 무기 - 마법검" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_infinity_sword" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="21600" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13578" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37877" name="영웅의 무기 - 한손 지팡이" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_mace_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="21600" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="13579" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37878" name="영웅의 무기 - 양손 지팡이" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_the_staff_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="material" val="WOOD" />
+		<skills>
+			<skill id="13580" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">981</stat>
+			<stat type="mAtk">765</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37879" name="영웅의 무기 - 듀얼 소드" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_r_dualsword" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13581" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37880" name="영웅의 무기 - 듀얼 대거" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_r_dualdagger" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+		<skills>
+			<skill id="13582" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37881" name="영웅의 무기 - 듀얼 블런트" additionalName="15일 기간제" type="Weapon">
+		<set name="icon" val="icon.bm_r_dualblunt" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="500" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="21600" />
+		<set name="material" val="FINE_STEEL" />
+		<skills>
+			<skill id="13583" level="1" /> 
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37882" name="영웅의 무기 교환권" additionalName="15일 기간제" type="EtcItem">
+		<set name="icon" val="icon.etc_exchange_ticket_i00" />
+		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="21600" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37883" name="에피소드 상자" type="EtcItem">
+		<set name="icon" val="icon.new_user_box" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37884" name="영웅의 배지" type="EtcItem">
+		<set name="icon" val="icon.tiat_seal_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37885" name="영웅의 기운" type="EtcItem">
+		<set name="icon" val="icon.tersi_specter_seed" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37886" name="영웅의 경험치 주문서" type="EtcItem">
+		<set name="icon" val="icon.exp_bottle_scroll" />
+		<set name="weight" val="120" />
+		<set name="reuse_delay" val="5000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="17256" level="1" /> 
+		</skills>
+	</item>
+	<item id="37887" name="영웅의 SP룬" additionalName="1일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="time" val="1440" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37888" name="조로 모자" type="Armor">
+		<set name="icon" val="icon.accessory_archer_hat_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<set name="material" val="WOOD" />
+		<set name="bodypart" val="hairall" />
+	</item>
+	<item id="37889" name="성장의 허브" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="16174" level="1" /> 
+		</skills>
+	</item>
+	<item id="37890" name="강력 성장의 허브" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="16175" level="1" /> 
+		</skills>
+	</item>
+	<item id="37891" name="초강력 성장의 허브" type="EtcItem">
+		<set name="icon" val="BranchSys.icon.br_herb_of_baguette_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="ex_immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="16176" level="1" /> 
+		</skills>
+	</item>
+	<item id="37892" name="리오나의 보상 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37893" name="피로 물든 악마의 고서" type="EtcItem">
+		<set name="icon" val="icon.etc_codex_of_giant_i03" />
+		<set name="is_depositable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="STEEL" />
+	</item>
+	<item id="37894" name="용사의 회복 물약" type="EtcItem">
+		<set name="icon" val="icon.etc_potion_gold_i00" />
+		<set name="weight" val="180" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_stackable" val="true" />
+		<skills>
+			<skill id="17913" level="1" /> 
+		</skills>
+	</item>
+	<item id="37895" name="SP의 룬 - 하급" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTRT_RUNE_SELECT" />
+		<set name="time" val="10080" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37896" name="SP의 룬 - 중급" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTRT_RUNE_SELECT" />
+		<set name="time" val="10080" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="37897" name="SP의 룬 - 상급" additionalName="7일 기간제" type="EtcItem">
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="22040" level="1" /> 
+		</skills>
+	</item>
+	<item id="37898" name="하급 SP의 룬 1일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+	<item id="37899" name="중급 SP의 룬 1일 기간제 상자" type="EtcItem">
+		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="material" val="FISH" />
+	</item>
+</list>

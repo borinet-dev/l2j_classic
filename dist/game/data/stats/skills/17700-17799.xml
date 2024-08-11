@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="17701" toLevel="10" name="Topaz">
+		<!-- Interrupts target's skill casting. In PvP, ignores CP and inflicts a fixed damage of $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="2">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="3">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="4">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="5">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="6">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>A1</operateType>
+		<abnormalLevel>
+			<value level="1">2</value>
+			<value level="2">3</value>
+			<value level="3">4</value>
+			<value level="4">5</value>
+			<value level="5">6</value>
+			<value level="6">7</value>
+			<value level="7">8</value>
+			<value level="8">9</value>
+			<value level="9">10</value>
+			<value level="10">11</value>
+		</abnormalLevel>
+		<magicLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</magicLevel>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1000</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<pvpEffects>
+			<effect name="BlockSkill">
+				<magicTypes>1;3</magicTypes>
+			</effect>
+			<effect name="SkillTurning">
+				<chance>100</chance>
+				<staticChance>true</staticChance>
+			</effect>
+			<effect name="RealDamage">
+				<power>
+					<value level="1">475</value>
+					<value level="2">633</value>
+					<value level="3">950</value>
+					<value level="4">1357</value>
+					<value level="5">2375</value>
+					<value level="6">2500</value>
+					<value level="7">2800</value>
+					<value level="8">3400</value>
+					<value level="9">4300</value>
+					<value level="10">6000</value>
+				</power>
+			</effect>
+		</pvpEffects>
+	</skill>
+	<skill id="17702" toLevel="5" name="Jewel: Quick Recovery">
+		<!-- Recovers HP by $s1. -->
+		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="Hp">
+				<amount>
+					<value level="1">1500</value>
+					<value level="2">3000</value>
+					<value level="3">6000</value>
+					<value level="4">8000</value>
+					<value level="5">13000</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Cp">
+				<amount>
+					<value level="1">1500</value>
+					<value level="2">3000</value>
+					<value level="3">6000</value>
+					<value level="4">8000</value>
+					<value level="5">13000</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17703" toLevel="5" name="Jewel: Heal Boost">
+		<!-- Received Heal Amount + $s1. -->
+		<icon>icon.skill4416_dwarf</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">13</value>
+					<value level="5">21</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17704" toLevel="6" name="Obsidian">
+		<!-- Received Damage in PvP - $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="2">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="3">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="4">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="5">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="6">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="TriggerSkillByDamage" fromLevel="6" toLevel="6">
+				<!-- Greater Garnet - Cancel Stun -->
+				<attackerType>Creature</attackerType>
+				<minDamage>100</minDamage>
+				<chance>100</chance>
+				<targetType>SELF</targetType>
+				<allowSkillAttack>true</allowSkillAttack>
+				<allowNormalAttack>true</allowNormalAttack>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-3</value>
+					<value level="3">-7</value>
+					<value level="4">-11</value>
+					<value level="5">-15</value>
+					<value level="6">-15</value>
+				</amount>
+				<type>PK</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17705" toLevel="10" name="Opal">
+		<!-- Increases Atk. Attribute by $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_opal_i00</value>
+			<value level="2">icon.etc_bm_jewel_opal_i00</value>
+			<value level="3">icon.etc_bm_jewel_opal_i00</value>
+			<value level="4">icon.etc_bm_jewel_opal_i00</value>
+			<value level="5">icon.etc_bm_jewel_opal_i00</value>
+			<value level="6">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">40</value>
+					<value level="4">70</value>
+					<value level="5">120</value>
+					<value level="6">120</value>
+					<value level="7">120</value>
+					<value level="8">120</value>
+					<value level="9">120</value>
+					<value level="10">120</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17706" toLevel="10" name="Vital Stone">
+		<icon>
+			<value level="1">icon.etc_bm_jewel_vital</value>
+			<value level="2">icon.etc_bm_jewel_vital</value>
+			<value level="3">icon.etc_bm_jewel_vital</value>
+			<value level="4">icon.etc_bm_jewel_vital</value>
+			<value level="5">icon.etc_bm_jewel_vital</value>
+			<value level="6">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_vital_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<conditions>
+			<condition name="HasVitalityPoints">
+				<amount>35000</amount>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">15</value>
+					<value level="6">17</value>
+					<value level="7">19</value>
+					<value level="8">21</value>
+					<value level="9">23</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+					<value level="5">15</value>
+					<value level="6">17</value>
+					<value level="7">19</value>
+					<value level="8">21</value>
+					<value level="9">23</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="SpiritExpModify">
+				<amount>
+					<value level="10">50</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17707" toLevel="10" name="Jade">
+		<!-- Atk. Spd./ Casting Spd. +$s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_jade_i00</value>
+			<value level="2">icon.etc_bm_jewel_jade_i00</value>
+			<value level="3">icon.etc_bm_jewel_jade_i00</value>
+			<value level="4">icon.etc_bm_jewel_jade_i00</value>
+			<value level="5">icon.etc_bm_jewel_jade_i00</value>
+			<value level="6">icon.bm_jewel_speedup_lv1_high</value>
+			<value level="7">icon.bm_jewel_speedup_lv1_high</value>
+			<value level="8">icon.bm_jewel_speedup_lv1_high</value>
+			<value level="9">icon.bm_jewel_speedup_lv1_high</value>
+			<value level="10">icon.bm_jewel_speedup_lv1_high</value>
+		</icon>
+		<magicLevel>1</magicLevel>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+					<value level="4">7</value>
+					<value level="5">14</value>
+					<value level="6">15</value>
+					<value level="7">16</value>
+					<value level="8">17</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+					<value level="4">7</value>
+					<value level="5">14</value>
+					<value level="6">15</value>
+					<value level="7">16</value>
+					<value level="8">17</value>
+					<value level="9">18</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="6">1</value>
+					<value level="7">2</value>
+					<value level="8">3</value>
+					<value level="9">5</value>
+					<value level="10">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17708" toLevel="10" name="Diamond">
+		<!-- P. Def. +$s1. -->
+		<!-- TODO: on level 10 add chance of receiving P. critical attack -20% -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="2">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="3">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="4">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="5">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="6">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">11</value>
+					<value level="2">25</value>
+					<value level="3">50</value>
+					<value level="4">81</value>
+					<value level="5">130</value>
+					<value level="6">150</value>
+					<value level="7">180</value>
+					<value level="8">220</value>
+					<value level="9">280</value>
+					<value level="10">400</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value level="4">4</value>
+					<value level="5">10</value>
+					<value level="6">11</value>
+					<value level="7">12</value>
+					<value level="8">14</value>
+					<value level="9">16</value>
+					<value level="10">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17709" toLevel="10" name="Pearl">
+		<!-- M. Def. +$s1. -->
+		<!-- TODO: on level 10 add Chance of receiving M. Critical Attack -20% -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="2">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="3">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="4">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="5">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="6">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">14</value>
+					<value level="3">28</value>
+					<value level="4">46</value>
+					<value level="5">74</value>
+					<value level="6">85</value>
+					<value level="7">100</value>
+					<value level="8">125</value>
+					<value level="9">160</value>
+					<value level="10">250</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">8</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value level="4">4</value>
+					<value level="5">10</value>
+					<value level="6">11</value>
+					<value level="7">12</value>
+					<value level="8">14</value>
+					<value level="9">16</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

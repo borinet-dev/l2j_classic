@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="FoolsDay Event" active="04 01 00 00-04 02 00 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="41261" min="1" max="1" chance="7.12%" />
+		<!-- 바게트 허브 -->
+		<add item="20272" min="1" max="1" chance="4.12%" />
+		<add item="20273" min="1" max="1" chance="4.12%" />
+		<add item="20274" min="1" max="1" chance="4.12%" />
+		<!-- 베스페르 허브 -->
+		<add item="20923" min="1" max="1" chance="3.12%" /> <!-- 베스페르 슬래셔 -->
+		<add item="20924" min="1" max="1" chance="3.12%" /> <!-- 베스페르 캐스터 -->
+		<add item="20925" min="1" max="1" chance="3.12%" /> <!-- 베스페르 듀얼 소드 -->
+		<!-- 베스페르 무기 -->
+		<add item="13457" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13458" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13459" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13460" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13461" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13462" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13463" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13464" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13465" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13466" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13467" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="52" min="1" max="1" chance="0.012%" minLevel="65" maxLevel="99" isDrop="true" />
+		<add item="13884" min="1" max="1" chance="0.012%" isDrop="true" />
+		<!-- 베스페르 무기 -->
+		<add item="13457" min="1" max="1" chance="9.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13458" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13459" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13460" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13461" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13462" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13463" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13464" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13465" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13466" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13467" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="52" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+		<add item="13884" min="1" max="1" chance="0.009%" minLevel="1" maxLevel="64" isDrop="true" />
+	</droplist>
+	<spawnlist>
+		<add npc="32639" x="83441" y="149097" z="-3393" heading="31167" /> <!-- 기란 -->
+		<add npc="32639" x="-84019" y="243115" z="-3728" heading="9231" /> <!-- 말섬 -->
+		<add npc="32639" x="18136" y="145410" z="-3072" heading="5636" /> <!-- 디온 -->
+		<add npc="32639" x="-14140" y="123307" z="-3105" heading="31644" /> <!-- 글성 -->
+		<add npc="32639" x="117008" y="76653" z="-2720" heading="30084" /> <!-- 사냥꾼 -->
+		<add npc="32639" x="147640" y="25937" z="-2001" heading="32381" /> <!-- 아덴 -->
+		<add npc="32639" x="82747" y="53809" z="-1473" heading="33419" /> <!-- 오렌 -->
+		<add npc="32639" x="-82081" y="150834" z="-3105" heading="28502" /> <!-- 글루딘 -->
+		<add npc="32639" x="17510" y="170455" z="-3496" heading="50534" /> <!-- 플로란 -->
+		<add npc="32639" x="147487" y="-55507" z="-2736" heading="49586" /> <!-- 고다드 -->
+	</spawnlist>
+	<destroyItemsOnEnd>
+		<item id="41261" />
+	</destroyItemsOnEnd>
+	<messages>
+		<add type="onEnd" text="만우절 이벤트가 종료되었습니다!" />
+	</messages>
+</event>

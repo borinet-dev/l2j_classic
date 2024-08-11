@@ -1,0 +1,190 @@
+<html noscrollbar><title>커뮤니티 보드 - 루나상점</title>
+	<body><br>
+%header%
+		<table width=20>
+			<tr>
+				<td>
+					%menu%
+				</td>
+				<td>
+					<center>
+						<table border=0 cellpadding=0 cellspacing=0 width=524 height=416 background="L2UI_CT1.Windows_DF_TooltipBG">
+							<tr>
+								<td align="center">
+
+
+<table border=0 width=490 height=330>
+	<tr>
+		<td align="center">
+<table width=456>
+<tr>
+<td height=25 align="center"><br><br>
+<font name="hs16" color="CDB67F">아이템 구매 진행</font>
+</td>
+</tr>
+<tr>
+<td>
+<center><img src="L2UI.SquareGray" width=250 height=1><br></center>
+</td>
+</tr>
+</table>
+
+<table width=456>
+<tr>
+<td height=25 align="left">
+<br>
+1. 구매 캐릭터는 <font color=LEVEL>%charname%</font> 입니다.<br1>
+2. 이름 입력란에는 <font color=LEVEL>입금자 이름</font>을 적어주시기 바라며, 띄워쓰기는 하지마십시오.<br1>
+3. 입력한 이름과 실제 입금자가 상이할 경우에는 처리가 지연되거나 처리되지&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;않을 수 있습니다.<br1>
+5. 아래 목록에서 구매하실 아이템을 선택(다중선택 가능) 하시면 됩니다.<br1>
+6. 입금 확인 즉시 우편으로 발송됩니다.<br>
+</td>
+</tr>
+<tr>
+<td>
+<center><img src="L2UI.SquareGray" width=456 height=1><br></center>
+</td>
+</tr>
+</table>
+			<table border=0 width=450>
+				<tr>
+					<td align=right width=60 height=30>
+						입금자 이름: 
+					</td>
+					<td align=left width=100>
+						 <edit var="name" type="numer" width="130" height="12" length="10">
+					</td>
+					<td align=right width=50 height=37>
+						구매 금액: 
+					</td>
+					<td width=150 height=1>
+						%TotalPrice%<br><Br>
+					</td>
+				</tr>
+			</table>
+			<table border=1 width=450 cellpadding=2 cellspacing=2>
+				<tr>
+					<td align=left width=180 height=30>%sudoColor%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="">수도원 유물 - %item28%개</font></Button></td>
+					<td>
+						<table>
+							<tr>
+								<td><button action="bypass -h subSudo" width=16 height=16 back="L2UI_CH3.frameclosebtn_over" fore="L2UI_CH3.QuestWndMinusBtn" value=" "></td>
+								<td><button action="bypass -h addSudo" width=16 height=16 back="L2UI_CH3.minimap_party" fore="L2UI_CH3.QuestWndPlusBtn" value=" "></td>
+							</tr>
+						</table>
+					</td>
+					<td align=left width=180 height=30>%fordenColor%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="">잊혀진 유물 - %item29%개</font></Button></td>
+					<td>
+						<table>
+							<tr>
+								<td><button action="bypass -h subForden" width=16 height=16 back="L2UI_CH3.frameclosebtn_over" fore="L2UI_CH3.QuestWndMinusBtn" value=" "></td>
+								<td><button action="bypass -h addForden" width=16 height=16 back="L2UI_CH3.minimap_party" fore="L2UI_CH3.QuestWndPlusBtn" value=" "></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor1%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 1">향상된 여왕개미의 반지</Button></font></td>
+					<td align=left width=50>%item1%</td>
+					<td align=left width=180 height=30>%itemColor2%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 2">향상된 코어의 반지</font></Button></td>
+					<td align=left width=50>%item2%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor3%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 3">향상된 오르펜의 귀걸이</font></Button></td>
+					<td align=left width=50>%item3%</td>
+					<td align=left width=180 height=30>%itemColor4%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 4">향상된 자켄의 귀걸이</font></Button></td>
+					<td align=left width=50>%item4%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor5%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 5">향상된 바이움의 반지</font></Button></td>
+					<td align=left width=50>%item5%</td>
+					<td align=left width=180 height=30>%itemColor6%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 6">향상된 안타라스의 귀걸이</font></Button></td>
+					<td align=left width=50>%item6%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor7%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 7">바이움 탈리스만</font></Button></td>
+					<td align=left width=50>%item7%</td>
+					<td align=left width=180 height=30></td>
+					<td align=left width=50></td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor8%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 8">네불라 목걸이</font></Button></td>
+					<td align=left width=50>%item8%</td>
+					<td align=left width=180 height=30>%itemColor9%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 9">이그니스 목걸이</font></Button></td>
+					<td align=left width=50>%item9%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor10%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 10">프로첼라 목걸이</font></Button></td>
+					<td align=left width=50>%item10%</td>
+					<td align=left width=180 height=30>%itemColor11%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 11">페트람 목걸이</font></Button></td>
+					<td align=left width=50>%item11%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor12%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 12">네불라 아가시온</font></Button></td>
+					<td align=left width=50>%item12%</td>
+					<td align=left width=180 height=30>%itemColor13%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 13">이그니스 아가시온</font></Button></td>
+					<td align=left width=50>%item13%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor14%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 14">프로첼라 아가시온</font></Button></td>
+					<td align=left width=50>%item14%</td>
+					<td align=left width=180 height=30>%itemColor15%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 15">페트람 아가시온</font></Button></td>
+					<td align=left width=50>%item15%</td>
+				</tr>				
+				<tr>
+					<td align=left width=180 height=30>%itemColor16%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 16">여왕개미 인형 1단계</font></Button></td>
+					<td align=left width=50>%item16%</td>
+					<td align=left width=180 height=30>%itemColor17%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 17">여왕개미 인형 2단계</font></Button></td>
+					<td align=left width=50>%item17%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor18%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 18">바이움 인형 1단계</font></Button></td>
+					<td align=left width=50>%item18%</td>
+					<td align=left width=180 height=30>%itemColor19%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 19">바이움 인형 2단계</font></Button></td>
+					<td align=left width=50>%item19%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor20%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 20">오르펜 인형 1단계</font></Button></td>
+					<td align=left width=50>%item20%</td>
+					<td align=left width=180 height=30>%itemColor21%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 21">오르펜 인형 2단계</font></Button></td>
+					<td align=left width=50>%item21%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor22%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 22">프린테사 인형 1단계</font></Button></td>
+					<td align=left width=50>%item22%</td>
+					<td align=left width=180 height=30>%itemColor23%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 23">프린테사 인형 2단계</font></Button></td>
+					<td align=left width=50>%item23%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor24%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 24">프린테사 망토</font></Button></td>
+					<td align=left width=50>%item24%</td>
+					<td align=left width=180 height=30>%itemColor25%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 25">할리샤의 투구</font></Button></td>
+					<td align=left width=50>%item25%</td>
+				</tr>
+				<tr>
+					<td align=left width=180 height=30>%itemColor26%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 26">레드 캐츠아이 5단계</font></Button></td>
+					<td align=left width=50>%item26%</td>
+					<td align=left width=180 height=30>%itemColor27%<Button width=180 ALIGN=LEFT ICON="NORMAL" action="bypass -h addItem 27">블루 캐츠아이 5단계</font></Button></td>
+					<td align=left width=50>%item27%</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<br><br>
+<table>
+<tr><td>
+<button ALIGN=LEFT ICON="NORMAL" action="bypass buyItemFinish $name">동의 후 완료하기</Button>
+</td></tr>
+</table>
+<br><br>
+						</center>
+					</td>
+				</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+<br><br>
+	</body>
+</html>

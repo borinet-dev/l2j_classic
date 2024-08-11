@@ -1,0 +1,29 @@
+<html noscrollbar><head><body>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="L2UI_CH3.refinewnd_back_Pattern">
+	<tr>
+		<td valign="top" align="center">
+			<br><br>
+			<font color="FF9200">캐릭터 교정 서비스</font><br1>
+			<center>
+				<font color="FF2900">---------------------------------------</font>
+			</center><br1>
+				필요아이템: <font color=LEVEL>20,000 아데나</font><br1>
+				해당 캐릭터가 특정지역에서 끼이거나<br1>
+				또는 무한 튕김 및 안움직여지는 현상이 발생하면<br1>
+				아래의 박스에서 해당 캐릭터를 선택 후<br1>
+				<font color=LEVEL>[캐릭터 교정하기]</font> 버튼을 누르세요.<br1>
+				해당 캐릭터는 마을로 이동 됩니다.<br1>
+			<center>
+				<font color="FF2900">---------------------------------------</font>
+			</center><br1>
+			<br>
+			<center>
+				<font color=c1b33a>교정하실 캐릭터를 선택하세요.</font>
+					<combobox width=170 var="character" list="%charsOnAccount%">
+			</center><br><br>
+<Button width=250 ALIGN=LEFT ICON="NORMAL" action="bypass -h voice .교정하기 $character">캐릭터 교정하기</Button>
+<Button width=250 ALIGN=LEFT ICON="NORMAL" action="bypass -h guide index">뒤로가기</Button>
+		</td>
+	</tr>
+</table>
+</body></html>

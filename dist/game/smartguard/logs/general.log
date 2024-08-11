@@ -1,0 +1,77 @@
+[18.09.2023 13:08:31] Exception occurred: 
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:415)
+	at java.base/java.util.regex.Matcher.<init>(Matcher.java:252)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1134)
+	at smartguard.core.entity.Punishment.parseArgs(Punishment.java:94)
+	at smartguard.core.properties.GuardProperties.parsePunishments(GuardProperties.java:265)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at smartguard.core.properties.PropertiesLoader.lambda$load$5(PropertiesLoader.java:78)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at smartguard.core.properties.PropertiesLoader.load(PropertiesLoader.java:57)
+	at smartguard.core.SmartGuardService.init(SmartGuardService.java:111)
+	at smartguard.core.SmartGuardService.init(SmartGuardService.java:92)
+	at smartguard.SmartGuard.main(SmartGuard.java:59)
+
+[18.09.2023 13:08:31] Bad detection configuration arguments: RADAR=TEMPORARY_DELAYED_BAN(15-30, 120
+[18.09.2023 13:08:32] Protection configuration loaded.
+[18.09.2023 13:08:32] SmartGuard update server issued new build numbers: 3068 - 3068
+[18.09.2023 13:08:32] --- SmartGuard Protection (Build: 3007, Hash: 4d4d946) ---
+[18.09.2023 13:08:32] SmartGuard has been initialized.
+[18.09.2023 13:08:32] Connected to master server.
+[18.09.2023 13:08:51] Client{account='admin', uid=-1, hwid='04822d5fce936a649b11e1194bbbb37e'} is whitelisted and was exempt from all checks.
+[18.09.2023 13:08:55] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:09:55] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:10:55] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:11:55] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:12:55] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:14:42] Exception occurred: 
+java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1769)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:415)
+	at java.base/java.util.regex.Matcher.<init>(Matcher.java:252)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1134)
+	at smartguard.core.entity.Punishment.parseArgs(Punishment.java:94)
+	at smartguard.core.properties.GuardProperties.parsePunishments(GuardProperties.java:265)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at smartguard.core.properties.PropertiesLoader.lambda$load$5(PropertiesLoader.java:78)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at smartguard.core.properties.PropertiesLoader.load(PropertiesLoader.java:57)
+	at smartguard.core.SmartGuardService.init(SmartGuardService.java:111)
+	at smartguard.core.SmartGuardService.init(SmartGuardService.java:92)
+	at smartguard.SmartGuard.main(SmartGuard.java:59)
+
+[18.09.2023 13:14:42] Bad detection configuration arguments: RADAR=TEMPORARY_DELAYED_BAN(15-30, 120
+[18.09.2023 13:14:42] Protection configuration loaded.
+[18.09.2023 13:14:42] SmartGuard update server issued new build numbers: 3068 - 3068
+[18.09.2023 13:14:42] --- SmartGuard Protection (Build: 3007, Hash: 4d4d946) ---
+[18.09.2023 13:14:42] SmartGuard has been initialized.
+[18.09.2023 13:14:42] Connected to master server.
+[18.09.2023 13:15:04] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:16:04] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:17:04] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:18:04] Incorrect hwid in database on ban_id: 19
+[18.09.2023 13:19:04] Incorrect hwid in database on ban_id: 19

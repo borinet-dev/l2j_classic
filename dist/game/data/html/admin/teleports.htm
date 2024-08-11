@@ -1,0 +1,44 @@
+<html><title>Admin Teleports</title><body>
+<center>
+<table width=256><tr>
+<td align=center><button value="Main" action="bypass -h admin_admin" width=40 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center width=176>Admin Teleport Menu</td>
+<td align=center><button value="Back" action="bypass -h admin_admin" width=40 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<table width=256><tr>
+<td align=center><button action="bypass -h admin_html teleports/TownAreas.htm" value="마을" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center><button action="bypass -h admin_html teleports/WorldAreas.htm" value="사냥터" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td align=center><button action="bypass -h admin_html teleports/CastleAreas.htm" value="성" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center><button action="bypass -h admin_html teleports/fort.htm" value="오새" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td align=center><button action="bypass -h admin_html teleports/sevensigns.htm" value="세븐사인" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center><button action="bypass -h admin_html teleports/instance.htm" value="인스턴트" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td align=center><button action="bypass -h admin_html teleports/raid.htm" value="레이드 보스" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center><button action="bypass -h admin_html teleports/OlympiadStadiums.htm" value="올림피아드 경기장" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td align=center><button action="bypass -h admin_html teleports/clanhall/clanhall.htm" value="요새" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td align=center><button action="bypass -h admin_html teleports/OtherLocations.htm" value="그외 지역" width=128 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table><br>
+<button value="이동 옵션" action="bypass -h admin_tele" width=180 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"><br>
+Move to the given coordinates<br1>
+<table width=256><tr>
+<td align=center width=85><font color="LEVEL">X</font></td>
+<td align=center width=85><font color="LEVEL">Y</font></td>
+<td align=center width=85><font color="LEVEL">Z</font></td>
+</tr></table>
+<table width=256><tr>
+<td align=center><edit var="char_cord_x" width=75></td>
+<td align=center><edit var="char_cord_y" width=75></td>
+<td align=center><edit var="char_cord_z" width=75></td>
+</tr></table>
+<table width=256><tr>
+<td align=center><button value="Go" action="bypass -h admin_move_to $char_cord_x $char_cord_y $char_cord_z" width=31 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table>
+</center>
+</body></html>
