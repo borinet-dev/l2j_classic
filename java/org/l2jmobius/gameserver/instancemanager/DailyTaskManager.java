@@ -100,6 +100,7 @@ public class DailyTaskManager
 		dailyAfternoonReset();
 		Save();
 		customReset();
+		ThreadPool.scheduleAtFixedRate(this::AutoLunaReset, 1000, 10000); // 1 min
 	}
 	
 	private void olymStart()
@@ -1251,6 +1252,37 @@ public class DailyTaskManager
 		"DELETE FROM character_instance_time WHERE time <= ?",
 		"DELETE FROM character_skills_save WHERE restore_type = 1 AND systime <= ?"
 	};
+	
+	private void AutoLunaReset()
+	{
+		String selectQuery = "SELECT id, send_time FROM auto_lunabuy WHERE checked = 0";
+		String updateQuery = "UPDATE auto_lunabuy SET checked = 3 WHERE id = ?";
+		
+		try (Connection con = DatabaseFactory.getConnection();
+			PreparedStatement selectStmt = con.prepareStatement(selectQuery);
+			PreparedStatement updateStmt = con.prepareStatement(updateQuery);
+			ResultSet rs = selectStmt.executeQuery())
+		{
+			long currentTime = System.currentTimeMillis(); // 현재 시간을 밀리세컨드 단위로 가져옴
+			
+			while (rs.next())
+			{
+				int id = rs.getInt("id");
+				long sendTime = rs.getLong("send_time"); // 밀리세컨드 단위의 send_time
+				
+				// 현재 시간보다 24시간이 지났는지 확인
+				if ((currentTime - sendTime) >= 86400000) // 86400000 밀리세컨드는 24시간
+				{
+					updateStmt.setInt(1, id);
+					updateStmt.executeUpdate();
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			e.printStackTrace();
+		}
+	}
 	
 	public static DailyTaskManager getInstance()
 	{
