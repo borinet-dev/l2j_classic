@@ -100,7 +100,7 @@ public class DailyTaskManager
 		dailyAfternoonReset();
 		Save();
 		customReset();
-		ThreadPool.scheduleAtFixedRate(this::AutoLunaReset, 1000, 10000); // 1 min
+		ThreadPool.scheduleAtFixedRate(this::AutoLunaReset, 600000, 60000); // 1 min
 	}
 	
 	private void olymStart()
