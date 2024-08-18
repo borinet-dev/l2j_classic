@@ -130,12 +130,6 @@ public class AdminBoat implements IAdminCommandHandler
 		{
 			if (player.isInBoat() && player.isOnBoat())
 			{
-				if (player.getBoat().checkPassengers(player))
-				{
-					player.addItem("정기선 배표", 41366, 1, null, true);
-				}
-				
-				player.sendMessage(player.getBoat().getBoatName() + "에서 하선하였습니다.");
 				player.sendPacket(ActionFailed.STATIC_PACKET);
 				player.broadcastPacket(new GetOffVehicle(player.getObjectId(), player.getBoat().getObjectId(), player.getBoat().getX(), player.getBoat().getY(), player.getBoat().getZ()));
 				player.setInsideZone(ZoneId.PEACE, false);
