@@ -14,11 +14,11 @@ import ai.AbstractNpcAI;
  */
 public class Paulina extends AbstractNpcAI
 {
-	// private static final int PAULINA = 40020;
+	private static final int PAULINA = 40020;
 	
 	private Paulina()
 	{
-		// addStartNpc(PAULINA);
+		addStartNpc(PAULINA);
 		// addTalkId(PAULINA);
 		// addFirstTalkId(PAULINA);
 	}

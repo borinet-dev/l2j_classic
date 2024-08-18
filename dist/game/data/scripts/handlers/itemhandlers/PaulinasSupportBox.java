@@ -23,6 +23,7 @@ import org.l2jmobius.gameserver.enums.Race;
 import org.l2jmobius.gameserver.handler.IItemHandler;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
@@ -144,31 +145,43 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_MAGIC_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ROGUE_GROUP, classId.getId()))
 						{
+							Item itema = ItemTemplate.createItem(WEAPON_DAGGER_D);
+							Item itemb = ItemTemplate.createItem(WEAPON_BOW_D);
 							player.addItem(getClass().getSimpleName(), BOX_D_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DAGGER_D, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_BOW_D, 1, player, true);
+							itema.setEnchantLevel(5);
+							itemb.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itema, player, true);
+							player.addItem(getClass().getSimpleName(), itemb, player, true);
 							player.addItem(getClass().getSimpleName(), ARROWS_D, 3000, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_WARRIOR_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SWORD_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SWORD_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_KNIGHT_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
 					case DWARF:
 					{
 						player.addItem(getClass().getSimpleName(), BOX_D_HEAVY, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_BLUNT_D, 1, player, true);
+						Item itemw = ItemTemplate.createItem(WEAPON_BLUNT_D);
+						itemw.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), itemw, player, true);
 						break;
 					}
 					case ORC:
@@ -176,17 +189,23 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ORCM_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.LIGHT_ARMOR_CLASS, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_FIST_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_FIST_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_D_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_D, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_D);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
@@ -204,45 +223,61 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_BOW, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_BOW_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_BOW_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 							player.addItem(getClass().getSimpleName(), ARROWS_C, 3000, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DAGGER, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DAGGER_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DAGGER_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DANCE, classId.getId()) || (player.getClassId() == ClassId.GLADIATOR))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DUALSWORD_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DUALSWORD_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (player.getClassId() == ClassId.WARLORD)
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SPEAR_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SPEAR_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_WARRIOR_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SWORD_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SWORD_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.DIVISION_ENCHANTER, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_SUMMON, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_WIZARD, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_HEAL, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
 					case DWARF:
 					{
 						player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_BLUNT_C, 1, player, true);
+						Item itemw = ItemTemplate.createItem(WEAPON_BLUNT_C);
+						itemw.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), itemw, player, true);
 						break;
 					}
 					case ORC:
@@ -250,17 +285,23 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ORCM_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.LIGHT_ARMOR_CLASS, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_FIST_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_FIST_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_C_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_C, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_C);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
@@ -278,45 +319,60 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_BOW, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_BOW_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_BOW_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 							player.addItem(getClass().getSimpleName(), ARROWS_A, 3000, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DAGGER, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DAGGER_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DAGGER_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DANCE, classId.getId()) || (player.getClassId() == ClassId.GLADIATOR))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DUALSWORD_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DUALSWORD_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (player.getClassId() == ClassId.WARLORD)
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SPEAR_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SPEAR_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_WARRIOR_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SWORD_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SWORD_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.DIVISION_ENCHANTER, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_SUMMON, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_WIZARD, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_HEAL, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_A);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
 					case DWARF:
 					{
 						player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_BLUNT_A, 1, player, true);
+						Item itemw = ItemTemplate.createItem(WEAPON_BLUNT_A);
+						itemw.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), itemw, player, true);
 						break;
 					}
 					case ORC:
@@ -324,17 +380,23 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ORCM_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.LIGHT_ARMOR_CLASS, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_FIST_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_FIST_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_A, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_A);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
@@ -353,44 +415,60 @@ public class PaulinasSupportBox implements IItemHandler
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_LIGHT, 1, player, true);
 							player.addItem(getClass().getSimpleName(), ARROW_OF_LIGHT_S, 5000, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_BOW_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_BOW_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DAGGER, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DAGGER_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DAGGER_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DANCE, classId.getId()) || (player.getClassId() == ClassId.DUELIST))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DUALSWORD_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DUALSWORD_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (player.getClassId() == ClassId.DREADNOUGHT)
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SPEAR_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SPEAR_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_WARRIOR_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SWORD_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SWORD_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.DIVISION_ENCHANTER, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_SUMMON, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_WIZARD, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_HEAL, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
 					case DWARF:
 					{
 						player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_BLUNT_S, 1, player, true);
+						Item itemw = ItemTemplate.createItem(WEAPON_BLUNT_S);
+						itemw.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), itemw, player, true);
 						break;
 					}
 					case ORC:
@@ -398,17 +476,23 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ORCM_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_STAFF_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.LIGHT_ARMOR_CLASS, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_FIST_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_FIST_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_S_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_S, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_S);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}
@@ -427,48 +511,72 @@ public class PaulinasSupportBox implements IItemHandler
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_LIGHT, 1, player, true);
 							player.addItem(getClass().getSimpleName(), ORICHALCUM_ARROW_R, 10000, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_BOW_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_BOW_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DAGGER, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DUALDAGGER_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DUALDAGGER_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.SUBJOB_GROUP_DANCE, classId.getId()) || (player.getClassId() == ClassId.DUELIST))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_DUALSWORD_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_DUALSWORD_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (player.getClassId() == ClassId.DREADNOUGHT)
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SPEAR_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SPEAR_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_WARRIOR_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SWORD_R, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SHIELD_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_SWORD_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
+							Item items = ItemTemplate.createItem(WEAPON_SHIELD_R);
+							items.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), items, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.DIVISION_ENCHANTER, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_SUMMON, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_WIZARD, classId.getId()) || CategoryData.getInstance().isInCategory(CategoryType.DIVISION_HEAL, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_CASTER_R, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SIGIL_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_CASTER_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
+							Item items = ItemTemplate.createItem(WEAPON_SIGIL_R);
+							items.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), items, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_R, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SHIELD_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
+							Item items = ItemTemplate.createItem(WEAPON_SHIELD_R);
+							items.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), items, player, true);
 						}
 						break;
 					}
 					case DWARF:
 					{
 						player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_BLUNT_R, 1, player, true);
-						player.addItem(getClass().getSimpleName(), WEAPON_SHIELD_R, 1, player, true);
+						Item itemw = ItemTemplate.createItem(WEAPON_BLUNT_R);
+						itemw.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), itemw, player, true);
+						Item items = ItemTemplate.createItem(WEAPON_SHIELD_R);
+						items.setEnchantLevel(5);
+						player.addItem(getClass().getSimpleName(), items, player, true);
 						break;
 					}
 					case ORC:
@@ -476,18 +584,26 @@ public class PaulinasSupportBox implements IItemHandler
 						if (CategoryData.getInstance().isInCategory(CategoryType.RECOM_ORCM_GROUP, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_ROBE, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_CASTER_R, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_SIGIL_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_CASTER_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
+							Item items = ItemTemplate.createItem(WEAPON_SIGIL_R);
+							items.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), items, player, true);
 						}
 						else if (CategoryData.getInstance().isInCategory(CategoryType.LIGHT_ARMOR_CLASS, classId.getId()))
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_LIGHT, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_FIST_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_FIST_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
 						{
 							player.addItem(getClass().getSimpleName(), BOX_R_HEAVY, 1, player, true);
-							player.addItem(getClass().getSimpleName(), WEAPON_GSWORD_R, 1, player, true);
+							Item itemw = ItemTemplate.createItem(WEAPON_GSWORD_R);
+							itemw.setEnchantLevel(5);
+							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						break;
 					}

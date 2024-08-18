@@ -53,6 +53,10 @@ public class PoliceNpc extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
+		if (npc.getId() == 폴리네)
+		{
+			return getHtm(player, "index_p.htm").replace("%npcName%", npc.getName());
+		}
 		return getHtm(player, "index.htm").replace("%npcName%", npc.getName());
 	}
 	

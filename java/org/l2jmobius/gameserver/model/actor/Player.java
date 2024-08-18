@@ -10698,7 +10698,6 @@ public class Player extends Playable
 	{
 		if ((_vehicle != null) && !_vehicle.isTeleporting() && (getBoat() != null))
 		{
-			sendMessage(getBoat().getBoatName() + "에서 하선하였습니다.");
 			sendPacket(ActionFailed.STATIC_PACKET);
 			broadcastPacket(new GetOffVehicle(getObjectId(), getBoat().getObjectId(), getBoat().getX(), getBoat().getY(), getBoat().getZ()));
 			setInsideZone(ZoneId.PEACE, false);
