@@ -16,13 +16,10 @@
  */
 package ai.others.MonumentOfHeroes;
 
-import java.util.List;
-
-import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
-import org.l2jmobius.gameserver.model.olympiad.Olympiad;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ExHeroList;
@@ -49,6 +46,7 @@ public class MonumentOfHeroes extends AbstractNpcAI
 		6612, // Infinity Cleaver
 		6613, // Infinity Axe
 		6614, // Infinity Rod
+		6615, // Infinity Rod
 		6616, // Infinity Scepter
 		6617, // Infinity Stinger
 		6618, // Infinity Fang
@@ -84,9 +82,22 @@ public class MonumentOfHeroes extends AbstractNpcAI
 		String htmltext = null;
 		switch (event)
 		{
-			case "MonumentOfHeroes-reward.html":
+			case "reward":
 			{
-				htmltext = event;
+				if (!player.isInventoryUnder80(false))
+				{
+					player.sendPacket(SystemMessageId.UNABLE_TO_PROCESS_THIS_REQUEST_UNTIL_YOUR_INVENTORY_S_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
+				}
+				else if (Hero.getInstance().isHero(player.getObjectId()) || player.isGM())
+				{
+					htmltext = getHtm(player, "MonumentOfHeroes-reward.html");
+					htmltext = htmltext.replace("%reward%", hasAtLeastOneQuestItem(player, WEAPONS) ? "무기 교체" : "무기 받기");
+					htmltext = htmltext.replace("%change%", hasAtLeastOneQuestItem(player, WEAPONS) ? "다른 무기로 교체하여 사용할 수 있습니다." : "무기를 선택하여 사용할 수 있습니다.");
+				}
+				else
+				{
+					htmltext = "MonumentOfHeroes-noHero.html";
+				}
 				break;
 			}
 			case "index":
@@ -99,72 +110,16 @@ public class MonumentOfHeroes extends AbstractNpcAI
 				player.sendPacket(new ExHeroList());
 				break;
 			}
-			case "receiveCloak":
-			{
-				final int olympiadRank = getOlympiadRank(player);
-				if (olympiadRank == 1)
-				{
-					if (!hasAtLeastOneQuestItem(player, HERO_CLOAK/* , GLORIOUS_CLOAK */))
-					{
-						if (player.isInventoryUnder80(false))
-						{
-							giveItems(player, HERO_CLOAK, 1);
-						}
-						else
-						{
-							player.sendPacket(SystemMessageId.UNABLE_TO_PROCESS_THIS_REQUEST_UNTIL_YOUR_INVENTORY_S_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
-						}
-					}
-					else
-					{
-						htmltext = "MonumentOfHeroes-cloakHave.html";
-					}
-				}
-				else
-				{
-					htmltext = "MonumentOfHeroes-cloakNo.html";
-				}
-				break;
-			}
 			case "heroWeapon":
 			{
-				if (Hero.getInstance().isHero(player.getObjectId()))
+				if (player.isInventoryUnder80(false))
 				{
-					if (player.isInventoryUnder80(false))
-					{
-						htmltext = hasAtLeastOneQuestItem(player, WEAPONS) ? "MonumentOfHeroes-weaponHave.html" : "MonumentOfHeroes-weaponList.html";
-					}
-					else
-					{
-						player.sendPacket(SystemMessageId.UNABLE_TO_PROCESS_THIS_REQUEST_UNTIL_YOUR_INVENTORY_S_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
-					}
+					htmltext = getHtm(player, "MonumentOfHeroes-weaponList.html");
+					htmltext = htmltext.replace("%choice%", hasAtLeastOneQuestItem(player, WEAPONS) ? "교체하실" : "자신에게 맞는");
 				}
 				else
 				{
-					htmltext = "MonumentOfHeroes-weaponNo.html";
-				}
-				break;
-			}
-			case "heroCirclet":
-			{
-				if (Hero.getInstance().isHero(player.getObjectId()))
-				{
-					if (hasQuestItems(player, WINGS_OF_DESTINY_CIRCLET))
-					{
-						htmltext = "MonumentOfHeroes-circletHave.html";
-					}
-					else if (!player.isInventoryUnder80(false))
-					{
-						player.sendPacket(SystemMessageId.UNABLE_TO_PROCESS_THIS_REQUEST_UNTIL_YOUR_INVENTORY_S_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
-					}
-					else
-					{
-						giveItems(player, WINGS_OF_DESTINY_CIRCLET, 1);
-					}
-				}
-				else
-				{
-					htmltext = "MonumentOfHeroes-circletNo.html";
+					player.sendPacket(SystemMessageId.UNABLE_TO_PROCESS_THIS_REQUEST_UNTIL_YOUR_INVENTORY_S_WEIGHT_AND_SLOT_COUNT_ARE_LESS_THAN_80_PERCENT_OF_CAPACITY);
 				}
 				break;
 			}
@@ -186,30 +141,24 @@ public class MonumentOfHeroes extends AbstractNpcAI
 			}
 			case "heroConfirm":
 			{
-				if (Hero.getInstance().isUnclaimedHero(player.getObjectId()))
+				if (player.isMainClassActive())
 				{
-					if (player.isMainClassActive())
+					Hero.getInstance().claimHero(player);
+					showOnScreenMsg(player, (NpcStringId.getNpcStringId(13357 + player.getClassId().getId())), ExShowScreenMessage.TOP_CENTER, 5000);
+					player.broadcastPacket(new PlaySound(1, "ns01_f", 0, 0, 0, 0, 0));
+					if (!hasQuestItems(player, WINGS_OF_DESTINY_CIRCLET))
 					{
-						if (player.getLevel() >= 55)
-						{
-							Hero.getInstance().claimHero(player);
-							showOnScreenMsg(player, (NpcStringId.getNpcStringId(13357 + player.getClassId().getId())), ExShowScreenMessage.TOP_CENTER, 5000);
-							player.broadcastPacket(new PlaySound(1, "ns01_f", 0, 0, 0, 0, 0));
-							htmltext = "MonumentOfHeroes-heroCertificationsDone.html";
-						}
-						else
-						{
-							htmltext = "MonumentOfHeroes-heroCertificationLevel.html";
-						}
+						giveItems(player, WINGS_OF_DESTINY_CIRCLET, 1);
 					}
-					else
+					if (!hasAtLeastOneQuestItem(player, HERO_CLOAK))
 					{
-						htmltext = "MonumentOfHeroes-heroCertificationSub.html";
+						giveItems(player, HERO_CLOAK, 1);
 					}
+					htmltext = "MonumentOfHeroes-heroCertificationsDone.html";
 				}
 				else
 				{
-					htmltext = "MonumentOfHeroes-heroCertificationNo.html";
+					htmltext = "MonumentOfHeroes-heroCertificationSub.html";
 				}
 				break;
 			}
@@ -217,6 +166,7 @@ public class MonumentOfHeroes extends AbstractNpcAI
 			case "give_6612": // Infinity Cleaver
 			case "give_6613": // Infinity Axe
 			case "give_6614": // Infinity Rod
+			case "give_6615": // Infinity Rod
 			case "give_6616": // Infinity Scepter
 			case "give_6617": // Infinity Stinger
 			case "give_6618": // Infinity Fang
@@ -238,6 +188,10 @@ public class MonumentOfHeroes extends AbstractNpcAI
 			case "give_30404":
 			case "give_30405":
 			{
+				if (hasAtLeastOneQuestItem(player, WEAPONS))
+				{
+					deleteHerotIems(player);
+				}
 				final int weaponId = Integer.parseInt(event.replace("give_", ""));
 				giveItems(player, weaponId, 1);
 				break;
@@ -249,31 +203,31 @@ public class MonumentOfHeroes extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
-		if ((!player.isInCategory(CategoryType.THIRD_CLASS_GROUP) && !player.isInCategory(CategoryType.FOURTH_CLASS_GROUP)) || (player.getLevel() < 55))
+		if (player.isNoble() && player.isMainClassActive())
 		{
-			return "MonumentOfHeroes-noNoblesse.html";
+			return "MonumentOfHeroes-noblesse.html";
 		}
-		return "MonumentOfHeroes-noblesse.html";
+		return "MonumentOfHeroes-noNoblesse.html";
 	}
 	
-	private int getOlympiadRank(Player player)
+	private void deleteHerotIems(Player player)
 	{
-		final List<String> names = Olympiad.getInstance().getClassLeaderBoard(player.getClassId().getId());
-		try
+		for (int itemId : WEAPONS)
 		{
-			for (int i = 1; i <= 3; i++)
+			if (player != null)
 			{
-				if (names.get(i - 1).equals(player.getName()))
+				final Item item = player.getInventory().getItemByItemId(itemId);
+				final Item items = player.getWarehouse().getItemByItemId(itemId);
+				if (item != null)
 				{
-					return i;
+					player.destroyItemByItemId("영웅아이템삭제", itemId, item.getCount(), player, true);
+				}
+				if (items != null)
+				{
+					player.destroyItemByItemIdInWareHouse("영웅아이템삭제", itemId, items.getCount(), player, true);
 				}
 			}
 		}
-		catch (Exception e)
-		{
-			return -1;
-		}
-		return -1;
 	}
 	
 	public static void main(String[] args)
