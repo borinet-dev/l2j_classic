@@ -112,9 +112,9 @@ public class RaidManager extends AbstractNpcAI
 	
 	protected void stopAnnount()
 	{
+		Broadcast.toAllOnlinePlayersOnScreenS("스페셜 레이드가 종료되었습니다.");
 		for (Player player : World.getInstance().getPlayers())
 		{
-			Broadcast.toAllOnlinePlayersOnScreenS("스페셜 레이드가 종료되었습니다.");
 			player.getVariables().remove("여왕개미");
 			player.getVariables().remove("오르펜");
 		}
