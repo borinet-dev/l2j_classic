@@ -131,6 +131,7 @@ public class MonumentOfHeroes extends AbstractNpcAI
 				}
 				else if (Hero.getInstance().isHero(player.getObjectId()))
 				{
+					giveHeroEtc(player);
 					htmltext = "MonumentOfHeroes-heroCertificationAlready.html";
 				}
 				else
@@ -146,14 +147,7 @@ public class MonumentOfHeroes extends AbstractNpcAI
 					Hero.getInstance().claimHero(player);
 					showOnScreenMsg(player, (NpcStringId.getNpcStringId(13357 + player.getClassId().getId())), ExShowScreenMessage.TOP_CENTER, 5000);
 					player.broadcastPacket(new PlaySound(1, "ns01_f", 0, 0, 0, 0, 0));
-					if (!hasQuestItems(player, WINGS_OF_DESTINY_CIRCLET))
-					{
-						giveItems(player, WINGS_OF_DESTINY_CIRCLET, 1);
-					}
-					if (!hasAtLeastOneQuestItem(player, HERO_CLOAK))
-					{
-						giveItems(player, HERO_CLOAK, 1);
-					}
+					giveHeroEtc(player);
 					htmltext = "MonumentOfHeroes-heroCertificationsDone.html";
 				}
 				else
@@ -208,6 +202,18 @@ public class MonumentOfHeroes extends AbstractNpcAI
 			return "MonumentOfHeroes-noblesse.html";
 		}
 		return "MonumentOfHeroes-noNoblesse.html";
+	}
+	
+	private void giveHeroEtc(Player player)
+	{
+		if (!hasQuestItems(player, WINGS_OF_DESTINY_CIRCLET))
+		{
+			giveItems(player, WINGS_OF_DESTINY_CIRCLET, 1);
+		}
+		if (!hasAtLeastOneQuestItem(player, HERO_CLOAK))
+		{
+			giveItems(player, HERO_CLOAK, 1);
+		}
 	}
 	
 	private void deleteHerotIems(Player player)
