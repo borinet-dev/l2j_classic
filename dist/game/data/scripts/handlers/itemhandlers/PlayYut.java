@@ -51,7 +51,7 @@ public class PlayYut implements IItemHandler
 	
 	private static final int[] ITEM_MO =
 	{
-		41263, 41264, 
+		41263, 41233, 41234, //41264, 
 		38890, 38895, 38885, 38880, 38875, 38870, 38865, 38860,
 		38850, 26502, 26497, 26486, 26481, 26476
 	};
@@ -70,8 +70,16 @@ public class PlayYut implements IItemHandler
 		
 		if (player.getInventory().getInventoryItemCount(41262, 0) >= 1)
 		{
-			player.destroyItemByItemId("윷놀이", 41262, 1, player, true);
-			playYut(player);
+			boolean playCheck = player.getQuickVarB("playingYut", false);
+			if (playCheck)
+			{
+				player.sendMessage("윷놀이가 진행 중 입니다. 잠시 후 다시 시도하세요.");
+			}
+			else
+			{
+				player.destroyItemByItemId("윷놀이", 41262, 1, player, true);
+				playYut(player);
+			}
 		}
 		else
 		{
@@ -90,6 +98,7 @@ public class PlayYut implements IItemHandler
 		{
 			return;
 		}
+		player.addQuickVar("playingYut", true);
 		
 		ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
 		// 이미지를 변경하는 작업
@@ -176,6 +185,7 @@ public class PlayYut implements IItemHandler
 			player.addItem("윳놀이", 41262, 1, player, true);
 		}
 		player.addItem("윳놀이", itemId, 1, player, true);
+		player.deleteQuickVar("playingYut");
 		return name;
 	}
 }
