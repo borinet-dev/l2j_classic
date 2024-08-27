@@ -4,6 +4,7 @@ import java.util.Random;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.cache.HtmCache;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.handler.IItemHandler;
 import org.l2jmobius.gameserver.model.actor.Playable;
@@ -13,6 +14,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 import handlers.voicedcommandhandlers.Command;
 
@@ -121,6 +123,12 @@ public class Book implements IItemHandler
 				ItemHolder items = getRandomItem();
 				player.destroyItemByItemId("황금돼지상자", 41277, 1, player, true);
 				player.addItem("황금돼지상자", items.getId(), items.getCount(), player, true);
+				
+				String oldItemName = ItemNameTable.getInstance().getItemNameKor(41277);
+				String rewardItemName = ItemNameTable.getInstance().getItemNameKor(items.getId());
+				String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, items.getCount());
+				BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+				
 				filename = null;
 				break;
 			default:

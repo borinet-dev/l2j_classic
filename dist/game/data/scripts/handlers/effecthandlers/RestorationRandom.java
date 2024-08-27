@@ -32,14 +32,11 @@ import org.l2jmobius.gameserver.model.effects.AbstractEffect;
 import org.l2jmobius.gameserver.model.effects.EffectType;
 import org.l2jmobius.gameserver.model.holders.RestorationItemHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.Broadcast;
-import org.l2jmobius.gameserver.util.KorNameUtil;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 /**
  * Restoration Random effect implementation.<br>
@@ -148,7 +145,16 @@ public class RestorationRandom extends AbstractEffect
 						playerIU.addModifiedItem(itemInstance);
 					}
 				}
-				sendMessage(player, oldName, entry.getKey(), entry.getValue().longValue());
+				boolean sendScreen = true;
+				switch (item.getId())
+				{
+					case 49782:
+					{
+						sendScreen = false;
+						break;
+					}
+				}
+				sendMessage(player, oldName, entry.getKey(), entry.getValue().longValue(), sendScreen);
 			}
 			player.sendPacket(playerIU);
 		}
@@ -160,7 +166,7 @@ public class RestorationRandom extends AbstractEffect
 		return EffectType.EXTRACT_ITEM;
 	}
 	
-	private void sendMessage(Player player, String oldName, Item item, long count)
+	private void sendMessage(Player player, String oldName, Item item, long count, boolean sendScreen)
 	{
 		final SystemMessage sm;
 		if (count > 1)
@@ -182,21 +188,28 @@ public class RestorationRandom extends AbstractEffect
 		}
 		player.sendPacket(sm);
 		
-		if (item.getName().contains("아포칼립스") || item.getName().contains("카데이라"))
+		String message = null;
+		if (sendScreen)
 		{
-			if (item.getEnchantLevel() > 0)
-			{
-				Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 [" + oldName + "]에서 [+" + item.getEnchantLevel() + " " + KorNameUtil.getName(item.getName(), "]을", "]를") + " 획득했습니다!");
-			}
-			else
-			{
-				Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 [" + oldName + "]에서 [" + KorNameUtil.getName(item.getName(), "]을", "]를") + " 획득했습니다!");
-				final Skill skill = CommonSkill.FIREWORK.getSkill();
-				if ((skill != null) && item.getName().contains("축복받은"))
-				{
-					player.broadcastPacket(new MagicSkillUse(player, player, skill.getId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay()));
-				}
-			}
+			message = BorinetUtil.getInstance().createMessage(player.getName(), oldName, item.getName(), count);
+			BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 		}
+		
+		// if (item.getName().contains("아포칼립스") || item.getName().contains("카데이라"))
+		// {
+		// if (item.getEnchantLevel() > 0)
+		// {
+		// Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 [" + oldName + "]에서 [+" + item.getEnchantLevel() + " " + KorNameUtil.getName(item.getName(), "]을", "]를") + " 획득했습니다!");
+		// }
+		// else
+		// {
+		// Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 [" + oldName + "]에서 [" + KorNameUtil.getName(item.getName(), "]을", "]를") + " 획득했습니다!");
+		// final Skill skill = CommonSkill.FIREWORK.getSkill();
+		// if ((skill != null) && item.getName().contains("축복받은"))
+		// {
+		// player.broadcastPacket(new MagicSkillUse(player, player, skill.getId(), skill.getLevel(), skill.getHitTime(), skill.getReuseDelay()));
+		// }
+		// }
+		// }
 	}
 }

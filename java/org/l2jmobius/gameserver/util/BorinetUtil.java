@@ -1045,6 +1045,35 @@ public class BorinetUtil
 		return false;
 	}
 	
+	// 메시지 생성
+	public String createMessage(String playerName, String oldItemName, String rewardItemName, int rewardCount, boolean isLucky)
+	{
+		String action = isLucky ? "님의 추가획득!" : "님이";
+		String suffix = isLucky ? " 추가로 획득했습니다!" : " 획득했습니다!";
+		String itemCountText = rewardCount > 1 ? " " + rewardCount + "개를" : "";
+		String rewardText = rewardCount > 1 ? rewardItemName + itemCountText : KorNameUtil.getName(rewardItemName, "]을", "]를");
+		
+		return playerName + action + " [" + KorNameUtil.getName(oldItemName, "]을", "]를") + " 개봉하여 [" + rewardText + suffix;
+	}
+	
+	// 메시지 생성
+	public String createMessage(String playerName, String oldItemName, String rewardItemName, Long rewardCount)
+	{
+		String itemCountText = rewardCount > 1 ? " " + rewardCount + "개를" : "";
+		String rewardText = rewardCount > 1 ? rewardItemName + itemCountText : KorNameUtil.getName(rewardItemName, "]을", "]를");
+		
+		return playerName + "님이 [" + KorNameUtil.getName(oldItemName, "]을", "]를") + " 개봉하여 [" + rewardText + " 획득했습니다!";
+	}
+	
+	// 모든 플레이어에게 메시지 브로드캐스트
+	public void broadcastMessageToAllPlayers(String message)
+	{
+		for (Player players : World.getInstance().getPlayers())
+		{
+			Broadcast.toPlayerScreenMessage(players, message);
+		}
+	}
+	
 	public static BorinetUtil getInstance()
 	{
 		return SingletonHolder.INSTANCE;

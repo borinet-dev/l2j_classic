@@ -9,6 +9,7 @@ import java.util.logging.Level;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.enums.ItemSkillType;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -19,6 +20,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 public class ItemDays extends ItemSkillsTemplate
 {
@@ -96,7 +98,7 @@ public class ItemDays extends ItemSkillsTemplate
 		final Player player = playable.getActingPlayer();
 		if (item.getId() == 41099)
 		{
-			chanceItem(player);
+			chanceItem(player, item.getItemName());
 			player.getVariables().set(REUSE, System.currentTimeMillis() + (HOURS * 3600000));
 			return false;
 		}
@@ -141,137 +143,160 @@ public class ItemDays extends ItemSkillsTemplate
 		}
 	}
 	
-	private void chanceItem(Player player)
+	private void chanceItem(Player player, String oldName)
 	{
 		int chance = Rnd.getR(1, 260);
 		
 		if (chance >= 100)
 		{
-			Items(player);
+			Items(player, oldName);
 		}
 		else if (chance >= 90)
 		{
-			elemental(player);
+			elemental(player, oldName);
 		}
 		else if (chance >= 80)
 		{
 			player.addItem(getClass().getSimpleName(), 41001, 100, player, true); // 접속 코인
+			sendMessage(player, oldName, 41001, 100);
 		}
 		else if (chance >= 70)
 		{
 			player.addItem(getClass().getSimpleName(), 49783, 30, player, true); // 행운 주화
+			sendMessage(player, oldName, 49783, 30);
 		}
 		else if (chance >= 60)
 		{
-			artifact(player);
+			artifact(player, oldName);
 		}
 		else if (chance >= 50)
 		{
 			player.addItem(getClass().getSimpleName(), 70106, 1, player, true); // 향상의 룬
+			sendMessage(player, oldName, 70106, 1);
 		}
 		else if (chance >= 50)
 		{
 			player.addItem(getClass().getSimpleName(), 45641, 1, player, true); // 겸치 룬
+			sendMessage(player, oldName, 45641, 1);
 		}
 		else if (chance >= 30)
 		{
 			player.addItem(getClass().getSimpleName(), 41000, 200, player, true); // 루나
+			sendMessage(player, oldName, 41000, 200);
 		}
 		else if (chance >= 20)
 		{
 			player.addItem(getClass().getSimpleName(), 37732, 1, player, true); // 축복 안타귀걸이 (7일)
+			sendMessage(player, oldName, 37732, 1);
 		}
 		else if (chance >= 10)
 		{
 			player.addItem(getClass().getSimpleName(), 37733, 1, player, true); // 축복 발라목걸이 (7일)
+			sendMessage(player, oldName, 37733, 1);
 		}
 		else
 		{
-			etcItems(player);
+			etcItems(player, oldName);
 		}
 	}
 	
-	private void elemental(Player player)
+	private void elemental(Player player, String oldName)
 	{
 		int itemId = Rnd.getR(1, 6);
 		
 		if (itemId == 1)
 		{
 			player.addItem(getClass().getSimpleName(), 9552, 50, player, true); // 불의 수정
+			sendMessage(player, oldName, 9552, 50);
 		}
 		else if (itemId == 2)
 		{
 			player.addItem(getClass().getSimpleName(), 9553, 50, player, true); // 불의 수정
+			sendMessage(player, oldName, 9553, 50);
 		}
 		else if (itemId == 3)
 		{
 			player.addItem(getClass().getSimpleName(), 9554, 50, player, true); // 불의 수정
+			sendMessage(player, oldName, 9554, 50);
 		}
 		else if (itemId == 4)
 		{
 			player.addItem(getClass().getSimpleName(), 9555, 50, player, true); // 불의 수정
+			sendMessage(player, oldName, 9555, 50);
 		}
 		else if (itemId == 5)
 		{
 			player.addItem(getClass().getSimpleName(), 9556, 50, player, true); // 불의 수정
+			sendMessage(player, oldName, 9556, 50);
 		}
 		else if (itemId == 6)
 		{
 			player.addItem(getClass().getSimpleName(), 9557, 50, player, true); // 신성의 수정
+			sendMessage(player, oldName, 9557, 50);
 		}
 	}
 	
-	private void artifact(Player player)
+	private void artifact(Player player, String oldName)
 	{
 		if (Rnd.chance(60))
 		{
 			player.addItem(getClass().getSimpleName(), 41073, 320, player, true); // 잊혀진 유물
+			sendMessage(player, oldName, 41073, 320);
 		}
 		else
 		{
 			player.addItem(getClass().getSimpleName(), 41079, 150, player, true); // 수도원 유물
+			sendMessage(player, oldName, 41079, 150);
 		}
 	}
 	
-	private void etcItems(Player player)
+	private void etcItems(Player player, String oldName)
 	{
 		int chance = Rnd.getR(1, 300);
 		
 		if (chance >= 90)
 		{
 			player.addItem(getClass().getSimpleName(), 13015, 5, player, true); // 자유 텔레포트의 서
+			sendMessage(player, oldName, 13015, 5);
 		}
 		else if (chance >= 80)
 		{
 			player.addItem(getClass().getSimpleName(), 13016, 10, player, true); // 자유 텔레포트의 주문서
+			sendMessage(player, oldName, 13016, 10);
 		}
 		else if (chance >= 70)
 		{
 			player.addItem(getClass().getSimpleName(), 20033, 3, player, true); // 자유 텔레포트의 깃발
+			sendMessage(player, oldName, 20033, 3);
 		}
 		else if (chance >= 60)
 		{
 			player.addItem(getClass().getSimpleName(), 23768, 10, player, true); // 프리미엄 럭키 타로카드
+			sendMessage(player, oldName, 23768, 10);
 		}
 		else if (chance >= 50)
 		{
 			player.addItem(getClass().getSimpleName(), 49845, 10, player, true); // 사이하 축복
+			sendMessage(player, oldName, 49845, 10);
 		}
 		else if (chance >= 40)
 		{
 			player.addItem(getClass().getSimpleName(), 49846, 10, player, true); // 사이하 은빛 축복
+			sendMessage(player, oldName, 49846, 10);
 		}
 		else if (chance >= 30)
 		{
 			player.addItem(getClass().getSimpleName(), 49847, 10, player, true); // 사이하 금빛 축복
+			sendMessage(player, oldName, 49847, 10);
 		}
 		else
 		{
 			player.addItem(getClass().getSimpleName(), 90015, 100, player, true); // 최상 생돌
+			sendMessage(player, oldName, 90015, 100);
 		}
 	}
 	
-	private void Items(Player player)
+	private void Items(Player player, String oldName)
 	{
 		int chance = Rnd.getR(1, 10);
 		int chance2 = Rnd.getR(1, 10);
@@ -281,14 +306,17 @@ public class ItemDays extends ItemSkillsTemplate
 			if (chance2 >= 4)
 			{
 				player.addItem(getClass().getSimpleName(), 13991, 1, player, true); // S방어구 상자
+				sendMessage(player, oldName, 13991, 1);
 			}
 			else if (chance >= 2)
 			{
 				player.addItem(getClass().getSimpleName(), 22340, 1, player, true); // 엘레기아 방어구 상자
+				sendMessage(player, oldName, 22340, 1);
 			}
 			else
 			{
 				player.addItem(getClass().getSimpleName(), 39331, 1, player, true); // 카데이라 방어구 상자
+				sendMessage(player, oldName, 39331, 1);
 			}
 		}
 		else
@@ -296,16 +324,26 @@ public class ItemDays extends ItemSkillsTemplate
 			if (chance2 >= 4)
 			{
 				player.addItem(getClass().getSimpleName(), 13990, 1, player, true); // S무기 상자
+				sendMessage(player, oldName, 13990, 1);
 			}
 			else if (chance2 >= 2)
 			{
 				player.addItem(getClass().getSimpleName(), 22339, 1, player, true); // S최상급 무기 상자
+				sendMessage(player, oldName, 22339, 1);
 			}
 			else
 			{
 				player.addItem(getClass().getSimpleName(), 39361, 1, player, true); // 아포칼립스 무기 상자
+				sendMessage(player, oldName, 39361, 1);
 			}
 		}
+	}
+	
+	private void sendMessage(Player player, String oldItemName, int newitemId, long count)
+	{
+		String rewardItemName = ItemNameTable.getInstance().getItemNameKor(newitemId);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, count);
+		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 	}
 	
 	private static final ItemDays _instance = new ItemDays();

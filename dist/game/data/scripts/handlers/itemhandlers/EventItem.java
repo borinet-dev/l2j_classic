@@ -21,6 +21,7 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.ClassId;
@@ -41,6 +42,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.EnchantRecord;
 
 public class EventItem implements IItemHandler
@@ -141,18 +143,17 @@ public class EventItem implements IItemHandler
 			}
 			case 41253:
 			{
-				player.destroyItemByItemId("R급 재료상자", 41253, 1, player, true);
 				if (Rnd.chance(5))
 				{
-					player.addItem("R급 재료상자", ENCHANT_STONE[Rnd.get(ENCHANT_STONE.length)], 1, null, true);
+					giveItem(player, "R급 재료상자", 41253, ENCHANT_STONE[Rnd.get(ENCHANT_STONE.length)], 1);
 				}
 				else if (Rnd.chance(10))
 				{
-					player.addItem("R급 재료상자", R_MATERIAL[Rnd.get(R_MATERIAL.length)], 1, null, true);
+					giveItem(player, "R급 재료상자", 41253, R_MATERIAL[Rnd.get(R_MATERIAL.length)], 1);
 				}
 				else if (Rnd.chance(40))
 				{
-					player.addItem("R급 재료상자", ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 3), null, true);
+					giveItem(player, "R급 재료상자", 41253, ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 3));
 				}
 				else
 				{
@@ -162,18 +163,17 @@ public class EventItem implements IItemHandler
 			}
 			case 45488:
 			{
-				player.destroyItemByItemId("황금 보물 상자", 45488, 1, player, true);
 				if (Rnd.chance(10))
 				{
-					player.addItem("황금 보물 상자", FISHING_ITEM[Rnd.get(FISHING_ITEM.length)], 1, null, true);
+					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM[Rnd.get(FISHING_ITEM.length)], 1);
 				}
 				else if (Rnd.chance(40))
 				{
-					player.addItem("황금 보물 상자", FISHING_ITEM_LETTERS[Rnd.get(FISHING_ITEM_LETTERS.length)], 1, null, true);
+					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM_LETTERS[Rnd.get(FISHING_ITEM_LETTERS.length)], 1);
 				}
 				else if (Rnd.chance(50))
 				{
-					player.addItem("황금 보물 상자", FISHING_ITEM_POTION[Rnd.get(FISHING_ITEM_POTION.length)], Rnd.get(1, 3), null, true);
+					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM_POTION[Rnd.get(FISHING_ITEM_POTION.length)], Rnd.get(1, 3));
 				}
 				else
 				{
@@ -183,96 +183,91 @@ public class EventItem implements IItemHandler
 			}
 			case 23956:
 			{
-				player.destroyItemByItemId("카마로카 보상 상자", 23956, 1, player, true);
 				if (Rnd.chance(0.1))
 				{
 					// 0 또는 1 중에서 랜덤한 숫자 생성
 					int chance = _random.nextInt(2);
 					// 반반 확률로 아이템 지급
 					// 무기 강화석 or 방어구 강화석
-					player.addItem("카마로카 보상 상자", chance == 0 ? 41233 : 41234, 1, null, true);
+					giveItem(player, "카마로카 보상 상자", 23956, chance == 0 ? 41233 : 41234, 1);
 				}
 				else if (Rnd.chance(10))
 				{
 					int chance = _random.nextInt(2);
 					// 추가 입장권 - 카마로카
-					player.addItem("카마로카 보상 상자", chance == 0 ? 13010 : 13012, 1, null, true);
+					giveItem(player, "카마로카 보상 상자", 23956, chance == 0 ? 13010 : 13012, 1);
 				}
 				else if (Rnd.chance(15))
 				{
 					// 카마로카 주문서 (2장 ~ 8장)
-					player.addItem("카마로카 보상 상자", 41254, Rnd.get(2, 8), null, true);
+					giveItem(player, "카마로카 보상 상자", 23956, 41254, Rnd.get(2, 8));
 				}
 				else if (Rnd.chance(30))
 				{
-					player.addItem("카마로카 보상 상자", KAMALOKA_REWORD[Rnd.get(KAMALOKA_REWORD.length)], item.getId() == 70106 ? 1 : Rnd.get(1, 3), null, true);
+					giveItem(player, "카마로카 보상 상자", 23956, KAMALOKA_REWORD[Rnd.get(KAMALOKA_REWORD.length)], item.getId() == 70106 ? 1 : Rnd.get(1, 3));
 				}
 				else
 				{
-					player.addItem("카마로카 보상 상자", ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 5), null, true);
+					giveItem(player, "카마로카 보상 상자", 23956, ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 5));
 				}
 				break;
 			}
 			case 41257:
 			{
-				player.destroyItemByItemId("봄의 기억", 41257, 1, player, true);
 				if (Rnd.chance(0.1))
 				{
 					// 0 또는 1 중에서 랜덤한 숫자 생성
 					int chance = _random.nextInt(2);
 					// 반반 확률로 아이템 지급
 					// 무기 강화석 or 방어구 강화석
-					player.addItem("봄의 기억", chance == 0 ? 41233 : 41234, 1, null, true);
+					giveItem(player, "봄의 기억", 41257, chance == 0 ? 41233 : 41234, 1);
 				}
 				else if (Rnd.chance(7))
 				{
-					player.addItem("봄의 기억", 70009, 1, null, true);
+					giveItem(player, "봄의 기억", 41257, 70009, 1);
 				}
 				else if (Rnd.chance(10))
 				{
-					player.addItem("봄의 기억", DYES[Rnd.get(DYES.length)], Rnd.get(1, 2), null, true);
+					giveItem(player, "봄의 기억", 41257, DYES[Rnd.get(DYES.length)], Rnd.get(1, 2));
 				}
 				else if (Rnd.chance(20))
 				{
-					player.addItem("봄의 기억", RUNES[Rnd.get(RUNES.length)], Rnd.get(1, 2), null, true);
+					giveItem(player, "봄의 기억", 41257, RUNES[Rnd.get(RUNES.length)], Rnd.get(1, 2));
 				}
 				else if (Rnd.chance(30))
 				{
-					player.addItem("봄의 기억", JEWEL[Rnd.get(JEWEL.length)], 1, null, true);
+					giveItem(player, "봄의 기억", 41257, JEWEL[Rnd.get(JEWEL.length)], 1);
 				}
 				else
 				{
-					player.addItem("봄의 기억", ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 5), null, true);
+					giveItem(player, "봄의 기억", 41257, ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 5));
 				}
 				break;
 			}
 			case 14766:
 			{
-				player.destroyItemByItemId("특대사탕바구니", 14766, 1, player, true);
-				player.addItem("특대사탕바구니", 14769, 1, null, true);
+				giveItem(player, "솔로패키지", 14766, 14769, 1);
 				if (Rnd.chance(30))
 				{
-					player.addItem("특대사탕바구니", 특대사탕바구니[Rnd.get(특대사탕바구니.length)], 1, null, true);
+					giveItem(player, "솔로패키지", 14766, 특대사탕바구니[Rnd.get(특대사탕바구니.length)], 1);
 				}
 				break;
 			}
 			case 14767:
 			{
-				player.destroyItemByItemId("사탕바구니", 14767, 1, player, true);
-				player.addItem("사탕바구니", 14769, 1, null, true);
+				giveItem(player, "솔로패키지", 14767, 14769, 1);
 				if (Rnd.chance(30))
 				{
-					player.addItem("사탕바구니", 사탕바구니[Rnd.get(사탕바구니.length)], 1, null, true);
+					giveItem(player, "솔로패키지", 14767, 사탕바구니[Rnd.get(사탕바구니.length)], 1);
 				}
 				break;
 			}
 			case 14768:
 			{
-				player.destroyItemByItemId("솔로패키지", 14768, 1, player, true);
-				player.addItem("솔로패키지", 14770, 1, null, true);
+				giveItem(player, "솔로패키지", 14768, 14770, 1);
 				if (Rnd.chance(30))
 				{
-					player.addItem("솔로패키지", 14774, 1, null, true);
+					giveItem(player, "솔로패키지", 14768, 14774, 1);
 				}
 				break;
 			}
@@ -290,27 +285,25 @@ public class EventItem implements IItemHandler
 			}
 			case 41363:
 			{
-				player.destroyItemByItemId("프레야의 얼음 인형 상자", 41363, 1, player, true);
 				int take_itemId = (Rnd.chance(60)) ? 41353 : 41364;
-				player.addItem("프레야의 얼음 인형 상자", take_itemId, 1, null, true);
+				giveItem(player, "프레야의 얼음 인형 상자", 41363, take_itemId, 1);
 				break;
 			}
 			case 41364:
 			{
-				player.destroyItemByItemId("[드라이아이스]", 41364, 1, player, true);
 				if (Rnd.chance(75))
 				{
-					player.addItem("[드라이아이스]", 드라이아이스[Rnd.get(드라이아이스.length)], Rnd.get(1, 3), null, true);
+					giveItem(player, "드라이아이스", 41364, 드라이아이스[Rnd.get(드라이아이스.length)], Rnd.get(1, 3));
 				}
 				else
 				{
 					if (Rnd.chance(40))
 					{
-						player.addItem("[드라이아이스]", (Rnd.chance(55)) ? 41353 : 41249, 1, null, true);
+						giveItem(player, "드라이아이스", 41364, (Rnd.chance(55)) ? 41353 : 41249, 1);
 					}
 					else
 					{
-						player.addItem("[드라이아이스]", 48830, Rnd.get(1, 3), null, true);
+						giveItem(player, "드라이아이스", 41364, 48830, Rnd.get(1, 3));
 					}
 				}
 				break;
@@ -352,8 +345,6 @@ public class EventItem implements IItemHandler
 			}
 			case 41372:
 			{
-				player.destroyItemByItemId("장비 강화 주문서 상자", 41372, 1, player, true);
-				
 				int randomValue = Rnd.get(100);
 				int rewardId = 0;
 				
@@ -398,16 +389,18 @@ public class EventItem implements IItemHandler
 					rewardId = 41234; // 방어구 강화석
 				}
 				
-				player.addItem("장비 강화 주문서 상자", rewardId, 1, null, true);
+				giveItem(player, "장비 강화 주문서 상자", 41372, rewardId, 1);
+				
 				break;
 			}
 			case 41373:
 			{
-				player.destroyItemByItemId("주문서 행운 상자", 41373, 1, player, true);
-				
 				int randomValue = Rnd.get(100);
 				int rewardId = 0;
 				int rewardQuantity = 0;
+				boolean lucky = false;
+				int additionalRewardId = 0;
+				int additionalRewardQuantity = 0;
 				
 				// 첫 4개 아이템 중 하나는 무조건 나옴
 				if (randomValue < 25)
@@ -432,22 +425,81 @@ public class EventItem implements IItemHandler
 				}
 				
 				// 첫 번째 보상 아이템을 플레이어에게 추가
-				player.addItem("주문서 행운 상자", rewardId, rewardQuantity, null, true);
 				
 				// 추가 획득 아이템
 				int additionalRandomValue = Rnd.get(100);
 				if (additionalRandomValue < 30)
 				{
-					int additionalRewardId = 41371; // 버서커 주문서 2
-					int additionalRewardQuantity = 2;
-					player.addItem("주문서 행운 상자", additionalRewardId, additionalRewardQuantity, null, true);
+					lucky = true;
+					additionalRewardId = 41371; // 버서커 주문서 2
+					additionalRewardQuantity = 2;
 				}
 				else if (additionalRandomValue < 50)
 				{ // 30% + 20% = 50%
-					int additionalRewardId = 41372; // 장비 강화 주문서 상자 1
-					int additionalRewardQuantity = 1;
-					player.addItem("주문서 행운 상자", additionalRewardId, additionalRewardQuantity, null, true);
+					lucky = true;
+					additionalRewardId = 41372; // 장비 강화 주문서 상자 1
+					additionalRewardQuantity = 1;
 				}
+				luckyScroll(player, "주문서 행운 상자", 41373, rewardId, rewardQuantity, additionalRewardId, additionalRewardQuantity, lucky);
+				break;
+			}
+			case 41382:
+			{
+				// @formatter:off
+				int randomValue = Rnd.get(100);
+				int rewardId = 0;
+				int itemCount = 1;
+				
+				if (randomValue < 40) // 40% 확률 (각 10%)
+				{
+					int[] group1 = {21708, 90729, 41384, 41383}; // 꿀 송편 x5, 꽃 송편 x5, 오색 송편 x5, 오색 설기 x5
+					rewardId = group1[Rnd.get(group1.length)];
+					itemCount = 5; // 수량 5
+				}
+				else if (randomValue < 60) // 20% 확률
+				{
+					rewardId = 10649; // 축복의 깃털 x10
+					itemCount = 10; // 수량 10
+				}
+				else if (randomValue < 75) // 15% 확률 (각 0.9375%)
+				{
+					int[] group2 = {
+						38855, 38927, 26476, 26481, 26486, 26497, 26502, 38850,
+						38860, 38865, 38870, 38875, 38880, 38885, 38890, 38895
+					}; // 다양한 Lv1 보석 및 쥬얼
+					rewardId = group2[Rnd.get(group2.length)];
+				}
+				else if (randomValue < 85) // 10% 확률 (각 5%)
+				{
+					int[] group3 = {47807, 49727}; // 사이하의 탈리스만 1단계, 결계의 탈리스만 Lv1
+					rewardId = group3[Rnd.get(group3.length)];
+				}
+				else if (randomValue < 92) // 7% 확률 (각 1.4%)
+				{
+					int[] group4 = {29704, 29709, 29714, 29719, 39710}; // 다양한 펜던트 및 브로치
+					rewardId = group4[Rnd.get(group4.length)];
+				}
+				else if (randomValue < 95) // 3% 확률
+				{
+					rewardId = 47984; // 라비앙로즈의 찬란한 브로치
+				}
+				else if (randomValue < 97) // 2% 확률
+				{
+					rewardId = 39634; // 베니르의 탈리스만 1단계
+				}
+				else if (randomValue < 99) // 2% 확률
+				{
+					rewardId = 91061; // 권능의 탈리스만 Lv1
+				}
+				else // 1% 확률 (각 0.5%)
+				{
+					int[] group5 = {37714, 37715}; // 릴리스의 탈리스만, 아나킴의 탈리스만
+					rewardId = group5[Rnd.get(group5.length)];
+				}
+				// @formatter:on
+				
+				// 아이템 지급
+				giveItem(player, "한가위 선물 주머니", 41382, rewardId, itemCount);
 				break;
 			}
 			default:
@@ -456,6 +508,42 @@ public class EventItem implements IItemHandler
 			}
 		}
 		return used;
+	}
+	
+	// 아이템 지급
+	private void giveItem(Player player, String eventName, int oldItemId, int rewardId, int rewardCount)
+	{
+		player.destroyItemByItemId(eventName, oldItemId, 1, player, true);
+		player.addItem(eventName, rewardId, rewardCount, null, true);
+		
+		// 메시지 생성 및 브로드캐스트
+		String oldItemName = ItemNameTable.getInstance().getItemNameKor(oldItemId);
+		String rewardItemName = ItemNameTable.getInstance().getItemNameKor(rewardId);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, rewardCount, false);
+		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+	}
+	
+	// 아이템 지급
+	private void luckyScroll(Player player, String eventName, int oldItemId, int rewardId, int rewardCount, int LuckyId, int LuckyCount, boolean lucky)
+	{
+		// 아이템 삭제 및 지급
+		player.destroyItemByItemId(eventName, oldItemId, 1, player, true);
+		player.addItem(eventName, rewardId, rewardCount, null, true);
+		
+		// 메시지 생성 및 브로드캐스트
+		String oldItemName = ItemNameTable.getInstance().getItemNameKor(oldItemId);
+		String rewardName = ItemNameTable.getInstance().getItemNameKor(rewardId);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardName, rewardCount, false);
+		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+		
+		// 추가 아이템 지급 및 메시지 브로드캐스트
+		if (lucky)
+		{
+			rewardName = ItemNameTable.getInstance().getItemNameKor(LuckyId);
+			player.addItem(eventName, LuckyId, LuckyCount, null, true);
+			message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardName, LuckyCount, true);
+			BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+		}
 	}
 	
 	private final void ChildrenDay(Player player, boolean first)
