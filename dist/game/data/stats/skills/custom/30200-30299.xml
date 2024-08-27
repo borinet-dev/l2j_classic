@@ -3692,7 +3692,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="30279" toLevel="23" name="얼음 꽃이 피었습니다">
+	<skill id="30279" toLevel="25" name="얼음 꽃이 피었습니다">
 		<icon>nIcon.freyaBuff</icon>
 		<operateType>A2</operateType>
 		<abnormalType>RESURRECTION_BUFF1</abnormalType>
@@ -4382,6 +4382,94 @@
 			</effect>
 			<effect name="SpModify">
 				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30296" toLevel="25" name="한가위 보름달의 기운">
+		<icon>nIcon.freyaBuff</icon>
+		<operateType>A2</operateType>
+		<abnormalType>FULL_MOON</abnormalType>
+		<abnormalVisualEffect>S_EVENT_MOON_AVE</abnormalVisualEffect>
+		<abnormalTime>10</abnormalTime>
+		<abnormalLevel>4</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>99</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isSharedWithSummon>false</isSharedWithSummon>
+	</skill>
+	<skill id="30297" toLevel="1" name="오색 설기">
+		<icon>borinet.five_color_rice</icon>
+		<operateType>A2</operateType>
+		<abnormalType>FIVE_COLOR_RICE</abnormalType>
+		<abnormalTime>7200</abnormalTime>
+		<abnormalLevel>7</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41383</itemConsumeId>
+		<effects>
+			<effect name="ExpModify">
+				<amount>13</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>13</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30298" toLevel="1" name="오색 송편">
+		<icon>borinet.five_color_songpyeon</icon>
+		<operateType>A2</operateType>
+		<abnormalType>FIVE_COLOR_SONGPYEON</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>7</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41384</itemConsumeId>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>70</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>DARK</attribute>
 			</effect>
 		</effects>
 	</skill>

@@ -3,10 +3,12 @@ package events.CustomEvent;
 import java.util.Calendar;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
@@ -41,6 +43,7 @@ public class CustomEvent extends LongTimeEvent
 		int armorD = player.getAccountVariables().getInt("CUSTOM_EVENT_ARMOR_D", 0);
 		int armorC = player.getAccountVariables().getInt("CUSTOM_EVENT_ARMOR_C", 0);
 		int armorB = player.getAccountVariables().getInt("CUSTOM_EVENT_ARMOR_B", 0);
+		int check_Chuseok = player.getAccountVariables().getInt("CHUSEOK_ITEM", 0);
 		
 		switch (event)
 		{
@@ -79,7 +82,7 @@ public class CustomEvent extends LongTimeEvent
 			}
 			case "get_gift":
 			{
-				if (BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_GIFT") && (account != 1))
+				if (account != 1)
 				{
 					if (player.getClassId().level() < 1)
 					{
@@ -91,7 +94,6 @@ public class CustomEvent extends LongTimeEvent
 					{
 						player.addItem("커스텀이벤트_선물", 47416, 1, player, true); // 새해
 						player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
-						BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 					}
 					else
 					{
@@ -101,14 +103,12 @@ public class CustomEvent extends LongTimeEvent
 							{
 								player.addItem("커스텀이벤트_선물", 41074, 1, player, true); // 설날
 								player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
-								BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 								break;
 							}
 							case 2:
 							{
 								player.addItem("커스텀이벤트_선물", 47823, 1, player, true); // 추석
 								player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
-								BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 								break;
 							}
 						}
@@ -116,16 +116,16 @@ public class CustomEvent extends LongTimeEvent
 				}
 				else
 				{
-					player.sendMessage("선물은 계정 및 해당 PC에서 한번만 지급됩니다.");
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "선물은 계정 및 해당 PC에서 한번만 지급됩니다."));
+					player.sendMessage("선물은 계정당 한번만 받을 수 있습니다.");
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "선물은 계정당 한번만 받을 수 있습니다."));
 				}
 				break;
 			}
 			case "make_box":
 			{
-				if (BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_GIFT") || (account == 1))
+				if (account == 1)
 				{
-					sendMessages(player, "선물상자 제작은 계정 및 해당 PC에서 한번만 지급됩니다.");
+					sendMessages(player, "선물상자 제작은 계정당 한번만 받을 수 있습니다.");
 				}
 				else
 				{
@@ -146,7 +146,7 @@ public class CustomEvent extends LongTimeEvent
 			}
 			case "may_box":
 			{
-				if (!BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_BOX") || (box == 1))
+				if (box == 1)
 				{
 					sendMessages(player, "선물상자 제작은 계정 및 해당 PC에서 하루에 한번만 제작됩니다.");
 				}
@@ -288,6 +288,34 @@ public class CustomEvent extends LongTimeEvent
 				}
 				break;
 			}
+			case "give_buff":
+			{
+				player.getActingPlayer().getVariables().set("CHUSEOK_BUFF", 1);
+				final Skill fullMoon = SkillData.getInstance().getSkill(30296, 1);
+				fullMoon.applyEffects(player, player, false, 10);
+				break;
+			}
+			case "give_item":
+			{
+				if (check_Chuseok == 1)
+				{
+					player.sendMessage("오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요.");
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요."));
+				}
+				else
+				{
+					player.getAccountVariables().set("CHUSEOK_ITEM", 1);
+					player.addItem("한가위 선물 주머니", 41382, 3, player, true);
+				}
+				break;
+			}
+			case "buy_items":
+			{
+				htmltext = getHtm(player, "buy_items.htm");
+				htmltext = htmltext.replace("%evenNpcName%", npc.getName());
+				htmltext = htmltext.replace("%eventName%", BorinetUtil.getInstance().getEventName());
+				break;
+			}
 		}
 		return htmltext;
 	}
@@ -351,7 +379,6 @@ public class CustomEvent extends LongTimeEvent
 		player.destroyItemByItemId(log, itemId, itemCount, player, true);
 		player.addItem(log, addItem, 1, player, true);
 		player.getAccountVariables().set(dbKey, 1);
-		BorinetUtil.getInstance().insertDB(player, dbKey);
 	}
 	
 	public static void main(String[] args)

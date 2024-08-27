@@ -2,6 +2,7 @@ package org.l2jmobius.gameserver.model.events;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -12,6 +13,7 @@ import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.enums.ChatType;
+import org.l2jmobius.gameserver.enums.SkillFinishType;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -69,6 +71,11 @@ public class SpecialEvents
 				ThreadPool.schedule(this::stopEvent, BorinetTask.getInstance().SpecialEventEnd().getTimeInMillis() - currentTime);
 				
 				BorinetUtil.insertEname(BorinetUtil.getInstance().sendEventName());
+				
+				if (BorinetUtil.getInstance().getEventName().equals("추석"))
+				{
+					giftReset();
+				}
 			}
 		}
 	}
@@ -135,6 +142,10 @@ public class SpecialEvents
 		BorinetUtil.insertEname(BorinetUtil.getInstance().sendEventName());
 		startEventMessage(1, BorinetUtil.getInstance().sendEventName());
 		
+		if (BorinetUtil.getInstance().getEventName().equals("추석"))
+		{
+			giftReset();
+		}
 		ThreadPool.schedule(this::stopEvent, BorinetTask.getInstance().SpecialEventEnd().getTimeInMillis() - currentTime);
 	}
 	
@@ -325,6 +336,25 @@ public class SpecialEvents
 		}
 		eventEnd();
 		
+		if (BorinetUtil.getInstance().getEventName().equals("추석"))
+		{
+			for (Player player : World.getInstance().getPlayers())
+			{
+				player.stopSkillEffects(SkillFinishType.REMOVED, 30296);
+				player.getVariables().remove("CHUSEOK_BUFF");
+			}
+			try (Connection con = DatabaseFactory.getConnection();
+				Statement statement = con.createStatement())
+			{
+				statement.executeUpdate("DELETE FROM character_skills_save WHERE skill_id = '30296';");
+				statement.executeUpdate("DELETE FROM character_variables WHERE var = 'CHUSEOK_BUFF';");
+			}
+			catch (SQLException e)
+			{
+				LOGGER.warning(e.toString());
+			}
+		}
+		
 		try (Connection con = DatabaseFactory.getConnection())
 		{
 			try (PreparedStatement ps = con.prepareStatement("DELETE FROM event_name"))
@@ -349,6 +379,7 @@ public class SpecialEvents
 		player.getAccountVariables().remove("CUSTOM_EVENT_ARMOR_B");
 		player.getAccountVariables().remove("CUSTOM_EVENT_GIFT_SCROLL_TIMES");
 		player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
+		player.getAccountVariables().remove("CHUSEOK_ITEM");
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
@@ -356,10 +387,46 @@ public class SpecialEvents
 			statement.executeUpdate("DELETE from account_gsdata WHERE var = '묵찌빠';");
 			statement.executeUpdate("DELETE from account_gsdata WHERE var LIKE '%CUSTOM_EVENT_%';");
 			statement.executeUpdate("DELETE from event_hwid WHERE name LIKE '%CUSTOM_EVENT_%';");
+			statement.executeUpdate("DELETE from account_gsdata WHERE var = 'CHUSEOK_ITEM';");
 		}
 		catch (Exception e)
 		{
 			LOGGER.warning("커스텀이벤트 데이터베이스 정리 오류" + e);
+		}
+	}
+	
+	private void giftReset()
+	{
+		final long currentTime = System.currentTimeMillis();
+		// Schedule reset everyday at 6:30.
+		final Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.HOUR_OF_DAY, 6);
+		calendar.set(Calendar.MINUTE, 30);
+		calendar.set(Calendar.SECOND, 0);
+		
+		if (calendar.getTimeInMillis() < currentTime)
+		{
+			calendar.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		
+		final long startDelay = Math.max(0, calendar.getTimeInMillis() - currentTime);
+		ThreadPool.scheduleAtFixedRate(this::onGiftReset, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1 day
+	}
+	
+	private void onGiftReset()
+	{
+		for (Player player : World.getInstance().getPlayers())
+		{
+			player.getAccountVariables().remove("CHUSEOK_ITEM");
+		}
+		try (Connection con = DatabaseFactory.getConnection();
+			Statement statement = con.createStatement())
+		{
+			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'CHUSEOK_ITEM';");
+		}
+		catch (Exception e)
+		{
+			LOGGER.warning("이벤트 데이터베이스 정리 오류" + e);
 		}
 	}
 	

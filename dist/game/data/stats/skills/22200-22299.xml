@@ -52,15 +52,24 @@
 		</effects>
 	</skill>
 	<skill id="22251" toLevel="1" name="Honey Rice Cakes">
+		<icon>icon.etc_five_color_honey_cake_i00</icon>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<isMagic>2</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>21704</itemConsumeId> <!-- MP Recovery Potion -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
 		<hitCancelTime>0</hitCancelTime>
-		<magicLevel>1</magicLevel>
-		<reuseDelay>300000</reuseDelay>
 		<staticReuse>true</staticReuse>
-		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ManaHealPercent">
+				<power>50</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="22252" toLevel="1" name="Vitality Replenishing Potion">
 		<operateType>A1</operateType>
@@ -146,15 +155,24 @@
 		</effects>
 	</skill>
 	<skill id="22255" toLevel="1" name="Honey Rice Cakes">
+		<icon>icon.skill0000</icon>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<isMagic>2</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>21708</itemConsumeId> <!-- MP Recovery Potion -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
 		<hitCancelTime>0</hitCancelTime>
-		<magicLevel>1</magicLevel>
-		<reuseDelay>300000</reuseDelay>
 		<staticReuse>true</staticReuse>
-		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ManaHealPercent">
+				<power>50</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="22256" toLevel="1" name="Might">
 		<!-- Increases P. Atk. by 15% for 60 min. -->

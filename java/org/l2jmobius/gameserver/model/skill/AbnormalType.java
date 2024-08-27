@@ -578,6 +578,10 @@ public enum AbnormalType
 	DANO_BUFF1(-1),
 	DANO_BUFF2(-1),
 	DANO_BUFF3(-1),
+	FLOWER_SWEETS(-1),
+	FIVE_COLOR_RICE(-1),
+	FIVE_COLOR_SONGPYEON(-1),
+	FULL_MOON(-1),
 	PROVOKE(-1);
 	
 	private int _clientId;

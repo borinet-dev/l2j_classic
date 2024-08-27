@@ -25,6 +25,7 @@ import java.util.concurrent.ScheduledFuture;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.SkillFinishType;
 import org.l2jmobius.gameserver.model.EffectList;
 import org.l2jmobius.gameserver.model.actor.Creature;
@@ -32,7 +33,6 @@ import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
 import org.l2jmobius.gameserver.model.effects.EffectTaskInfo;
 import org.l2jmobius.gameserver.model.effects.EffectTickTask;
-import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.options.Options;
 import org.l2jmobius.gameserver.model.stats.Formulas;
@@ -442,11 +442,11 @@ public class BuffInfo
 					{
 						case 30279:
 						{
-							if (_skill.getLevel() < 23)
+							if (_skill.getLevel() < 24)
 							{
 								int buffLvl = _effected.getActingPlayer().getVariables().getInt("FREYA_BUFF", 0) + 1;
-								SkillHolder FREYA_BUFF = new SkillHolder(30279, buffLvl);
-								SkillCaster.triggerCast(_effected.getActingPlayer(), _effected.getActingPlayer(), FREYA_BUFF.getSkill());
+								final Skill fullMoon = SkillData.getInstance().getSkill(30279, buffLvl);
+								fullMoon.applyEffects(_effected, _effected, false, 3600);
 								_effected.getActingPlayer().getVariables().set("FREYA_BUFF", buffLvl);
 							}
 							else
@@ -455,6 +455,22 @@ public class BuffInfo
 							}
 							int itemId = (Rnd.chance(65)) ? 41363 : 41364;
 							_effected.getActingPlayer().addItem("FREYA_BUFF", itemId, 1, null, true);
+							break;
+						}
+						case 30296:
+						{
+							if (_skill.getLevel() < 24)
+							{
+								int buffLvl = _effected.getActingPlayer().getVariables().getInt("CHUSEOK_BUFF", 0) + 1;
+								final Skill fullMoon = SkillData.getInstance().getSkill(30296, buffLvl);
+								fullMoon.applyEffects(_effected, _effected, false, 10);
+								_effected.getActingPlayer().getVariables().set("CHUSEOK_BUFF", buffLvl);
+							}
+							else
+							{
+								_effected.getActingPlayer().getVariables().remove("CHUSEOK_BUFF");
+							}
+							_effected.getActingPlayer().addItem("CHUSEOK_BUFF", 41382, 1, null, true);
 							break;
 						}
 						case 18794:

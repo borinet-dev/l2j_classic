@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<event name="CustomEvent" active="2024 05 03 07 00-2024 05 14 20 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+<event name="CustomEvent" active="2024 09 09 17 00-2024 09 23 06 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
 	<droplist>
-		<add item="41241" min="1" max="1" chance="5.32%" minLevel="5" maxLevel="50" isDrop="true" /> <!-- 카네이션 -->
-		<add item="41241" min="1" max="1" chance="2.62%" minLevel="51" maxLevel="80" isDrop="true" /> <!-- 카네이션 -->
-		<add item="41241" min="1" max="1" chance="1.52%" minLevel="81" maxLevel="99" isDrop="true" /> <!-- 카네이션 -->
+		<add item="90727" min="1" max="1" chance="5.32%" minLevel="5" maxLevel="50" isDrop="true" /> <!-- 바나나 송편 -->
+		<add item="90727" min="1" max="1" chance="2.22%" minLevel="51" maxLevel="80" isDrop="true" /> <!-- 바나나 송편 -->
+		<add item="90727" min="1" max="1" chance="1.02%" minLevel="81" maxLevel="99" isDrop="true" /> <!-- 바나나 송편 -->
 		<add item="41263" min="1" max="1" chance="1.02%" minLevel="20" maxLevel="99" /> <!-- 윷가락 -->
 	</droplist>
 	<destroyItemsOnEnd>
-		<item id="41242" />
 		<item id="41263" />
+		<item id="41262" />
+		<item id="41382" />
+		<item id="41385" />
+		<item id="47823" />
 	</destroyItemsOnEnd>
 </event>
