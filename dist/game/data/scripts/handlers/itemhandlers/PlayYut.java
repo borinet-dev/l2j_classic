@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.cache.HtmCache;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.handler.IItemHandler;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -14,6 +15,8 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.util.BorinetUtil;
+import org.l2jmobius.gameserver.util.KorNameUtil;
 
 public class PlayYut implements IItemHandler
 {
@@ -144,18 +147,21 @@ public class PlayYut implements IItemHandler
 		int itemId = 0;
 		String name = null;
 		boolean isMo = false;
+		int counts = 1;
 		
 		switch (prize)
 		{
 			case "do":
 			{
 				itemId = ITEM_DO[Rnd.get(ITEM_DO.length)];
+				counts = Rnd.get(1, 3);
 				name = "도가";
 				break;
 			}
 			case "gae":
 			{
 				itemId = ITEM_GAE[Rnd.get(ITEM_GAE.length)];
+				counts = Rnd.get(3, 7);
 				name = "개가";
 				break;
 			}
@@ -184,8 +190,20 @@ public class PlayYut implements IItemHandler
 		{
 			player.addItem("윳놀이", 41262, 1, player, true);
 		}
-		player.addItem("윳놀이", itemId, 1, player, true);
+		player.addItem("윳놀이", itemId, counts, player, true);
 		player.deleteQuickVar("playingYut");
+		
+		String message = createMessage(player.getName(), itemId, counts);
+		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 		return name;
+	}
+	
+	private String createMessage(String playerName, int rewardId, int rewardCount)
+	{
+		String rewardName = ItemNameTable.getInstance().getItemNameKor(rewardId);
+		String itemCountText = rewardCount > 1 ? "] " + rewardCount + "개를" : "]";
+		String rewardText = rewardCount > 1 ? rewardName + itemCountText : KorNameUtil.getName(rewardName, "]을", "]를");
+		
+		return playerName + "님이 윷놀이 게임에서 [" + rewardText + " 획득했습니다!";
 	}
 }
