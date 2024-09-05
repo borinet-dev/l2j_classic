@@ -24,7 +24,7 @@ public class Freya extends LongTimeEvent
 		{
 			player.getActingPlayer().getVariables().set("FREYA_BUFF", 1);
 			final Skill snowFlower = SkillData.getInstance().getSkill(30279, 1);
-			snowFlower.applyEffects(player, player, false, 3600);
+			snowFlower.applyEffects(player, player, false, 3599);
 		}
 		return null;
 	}

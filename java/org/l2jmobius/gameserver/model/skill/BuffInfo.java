@@ -446,7 +446,7 @@ public class BuffInfo
 							{
 								int buffLvl = _effected.getActingPlayer().getVariables().getInt("FREYA_BUFF", 0) + 1;
 								final Skill fullMoon = SkillData.getInstance().getSkill(30279, buffLvl);
-								fullMoon.applyEffects(_effected, _effected, false, 3600);
+								fullMoon.applyEffects(_effected, _effected, false, 3599);
 								_effected.getActingPlayer().getVariables().set("FREYA_BUFF", buffLvl);
 							}
 							else
@@ -463,7 +463,7 @@ public class BuffInfo
 							{
 								int buffLvl = _effected.getActingPlayer().getVariables().getInt("CHUSEOK_BUFF", 0) + 1;
 								final Skill fullMoon = SkillData.getInstance().getSkill(30296, buffLvl);
-								fullMoon.applyEffects(_effected, _effected, false, 10);
+								fullMoon.applyEffects(_effected, _effected, false, 3599);
 								_effected.getActingPlayer().getVariables().set("CHUSEOK_BUFF", buffLvl);
 							}
 							else

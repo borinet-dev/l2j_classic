@@ -292,7 +292,7 @@ public class CustomEvent extends LongTimeEvent
 			{
 				player.getActingPlayer().getVariables().set("CHUSEOK_BUFF", 1);
 				final Skill fullMoon = SkillData.getInstance().getSkill(30296, 1);
-				fullMoon.applyEffects(player, player, false, 10);
+				fullMoon.applyEffects(player, player, false, 3599);
 				break;
 			}
 			case "give_item":
