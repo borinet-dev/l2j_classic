@@ -154,7 +154,7 @@ public class RestorationRandom extends AbstractEffect
 						break;
 					}
 				}
-				sendMessage(player, oldName, entry.getKey(), entry.getValue().longValue(), sendScreen);
+				sendMessage(player, oldName, entry.getKey(), entry.getValue().intValue(), sendScreen);
 			}
 			player.sendPacket(playerIU);
 		}
@@ -166,7 +166,7 @@ public class RestorationRandom extends AbstractEffect
 		return EffectType.EXTRACT_ITEM;
 	}
 	
-	private void sendMessage(Player player, String oldName, Item item, long count, boolean sendScreen)
+	private void sendMessage(Player player, String oldName, Item item, int count, boolean sendScreen)
 	{
 		final SystemMessage sm;
 		if (count > 1)
@@ -191,7 +191,7 @@ public class RestorationRandom extends AbstractEffect
 		String message = null;
 		if (sendScreen)
 		{
-			message = BorinetUtil.getInstance().createMessage(player.getName(), oldName, item.getName(), count);
+			message = BorinetUtil.getInstance().createMessage(player.getName(), oldName, item.getId(), count, false);
 			BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 		}
 		

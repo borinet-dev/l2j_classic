@@ -125,8 +125,7 @@ public class Book implements IItemHandler
 				player.addItem("황금돼지상자", items.getId(), items.getCount(), player, true);
 				
 				String oldItemName = ItemNameTable.getInstance().getItemNameKor(41277);
-				String rewardItemName = ItemNameTable.getInstance().getItemNameKor(items.getId());
-				String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, items.getCount());
+				String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, items.getId(), (int) items.getCount(), false);
 				BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 				
 				filename = null;

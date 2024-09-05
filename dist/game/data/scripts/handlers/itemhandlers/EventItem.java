@@ -165,15 +165,18 @@ public class EventItem implements IItemHandler
 			{
 				if (Rnd.chance(10))
 				{
-					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM[Rnd.get(FISHING_ITEM.length)], 1);
+					player.destroyItemByItemId("황금 보물 상자", 45488, 1, player, true);
+					player.addItem("황금 보물 상자", FISHING_ITEM[Rnd.get(FISHING_ITEM.length)], 1, null, true);
 				}
 				else if (Rnd.chance(40))
 				{
-					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM_LETTERS[Rnd.get(FISHING_ITEM_LETTERS.length)], 1);
+					player.destroyItemByItemId("황금 보물 상자", 45488, 1, player, true);
+					player.addItem("황금 보물 상자", FISHING_ITEM_LETTERS[Rnd.get(FISHING_ITEM_LETTERS.length)], 1, null, true);
 				}
 				else if (Rnd.chance(50))
 				{
-					giveItem(player, "황금 보물 상자", 45488, FISHING_ITEM_POTION[Rnd.get(FISHING_ITEM_POTION.length)], Rnd.get(1, 3));
+					player.destroyItemByItemId("황금 보물 상자", 45488, 1, player, true);
+					player.addItem("황금 보물 상자", FISHING_ITEM_POTION[Rnd.get(FISHING_ITEM_POTION.length)], Rnd.get(1, 3), null, true);
 				}
 				else
 				{
@@ -518,8 +521,7 @@ public class EventItem implements IItemHandler
 		
 		// 메시지 생성 및 브로드캐스트
 		String oldItemName = ItemNameTable.getInstance().getItemNameKor(oldItemId);
-		String rewardItemName = ItemNameTable.getInstance().getItemNameKor(rewardId);
-		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, rewardCount, false);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardId, rewardCount, false);
 		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 	}
 	
@@ -532,16 +534,14 @@ public class EventItem implements IItemHandler
 		
 		// 메시지 생성 및 브로드캐스트
 		String oldItemName = ItemNameTable.getInstance().getItemNameKor(oldItemId);
-		String rewardName = ItemNameTable.getInstance().getItemNameKor(rewardId);
-		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardName, rewardCount, false);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardId, rewardCount, false);
 		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 		
 		// 추가 아이템 지급 및 메시지 브로드캐스트
 		if (lucky)
 		{
-			rewardName = ItemNameTable.getInstance().getItemNameKor(LuckyId);
 			player.addItem(eventName, LuckyId, LuckyCount, null, true);
-			message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardName, LuckyCount, true);
+			message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, LuckyId, LuckyCount, true);
 			BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 		}
 	}

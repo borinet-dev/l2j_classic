@@ -9,7 +9,6 @@ import java.util.logging.Level;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.enums.ItemSkillType;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -131,7 +130,7 @@ public class ItemDays extends ItemSkillsTemplate
 	
 	private void chanceItem(Player player, String oldName)
 	{
-		int chance = Rnd.getR(1, 11); // 1에서 110까지의 랜덤 값 생성 (각 범위는 10% 확률)
+		int chance = Rnd.getR(1, 11);
 		
 		if (chance == 1)
 		{
@@ -332,10 +331,9 @@ public class ItemDays extends ItemSkillsTemplate
 		}
 	}
 	
-	private void sendMessage(Player player, String oldItemName, int newitemId, long count)
+	private void sendMessage(Player player, String oldItemName, int newitemId, int count)
 	{
-		String rewardItemName = ItemNameTable.getInstance().getItemNameKor(newitemId);
-		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, rewardItemName, count);
+		String message = BorinetUtil.getInstance().createMessage(player.getName(), oldItemName, newitemId, count, false);
 		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
 	}
 	

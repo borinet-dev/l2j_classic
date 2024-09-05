@@ -28,6 +28,7 @@ import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.GameServer;
 import org.l2jmobius.gameserver.Shutdown;
 import org.l2jmobius.gameserver.cache.HtmCache;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.data.xml.CombinationItemsData;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
@@ -1046,23 +1047,16 @@ public class BorinetUtil
 	}
 	
 	// 메시지 생성
-	public String createMessage(String playerName, String oldItemName, String rewardItemName, int rewardCount, boolean isLucky)
+	public String createMessage(String playerName, String oldItemName, int rewardItemId, int rewardCount, boolean isLucky)
 	{
 		String action = isLucky ? "님의 추가획득!" : "님이";
 		String suffix = isLucky ? " 추가로 획득했습니다!" : " 획득했습니다!";
-		String itemCountText = rewardCount > 1 ? " " + rewardCount + "개를" : "";
-		String rewardText = rewardCount > 1 ? rewardItemName + itemCountText : KorNameUtil.getName(rewardItemName, "]을", "]를");
+		
+		String rewardName = ItemNameTable.getInstance().getItemNameKor(rewardItemId);
+		String itemCountText = rewardCount > 1 ? "] " + rewardCount + "개를" : "]";
+		String rewardText = rewardCount > 1 ? rewardName + itemCountText : KorNameUtil.getName(rewardName, "]을", "]를");
 		
 		return playerName + action + " [" + KorNameUtil.getName(oldItemName, "]을", "]를") + " 개봉하여 [" + rewardText + suffix;
-	}
-	
-	// 메시지 생성
-	public String createMessage(String playerName, String oldItemName, String rewardItemName, Long rewardCount)
-	{
-		String itemCountText = rewardCount > 1 ? " " + rewardCount + "개를" : "";
-		String rewardText = rewardCount > 1 ? rewardItemName + itemCountText : KorNameUtil.getName(rewardItemName, "]을", "]를");
-		
-		return playerName + "님이 [" + KorNameUtil.getName(oldItemName, "]을", "]를") + " 개봉하여 [" + rewardText + " 획득했습니다!";
 	}
 	
 	// 모든 플레이어에게 메시지 브로드캐스트
