@@ -957,6 +957,15 @@ public class Npc extends Creature
 		{
 			rateMul *= Config.RATE_XP_BEASTFARM;
 		}
+		else if (getTemplate().isForgeOfTheGods())
+		{
+			rateMul *= Config.RATE_XP_FORGE;
+		}
+		else if (getTemplate().isAlligatorIsland())
+		{
+			rateMul *= Config.RATE_XP_ALLIGATORISLAND;
+		}
+		
 		if (BorinetUtil.isEventDay() && Config.ENABLE_EVENT_RATE_CUSTOM)
 		{
 			rateMul *= Config.EVENT_RATE_CUSTOM_XP_SP;
@@ -1013,8 +1022,13 @@ public class Npc extends Creature
 		}
 		else if (getTemplate().isForgeOfTheGods())
 		{
-			rateMul *= Config.RATE_SP_BEASTFARM;
+			rateMul *= Config.RATE_SP_FORGE;
 		}
+		else if (getTemplate().isAlligatorIsland())
+		{
+			rateMul *= Config.RATE_SP_ALLIGATORISLAND;
+		}
+		
 		if (BorinetUtil.isEventDay() && Config.ENABLE_EVENT_RATE_CUSTOM)
 		{
 			rateMul *= Config.EVENT_RATE_CUSTOM_XP_SP;

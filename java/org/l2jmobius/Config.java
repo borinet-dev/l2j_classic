@@ -1034,6 +1034,8 @@ public class Config
 	public static float RATE_XP_FORGE;
 	public static float RATE_SP_FORGE;
 	public static float RATE_CUSTOM_DROP_ITEM_ADENA;
+	public static float RATE_XP_ALLIGATORISLAND;
+	public static float RATE_SP_ALLIGATORISLAND;
 	
 	// --------------------------------------------------
 	// Server Settings
@@ -1434,6 +1436,13 @@ public class Config
 	public static double MONSTER_MDEF_MULTIPLIER_FORGE;
 	public static double MONSTER_ACCURACY_MULTIPLIER_FORGE;
 	public static double MONSTER_ACCURACY_MAGIC_MULTIPLIER_FORGE;
+	/* 악어의 섬 */
+	public static double MONSTER_HP_MULTIPLIER_ALLIGATORISLAND;
+	public static double MONSTER_MP_MULTIPLIER_ALLIGATORISLAND;
+	public static double MONSTER_PATK_MULTIPLIER_ALLIGATORISLAND;
+	public static double MONSTER_MATK_MULTIPLIER_ALLIGATORISLAND;
+	public static double MONSTER_PDEF_MULTIPLIER_ALLIGATORISLAND;
+	public static double MONSTER_MDEF_MULTIPLIER_ALLIGATORISLAND;
 	
 	public static double GRANDBOSS_HP_MULTIPLIER;
 	public static double GRANDBOSS_MP_MULTIPLIER;
@@ -2981,6 +2990,8 @@ public class Config
 			RATE_XP_FORGE = ratesConfig.getFloat("RateXpForge", 1);
 			RATE_SP_FORGE = ratesConfig.getFloat("RateSpForge", 1);
 			RATE_CUSTOM_DROP_ITEM_ADENA = ratesConfig.getFloat("RateCustomDropItemAdena", 1);
+			RATE_XP_ALLIGATORISLAND = ratesConfig.getFloat("RateXpAlligatorIsland", 1);
+			RATE_SP_ALLIGATORISLAND = ratesConfig.getFloat("RateSpAlligatorIsland", 1);
 			
 			BOSS_DROP_ENABLED = ratesConfig.getBoolean("BossDropEnable", false);
 			BOSS_DROP_MIN_LEVEL = ratesConfig.getInt("BossDropMinLevel", 40);
@@ -3351,6 +3362,13 @@ public class Config
 			DEFENDER_MDEF_MULTIPLIER = boostNpcStatConfig.getDouble("DefenderMDef", 1.0);
 			DEFENDER_AGRRO_RANGE_MULTIPLIER = boostNpcStatConfig.getDouble("DefenderAggroRange", 1.0);
 			DEFENDER_CLAN_HELP_RANGE_MULTIPLIER = boostNpcStatConfig.getDouble("DefenderClanHelpRange", 1.0);
+			
+			MONSTER_HP_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterHPAlligatorIsland", 1.0);
+			MONSTER_MP_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterMPAlligatorIsland", 1.0);
+			MONSTER_PATK_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterPAtkAlligatorIsland", 1.0);
+			MONSTER_MATK_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterMAtkAlligatorIsland", 1.0);
+			MONSTER_PDEF_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterPDefAlligatorIsland", 1.0);
+			MONSTER_MDEF_MULTIPLIER_ALLIGATORISLAND = boostNpcStatConfig.getDouble("MonsterMDefAlligatorIsland", 1.0);
 			
 			// Load ChampionMonster config file (if exists)
 			final PropertiesParser championMonsterConfig = new PropertiesParser(CUSTOM_CHAMPION_MONSTERS_CONFIG_FILE);

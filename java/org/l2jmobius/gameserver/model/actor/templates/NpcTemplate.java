@@ -241,6 +241,15 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 						_baseValues.put(Stat.PHYSICAL_DEFENCE, getBasePDef() * Config.MONSTER_PDEF_MULTIPLIER_NEC_PARTY);
 						_baseValues.put(Stat.MAGICAL_DEFENCE, getBaseMDef() * Config.MONSTER_MDEF_MULTIPLIER_NEC_PARTY);
 					}
+					else if (isAlligatorIsland())
+					{
+						_baseValues.put(Stat.MAX_HP, getBaseHpMax() * Config.MONSTER_HP_MULTIPLIER_ALLIGATORISLAND);
+						_baseValues.put(Stat.MAX_MP, getBaseMpMax() * Config.MONSTER_MP_MULTIPLIER_ALLIGATORISLAND);
+						_baseValues.put(Stat.PHYSICAL_ATTACK, getBasePAtk() * Config.MONSTER_PATK_MULTIPLIER_ALLIGATORISLAND);
+						_baseValues.put(Stat.MAGIC_ATTACK, getBaseMAtk() * Config.MONSTER_MATK_MULTIPLIER_ALLIGATORISLAND);
+						_baseValues.put(Stat.PHYSICAL_DEFENCE, getBasePDef() * Config.MONSTER_PDEF_MULTIPLIER_ALLIGATORISLAND);
+						_baseValues.put(Stat.MAGICAL_DEFENCE, getBaseMDef() * Config.MONSTER_MDEF_MULTIPLIER_ALLIGATORISLAND);
+					}
 					else if (isSevenSignsSolo())
 					{
 						_baseValues.put(Stat.MAX_HP, getBaseHpMax() * Config.MONSTER_HP_MULTIPLIER_NEC_SOLO);
@@ -1299,7 +1308,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 				else
 				{
 					rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_DEATH_DROP_CHANCE_MULTIPLIER : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER_WEEKEND : Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER) * (champion ? Config.CHAMPION_REWARDS_CHANCE : 1);
-					if (isKetraOrc() || isBarkaSilenos() || isWallOfArgos() || isLandOfWinds() || hotSpring() || isElvenFortress() || isMithrilMine() || isBeastFarm())
+					if (isKetraOrc() || isBarkaSilenos() || isWallOfArgos() || isLandOfWinds() || hotSpring() || isElvenFortress() || isMithrilMine() || isBeastFarm() || isAlligatorIsland())
 					{
 						rateChance *= Config.RATE_CUSTOM_DROP_ITEM_ADENA;
 					}
@@ -1341,7 +1350,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 					{
 						rateAmount *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_DROP_ADENA : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_DROP_ADENA_WEEKEND : Config.RATE_DROP_ADENA);
 						rateAmount *= Config.ENABLE_POLE_RATE ? (usingPole ? Config.POLE_ITEM_RATE : 1) : 1;
-						if (isKetraOrc() || isBarkaSilenos() || isWallOfArgos() || isLandOfWinds() || hotSpring() || isElvenFortress() || isMithrilMine() || isBeastFarm())
+						if (isKetraOrc() || isBarkaSilenos() || isWallOfArgos() || isLandOfWinds() || hotSpring() || isElvenFortress() || isMithrilMine() || isBeastFarm() || isAlligatorIsland())
 						{
 							rateChance *= Config.RATE_CUSTOM_DROP_ITEM_ADENA;
 						}
@@ -1669,6 +1678,16 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 			|| (getId() == 21656) || (getId() == 21670) || (getId() == 21671) //
 			|| (getId() == 21768) || (getId() == 21817) || (getId() == 25088) //
 			|| (getId() == 25431) || (getId() == 27271))
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
+	public boolean isAlligatorIsland()
+	{
+		if ((getId() == 20135) || ((getId() >= 20804) && (getId() <= 20808)) || (getId() == 20991))
 		{
 			return true;
 		}
