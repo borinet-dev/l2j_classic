@@ -149,6 +149,30 @@ public class RestorationRandom extends AbstractEffect
 				switch (item.getId())
 				{
 					case 49782:
+					case 70000:
+					case 70001:
+					case 70002:
+					case 70003:
+					case 70004:
+					case 70005:
+					case 70006:
+					case 70007:
+					case 70008:
+					case 70009:
+					case 70010:
+					case 70011:
+					case 70012:
+					case 70013:
+					case 70014:
+					case 70015:
+					case 90793:
+					case 34695:
+					case 23396:
+					case 23397:
+					case 23398:
+					case 23399:
+					case 13990:
+					case 34813:
 					{
 						sendScreen = false;
 						break;
