@@ -282,6 +282,8 @@ public class SpecialEvents
 		Broadcast.toAllOnlinePlayersOnScreenS(eName + " 이벤트가 시작되었습니다. 커뮤니티 보드를 통하여 상향된 배율을 확인하세요!");
 		for (Player player : World.getInstance().getPlayers())
 		{
+			String AMPA = "오후";
+			
 			player.sendMessage("이벤트 NPC를 찾아가세요!");
 			player.sendMessage("루나 구매시 30% 보너스와 20% 할인된 아이템가격!");
 			player.sendMessage("아이템 뽑기 및 강화 확률이 증가합니다.");
@@ -289,15 +291,30 @@ public class SpecialEvents
 			{
 				case 1:
 				{
-					player.sendMessage("지금부터 " + (Config.CUSTOM_EVENT_LAST_MONTH) + "월 " + Config.CUSTOM_EVENT_LAST_DAY + "일 오후 " + Config.CUSTOM_EVENT_LAST_TIME + "시 까지 진행됩니다!");
+					if ((Config.CUSTOM_EVENT_LAST_TIME >= 1) && (Config.CUSTOM_EVENT_LAST_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendMessage("지금부터 " + (Config.CUSTOM_EVENT_LAST_MONTH) + "월 " + Config.CUSTOM_EVENT_LAST_DAY + "일 " + AMPA + " " + Config.CUSTOM_EVENT_LAST_TIME + "시 까지 진행됩니다!");
+					break;
 				}
 				case 2:
 				{
-					player.sendMessage("지금부터 " + Config.NEWYEAR_EVENT_STOP_DAY + "일 오후 " + Config.NEWYEAR_EVENT_STOP_TIME + "시 까지 진행됩니다!");
+					if ((Config.NEWYEAR_EVENT_STOP_TIME >= 1) && (Config.NEWYEAR_EVENT_STOP_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendMessage("지금부터 " + Config.NEWYEAR_EVENT_STOP_DAY + "일 " + AMPA + " " + Config.NEWYEAR_EVENT_STOP_TIME + "시 까지 진행됩니다!");
+					break;
 				}
 				case 3:
 				{
-					player.sendMessage("지금부터 " + Config.CHRISTMAS_EVENT_STOP_DAY + "일 오후 " + Config.CHRISTMAS_EVENT_STOP_TIME + "시 까지 진행됩니다!");
+					if ((Config.CHRISTMAS_EVENT_STOP_TIME >= 1) && (Config.CHRISTMAS_EVENT_STOP_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendMessage("지금부터 " + Config.CHRISTMAS_EVENT_STOP_DAY + "일 " + AMPA + " " + Config.CHRISTMAS_EVENT_STOP_TIME + "시 까지 진행됩니다!");
+					break;
 				}
 			}
 			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, eName + " 이벤트가 시작되었습니다. 커뮤니티 보드를 통하여 상향된 배율을 확인하세요!"));
@@ -308,15 +325,30 @@ public class SpecialEvents
 			{
 				case 1:
 				{
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + (Config.CUSTOM_EVENT_LAST_MONTH) + "월 " + Config.CUSTOM_EVENT_LAST_DAY + "일 오후 " + Config.CUSTOM_EVENT_LAST_TIME + "시 까지  진행됩니다!"));
+					if ((Config.CUSTOM_EVENT_LAST_TIME >= 1) && (Config.CUSTOM_EVENT_LAST_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + (Config.CUSTOM_EVENT_LAST_MONTH) + "월 " + Config.CUSTOM_EVENT_LAST_DAY + "일 " + AMPA + " " + Config.CUSTOM_EVENT_LAST_TIME + "시 까지  진행됩니다!"));
+					break;
 				}
 				case 2:
 				{
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + Config.NEWYEAR_EVENT_STOP_DAY + "일 오후 " + Config.NEWYEAR_EVENT_STOP_TIME + "시 까지 진행됩니다!"));
+					if ((Config.NEWYEAR_EVENT_STOP_TIME >= 1) && (Config.NEWYEAR_EVENT_STOP_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + Config.NEWYEAR_EVENT_STOP_DAY + "일 " + AMPA + " " + Config.NEWYEAR_EVENT_STOP_TIME + "시 까지 진행됩니다!"));
+					break;
 				}
 				case 3:
 				{
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + Config.CHRISTMAS_EVENT_STOP_DAY + "일 오후 " + Config.CHRISTMAS_EVENT_STOP_TIME + "시 까지 진행됩니다!"));
+					if ((Config.CHRISTMAS_EVENT_STOP_TIME >= 1) && (Config.CHRISTMAS_EVENT_STOP_TIME < 12))
+					{
+						AMPA = "오전";
+					}
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "지금부터 " + Config.CHRISTMAS_EVENT_STOP_DAY + "일 " + AMPA + " " + Config.CHRISTMAS_EVENT_STOP_TIME + "시 까지 진행됩니다!"));
+					break;
 				}
 			}
 			resetVar(player);
