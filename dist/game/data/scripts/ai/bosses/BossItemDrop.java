@@ -83,7 +83,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				
 				// 아이템을 드랍
 				npc.dropItem(killer, itemId, 1);
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 자켄:
@@ -92,7 +92,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 90763, 1); // 자켄 귀걸이
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 안타라스:
@@ -105,7 +105,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 41365, 1); // 블랙 쿠폰
 				}
-				npc.dropItem(killer, 41373, Rnd.get(4, 6));
+				npc.dropItem(killer, 41373, Rnd.get(3, 6));
 				break;
 			}
 			case 스칼렛_반_할라샤:
@@ -140,7 +140,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 41365, 1); // 블랙 쿠폰
 				}
-				npc.dropItem(killer, 41373, Rnd.get(2, 5));
+				npc.dropItem(killer, 41373, Rnd.get(2, 4));
 				break;
 			}
 			case 여왕개미80:
@@ -149,7 +149,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91257, 1); // 여왕개미 인형
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 오르펜80:
@@ -158,7 +158,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91258, 1); // 오르펜 인형
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 이그니스:
@@ -167,7 +167,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91119, 1); // 이그니스 목걸이
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 네불라:
@@ -176,7 +176,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91117, 1); // 네불라 목걸이
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 프로첼라:
@@ -185,7 +185,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91121, 1); // 프로첼라 목걸이
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 페트람:
@@ -194,7 +194,7 @@ public final class BossItemDrop extends AbstractNpcAI
 				{
 					npc.dropItem(killer, 91123, 1); // 페트람 목걸이
 				}
-				npc.dropItem(killer, 41373, 2);
+				npc.dropItem(killer, 41373, Rnd.get(1, 2));
 				break;
 			}
 			case 아나킴:
