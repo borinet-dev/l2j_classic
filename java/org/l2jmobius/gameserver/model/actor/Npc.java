@@ -965,6 +965,10 @@ public class Npc extends Creature
 		{
 			rateMul *= Config.RATE_XP_ALLIGATORISLAND;
 		}
+		else if (getTemplate().isDungeonOfAbyss())
+		{
+			rateMul *= Config.RATE_XP_DungeonOfAbyss;
+		}
 		
 		if (BorinetUtil.isEventDay() && Config.ENABLE_EVENT_RATE_CUSTOM)
 		{
@@ -1027,6 +1031,10 @@ public class Npc extends Creature
 		else if (getTemplate().isAlligatorIsland())
 		{
 			rateMul *= Config.RATE_SP_ALLIGATORISLAND;
+		}
+		else if (getTemplate().isDungeonOfAbyss())
+		{
+			rateMul *= Config.RATE_SP_DungeonOfAbyss;
 		}
 		
 		if (BorinetUtil.isEventDay() && Config.ENABLE_EVENT_RATE_CUSTOM)

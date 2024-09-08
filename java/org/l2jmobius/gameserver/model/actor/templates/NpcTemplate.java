@@ -1695,6 +1695,16 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 		return false;
 	}
 	
+	public boolean isDungeonOfAbyss()
+	{
+		if ((getId() >= 21638) && (getId() <= 21649))
+		{
+			return true;
+		}
+		
+		return false;
+	}
+	
 	/**
 	 * Checks if obj can be assigned to the Class represented by clazz.<br>
 	 * This is true if, and only if, obj is the same class represented by clazz, or a subclass of it or obj implements the interface represented by clazz.

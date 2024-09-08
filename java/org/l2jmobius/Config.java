@@ -1036,6 +1036,8 @@ public class Config
 	public static float RATE_CUSTOM_DROP_ITEM_ADENA;
 	public static float RATE_XP_ALLIGATORISLAND;
 	public static float RATE_SP_ALLIGATORISLAND;
+	public static float RATE_XP_DungeonOfAbyss;
+	public static float RATE_SP_DungeonOfAbyss;
 	
 	// --------------------------------------------------
 	// Server Settings
@@ -2992,6 +2994,8 @@ public class Config
 			RATE_CUSTOM_DROP_ITEM_ADENA = ratesConfig.getFloat("RateCustomDropItemAdena", 1);
 			RATE_XP_ALLIGATORISLAND = ratesConfig.getFloat("RateXpAlligatorIsland", 1);
 			RATE_SP_ALLIGATORISLAND = ratesConfig.getFloat("RateSpAlligatorIsland", 1);
+			RATE_XP_DungeonOfAbyss = ratesConfig.getFloat("RateXpDungeonOfAbyss", 1);
+			RATE_SP_DungeonOfAbyss = ratesConfig.getFloat("RateSpDungeonOfAbyss", 1);
 			
 			BOSS_DROP_ENABLED = ratesConfig.getBoolean("BossDropEnable", false);
 			BOSS_DROP_MIN_LEVEL = ratesConfig.getInt("BossDropMinLevel", 40);
