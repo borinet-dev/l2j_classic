@@ -173,6 +173,15 @@ public class RestorationRandom extends AbstractEffect
 					case 23399:
 					case 13990:
 					case 34813:
+					case 70025:
+					case 70026:
+					case 70027:
+					case 70028:
+					case 90911:
+					case 90912:
+					case 90913:
+					case 90914:
+					case 90915:
 					{
 						sendScreen = false;
 						break;
