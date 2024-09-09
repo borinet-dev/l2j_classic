@@ -174,7 +174,14 @@ public class PlayYut implements IItemHandler
 			case "yut":
 			{
 				itemId = ITEM_YUT[Rnd.get(ITEM_YUT.length)];
-				counts = Rnd.get(5, 10);
+				if (((itemId >= 41262) && (itemId <= 41263)) || ((itemId >= 41233) && (itemId <= 41234)))
+				{
+					counts = 1;
+				}
+				else
+				{
+					counts = Rnd.get(5, 10);
+				}
 				name = "윷이";
 				break;
 			}
