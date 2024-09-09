@@ -168,13 +168,21 @@ public class PlayYut implements IItemHandler
 			case "gur":
 			{
 				itemId = ITEM_GUR[Rnd.get(ITEM_GUR.length)];
+				if (itemId == 41263)
+				{
+					counts = 1;
+				}
+				else
+				{
+					counts = Rnd.get(2, 5);
+				}
 				name = "걸이";
 				break;
 			}
 			case "yut":
 			{
 				itemId = ITEM_YUT[Rnd.get(ITEM_YUT.length)];
-				if (((itemId >= 41262) && (itemId <= 41263)) || ((itemId >= 41233) && (itemId <= 41234)))
+				if ((itemId == 41262) || (itemId == 41263) || (itemId == 41233) || (itemId == 41234))
 				{
 					counts = 1;
 				}
