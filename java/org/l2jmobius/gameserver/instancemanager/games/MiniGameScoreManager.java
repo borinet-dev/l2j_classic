@@ -47,6 +47,12 @@ public class MiniGameScoreManager
 			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "신기록! " + bestScore + "점을 새롭게 등록하여 새로운 기록으로 등록됩니다!"));
 		}
 		
+		int highestScore = getHighestScore();
+		if (score > highestScore)
+		{
+			Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 미니게임에서 최고 점수(" + score + "점)을 달성하여 1위에 올랐습니다!");
+		}
+		
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement statement = con.prepareStatement("REPLACE INTO character_minigame_score(object_id, score) VALUES (?, ?)"))
 		{
@@ -83,5 +89,26 @@ public class MiniGameScoreManager
 			LOGGER.log(Level.WARNING, "캐릭터 미니게임 점수를 확인하는 중 오류가 발생했습니다.", e);
 		}
 		return best;
+	}
+	
+	private int getHighestScore()
+	{
+		int highestScore = 0;
+		String query = "SELECT MAX(score) AS highest_score FROM character_minigame_score";
+		
+		try (Connection con = DatabaseFactory.getConnection();
+			PreparedStatement statement = con.prepareStatement(query);
+			ResultSet rset = statement.executeQuery())
+		{
+			if (rset.next())
+			{
+				highestScore = rset.getInt("highest_score");
+			}
+		}
+		catch (SQLException e)
+		{
+			LOGGER.log(Level.WARNING, "최고 미니게임 점수를 확인하는 중 오류가 발생했습니다.", e);
+		}
+		return highestScore;
 	}
 }
