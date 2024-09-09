@@ -1062,10 +1062,7 @@ public class BorinetUtil
 	// 모든 플레이어에게 메시지 브로드캐스트
 	public void broadcastMessageToAllPlayers(String message)
 	{
-		for (Player players : World.getInstance().getPlayers())
-		{
-			Broadcast.toPlayerScreenMessage(players, message);
-		}
+		Broadcast.toAllOnlinePlayersOnScreen(message);
 	}
 	
 	public static BorinetUtil getInstance()
