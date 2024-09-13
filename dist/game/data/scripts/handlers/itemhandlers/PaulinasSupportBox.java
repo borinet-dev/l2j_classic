@@ -356,6 +356,7 @@ public class PaulinasSupportBox implements IItemHandler
 						{
 							player.addItem(getClass().getSimpleName(), BOX_A_ROBE, 1, player, true);
 							Item itemw = ItemTemplate.createItem(WEAPON_STAFF_A);
+							itemw.setEnchantLevel(5);
 							player.addItem(getClass().getSimpleName(), itemw, player, true);
 						}
 						else
