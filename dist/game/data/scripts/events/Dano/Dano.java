@@ -10,7 +10,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 
 public class Dano extends LongTimeEvent
 {
-	private static final int NPC = 40031;
+	// private static final int NPC = 40031;
 	
 	public Dano()
 	{
