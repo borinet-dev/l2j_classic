@@ -11,6 +11,8 @@ import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMiniGame;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.util.Broadcast;
 
@@ -51,6 +53,11 @@ public class MiniGameScoreManager
 		if (score > highestScore)
 		{
 			Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 미니게임에서 최고 점수(" + score + "점)을 달성하여 1위에 올랐습니다!");
+		}
+		
+		if (score >= 6000)
+		{
+			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMiniGame(player), player);
 		}
 		
 		try (Connection con = DatabaseFactory.getConnection();

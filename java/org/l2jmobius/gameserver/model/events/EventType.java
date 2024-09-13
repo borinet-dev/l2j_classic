@@ -101,6 +101,7 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentee
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeStatus;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentorStatus;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMineMania;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMiniGame;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMissionMania;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMoveRequest;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerPKChanged;
@@ -295,6 +296,7 @@ public enum EventType
 	ON_PLAYER_MINE_MANIA(OnPlayerMineMania.class, void.class),
 	ON_PLAYER_KAMALOKA_MANIA(OnPlayerKamalokaMania.class, void.class),
 	ON_PLAYER_BOAT_COMPLETE(OnPlayerBoatComplete.class, void.class),
+	ON_PLAYER_MINIGAME(OnPlayerMiniGame.class, void.class),
 	
 	// Trap events
 	ON_TRAP_ACTION(OnTrapAction.class, void.class),
