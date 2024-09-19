@@ -22,7 +22,7 @@ public class PlayYut implements IItemHandler
 {
 	// @formatter:off
 	private static final String[] YUT_RESULTS = {"do", "gae", "gur", "yut", "mo"};
-	private static final double[] YUT_PROBABILITIES = {0.25, 0.375, 0.25, 0.0625, 0.0625};
+	private static final double[] YUT_PROBABILITIES = {0.375, 0.27, 0.25, 0.0625, 0.0425};
 
 	private static final String HTML_PATH = "data/html/item/PlayYut.htm";
     private static final String IMAGE_TAG = "<?img?>";
@@ -148,6 +148,7 @@ public class PlayYut implements IItemHandler
 		String name = null;
 		boolean isMo = false;
 		int counts = 1;
+		boolean msg = false;
 		
 		switch (prize)
 		{
@@ -174,7 +175,7 @@ public class PlayYut implements IItemHandler
 				}
 				else
 				{
-					counts = Rnd.get(2, 5);
+					counts = Rnd.get(1, 3);
 				}
 				name = "걸이";
 				break;
@@ -191,6 +192,7 @@ public class PlayYut implements IItemHandler
 					counts = Rnd.get(5, 10);
 				}
 				name = "윷이";
+				msg = true;
 				break;
 			}
 			case "mo":
@@ -198,6 +200,7 @@ public class PlayYut implements IItemHandler
 				itemId = ITEM_MO[Rnd.get(ITEM_MO.length)];
 				name = "모가";
 				isMo = true;
+				msg = true;
 				break;
 			}
 		}
@@ -209,8 +212,11 @@ public class PlayYut implements IItemHandler
 		player.addItem("윳놀이", itemId, counts, player, true);
 		player.deleteQuickVar("playingYut");
 		
-		String message = createMessage(player.getName(), itemId, counts);
-		BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+		if (msg)
+		{
+			String message = createMessage(player.getName(), itemId, counts);
+			BorinetUtil.getInstance().broadcastMessageToAllPlayers(message);
+		}
 		return name;
 	}
 	
