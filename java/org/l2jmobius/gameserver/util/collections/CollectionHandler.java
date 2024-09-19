@@ -114,8 +114,10 @@ public class CollectionHandler
 				for (int j = i - (i % itemsPerRow); j <= i; j++)
 				{
 					Item jInventoryItem = player.getInventory().getItemByItemId(items.get(j).getItemId());
-					boolean jItemExists = (jInventoryItem != null) && (jInventoryItem.getEnchantLevel() == items.get(j).getEnchantLevel()) && (jInventoryItem.getItemLocation() == ItemLocation.INVENTORY);
-					sb.append(String.format("<td width=32 height=20 align=center>%s</td>", collectionCompleted ? "<font color=\"00FF00\">등록됨</font>" : (jItemExists ? "<font color=\"FFFF00\">보유 중</font>" : "<font color=\"FF0000\">미보유</font>")));
+					Item jWarehouseItem = player.getWarehouse().getItemByItemId(items.get(j).getItemId());
+					boolean jInvenItemExists = (jInventoryItem != null) && (jInventoryItem.getEnchantLevel() == items.get(j).getEnchantLevel()) && (jInventoryItem.getItemLocation() == ItemLocation.INVENTORY);
+					boolean jWareItemExists = (jWarehouseItem != null) && (jWarehouseItem.getEnchantLevel() == items.get(j).getEnchantLevel()) && (jWarehouseItem.getItemLocation() == ItemLocation.WAREHOUSE);
+					sb.append(String.format("<td width=32 height=20 align=center>%s</td>", collectionCompleted ? "<font color=\"00FF00\">등록됨</font>" : ((jInvenItemExists || jWareItemExists) ? "<font color=\"FFFF00\">보유 중</font>" : "<font color=\"FF0000\">미보유</font>")));
 				}
 				sb.append("</tr>");
 			}
@@ -284,12 +286,25 @@ public class CollectionHandler
 		}
 		
 		// 필요 아이템이 모두 있는지 체크
-		boolean hasAllItems = true;
+		boolean hasAllItems = true; // 기본값을 true로 설정
 		for (CollectionData.ItemEntry itemEntry : collection.getItems())
 		{
 			Item item = player.getInventory().getItemByItemId(itemEntry.getItemId());
-			if ((item == null) || (item.getEnchantLevel() != itemEntry.getEnchantLevel()) || (item.getItemLocation() != ItemLocation.INVENTORY))
+			Item WarehouseItem = player.getWarehouse().getItemByItemId(itemEntry.getItemId());
+			
+			if ((item != null) && (item.getEnchantLevel() == itemEntry.getEnchantLevel()) && (item.getItemLocation() == ItemLocation.INVENTORY))
 			{
+				// 아이템이 인벤토리에 있고 강화 레벨이 맞으면 계속 진행
+				continue;
+			}
+			else if ((WarehouseItem != null) && (WarehouseItem.getEnchantLevel() == itemEntry.getEnchantLevel()) && (WarehouseItem.getItemLocation() == ItemLocation.WAREHOUSE))
+			{
+				// 아이템이 창고에 있고 강화 레벨이 맞으면 계속 진행
+				continue;
+			}
+			else
+			{
+				// 조건을 만족하지 않는 아이템이 있으면 false로 설정하고 반복문 종료
 				hasAllItems = false;
 				break;
 			}
@@ -329,12 +344,26 @@ public class CollectionHandler
 			return;
 		}
 		
-		boolean hasAllItems = true;
+		// 필요 아이템이 모두 있는지 체크
+		boolean hasAllItems = true; // 기본값을 true로 설정
 		for (CollectionData.ItemEntry itemEntry : collection.getItems())
 		{
 			Item item = player.getInventory().getItemByItemId(itemEntry.getItemId());
-			if ((item == null) || (item.getEnchantLevel() != itemEntry.getEnchantLevel()) || (item.getItemLocation() != ItemLocation.INVENTORY))
+			Item WarehouseItem = player.getWarehouse().getItemByItemId(itemEntry.getItemId());
+			
+			if ((item != null) && (item.getEnchantLevel() == itemEntry.getEnchantLevel()) && (item.getItemLocation() == ItemLocation.INVENTORY))
 			{
+				// 아이템이 인벤토리에 있고 강화 레벨이 맞으면 계속 진행
+				continue;
+			}
+			else if ((WarehouseItem != null) && (WarehouseItem.getEnchantLevel() == itemEntry.getEnchantLevel()) && (WarehouseItem.getItemLocation() == ItemLocation.WAREHOUSE))
+			{
+				// 아이템이 창고에 있고 강화 레벨이 맞으면 계속 진행
+				continue;
+			}
+			else
+			{
+				// 조건을 만족하지 않는 아이템이 있으면 false로 설정하고 반복문 종료
 				hasAllItems = false;
 				break;
 			}
@@ -344,7 +373,16 @@ public class CollectionHandler
 		{
 			for (CollectionData.ItemEntry itemEntry : collection.getItems())
 			{
-				player.destroyItemByItemId("컬렉션", itemEntry.getItemId(), 1, player, true);
+				// 먼저 인벤토리에서 필요한 아이템을 제거
+				if (player.getInventory().getItemByItemId(itemEntry.getItemId()) != null)
+				{
+					player.destroyItemByItemId("컬렉션", itemEntry.getItemId(), 1, player, true);
+				}
+				// 인벤토리에 없을 경우 창고에서 아이템 제거
+				else if (player.getWarehouse().getItemByItemId(itemEntry.getItemId()) != null)
+				{
+					player.destroyItemByItemIdInWareHouse("컬렉션", itemEntry.getItemId(), 1, player, true);
+				}
 			}
 			
 			List<String> rewards = new ArrayList<>();
