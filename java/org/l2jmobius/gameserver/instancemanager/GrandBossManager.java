@@ -29,6 +29,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.NpcData;
@@ -48,7 +49,7 @@ public class GrandBossManager implements IStorable
 	protected static long _eventStartTime;
 	protected static long _eventEndTime;
 	// SQL queries
-	private static final String UPDATE_GRAND_BOSS_DATA = "UPDATE grandboss_data set loc_x = ?, loc_y = ?, loc_z = ?, heading = ?, respawn_time = ?, currentHP = ?, currentMP = ?, status = ? where boss_id = ?";
+	private static final String UPDATE_GRAND_BOSS_DATA = "UPDATE grandboss_data set respawn_time = ?, status = ? where boss_id = ?";
 	private static final String UPDATE_GRAND_BOSS_DATA2 = "UPDATE grandboss_data set status = ? where boss_id = ?";
 	
 	protected static final Logger LOGGER = Logger.getLogger(GrandBossManager.class.getName());
@@ -82,8 +83,8 @@ public class GrandBossManager implements IStorable
 					info.set("loc_z", rs.getInt("loc_z"));
 					info.set("heading", rs.getInt("heading"));
 					info.set("respawn_time", rs.getLong("respawn_time"));
-					info.set("currentHP", rs.getDouble("currentHP"));
-					info.set("currentMP", rs.getDouble("currentMP"));
+					info.set("currentHP", rs.getDouble("currentHP") * Config.GRANDBOSS_HP_MULTIPLIER);
+					info.set("currentMP", rs.getDouble("currentMP") * Config.GRANDBOSS_MP_MULTIPLIER);
 					final int status = rs.getInt("status");
 					_bossStatus.put(bossId, status);
 					_storedInfo.put(bossId, info);
@@ -185,23 +186,9 @@ public class GrandBossManager implements IStorable
 				{
 					try (PreparedStatement update = con.prepareStatement(UPDATE_GRAND_BOSS_DATA))
 					{
-						int getz = boss.getZ() - 50;
-						update.setInt(1, boss.getX());
-						update.setInt(2, boss.getY());
-						update.setInt(3, getz);
-						update.setInt(4, boss.getHeading());
-						update.setLong(5, info.getLong("respawn_time"));
-						double hp = boss.getCurrentHp();
-						double mp = boss.getCurrentMp();
-						if (boss.isDead())
-						{
-							hp = boss.getMaxHp();
-							mp = boss.getMaxMp();
-						}
-						update.setDouble(6, hp);
-						update.setDouble(7, mp);
-						update.setInt(8, _bossStatus.get(e.getKey()));
-						update.setInt(9, e.getKey());
+						update.setLong(1, info.getLong("respawn_time"));
+						update.setInt(2, _bossStatus.get(e.getKey()));
+						update.setInt(3, e.getKey());
 						update.executeUpdate();
 						update.clearParameters();
 					}
@@ -235,23 +222,9 @@ public class GrandBossManager implements IStorable
 			{
 				try (PreparedStatement ps = con.prepareStatement(UPDATE_GRAND_BOSS_DATA))
 				{
-					int getz = boss.getZ() - 50;
-					ps.setInt(1, boss.getX());
-					ps.setInt(2, boss.getY());
-					ps.setInt(3, getz);
-					ps.setInt(4, boss.getHeading());
-					ps.setLong(5, info.getLong("respawn_time"));
-					double hp = boss.getCurrentHp();
-					double mp = boss.getCurrentMp();
-					if (boss.isDead())
-					{
-						hp = boss.getMaxHp();
-						mp = boss.getMaxMp();
-					}
-					ps.setDouble(6, hp);
-					ps.setDouble(7, mp);
-					ps.setInt(8, _bossStatus.get(bossId));
-					ps.setInt(9, bossId);
+					ps.setLong(1, info.getLong("respawn_time"));
+					ps.setInt(2, _bossStatus.get(bossId));
+					ps.setInt(3, bossId);
 					ps.executeUpdate();
 				}
 			}
