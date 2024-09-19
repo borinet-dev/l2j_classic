@@ -430,7 +430,7 @@ public class BuffInfo
 				smId = SystemMessageId.S1_HAS_WORN_OFF;
 			}
 			
-			if ((smId != null) && (_effected.getActingPlayer() != null) && _effected.getActingPlayer().isOnline())
+			if ((smId != null) && (_effected.getActingPlayer() != null) && _effected.getActingPlayer().isOnline() && !_effected.getActingPlayer().isInOfflineMode())
 			{
 				final SystemMessage sm = new SystemMessage(smId);
 				sm.addSkillName(_skill);
@@ -459,7 +459,7 @@ public class BuffInfo
 						}
 						case 30296:
 						{
-							if (_skill.getLevel() < 24)
+							if ((_skill.getLevel() < 24))
 							{
 								int buffLvl = _effected.getActingPlayer().getVariables().getInt("CHUSEOK_BUFF", 0) + 1;
 								final Skill fullMoon = SkillData.getInstance().getSkill(30296, buffLvl);
