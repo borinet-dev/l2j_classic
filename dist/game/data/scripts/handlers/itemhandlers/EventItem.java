@@ -446,6 +446,7 @@ public class EventItem implements IItemHandler
 			}
 			case 41382:
 			{
+				boolean msg = false;
 				// @formatter:off
 				int randomValue = Rnd.get(100);
 				int rewardId = 0;
@@ -479,28 +480,33 @@ public class EventItem implements IItemHandler
 				{
 					int[] group4 = {29704, 29709, 29714, 29719, 39710}; // 다양한 펜던트 및 브로치
 					rewardId = group4[Rnd.get(group4.length)];
+					msg = true;
 				}
 				else if (randomValue < 95) // 3% 확률
 				{
 					rewardId = 47984; // 라비앙로즈의 찬란한 브로치
+					msg = true;
 				}
 				else if (randomValue < 97) // 2% 확률
 				{
 					rewardId = 39634; // 베니르의 탈리스만 1단계
+					msg = true;
 				}
 				else if (randomValue < 99) // 2% 확률
 				{
 					rewardId = 91061; // 권능의 탈리스만 Lv1
+					msg = true;
 				}
 				else // 1% 확률 (각 0.5%)
 				{
 					int[] group5 = {37714, 37715}; // 릴리스의 탈리스만, 아나킴의 탈리스만
 					rewardId = group5[Rnd.get(group5.length)];
+					msg = true;
 				}
 				// @formatter:on
 				
 				// 아이템 지급
-				giveItem(player, "한가위 선물 주머니", 41382, rewardId, itemCount, true);
+				giveItem(player, "한가위 선물 주머니", 41382, rewardId, itemCount, msg);
 				break;
 			}
 			default:
