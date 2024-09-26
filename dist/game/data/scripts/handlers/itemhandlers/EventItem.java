@@ -158,6 +158,7 @@ public class EventItem implements IItemHandler
 				}
 				else
 				{
+					player.destroyItemByItemId("R급 재료상자", 41253, 1, player, true);
 					player.sendMessage("꽝! 다음 기회에...");
 				}
 				break;
@@ -178,6 +179,7 @@ public class EventItem implements IItemHandler
 				}
 				else
 				{
+					player.destroyItemByItemId("황금 보물 상자", 45488, 1, player, true);
 					player.sendMessage("꽝! 다음 기회에...");
 				}
 				break;
