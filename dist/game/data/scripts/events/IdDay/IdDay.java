@@ -27,9 +27,12 @@ public class IdDay extends LongTimeEvent
 	
 	public IdDay()
 	{
-		addStartNpc(NPC);
-		addFirstTalkId(NPC);
-		addTalkId(NPC);
+		if (isIndependenceDay())
+		{
+			addStartNpc(NPC);
+			addFirstTalkId(NPC);
+			addTalkId(NPC);
+		}
 	}
 	
 	@Override

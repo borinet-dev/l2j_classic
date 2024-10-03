@@ -28,9 +28,12 @@ public class WhiteDay extends LongTimeEvent
 	
 	public WhiteDay()
 	{
-		addStartNpc(NPC);
-		addFirstTalkId(NPC);
-		addTalkId(NPC);
+		if (isWhiteDay())
+		{
+			addStartNpc(NPC);
+			addFirstTalkId(NPC);
+			addTalkId(NPC);
+		}
 	}
 	
 	@Override
