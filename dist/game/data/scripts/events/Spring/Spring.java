@@ -1,6 +1,7 @@
 package events.Spring;
 
-import java.util.Calendar;
+import java.time.LocalDateTime;
+import java.time.Month;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.data.sql.ItemNameTable;
@@ -16,7 +17,6 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.Util;
 
 public class Spring extends LongTimeEvent
@@ -134,15 +134,11 @@ public class Spring extends LongTimeEvent
 	
 	private boolean isSpringEventActive()
 	{
-		int month = BorinetTask.Month();
-		int day = BorinetTask.Days();
+		LocalDateTime now = LocalDateTime.now();
+		LocalDateTime start = LocalDateTime.of(now.getYear(), Month.MARCH, 1, 0, 0); // 3월 1일 00:00
+		LocalDateTime end = LocalDateTime.of(now.getYear(), Month.APRIL, 8, 0, 0); // 4월 8일 0:0
 		
-		if (((month == Calendar.MARCH) && ((day >= 1) && (day <= 31))) || // 3월 1일부터 3월 31일까지
-			((month == Calendar.APRIL) && ((day >= 1) && (day <= 7))))
-		{
-			return true;
-		}
-		return false;
+		return now.isAfter(start) && now.isBefore(end);
 	}
 	
 	public static void main(String[] args)
