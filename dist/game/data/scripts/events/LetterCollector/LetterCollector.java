@@ -224,11 +224,14 @@ public class LetterCollector extends LongTimeEvent
 					giveItems(player, getReward());
 					startQuestTimer("borinetChange", 0, null, player);
 				}
+				else if (WordCount > 0)
+				{
+					player.sendMessage("총 " + WordCount + "번 교환하였습니다!");
+					WordCount = 0;
+				}
 				else
 				{
 					htmltext = "noItem.htm";
-					player.sendMessage("총 " + WordCount + "번 교환하였습니다!");
-					WordCount = 0;
 				}
 				break;
 			}
