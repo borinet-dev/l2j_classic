@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
  */
 public class LetterCollector extends LongTimeEvent
 {
-	int WordCount = 0;
+	private int WordCount = 0;
 	// NPC memories
 	private static final int ROSALIA = 9000;
 	// Items
