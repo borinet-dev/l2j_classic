@@ -4473,4 +4473,46 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="30299" toLevel="1" name="훈민정음 사본">
+		<icon>icon.songpyeon_herb</icon>
+		<operateType>A2</operateType>
+		<abnormalType>NONE</abnormalType>
+		<affectRange>1000</affectRange>
+		<abnormalTime>300</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>1</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41386</itemConsumeId>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>14</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>14</amount>
+			</effect>
+		</effects>
+	</skill>
 </list>

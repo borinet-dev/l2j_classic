@@ -3163,4 +3163,45 @@
 			<skill id="18791" level="1" /> 
 		</skills>
 	</item>
+	<item id="41386" name="훈민정음 사본" type="EtcItem">
+		<set name="icon" val="nIcon.Hunminjeongeum" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="LIQUID" />
+		<skills>
+			<skill id="30299" level="1" />
+		</skills>
+	</item>
+	<item id="41387" name="문자 - 한" type="EtcItem">
+		<set name="icon" val="icon.etc_alphabet_y_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41388" name="문자 - 글" type="EtcItem">
+		<set name="icon" val="icon.etc_alphabet_y_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41389" name="문자 - 사" type="EtcItem">
+		<set name="icon" val="icon.etc_alphabet_y_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41390" name="문자 - 랑" type="EtcItem">
+		<set name="icon" val="icon.etc_alphabet_y_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
 </list>
