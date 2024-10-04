@@ -54,6 +54,7 @@ import org.l2jmobius.gameserver.model.item.Weapon;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.util.DocumentItem;
 import org.l2jmobius.gameserver.util.GMAudit;
+import org.l2jmobius.gameserver.util.ItemLog;
 
 /**
  * This class serves as a container for all item templates in the game.
@@ -264,9 +265,10 @@ public class ItemTable
 	 * @param count : int Quantity of items to be created for stackable items
 	 * @param actor : Creature requesting the item creation
 	 * @param reference : Object Object referencing current action like NPC selling item or previous item in transformation
+	 * @param log : 아이템로그에 기록
 	 * @return Item corresponding to the new item
 	 */
-	public Item createItem(String process, int itemId, long count, Creature actor, Object reference)
+	public Item createItem(String process, int itemId, long count, Creature actor, Object reference, boolean log)
 	{
 		// Create and Init the Item corresponding to the Item Identifier
 		final Item item = new Item(IdManager.getInstance().getNextId(), itemId);
@@ -307,10 +309,11 @@ public class ItemTable
 			item.setCount(count);
 		}
 		
-		if (Config.LOG_ITEMS && !process.equals("Reset"))
+		if (log && Config.LOG_ITEMS && !process.equals("Reset"))
 		{
 			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (item.isEquipable() || (item.getId() == ADENA_ID))))
 			{
+				ItemLog.insertItemInDB(process, (Player) actor, item, 0, reference);
 				if (item.getEnchantLevel() > 0)
 				{
 					LOGGER_ITEMS.info("생성: " + String.valueOf(process) // in case of null
@@ -365,7 +368,7 @@ public class ItemTable
 	
 	public Item createItem(String process, int itemId, int count, Player actor)
 	{
-		return createItem(process, itemId, count, actor, null);
+		return createItem(process, itemId, count, actor, null, true);
 	}
 	
 	/**
@@ -399,6 +402,8 @@ public class ItemTable
 			{
 				if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (item.isEquipable() || (item.getId() == ADENA_ID))))
 				{
+					ItemLog.insertItemInDB(process, actor, item, old, reference);
+					
 					if (item.getEnchantLevel() > 0)
 					{
 						LOGGER_ITEMS.info("삭제: " + String.valueOf(process) // in case of null

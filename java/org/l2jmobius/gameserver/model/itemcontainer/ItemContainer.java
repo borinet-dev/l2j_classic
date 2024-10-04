@@ -201,7 +201,7 @@ public abstract class ItemContainer
 		if ((olditem != null) && olditem.isStackable())
 		{
 			final long count = newItem.getCount();
-			olditem.changeCount(process, count, actor, reference);
+			olditem.changeCount(process, count, actor, reference, true);
 			olditem.setLastChange(Item.MODIFIED);
 			
 			// And destroys the item
@@ -239,7 +239,7 @@ public abstract class ItemContainer
 		// If stackable item is found in inventory just add to current quantity
 		if ((item != null) && item.isStackable())
 		{
-			item.changeCount(process, count, actor, reference);
+			item.changeCount(process, count, actor, reference, true);
 			item.setLastChange(Item.MODIFIED);
 		}
 		else // If item hasn't be found in inventory, create new one
@@ -254,7 +254,7 @@ public abstract class ItemContainer
 					return null;
 				}
 				
-				item = ItemTable.getInstance().createItem(process, itemId, template.isStackable() ? count : 1, actor, reference);
+				item = ItemTable.getInstance().createItem(process, itemId, template.isStackable() ? count : 1, actor, reference, true);
 				item.setOwnerId(getOwnerId());
 				item.setItemLocation(getBaseLocation());
 				item.setLastChange(Item.ADDED);
@@ -336,7 +336,7 @@ public abstract class ItemContainer
 			{
 				if (sourceitem.getCount() > count) // If possible, only update counts
 				{
-					sourceitem.changeCount(process, -count, actor, reference);
+					sourceitem.changeCount(process, -count, actor, reference, true);
 				}
 				else // Otherwise destroy old item
 				{
@@ -346,7 +346,7 @@ public abstract class ItemContainer
 				
 				if (targetitem != null) // If possible, only update counts
 				{
-					targetitem.changeCount(process, count, actor, reference);
+					targetitem.changeCount(process, count, actor, reference, true);
 				}
 				else // Otherwise add new item
 				{
@@ -410,10 +410,10 @@ public abstract class ItemContainer
 				return item;
 			}
 			
-			item.changeCount(process, -count, actor, reference);
+			item.changeCount(process, -count, actor, reference, false);
 			item.updateDatabase(true);
 			
-			final Item newItem = ItemTable.getInstance().createItem(process, item.getId(), count, actor, reference);
+			final Item newItem = ItemTable.getInstance().createItem(process, item.getId(), count, actor, reference, false);
 			newItem.setOwnerId(getOwnerId());
 			newItem.setItemLocation(newLocation);
 			newItem.updateDatabase(true);
@@ -472,7 +472,7 @@ public abstract class ItemContainer
 			// Adjust item quantity
 			if (item.getCount() > count)
 			{
-				item.changeCount(process, -count, actor, reference);
+				item.changeCount(process, -count, actor, reference, true);
 				item.setLastChange(Item.MODIFIED);
 				refreshWeight();
 			}

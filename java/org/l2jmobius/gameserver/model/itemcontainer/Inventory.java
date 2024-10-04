@@ -1179,11 +1179,11 @@ public abstract class Inventory extends ItemContainer
 			// Directly drop entire item
 			if (item.getCount() > count)
 			{
-				item.changeCount(process, -count, actor, reference);
+				item.changeCount(process, -count, actor, reference, true);
 				item.setLastChange(Item.MODIFIED);
 				item.updateDatabase();
 				
-				final Item newItem = ItemTable.getInstance().createItem(process, item.getId(), count, actor, reference);
+				final Item newItem = ItemTable.getInstance().createItem(process, item.getId(), count, actor, reference, false);
 				newItem.updateDatabase();
 				refreshWeight();
 				return newItem;

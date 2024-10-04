@@ -152,7 +152,7 @@ public class Block extends Monster
 	
 	private void dropItem(int id, BlockChecker eng, Player player)
 	{
-		final Item drop = ItemTable.getInstance().createItem("Loot", id, 1, player, this);
+		final Item drop = ItemTable.getInstance().createItem("Loot", id, 1, player, this, true);
 		final int x = getX() + Rnd.get(50);
 		final int y = getY() + Rnd.get(50);
 		final int z = getZ();

@@ -97,6 +97,7 @@ import org.l2jmobius.gameserver.taskmanager.ItemAppearanceTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemLifeTimeTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemManaTaskManager;
 import org.l2jmobius.gameserver.util.GMAudit;
+import org.l2jmobius.gameserver.util.ItemLog;
 
 /**
  * This class manages items.
@@ -326,6 +327,8 @@ public class Item extends WorldObject
 		{
 			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
 			{
+				ItemLog.insertItemInDB(process, creator, this, 0, reference);
+				
 				if (_enchantLevel > 0)
 				{
 					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
@@ -468,8 +471,9 @@ public class Item extends WorldObject
 	 * @param count : int
 	 * @param creator : Player Player requesting the item creation
 	 * @param reference : Object Object referencing current action like NPC selling item or previous item in transformation
+	 * @param log : Object Object referencing current action like NPC selling item or previous item in transformation
 	 */
-	public void changeCount(String process, long count, Player creator, Object reference)
+	public void changeCount(String process, long count, Player creator, Object reference, boolean log)
 	{
 		if (count == 0)
 		{
@@ -494,10 +498,12 @@ public class Item extends WorldObject
 		
 		_storedInDb = false;
 		
-		if (Config.LOG_ITEMS && (process != null))
+		if (log && Config.LOG_ITEMS && (process != null))
 		{
 			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
 			{
+				ItemLog.insertItemInDB(process, creator, this, old, reference);
+				
 				if (_enchantLevel > 0)
 				{
 					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
@@ -544,7 +550,7 @@ public class Item extends WorldObject
 	// No logging (function designed for shots only)
 	public void changeCountWithoutTrace(int count, Player creator, Object reference)
 	{
-		changeCount(null, count, creator, reference);
+		changeCount(null, count, creator, reference, true);
 	}
 	
 	/**

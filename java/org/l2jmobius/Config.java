@@ -1050,6 +1050,7 @@ public class Config
 	public static String GAMESERVER_HOSTNAME;
 	public static String DATABASE_DRIVER;
 	public static String DATABASE_URL;
+	public static String DATABASE_LOG_URL;
 	public static String DATABASE_LOGIN;
 	public static String DATABASE_PASSWORD;
 	public static int DATABASE_MAX_CONNECTIONS;
@@ -1719,7 +1720,8 @@ public class Config
 			REQUEST_ID = serverConfig.getInt("RequestServerID", 0);
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
-			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2jgs");
+			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2_server");
+			DATABASE_LOG_URL = serverConfig.getString("LOG_URL", "jdbc:mariadb://localhost/item_log");
 			DATABASE_LOGIN = serverConfig.getString("Login", "root");
 			DATABASE_PASSWORD = serverConfig.getString("Password", "");
 			DATABASE_MAX_CONNECTIONS = serverConfig.getInt("MaximumDbConnections", 10);

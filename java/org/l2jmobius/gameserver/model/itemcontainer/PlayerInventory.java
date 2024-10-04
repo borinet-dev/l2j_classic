@@ -1217,7 +1217,7 @@ public class PlayerInventory extends Inventory
 				{
 					if ((process != null) && (process.length() > 0))
 					{
-						item.changeCount(process, countDelta, creator, reference);
+						item.changeCount(process, countDelta, creator, reference, true);
 					}
 					else
 					{
