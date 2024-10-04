@@ -164,7 +164,7 @@ public class ElementalSpiritDataHolder
 	
 	public void addCritRatePoints(byte critRatePoints)
 	{
-		_critRatePoints = critRatePoints;
+		_critRatePoints += critRatePoints;
 	}
 	
 	public void addCritDamagePoints(byte critDamagePoints)
