@@ -1,7 +1,9 @@
 package org.l2jmobius.gameserver.util.collections;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -345,25 +347,35 @@ public class CollectionHandler
 		}
 		
 		// 필요 아이템이 모두 있는지 체크
-		boolean hasAllItems = true; // 기본값을 true로 설정
+		Map<Item, Boolean> matchedItems = new HashMap<>();
+		boolean hasAllItems = true;
+		
 		for (CollectionData.ItemEntry itemEntry : collection.getItems())
 		{
-			Item item = player.getInventory().getItemByItemId(itemEntry.getItemId());
-			Item WarehouseItem = player.getWarehouse().getItemByItemId(itemEntry.getItemId());
+			Item matchedItem = null;
 			
-			if ((item != null) && (item.getEnchantLevel() == itemEntry.getEnchantLevel()) && (item.getItemLocation() == ItemLocation.INVENTORY))
+			// 인벤토리에서 먼저 아이템 검색
+			Item inventoryItem = player.getInventory().getItemByItemId(itemEntry.getItemId());
+			if ((inventoryItem != null) && (inventoryItem.getEnchantLevel() == itemEntry.getEnchantLevel()) && (inventoryItem.getItemLocation() == ItemLocation.INVENTORY))
 			{
-				// 아이템이 인벤토리에 있고 강화 레벨이 맞으면 계속 진행
-				continue;
-			}
-			else if ((WarehouseItem != null) && (WarehouseItem.getEnchantLevel() == itemEntry.getEnchantLevel()) && (WarehouseItem.getItemLocation() == ItemLocation.WAREHOUSE))
-			{
-				// 아이템이 창고에 있고 강화 레벨이 맞으면 계속 진행
-				continue;
+				matchedItem = inventoryItem;
 			}
 			else
 			{
-				// 조건을 만족하지 않는 아이템이 있으면 false로 설정하고 반복문 종료
+				// 창고에서 아이템 검색
+				Item warehouseItem = player.getWarehouse().getItemByItemId(itemEntry.getItemId());
+				if ((warehouseItem != null) && (warehouseItem.getEnchantLevel() == itemEntry.getEnchantLevel()) && (warehouseItem.getItemLocation() == ItemLocation.WAREHOUSE))
+				{
+					matchedItem = warehouseItem;
+				}
+			}
+			
+			if (matchedItem != null)
+			{
+				matchedItems.put(matchedItem, false); // 아이템을 매칭 시킴
+			}
+			else
+			{
 				hasAllItems = false;
 				break;
 			}
@@ -371,17 +383,16 @@ public class CollectionHandler
 		
 		if (hasAllItems)
 		{
-			for (CollectionData.ItemEntry itemEntry : collection.getItems())
+			for (Map.Entry<Item, Boolean> entry : matchedItems.entrySet())
 			{
-				// 먼저 인벤토리에서 필요한 아이템을 제거
-				if (player.getInventory().getItemByItemId(itemEntry.getItemId()) != null)
+				Item itemToDestroy = entry.getKey();
+				if (itemToDestroy.getItemLocation() == ItemLocation.INVENTORY)
 				{
-					player.destroyItemByItemId("컬렉션", itemEntry.getItemId(), 1, player, true);
+					player.destroyItemByItemId("컬렉션", itemToDestroy.getId(), 1, player, true);
 				}
-				// 인벤토리에 없을 경우 창고에서 아이템 제거
-				else if (player.getWarehouse().getItemByItemId(itemEntry.getItemId()) != null)
+				else if (itemToDestroy.getItemLocation() == ItemLocation.WAREHOUSE)
 				{
-					player.destroyItemByItemIdInWareHouse("컬렉션", itemEntry.getItemId(), 1, player, true);
+					player.destroyItemByItemIdInWareHouse("컬렉션", itemToDestroy.getId(), 1, player, true);
 				}
 			}
 			
