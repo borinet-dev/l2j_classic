@@ -32,6 +32,7 @@ public class DatabaseFactory
 	private static final Logger LOGGER = Logger.getLogger(DatabaseFactory.class.getName());
 	
 	private static final MariaDbPoolDataSource DATABASE_POOL = new MariaDbPoolDataSource(Config.DATABASE_URL + "&user=" + Config.DATABASE_LOGIN + "&password=" + Config.DATABASE_PASSWORD + "&maxPoolSize=" + Config.DATABASE_MAX_CONNECTIONS);
+	private static final MariaDbPoolDataSource DATABASE_LOG = new MariaDbPoolDataSource(Config.DATABASE_LOG_URL + "&user=" + Config.DATABASE_LOGIN + "&password=" + Config.DATABASE_PASSWORD + "&maxPoolSize=" + Config.DATABASE_MAX_CONNECTIONS);
 	
 	public static void init()
 	{
@@ -55,6 +56,23 @@ public class DatabaseFactory
 			try
 			{
 				con = DATABASE_POOL.getConnection();
+			}
+			catch (Exception e)
+			{
+				LOGGER.severe("DatabaseFactory: 데이터베이스에 연결할 수 없습니다.");
+			}
+		}
+		return con;
+	}
+	
+	public static Connection getConnectionLog()
+	{
+		Connection con = null;
+		while (con == null)
+		{
+			try
+			{
+				con = DATABASE_LOG.getConnection();
 			}
 			catch (Exception e)
 			{
