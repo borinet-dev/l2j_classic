@@ -17,6 +17,7 @@ import org.l2jmobius.gameserver.model.actor.Attackable;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.instance.Monster;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMineMania;
 import org.l2jmobius.gameserver.model.zone.ZoneType;
@@ -38,6 +39,20 @@ public class MithrilMine extends AbstractNpcAI
 	private final int despawn_delay = (Config.MITHRIL_MINE_DESPAWN_DELAY) * 60 * 1000; // 50분
 	private final int boss_delay = (Config.MITHRIL_MINE_BOSS_DELAY) * 60 * 1000; // 10분
 	private final int box_delay = (Config.MITHRIL_MINE_BOX_DELAY) * 60; // 1분
+	
+	// NPCs
+	private static final int GRAVE_ROBBER_SUMMONER = 22678; // 도굴꾼 소환사
+	private static final int GRAVE_ROBBER_MAGICIAN = 22679; // 도굴꾼 마법사
+	private static final int[] SUMMONER_MINIONS =
+	{
+		22683, // 어둠의 소환수 단검 무기 내성
+		22684, // 어둠의 소환수 둔기류 무기 내성
+	};
+	private static final int[] MAGICIAN_MINIONS =
+	{
+		22685, // 어둠의 소환수 격투 무기 내성
+		22686, // 어둠의 소환수 창 무기 내성
+	};
 	
 	// @formatter:off
 	private static final int[][] SPAWNS =
@@ -71,6 +86,10 @@ public class MithrilMine extends AbstractNpcAI
     {
         36550, 36555, 36560
     };
+    private static final int[] ITEM_DROP_아포칼립스조각 =
+    {
+        19203,19204,19205,19206,19207,19208,19209,19211,19212,19213
+    };
     // @formatter:on
 	
 	private static final int WEAPON_ID = 32773;
@@ -82,6 +101,7 @@ public class MithrilMine extends AbstractNpcAI
 	{
 		addAttackId(31468);
 		addKillId(31468, 36706);
+		addSpawnId(GRAVE_ROBBER_SUMMONER, GRAVE_ROBBER_MAGICIAN);
 		initialize();
 	}
 	
@@ -192,22 +212,26 @@ public class MithrilMine extends AbstractNpcAI
 	
 	private void dropItems(Npc npc, Player player)
 	{
-		if (Rnd.chance(Config.MITHRIL_MINE_DROP_CHANCE1))
-		{
-			player.doAutoLoot((Attackable) npc, ITEM_DROP_1[Rnd.get(ITEM_DROP_1.length)], Rnd.get(1, 10));
-		}
-		else if (Rnd.chance(Config.MITHRIL_MINE_DROP_CHANCE2))
-		{
-			player.doAutoLoot((Attackable) npc, ITEM_DROP_2[Rnd.get(ITEM_DROP_2.length)], Rnd.get(1, 5));
-		}
-		else if (Rnd.chance(Config.MITHRIL_MINE_DROP_CHANCE3))
-		{
-			player.doAutoLoot((Attackable) npc, ITEM_DROP_최상급[Rnd.get(ITEM_DROP_최상급.length)], Rnd.get(1, 1));
-		}
-		else if (Rnd.chance(Config.MITHRIL_MINE_DROP_CHANCE4))
+		if (Rnd.chance(41)) // 41% 확률
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMineMania(player), player);
 			player.doAutoLoot((Attackable) npc, 41253, Rnd.get(1, 1));
+		}
+		else if (Rnd.chance(30)) // 30% 확률
+		{
+			player.doAutoLoot((Attackable) npc, ITEM_DROP_1[Rnd.get(ITEM_DROP_1.length)], Rnd.get(1, 10));
+		}
+		else if (Rnd.chance(17)) // 17% 확률
+		{
+			player.doAutoLoot((Attackable) npc, ITEM_DROP_2[Rnd.get(ITEM_DROP_2.length)], Rnd.get(1, 5));
+		}
+		else if (Rnd.chance(11)) // 11% 확률
+		{
+			player.doAutoLoot((Attackable) npc, ITEM_DROP_최상급[Rnd.get(ITEM_DROP_최상급.length)], Rnd.get(1, 1));
+		}
+		else if (Rnd.chance(1)) // 1% 확률
+		{
+			player.doAutoLoot((Attackable) npc, ITEM_DROP_아포칼립스조각[Rnd.get(ITEM_DROP_아포칼립스조각.length)], Rnd.get(1, 1));
 		}
 	}
 	
@@ -364,6 +388,14 @@ public class MithrilMine extends AbstractNpcAI
 		}
 		int sec = Rnd.get(10, 90) * 1000;
 		startQuestTimer("TALK_TEXT", sec, npc, null);
+	}
+	
+	@Override
+	public String onSpawn(Npc npc)
+	{
+		final int[] minions = (npc.getId() == GRAVE_ROBBER_SUMMONER) ? SUMMONER_MINIONS : MAGICIAN_MINIONS;
+		addMinion((Monster) npc, minions[getRandom(minions.length)]);
+		return super.onSpawn(npc);
 	}
 	
 	public static void main(String[] args)
