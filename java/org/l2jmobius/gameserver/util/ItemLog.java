@@ -1,7 +1,6 @@
 package org.l2jmobius.gameserver.util;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -12,7 +11,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
+import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -21,10 +20,6 @@ import org.l2jmobius.gameserver.model.item.type.EtcItemType;
 public class ItemLog
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemLog.class.getName());
-	// DB 연결 설정
-	private static final String DB_URL = Config.DATABASE_LOG_URL;
-	private static final String DB_USER = Config.DATABASE_LOGIN;
-	private static final String DB_PASSWORD = Config.DATABASE_PASSWORD;
 	
 	public static void main(String[] args)
 	{
@@ -43,7 +38,7 @@ public class ItemLog
 		ThreadPool.scheduleAtFixedRate(ItemLog::deleteOldTables, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1 day
 	}
 	
-	public static void logItem(String process, String characterName, int characterId, String itemName, long currentQuantity, long previousQuantity, String npcName, int enchantLevel, Item item)
+	private static void logItem(String process, String characterName, int characterId, String itemName, long currentQuantity, long previousQuantity, String npcName, int enchantLevel, Item item)
 	{
 		// 오늘 날짜 기반으로 테이블 이름 생성 (yyyy_MM_dd 형식)
 		String tableName = new SimpleDateFormat("yyyy_MM_dd").format(new Date());
@@ -58,7 +53,7 @@ public class ItemLog
 		
 		// DB에 로그 기록
 		String query = "INSERT INTO " + tableName + " (process_status, character_name, character_id, item_name, current_quantity, previous_quantity, npc_name) VALUES (?, ?, ?, ?, ?, ?, ?)";
-		try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+		try (Connection connection = DatabaseFactory.getConnectionLog();
 			PreparedStatement ps = connection.prepareStatement(query))
 		{
 			ps.setString(1, process);
@@ -92,11 +87,11 @@ public class ItemLog
 		// 테이블이 존재하지 않을 경우 테이블 생성
 		String createTableQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (" + "log_id INT AUTO_INCREMENT PRIMARY KEY, " + "log_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " + "process_status VARCHAR(255), " + "character_name VARCHAR(255), " + "character_id INT, " + "item_name VARCHAR(255), " + "current_quantity BIGINT, " + "previous_quantity BIGINT, " + "npc_name VARCHAR(255))";
 		
-		try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
-			Statement statement = connection.createStatement())
+		try (Connection con = DatabaseFactory.getConnectionLog();
+			Statement stmt = con.createStatement()) // Statement 사용
 		{
 			// 테이블 생성 쿼리 실행
-			statement.execute(createTableQuery);
+			stmt.execute(createTableQuery);
 		}
 		catch (SQLException e)
 		{
@@ -119,7 +114,7 @@ public class ItemLog
 		// 오래된 테이블 삭제
 		String dropTableQuery = "DROP TABLE IF EXISTS " + oldTableName;
 		
-		try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+		try (Connection connection = DatabaseFactory.getConnectionLog();
 			Statement statement = connection.createStatement())
 		{
 			statement.executeUpdate(dropTableQuery);
