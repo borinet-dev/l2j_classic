@@ -27,17 +27,19 @@ public class IdDay extends LongTimeEvent
 	
 	public IdDay()
 	{
-		if (isIndependenceDay())
-		{
-			addStartNpc(NPC);
-			addFirstTalkId(NPC);
-			addTalkId(NPC);
-		}
+		addStartNpc(NPC);
+		addFirstTalkId(NPC);
+		addTalkId(NPC);
 	}
 	
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (!isIndependenceDay())
+		{
+			return null;
+		}
+		
 		if ("ask".equalsIgnoreCase(event))
 		{
 			if (getQuestItemsCount(player, 47825) >= 1)
@@ -74,6 +76,10 @@ public class IdDay extends LongTimeEvent
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
+		if (!isIndependenceDay())
+		{
+			return null;
+		}
 		return npc.getId() + ".htm";
 	}
 	

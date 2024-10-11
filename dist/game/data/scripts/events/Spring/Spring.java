@@ -41,6 +41,11 @@ public class Spring extends LongTimeEvent
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (!isSpringEventActive())
+		{
+			return null;
+		}
+		
 		if ("buff".equalsIgnoreCase(event))
 		{
 			return handleBuffEvent(player);
@@ -59,6 +64,10 @@ public class Spring extends LongTimeEvent
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
+		if (!isSpringEventActive())
+		{
+			return null;
+		}
 		return getHtm(player, npc.getId() + ".htm").replace("%fee%", Util.formatAdena(LOLLIPOP_FEE));
 	}
 	
