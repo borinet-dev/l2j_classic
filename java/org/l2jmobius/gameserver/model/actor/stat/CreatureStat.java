@@ -1329,9 +1329,6 @@ public class CreatureStat
 			_lock.writeLock().unlock();
 		}
 		
-		// Notify recalculation to child classes
-		onRecalculateStats(broadcast);
-		
 		if (broadcast)
 		{
 			// Calculate the difference between old and new stats
@@ -1348,6 +1345,20 @@ public class CreatureStat
 				}
 			}
 			_creature.broadcastModifiedStats(changed);
+			
+			// Notify recalculation to child classes
+			if (_creature.getCurrentCp() > getMaxCp())
+			{
+				_creature.setCurrentCp(getMaxCp());
+			}
+			if (_creature.getCurrentHp() > getMaxHp())
+			{
+				_creature.setCurrentHp(getMaxHp());
+			}
+			if (_creature.getCurrentMp() > getMaxMp())
+			{
+				_creature.setCurrentMp(getMaxMp());
+			}
 		}
 	}
 	

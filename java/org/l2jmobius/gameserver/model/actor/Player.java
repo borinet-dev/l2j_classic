@@ -10270,6 +10270,18 @@ public class Player extends Playable
 			
 			restoreHenna();
 			sendPacket(new HennaInfo(this));
+			if (getCurrentHp() > getMaxHp())
+			{
+				setCurrentHp(getMaxHp());
+			}
+			if (getCurrentMp() > getMaxMp())
+			{
+				setCurrentMp(getMaxMp());
+			}
+			if (getCurrentCp() > getMaxCp())
+			{
+				setCurrentCp(getMaxCp());
+			}
 			
 			refreshOverloaded(true);
 			refreshExpertisePenalty();
