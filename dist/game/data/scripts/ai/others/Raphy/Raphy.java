@@ -3,7 +3,6 @@ package ai.others.Raphy;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.data.sql.ItemNameTable;
-import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
@@ -311,7 +310,7 @@ public class Raphy extends AbstractNpcAI
 	private void showScreen(Player player, int itemId, boolean isBless, boolean isMission)
 	{
 		String itemName = ItemNameTable.getInstance().getItemNameKor(itemId);
-		String message = player.getName() + "님이 도박에 성공하여 [" + KorNameUtil.getName(itemName, "]을", "]를") + " 획득했습니다.";
+		String message = "도박에 성공하여 [" + KorNameUtil.getName(itemName, "]을", "]를") + " 획득했습니다.";
 		
 		if (isBless)
 		{
@@ -319,10 +318,7 @@ public class Raphy extends AbstractNpcAI
 			{
 				EventDispatcher.getInstance().notifyEventAsync(new OnPlayerGamble(player, true));
 			}
-			for (Player players : World.getInstance().getPlayers())
-			{
-				Broadcast.toPlayerScreenMessage(players, message);
-			}
+			Broadcast.toPlayerScreenMessage(player, message);
 		}
 		else
 		{
