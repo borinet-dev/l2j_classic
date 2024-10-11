@@ -19,17 +19,19 @@ public class Hangul extends LongTimeEvent
 	
 	public Hangul()
 	{
-		if (isHangulEventActive())
-		{
-			addStartNpc(NPC);
-			addFirstTalkId(NPC);
-			addTalkId(NPC);
-		}
+		addStartNpc(NPC);
+		addFirstTalkId(NPC);
+		addTalkId(NPC);
 	}
 	
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (!isHangulEventActive())
+		{
+			return null;
+		}
+		
 		int itemCount = (int) getQuestItemsCount(player, 41386);
 		
 		switch (event)
@@ -84,6 +86,11 @@ public class Hangul extends LongTimeEvent
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
+		if (!isHangulEventActive())
+		{
+			return null;
+		}
+		
 		return npc.getId() + ".htm";
 	}
 	
