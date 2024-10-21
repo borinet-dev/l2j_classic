@@ -105,20 +105,14 @@ public class ItemLog
 		LocalDate sevenDaysAgo = LocalDate.now().minusDays(7);
 		String oldTableName = sevenDaysAgo.format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
 		
-		// oldTableName이 null인지 확인
-		if ((oldTableName == null) || oldTableName.isEmpty())
-		{
-			return;
-		}
-		
-		// 오래된 테이블 삭제
+		// 7일전 테이블 삭제
 		String dropTableQuery = "DROP TABLE IF EXISTS " + oldTableName;
 		
 		try (Connection connection = DatabaseFactory.getConnectionLog();
 			Statement statement = connection.createStatement())
 		{
 			statement.executeUpdate(dropTableQuery);
-			LOGGER.info("아이템로그 테이블 [" + oldTableName + "]이 성공적으로 삭제되었습니다.");
+			LOGGER.info("아이템로그: 테이블 [" + oldTableName + "]이 삭제되었습니다.");
 		}
 		catch (Exception e)
 		{
