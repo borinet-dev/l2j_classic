@@ -55,7 +55,7 @@ public class MiniGameScoreManager
 			Broadcast.toAllOnlinePlayersOnScreen(player.getName() + "님이 미니게임에서 최고 점수(" + score + "점)을 달성하여 1위에 올랐습니다!");
 		}
 		
-		if (score >= 6000)
+		if (score >= 5000)
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMiniGame(player), player);
 		}
