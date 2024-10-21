@@ -247,116 +247,51 @@ public class BossEvent extends AbstractNpcAI
 	
 	public void dropitems(Npc mob, Player player)
 	{
-		int drop = Rnd.get(3, 4);
-		if (Rnd.chance(1) && (_counts < drop))
+		int dropCount = Rnd.get(3, 4); // 드롭할 최대 아이템 수
+		if (_counts < dropCount)
 		{
-			mob.dropItem(player, 39331, 1); // 카데이라 방어구 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(2) && (_counts < drop))
-		{
-			mob.dropItem(player, 39361, 1); // 아포칼립스 무기 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(4) && (_counts < drop))
-		{
-			mob.dropItem(player, 22339, 1); // S80 최상급 무기상자
-			_counts += 1;
-		}
-		if (Rnd.chance(5) && (_counts < drop))
-		{
-			mob.dropItem(player, 22340, 1); // 엘레기아 방어구 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(6) && (_counts < drop))
-		{
-			mob.dropItem(player, 33478, 1); // 파멸 R데이
-			_counts += 1;
-		}
-		if (Rnd.chance(7) && (_counts < drop))
-		{
-			mob.dropItem(player, 22202, 1); // S80 상급 무기 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(8) && (_counts < drop))
-		{
-			mob.dropItem(player, 22203, 1); // 버페스 방어구 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(9) && (_counts < drop))
-		{
-			mob.dropItem(player, 17069, 1); // 베스페르 무기 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(10) && (_counts < drop))
-		{
-			mob.dropItem(player, 17070, 1); // 이카루스 무기 상자
-			_counts += 1;
-		}
-		if (Rnd.chance(11) && (_counts < drop))
-		{
-			mob.dropItem(player, 33478, Rnd.get(1, 2)); // 파멸 R 데이
-			_counts += 1;
-		}
-		if (Rnd.chance(12) && (_counts < drop))
-		{
-			mob.dropItem(player, 22221, Rnd.get(1, 2)); // 파멸 S 데이
-			_counts += 1;
-		}
-		if (Rnd.chance(15) && (_counts < drop))
-		{
-			mob.dropItem(player, 22222, Rnd.get(1, 3)); // 파멸 S 젤
-			_counts += 1;
-		}
-		if (Rnd.chance(20) && (_counts < drop))
-		{
-			mob.dropItem(player, 90138, Rnd.get(1, 2)); // 찬란한 펜던트 연마제
-			_counts += 1;
-		}
-		if (Rnd.chance(23) && (_counts < drop))
-		{
-			mob.dropItem(player, 41033, Rnd.get(1, 3)); // 파멸 레어 액세
-			_counts += 1;
-		}
-		if (Rnd.chance(30) && (_counts < drop))
-		{
-			mob.dropItem(player, 13082, Rnd.get(1, 3)); // 축복의 깃털 3장 펙
-			_counts += 1;
-		}
-		if (Rnd.chance(50) && (_counts < drop))
-		{
-			mob.dropItem(player, 41078, Rnd.get(5, 10)); // 최상급 생명의 돌
-			_counts += 1;
-		}
-		if (Rnd.chance(60) && (_counts < drop))
-		{
-			mob.dropItem(player, 90015, Rnd.get(5, 15)); // 최상급 생명의 돌
-			_counts += 1;
-		}
-		if (Rnd.chance(90) && (_counts < drop))
-		{
-			mob.dropItem(player, 70005, Rnd.get(1, 2)); // 봉인된 룬 - 6
-			_counts += 1;
-		}
-		if (Rnd.chance(96) && (_counts < drop))
-		{
-			mob.dropItem(player, 20033, Rnd.get(1, 2)); // 자유 텔레포트 주문서
-			_counts += 1;
-		}
-		if (Rnd.chance(97) && (_counts < drop))
-		{
-			mob.dropItem(player, 13021, Rnd.get(1, 2)); // 컬러 호칭
-			_counts += 1;
-		}
-		if (Rnd.chance(98) && (_counts < drop))
-		{
-			mob.dropItem(player, 13016, Rnd.get(1, 2)); // 자유 텔레포트 주문서
-			_counts += 1;
-		}
-		if (Rnd.chance(99) && (_counts < drop))
-		{
-			mob.dropItem(player, 13015, Rnd.get(1, 5)); // 자유 텔레포트의 서
-			_counts += 1;
+			// 드롭할 아이템과 그 확률을 설정
+		// @formatter:off
+        Object[][] dropItems = {
+            {39331, 1, 1}, // 카데이라 방어구 상자
+            {39361, 1, 2}, // 아포칼립스 무기 상자
+            {22339, 1, 4}, // S80 최상급 무기상자
+            {22340, 1, 5}, // 엘레기아 방어구 상자
+            {33478, 1, 6}, // 파멸 R데이
+            {22202, 1, 7}, // S80 상급 무기 상자
+            {22203, 1, 8}, // 버페스 방어구 상자
+            {17069, 1, 9}, // 베스페르 무기 상자
+            {17070, 1, 10}, // 이카루스 무기 상자
+            {33478, Rnd.get(1, 2), 11}, // 파멸 R 데이
+            {22221, Rnd.get(1, 2), 12}, // 파멸 S 데이
+            {22222, Rnd.get(1, 3), 15}, // 파멸 S 젤
+            {90138, Rnd.get(1, 2), 20}, // 찬란한 펜던트 연마제
+            {41033, Rnd.get(1, 3), 23}, // 파멸 레어 액세
+            {13082, Rnd.get(1, 3), 30}, // 축복의 깃털 3장 펙
+            {41078, Rnd.get(5, 10), 50}, // 최상급 생명의 돌
+            {90015, Rnd.get(5, 15), 60}, // 최상급 생명의 돌
+            {70005, Rnd.get(1, 2), 90}, // 봉인된 룬 - 6
+            {20033, Rnd.get(1, 2), 96}, // 자유 텔레포트 주문서
+            {13021, Rnd.get(1, 2), 97}, // 컬러 호칭
+            {13016, Rnd.get(1, 2), 98}, // 자유 텔레포트 주문서
+            {13015, Rnd.get(1, 5), 99}  // 자유 텔레포트의 서
+        };
+        // @formatter:on
+			
+			// 무작위로 아이템 드롭 결정
+			for (Object[] item : dropItems)
+			{
+				int itemId = (int) item[0];
+				int itemCount = (int) item[1];
+				int chance = (int) item[2];
+				
+				if (Rnd.chance(chance))
+				{
+					mob.dropItem(player, itemId, itemCount);
+					_counts++; // 드롭된 아이템 수 증가
+					break; // 하나의 아이템만 드롭
+				}
+			}
 		}
 	}
 	
