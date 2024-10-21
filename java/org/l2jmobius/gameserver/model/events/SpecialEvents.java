@@ -71,11 +71,6 @@ public class SpecialEvents
 				ThreadPool.schedule(this::stopEvent, BorinetTask.getInstance().SpecialEventEnd().getTimeInMillis() - currentTime);
 				
 				BorinetUtil.insertEname(BorinetUtil.getInstance().sendEventName());
-				
-				if (BorinetUtil.getInstance().getEventName().equals("추석"))
-				{
-					giftReset();
-				}
 			}
 		}
 	}
@@ -142,10 +137,6 @@ public class SpecialEvents
 		BorinetUtil.insertEname(BorinetUtil.getInstance().sendEventName());
 		startEventMessage(1, BorinetUtil.getInstance().sendEventName());
 		
-		if (BorinetUtil.getInstance().getEventName().equals("추석"))
-		{
-			giftReset();
-		}
 		ThreadPool.schedule(this::stopEvent, BorinetTask.getInstance().SpecialEventEnd().getTimeInMillis() - currentTime);
 	}
 	
@@ -424,41 +415,6 @@ public class SpecialEvents
 		catch (Exception e)
 		{
 			LOGGER.warning("커스텀이벤트 데이터베이스 정리 오류" + e);
-		}
-	}
-	
-	private void giftReset()
-	{
-		final long currentTime = System.currentTimeMillis();
-		// Schedule reset everyday at 6:30.
-		final Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.HOUR_OF_DAY, 6);
-		calendar.set(Calendar.MINUTE, 30);
-		calendar.set(Calendar.SECOND, 0);
-		
-		if (calendar.getTimeInMillis() < currentTime)
-		{
-			calendar.add(Calendar.DAY_OF_YEAR, 1);
-		}
-		
-		final long startDelay = Math.max(0, calendar.getTimeInMillis() - currentTime);
-		ThreadPool.scheduleAtFixedRate(this::onGiftReset, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1 day
-	}
-	
-	private void onGiftReset()
-	{
-		for (Player player : World.getInstance().getPlayers())
-		{
-			player.getAccountVariables().remove("CHUSEOK_ITEM");
-		}
-		try (Connection con = DatabaseFactory.getConnection();
-			Statement statement = con.createStatement())
-		{
-			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'CHUSEOK_ITEM';");
-		}
-		catch (Exception e)
-		{
-			LOGGER.warning("이벤트 데이터베이스 정리 오류" + e);
 		}
 	}
 	
