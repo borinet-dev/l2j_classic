@@ -36,9 +36,9 @@ public class MithrilMine extends AbstractNpcAI
 	private ScheduledFuture<?> _despawn = null;
 	protected Set<Spawn> _boxs = ConcurrentHashMap.newKeySet();
 	
-	private final int despawn_delay = (Config.MITHRIL_MINE_DESPAWN_DELAY) * 60 * 1000; // 50분
-	private final int boss_delay = (Config.MITHRIL_MINE_BOSS_DELAY) * 60 * 1000; // 10분
-	private final int box_delay = (Config.MITHRIL_MINE_BOX_DELAY) * 60; // 1분
+	private final int despawn_delay = (Config.MITHRIL_MINE_DESPAWN_DELAY) * 60 * 1000;
+	private final int boss_delay = (Config.MITHRIL_MINE_BOSS_DELAY) * 60 * 1000;
+	private final int box_delay = (Config.MITHRIL_MINE_BOX_DELAY) * 60;
 	
 	// NPCs
 	private static final int GRAVE_ROBBER_SUMMONER = 22678; // 도굴꾼 소환사
@@ -212,26 +212,28 @@ public class MithrilMine extends AbstractNpcAI
 	
 	private void dropItems(Npc npc, Player player)
 	{
-		if (Rnd.chance(41)) // 41% 확률
+		double randomValue = Rnd.get(100.0); // 0.0부터 100.0까지의 무작위 값
+		
+		if (randomValue < 48.5) // 48.5% 확률
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMineMania(player), player);
 			player.doAutoLoot((Attackable) npc, 41253, Rnd.get(1, 1));
 		}
-		else if (Rnd.chance(30)) // 30% 확률
+		else if (randomValue < 81.5) // 33% 확률 (48.5 + 33)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_1[Rnd.get(ITEM_DROP_1.length)], Rnd.get(1, 10));
 		}
-		else if (Rnd.chance(17)) // 17% 확률
+		else if (randomValue < 98.5) // 17% 확률 (81.5 + 17)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_2[Rnd.get(ITEM_DROP_2.length)], Rnd.get(1, 5));
 		}
-		else if (Rnd.chance(11)) // 11% 확률
-		{
-			player.doAutoLoot((Attackable) npc, ITEM_DROP_최상급[Rnd.get(ITEM_DROP_최상급.length)], Rnd.get(1, 1));
-		}
-		else if (Rnd.chance(1)) // 1% 확률
+		else if (randomValue < 99.5) // 1% 확률 (98.5 + 1)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_아포칼립스조각[Rnd.get(ITEM_DROP_아포칼립스조각.length)], Rnd.get(1, 1));
+		}
+		else // 0.5% 확률
+		{
+			player.doAutoLoot((Attackable) npc, ITEM_DROP_최상급[Rnd.get(ITEM_DROP_최상급.length)], Rnd.get(1, 1));
 		}
 	}
 	
