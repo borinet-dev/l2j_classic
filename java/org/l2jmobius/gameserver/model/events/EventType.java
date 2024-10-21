@@ -102,6 +102,7 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentee
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentorStatus;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMineMania;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMiniGame;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMissionEvent;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMissionMania;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMoveRequest;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerPKChanged;
@@ -292,6 +293,7 @@ public enum EventType
 	ON_PLAYER_SUMMON_AGATHION(OnPlayerSummonAgathion.class, void.class),
 	ON_PLAYER_UNSUMMON_AGATHION(OnPlayerUnsummonAgathion.class, void.class),
 	ON_PLAYER_MISSION_MANIA(OnPlayerMissionMania.class, void.class),
+	ON_PLAYER_MISSION_EVENT(OnPlayerMissionEvent.class, void.class),
 	ON_PLAYER_RIFT_MANIA(OnPlayerRiftMania.class, void.class),
 	ON_PLAYER_MINE_MANIA(OnPlayerMineMania.class, void.class),
 	ON_PLAYER_KAMALOKA_MANIA(OnPlayerKamalokaMania.class, void.class),

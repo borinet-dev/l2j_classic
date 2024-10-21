@@ -45,6 +45,7 @@ public class DailyMissionDataHolder
 	private final boolean _isMainClassOnly;
 	private final boolean _isDisplayedWhenNotAvailable;
 	private final boolean _missionMania;
+	private final boolean _missionEvent;
 	private final AbstractDailyMissionHandler _handler;
 	
 	public DailyMissionDataHolder(StatSet set)
@@ -64,6 +65,7 @@ public class DailyMissionDataHolder
 		_isMainClassOnly = set.getBoolean("isMainClassOnly", true);
 		_isDisplayedWhenNotAvailable = set.getBoolean("isDisplayedWhenNotAvailable", true);
 		_missionMania = set.getBoolean("missionMania", false);
+		_missionEvent = set.getBoolean("missionEvent", false);
 		_handler = handler != null ? handler.apply(this) : null;
 	}
 	
@@ -130,6 +132,11 @@ public class DailyMissionDataHolder
 	public boolean missionMania()
 	{
 		return _missionMania;
+	}
+	
+	public boolean missionEvent()
+	{
+		return _missionEvent;
 	}
 	
 	public boolean isDisplayable(Player player)

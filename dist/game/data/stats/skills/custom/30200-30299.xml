@@ -4515,4 +4515,48 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="30300" toLevel="1" name="붉은 단풍 주문서">
+		<icon>nIcon.event_maple_scroll</icon>
+		<operateType>A2</operateType>
+		<abnormalType>FIVE_COLOR_SONGPYEON</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLevel>7</abnormalLevel>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>-3</magicLevel>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>41392</itemConsumeId>
+		<effects>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
 </list>

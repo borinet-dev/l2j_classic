@@ -777,12 +777,15 @@ public class DailyTaskManager
 		for (Player player : World.getInstance().getPlayers())
 		{
 			player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
+			player.getAccountVariables().remove("CHUSEOK_ITEM");
+			player.getAccountVariables().remove("MAPLE_ITEM");
 		}
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
 		{
 			statement.executeUpdate("DELETE FROM event_hwid WHERE name = 'CUSTOM_EVENT_BOX';");
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'CUSTOM_EVENT_BOX';");
+			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'MAPLE_ITEM';");
 		}
 		catch (Exception e)
 		{

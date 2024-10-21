@@ -36,6 +36,7 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.ListenersContainer;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMissionEvent;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMissionMania;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
@@ -228,6 +229,10 @@ public abstract class AbstractDailyMissionHandler extends ListenersContainer
 		if (_holder.missionMania())
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMissionMania(player), player);
+		}
+		if (_holder.missionEvent())
+		{
+			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMissionEvent(player), player);
 		}
 		player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "[" + name + "] 미션이 완료되었습니다."));
 		Broadcast.toPlayerScreenMessageS(player, "[" + name + "] 미션이 완료되었습니다.");

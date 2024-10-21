@@ -31,6 +31,7 @@ import handlers.dailymissionhandlers.LoginMonthDailyMissionHandler;
 import handlers.dailymissionhandlers.LoginWeekendDailyMissionHandler;
 import handlers.dailymissionhandlers.MineManiaDailyMissionHandler;
 import handlers.dailymissionhandlers.MiniGameDailyMissionHandler;
+import handlers.dailymissionhandlers.MissionEventDailyMissionHandler;
 import handlers.dailymissionhandlers.MissionManiaDailyMissionHandler;
 import handlers.dailymissionhandlers.MonsterDailyMissionHandler;
 import handlers.dailymissionhandlers.MonsterLevelOverDailyMissionHandler;
@@ -76,6 +77,7 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("KamalokaMania", KamalokaManiaDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("boatMania", BoatManiaDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("MiniGame", MiniGameDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("missionEvent", MissionEventDailyMissionHandler::new);
 		//
 		// LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ": Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
