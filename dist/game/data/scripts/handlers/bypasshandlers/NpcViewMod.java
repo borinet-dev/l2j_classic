@@ -22,7 +22,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.enums.AttributeType;
@@ -37,11 +36,9 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.DropGroupHolder;
 import org.l2jmobius.gameserver.model.holders.DropHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
-import org.l2jmobius.gameserver.model.item.type.WeaponType;
-import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.model.stats.Stat;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
-import org.l2jmobius.gameserver.util.BorinetTask;
+import org.l2jmobius.gameserver.util.CustomDropHolder;
+import org.l2jmobius.gameserver.util.DropCalculate;
 import org.l2jmobius.gameserver.util.HtmlUtil;
 import org.l2jmobius.gameserver.util.Util;
 
@@ -442,9 +439,6 @@ public class NpcViewMod implements IBypassHandler
 		final DecimalFormat chanceFormat = new DecimalFormat("#.#");
 		int leftHeight = 0;
 		int rightHeight = 0;
-		final double dropAmountAdenaEffectBonus = player.getStat().getValue(Stat.BONUS_DROP_ADENA, 1);
-		final double dropAmountEffectBonus = player.getStat().getValue(Stat.BONUS_DROP_AMOUNT, 1);
-		final double spoilRateEffectBonus = player.getStat().getValue(Stat.BONUS_SPOIL_RATE, 1);
 		final StringBuilder leftSb = new StringBuilder();
 		final StringBuilder rightSb = new StringBuilder();
 		String limitReachedMsg = "";
@@ -455,131 +449,11 @@ public class NpcViewMod implements IBypassHandler
 			final DropHolder dropItem = dropList.get(i);
 			final ItemTemplate item = ItemTable.getInstance().getTemplate(dropItem.getItemId());
 			
-			// real time server rate calculations
-			double rateChance = 1;
-			double rateAmount = 1;
-			if (dropType == DropType.SPOIL)
-			{
-				rateChance = (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_SPOIL_DROP_CHANCE_MULTIPLIER : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_SPOIL_DROP_CHANCE_MULTIPLIER_WEEKEND : Config.RATE_SPOIL_DROP_CHANCE_MULTIPLIER);
-				rateAmount = Config.RATE_SPOIL_DROP_AMOUNT_MULTIPLIER;
-				
-				// also check premium rates if available
-				if (Config.PREMIUM_SYSTEM_ENABLED && player.hasPremiumStatus())
-				{
-					rateChance *= Config.PREMIUM_RATE_SPOIL_CHANCE;
-					rateAmount *= Config.PREMIUM_RATE_SPOIL_AMOUNT;
-				}
-				
-				// bonus spoil rate effect
-				rateChance *= spoilRateEffectBonus;
-			}
-			else
-			{
-				boolean usingPole = false;
-				final boolean champion = npc.isChampion();
-				if (player.getActiveWeaponItem() != null)
-				{
-					usingPole = player.getActiveWeaponItem().getItemType() == WeaponType.POLE;
-				}
-				if (item.isArmors() || item.isWeapons() || item.isAccessorys())
-				{
-					if (!specialBoss(npc))
-					{
-						rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_FINISHED_ITEM : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_FINISHED_ITEM_WEEKEND : Config.RATE_FINISHED_ITEM) * (champion ? Config.CHAMPION_REWARDS_CHANCE : 1);
-					}
-				}
-				if (Config.RATE_DROP_CHANCE_BY_ID.get(dropItem.getItemId()) != null)
-				{
-					rateChance *= Config.RATE_DROP_CHANCE_BY_ID.get(dropItem.getItemId());
-				}
-				else if (item.hasExImmediateEffect())
-				{
-					rateChance *= Config.RATE_HERB_DROP_CHANCE_MULTIPLIER;
-				}
-				else if (npc.isRaid())
-				{
-					rateChance *= Config.RATE_RAID_DROP_CHANCE_MULTIPLIER;
-				}
-				else
-				{
-					rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_DEATH_DROP_CHANCE_MULTIPLIER : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER_WEEKEND : Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER) * (champion ? Config.CHAMPION_REWARDS_CHANCE : 1);
-				}
-				
-				if (Config.RATE_DROP_AMOUNT_BY_ID.get(dropItem.getItemId()) != null)
-				{
-					rateAmount *= Config.RATE_DROP_AMOUNT_BY_ID.get(dropItem.getItemId());
-				}
-				else if (item.hasExImmediateEffect())
-				{
-					rateAmount *= Config.RATE_HERB_DROP_AMOUNT_MULTIPLIER;
-				}
-				else if (npc.isRaid())
-				{
-					rateAmount *= Config.RATE_RAID_DROP_AMOUNT_MULTIPLIER;
-				}
-				else
-				{
-					rateAmount *= Config.RATE_DEATH_DROP_AMOUNT_MULTIPLIER;
-				}
-				
-				// also check premium rates if available
-				if (Config.PREMIUM_SYSTEM_ENABLED && player.hasPremiumStatus())
-				{
-					if (Config.PREMIUM_RATE_DROP_CHANCE_BY_ID.get(dropItem.getItemId()) != null)
-					{
-						rateChance *= Config.PREMIUM_RATE_DROP_CHANCE_BY_ID.get(dropItem.getItemId());
-					}
-					else if (item.hasExImmediateEffect())
-					{
-						// TODO: Premium herb chance? :)
-					}
-					else if (npc.isRaid())
-					{
-						// TODO: Premium raid chance? :)
-					}
-					else
-					{
-						if (item.isArmors() || item.isWeapons() || item.isAccessorys())
-						{
-							if (!specialBoss(npc))
-							{
-								rateChance *= Config.PREMIUM_RATE_FINISHED_ITEM;
-							}
-						}
-						else
-						{
-							rateChance *= Config.PREMIUM_RATE_DROP_CHANCE;
-						}
-					}
-					
-					if (Config.PREMIUM_RATE_DROP_AMOUNT_BY_ID.get(dropItem.getItemId()) != null)
-					{
-						rateAmount *= Config.PREMIUM_RATE_DROP_AMOUNT_BY_ID.get(dropItem.getItemId());
-					}
-					else if (item.hasExImmediateEffect())
-					{
-						// TODO: Premium herb amount? :)
-					}
-					else if (npc.isRaid())
-					{
-						// TODO: Premium raid amount? :)
-					}
-					else
-					{
-						rateAmount *= Config.PREMIUM_RATE_DROP_AMOUNT;
-					}
-				}
-				
-				// bonus drop amount effect
-				rateAmount *= dropAmountEffectBonus;
-				if (item.getId() == Inventory.ADENA_ID)
-				{
-					rateAmount *= dropAmountAdenaEffectBonus;
-				}
-				// bonus drop rate effect
-				rateChance *= player.getStat().getMul(Stat.BONUS_DROP_RATE, 1);
-				rateChance *= Config.ENABLE_POLE_RATE ? (usingPole ? Config.POLE_ITEM_RATE : 1) : 1;
-			}
+			// DropCalculate 클래스를 사용하여 드랍 확률과 양을 계산
+			CustomDropHolder customDropHolder = new CustomDropHolder(npc.getTemplate(), dropItem);
+			double[] dropRates = DropCalculate.calculateDropRates(player, customDropHolder, item);
+			double rateChance = dropRates[0];
+			double rateAmount = dropRates[1];
 			
 			sb.append("<table width=332 cellpadding=2 cellspacing=0 background=\"L2UI_CT1.Windows.Windows_DF_TooltipBG\">");
 			sb.append("<tr><td width=32 valign=top>");

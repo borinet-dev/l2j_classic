@@ -26,13 +26,11 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.NpcData;
 import org.l2jmobius.gameserver.data.xml.SpawnData;
-import org.l2jmobius.gameserver.enums.DropType;
 import org.l2jmobius.gameserver.handler.CommunityBoardHandler;
 import org.l2jmobius.gameserver.handler.IParseBoardHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -40,14 +38,13 @@ import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
 import org.l2jmobius.gameserver.model.holders.DropGroupHolder;
 import org.l2jmobius.gameserver.model.holders.DropHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
-import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.spawns.NpcSpawnTemplate;
-import org.l2jmobius.gameserver.model.stats.Stat;
 import org.l2jmobius.gameserver.network.serverpackets.ShowBoard;
 import org.l2jmobius.gameserver.network.serverpackets.ShowMiniMap;
 import org.l2jmobius.gameserver.util.BorinetHtml;
-import org.l2jmobius.gameserver.util.BorinetTask;
+import org.l2jmobius.gameserver.util.CustomDropHolder;
+import org.l2jmobius.gameserver.util.DropCalculate;
 
 import handlers.voicedcommandhandlers.DropSearchCommand;
 
@@ -67,43 +64,7 @@ public class DropSearch implements IParseBoardHandler
 	{
 		"return"
 	};
-	
-	private class CBDropHolder
-	{
-		final int itemId;
-		final int npcId;
-		final String npcName;
-		final byte npcLevel;
-		final long min;
-		final long max;
-		final double chance;
-		final boolean isSpoil;
-		final boolean isRaid;
-		
-		public CBDropHolder(NpcTemplate npcTemplate, DropHolder dropHolder)
-		{
-			isSpoil = dropHolder.getDropType() == DropType.SPOIL;
-			itemId = dropHolder.getItemId();
-			npcId = npcTemplate.getId();
-			npcName = npcTemplate.getName();
-			npcLevel = npcTemplate.getLevel();
-			min = dropHolder.getMin();
-			max = dropHolder.getMax();
-			chance = dropHolder.getChance();
-			isRaid = npcTemplate.getType().equals("RaidBoss") || npcTemplate.getType().equals("GrandBoss");
-		}
-		
-		/**
-		 * only for debug
-		 */
-		@Override
-		public String toString()
-		{
-			return "DropHolder [itemId=" + itemId + ", npcId=" + npcId + ", npcName=" + npcName + ", npcLevel=" + npcLevel + ", min=" + min + ", max=" + max + ", chance=" + chance + ", isSpoil=" + isSpoil + "]";
-		}
-	}
-	
-	private final static Map<Integer, List<CBDropHolder>> DROP_INDEX_CACHE = new HashMap<>();
+	private final static Map<Integer, List<CustomDropHolder>> DROP_INDEX_CACHE = new HashMap<>();
 	
 	// nonsupport items
 	private static final Set<Integer> BLOCK_ID = new HashSet<>();
@@ -155,14 +116,14 @@ public class DropSearch implements IParseBoardHandler
 			return;
 		}
 		
-		List<CBDropHolder> dropList = DROP_INDEX_CACHE.get(dropHolder.getItemId());
+		List<CustomDropHolder> dropList = DROP_INDEX_CACHE.get(dropHolder.getItemId());
 		if (dropList == null)
 		{
 			dropList = new ArrayList<>();
 			DROP_INDEX_CACHE.put(dropHolder.getItemId(), dropList);
 		}
 		
-		dropList.add(new CBDropHolder(npcTemplate, dropHolder));
+		dropList.add(new CustomDropHolder(npcTemplate, dropHolder));
 	}
 	
 	@Override
@@ -190,7 +151,7 @@ public class DropSearch implements IParseBoardHandler
 				final DecimalFormat chanceFormat = new DecimalFormat("#.#");
 				final int itemId = Integer.parseInt(params[1]);
 				int page = Integer.parseInt(params[2]);
-				final List<CBDropHolder> list = DROP_INDEX_CACHE.get(itemId);
+				final List<CustomDropHolder> list = DROP_INDEX_CACHE.get(itemId);
 				int totalItems = list.size();
 				int itemsPerPage = 11;
 				int totalPages = (int) Math.ceil((double) totalItems / itemsPerPage);
@@ -198,134 +159,15 @@ public class DropSearch implements IParseBoardHandler
 				final int start = (page - 1) * itemsPerPage;
 				final int end = Math.min(totalItems - 1, (start + itemsPerPage) - 1);
 				final StringBuilder builder = new StringBuilder();
-				final double dropAmountAdenaEffectBonus = player.getStat().getMul(Stat.BONUS_DROP_ADENA, 1);
-				final double dropAmountEffectBonus = player.getStat().getMul(Stat.BONUS_DROP_AMOUNT, 1);
-				final double dropRateEffectBonus = player.getStat().getMul(Stat.BONUS_DROP_RATE, 1);
-				final double spoilRateEffectBonus = player.getStat().getMul(Stat.BONUS_SPOIL_RATE, 1);
 				
 				for (int index = start; index <= end; index++)
 				{
-					final CBDropHolder cbDropHolder = list.get(index);
-					
-					// real time server rate calculations
-					double rateChance = 1;
-					double rateAmount = 1;
-					if (cbDropHolder.isSpoil)
-					{
-						rateChance = (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_SPOIL_DROP_CHANCE_MULTIPLIER : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_SPOIL_DROP_CHANCE_MULTIPLIER_WEEKEND : Config.RATE_SPOIL_DROP_CHANCE_MULTIPLIER);
-						rateAmount = Config.RATE_SPOIL_DROP_AMOUNT_MULTIPLIER;
-						
-						// also check premium rates if available
-						if (Config.PREMIUM_SYSTEM_ENABLED && player.hasPremiumStatus())
-						{
-							rateChance *= Config.PREMIUM_RATE_SPOIL_CHANCE;
-							rateAmount *= Config.PREMIUM_RATE_SPOIL_AMOUNT;
-						}
-						
-						// bonus spoil rate effect
-						rateChance *= spoilRateEffectBonus;
-					}
-					else
-					{
-						final ItemTemplate item = ItemTable.getInstance().getTemplate(cbDropHolder.itemId);
-						boolean usingPole = false;
-						if (player.getActiveWeaponItem() != null)
-						{
-							usingPole = player.getActiveWeaponItem().getItemType() == WeaponType.POLE;
-						}
-						if (item.isArmors() || item.isWeapons() || item.isAccessorys())
-						{
-							rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_FINISHED_ITEM : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_FINISHED_ITEM_WEEKEND : Config.RATE_FINISHED_ITEM);
-						}
-						if (Config.RATE_DROP_CHANCE_BY_ID.get(cbDropHolder.itemId) != null)
-						{
-							rateChance *= Config.RATE_DROP_CHANCE_BY_ID.get(cbDropHolder.itemId);
-						}
-						else if (item.hasExImmediateEffect())
-						{
-							rateChance *= Config.RATE_HERB_DROP_CHANCE_MULTIPLIER;
-						}
-						else if (cbDropHolder.isRaid)
-						{
-							rateAmount *= Config.RATE_RAID_DROP_CHANCE_MULTIPLIER;
-						}
-						else
-						{
-							rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_DEATH_DROP_CHANCE_MULTIPLIER : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER_WEEKEND : Config.RATE_DEATH_DROP_CHANCE_MULTIPLIER);
-						}
-						
-						if (Config.RATE_DROP_AMOUNT_BY_ID.get(cbDropHolder.itemId) != null)
-						{
-							rateAmount *= Config.RATE_DROP_AMOUNT_BY_ID.get(cbDropHolder.itemId);
-						}
-						else if (item.hasExImmediateEffect())
-						{
-							rateAmount *= Config.RATE_HERB_DROP_AMOUNT_MULTIPLIER;
-						}
-						else if (cbDropHolder.isRaid)
-						{
-							rateAmount *= Config.RATE_RAID_DROP_AMOUNT_MULTIPLIER;
-						}
-						else
-						{
-							rateAmount *= Config.RATE_DEATH_DROP_AMOUNT_MULTIPLIER;
-						}
-						
-						// also check premium rates if available
-						if (Config.PREMIUM_SYSTEM_ENABLED && player.hasPremiumStatus())
-						{
-							if (Config.PREMIUM_RATE_DROP_CHANCE_BY_ID.get(cbDropHolder.itemId) != null)
-							{
-								rateChance *= Config.PREMIUM_RATE_DROP_CHANCE_BY_ID.get(cbDropHolder.itemId);
-							}
-							else if (item.hasExImmediateEffect())
-							{
-								// TODO: Premium herb chance? :)
-							}
-							else if (cbDropHolder.isRaid)
-							{
-								// TODO: Premium raid chance? :)
-							}
-							else
-							{
-								if (item.isArmors() || item.isWeapons() || item.isAccessorys())
-								{
-									rateChance *= Config.PREMIUM_RATE_FINISHED_ITEM;
-								}
-								else
-								{
-									rateChance *= Config.PREMIUM_RATE_DROP_CHANCE;
-								}
-							}
-							
-							if (Config.PREMIUM_RATE_DROP_AMOUNT_BY_ID.get(cbDropHolder.itemId) != null)
-							{
-								rateAmount *= Config.PREMIUM_RATE_DROP_AMOUNT_BY_ID.get(cbDropHolder.itemId);
-							}
-							else if (item.hasExImmediateEffect())
-							{
-								// TODO: Premium herb amount? :)
-							}
-							else if (cbDropHolder.isRaid)
-							{
-								// TODO: Premium raid amount? :)
-							}
-							else
-							{
-								rateAmount *= Config.PREMIUM_RATE_DROP_AMOUNT;
-							}
-						}
-						
-						// bonus drop amount effect
-						rateAmount *= dropAmountEffectBonus;
-						if (item.getId() == Inventory.ADENA_ID)
-						{
-							rateAmount *= dropAmountAdenaEffectBonus;
-						}
-						// bonus drop rate effect
-						rateChance *= dropRateEffectBonus;
-						rateChance *= Config.ENABLE_POLE_RATE ? (usingPole ? Config.POLE_ITEM_RATE : 1) : 1;
-					}
+					final CustomDropHolder cbDropHolder = list.get(index);
+					final ItemTemplate item = ItemTable.getInstance().getTemplate(cbDropHolder.itemId);
+					// 수식을 DropCalculate로 이동
+					double[] dropRates = DropCalculate.calculateDropRates(player, cbDropHolder, item);
+					double rateChance = dropRates[0];
+					double rateAmount = dropRates[1];
 					
 					builder.append("<table border=0 width=772 bgcolor=0d1b25>");
 					builder.append("<tr>");
