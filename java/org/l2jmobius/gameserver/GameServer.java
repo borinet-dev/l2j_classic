@@ -172,6 +172,7 @@ import org.l2jmobius.gameserver.util.BoatUtil;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jmobius.gameserver.util.ItemLog;
 import org.l2jmobius.gameserver.util.Util;
 
 import smartguard.core.properties.GuardProperties;
@@ -509,6 +510,9 @@ public class GameServer
 		
 		CastleManorManager.getInstance();
 		SiegeGuardManager.getInstance();
+		
+		BorinetUtil.getInstance().printSection("아이템 로그");
+		ItemLog.getInstance();
 		
 		BorinetUtil.getInstance().printSection("오프라인 상점");
 		if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)

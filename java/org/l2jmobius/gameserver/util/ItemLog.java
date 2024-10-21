@@ -9,6 +9,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 import java.util.logging.Logger;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -20,8 +21,10 @@ import org.l2jmobius.gameserver.model.item.type.EtcItemType;
 public class ItemLog
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemLog.class.getName());
+	private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy. MM. dd hh:mm", Locale.KOREA);
+	private final Date nextCleanupDate;
 	
-	public static void main(String[] args)
+	protected ItemLog()
 	{
 		final long currentTime = System.currentTimeMillis();
 		final Calendar calendar = Calendar.getInstance();
@@ -36,6 +39,11 @@ public class ItemLog
 		
 		final long startDelay = Math.max(0, calendar.getTimeInMillis() - currentTime);
 		ThreadPool.scheduleAtFixedRate(ItemLog::deleteOldTables, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1 day
+		
+		// 다음 정리 시간을 구해 멤버 변수로 설정
+		final long nextCleanupTime = currentTime + startDelay;
+		nextCleanupDate = new Date(nextCleanupTime);
+		LOGGER.info("아이템 로그: 다음 테이블 정리 시간은 " + dateFormat.format(nextCleanupDate) + " 입니다.");
 	}
 	
 	private static void logItem(String process, String characterName, int characterId, String itemName, long currentQuantity, long previousQuantity, String npcName, int enchantLevel, Item item)
@@ -112,7 +120,10 @@ public class ItemLog
 			Statement statement = connection.createStatement())
 		{
 			statement.executeUpdate(dropTableQuery);
-			LOGGER.info("아이템로그: 테이블 [" + oldTableName + "]이 삭제되었습니다.");
+			LOGGER.info("아이템 로그: 테이블 삭제 - [" + oldTableName + "]");
+			
+			ItemLog itemLogInstance = new ItemLog();
+			LOGGER.info("아이템 로그: 다음 테이블 정리 시간은 " + itemLogInstance.dateFormat.format(itemLogInstance.nextCleanupDate) + " 입니다.");
 		}
 		catch (Exception e)
 		{
@@ -133,5 +144,15 @@ public class ItemLog
 			
 			logItem(processing, characterName, characterId, itemName, item.getCount(), old, npcName, item.getEnchantLevel(), item);
 		}
+	}
+	
+	public static ItemLog getInstance()
+	{
+		return SingletonHolder.INSTANCE;
+	}
+	
+	private static class SingletonHolder
+	{
+		protected static final ItemLog INSTANCE = new ItemLog();
 	}
 }
