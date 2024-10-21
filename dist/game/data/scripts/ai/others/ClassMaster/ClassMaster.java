@@ -235,7 +235,25 @@ public class ClassMaster extends AbstractNpcAI implements IXmlReader
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
-		return "test_server_helper001.html";
+		String htmltext = null;
+		if ((player.getLevel() >= 20) && player.isInCategory(CategoryType.FIRST_CLASS_GROUP))
+		{
+			htmltext = getHtm(player, getFirstOccupationChangeHtml(player));
+		}
+		else if ((player.getLevel() >= 40) && player.isInCategory(CategoryType.SECOND_CLASS_GROUP))
+		{
+			htmltext = getHtm(player, getSecondOccupationChangeHtml(player));
+		}
+		else if ((player.getLevel() >= 76) && player.isInCategory(CategoryType.THIRD_CLASS_GROUP))
+		{
+			htmltext = getHtm(player, "qm_thirdclass.html");
+		}
+		else
+		{
+			htmltext = "just_talk.html";
+		}
+		
+		return htmltext;
 	}
 	
 	@Override
