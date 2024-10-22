@@ -886,8 +886,7 @@
 			<item id="49783" count="20" />
 		</items>
 	</reward>
-	<!-- 
-	<reward id="1170" reward_id="856" name="가을 맞이 폭풍 사냥" classRace="0" isMainClassOnly="false" requiredCompletion="30000" isOneTime="true" missionEvent="true">
+	<reward id="1170" reward_id="856" name="가을 맞이 폭풍 사냥" classRace="0" isMainClassOnly="false" requiredCompletion="30000" dailyReset="false" isOneTime="true" missionEvent="true">
 		<handler name="monsterlvlover">
 			<param name="minLevel">21</param>
 			<param name="maxLevel">99</param>
@@ -896,7 +895,7 @@
 			<item id="41391" count="40" />
 		</items>
 	</reward>
-	<reward id="1171" reward_id="857" name="가을 맞이 필드 레이드" classRace="0" isMainClassOnly="false" requiredCompletion="10" isOneTime="true" missionEvent="true">
+	<reward id="1171" reward_id="857" name="가을 맞이 필드 레이드" classRace="0" isMainClassOnly="false" requiredCompletion="10" dailyReset="false" isOneTime="true" missionEvent="true">
 		<handler name="monster">
 			<param name="ids">25395,25252,25004,25063,25076,25369,25169,25352,25354,25738,25146,25255,25365,25366,25038,25095,25127,25357,25149,25166,25099,25418,25420,25067,25122,25131,25434,25088,25431,25026,25158,25260,25085,25155,25230,25437,25745,25064,25134,25743,25020,25226,25051,25098,25112,25415,25023,25041,25170,25392,25742,25128,25478,25019,25106,25398,25079,25152,25272,25388,25391,25173,25410,25082,25401,25739,25057,25192,25498,25044,25047,25050,25163,25460,25007,25102,25438,25441,25089,25103,25125,25241,25456,25463,25256,25001,25118,25223,25385,25137,25176,25217,25234,25407,25412,25010,25070,25119,25159,25423,25013,25035,25473,25475,25744,25263,25453,25754,25755,25756,25757,25746,25747,25748,25749,25750,25751,25758,25759,25760,25761,25762,25763,25766,25767,25768,25769,25770,25772,25773,25774,25775,25776,25777,25779,25780,25781,25782,25783,25784,25073,25109,25140,25162,25467,25470,25054,25092,25126,25143,25220,25444,25447,25450</param>
 			<param name="minLevel">21</param>
@@ -906,7 +905,7 @@
 			<item id="41391" count="20" />
 		</items>
 	</reward>
-	<reward id="1172" reward_id="858" name="가을 맞이 랜덤 레이드" classRace="0" isMainClassOnly="false" requiredCompletion="7" isOneTime="true" missionEvent="true">
+	<reward id="1172" reward_id="858" name="가을 맞이 랜덤 레이드" classRace="0" isMainClassOnly="false" requiredCompletion="7" dailyReset="false" isOneTime="true" missionEvent="true">
 		<handler name="monster">
 			<param name="ids">41018,41019,41020,41021,41022,41023,41024,41025,41026,41027,41028,41029,41030,41031,41032,41033,41034,41035,41036,41037</param>
 			<param name="minLevel">21</param>
@@ -916,7 +915,7 @@
 			<item id="41391" count="20" />
 		</items>
 	</reward>
-	<reward id="1173" reward_id="859" name="가을 맞이 미션 클리어" classRace="0" isMainClassOnly="false" requiredCompletion="3" isOneTime="true">
+	<reward id="1173" reward_id="859" name="가을 맞이 미션 클리어" classRace="0" isMainClassOnly="false" requiredCompletion="3" dailyReset="false" isOneTime="true">
 		<handler name="missionEvent">
 			<param name="minLevel">21</param>
 			<param name="maxLevel">99</param>
@@ -924,5 +923,5 @@
 		<items>
 			<item id="41391" count="60" />
 		</items>
-	</reward> -->
+	</reward>
 </list>
