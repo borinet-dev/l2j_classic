@@ -787,7 +787,6 @@ public class EnterWorld implements IClientIncomingPacket
 		}
 		
 		insertDB(player);
-		// player.setRealIP();
 		
 		if (BorinetTask.SpecialEvent() || BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck())
 		{

@@ -16,9 +16,6 @@
  */
 package org.l2jmobius.gameserver.model.actor;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -29,7 +26,6 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
@@ -4081,54 +4077,6 @@ public class Player extends Playable
 	public String getIPAddress()
 	{
 		return _ip;
-	}
-	
-	public void setRealIP()
-	{
-		String myIp = "";
-		try
-		{
-			for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();)
-			{
-				NetworkInterface intf = en.nextElement();
-				for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();)
-				{
-					InetAddress inetAddress = enumIpAddr.nextElement();
-					if (!inetAddress.isLoopbackAddress() && !inetAddress.isLinkLocalAddress() && inetAddress.isSiteLocalAddress())
-					{
-						myIp = inetAddress.getHostAddress().toString();
-					}
-				}
-			}
-		}
-		catch (SocketException ex)
-		{
-		}
-		
-		getVariables().set("MyRealIP", myIp);
-		
-		try (Connection con = DatabaseFactory.getConnection())
-		{
-			try (PreparedStatement ps = con.prepareStatement("REPLACE INTO character_hwid (account, char_name, charId, real_ip, hwid) VALUES (?,?,?,?,?)"))
-			{
-				ps.setString(1, getAccountName());
-				ps.setString(2, getName());
-				ps.setInt(3, getObjectId());
-				ps.setString(4, myIp);
-				ps.setString(5, getHWID());
-				ps.execute();
-			}
-			try (PreparedStatement ps = con.prepareStatement("UPDATE accounts SET lastIP = ? WHERE login = ?"))
-			{
-				ps.setString(1, myIp);
-				ps.setString(2, getAccountName());
-				ps.executeUpdate();
-			}
-		}
-		catch (SQLException e)
-		{
-			LOGGER.log(Level.WARNING, "Real IP를 받아 오는 중 오류가 발생했습니다. 계정: " + getAccountName() + ", 캐릭터: " + getName(), e);
-		}
 	}
 	
 	public Location getCurrentSkillWorldPosition()
