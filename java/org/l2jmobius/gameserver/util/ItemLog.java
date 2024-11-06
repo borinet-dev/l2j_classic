@@ -2,6 +2,7 @@ package org.l2jmobius.gameserver.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
@@ -9,7 +10,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
 import java.util.logging.Logger;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -21,29 +21,24 @@ import org.l2jmobius.gameserver.model.item.type.EtcItemType;
 public class ItemLog
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemLog.class.getName());
-	private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy. MM. dd hh:mm", Locale.KOREA);
-	private final Date nextCleanupDate;
 	
 	protected ItemLog()
 	{
 		final long currentTime = System.currentTimeMillis();
 		final Calendar calendar = Calendar.getInstance();
-		calendar.set(Calendar.HOUR_OF_DAY, 4);
+		calendar.set(Calendar.HOUR_OF_DAY, 4); // 새벽 4시로 설정
 		calendar.set(Calendar.MINUTE, 0);
 		calendar.set(Calendar.SECOND, 0);
 		
 		if (calendar.getTimeInMillis() < currentTime)
 		{
-			calendar.add(Calendar.DAY_OF_YEAR, 1);
+			calendar.add(Calendar.DAY_OF_YEAR, 1); // 현재 시간이 4시 이전이면 내일로 설정
 		}
 		
 		final long startDelay = Math.max(0, calendar.getTimeInMillis() - currentTime);
-		ThreadPool.scheduleAtFixedRate(ItemLog::deleteOldTables, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1 day
+		ThreadPool.scheduleAtFixedRate(ItemLog::deleteOldTables, startDelay, BorinetUtil.MILLIS_PER_DAY); // 1일 간격으로 호출
 		
-		// 다음 정리 시간을 구해 멤버 변수로 설정
-		final long nextCleanupTime = currentTime + startDelay;
-		nextCleanupDate = new Date(nextCleanupTime);
-		LOGGER.info("아이템 로그: 다음 테이블 정리 시간은 " + dateFormat.format(nextCleanupDate) + " 입니다.");
+		LOGGER.info("아이템 로그: 7일전 로그테이블 삭제가 매일 새벽4시에 진행됩니다.");
 	}
 	
 	private static void logItem(String process, String characterName, int characterId, String itemName, long currentQuantity, long previousQuantity, String npcName, int enchantLevel, Item item)
@@ -113,17 +108,23 @@ public class ItemLog
 		LocalDate sevenDaysAgo = LocalDate.now().minusDays(7);
 		String oldTableName = sevenDaysAgo.format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
 		
-		// 7일전 테이블 삭제
+		// 테이블 존재 여부 확인 쿼리
+		String checkTableQuery = "SELECT COUNT(*) FROM information_schema.tables WHERE table_name = '" + oldTableName + "'";
+		
+		// 7일전 테이블 삭제 쿼리
 		String dropTableQuery = "DROP TABLE IF EXISTS " + oldTableName;
 		
 		try (Connection connection = DatabaseFactory.getConnectionLog();
 			Statement statement = connection.createStatement())
 		{
-			statement.executeUpdate(dropTableQuery);
-			LOGGER.info("아이템 로그: 테이블 삭제 - [" + oldTableName + "]");
-			
-			ItemLog itemLogInstance = new ItemLog();
-			LOGGER.info("아이템 로그: 다음 테이블 정리 시간은 " + itemLogInstance.dateFormat.format(itemLogInstance.nextCleanupDate) + " 입니다.");
+			// 테이블 존재 여부 확인
+			ResultSet resultSet = statement.executeQuery(checkTableQuery);
+			if (resultSet.next() && (resultSet.getInt(1) > 0))
+			{
+				// 테이블이 존재할 경우에만 삭제 실행
+				statement.executeUpdate(dropTableQuery);
+				LOGGER.info("아이템 로그: 테이블 삭제 - [" + oldTableName + "]");
+			}
 		}
 		catch (Exception e)
 		{
