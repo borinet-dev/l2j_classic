@@ -16,6 +16,9 @@
  */
 package events.LetterCollector;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
@@ -50,6 +53,48 @@ public class LetterCollector extends LongTimeEvent
 		E,
 		T
 	};
+	
+	// Icon paths
+	private static final Map<Character, String[]> ICON_PATHS = new HashMap<>();
+	static
+	{
+		ICON_PATHS.put('B', new String[]
+		{
+			"nIcon.etc_alphabet_b_n",
+			"icon.etc_alphabet_b_i00"
+		});
+		ICON_PATHS.put('O', new String[]
+		{
+			"nIcon.etc_alphabet_o_n",
+			"icon.etc_alphabet_o_i00"
+		});
+		ICON_PATHS.put('R', new String[]
+		{
+			"nIcon.etc_alphabet_r_n",
+			"icon.etc_alphabet_r_i00"
+		});
+		ICON_PATHS.put('I', new String[]
+		{
+			"nIcon.etc_alphabet_i_n",
+			"icon.etc_alphabet_i_i00"
+		});
+		ICON_PATHS.put('N', new String[]
+		{
+			"nIcon.etc_alphabet_n_n",
+			"icon.etc_alphabet_n_i00"
+		});
+		ICON_PATHS.put('E', new String[]
+		{
+			"nIcon.etc_alphabet_e_n",
+			"icon.etc_alphabet_e_i00"
+		});
+		ICON_PATHS.put('T', new String[]
+		{
+			"nIcon.etc_alphabet_t_n",
+			"icon.etc_alphabet_t_i00"
+		});
+	}
+	
 	// Rewards
 	private static final ItemHolder[] REWARDS_베스페르방어구 =
 	{
@@ -183,10 +228,14 @@ public class LetterCollector extends LongTimeEvent
 		String htmltext = null;
 		switch (event)
 		{
-			case "9000-1.htm":
-			case "9000-2.htm":
+			case "return":
 			{
-				htmltext = event;
+				htmltext = generateHtml(player);
+				break;
+			}
+			case "exchange":
+			{
+				htmltext = createDynamicHtml(player);
 				break;
 			}
 			case "borinet":
@@ -201,7 +250,7 @@ public class LetterCollector extends LongTimeEvent
 					takeItems(player, E, 1);
 					takeItems(player, T, 1);
 					giveItems(player, getReward());
-					htmltext = "9000-1.htm";
+					htmltext = generateHtml(player);
 				}
 				else
 				{
@@ -246,7 +295,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, B, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -260,7 +309,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, O, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -274,7 +323,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, R, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -288,7 +337,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, I, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -302,7 +351,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, N, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -316,7 +365,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, E, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -330,7 +379,7 @@ public class LetterCollector extends LongTimeEvent
 				{
 					takeItems(player, T, 2);
 					giveItems(player, getRandomEntry(LETTERS), 1);
-					htmltext = "9000-2.htm";
+					htmltext = createDynamicHtml(player);
 				}
 				else
 				{
@@ -341,6 +390,127 @@ public class LetterCollector extends LongTimeEvent
 		}
 		
 		return htmltext;
+	}
+	
+	public String generateHtml(Player player)
+	{
+		StringBuilder htmlBuilder = new StringBuilder();
+		htmlBuilder.append("<html><body>").append("<table width=292 height=64 cellspacing=0 cellpadding=0><tr><td>").append("<img src=\"nIcon.EventletterCollector_Bg\" width=292 height=64>").append("</td></tr></table>").append("<center><br>아래는 한번씩 보상을 받을 수 있어요.<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>").append("<td align=right><button action=\"bypass -h Quest LetterCollector borinet\" value=\"보상받기\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
+		
+		// 플레이어 인벤토리 확인 후 HTML에 이미지 경로 반영
+		for (char letter : "BORINET".toCharArray())
+		{
+			String[] paths = ICON_PATHS.get(letter);
+			String iconPath = playerHasItem(player, letter) ? paths[1] : paths[0];
+			if (playerHasItem(player, letter))
+			{
+				htmlBuilder.append("<td height=40><button width=32 height=32 itemtooltip=\"").append(getItemIdByLetter(letter)).append("\" back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\"></button></td>");
+			}
+			else
+			{
+				htmlBuilder.append("<td height=40><button width=32 height=32 back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\"></button></td>");
+			}
+		}
+		
+		htmlBuilder.append("</tr></table></td></tr></table><br><br>한번에 받고싶어요? 그럼 아래 한방보상을 이용해요!<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>").append("<td align=right><button action=\"bypass -h Quest LetterCollector borinetAll\" value=\"한방보상\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
+		
+		// 플레이어 인벤토리 확인 후 두 번째 HTML에도 동일한 로직 적용
+		for (char letter : "BORINET".toCharArray())
+		{
+			String[] paths = ICON_PATHS.get(letter);
+			String iconPath = playerHasItem(player, letter) ? paths[1] : paths[0];
+			if (playerHasItem(player, letter))
+			{
+				htmlBuilder.append("<td height=40><button width=32 height=32 itemtooltip=\"").append(getItemIdByLetter(letter)).append("\" back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\"></button></td>");
+			}
+			else
+			{
+				htmlBuilder.append("<td height=40><button width=32 height=32 back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\"></button></td>");
+			}
+		}
+		
+		htmlBuilder.append("</tr></table></td></tr></table></center><br><br>").append("<Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector exchange\">\"문자를 다른 문자와 교환하고 싶습니다.\"</Button>").append("</body></html>");
+		
+		return htmlBuilder.toString();
+	}
+	
+	public String createDynamicHtml(Player player)
+	{
+		StringBuilder htmlBuilder = new StringBuilder();
+		htmlBuilder.append("<html><body>").append("<table width=292 height=64 cellspacing=0 cellpadding=0><tr><td>").append("<img src=\"nIcon.EventletterCollector_Bg\" width=292 height=64>").append("</td></tr></table>").append("<center><br><br><font color=\"LEVEL\">2개의 동일한 문자를</font> 랜덤하게 <font color=\"LEVEL\">하나의 문자</font>로<br1> 교환이 가능합니다.<br>2장이상 보유한 문자만 활성화 됩니다.<br>").append("<table border=0 width=292 height=40 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr>");
+		
+		// 플레이어 인벤토리 확인 후 HTML에 이미지 경로 반영 (2개 이상 보유 시 i00 이미지 표시)
+		for (char letter : "BORINET".toCharArray())
+		{
+			String[] paths = ICON_PATHS.get(letter);
+			String iconPath;
+			int itemId = getItemIdByLetter(letter);
+			long itemCount = getQuestItemsCount(player, itemId);
+			
+			// 아이템이 2개 이상 있는 경우 i00 이미지 사용하고 교환 버튼 활성화
+			if (itemCount >= 2)
+			{
+				iconPath = paths[1]; // i00 이미지
+				String action = "exchange" + letter; // 교환 이벤트 액션 문자열
+				htmlBuilder.append("<td height=36><button width=32 height=32 itemtooltip=\"").append(itemId).append("\" back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\" action=\"bypass -h Quest LetterCollector ").append(action).append("\">").append("</button></td>");
+			}
+			else
+			{
+				// 아이템이 2개 미만인 경우 기본 이미지 사용
+				iconPath = paths[0]; // 기본 이미지
+				htmlBuilder.append("<td height=36><button width=32 height=32 back=\"").append(iconPath).append("\" fore=\"").append(iconPath).append("\"></button></td>");
+			}
+		}
+		
+		htmlBuilder.append("</tr></table></td></tr></table><br><br><br>");
+		htmlBuilder.append("<Button ALIGN=LEFT ICON=\"RETURN\" action=\"bypass -h Quest LetterCollector return\">뒤로가기</Button>");
+		return htmlBuilder.toString();
+	}
+	
+	private int getItemIdByLetter(char letter)
+	{
+		switch (letter)
+		{
+			case 'B':
+				return B;
+			case 'O':
+				return O;
+			case 'R':
+				return R;
+			case 'I':
+				return I;
+			case 'N':
+				return N;
+			case 'E':
+				return E;
+			case 'T':
+				return T;
+			default:
+				return -1;
+		}
+	}
+	
+	private boolean playerHasItem(Player player, char letter)
+	{
+		switch (letter)
+		{
+			case 'B':
+				return getQuestItemsCount(player, B) >= 1;
+			case 'O':
+				return getQuestItemsCount(player, O) >= 1;
+			case 'R':
+				return getQuestItemsCount(player, R) >= 1;
+			case 'I':
+				return getQuestItemsCount(player, I) >= 1;
+			case 'N':
+				return getQuestItemsCount(player, N) >= 1;
+			case 'E':
+				return getQuestItemsCount(player, E) >= 1;
+			case 'T':
+				return getQuestItemsCount(player, T) >= 1;
+			default:
+				return false;
+		}
 	}
 	
 	private ItemHolder getReward()
@@ -382,7 +552,7 @@ public class LetterCollector extends LongTimeEvent
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
-		return npc.getId() + "-1.htm";
+		return generateHtml(player);
 	}
 	
 	public static void main(String[] args)
