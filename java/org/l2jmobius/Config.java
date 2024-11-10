@@ -349,8 +349,10 @@ public class Config
 	public static double CAPTCHA_POPUP_PERCENT;
 	public static int CAPTCHA_POPUP_AGAIN;
 	public static long LAST_EXP_SECONDS;
-	public static long TIME_WAIT_DELAY;
-	public static long LAST_CAPTCHA_TIME;
+	public static long TIME_WAIT_DELAY_MIN;
+	public static long TIME_WAIT_DELAY_MAX;
+	public static long LAST_CAPTCHA_TIME_MIN;
+	public static long LAST_CAPTCHA_TIME_MAX;
 	public static long CAPTCHA_ANSWER_SECONDS;
 	public static long CAPTCHA_TIME_BETWEEN_TIME;
 	public static int CAPTCHA_COUNT;
@@ -1939,8 +1941,10 @@ public class Config
 			CAPTCHA_POPUP_PERCENT = Captcha.getDouble("CaptchaPopupPercent", 0.03);
 			CAPTCHA_POPUP_AGAIN = Captcha.getInt("CaptchaPopupAgain", 3);
 			LAST_EXP_SECONDS = Captcha.getInt("LastExpProtectorSeconds", 60);
-			TIME_WAIT_DELAY = Captcha.getInt("TimeWaitDelaySeconds", 30);
-			LAST_CAPTCHA_TIME = Captcha.getInt("LastCaptchaTime", 60);
+			TIME_WAIT_DELAY_MIN = Captcha.getInt("TimeWaitDelayMinSeconds", 1);
+			TIME_WAIT_DELAY_MAX = Captcha.getInt("TimeWaitDelayMaxSeconds", 10);
+			LAST_CAPTCHA_TIME_MIN = Captcha.getInt("LastCaptchaTimeMin", 50);
+			LAST_CAPTCHA_TIME_MAX = Captcha.getInt("LastCaptchaTimeMax", 60);
 			CAPTCHA_ANSWER_SECONDS = Captcha.getInt("CaptchaAnswerSeconds", 60);
 			CAPTCHA_TIME_BETWEEN_TIME = Captcha.getInt("CaptchaDelayBetweenCaptchas", 10);
 			CAPTCHA_COUNT = Captcha.getInt("CaptchaCount", 3);

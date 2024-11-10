@@ -120,7 +120,6 @@ import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.BuilderUtil;
 import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaEvent;
 import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaTimer;
-import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaWindow;
 
 public class EnterWorld implements IClientIncomingPacket
 {
@@ -809,11 +808,10 @@ public class EnterWorld implements IClientIncomingPacket
 		CaptchaEvent event = CaptchaTimer.getInstance().getAutoMyEvent(player);
 		if (event != null)
 		{
-			player.addQuickVar("IsCaptchaActive", true);
+			player.deleteQuickVar("IsCaptchaActive");
 			CaptchaEvent.clearCaptcha(player);
-			player.addQuickVar("LastCaptcha", System.currentTimeMillis());
-			CaptchaWindow.CaptchaWindows(player, 0);
-			CaptchaTimer.getInstance().addCaptchaTimer(player);
+			player.deleteQuickVar("LastCaptcha");
+			player.stopPopupDelay();
 		}
 		
 		// 컬렉터 옵션 추가

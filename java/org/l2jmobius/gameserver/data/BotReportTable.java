@@ -30,6 +30,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
@@ -267,7 +268,8 @@ public class BotReportTable
 		{
 			return false;
 		}
-		if ((player.getQuickVarL("LastCaptcha") + (Config.LAST_CAPTCHA_TIME * 60000)) > System.currentTimeMillis())
+		long capchaTime = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX);
+		if ((player.getQuickVarL("LastCaptcha") + (capchaTime * 60000)) > System.currentTimeMillis())
 		{
 			return false;
 		}

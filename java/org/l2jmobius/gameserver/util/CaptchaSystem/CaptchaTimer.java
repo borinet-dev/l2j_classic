@@ -42,6 +42,11 @@ public class CaptchaTimer
 	
 	public void addCaptchaTimer(Player player)
 	{
+		if ((player == null) || !player.isOnline())
+		{
+			return;
+		}
+		
 		player.setBlockActions(true);
 		player.setInvul(true);
 		captchaEventList.add(new CaptchaEvent(player, System.currentTimeMillis()));
@@ -50,12 +55,12 @@ public class CaptchaTimer
 	
 	public void removeCaptchaTimer(CaptchaEvent event, Player player)
 	{
-		if (player != null)
+		if ((player == null) || !player.isOnline())
 		{
-			player.setBlockActions(false);
-			player.setInvul(false);
-			player.stopPopupDelay();
+			return;
 		}
+		
+		player.stopPopupDelay();
 		captchaEventList.remove(event);
 	}
 	
@@ -87,7 +92,7 @@ public class CaptchaTimer
 				if ((event.getStartDate() + (Config.CAPTCHA_ANSWER_SECONDS * 1000)) <= currentTime)
 				{
 					Player player = event.getPlayer();
-					CaptchaHandler.onFailedCaptcha(event, player);
+					CaptchaHandler.onMissingCaptcha(event, player);
 				}
 			}
 			

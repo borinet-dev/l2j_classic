@@ -179,7 +179,7 @@ public class JailHandler implements IPunishmentHandler
 			OlympiadManager.getInstance().removeDisconnectedCompetitor(player);
 		}
 		
-		ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationIn()), 2000);
+		ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationIn()), 100);
 		
 		// Open a Html message to inform the player
 		final NpcHtmlMessage msg = new NpcHtmlMessage();
@@ -200,6 +200,8 @@ public class JailHandler implements IPunishmentHandler
 		{
 			player.sendMessage("출감까지 남은시간이 없습니다. 운영자에게 문의하세요.");
 		}
+		player.setBlockActions(false);
+		player.setInvul(false);
 	}
 	
 	private void goJailToPlayer(Player player, boolean isinJailed)
@@ -213,7 +215,7 @@ public class JailHandler implements IPunishmentHandler
 				OlympiadManager.getInstance().removeDisconnectedCompetitor(player);
 			}
 			
-			ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationIn()), 1000);
+			ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationIn()), 100);
 			
 		}
 		String[] account = getJailAccount(player);
@@ -234,13 +236,13 @@ public class JailHandler implements IPunishmentHandler
 		String content = HtmCache.getInstance().getHtm(player, "data/html/jail_in.htm");
 		long endTimes = Long.parseLong(endTime);
 		String times = BorinetUtil.dataDateFormatKor.format(new Date(endTimes));
-		content = content.replace("%times%", count == 5 ? "무기한" : times);
+		content = content.replace("%times%", count >= 5 ? "없음" : times);
 		content = content.replace("%reason%", reason);
 		msg.setHtml(content);
 		player.sendPacket(msg);
 		
 		final int delay = (int) (((endTimes - System.currentTimeMillis()) / 1000L) / 60);
-		if ((delay > 0) && (count < 4))
+		if ((delay > 0) && (count < 5))
 		{
 			player.sendMessage("출감까지 남은시간: " + TimeUtil.formatTimes(delay, false));
 		}
@@ -248,6 +250,8 @@ public class JailHandler implements IPunishmentHandler
 		{
 			player.sendMessage("출감까지 남은시간이 없습니다. 운영자에게 문의하세요.");
 		}
+		player.setBlockActions(false);
+		player.setInvul(false);
 	}
 	
 	/**
@@ -256,7 +260,7 @@ public class JailHandler implements IPunishmentHandler
 	 */
 	private void removeFromPlayer(Player player)
 	{
-		ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationOut()), 2000);
+		ThreadPool.schedule(new TeleportTask(player, JailZone.getLocationOut()), 100);
 		
 		// Open a Html message to inform the player
 		final NpcHtmlMessage msg = new NpcHtmlMessage();

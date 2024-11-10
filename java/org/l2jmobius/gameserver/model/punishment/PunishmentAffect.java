@@ -21,8 +21,8 @@ package org.l2jmobius.gameserver.model.punishment;
  */
 public enum PunishmentAffect
 {
-	ACCOUNT,
 	CHARACTER,
+	ACCOUNT,
 	IP,
 	HWID;
 	
