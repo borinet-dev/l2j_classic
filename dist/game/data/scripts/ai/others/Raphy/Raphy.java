@@ -297,8 +297,8 @@ public class Raphy extends AbstractNpcAI
 		GambleResult result = playerResults.getOrDefault(player, new GambleResult());
 		String val = player.getVariables().getString("GAMBLE");
 		
-		boolean successRate = Rnd.get(1, 100) < (player.isPremium() ? 45 : 30);
-		boolean premiumChance = Rnd.get(1, 100) < (player.isPremium() ? 40 : 20);
+		boolean successRate = Rnd.get(1, 100) < (player.isPremium() ? 40 : 30);
+		boolean premiumChance = Rnd.get(1, 100) < (player.isPremium() ? 35 : 20);
 		
 		int successItem = 0;
 		boolean isMission = true;
