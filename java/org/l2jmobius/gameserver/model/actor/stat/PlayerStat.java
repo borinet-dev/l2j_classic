@@ -215,7 +215,7 @@ public class PlayerStat extends PlayableStat
 			boolean isCaptchaActive = player.getQuickVarB("IsCaptchaActive", false);
 			if (!isCaptchaActive && (Rnd.chance(25)))
 			{
-				CaptchaHandler.AutoCaptcha(player);
+				CaptchaHandler.Captcha(player, false);
 			}
 		}
 	}

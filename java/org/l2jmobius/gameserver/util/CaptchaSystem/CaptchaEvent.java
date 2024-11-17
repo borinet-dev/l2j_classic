@@ -37,20 +37,6 @@ public class CaptchaEvent
 		return startDate;
 	}
 	
-	public static void clearCaptcha(Player player)
-	{
-		for (int i = 0; i < 4; i++)
-		{
-			player.updateCaptchaAnswerNumber(i, 10);
-			player.updateCaptchaQuestNumber(i, 10);
-		}
-		
-		for (int i = 0; i < 10; i++)
-		{
-			player.updateCaptchaNumberPad(i, 10);
-		}
-	}
-	
 	public static void getNumberPadPattern(Player player)
 	{
 		for (int i = 0; i < 10; i++)

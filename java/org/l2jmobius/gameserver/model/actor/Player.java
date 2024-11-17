@@ -15505,21 +15505,45 @@ public class Player extends Playable
 	
 	public void startPopupDelay()
 	{
-		if ((popupDelay == null) || popupDelay.isDone())
+		// 이미 작업이 실행 중인지 확인
+		if ((popupDelay != null) && !popupDelay.isDone())
 		{
-			popupDelay = ThreadPool.scheduleAtFixedRate(() ->
+			return; // 이미 작업이 실행 중이면 새 작업 예약하지 않음
+		}
+		
+		// 새 작업 예약
+		popupDelay = ThreadPool.scheduleAtFixedRate(() ->
+		{
+			try
 			{
 				CaptchaWindow.CaptchaWindows(this, getCaptchaAnswerCount());
-			}, Config.CAPTCHA_POPUP_AGAIN * 1000, Config.CAPTCHA_POPUP_AGAIN * 1000);
-		}
+			}
+			catch (Exception e)
+			{
+				LOGGER.log(Level.WARNING, "startPopupDelay() 매서드 오류. 캐릭터: " + getName());
+				stopPopupDelay(); // 예외 발생 시 작업 중단
+			}
+		}, Config.CAPTCHA_POPUP_AGAIN * 1000, Config.CAPTCHA_POPUP_AGAIN * 1000);
 	}
 	
 	public void stopPopupDelay()
 	{
 		if (popupDelay != null)
 		{
-			popupDelay.cancel(false);
-			popupDelay = null;
+			try
+			{
+				popupDelay.cancel(false); // 현재 실행 중인 작업 취소
+			}
+			catch (Exception e)
+			{
+				LOGGER.log(Level.WARNING, "stopPopupDelay() 매서드 오류. 캐릭터: " + getName());
+				popupDelay.cancel(false); // 현재 실행 중인 작업 취소
+				popupDelay = null; // 상태 초기화
+			}
+			finally
+			{
+				popupDelay = null; // 상태 초기화
+			}
 		}
 	}
 	

@@ -239,7 +239,7 @@ public class BotReportTable
 		sm.addString(bot.getName());
 		reporter.sendPacket(sm);
 		saveReportedCharData(reporter.getName(), reporter.getObjectId(), bot.getName(), bot.getObjectId());
-		CaptchaHandler.Captcha(reporter, bot.getActingPlayer());
+		CaptchaHandler.Captcha(bot.getActingPlayer(), false);
 		
 		sm = new SystemMessage(SystemMessageId.YOU_HAVE_USED_A_REPORT_POINT_ON_C1_YOU_HAVE_S2_POINTS_REMAINING_ON_THIS_ACCOUNT);
 		sm.addString(bot.getName());
@@ -268,8 +268,8 @@ public class BotReportTable
 		{
 			return false;
 		}
-		long capchaTime = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX);
-		if ((player.getQuickVarL("LastCaptcha") + (capchaTime * 60000)) > System.currentTimeMillis())
+		long captchaTime = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX);
+		if ((player.getQuickVarL("LastCaptcha") + (captchaTime * 60000)) > System.currentTimeMillis())
 		{
 			return false;
 		}

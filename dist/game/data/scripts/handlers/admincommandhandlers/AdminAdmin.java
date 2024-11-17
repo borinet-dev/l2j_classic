@@ -40,7 +40,6 @@ import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.util.BuilderUtil;
 import org.l2jmobius.gameserver.util.Util;
-import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaEvent;
 import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaTimer;
 import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaWindow;
 
@@ -129,7 +128,7 @@ public class AdminAdmin implements IAdminCommandHandler
 			if (!isCaptchaActive)
 			{
 				target.addQuickVar("IsCaptchaActive", true);
-				CaptchaEvent.clearCaptcha(target);
+				target.clearCaptcha();
 				target.addQuickVar("LastCaptcha", System.currentTimeMillis());
 				CaptchaWindow.CaptchaWindows(target, 0);
 				CaptchaTimer.getInstance().addCaptchaTimer(target);

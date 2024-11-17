@@ -740,7 +740,7 @@ public class EnterWorld implements IClientIncomingPacket
 		if (Config.ENABLE_CAPTCHA_SYSTEM)
 		{
 			player.getStat().setStartingExp(player.getStat().getExp());
-			CaptchaEvent.clearCaptcha(player);
+			player.clearCaptcha();
 		}
 		
 		if (player.isGM())
@@ -809,7 +809,7 @@ public class EnterWorld implements IClientIncomingPacket
 		if (event != null)
 		{
 			player.deleteQuickVar("IsCaptchaActive");
-			CaptchaEvent.clearCaptcha(player);
+			player.clearCaptcha();
 			player.deleteQuickVar("LastCaptcha");
 			player.stopPopupDelay();
 		}

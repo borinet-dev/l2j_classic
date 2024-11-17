@@ -12,43 +12,49 @@ import org.l2jmobius.gameserver.model.punishment.PunishmentType;
 
 public class CaptchaHandler
 {
-	public static void AutoCaptcha(Player player)
+	public static void Captcha(Player player, boolean isAuto)
 	{
+		if ((player == null) || !player.isOnline())
+		{
+			return; // 대상이 유효하지 않으면 종료
+		}
+		
 		long lastCaptchaTime = player.getQuickVarL("LastCaptcha");
-		long capchaTime = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX);
-		if (((lastCaptchaTime + (capchaTime * 60000)) > System.currentTimeMillis()) || !BotReportTable.AutoReport(player))
+		long captchaInterval = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX) * 60000;
+		
+		// Captcha 재발동 조건 확인
+		if ((lastCaptchaTime + captchaInterval) > System.currentTimeMillis())
 		{
 			return;
 		}
 		
-		long delay = Rnd.get(Config.TIME_WAIT_DELAY_MIN, Config.TIME_WAIT_DELAY_MAX);
+		// AutoCaptcha 추가 조건 확인
+		if (isAuto && !BotReportTable.AutoReport(player))
+		{
+			return;
+		}
 		
-		ThreadPool.schedule(() ->
+		// 캡챠 설정 로직
+		Runnable setupCaptcha = () ->
 		{
 			player.updateCaptchaCount(0);
-			CaptchaEvent.clearCaptcha(player);
+			player.clearCaptcha();
 			player.addQuickVar("IsCaptchaActive", true);
 			player.addQuickVar("LastCaptcha", System.currentTimeMillis());
 			CaptchaWindow.CaptchaWindows(player, 0);
 			CaptchaTimer.getInstance().addCaptchaTimer(player);
-		}, delay * 1000);
-	}
-	
-	public static void Captcha(Player actor, Player target)
-	{
-		long lastCaptchaTime = target.getQuickVarL("LastCaptcha");
-		long capchaTime = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX);
-		if ((lastCaptchaTime + (capchaTime * 60000)) > System.currentTimeMillis())
-		{
-			return;
-		}
+		};
 		
-		target.updateCaptchaCount(0);
-		CaptchaEvent.clearCaptcha(target);
-		target.addQuickVar("IsCaptchaActive", true);
-		target.addQuickVar("LastCaptcha", System.currentTimeMillis());
-		CaptchaWindow.CaptchaWindows(target, 0);
-		CaptchaTimer.getInstance().addCaptchaTimer(target);
+		// AutoCaptcha는 랜덤 딜레이 추가
+		if (isAuto)
+		{
+			long delay = Rnd.get(Config.TIME_WAIT_DELAY_MIN, Config.TIME_WAIT_DELAY_MAX);
+			ThreadPool.schedule(setupCaptcha, delay * 1000);
+		}
+		else
+		{
+			setupCaptcha.run(); // 일반 Captcha는 즉시 실행
+		}
 	}
 	
 	public static void AnswerCaptcha(Player actor)
@@ -67,7 +73,7 @@ public class CaptchaHandler
 		CaptchaTimer.getInstance().removeCaptchaTimer(event, player);
 		player.setBlockActions(false);
 		player.setInvul(false);
-		CaptchaEvent.clearCaptcha(player);
+		player.clearCaptcha();
 		player.updateCaptchaCount(0);
 		player.deleteQuickVar("IsCaptchaActive");
 		player.sendMessage("정확하게 입력하셨습니다! 즐거운 시간 되세요!");
@@ -79,10 +85,17 @@ public class CaptchaHandler
 		onFailedCaptcha(event, actor);
 	}
 	
-	public static void onFailedCaptcha(CaptchaEvent event, Player player)
+	private static void onFailedCaptcha(CaptchaEvent event, Player player)
 	{
 		if ((player == null) || !player.isOnline())
 		{
+			return;
+		}
+		
+		boolean isCaptchaActive = player.getQuickVarB("IsCaptchaActive", false);
+		if (!isCaptchaActive)
+		{
+			reset(event, player);
 			return;
 		}
 		
@@ -92,21 +105,14 @@ public class CaptchaHandler
 		
 		if (count >= Config.CAPTCHA_COUNT)
 		{
-			CaptchaEvent.clearCaptcha(player);
-			player.updateCaptchaCount(0);
-			player.sendMessage("보안문자 입력에 실패하였습니다!");
-			player.deleteQuickVar("IsCaptchaActive");
 			punishment(event, player);
 		}
 		else
 		{
-			player.setBlockActions(false);
-			player.setInvul(false);
-			
 			String name = (count == 2) ? "한번" : "두번";
 			player.sendMessage("틀렸습니다. 순서대로 정확히 입력바랍니다.");
 			player.sendMessage("보안문자 입력 남은 기회: " + name);
-			CaptchaEvent.clearCaptcha(player);
+			player.clearCaptcha();
 			CaptchaWindow.CaptchaWindows(player, 0);
 			CaptchaTimer.getInstance().addCaptchaTimer(player);
 		}
@@ -119,10 +125,13 @@ public class CaptchaHandler
 			return;
 		}
 		
-		CaptchaEvent.clearCaptcha(player);
-		player.updateCaptchaCount(0);
-		player.sendMessage("보안문자 입력에 실패하였습니다!");
-		player.deleteQuickVar("IsCaptchaActive");
+		boolean isCaptchaActive = player.getQuickVarB("IsCaptchaActive", false);
+		if (!isCaptchaActive)
+		{
+			reset(event, player);
+			return;
+		}
+		
 		punishment(event, player);
 	}
 	
@@ -133,7 +142,12 @@ public class CaptchaHandler
 			return;
 		}
 		
+		player.sendMessage("보안문자 입력에 실패하였습니다!");
+		player.deleteQuickVar("IsCaptchaActive");
+		player.clearCaptcha();
+		player.updateCaptchaCount(0);
 		player.getVariables().set("BotReported", player.getVariables().getInt("BotReported", 0) + 1);
+		
 		int jailCount = player.getVariables().getInt("BotReported", 0);
 		final PunishmentAffect affect = PunishmentAffect.getByName("CHARACTER");
 		final PunishmentType type = PunishmentType.getByName("JAIL");
@@ -148,5 +162,15 @@ public class CaptchaHandler
 		}
 		
 		CaptchaTimer.getInstance().removeCaptchaTimer(event, player);
+	}
+	
+	private static void reset(CaptchaEvent event, Player player)
+	{
+		CaptchaTimer.getInstance().removeCaptchaTimer(event, player);
+		player.deleteQuickVar("IsCaptchaActive");
+		player.setBlockActions(false);
+		player.setInvul(false);
+		player.clearCaptcha();
+		player.updateCaptchaCount(0);
 	}
 }

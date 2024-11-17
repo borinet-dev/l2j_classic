@@ -1,6 +1,7 @@
 package org.l2jmobius.gameserver.util.CaptchaSystem;
 
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.l2jmobius.Config;
@@ -12,12 +13,11 @@ import org.l2jmobius.gameserver.model.actor.Player;
  */
 public class CaptchaTimer
 {
-	private final List<CaptchaEvent> captchaEventList;
+	private final ConcurrentHashMap<String, CaptchaEvent> captchaEventMap = new ConcurrentHashMap<>();
 	private final List<FailedBotReporter> failedBotReporters;
 	
 	protected CaptchaTimer()
 	{
-		captchaEventList = new CopyOnWriteArrayList<>();
 		failedBotReporters = new CopyOnWriteArrayList<>();
 		ThreadPool.execute(new CaptchaTimerThread());
 	}
@@ -49,7 +49,7 @@ public class CaptchaTimer
 		
 		player.setBlockActions(true);
 		player.setInvul(true);
-		captchaEventList.add(new CaptchaEvent(player, System.currentTimeMillis()));
+		captchaEventMap.put(player.getName(), new CaptchaEvent(player, System.currentTimeMillis()));
 		player.startPopupDelay();
 	}
 	
@@ -61,24 +61,17 @@ public class CaptchaTimer
 		}
 		
 		player.stopPopupDelay();
-		captchaEventList.remove(event);
+		captchaEventMap.remove(player.getName());
 	}
 	
 	public CaptchaEvent getAutoMyEvent(Player target)
 	{
-		for (CaptchaEvent events : captchaEventList)
-		{
-			if (events.getActorName().equals(target.getName()))
-			{
-				return events;
-			}
-		}
-		return null;
+		return captchaEventMap.get(target.getName());
 	}
 	
 	protected Iterable<CaptchaEvent> getCaptchaEventLists()
 	{
-		return captchaEventList;
+		return captchaEventMap.values();
 	}
 	
 	protected class CaptchaTimerThread implements Runnable
@@ -87,15 +80,15 @@ public class CaptchaTimer
 		public void run()
 		{
 			long currentTime = System.currentTimeMillis();
-			for (CaptchaEvent event : getCaptchaEventLists())
+			captchaEventMap.values().removeIf(event ->
 			{
 				if ((event.getStartDate() + (Config.CAPTCHA_ANSWER_SECONDS * 1000)) <= currentTime)
 				{
-					Player player = event.getPlayer();
-					CaptchaHandler.onMissingCaptcha(event, player);
+					CaptchaHandler.onMissingCaptcha(event, event.getPlayer());
+					return true;
 				}
-			}
-			
+				return false;
+			});
 			ThreadPool.schedule(this, 1000);
 		}
 	}
