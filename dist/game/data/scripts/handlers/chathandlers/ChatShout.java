@@ -61,18 +61,24 @@ public class ChatShout implements IChatHandler
 		
 		final Clan clan = activeChar.getClan();
 		
-		if ((activeChar.getClan() != null) && clan.isAtWar())
-		{
-			activeChar.sendMessage("혈맹전 상태에서는 외치기를 할 수 없습니다.");
-			return;
-		}
-		
-		if (text.startsWith("!"))
+		if (!Config.ENABLE_SHOUT_CLAN_WAR)
 		{
 			if ((activeChar.getClan() != null) && clan.isAtWar())
 			{
 				activeChar.sendMessage("혈맹전 상태에서는 외치기를 할 수 없습니다.");
 				return;
+			}
+		}
+		
+		if (text.startsWith("!"))
+		{
+			if (!Config.ENABLE_SHOUT_CLAN_WAR)
+			{
+				if ((activeChar.getClan() != null) && clan.isAtWar())
+				{
+					activeChar.sendMessage("혈맹전 상태에서는 외치기를 할 수 없습니다.");
+					return;
+				}
 			}
 			
 			if (!activeChar.isPremium())
