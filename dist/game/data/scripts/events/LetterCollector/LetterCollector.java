@@ -16,13 +16,18 @@
  */
 package events.LetterCollector;
 
+import java.time.LocalDateTime;
+import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.l2jmobius.Config;
+import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 
 /**
  * Event: Letter Collector
@@ -238,6 +243,21 @@ public class LetterCollector extends LongTimeEvent
 				htmltext = createDynamicHtml(player);
 				break;
 			}
+			case "take_Gift":
+			{
+				int Letter_Gift = player.getAccountVariables().getInt("문자수집가의선물", 0);
+				if (Letter_Gift == 1)
+				{
+					player.sendMessage("오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요.");
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요."));
+				}
+				else
+				{
+					player.getAccountVariables().set("문자수집가의선물", 1);
+					player.addItem("문자 수집가의 선물", 49457, 5, player, true);
+				}
+				break;
+			}
 			case "borinet":
 			{
 				if (checkLetters(player))
@@ -395,7 +415,16 @@ public class LetterCollector extends LongTimeEvent
 	public String generateHtml(Player player)
 	{
 		StringBuilder htmlBuilder = new StringBuilder();
-		htmlBuilder.append("<html><body>").append("<table width=292 height=64 cellspacing=0 cellpadding=0><tr><td>").append("<img src=\"nIcon.EventletterCollector_Bg\" width=292 height=64>").append("</td></tr></table>").append("<center><br>아래는 한번씩 보상을 받을 수 있어요.<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>").append("<td align=right><button action=\"bypass -h Quest LetterCollector borinet\" value=\"보상받기\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
+		htmlBuilder.append("<html><body>").append("<table width=292 height=64 cellspacing=0 cellpadding=0><tr><td>").append("<img src=\"nIcon.EventletterCollector_Bg\" width=292 height=64>").append("</td></tr></table>").append("<center><br>아래는 한번씩 보상을 받을 수 있어요.<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>");
+		if (checkLetters(player))
+		{
+			htmlBuilder.append("<td align=right><button action=\"bypass -h Quest LetterCollector borinet\" value=\"보상받기\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+		}
+		else
+		{
+			htmlBuilder.append("<td height=31 align=right>");
+		}
+		htmlBuilder.append("</td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
 		
 		// 플레이어 인벤토리 확인 후 HTML에 이미지 경로 반영
 		for (char letter : "BORINET".toCharArray())
@@ -412,7 +441,16 @@ public class LetterCollector extends LongTimeEvent
 			}
 		}
 		
-		htmlBuilder.append("</tr></table></td></tr></table><br><br>한번에 받고싶어요? 그럼 아래 한방보상을 이용해요!<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>").append("<td align=right><button action=\"bypass -h Quest LetterCollector borinetAll\" value=\"한방보상\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
+		htmlBuilder.append("</tr></table></td></tr></table><br><br1>한번에 받고싶어요? 그럼 아래 한방보상을 이용해요!<br1>").append("<table border=0 width=292 height=86 background=\"l2ui_ct1.ComboBox_DF_Dropmenu_Bg\"><tr><td>").append("<table width=292 border=0><tr><td align=left>조합 문자</td>");
+		if (checkLetters(player))
+		{
+			htmlBuilder.append("<td align=right><button action=\"bypass -h Quest LetterCollector borinetAll\" value=\"한방보상\" width=100 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+		}
+		else
+		{
+			htmlBuilder.append("<td height=31 align=right>");
+		}
+		htmlBuilder.append("</td>").append("</tr></table><table width=100><tr><td>").append("<img src=\"L2UI.squaregray\" width=279 height=1/>").append("</td></tr></table>").append("<table width=292 height=42 border=0><tr>");
 		
 		// 플레이어 인벤토리 확인 후 두 번째 HTML에도 동일한 로직 적용
 		for (char letter : "BORINET".toCharArray())
@@ -429,9 +467,28 @@ public class LetterCollector extends LongTimeEvent
 			}
 		}
 		
-		htmlBuilder.append("</tr></table></td></tr></table></center><br><br>").append("<Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector exchange\">\"문자를 다른 문자와 교환하고 싶습니다.\"</Button>").append("</body></html>");
+		htmlBuilder.append("</tr></table></td></tr></table></center>");
+		if (isWinterActive())
+		{
+			htmlBuilder.append("<br><Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector take_Gift\"><font color=LEVEL>\"겨울이에요. 선물을 주세요!\"</font></Button>");
+		}
+		else
+		{
+			htmlBuilder.append("<br><br>");
+		}
+		htmlBuilder.append("<Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector exchange\">\"문자를 다른 문자와 교환하고 싶습니다.\"</Button>");
+		htmlBuilder.append("</body></html>");
 		
 		return htmlBuilder.toString();
+	}
+	
+	private boolean isWinterActive()
+	{
+		LocalDateTime now = LocalDateTime.now();
+		LocalDateTime start = LocalDateTime.of(now.getYear(), Month.NOVEMBER, 1, 1, 0); // 10월 8일 오전 7시
+		LocalDateTime end = LocalDateTime.of(now.getYear(), Month.DECEMBER, 31, 23, 59); // 10월 10일 오후 8시
+		
+		return now.isAfter(start) && now.isBefore(end);
 	}
 	
 	public String createDynamicHtml(Player player)

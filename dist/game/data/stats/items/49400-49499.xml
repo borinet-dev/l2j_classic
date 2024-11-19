@@ -851,6 +851,11 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="39046" level="1" />
+		</skills>
 	</item>
 	<item id="49458" name="물고기자리 아가시온 팔찌" additionalName="15일 기간제" type="Armor">
 		<set name="icon" val="icon.agathion_magmeld_teleport" />
