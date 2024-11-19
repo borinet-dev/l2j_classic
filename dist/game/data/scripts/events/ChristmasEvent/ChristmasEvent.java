@@ -1,9 +1,9 @@
 package events.ChristmasEvent;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
 
@@ -39,7 +39,8 @@ public class ChristmasEvent extends LongTimeEvent
 	private static final int 칠면조 = 13183;
 	private static final int EVENT_DURATION_TIMES = 10;
 	private static Npc _snowman;
-	private static List<Npc> _santa;
+	// private static List<Npc> _santa;
+	private static final List<Npc> _santa = new CopyOnWriteArrayList<>();
 	private static Creature _thomas;
 	private static final List<Integer> CHRONO_LIST = Arrays.asList(4202, 5133, 5817, 7058, 8350);
 	private static final int SANTA_BUFF_REUSE = 2 * 3600 * 1000; // 2 hours
@@ -156,11 +157,23 @@ public class ChristmasEvent extends LongTimeEvent
 	
 	private void eventEnd()
 	{
+		if ((_santa == null) || _santa.isEmpty())
+		{
+			return;
+		}
+		
 		for (Npc npc : _santa)
 		{
 			if (npc != null)
 			{
-				npc.deleteMe();
+				try
+				{
+					npc.deleteMe();
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
 			}
 		}
 		_santa.clear();
@@ -663,29 +676,25 @@ public class ChristmasEvent extends LongTimeEvent
 	
 	private void santaSpawn()
 	{
-		_santa = new ArrayList<>();
-		
-		Npc npc1 = addSpawn(산타클로스, 83452, 148622, -3457, 32324, false, 0); // <!-- 기란 -->
-		Npc npc2 = addSpawn(산타클로스, -83810, 243137, -3678, 14970, false, 0); // <!-- 말섬 -->
-		Npc npc3 = addSpawn(산타클로스, 18272, 145158, -3064, 6316, false, 0); // <!-- 디온 -->
-		Npc npc4 = addSpawn(산타클로스, -14587, 124003, -3112, 53029, false, 0); // <!-- 글성 -->
-		Npc npc5 = addSpawn(산타클로스, 117165, 76746, -2688, 38521, false, 0); // <!-- 사냥꾼 -->
-		Npc npc6 = addSpawn(산타클로스, 147449, 25875, -2008, 15813, false, 0); // <!-- 아덴 -->
-		Npc npc7 = addSpawn(산타클로스, 82752, 53573, -1488, 32767, false, 0); // <!-- 오렌 -->
-		Npc npc8 = addSpawn(산타클로스, -80782, 150146, -3040, 32257, false, 0); // <!-- 글루딘 -->
-		Npc npc9 = addSpawn(산타클로스, 17723, 170096, -3504, 36948, false, 0); // <!-- 플로란 -->
-		Npc npc10 = addSpawn(산타클로스, 147689, -55393, -2728, 49356, false, 0); // <!-- 고다드 -->
-		
-		_santa.add(npc1);
-		_santa.add(npc2);
-		_santa.add(npc3);
-		_santa.add(npc4);
-		_santa.add(npc5);
-		_santa.add(npc6);
-		_santa.add(npc7);
-		_santa.add(npc8);
-		_santa.add(npc9);
-		_santa.add(npc10);
+		addSanta(산타클로스, 83452, 148622, -3457, 32324); // <!-- 기란 -->
+		addSanta(산타클로스, -83810, 243137, -3678, 14970); // <!-- 말섬 -->
+		addSanta(산타클로스, 18272, 145158, -3064, 6316); // <!-- 디온 -->
+		addSanta(산타클로스, -14587, 124003, -3112, 53029); // <!-- 글성 -->
+		addSanta(산타클로스, 117165, 76746, -2688, 38521); // <!-- 사냥꾼 -->
+		addSanta(산타클로스, 147449, 25875, -2008, 15813); // <!-- 아덴 -->
+		addSanta(산타클로스, 82752, 53573, -1488, 32767); // <!-- 오렌 -->
+		addSanta(산타클로스, -80782, 150146, -3040, 32257); // <!-- 글루딘 -->
+		addSanta(산타클로스, 17723, 170096, -3504, 36948); // <!-- 플로란 -->
+		addSanta(산타클로스, 147689, -55393, -2728, 49356); // <!-- 고다드 -->
+	}
+	
+	private static void addSanta(int npcId, int x, int y, int z, int h)
+	{
+		Npc npc = addSpawn(npcId, x, y, z, h, false, 0);
+		if (npc != null)
+		{
+			_santa.add(npc);
+		}
 	}
 	
 	public static void main(String[] args)
