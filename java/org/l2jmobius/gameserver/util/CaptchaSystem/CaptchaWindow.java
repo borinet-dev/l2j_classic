@@ -12,6 +12,8 @@ public class CaptchaWindow
 {
 	public static void CaptchaWindows(Player target, int editBox)
 	{
+		CaptchaTimer.getInstance().addCaptchaTimer(target);
+		
 		if (target.getCaptchaNumberPad(1) == 10)
 		{
 			CaptchaEvent.getNumberPadPattern(target);

@@ -361,7 +361,6 @@ import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.EnumIntBitmask;
 import org.l2jmobius.gameserver.util.Util;
-import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaWindow;
 import org.l2jmobius.gameserver.util.collections.CollectionDatabaseManager;
 import org.l2jmobius.gameserver.util.collections.CollectionHandler;
 
@@ -375,7 +374,6 @@ import smartguard.spi.SmartGuardSPI;
 public class Player extends Playable
 {
 	private final Map<String, Object> quickVars = new ConcurrentHashMap<>();
-	private Future<?> popupDelay;
 	private boolean isOnBoat;
 	
 	// Character Skill SQL String Definitions:
@@ -15401,6 +15399,18 @@ public class Player extends Playable
 	}
 	
 	/** 보안문자 **/
+	private boolean isEscDisabled = false;
+	
+	public boolean isEscDisabled()
+	{
+		return isEscDisabled;
+	}
+	
+	public void setEscDisabled(boolean escDisabled)
+	{
+		isEscDisabled = escDisabled;
+	}
+	
 	private int _captchaCount = 0;
 	
 	public int getCaptchaCount()
@@ -15501,50 +15511,6 @@ public class Player extends Playable
 	public int getCaptchaAnswerCount()
 	{
 		return captchaAnswerCount;
-	}
-	
-	public void startPopupDelay()
-	{
-		// 이미 작업이 실행 중인지 확인
-		if ((popupDelay != null) && !popupDelay.isDone())
-		{
-			return; // 이미 작업이 실행 중이면 새 작업 예약하지 않음
-		}
-		
-		// 새 작업 예약
-		popupDelay = ThreadPool.scheduleAtFixedRate(() ->
-		{
-			try
-			{
-				CaptchaWindow.CaptchaWindows(this, getCaptchaAnswerCount());
-			}
-			catch (Exception e)
-			{
-				LOGGER.log(Level.WARNING, "startPopupDelay() 매서드 오류. 캐릭터: " + getName());
-				stopPopupDelay(); // 예외 발생 시 작업 중단
-			}
-		}, Config.CAPTCHA_POPUP_AGAIN * 1000, Config.CAPTCHA_POPUP_AGAIN * 1000);
-	}
-	
-	public void stopPopupDelay()
-	{
-		if (popupDelay != null)
-		{
-			try
-			{
-				popupDelay.cancel(false); // 현재 실행 중인 작업 취소
-			}
-			catch (Exception e)
-			{
-				LOGGER.log(Level.WARNING, "stopPopupDelay() 매서드 오류. 캐릭터: " + getName());
-				popupDelay.cancel(false); // 현재 실행 중인 작업 취소
-				popupDelay = null; // 상태 초기화
-			}
-			finally
-			{
-				popupDelay = null; // 상태 초기화
-			}
-		}
 	}
 	
 	// 컬렉터 옵션 추가

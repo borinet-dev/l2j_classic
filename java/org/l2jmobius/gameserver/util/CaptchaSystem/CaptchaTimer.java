@@ -50,7 +50,6 @@ public class CaptchaTimer
 		player.setBlockActions(true);
 		player.setInvul(true);
 		captchaEventMap.put(player.getName(), new CaptchaEvent(player, System.currentTimeMillis()));
-		player.startPopupDelay();
 	}
 	
 	public void removeCaptchaTimer(CaptchaEvent event, Player player)
@@ -60,7 +59,6 @@ public class CaptchaTimer
 			return;
 		}
 		
-		player.stopPopupDelay();
 		captchaEventMap.remove(player.getName());
 	}
 	

@@ -811,7 +811,6 @@ public class EnterWorld implements IClientIncomingPacket
 			player.deleteQuickVar("IsCaptchaActive");
 			player.clearCaptcha();
 			player.deleteQuickVar("LastCaptcha");
-			player.stopPopupDelay();
 		}
 		
 		// 컬렉터 옵션 추가

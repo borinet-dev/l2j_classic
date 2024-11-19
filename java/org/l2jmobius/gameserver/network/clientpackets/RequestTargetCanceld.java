@@ -45,6 +45,13 @@ public class RequestTargetCanceld implements IClientIncomingPacket
 			return;
 		}
 		
+		// ESC 키 비활성 상태라면 입력 무시
+		if (player.isEscDisabled())
+		{
+			player.sendMessage("보안문자 창을 닫을 수 없습니다.");
+			return;
+		}
+		
 		if (player.isLockedTarget())
 		{
 			player.sendPacket(SystemMessageId.FAILED_TO_REMOVE_ENMITY);
