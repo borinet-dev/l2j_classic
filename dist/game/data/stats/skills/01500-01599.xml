@@ -3392,8 +3392,16 @@
 	<skill id="1553" toLevel="3" name="Chain Heal">
 		<!-- Recovers the target and the 10 most injured allies around the target +30% of their Max HP. The recovery amount decreases starting from the most injured person. Requires 4 Spirit Ore. -->
 		<icon>icon.skill1553</icon>
-		<affectLimit>9-0</affectLimit>
-		<affectRange>300</affectRange>
+		<affectLimit>
+			<value level="1">9-0</value> <!-- 레벨 1: 최대 9명 -->
+			<value level="2">10-0</value> <!-- 레벨 2: 최대 10명 -->
+			<value level="3">12-0</value> <!-- 레벨 3: 최대 12명 -->
+		</affectLimit>
+		<affectRange>
+			<value level="1">300</value> <!-- 레벨 1: 최대 300 -->
+			<value level="2">400</value> <!-- 레벨 2: 최대 400 -->
+			<value level="3">500</value> <!-- 레벨 3: 최대 500 -->
+		</affectRange>
 		<castRange>900</castRange>
 		<effectPoint>1301</effectPoint>
 		<effectRange>1600</effectRange>
