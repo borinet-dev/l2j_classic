@@ -178,9 +178,61 @@ public abstract class AbstractDailyMissionHandler extends ListenersContainer
 			entry.setRecentlyCompleted(true);
 			storePlayerEntry(entry);
 			
+			if (_holder.isAccountMission())
+			{
+				requestRewardAccount(player, entry.getRewardId());
+			}
 			return true;
 		}
 		return false;
+	}
+	
+	private void requestRewardAccount(Player player, int rewardId)
+	{
+		try (Connection con = DatabaseFactory.getConnection())
+		{
+			// 해당 캐릭터의 account_name 가져오기
+			String accountName = null;
+			try (PreparedStatement ps = con.prepareStatement("SELECT account_name FROM characters WHERE charId = ?"))
+			{
+				ps.setInt(1, player.getObjectId());
+				try (ResultSet rs = ps.executeQuery())
+				{
+					if (rs.next())
+					{
+						accountName = rs.getString("account_name");
+					}
+				}
+			}
+			
+			// 동일 계정 내 모든 캐릭터 업데이트
+			if (accountName != null)
+			{
+				try (PreparedStatement charPs = con.prepareStatement("SELECT charId FROM characters WHERE account_name = ?"))
+				{
+					charPs.setString(1, accountName);
+					
+					try (ResultSet rs = charPs.executeQuery())
+					{
+						while (rs.next())
+						{
+							int charId = rs.getInt("charId");
+							
+							// 캐시 업데이트 및 데이터 저장
+							DailyMissionPlayerEntry charEntry = getPlayerEntry(charId, true);
+							charEntry.setStatus(DailyMissionStatus.수령완료);
+							charEntry.setLastCompleted(System.currentTimeMillis());
+							charEntry.setRecentlyCompleted(true);
+							storePlayerEntry(charEntry);
+						}
+					}
+				}
+			}
+		}
+		catch (Exception e)
+		{
+			LOGGER.log(Level.WARNING, "계정내 모든 캐릭터에 대한 미션 (" + rewardId + ") 완료 중 오류 발생. 이름: " + player.getName(), e);
+		}
 	}
 	
 	protected void giveRewards(Player player)

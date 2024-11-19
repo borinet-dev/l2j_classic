@@ -43,6 +43,7 @@ public class DailyMissionDataHolder
 	private final boolean _monthReset;
 	private final boolean _isOneTime;
 	private final boolean _isMainClassOnly;
+	private final boolean _isAccountMission;
 	private final boolean _isDisplayedWhenNotAvailable;
 	private final boolean _missionMania;
 	private final boolean _missionEvent;
@@ -63,6 +64,7 @@ public class DailyMissionDataHolder
 		_monthReset = set.getBoolean("monthReset", false);
 		_isOneTime = set.getBoolean("isOneTime", true);
 		_isMainClassOnly = set.getBoolean("isMainClassOnly", true);
+		_isAccountMission = set.getBoolean("isAccountMission", false);
 		_isDisplayedWhenNotAvailable = set.getBoolean("isDisplayedWhenNotAvailable", true);
 		_missionMania = set.getBoolean("missionMania", false);
 		_missionEvent = set.getBoolean("missionEvent", false);
@@ -122,6 +124,11 @@ public class DailyMissionDataHolder
 	public boolean isMainClassOnly()
 	{
 		return _isMainClassOnly;
+	}
+	
+	public boolean isAccountMission()
+	{
+		return _isAccountMission;
 	}
 	
 	public boolean isDisplayedWhenNotAvailable()
