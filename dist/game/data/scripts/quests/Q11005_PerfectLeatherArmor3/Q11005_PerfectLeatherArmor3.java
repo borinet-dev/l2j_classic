@@ -112,16 +112,14 @@ public class Q11005_PerfectLeatherArmor3 extends Quest
 				StringTokenizer tokenizer = new StringTokenizer(event, " ");
 				tokenizer.nextToken();
 				
+				final int itemId = Integer.parseInt(tokenizer.nextToken());
+				final Item createditem = ItemTemplate.createItem(itemId);
+				final Item soulShot = player.isMageClass() ? ItemTemplate.createItem(3948) : ItemTemplate.createItem(1463);
+				soulShot.setCount(1000);
+				
 				while (tokenizer.hasMoreTokens())
 				{
-					final int itemId = Integer.parseInt(tokenizer.nextToken());
-					final Item createditem = ItemTemplate.createItem(itemId);
-					final Item soulShot = player.isMageClass() ? ItemTemplate.createItem(3948) : ItemTemplate.createItem(1463);
-					soulShot.setCount(1000);
-					
 					player.addItem("11005_퀘스트_보상", createditem, null, true);
-					player.addItem("11005_퀘스트_보상", soulShot, null, true);
-					player.addItem("11005_퀘스트_보상", 955, 5, null, true);
 					final InventoryUpdate playerIU = new InventoryUpdate();
 					playerIU.addItem(createditem);
 					player.sendInventoryUpdate(playerIU);
@@ -146,6 +144,8 @@ public class Q11005_PerfectLeatherArmor3 extends Quest
 				}
 				else
 				{
+					player.addItem("11005_퀘스트_보상", soulShot, null, true);
+					player.addItem("11005_퀘스트_보상", 955, 5, null, true);
 					addExpAndSp(player, 70000, 3600);
 				}
 				htmltext = "30001-04.html";

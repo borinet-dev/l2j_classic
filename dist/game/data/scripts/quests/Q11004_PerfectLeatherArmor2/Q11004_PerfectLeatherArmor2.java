@@ -117,11 +117,11 @@ public class Q11004_PerfectLeatherArmor2 extends Quest
 					final Item createditem = ItemTemplate.createItem(itemId);
 					
 					player.addItem("11004_퀘스트_보상", createditem, null, true);
-					player.addItem("11004_퀘스트_보상", 956, 5, null, true);
 					final InventoryUpdate playerIU = new InventoryUpdate();
 					playerIU.addItem(createditem);
 					player.sendInventoryUpdate(playerIU);
 				}
+				player.addItem("11004_퀘스트_보상", 956, 5, null, true);
 				addExpAndSp(player, 70000, 3600);
 				qs.exitQuest(false, true);
 				htmltext = "30001-04.html";
