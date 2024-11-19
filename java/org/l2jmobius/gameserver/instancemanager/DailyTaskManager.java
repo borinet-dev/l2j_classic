@@ -779,6 +779,7 @@ public class DailyTaskManager
 			player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
 			player.getAccountVariables().remove("CHUSEOK_ITEM");
 			player.getAccountVariables().remove("MAPLE_ITEM");
+			player.getAccountVariables().remove("문자수집가의선물");
 		}
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
@@ -786,6 +787,7 @@ public class DailyTaskManager
 			statement.executeUpdate("DELETE FROM event_hwid WHERE name = 'CUSTOM_EVENT_BOX';");
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'CUSTOM_EVENT_BOX';");
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'MAPLE_ITEM';");
+			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = '문자수집가의선물';");
 		}
 		catch (Exception e)
 		{
