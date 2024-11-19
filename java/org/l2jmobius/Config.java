@@ -348,7 +348,6 @@ public class Config
 	public static boolean ENABLE_BOTREPORT_SYSTEM;
 	public static boolean ENABLE_CAPTCHA_SYSTEM;
 	public static double CAPTCHA_POPUP_PERCENT;
-	public static int CAPTCHA_POPUP_AGAIN;
 	public static long LAST_EXP_SECONDS;
 	public static long TIME_WAIT_DELAY_MIN;
 	public static long TIME_WAIT_DELAY_MAX;
@@ -1940,7 +1939,6 @@ public class Config
 			ENABLE_BOTREPORT_SYSTEM = Captcha.getBoolean("EnableBotReportButton", false);
 			ENABLE_CAPTCHA_SYSTEM = Captcha.getBoolean("EnableCaptchaSystem", true);
 			CAPTCHA_POPUP_PERCENT = Captcha.getDouble("CaptchaPopupPercent", 0.03);
-			CAPTCHA_POPUP_AGAIN = Captcha.getInt("CaptchaPopupAgain", 3);
 			LAST_EXP_SECONDS = Captcha.getInt("LastExpProtectorSeconds", 60);
 			TIME_WAIT_DELAY_MIN = Captcha.getInt("TimeWaitDelayMinSeconds", 1);
 			TIME_WAIT_DELAY_MAX = Captcha.getInt("TimeWaitDelayMaxSeconds", 10);
