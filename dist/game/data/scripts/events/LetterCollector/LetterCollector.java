@@ -21,13 +21,10 @@ import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
-import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 
 /**
  * Event: Letter Collector
@@ -245,17 +242,8 @@ public class LetterCollector extends LongTimeEvent
 			}
 			case "take_Gift":
 			{
-				int Letter_Gift = player.getAccountVariables().getInt("문자수집가의선물", 0);
-				if (Letter_Gift == 1)
-				{
-					player.sendMessage("오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요.");
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요."));
-				}
-				else
-				{
-					player.getAccountVariables().set("문자수집가의선물", 1);
-					player.addItem("문자 수집가의 선물", 49457, 5, player, true);
-				}
+				player.getAccountVariables().set("문자수집가의선물", 1);
+				player.addItem("문자 수집가의 선물", 49457, 5, player, true);
 				break;
 			}
 			case "borinet":
@@ -468,7 +456,8 @@ public class LetterCollector extends LongTimeEvent
 		}
 		
 		htmlBuilder.append("</tr></table></td></tr></table></center>");
-		if (isWinterActive())
+		int Letter_Gift = player.getAccountVariables().getInt("문자수집가의선물", 0);
+		if (isWinterActive() && (Letter_Gift == 0))
 		{
 			htmlBuilder.append("<br><Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector take_Gift\"><font color=LEVEL>\"겨울이에요. 선물을 주세요!\"</font></Button>");
 		}
