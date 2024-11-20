@@ -361,6 +361,7 @@ import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.EnumIntBitmask;
 import org.l2jmobius.gameserver.util.Util;
+import org.l2jmobius.gameserver.util.CaptchaSystem.CaptchaWindow;
 import org.l2jmobius.gameserver.util.collections.CollectionDatabaseManager;
 import org.l2jmobius.gameserver.util.collections.CollectionHandler;
 
@@ -374,6 +375,7 @@ import smartguard.spi.SmartGuardSPI;
 public class Player extends Playable
 {
 	private final Map<String, Object> quickVars = new ConcurrentHashMap<>();
+	private Future<?> popupDelay;
 	private boolean isOnBoat;
 	
 	// Character Skill SQL String Definitions:
@@ -15511,6 +15513,29 @@ public class Player extends Playable
 	public int getCaptchaAnswerCount()
 	{
 		return captchaAnswerCount;
+	}
+	
+	public void startPopupDelay()
+	{
+		int delay = Rnd.get(5, 10);
+		boolean isCaptchaActive = getQuickVarB("IsCaptchaActive", false);
+		if (isCaptchaActive)
+		{
+			popupDelay = ThreadPool.schedule(() ->
+			{
+				CaptchaWindow.CaptchaWindows(this, getCaptchaAnswerCount());
+				startPopupDelay(); // 다음 팝업 스케줄링
+			}, delay * 1000);
+		}
+	}
+	
+	public void stopPopupDelay()
+	{
+		if (popupDelay != null)
+		{
+			popupDelay.cancel(false); // 현재 실행 중인 작업 취소
+			popupDelay = null; // 상태 초기화
+		}
 	}
 	
 	// 컬렉터 옵션 추가

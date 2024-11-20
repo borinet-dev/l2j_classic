@@ -20,50 +20,19 @@ public class CaptchaHandler
 			return; // 대상이 유효하지 않으면 종료
 		}
 		
-		long lastCaptchaTime = player.getQuickVarL("LastCaptcha");
-		long captchaInterval = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX) * 60000;
-		
-		// Captcha 발동 조건 확인
-		if ((lastCaptchaTime + captchaInterval) > System.currentTimeMillis())
-		{
-			return;
-		}
-		
-		if (!player.getActingPlayer().isInBattle() || !player.isInCombat() || player.getActingPlayer().isSitting() || player.getActingPlayer().isFishing() || player.getActingPlayer().isInStoreMode() || player.isDead() || player.getActingPlayer().isInSiege())
-		{
-			return;
-		}
-		
-		if (player.isInsideZone(ZoneId.PEACE) || player.isInsideZone(ZoneId.PVP) || player.isInsideZone(ZoneId.SIEGE))
-		{
-			return;
-		}
-		
-		if (player.getActingPlayer().getVariables().getBoolean("자동따라가기", false))
-		{
-			return;
-		}
-		
-		if (player.isInInstance())
-		{
-			return;
-		}
-		
-		// AutoCaptcha 추가 조건 확인
-		if (isAuto && !BotReportTable.AutoReport(player))
-		{
-			return;
-		}
-		
 		// 캡챠 설정 로직
 		Runnable setupCaptcha = () ->
 		{
-			player.updateCaptchaCount(0);
-			player.clearCaptcha();
-			player.addQuickVar("IsCaptchaActive", true);
-			player.addQuickVar("LastCaptcha", System.currentTimeMillis());
-			player.setEscDisabled(true);
-			CaptchaWindow.CaptchaWindows(player, 0);
+			if (popupCheck(player, isAuto))
+			{
+				player.updateCaptchaCount(0);
+				player.clearCaptcha();
+				player.addQuickVar("IsCaptchaActive", true);
+				player.addQuickVar("LastCaptcha", System.currentTimeMillis());
+				player.setEscDisabled(true);
+				player.startPopupDelay();
+				CaptchaWindow.CaptchaWindows(player, 0);
+			}
 		};
 		
 		// AutoCaptcha는 랜덤 딜레이 추가
@@ -76,6 +45,51 @@ public class CaptchaHandler
 		{
 			setupCaptcha.run(); // 일반 Captcha는 즉시 실행
 		}
+	}
+	
+	private static boolean popupCheck(Player player, boolean isAuto)
+	{
+		if ((player == null) || !player.isOnline())
+		{
+			return false; // 대상이 유효하지 않으면 종료
+		}
+		
+		long lastCaptchaTime = player.getQuickVarL("LastCaptcha");
+		long captchaInterval = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX) * 60000;
+		
+		// Captcha 발동 조건 확인
+		if ((lastCaptchaTime + captchaInterval) > System.currentTimeMillis())
+		{
+			return false;
+		}
+		
+		if (!player.getActingPlayer().isInBattle() || !player.isInCombat() || player.getActingPlayer().isSitting() || player.getActingPlayer().isFishing() || player.getActingPlayer().isInStoreMode() || player.isDead() || player.getActingPlayer().isInSiege())
+		{
+			return false;
+		}
+		
+		if (player.isInsideZone(ZoneId.PEACE) || player.isInsideZone(ZoneId.PVP) || player.isInsideZone(ZoneId.SIEGE))
+		{
+			return false;
+		}
+		
+		if (player.getActingPlayer().getVariables().getBoolean("자동따라가기", false))
+		{
+			return false;
+		}
+		
+		if (player.isInInstance())
+		{
+			return false;
+		}
+		
+		// AutoCaptcha 추가 조건 확인
+		if (isAuto && !BotReportTable.AutoReport(player))
+		{
+			return false;
+		}
+		
+		return true;
 	}
 	
 	public static void AnswerCaptcha(Player actor)
@@ -130,6 +144,7 @@ public class CaptchaHandler
 			player.sendMessage("틀렸습니다. 순서대로 정확히 입력바랍니다.");
 			player.sendMessage("보안문자 입력 남은 기회: " + name);
 			player.clearCaptcha();
+			player.startPopupDelay();
 			CaptchaWindow.CaptchaWindows(player, 0);
 		}
 	}
@@ -181,6 +196,7 @@ public class CaptchaHandler
 	{
 		CaptchaTimer.getInstance().removeCaptchaTimer(event, player);
 		player.deleteQuickVar("IsCaptchaActive");
+		player.stopPopupDelay();
 		player.setBlockActions(false);
 		player.setInvul(false);
 		player.clearCaptcha();
