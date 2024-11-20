@@ -259,7 +259,7 @@ public class GoldenPig extends AbstractNpcAI
 			}
 			else
 			{
-				if (Rnd.chance(70))
+				if (Rnd.chance(80))
 				{
 					mob.dropItem(player, 41276, 1); // 탈리스만 교환권
 				}

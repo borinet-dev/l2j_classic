@@ -143,7 +143,7 @@ public class EventItem implements IItemHandler
 			}
 			case 41253:
 			{
-				if (Rnd.chance(5))
+				if (Rnd.chance(1))
 				{
 					giveItem(player, "R급 재료상자", 41253, ENCHANT_STONE[Rnd.get(ENCHANT_STONE.length)], 1, true);
 				}
@@ -152,7 +152,7 @@ public class EventItem implements IItemHandler
 					giveItem(player, "R급 재료상자", 41253, R_MATERIAL[Rnd.get(R_MATERIAL.length)], 1, false);
 					
 				}
-				else if (Rnd.chance(40))
+				else if (Rnd.chance(43))
 				{
 					giveItem(player, "R급 재료상자", 41253, ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 3), false);
 				}
