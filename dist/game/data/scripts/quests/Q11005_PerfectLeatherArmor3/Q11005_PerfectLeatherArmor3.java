@@ -112,45 +112,49 @@ public class Q11005_PerfectLeatherArmor3 extends Quest
 				StringTokenizer tokenizer = new StringTokenizer(event, " ");
 				tokenizer.nextToken();
 				
-				final int itemId = Integer.parseInt(tokenizer.nextToken());
-				final Item createditem = ItemTemplate.createItem(itemId);
-				final Item soulShot = player.isMageClass() ? ItemTemplate.createItem(3948) : ItemTemplate.createItem(1463);
-				soulShot.setCount(1000);
-				
 				while (tokenizer.hasMoreTokens())
 				{
+					final int itemId = Integer.parseInt(tokenizer.nextToken());
+					final Item createditem = ItemTemplate.createItem(itemId);
+					final Item soulShot = player.isMageClass() ? ItemTemplate.createItem(3948) : ItemTemplate.createItem(1463);
+					soulShot.setCount(1000);
+					
 					player.addItem("11005_퀘스트_보상", createditem, null, true);
 					final InventoryUpdate playerIU = new InventoryUpdate();
-					playerIU.addItem(createditem);
-					player.sendInventoryUpdate(playerIU);
-				}
-				if (player.getLevel() < 20)
-				{
-					final int level = 20;
-					final long pXp = player.getExp();
-					final long tXp = ExperienceData.getInstance().getExpForLevel(level);
-					if (pXp > tXp)
+					
+					if (player.getLevel() < 20)
 					{
-						player.getStat().setLevel((byte) level);
-						player.removeExpAndSp(pXp - tXp, 0);
+						final int level = 20;
+						final long pXp = player.getExp();
+						final long tXp = ExperienceData.getInstance().getExpForLevel(level);
+						if (pXp > tXp)
+						{
+							player.getStat().setLevel((byte) level);
+							player.removeExpAndSp(pXp - tXp, 0);
+						}
+						else if (pXp < tXp)
+						{
+							player.addExpAndSp(tXp - pXp, 0);
+						}
+						player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
+						player.setCurrentCp(player.getMaxCp());
+						player.broadcastUserInfo();
 					}
-					else if (pXp < tXp)
+					else
 					{
-						player.addExpAndSp(tXp - pXp, 0);
+						addExpAndSp(player, 70000, 3600);
 					}
-					player.setCurrentHpMp(player.getMaxHp(), player.getMaxMp());
-					player.setCurrentCp(player.getMaxCp());
-					player.broadcastUserInfo();
-				}
-				else
-				{
+					
 					player.addItem("11005_퀘스트_보상", soulShot, null, true);
 					player.addItem("11005_퀘스트_보상", 955, 5, null, true);
-					addExpAndSp(player, 70000, 3600);
+					playerIU.addItem(createditem);
+					player.getInventory().equipItem(createditem);
+					player.sendInventoryUpdate(playerIU);
 				}
+				
 				htmltext = "30001-04.html";
-				qs.exitQuest(false, true);
 			}
+			qs.exitQuest(false, true);
 		}
 		return htmltext;
 	}

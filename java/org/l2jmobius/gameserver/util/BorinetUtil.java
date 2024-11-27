@@ -12,6 +12,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +38,7 @@ import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.MailType;
+import org.l2jmobius.gameserver.enums.QuestSound;
 import org.l2jmobius.gameserver.enums.SkillFinishType;
 import org.l2jmobius.gameserver.geoengine.GeoEngine;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
@@ -49,11 +51,15 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
+import org.l2jmobius.gameserver.model.quest.QuestState;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.network.serverpackets.TutorialCloseHtml;
+import org.l2jmobius.gameserver.network.serverpackets.TutorialShowHtml;
+import org.l2jmobius.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import org.l2jmobius.gameserver.taskmanager.auto.AutoItemTaskManager;
 import org.l2jmobius.loginserver.network.LoginClient;
 
@@ -1063,6 +1069,87 @@ public class BorinetUtil
 	public void broadcastMessageToAllPlayers(String message)
 	{
 		Broadcast.toAllOnlinePlayersOnScreen(message);
+	}
+	
+	// 튜토리얼 사망
+	public void teleToDeathPoint(Player player)
+	{
+		String deathLocation = player.getVariables().getString("DeathLocation", null);
+		if ((deathLocation != null) && (isQuestActive(player) && (player.getLevel() < 37) && player.isInsideZone(ZoneId.PEACE)))
+		{
+			// 부활 후 5초 지연 후 퀘스쳔 마크를 표시합니다.
+			ThreadPool.schedule(() ->
+			{
+				Broadcast.toPlayerScreenMessageS(player, "최근 사망한 장소로 이동이 가능합니다. 물음표 아이콘을 클릭하세요!");
+				player.sendPacket(QuestSound.getSound("ItemSound.quest_tutorial"));
+				player.sendPacket(new TutorialShowQuestionMark(3, 0));
+			}, 5000);
+		}
+		else if ((player.getLevel() > 36) || !isQuestActive(player))
+		{
+			player.getVariables().remove("DeathLocation");
+		}
+	}
+	
+	public boolean isQuestActive(Player player)
+	{
+		// 포함할 퀘스트 목록에서 Q00255_Tutorial을 제외
+		List<String> questList = Arrays.asList("Q00401_BorinetNewQuestPart1", "Q00402_BorinetNewQuestPart2", "Q00403_BorinetNewQuestPart3", "Q00404_BorinetNewQuestPart4", "Q11000_MoonKnight", "Q11001_TombsOfAncestors", "Q11002_HelpWithTempleRestoration", "Q11003_PerfectLeatherArmor1", "Q11004_PerfectLeatherArmor2", "Q11005_PerfectLeatherArmor3");
+		
+		// 현재 플레이어가 진행 중인 퀘스트가 있는지 확인
+		return questList.stream().anyMatch(questId ->
+		{
+			QuestState qs = player.getQuestState(questId);
+			return ((qs != null) && qs.isStarted());
+		});
+	}
+	
+	public void checkTeleCond(Player player, boolean html)
+	{
+		if (isQuestActive(player) && (player.getLevel() < 37) && player.isInsideZone(ZoneId.PEACE))
+		{
+			if (html)
+			{
+				player.sendPacket(new TutorialShowHtml(HtmCache.getInstance().getHtm(player, "data/html/guide/tutorial_TeleTo_DeadPoint.htm")));
+			}
+			else
+			{
+				String deathLocationString = player.getVariables().getString("DeathLocation", null);
+				if (deathLocationString != null)
+				{
+					String[] coords = deathLocationString.split(",");
+					int x = Integer.parseInt(coords[0]);
+					int y = Integer.parseInt(coords[1]);
+					int z = Integer.parseInt(coords[2]);
+					Location deathLocation = new Location(x, y, z);
+					player.teleToLocation(deathLocation);
+					player.getVariables().remove("DeathLocation");
+					player.sendPacket(TutorialCloseHtml.STATIC_PACKET);
+					Broadcast.toPlayerScreenMessage(player, "최근 사망한 장소로 이동합니다.");
+				}
+				else
+				{
+					Broadcast.toPlayerScreenMessageS(player, "최근 사망한 좌표가 존재하지 않습니다.");
+				}
+			}
+		}
+		else
+		{
+			if (player.getLevel() > 36)
+			{
+				player.getVariables().remove("DeathLocation");
+				Broadcast.toPlayerScreenMessageS(player, "레벨이 초과하여 사망좌표를 제거합니다.");
+			}
+			else if (!isQuestActive(player))
+			{
+				player.getVariables().remove("DeathLocation");
+				Broadcast.toPlayerScreenMessageS(player, "퀘스트 진행 중이 아니므로 사망좌표를 제거합니다.");
+			}
+			else
+			{
+				Broadcast.toPlayerScreenMessageS(player, "조건에 맞지않아 이동할 수 없습니다.");
+			}
+		}
 	}
 	
 	public static BorinetUtil getInstance()

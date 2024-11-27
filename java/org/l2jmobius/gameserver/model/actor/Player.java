@@ -10468,6 +10468,17 @@ public class Player extends Playable
 		{
 			instance.doRevive(this);
 		}
+		
+		if (getLevel() < 37)
+		{
+			ThreadPool.schedule(() ->
+			{
+				if (!isInsideZone(ZoneId.PEACE))
+				{
+					getVariables().remove("DeathLocation");
+				}
+			}, 5000);
+		}
 	}
 	
 	@Override

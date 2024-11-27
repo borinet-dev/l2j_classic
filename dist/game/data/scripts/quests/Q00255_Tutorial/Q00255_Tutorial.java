@@ -27,6 +27,7 @@ import java.util.logging.Level;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.sql.CharInfoTable;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
@@ -34,6 +35,7 @@ import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.HtmlActionScope;
 import org.l2jmobius.gameserver.enums.Race;
+import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -43,6 +45,8 @@ import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
 import org.l2jmobius.gameserver.model.events.annotations.Id;
 import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
 import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
+import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureDeath;
+import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureTeleported;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBypass;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerItemPickup;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLevelChanged;
@@ -76,6 +80,7 @@ import org.l2jmobius.gameserver.network.serverpackets.TutorialShowHtml;
 import org.l2jmobius.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import org.l2jmobius.gameserver.util.BorinetHtml;
 import org.l2jmobius.gameserver.util.BorinetUtil;
+import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -159,6 +164,7 @@ public class Q00255_Tutorial extends Quest
 	private static final String TUTORIAL_BYPASS = "Quest Q00255_Tutorial ";
 	private static final int QUESTION_MARK_ID_1 = 1;
 	private static final int QUESTION_MARK_ID_2 = 5;
+	private static final int QUESTION_MARK_ID_3 = 3;
 	
 	public Q00255_Tutorial()
 	{
@@ -312,6 +318,11 @@ public class Q00255_Tutorial extends Quest
 				player.clearHtmlActions(HtmlActionScope.TUTORIAL_HTML);
 				break;
 			}
+			case "teleToDeathPoint":
+			{
+				BorinetUtil.getInstance().checkTeleCond(player, false);
+				break;
+			}
 		}
 		if (event.startsWith("setemail"))
 		{
@@ -343,7 +354,7 @@ public class Q00255_Tutorial extends Quest
 			catch (Exception e)
 			{
 				player.sendMessage("계속하기 전에 모든 필드를 채우십시오.");
-				player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "바이칼", "계속하기 전에 모든 필드를 채우십시오."));
+				player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "와썹", "계속하기 전에 모든 필드를 채우십시오."));
 			}
 		}
 		if (event.startsWith("NoChangeName"))
@@ -557,6 +568,11 @@ public class Q00255_Tutorial extends Quest
 					}
 					break;
 				}
+				case QUESTION_MARK_ID_3:
+				{
+					BorinetUtil.getInstance().checkTeleCond(event.getPlayer(), true);
+					break;
+				}
 			}
 		}
 	}
@@ -615,6 +631,9 @@ public class Q00255_Tutorial extends Quest
 			{
 				clanJoin(player);
 			}
+			
+			BorinetUtil.getInstance().teleToDeathPoint(player);
+			
 			return;
 		}
 		
@@ -643,12 +662,12 @@ public class Q00255_Tutorial extends Quest
 		player.sendPacket(new TutorialShowHtml(getHtm(player, html)));
 	}
 	
-	public void playTutorialVoice(Player player, String voice)
+	private void playTutorialVoice(Player player, String voice)
 	{
 		player.sendPacket(new PlaySound(2, voice, 0, 0, player.getX(), player.getY(), player.getZ()));
 	}
 	
-	public void checkEmail(Player player)
+	private void checkEmail(Player player)
 	{
 		if (getEmail(player.getAccountName()) == null)
 		{
@@ -670,7 +689,7 @@ public class Q00255_Tutorial extends Quest
 		}
 	}
 	
-	public String getEmail(String accountName)
+	private String getEmail(String accountName)
 	{
 		if (accountName == null)
 		{
@@ -679,7 +698,7 @@ public class Q00255_Tutorial extends Quest
 		return getAccountValue(accountName);
 	}
 	
-	public static boolean validateEmail(String email, String email2)
+	private static boolean validateEmail(String email, String email2)
 	{
 		
 		if ((email == null) || (email2 == null) || email.isEmpty() || email2.isEmpty())
@@ -697,7 +716,7 @@ public class Q00255_Tutorial extends Quest
 		return false;
 	}
 	
-	public void setEmail(Player player, String email, String confirmEmail)
+	private void setEmail(Player player, String email, String confirmEmail)
 	{
 		if (!validateEmail(email, confirmEmail))
 		{
@@ -728,7 +747,7 @@ public class Q00255_Tutorial extends Quest
 		}
 	}
 	
-	public void insertAccountData(String accountName, String value)
+	private void insertAccountData(String accountName, String value)
 	{
 		String query = "UPDATE accounts SET e_mail = ? WHERE login = ?";
 		
@@ -745,7 +764,7 @@ public class Q00255_Tutorial extends Quest
 		}
 	}
 	
-	public String getAccountValue(String accountName)
+	private String getAccountValue(String accountName)
 	{
 		String data = null;
 		String query = "SELECT e_mail FROM accounts WHERE login=?";
@@ -769,7 +788,7 @@ public class Q00255_Tutorial extends Quest
 		return data;
 	}
 	
-	public void changeName(Player player)
+	private void changeName(Player player)
 	{
 		playTutorialVoice(player, "borinet/CharName");
 		showTutorialHtml(player, "borinet/ChangeName.htm");
@@ -777,12 +796,12 @@ public class Q00255_Tutorial extends Quest
 		player.setBlockActions(true);
 	}
 	
-	public void clanJoin(Player player)
+	private void clanJoin(Player player)
 	{
 		showTutorialHtml(player, "borinet/ClanJoin.htm");
 	}
 	
-	public void setName(Player player, String name)
+	private void setName(Player player, String name)
 	{
 		if (!checkCondition(player, name))
 		{
@@ -793,7 +812,7 @@ public class Q00255_Tutorial extends Quest
 			}
 			player.storeMe();
 			player.sendMessage("캐릭터 이름이 성공적으로 변경되었습니다.");
-			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "바이칼", "캐릭터 이름이 성공적으로 변경되었습니다."));
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "와썹", "캐릭터 이름이 성공적으로 변경되었습니다."));
 			player.broadcastUserInfo();
 			player.decayMe();
 			player.spawnMe(player.getX(), player.getY(), player.getZ());
@@ -818,7 +837,7 @@ public class Q00255_Tutorial extends Quest
 		}
 	}
 	
-	public boolean checkCondition(Player player, String name)
+	private boolean checkCondition(Player player, String name)
 	{
 		if (name.matches(".*[\\uAC00-\\uD7A3]+.*"))
 		{
@@ -866,16 +885,44 @@ public class Q00255_Tutorial extends Quest
 		{
 			showTutorialHtml(player, "borinet/ChangeName.htm");
 			player.sendMessage("저주받은 무기의 이름으로 변경할 수 없습니다.");
-			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "바이칼", "저주받은 무기의 이름으로 변경할 수 없습니다."));
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "와썹", "저주받은 무기의 이름으로 변경할 수 없습니다."));
 			return true;
 		}
 		if (CharInfoTable.getInstance().ObsceneCharName(name))
 		{
 			showTutorialHtml(player, "borinet/ChangeName.htm");
 			player.sendMessage("욕설이 포함된 이름으로 변경할 수 없습니다.");
-			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "바이칼", "욕설이 포함된 이름으로 변경할 수 없습니다."));
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "와썹", "욕설이 포함된 이름으로 변경할 수 없습니다."));
 			return true;
 		}
 		return false;
+	}
+	
+	// 튜토리얼 사망
+	@RegisterEvent(EventType.ON_CREATURE_DEATH)
+	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
+	public void onPlayerDeath(OnCreatureDeath event)
+	{
+		Player player = (Player) event.getTarget();
+		// 퀘스트가 진행 중일 때만 사망 좌표를 저장
+		if (BorinetUtil.getInstance().isQuestActive(player) && (player.getLevel() < 37))
+		{
+			// 사망 좌표 저장 (문자열로 저장)
+			Location deathLocation = player.getLocation();
+			String deathLocationString = deathLocation.getX() + "," + deathLocation.getY() + "," + deathLocation.getZ();
+			player.getVariables().set("DeathLocation", deathLocationString);
+			Broadcast.toPlayerScreenMessageS(player, "튜토리얼 퀘스트 진행 중 사망하여 부활 후 사망장소로 이동이 가능합니다.");
+		}
+	}
+	
+	@RegisterEvent(EventType.ON_CREATURE_TELEPORTED)
+	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
+	public void onCreatureTeleported(OnCreatureTeleported event)
+	{
+		Player player = (Player) event.getCreature();
+		ThreadPool.schedule(() ->
+		{
+			BorinetUtil.getInstance().teleToDeathPoint(player);
+		}, 5000);
 	}
 }
