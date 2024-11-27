@@ -19,6 +19,7 @@ package ai.bosses.Antharas;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.CommonUtil;
@@ -255,15 +256,18 @@ public class Antharas extends AbstractNpcAI
 						}
 						else
 						{
-							if (EnterRaidCheck.ConditionCheck(player, isInCC))
+							if (EnterRaidCheck.ConditionCheck(player, isInCC, members))
 							{
 								for (Player member : members)
 								{
 									member.teleToLocation(179700 + getRandom(700), 113800 + getRandom(2100), -7709);
 									member.sendMessage("안타라스의 둥지로 이동하였습니다.");
 									member.sendMessage(Config.ANTHARAS_WAIT_TIME + "분 후 안타라스가 나타납니다!");
-									Broadcast.toAllOnlinePlayersOnScreen(member.getCommandChannel().getLeader().getName() + "님의 연합파티가 안타라스 레이드 존으로 이동하였습니다.");
 								}
+								
+								String leaderName = isInCC ? party.getCommandChannel().getLeader().getName() : party.getLeader().getName();
+								String memberNames = members.stream().map(Player::getName).collect(Collectors.joining(";"));
+								EnterRaidCheck.enterMessage(player, isInCC, "안타라스", leaderName, memberNames, false);
 							}
 							if (getStatus() != IN_FIGHT)
 							{

@@ -3,6 +3,7 @@ package handlers.voicedcommandhandlers;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.Rnd;
@@ -112,6 +113,7 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 			final boolean isInCC = party.isInCommandChannel();
 			final List<Player> members = isInCC ? party.getCommandChannel().getMembers() : party.getMembers();
 			final boolean isPartyLeader = party.isLeader(player);
+			
 			if (!isInCC)
 			{
 				if (!isPartyLeader)
@@ -151,17 +153,18 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 					}
 					break;
 			}
-			teleport(player, bossId, korName, isInCC);
+			
+			String leaderName = isInCC ? party.getCommandChannel().getLeader().getName() : party.getLeader().getName();
+			teleport(player, bossId, korName, isInCC, leaderName, members);
 		}
 		return htmltext;
 	}
 	
-	public void teleport(Player player, int bossId, String korName, boolean CC)
+	public void teleport(Player player, int bossId, String korName, boolean CC, String leaderName, List<Player> members)
 	{
 		Location TELEPORT_IN_LOC = bossId == 29001 ? new Location(-21583, 180554, -5816) : bossId == 29014 ? new Location(54050, 18435, -5376) : new Location(16698, 111837, -6576);
-		final Party party = player.getParty();
-		final List<Player> members = CC ? party.getCommandChannel().getMembers() : party.getMembers();
-		if (EnterRaidCheck.ConditionCheck(player, CC))
+		
+		if (EnterRaidCheck.ConditionCheck(player, CC, members))
 		{
 			for (Player member : members)
 			{
@@ -171,8 +174,10 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 				}
 				member.teleToLocation(TELEPORT_IN_LOC);
 				member.sendMessage(korName + " 레이드 존으로 이동하였습니다.");
-				Broadcast.toAllOnlinePlayersOnScreen(party.getLeader().getName() + "님의 파티가 " + korName + " 레이드 존으로 이동하였습니다.");
 			}
+			
+			String memberNames = members.stream().map(Player::getName).collect(Collectors.joining(";"));
+			EnterRaidCheck.enterMessage(player, CC, korName, leaderName, memberNames, false);
 		}
 	}
 	

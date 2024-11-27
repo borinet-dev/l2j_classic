@@ -1,6 +1,7 @@
 package ai.bosses.Zaken;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.CommonUtil;
@@ -181,14 +182,17 @@ public class Zaken extends AbstractNpcAI
 					}
 					else
 					{
-						if (EnterRaidCheck.ConditionCheck(player, isInCC))
+						if (EnterRaidCheck.ConditionCheck(player, isInCC, members))
 						{
 							for (Player member : members)
 							{
 								member.teleToLocation(TELEPORT_IN_LOC);
 								member.sendMessage("자켄 레이드 존으로 이동하였습니다.");
-								Broadcast.toAllOnlinePlayersOnScreen(party.getLeader().getName() + "님의 파티가 자켄 레이드 존으로 이동하였습니다.");
 							}
+							
+							String leaderName = isInCC ? party.getCommandChannel().getLeader().getName() : party.getLeader().getName();
+							String memberNames = members.stream().map(Player::getName).collect(Collectors.joining(";"));
+							EnterRaidCheck.enterMessage(player, isInCC, "자켄", leaderName, memberNames, false);
 						}
 						if (getStatus() != IN_FIGHT)
 						{

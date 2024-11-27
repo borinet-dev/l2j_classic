@@ -1,6 +1,7 @@
 package ai.bosses.Lilith;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.CommonUtil;
@@ -181,14 +182,17 @@ public class Lilith extends AbstractNpcAI
 					}
 					else
 					{
-						if (EnterRaidCheck.ConditionCheck(player, isInCC))
+						if (EnterRaidCheck.ConditionCheck(player, isInCC, members))
 						{
 							for (Player member : members)
 							{
 								member.teleToLocation(TELEPORT_IN_LOC);
 								member.sendMessage("릴리스의 성소로 이동하였습니다.");
-								Broadcast.toAllOnlinePlayersOnScreen(party.getLeader().getName() + "님의 파티가 릴리스의 성소로 이동하였습니다.");
 							}
+							
+							String leaderName = isInCC ? party.getCommandChannel().getLeader().getName() : party.getLeader().getName();
+							String memberNames = members.stream().map(Player::getName).collect(Collectors.joining(";"));
+							EnterRaidCheck.enterMessage(player, isInCC, "릴리스", leaderName, memberNames, true);
 						}
 						if (getStatus() != IN_FIGHT)
 						{
