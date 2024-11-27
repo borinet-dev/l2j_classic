@@ -1,5 +1,13 @@
 package ai.others;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
+
+import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.Location;
@@ -14,6 +22,14 @@ import ai.AbstractNpcAI;
 
 public class TurekOrcs extends AbstractNpcAI
 {
+	private static boolean enabled = false;
+	
+	// 타이머를 관리하는 스레드 풀
+	private final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+	
+	// NPC별 타이머 관리
+	private final Map<Npc, ScheduledFuture<?>> npcTimers = new ConcurrentHashMap<>();
+	
 	// NPCs
 	private static final int[] MOBS =
 	{
@@ -27,97 +43,118 @@ public class TurekOrcs extends AbstractNpcAI
 		20497, // 투렉 오크 돌격병
 		20498, // 투렉 오크 보급병
 		20499, // 투렉 오크 보병
-		20500 // 투렉 오크 보초병
+		20500, // 투렉 오크 보초병
+		20501 // 투렉 오크 보초병
 	};
 	
 	private TurekOrcs()
 	{
+		clearAllTimers();
 		addAttackId(MOBS);
-		addEventReceivedId(MOBS);
 		addMoveFinishedId(MOBS);
 	}
 	
-	@Override
-	public String onAdvEvent(String event, Npc npc, Player player)
+	// 타이머 시작
+	private void startNpcTimer(Npc npc, Runnable task, long delay)
 	{
-		if (event.equalsIgnoreCase("checkState") && !npc.isDead() && (npc.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK))
+		cancelNpcTimer(npc); // 기존 타이머 취소
+		ScheduledFuture<?> timer = scheduler.schedule(task, delay, TimeUnit.MILLISECONDS);
+		npcTimers.put(npc, timer);
+	}
+	
+	// 타이머 취소
+	private void cancelNpcTimer(Npc npc)
+	{
+		ScheduledFuture<?> timer = npcTimers.remove(npc);
+		if (timer != null)
 		{
-			if ((npc.getCurrentHp() > (npc.getMaxHp() * 0.7)) && (npc.getVariables().getInt("state") == 2))
-			{
-				npc.getVariables().set("state", 3);
-				((Attackable) npc).returnHome();
-			}
-			else
-			{
-				npc.getVariables().remove("state");
-			}
+			timer.cancel(false);
 		}
-		return super.onAdvEvent(event, npc, player);
+	}
+	
+	// 모든 타이머 취소
+	private void clearAllTimers()
+	{
+		npcTimers.values().forEach(timer -> timer.cancel(false));
+		npcTimers.clear();
+		enabled = false;
 	}
 	
 	@Override
 	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
 	{
-		if (!npc.getVariables().hasVariable("isHit"))
+		if ((npc.getCurrentHp() < (npc.getMaxHp() * 0.4)) && (npc.getCurrentHp() > (npc.getMaxHp() * 0.1)) && (npc.getVariables().getInt("state") < 1) && (getRandom(100) < 2))
 		{
-			npc.getVariables().set("isHit", 1);
+			if (!enabled)
+			{
+				// 도망 좌표 계산, 변수 저장
+				npc.getVariables().set("fleeX", npc.getX() + Rnd.get(-800, -500));
+				npc.getVariables().set("fleeY", npc.getY() + Rnd.get(700, 1200));
+				npc.getVariables().set("fleeZ", npc.getZ() + Rnd.get(100, 150));
+				
+				// 상태 정보 저장
+				npc.getVariables().set("state", 1);
+				npc.getVariables().set("attacker", attacker.getObjectId());
+				
+				// 도망 동작 수행
+				enabled = true;
+				npc.broadcastSay(ChatType.GENERAL, NpcStringId.getNpcStringId(getRandom(1000007, 1000027)));
+				// npc.disableCoreAI(true); // 공격 행동 방지
+				// npc.setTarget(null); // NPC 타겟 초기화
+				((Attackable) npc).clearAggroList(); // 증오 목록 초기화
+				npc.setRunning();
+				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(npc.getVariables().getInt("fleeX"), npc.getVariables().getInt("fleeY"), npc.getVariables().getInt("fleeZ")));
+			}
 		}
-		else if ((npc.getCurrentHp() > (npc.getMaxHp() * 0.3)) && (attacker.getCurrentHp() > (attacker.getMaxHp() * 0.25)) && (npc.getVariables().getInt("state") == 0) && (getRandom(100) < 25))
+		else if (npc.getVariables().getInt("state") >= 1)
 		{
-			int fleeX = npc.getX() + 1000;
-			int fleeY = npc.getY() + 1000;
-			int fleeZ = npc.getZ() + 100;
-			
-			npc.getVariables().set("fleeX", fleeX);
-			npc.getVariables().set("fleeY", fleeY);
-			npc.getVariables().set("fleeZ", fleeZ);
-			
-			// Say and flee
-			npc.broadcastSay(ChatType.GENERAL, NpcStringId.getNpcStringId(getRandom(1000007, 1000027)));
-			npc.disableCoreAI(true); // to avoid attacking behaviour, while flee
-			npc.setRunning();
-			npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(fleeX, fleeY, fleeZ));
-			npc.getVariables().set("state", 1);
-			npc.getVariables().set("attacker", attacker.getObjectId());
+			npc.disableCoreAI(false);
+			cancelNpcTimer(npc); // 기존 타이머 취소
+			enabled = false;
 		}
 		return super.onAttack(npc, attacker, damage, isSummon);
 	}
 	
 	@Override
-	public String onEventReceived(String eventName, Npc sender, Npc receiver, WorldObject reference)
-	{
-		if (eventName.equals("WARNING") && !receiver.isDead() && (receiver.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK) && (reference != null) && (reference.getActingPlayer() != null) && !reference.getActingPlayer().isDead())
-		{
-			receiver.getVariables().set("state", 3);
-			receiver.setRunning();
-			((Attackable) receiver).addDamageHate(reference.getActingPlayer(), 0, 99999);
-			receiver.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, reference.getActingPlayer());
-		}
-		return super.onEventReceived(eventName, sender, receiver, reference);
-	}
-	
-	@Override
 	public void onMoveFinished(Npc npc)
 	{
-		// NPC reaches flee point
+		npc.disableCoreAI(false);
 		if (npc.getVariables().getInt("state") == 1)
 		{
-			if ((npc.getX() == npc.getVariables().getInt("fleeX")) && (npc.getY() == npc.getVariables().getInt("fleeY")))
+			startNpcTimer(npc, () ->
 			{
-				npc.disableCoreAI(false);
-				startQuestTimer("checkState", 15000, npc, null);
 				npc.getVariables().set("state", 2);
-				npc.broadcastEvent("WARNING", 400, World.getInstance().getPlayer(npc.getVariables().getInt("attacker")));
-			}
-			else
-			{
-				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(npc.getVariables().getInt("fleeX"), npc.getVariables().getInt("fleeY"), npc.getVariables().getInt("fleeZ")));
-			}
+				npc.setCurrentHp(npc.getStat().getMaxHp(), true);
+				((Attackable) npc).returnHome();
+			}, 3000);
 		}
-		else if ((npc.getVariables().getInt("state") == 3) && npc.staysInSpawnLoc())
+		else if (npc.getVariables().getInt("state") == 2)
 		{
-			npc.disableCoreAI(false);
+			enabled = false;
+			cancelNpcTimer(npc); // 기존 타이머 취소
 			npc.getVariables().remove("state");
+			
+			String[] npcSayings =
+			{
+				"복수의 시간이다!",
+				"내가 도망간 줄 알았냐?",
+				"나비처럼 날아서 벌처럼 쏴주마~",
+				"거기 딱 대기! 대기!",
+				"으하하하!",
+				"도망간건 추진력을 얻기위함 이었지!!",
+				"이번엔 내가 이긴다!!"
+			};
+			String selectedSaying = npcSayings[Rnd.get(0, npcSayings.length - 1)];
+			npc.broadcastSay(ChatType.GENERAL, selectedSaying);
+			
+			// 주변 플레이어 중 최근에 자신을 공격한 대상 찾기
+			WorldObject attacker = World.getInstance().getPlayer(npc.getVariables().getInt("attacker"));
+			if ((attacker instanceof Player) && !((Player) attacker).isDead())
+			{
+				Attackable attackable = (Attackable) npc;
+				attackable.addDamageHate((Player) attacker, 0, 99999); // 강한 증오 설정
+				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, (Player) attacker);
+			}
 		}
 	}
 	
