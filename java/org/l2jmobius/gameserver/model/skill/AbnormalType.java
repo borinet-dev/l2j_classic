@@ -582,6 +582,7 @@ public enum AbnormalType
 	FIVE_COLOR_RICE(-1),
 	FIVE_COLOR_SONGPYEON(-1),
 	FULL_MOON(-1),
+	LETTER_COLLECTOR_GIFT(-1),
 	PROVOKE(-1);
 	
 	private int _clientId;
