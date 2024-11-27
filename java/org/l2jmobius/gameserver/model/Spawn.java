@@ -29,7 +29,6 @@ import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.NpcData;
 import org.l2jmobius.gameserver.geoengine.GeoEngine;
 import org.l2jmobius.gameserver.instancemanager.WalkingManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.instance.GrandBoss;
 import org.l2jmobius.gameserver.model.actor.instance.Monster;
@@ -39,7 +38,6 @@ import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
 import org.l2jmobius.gameserver.model.interfaces.INamable;
 import org.l2jmobius.gameserver.model.spawns.NpcSpawnTemplate;
-import org.l2jmobius.gameserver.model.zone.type.WaterZone;
 import org.l2jmobius.gameserver.taskmanager.RespawnTaskManager;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Util;
@@ -406,7 +404,7 @@ public class Spawn extends Location implements IIdentifiable, INamable
 		}
 		
 		// Check if npc is in water.
-		final WaterZone water = ZoneManager.getInstance().getZone(newlocx, newlocy, newlocz, WaterZone.class);
+		// final WaterZone water = ZoneManager.getInstance().getZone(newlocx, newlocy, newlocz, WaterZone.class);
 		
 		// 일반 NPC를 구분하기 위한 조건을 추가합니다.
 		boolean isRandomSpawn = true;
@@ -428,7 +426,7 @@ public class Spawn extends Location implements IIdentifiable, INamable
 			isRandomSpawn = false;
 		}
 		
-		if (isRandomSpawn && Config.ENABLE_RANDOM_MONSTER_SPAWNS && (getHeading() != -1) && npc.isMonster() && (getInstanceId() == 0) && (water == null))
+		if (isRandomSpawn && Config.ENABLE_RANDOM_MONSTER_SPAWNS && (getHeading() != -1) && npc.isMonster() && (getInstanceId() == 0))
 		{
 			// 몬스터의 Z 위치 보정
 			// Do not correct Z distances greater than 300.
@@ -451,7 +449,7 @@ public class Spawn extends Location implements IIdentifiable, INamable
 		}
 		
 		// If random spawn system is enabled.
-		if (!Config.ENABLE_RANDOM_MONSTER_SPAWNS && npc.isMonster() && !npc.isQuestMonster() && !WalkingManager.getInstance().isTargeted(npc) && (getInstanceId() == 0) && !getTemplate().isUndying() && !npc.isRaid() && !npc.isRaidMinion() && !npc.isFlying() && (water == null) && !Config.MOBS_LIST_NOT_RANDOM.contains(npc.getId()))
+		if (!Config.ENABLE_RANDOM_MONSTER_SPAWNS && npc.isMonster() && !npc.isQuestMonster() && !WalkingManager.getInstance().isTargeted(npc) && (getInstanceId() == 0) && !getTemplate().isUndying() && !npc.isRaid() && !npc.isRaidMinion() && !npc.isFlying() && !Config.MOBS_LIST_NOT_RANDOM.contains(npc.getId()))
 		{
 			final int randX = newlocx + Rnd.get(Config.MOB_MIN_SPAWN_RANGE, Config.MOB_MAX_SPAWN_RANGE);
 			final int randY = newlocy + Rnd.get(Config.MOB_MIN_SPAWN_RANGE, Config.MOB_MAX_SPAWN_RANGE);
@@ -505,7 +503,15 @@ public class Spawn extends Location implements IIdentifiable, INamable
 		npc.setSpawn(this);
 		
 		// Spawn NPC
-		npc.spawnMe(newlocx, newlocy, newlocz);
+		if (npc.isMonster() && !npc.isQuestMonster() && !WalkingManager.getInstance().isTargeted(npc) && (getInstanceId() == 0) && !npc.isRaid() && !npc.isRaidMinion() && !npc.isFlying())
+		{
+			// Correct Z of monsters.
+			npc.spawnMe(newlocx, newlocy, newlocz + 100);
+		}
+		else
+		{
+			npc.spawnMe(newlocx, newlocy, newlocz);
+		}
 		
 		// Make sure info is broadcasted in instances
 		if (npc.getInstanceId() > 0)

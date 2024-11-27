@@ -130,6 +130,7 @@ public class AdminAdmin implements IAdminCommandHandler
 				target.clearCaptcha();
 				target.addQuickVar("LastCaptcha", System.currentTimeMillis());
 				target.setEscDisabled(true);
+				target.startPopupDelay();
 				CaptchaWindow.CaptchaWindows(target, 0);
 			}
 			else
