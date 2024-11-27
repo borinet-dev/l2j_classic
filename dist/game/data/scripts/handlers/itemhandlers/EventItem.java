@@ -143,20 +143,21 @@ public class EventItem implements IItemHandler
 			}
 			case 41253:
 			{
-				if (Rnd.chance(1))
+				double randomValue = Rnd.get(100.0); // 0.0부터 100.0까지의 무작위 값
+				if (randomValue < 0.8)
 				{
 					giveItem(player, "R급 재료상자", 41253, ENCHANT_STONE[Rnd.get(ENCHANT_STONE.length)], 1, true);
 				}
-				else if (Rnd.chance(10))
+				else if (randomValue < 10.8) // 10% 확률 (0.8 + 10)
 				{
 					giveItem(player, "R급 재료상자", 41253, R_MATERIAL[Rnd.get(R_MATERIAL.length)], 1, false);
 					
 				}
-				else if (Rnd.chance(43))
+				else if (randomValue < 53.8) // 43% 확률 (0.8 + 10 + 43)
 				{
 					giveItem(player, "R급 재료상자", 41253, ETC_MATERIAL[Rnd.get(ETC_MATERIAL.length)], Rnd.get(1, 3), false);
 				}
-				else
+				else // 나머지 46.2% 확률
 				{
 					player.destroyItemByItemId("R급 재료상자", 41253, 1, player, true);
 					player.sendMessage("꽝! 다음 기회에...");

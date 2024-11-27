@@ -214,24 +214,24 @@ public class MithrilMine extends AbstractNpcAI
 	{
 		double randomValue = Rnd.get(100.0); // 0.0부터 100.0까지의 무작위 값
 		
-		if (randomValue < 48.5) // 48.5% 확률
+		if (randomValue < 33.0) // 33% 확률
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerMineMania(player), player);
 			player.doAutoLoot((Attackable) npc, 41253, Rnd.get(1, 1));
 		}
-		else if (randomValue < 81.5) // 33% 확률 (48.5 + 33)
+		else if (randomValue < 78.0) // 45% 확률 (33.0 + 45)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_1[Rnd.get(ITEM_DROP_1.length)], Rnd.get(1, 10));
 		}
-		else if (randomValue < 98.5) // 17% 확률 (81.5 + 17)
+		else if (randomValue < 97.0) // 19% 확률 (78.0 + 19)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_2[Rnd.get(ITEM_DROP_2.length)], Rnd.get(1, 5));
 		}
-		else if (randomValue < 99.5) // 1% 확률 (98.5 + 1)
+		else if (randomValue < 99.0) // 2% 확률 (97.0 + 2)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_아포칼립스조각[Rnd.get(ITEM_DROP_아포칼립스조각.length)], Rnd.get(1, 1));
 		}
-		else // 0.5% 확률
+		else // 나머지 (1%)
 		{
 			player.doAutoLoot((Attackable) npc, ITEM_DROP_최상급[Rnd.get(ITEM_DROP_최상급.length)], Rnd.get(1, 1));
 		}
