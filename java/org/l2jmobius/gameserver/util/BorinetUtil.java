@@ -1074,21 +1074,17 @@ public class BorinetUtil
 	// 튜토리얼 사망
 	public void teleToDeathPoint(Player player)
 	{
-		String deathLocation = player.getVariables().getString("DeathLocation", null);
-		if ((deathLocation != null) && (isQuestActive(player) && (player.getLevel() < 37) && player.isInsideZone(ZoneId.PEACE)))
+		// 부활 후 5초 지연 후 퀘스쳔 마크를 표시합니다.
+		ThreadPool.schedule(() ->
 		{
-			// 부활 후 5초 지연 후 퀘스쳔 마크를 표시합니다.
-			ThreadPool.schedule(() ->
+			if ((player.getLevel() < 37) && player.isInsideZone(ZoneId.PEACE))
 			{
-				Broadcast.toPlayerScreenMessageS(player, "최근 사망한 장소로 이동이 가능합니다. 물음표 아이콘을 클릭하세요!");
+				player.sendMessage("튜토리얼 퀘스트 진행 중 사망하여 부활 후 사망장소로 이동이 가능합니다.");
+				Broadcast.toPlayerScreenMessage(player, "최근 사망한 장소로 이동이 가능합니다. 물음표 아이콘을 클릭하세요!");
 				player.sendPacket(QuestSound.getSound("ItemSound.quest_tutorial"));
 				player.sendPacket(new TutorialShowQuestionMark(3, 0));
-			}, 5000);
-		}
-		else if ((player.getLevel() > 36) || !isQuestActive(player))
-		{
-			player.getVariables().remove("DeathLocation");
-		}
+			}
+		}, 5000);
 	}
 	
 	public boolean isQuestActive(Player player)
@@ -1129,8 +1125,10 @@ public class BorinetUtil
 				}
 				else
 				{
+					player.sendPacket(TutorialCloseHtml.STATIC_PACKET);
 					Broadcast.toPlayerScreenMessageS(player, "최근 사망한 좌표가 존재하지 않습니다.");
 				}
+				return;
 			}
 		}
 		else

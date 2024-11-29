@@ -27,7 +27,6 @@ import java.util.logging.Level;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.sql.CharInfoTable;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
@@ -80,7 +79,6 @@ import org.l2jmobius.gameserver.network.serverpackets.TutorialShowHtml;
 import org.l2jmobius.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import org.l2jmobius.gameserver.util.BorinetHtml;
 import org.l2jmobius.gameserver.util.BorinetUtil;
-import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -632,7 +630,11 @@ public class Q00255_Tutorial extends Quest
 				clanJoin(player);
 			}
 			
-			BorinetUtil.getInstance().teleToDeathPoint(player);
+			String deathLocation = player.getVariables().getString("DeathLocation", null);
+			if (deathLocation != null)
+			{
+				BorinetUtil.getInstance().teleToDeathPoint(player);
+			}
 			
 			return;
 		}
@@ -907,11 +909,9 @@ public class Q00255_Tutorial extends Quest
 		// 퀘스트가 진행 중일 때만 사망 좌표를 저장
 		if (BorinetUtil.getInstance().isQuestActive(player) && (player.getLevel() < 37))
 		{
-			// 사망 좌표 저장 (문자열로 저장)
 			Location deathLocation = player.getLocation();
 			String deathLocationString = deathLocation.getX() + "," + deathLocation.getY() + "," + deathLocation.getZ();
 			player.getVariables().set("DeathLocation", deathLocationString);
-			Broadcast.toPlayerScreenMessageS(player, "튜토리얼 퀘스트 진행 중 사망하여 부활 후 사망장소로 이동이 가능합니다.");
 		}
 	}
 	
@@ -920,9 +920,10 @@ public class Q00255_Tutorial extends Quest
 	public void onCreatureTeleported(OnCreatureTeleported event)
 	{
 		Player player = (Player) event.getCreature();
-		ThreadPool.schedule(() ->
+		String deathLocation = player.getVariables().getString("DeathLocation", null);
+		if (deathLocation != null)
 		{
 			BorinetUtil.getInstance().teleToDeathPoint(player);
-		}, 5000);
+		}
 	}
 }

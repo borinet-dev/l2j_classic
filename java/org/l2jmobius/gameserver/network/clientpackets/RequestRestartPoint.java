@@ -254,6 +254,8 @@ public class RequestRestartPoint implements IClientIncomingPacket
 				}
 				if (player.isGM() || player.destroyItemByItemId("Feather", 10649, 1, player, false) || player.destroyItemByItemId("Feather", 13300, 1, player, false) || player.destroyItemByItemId("Feather", 13128, 1, player, false))
 				{
+					// 사망 좌표 제거.
+					player.getVariables().remove("DeathLocation");
 					player.doRevive(100.00);
 				}
 				else

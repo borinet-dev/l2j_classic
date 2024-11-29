@@ -5450,6 +5450,10 @@ public class Player extends Playable
 	 */
 	public void calculateDeathExpPenalty(Creature killer)
 	{
+		if (BorinetUtil.getInstance().isQuestActive(this))
+		{
+			return;
+		}
 		final int lvl = getLevel();
 		double percentLost = PlayerXpPercentLostData.getInstance().getXpPercent(getLevel());
 		if (killer != null)
@@ -10468,17 +10472,6 @@ public class Player extends Playable
 		{
 			instance.doRevive(this);
 		}
-		
-		if (getLevel() < 37)
-		{
-			ThreadPool.schedule(() ->
-			{
-				if (!isInsideZone(ZoneId.PEACE))
-				{
-					getVariables().remove("DeathLocation");
-				}
-			}, 5000);
-		}
 	}
 	
 	@Override
@@ -10542,6 +10535,9 @@ public class Player extends Playable
 		{
 			return;
 		}
+		
+		// 사망 좌표 제거.
+		getVariables().remove("DeathLocation");
 		
 		if (answer == 1)
 		{
