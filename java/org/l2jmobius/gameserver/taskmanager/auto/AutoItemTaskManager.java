@@ -48,7 +48,8 @@ public class AutoItemTaskManager implements Runnable
 			}
 			
 			final boolean isInPeaceZone = player.isInsideZone(ZoneId.PEACE) || player.isInsideZone(ZoneId.SAYUNE);
-			if (isInPeaceZone)
+			boolean teleporting = player.getQuickVarB("isTeleporting", false);
+			if (isInPeaceZone || teleporting)
 			{
 				continue AUTO_ITEM;
 			}

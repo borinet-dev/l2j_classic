@@ -5,15 +5,23 @@ import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.SkillFinishType;
 import org.l2jmobius.gameserver.handler.IVoicedCommandHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
+import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
+import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureTeleport;
+import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureTeleported;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.taskmanager.auto.AutoItemTaskManager;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 
+import ai.AbstractNpcAI;
+
 /**
  * @author 보리넷 가츠
  */
-public class AutoUseItem implements IVoicedCommandHandler
+public class AutoUseItem extends AbstractNpcAI implements IVoicedCommandHandler
 {
 	private static final String[] VOICED_COMMANDS =
 	{
@@ -168,6 +176,23 @@ public class AutoUseItem implements IVoicedCommandHandler
 			AutoItemTaskManager.getInstance().showHtml(activeChar, activeChar.getVariables().getInt("자동아이템_페이지", 0));
 		}
 		return true;
+	}
+	
+	// 자동 아이템 변수
+	@RegisterEvent(EventType.ON_CREATURE_TELEPORT)
+	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
+	public void onCreatureTeleported(OnCreatureTeleport event)
+	{
+		Player player = (Player) event.getCreature();
+		player.addQuickVar("isTeleporting", true);
+	}
+	
+	@RegisterEvent(EventType.ON_CREATURE_TELEPORTED)
+	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
+	public void onCreatureTeleported(OnCreatureTeleported event)
+	{
+		Player player = (Player) event.getCreature();
+		player.deleteQuickVar("isTeleporting");
 	}
 	
 	@Override
