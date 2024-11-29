@@ -158,6 +158,7 @@ public class Config
 	public static ServerMode SERVER_MODE = ServerMode.NONE;
 	
 	/** 보리넷 커스텀 **/
+	public static boolean ENABLE_REAL_EXP_SP_SYSTEM;
 	public static boolean ENABLE_NEWBIE_GIFT;
 	public static String NEWBIE_GIFT;
 	public static int CAN_TELEPORT_LEVEL;
@@ -1963,6 +1964,7 @@ public class Config
 			
 			// Load Attendance config file (if exists)
 			final PropertiesParser borinetConfig = new PropertiesParser(BORINET_CONFIG_FILE);
+			ENABLE_REAL_EXP_SP_SYSTEM = borinetConfig.getBoolean("RealExpSpSystemEnabled", false);
 			ENABLE_NEWBIE_GIFT = borinetConfig.getBoolean("EnableNewbieGift", true);
 			NEWBIE_GIFT = borinetConfig.getString("NewbieGift", "");
 			CAN_TELEPORT_LEVEL = borinetConfig.getInt("CanTeleprtLevel", 1);

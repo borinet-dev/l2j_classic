@@ -182,32 +182,42 @@ public class PlayerStat extends PlayableStat
 		final long finalSp = Math.round(addToSp);
 		final boolean expAdded = addExp(finalExp);
 		final boolean spAdded = addSp(finalSp);
-		SystemMessage sm = null;
-		if (!expAdded && spAdded)
+		
+		if ((finalExp > 0) || (finalSp > 0))
 		{
-			sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
-			sm.addLong(0);
-			sm.addLong(Math.round(0));
-			sm.addLong(finalSp);
-			sm.addLong(Math.round(addToSp - baseSp));
+			SystemMessage sm = null;
+			if (((addToExp - baseExp) < 1) && ((addToSp - baseSp) < 1))
+			{
+				sm = new SystemMessage(SystemMessageId.YOU_HAVE_EARNED_S1_XP_AND_S2_SP);
+				sm.addLong(finalExp);
+				sm.addLong(finalSp);
+			}
+			else if (!expAdded && spAdded)
+			{
+				sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
+				sm.addLong(0);
+				sm.addLong(Math.round(0));
+				sm.addLong(finalSp);
+				sm.addLong(Math.round(addToSp - baseSp));
+			}
+			else if (expAdded && !spAdded)
+			{
+				sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
+				sm.addLong(finalExp);
+				sm.addLong(Math.round(addToExp - baseExp));
+				sm.addLong(0);
+				sm.addLong(Math.round(0));
+			}
+			else
+			{
+				sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
+				sm.addLong(finalExp);
+				sm.addLong(Math.round(addToExp - baseExp));
+				sm.addLong(finalSp);
+				sm.addLong(Math.round(addToSp - baseSp));
+			}
+			player.sendPacket(sm);
 		}
-		else if (expAdded && !spAdded)
-		{
-			sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
-			sm.addLong(finalExp);
-			sm.addLong(Math.round(addToExp - baseExp));
-			sm.addLong(0);
-			sm.addLong(Math.round(0));
-		}
-		else
-		{
-			sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_XP_BONUS_S2_AND_S3_SP_BONUS_S4);
-			sm.addLong(finalExp);
-			sm.addLong(Math.round(addToExp - baseExp));
-			sm.addLong(finalSp);
-			sm.addLong(Math.round(addToSp - baseSp));
-		}
-		player.sendPacket(sm);
 		
 		if (Config.ENABLE_CAPTCHA_SYSTEM && (Rnd.chance(Config.CAPTCHA_POPUP_PERCENT)))
 		{
@@ -622,65 +632,73 @@ public class PlayerStat extends PlayableStat
 	
 	public double getExpBonusMultiplier()
 	{
-		double bonus = 1.0;
-		double vitality = 1.0;
-		double bonusExp = 1.0;
-		int point = 0;
-		
-		// Bonus from Vitality System
-		vitality = getVitalityExpBonus();
-		point = getVitalityPoints();
-		
-		// Bonus exp from skills
-		bonusExp = 1 + (getValue(Stat.BONUS_EXP, 0) / 100);
-		if (point > 0)
-		{
-			bonus += (vitality - 1);
-		}
-		
-		if (bonusExp > 1)
-		{
-			bonus += bonusExp;
-		}
-		
-		// Check for abnormal bonuses
-		bonus = Math.max(bonus, 1);
-		if (Config.MAX_BONUS_EXP > 0)
-		{
-			bonus = Math.min(bonus, Config.MAX_BONUS_EXP);
-		}
-		
-		return bonus * Config.CUSTOM_RATE_XPSP;
+		return calculateBonusMultiplier( //
+			Stat.BONUS_EXP, //
+			Config.MAX_BONUS_EXP //
+		);
 	}
 	
 	public double getSpBonusMultiplier()
 	{
+		return calculateBonusMultiplier( //
+			Stat.BONUS_SP, //
+			Config.MAX_BONUS_SP //
+		);
+	}
+	
+	private double calculateBonusMultiplier(Stat bonusStat, double maxBonus)
+	{
 		double bonus = 1.0;
-		double vitality = 1.0;
-		double bonusSp = 1.0;
-		int point = 0;
 		
-		// Bonus from Vitality System
-		vitality = getVitalityExpBonus();
-		point = getVitalityPoints();
-		
-		// Bonus sp from skills
-		bonusSp = 1 + (getValue(Stat.BONUS_SP, 0) / 100);
-		if (point > 0)
+		if (Config.ENABLE_REAL_EXP_SP_SYSTEM)
 		{
-			bonus += (vitality - 1);
+			// Real system bonus calculation
+			double bonusFromStat = 1 + (getValue(bonusStat, 0) / 100);
+			bonus *= bonusFromStat; // Real 시스템은 곱셈으로 처리
+			
+			// Apply limits
+			bonus = Math.max(bonus, 1);
+			if (maxBonus > 0)
+			{
+				bonus = Math.min(bonus, maxBonus);
+			}
+			
+			return bonus;
 		}
 		
-		if (bonusSp > 1)
+		// Legacy system calculation
+		double vitalityBonus = getVitalityExpBonus();
+		int vitalityPoints = getVitalityPoints();
+		
+		double bonusFromStat = 1 + (getValue(bonusStat, 0) / 100);
+		
+		// Vitality 보너스 적용
+		if (vitalityPoints > 0)
 		{
-			bonus += (bonusSp - 1);
+			bonus += (vitalityBonus - 1);
 		}
 		
-		// Check for abnormal bonuses
+		// EXP와 SP 구분 처리
+		if (bonusStat == Stat.BONUS_SP) // SP 계산만 -1 적용
+		{
+			if (bonusFromStat > 1)
+			{
+				bonus += (bonusFromStat - 1); // SP: -1 처리
+			}
+		}
+		else
+		{
+			if (bonusFromStat > 1)
+			{
+				bonus += (bonusFromStat);
+			}
+		}
+		
+		// Apply limits
 		bonus = Math.max(bonus, 1);
-		if (Config.MAX_BONUS_SP > 0)
+		if (maxBonus > 0)
 		{
-			bonus = Math.min(bonus, Config.MAX_BONUS_SP);
+			bonus = Math.min(bonus, maxBonus);
 		}
 		
 		return bonus * Config.CUSTOM_RATE_XPSP;
