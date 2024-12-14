@@ -16,11 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.sql.CharInfoTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.data.xml.InitialEquipmentData;
@@ -302,51 +308,59 @@ public class CharacterCreate implements IClientIncomingPacket
 		
 		if (Config.CHAR_TITLE)
 		{
-			switch (newChar.getRace())
+			String title = getRandomTitleFromDatabase();
+			if (title != null)
 			{
-				case HUMAN:
-					if (newChar.getClassId().isMage())
-					{
-						newChar.setTitle(_sex == 0 ? Config.HUMAN_MAGE_M_CHAR_TITLE : Config.HUMAN_MAGE_W_CHAR_TITLE);
-					}
-					else
-					{
-						newChar.setTitle(_sex == 0 ? Config.HUMAN_FIGHTER_M_CHAR_TITLE : Config.HUMAN_FIGHTER_W_CHAR_TITLE);
-					}
-					break;
-				case ELF:
-					if (newChar.getClassId().isMage())
-					{
-						newChar.setTitle(_sex == 0 ? Config.ELF_MAGE_M_CHAR_TITLE : Config.ELF_MAGE_W_CHAR_TITLE);
-					}
-					else
-					{
-						newChar.setTitle(_sex == 0 ? Config.ELF_FIGHTER_M_CHAR_TITLE : Config.ELF_FIGHTER_W_CHAR_TITLE);
-					}
-					break;
-				case DARK_ELF:
-					if (newChar.getClassId().isMage())
-					{
-						newChar.setTitle(_sex == 0 ? Config.DELF_MAGE_M_CHAR_TITLE : Config.DELF_MAGE_W_CHAR_TITLE);
-					}
-					else
-					{
-						newChar.setTitle(_sex == 0 ? Config.DELF_FIGHTER_M_CHAR_TITLE : Config.DELF_FIGHTER_W_CHAR_TITLE);
-					}
-					break;
-				case ORC:
-					if (newChar.getClassId().isMage())
-					{
-						newChar.setTitle(_sex == 0 ? Config.ORC_MAGE_M_CHAR_TITLE : Config.ORC_MAGE_W_CHAR_TITLE);
-					}
-					else
-					{
-						newChar.setTitle(_sex == 0 ? Config.ORC_FIGHTER_M_CHAR_TITLE : Config.ORC_FIGHTER_W_CHAR_TITLE);
-					}
-					break;
-				case DWARF:
-					newChar.setTitle(_sex == 0 ? Config.DWARF_FIGHTER_M_CHAR_TITLE : Config.DWARF_FIGHTER_W_CHAR_TITLE);
-					break;
+				newChar.setTitle(title);
+			}
+			else
+			{
+				switch (newChar.getRace())
+				{
+					case HUMAN:
+						if (newChar.getClassId().isMage())
+						{
+							newChar.setTitle(_sex == 0 ? Config.HUMAN_MAGE_M_CHAR_TITLE : Config.HUMAN_MAGE_W_CHAR_TITLE);
+						}
+						else
+						{
+							newChar.setTitle(_sex == 0 ? Config.HUMAN_FIGHTER_M_CHAR_TITLE : Config.HUMAN_FIGHTER_W_CHAR_TITLE);
+						}
+						break;
+					case ELF:
+						if (newChar.getClassId().isMage())
+						{
+							newChar.setTitle(_sex == 0 ? Config.ELF_MAGE_M_CHAR_TITLE : Config.ELF_MAGE_W_CHAR_TITLE);
+						}
+						else
+						{
+							newChar.setTitle(_sex == 0 ? Config.ELF_FIGHTER_M_CHAR_TITLE : Config.ELF_FIGHTER_W_CHAR_TITLE);
+						}
+						break;
+					case DARK_ELF:
+						if (newChar.getClassId().isMage())
+						{
+							newChar.setTitle(_sex == 0 ? Config.DELF_MAGE_M_CHAR_TITLE : Config.DELF_MAGE_W_CHAR_TITLE);
+						}
+						else
+						{
+							newChar.setTitle(_sex == 0 ? Config.DELF_FIGHTER_M_CHAR_TITLE : Config.DELF_FIGHTER_W_CHAR_TITLE);
+						}
+						break;
+					case ORC:
+						if (newChar.getClassId().isMage())
+						{
+							newChar.setTitle(_sex == 0 ? Config.ORC_MAGE_M_CHAR_TITLE : Config.ORC_MAGE_W_CHAR_TITLE);
+						}
+						else
+						{
+							newChar.setTitle(_sex == 0 ? Config.ORC_FIGHTER_M_CHAR_TITLE : Config.ORC_FIGHTER_W_CHAR_TITLE);
+						}
+						break;
+					case DWARF:
+						newChar.setTitle(_sex == 0 ? Config.DWARF_FIGHTER_M_CHAR_TITLE : Config.DWARF_FIGHTER_W_CHAR_TITLE);
+						break;
+				}
 			}
 		}
 		else
@@ -401,4 +415,46 @@ public class CharacterCreate implements IClientIncomingPacket
 		final CharSelectionInfo cl = new CharSelectionInfo(client.getAccountName(), client.getSessionId().playOkID1);
 		client.setCharSelection(cl.getCharInfo());
 	}
+	
+	private String getRandomTitleFromDatabase()
+	{
+		String randomTitle = null;
+		
+		try (Connection con = DatabaseFactory.getConnection())
+		{
+			int maxId = 0;
+			try (PreparedStatement ps = con.prepareStatement("SELECT MAX(id) FROM newbie_title");
+				ResultSet rs = ps.executeQuery())
+			{
+				if (rs.next())
+				{
+					maxId = rs.getInt(1);
+				}
+			}
+			
+			if (maxId > 0)
+			{
+				int randomId = Rnd.get(1, maxId);
+				
+				try (PreparedStatement ps = con.prepareStatement("SELECT title FROM newbie_title WHERE id = ?"))
+				{
+					ps.setInt(1, randomId);
+					try (ResultSet rs = ps.executeQuery())
+					{
+						if (rs.next())
+						{
+							randomTitle = rs.getString("title");
+						}
+					}
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			System.err.println("Failed to fetch random title: " + e.getMessage());
+		}
+		
+		return randomTitle;
+	}
+	
 }
