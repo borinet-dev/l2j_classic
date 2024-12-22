@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.Rnd;
@@ -146,47 +147,13 @@ public class RestorationRandom extends AbstractEffect
 					}
 				}
 				boolean sendScreen = true;
-				switch (item.getId())
+				
+				if (Config.NO_SCREEN_MSG_ITEM_IDS.contains(item.getId()) || //
+					((item.getName() != null) && Config.NO_SCREEN_MSG_ITEM_NAMES.stream().anyMatch(name -> item.getName().matches(".*\\b" + Pattern.quote(name) + "\\b.*"))))
 				{
-					case 49782:
-					case 70000:
-					case 70001:
-					case 70002:
-					case 70003:
-					case 70004:
-					case 70005:
-					case 70006:
-					case 70007:
-					case 70008:
-					case 70009:
-					case 70010:
-					case 70011:
-					case 70012:
-					case 70013:
-					case 70014:
-					case 70015:
-					case 90793:
-					case 34695:
-					case 23396:
-					case 23397:
-					case 23398:
-					case 23399:
-					case 13990:
-					case 34813:
-					case 70025:
-					case 70026:
-					case 70027:
-					case 70028:
-					case 90911:
-					case 90912:
-					case 90913:
-					case 90914:
-					case 90915:
-					{
-						sendScreen = false;
-						break;
-					}
+					sendScreen = false;
 				}
+				
 				sendMessage(player, oldName, entry.getKey(), entry.getValue().intValue(), sendScreen);
 			}
 			player.sendPacket(playerIU);

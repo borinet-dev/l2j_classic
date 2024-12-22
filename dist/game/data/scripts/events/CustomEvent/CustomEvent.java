@@ -34,6 +34,11 @@ public class CustomEvent extends LongTimeEvent
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		String htmltext = null;
 		int account = player.getAccountVariables().getInt("CUSTOM_EVENT_GIFT", 0);
 		int box = player.getAccountVariables().getInt("CUSTOM_EVENT_BOX", 0);
@@ -82,7 +87,7 @@ public class CustomEvent extends LongTimeEvent
 			}
 			case "get_gift":
 			{
-				if (account != 1)
+				if (BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_GIFT") && (account != 1))
 				{
 					if (player.getClassId().level() < 1)
 					{
@@ -94,6 +99,7 @@ public class CustomEvent extends LongTimeEvent
 					{
 						player.addItem("커스텀이벤트_선물", 47416, 1, player, true); // 새해
 						player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
+						BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 					}
 					else
 					{
@@ -103,12 +109,14 @@ public class CustomEvent extends LongTimeEvent
 							{
 								player.addItem("커스텀이벤트_선물", 41074, 1, player, true); // 설날
 								player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
+								BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 								break;
 							}
 							case 2:
 							{
 								player.addItem("커스텀이벤트_선물", 47823, 1, player, true); // 추석
 								player.getAccountVariables().set("CUSTOM_EVENT_GIFT", 1);
+								BorinetUtil.getInstance().insertDB(player, "CUSTOM_EVENT_GIFT");
 								break;
 							}
 						}
@@ -116,16 +124,16 @@ public class CustomEvent extends LongTimeEvent
 				}
 				else
 				{
-					player.sendMessage("선물은 계정당 한번만 받을 수 있습니다.");
-					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "선물은 계정당 한번만 받을 수 있습니다."));
+					player.sendMessage("선물은 계정 및 PC에서 한번만 받을 수 있습니다.");
+					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "선물은 계정 및 PC에서 한번만 받을 수 있습니다."));
 				}
 				break;
 			}
 			case "make_box":
 			{
-				if (account == 1)
+				if (BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_GIFT") || (account == 1))
 				{
-					sendMessages(player, "선물상자 제작은 계정당 한번만 받을 수 있습니다.");
+					sendMessages(player, "선물상자 제작은 계정 및 PC에서 한번만 받을 수 있습니다.");
 				}
 				else
 				{
@@ -146,9 +154,9 @@ public class CustomEvent extends LongTimeEvent
 			}
 			case "may_box":
 			{
-				if (box == 1)
+				if (!BorinetUtil.getInstance().checkDB(player, "CUSTOM_EVENT_BOX") || (box == 1))
 				{
-					sendMessages(player, "선물상자 제작은 계정 및 해당 PC에서 하루에 한번만 제작됩니다.");
+					sendMessages(player, "선물상자 제작은 계정 및 PC에서 하루에 한번만 제작됩니다.");
 				}
 				else
 				{
@@ -297,7 +305,7 @@ public class CustomEvent extends LongTimeEvent
 			}
 			case "give_item":
 			{
-				if (check_Chuseok == 1)
+				if (!BorinetUtil.getInstance().checkDB(player, "CHUSEOK_ITEM") && (check_Chuseok == 1))
 				{
 					player.sendMessage("오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요.");
 					player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 아이템을 받았습니다. 내일 다시 시도해 주세요."));
@@ -306,6 +314,7 @@ public class CustomEvent extends LongTimeEvent
 				{
 					player.getAccountVariables().set("CHUSEOK_ITEM", 1);
 					player.addItem("한가위 선물 주머니", 41382, 3, player, true);
+					BorinetUtil.getInstance().insertDB(player, "CHUSEOK_ITEM");
 				}
 				break;
 			}
@@ -379,6 +388,7 @@ public class CustomEvent extends LongTimeEvent
 		player.destroyItemByItemId(log, itemId, itemCount, player, true);
 		player.addItem(log, addItem, 1, player, true);
 		player.getAccountVariables().set(dbKey, 1);
+		BorinetUtil.getInstance().insertDB(player, dbKey);
 	}
 	
 	public static void main(String[] args)

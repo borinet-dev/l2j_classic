@@ -151,6 +151,7 @@ public class Config
 	private static final String NEWYEAR_EVENT_CONFIG_FILE = "./config/Custom/NewYearEvent.ini";
 	private static final String GOLDEN_PIG_CONFIG_FILE = "./config/Custom/GoldenPigEvents.ini";
 	private static final String BOAT_CONFIG_FILE = "./config/Custom/boat.ini";
+	private static final String PARSE_ITEMS_CONFIG_FILE = "./config/Custom/ParseItems.ini";
 	
 	// --------------------------------------------------
 	// Variable Definitions
@@ -299,7 +300,17 @@ public class Config
 	
 	public static String SELF_RESURRECTION_BUFFS;
 	public static int[] SELF_LIST_RESURRECTION_BUFFS;
+	
+	public static String CLAN_MOVED_REWARD;
 	/** 보리넷 커스텀 **/
+	
+	/** PARSE 아이템 **/
+	public static List<Integer> NO_SCREEN_MSG_ITEM_IDS = new ArrayList<>();
+	public static List<String> NO_SCREEN_MSG_ITEM_NAMES = new ArrayList<>();
+	public static List<Integer> NO_ITEM_LOG_ITEM_IDS = new ArrayList<>();
+	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
+	public static List<Integer> NO_SELL_ALL_ITEM_IDS = new ArrayList<>();
+	public static List<String> NO_SELL_ALL_ITEM_NAMES = new ArrayList<>();
 	
 	/** 보리넷 커스텀 이벤트 **/
 	public static boolean CUSTOM_EVENT_ENABLE;
@@ -2155,6 +2166,30 @@ public class Config
 			}
 			Arrays.sort(SELF_LIST_RESURRECTION_BUFFS);
 			
+			// 혈맹이전 코인
+			CLAN_MOVED_REWARD = borinetConfig.getString("ClanMovedReward", "");
+			
+			/** parse 아이템 **/
+			final PropertiesParser parseItemsConfig = new PropertiesParser(PARSE_ITEMS_CONFIG_FILE);
+			// 사용시 스크린매세지 제외 아이템.
+			final String noScreenIds = parseItemsConfig.getString("NoScreenMsgItemIds", "");
+			final String noScreenNames = parseItemsConfig.getString("NoScreenMsgItemNames", "");
+			NO_SCREEN_MSG_ITEM_IDS = noScreenIds.isEmpty() ? new ArrayList<>() : parseItemIds(noScreenIds);
+			NO_SCREEN_MSG_ITEM_NAMES = noScreenNames.isEmpty() ? new ArrayList<>() : parseItemNames(noScreenNames);
+			
+			// 아이템로그에 제외될 아이템 이름
+			final String noLogIds = parseItemsConfig.getString("NoItemLogItemIds", "");
+			final String noLogNames = parseItemsConfig.getString("NoItemLogItemNames", "");
+			NO_ITEM_LOG_ITEM_IDS = noLogIds.isEmpty() ? new ArrayList<>() : parseItemIds(noLogIds);
+			NO_ITEM_LOG_NAMES = noLogNames.isEmpty() ? new ArrayList<>() : parseItemNames(noLogNames);
+			
+			// 한방판매에 제외될 아이템
+			final String noSellAllIds = parseItemsConfig.getString("NoSellAllItemIds", "");
+			final String noSellAllNames = parseItemsConfig.getString("NoSellAllItemNames", "");
+			NO_SELL_ALL_ITEM_IDS = noSellAllIds.isEmpty() ? new ArrayList<>() : parseItemIds(noSellAllIds);
+			NO_SELL_ALL_ITEM_NAMES = noSellAllNames.isEmpty() ? new ArrayList<>() : parseItemNames(noSellAllNames);
+			
+			/** 후원 메일 **/
 			final PropertiesParser donationMail = new PropertiesParser(DONATION_MAIL_FILE);
 			DONATE_EMAIL_SMTP = donationMail.getString("DonateEmailSmtp", "smtp.gmail.com");
 			DONATE_EMAIL_PORT = donationMail.getInt("DonateEmailPort", 587);
@@ -4374,6 +4409,17 @@ public class Config
 			LOGGER.warning(StringUtil.concat("HexID 를 ", fileName, " 파일에 저장하지 못했습니다."));
 			LOGGER.warning("Config: " + e.getMessage());
 		}
+	}
+	
+	private static List<Integer> parseItemIds(String ids)
+	{
+		return Arrays.stream(ids.split(",")).map(String::trim).filter(s -> s.matches("\\d+")) // 숫자인 값만 필터링
+			.map(Integer::parseInt).collect(Collectors.toList());
+	}
+	
+	private static List<String> parseItemNames(String names)
+	{
+		return Arrays.stream(names.split(",")).map(String::trim).filter(s -> !s.isEmpty()).collect(Collectors.toList());
 	}
 	
 	/**

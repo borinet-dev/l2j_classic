@@ -21,6 +21,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
+import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -126,6 +127,11 @@ public class GameAssistant extends AbstractNpcAI
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		String htmltext = null;
 		if (event.startsWith("multisell"))
 		{
@@ -225,24 +231,13 @@ public class GameAssistant extends AbstractNpcAI
 						continue;
 					}
 					
+					if (Config.NO_SELL_ALL_ITEM_IDS.contains(item.getId()) || //
+						((item.getName() != null) && Config.NO_SELL_ALL_ITEM_NAMES.stream().anyMatch(name -> item.getName().matches(".*\\b" + Pattern.quote(name) + "\\b.*"))))
+					{
+						continue;
+					}
+					
 					if ((item.getItemType() != EtcItemType.MATERIAL) && (item.getItemType() != EtcItemType.RECIPE))
-					{
-						continue;
-					}
-					
-					if (item.getName().contains("생명의 돌") || item.getName().contains("젬스톤") //
-						|| item.getName().contains("결정체") || item.getName().contains("집혼석") //
-						|| item.getName().contains("마에스트로") || item.getName().contains("카데이라") //
-						|| item.getName().contains("아포칼립스") || item.getName().contains("용해제") //
-					)
-					{
-						continue;
-					}
-					
-					if ((item.getId() == 1877) || (item.getId() == 1893) || (item.getId() == 5554) //
-						|| (item.getId() == 4042) || (item.getId() == 1888) || (item.getId() == 1895) //
-						|| (item.getId() == 1889) || (item.getId() == 1894) || (item.getId() == 4041) //
-						|| (item.getId() == 4043) || (item.getId() == 20191) || (item.getId() == 41270))
 					{
 						continue;
 					}

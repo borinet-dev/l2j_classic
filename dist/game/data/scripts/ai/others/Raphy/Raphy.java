@@ -35,6 +35,11 @@ public class Raphy extends AbstractNpcAI
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		switch (event)
 		{
 			// 무기와 방어구에 따른 도박을 각각 처리

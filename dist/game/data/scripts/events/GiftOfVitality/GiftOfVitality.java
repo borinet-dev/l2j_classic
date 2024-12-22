@@ -86,6 +86,11 @@ public class GiftOfVitality extends LongTimeEvent
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		String htmltext = event;
 		if (player.isCursedWeaponEquipped())
 		{
