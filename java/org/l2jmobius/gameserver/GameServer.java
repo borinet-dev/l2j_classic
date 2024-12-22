@@ -27,6 +27,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -513,6 +514,7 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("아이템 로그");
 		ItemLog.getInstance();
+		DailyTaskManager.cleanUpExpiredData();
 		
 		BorinetUtil.getInstance().printSection("오프라인 상점");
 		if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
@@ -627,6 +629,34 @@ public class GameServer
 		Toolkit.getDefaultToolkit().beep();
 		BorinetTask._isActive = true;
 		BorinetUtil.getInstance().printSection("게임서버 로딩이 완료되었습니다.");
+		deleteLogFiles();
+	}
+	
+	private static void deleteLogFiles()
+	{
+		File logFolder = new File("log");
+		
+		// 폴더가 존재하지 않거나 디렉토리가 아닐 경우 종료
+		if (!logFolder.exists() || !logFolder.isDirectory())
+		{
+			return;
+		}
+		
+		// java1.log 이상의 파일과 error1.log 이상의 파일을 찾는 정규식
+		Pattern logPattern = Pattern.compile("^(java[1-9][0-9]*\\.log|error[1-9][0-9]*\\.log)$");
+		
+		// 폴더 내부의 파일 목록을 순회
+		File[] files = logFolder.listFiles();
+		if (files != null)
+		{
+			for (File file : files)
+			{
+				if (file.isFile() && logPattern.matcher(file.getName()).matches())
+				{
+					file.delete();
+				}
+			}
+		}
 	}
 	
 	public static void main(String[] args) throws Exception
