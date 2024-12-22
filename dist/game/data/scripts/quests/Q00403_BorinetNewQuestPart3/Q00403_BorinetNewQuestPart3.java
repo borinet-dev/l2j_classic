@@ -198,8 +198,7 @@ public class Q00403_BorinetNewQuestPart3 extends Quest
 					qs.setCond(2);
 					playSound(player, QuestSound.ITEMSOUND_QUEST_MIDDLE);
 					showOnScreenMsg(player, "언데드의 재를 모두 구했다. 소피아에게 이동하자.", ExShowScreenMessage.TOP_CENTER, 10000);
-					player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-1.htm")));
-					playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+					theEnd(qs, player);
 				}
 				else
 				{
@@ -207,6 +206,12 @@ public class Q00403_BorinetNewQuestPart3 extends Quest
 				}
 			}
 		}
+	}
+	
+	private void theEnd(QuestState qs, Player player)
+	{
+		player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-1.htm")));
+		playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
 	}
 	
 	@RegisterEvent(EventType.ON_PLAYER_LEVEL_CHANGED)
@@ -221,6 +226,12 @@ public class Q00403_BorinetNewQuestPart3 extends Quest
 	public void OnPlayerLogin(OnPlayerLogin event)
 	{
 		handleTutorialQuest(event.getPlayer());
+		
+		final QuestState qs = getQuestState(event.getPlayer(), false);
+		if ((qs != null) && (getQuestItemsCount(event.getPlayer(), 언데드의_재) >= 50))
+		{
+			theEnd(qs, event.getPlayer());
+		}
 	}
 	
 	private void handleTutorialQuest(Player player)

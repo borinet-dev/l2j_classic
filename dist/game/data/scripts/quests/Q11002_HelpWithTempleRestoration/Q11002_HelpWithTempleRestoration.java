@@ -23,6 +23,11 @@ import org.l2jmobius.gameserver.enums.QuestSound;
 import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.ListenerRegisterType;
+import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
+import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.quest.Quest;
@@ -362,5 +367,30 @@ public class Q11002_HelpWithTempleRestoration extends Quest
 			}
 		}
 		return super.onKill(npc, killer, isSummon);
+	}
+	
+	@RegisterEvent(EventType.ON_PLAYER_LOGIN)
+	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
+	public void OnPlayerLogin(OnPlayerLogin event)
+	{
+		final QuestState qs = getQuestState(event.getPlayer(), false);
+		if (qs != null)
+		{
+			if (getQuestItemsCount(event.getPlayer(), WOODEN_POLE) >= 10)
+			{
+				event.getPlayer().sendPacket(new TutorialShowHtml(getHtm(event.getPlayer(), "popup-1.htm")));
+				playSound(event.getPlayer(), QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+			}
+			else if (getQuestItemsCount(event.getPlayer(), WOODEN_DOOR_PANEL) >= 10)
+			{
+				event.getPlayer().sendPacket(new TutorialShowHtml(getHtm(event.getPlayer(), "popup-2.htm")));
+				playSound(event.getPlayer(), QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+			}
+			else if (getQuestItemsCount(event.getPlayer(), STONE_POWDER) >= 10)
+			{
+				event.getPlayer().sendPacket(new TutorialShowHtml(getHtm(event.getPlayer(), "popup-2.htm")));
+				playSound(event.getPlayer(), QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+			}
+		}
 	}
 }

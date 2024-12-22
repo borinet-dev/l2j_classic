@@ -189,8 +189,7 @@ public class Q00404_BorinetNewQuestPart4 extends Quest
 					qs.setCond(2);
 					playSound(player, QuestSound.ITEMSOUND_QUEST_MIDDLE);
 					showOnScreenMsg(player, "오크 두개골을 모두 구했다. 마스터 멕켄에게 이동하자.", ExShowScreenMessage.TOP_CENTER, 10000);
-					player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-1.htm")));
-					playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+					theEnd(qs, player);
 				}
 				else
 				{
@@ -198,6 +197,12 @@ public class Q00404_BorinetNewQuestPart4 extends Quest
 				}
 			}
 		}
+	}
+	
+	private void theEnd(QuestState qs, Player player)
+	{
+		player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-1.htm")));
+		playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
 	}
 	
 	@RegisterEvent(EventType.ON_PLAYER_LEVEL_CHANGED)
@@ -212,6 +217,12 @@ public class Q00404_BorinetNewQuestPart4 extends Quest
 	public void OnPlayerLogin(OnPlayerLogin event)
 	{
 		handleTutorialQuest(event.getPlayer());
+		
+		final QuestState qs = getQuestState(event.getPlayer(), false);
+		if ((qs != null) && (getQuestItemsCount(event.getPlayer(), 브래카오크의두개골) >= 50))
+		{
+			theEnd(qs, event.getPlayer());
+		}
 	}
 	
 	private void handleTutorialQuest(Player player)

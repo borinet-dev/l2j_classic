@@ -490,7 +490,8 @@ public class Q11000_MoonKnight extends Quest
 		final QuestState qs = getQuestState(player, false);
 		if ((qs == null) && (event.getOldLevel() < event.getNewLevel()) && canStartQuest(player))
 		{
-			checkHtml(player);
+			final String html = getHtm(player, "popup.html");
+			player.sendPacket(new TutorialShowHtml(html));
 			playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
 		}
 	}
@@ -508,32 +509,36 @@ public class Q11000_MoonKnight extends Quest
 		final QuestState qs = getQuestState(player, false);
 		if ((qs == null) && canStartQuest(player))
 		{
-			checkHtml(player);
+			final String html = getHtm(player, "popup.html");
+			player.sendPacket(new TutorialShowHtml(html));
 			playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+		}
+		else
+		{
+			checkHtml(player);
 		}
 	}
 	
 	private void checkHtml(Player player)
 	{
-		if (getQuestItemsCount(player, TUREK_ORC_INVADER_HEAD) >= 10)
+		final QuestState qs = getQuestState(player, false);
+		if (qs != null)
 		{
-			final String html = getHtm(player, "popup-3.htm");
-			player.sendPacket(new TutorialShowHtml(html));
-		}
-		else if ((getQuestItemsCount(player, ARMOR_TRADE_CONTRACT) >= 1) && (getQuestItemsCount(player, TUREK_ORC_ORDER) >= 1))
-		{
-			final String html = getHtm(player, "popup-2.htm");
-			player.sendPacket(new TutorialShowHtml(html));
-		}
-		else if (getQuestItemsCount(player, MOLD) >= 10)
-		{
-			final String html = getHtm(player, "popup-1.htm");
-			player.sendPacket(new TutorialShowHtml(html));
-		}
-		else
-		{
-			final String html = getHtm(player, "popup.html");
-			player.sendPacket(new TutorialShowHtml(html));
+			if (getQuestItemsCount(player, TUREK_ORC_INVADER_HEAD) >= 10)
+			{
+				final String html = getHtm(player, "popup-3.htm");
+				player.sendPacket(new TutorialShowHtml(html));
+			}
+			else if ((getQuestItemsCount(player, ARMOR_TRADE_CONTRACT) >= 1) && (getQuestItemsCount(player, TUREK_ORC_ORDER) >= 1))
+			{
+				final String html = getHtm(player, "popup-2.htm");
+				player.sendPacket(new TutorialShowHtml(html));
+			}
+			else if (getQuestItemsCount(player, MOLD) >= 10)
+			{
+				final String html = getHtm(player, "popup-1.htm");
+				player.sendPacket(new TutorialShowHtml(html));
+			}
 		}
 	}
 }

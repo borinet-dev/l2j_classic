@@ -283,6 +283,20 @@ public class Q11003_PerfectLeatherArmor1 extends Quest
 		}
 	}
 	
+	private void theEnd(QuestState qs, Player player)
+	{
+		if (getQuestItemsCount(player, COBWEB) >= 7)
+		{
+			player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-1.htm")));
+			playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+		}
+		else if (getQuestItemsCount(player, ESSENCE_OF_WATER) >= 5)
+		{
+			player.sendPacket(new TutorialShowHtml(getHtm(player, "popup-2.htm")));
+			playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+		}
+	}
+	
 	@RegisterEvent(EventType.ON_PLAYER_LOGIN)
 	@RegisterType(ListenerRegisterType.GLOBAL_PLAYERS)
 	public void OnPlayerLogin(OnPlayerLogin event)
@@ -300,6 +314,10 @@ public class Q11003_PerfectLeatherArmor1 extends Quest
 			final String html = getHtm(player, "popup.htm");
 			player.sendPacket(new TutorialShowHtml(html));
 			playSound(player, QuestSound.ITEMSOUND_QUEST_TUTORIAL);
+		}
+		else
+		{
+			theEnd(qs, player);
 		}
 	}
 }
