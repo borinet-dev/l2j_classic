@@ -158,8 +158,8 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 				{
 					final SystemMessage sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_HAS_OBTAINED_S2_OF_S3_THROUGH_FORTUNE_READING);
 					sm.addPcName(player);
-					sm.addLong(r.getCount());
 					sm.addItemName(item);
+					sm.addLong(r.getCount());
 					player.broadcastPacket(sm, 1000);
 					break;
 				}

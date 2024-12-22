@@ -255,7 +255,7 @@ public class RequestPostAttachment implements IClientIncomingPacket
 			}
 			else
 			{
-				final Item paidAdena = ItemTable.getInstance().createItem("PayMail", ADENA_ID, adena, player, null, true);
+				final Item paidAdena = ItemTable.getInstance().createItem("PayMail", ADENA_ID, adena, player, null, false);
 				paidAdena.setOwnerId(msg.getSenderId());
 				paidAdena.setItemLocation(ItemLocation.INVENTORY);
 				paidAdena.updateDatabase(true);

@@ -191,7 +191,7 @@ public class RequestRefundItem implements IClientIncomingPacket
 		
 		for (int i = 0; i < _items.length; i++)
 		{
-			final Item item = player.getRefund().transferItem("Refund", objectIds[i], Long.MAX_VALUE, player.getInventory(), player, player.getLastFolkNPC());
+			final Item item = player.getRefund().transferItem("재구매", objectIds[i], Long.MAX_VALUE, player.getInventory(), player, player.getLastFolkNPC());
 			if (item == null)
 			{
 				PacketLogger.warning("Error refunding object for char " + player.getName() + " (newitem == null)");

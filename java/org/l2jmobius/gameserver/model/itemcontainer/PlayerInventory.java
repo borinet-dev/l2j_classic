@@ -570,11 +570,6 @@ public class PlayerInventory extends Inventory
 		{
 			_goldCoin = null;
 		}
-		if ((_adena != null) && ((_adena.getCount() <= 0) || (_adena.getOwnerId() != getOwnerId())))
-		{
-			_adena = null;
-		}
-		
 		if ((_ancientAdena != null) && ((_ancientAdena.getCount() <= 0) || (_ancientAdena.getOwnerId() != getOwnerId())))
 		{
 			_ancientAdena = null;
