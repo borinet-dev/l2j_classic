@@ -35,11 +35,9 @@ import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
 import org.l2jmobius.gameserver.data.xml.EnchantItemOptionsData;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
-import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.enums.QuestSound;
-import org.l2jmobius.gameserver.enums.SkillFinishType;
 import org.l2jmobius.gameserver.geoengine.GeoEngine;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
@@ -52,7 +50,6 @@ import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
@@ -729,15 +726,7 @@ public class BorinetUtil
 	
 	public void subChangeHideSkill(Player player)
 	{
-		ThreadPool.schedule(() ->
-		{
-			final Skill hideSkill = SkillData.getInstance().getSkill(491, 1);
-			hideSkill.applyEffects(player, player, false, 1);
-		}, 300); // (단위: 밀리초)
-		ThreadPool.schedule(() ->
-		{
-			player.stopSkillEffects(SkillFinishType.REMOVED, 491);
-		}, 400); // (단위: 밀리초)
+		player.skillEffectReload();
 		
 		if (player.getDeathPenaltyLevel() > 0)
 		{
@@ -961,7 +950,7 @@ public class BorinetUtil
 		return content;
 	}
 	
-	public int checkClanId(Player player)
+	public int checkClanId(Player target)
 	{
 		int clanId = 0;
 		String query = "SELECT clanId FROM characters WHERE account_name = ? AND clanId > 0 AND clanId != 269357273";
@@ -969,7 +958,7 @@ public class BorinetUtil
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement statement = con.prepareStatement(query))
 		{
-			statement.setString(1, player.getAccountName());
+			statement.setString(1, target.getAccountName());
 			try (ResultSet rset = statement.executeQuery())
 			{
 				if (rset.next())
@@ -980,15 +969,15 @@ public class BorinetUtil
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.WARNING, "clanId를 검사할 수 없습니다. 계정 이름: " + player.getAccountName());
+			LOGGER.log(Level.WARNING, "clanId를 검사할 수 없습니다. 계정 이름: " + target.getAccountName());
 		}
 		
 		return clanId;
 	}
 	
-	public boolean conditionClan(Player player, int clanId)
+	public boolean conditionClan(Player target, int clanId)
 	{
-		int playerClanId = checkClanId(player);
+		int playerClanId = checkClanId(target);
 		if ((playerClanId > 0) && (playerClanId != clanId))
 		{
 			return true;
