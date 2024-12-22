@@ -58,7 +58,7 @@ public class ChoiceItems implements IBypassHandler
 			}
 			String subject = "다시한번 환영합니다!";
 			String bodyText = "환영 선물입니다.\n\n" + Config.SERVER_NAME_KOR + "과 함께 즐거운 시간 되시기 바랍니다.\n\n감사합니다.";
-			String itemIds = "70106,1;37732,1;45641,1;90499,10;41000,1500";
+			String itemIds = Config.CLAN_MOVED_REWARD;
 			BorinetUtil.getInstance().insertCustomMail(player, subject, bodyText, itemIds);
 		}
 		return true;
