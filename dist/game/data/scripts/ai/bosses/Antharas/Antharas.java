@@ -138,12 +138,6 @@ public class Antharas extends AbstractNpcAI
 		addKillId(ANTHARAS, TERASQUE, BEHEMOTH);
 		
 		final StatSet info = GrandBossManager.getInstance().getStatSet(ANTHARAS);
-		final double curr_hp = info.getDouble("currentHP");
-		final double curr_mp = info.getDouble("currentMP");
-		final int loc_x = info.getInt("loc_x");
-		final int loc_y = info.getInt("loc_y");
-		final int loc_z = info.getInt("loc_z");
-		final int heading = info.getInt("heading");
 		final long respawnTime = info.getLong("respawn_time");
 		
 		bossDelete();
@@ -152,22 +146,19 @@ public class Antharas extends AbstractNpcAI
 			case ALIVE:
 			{
 				_antharas = (GrandBoss) addSpawn(ANTHARAS, 185708, 114298, -8221, 0, false, 0);
-				_antharas.setCurrentHpMp(curr_hp, curr_mp);
 				addBoss(_antharas);
 				break;
 			}
 			case WAITING:
 			{
 				_antharas = (GrandBoss) addSpawn(ANTHARAS, 185708, 114298, -8221, 0, false, 0);
-				_antharas.setCurrentHpMp(curr_hp, curr_mp);
 				addBoss(_antharas);
 				startQuestTimer("SPAWN_ANTHARAS", Config.ANTHARAS_WAIT_TIME * 60000, null, null);
 				break;
 			}
 			case IN_FIGHT:
 			{
-				_antharas = (GrandBoss) addSpawn(ANTHARAS, loc_x, loc_y, loc_z, heading, false, 0);
-				_antharas.setCurrentHpMp(curr_hp, curr_mp);
+				_antharas = (GrandBoss) addSpawn(ANTHARAS, 185708, 114298, -8221, 0, false, 0);
 				addBoss(_antharas);
 				_lastAttack = System.currentTimeMillis();
 				startQuestTimer("CHECK_ATTACK", 60000, _antharas, null);
@@ -281,11 +272,6 @@ public class Antharas extends AbstractNpcAI
 					}
 				}
 				return htmltext;
-			}
-			case "teleportOut":
-			{
-				player.teleToLocation(81929 + getRandom(300), 149309 + getRandom(300), -3464);
-				break;
 			}
 			case "SPAWN_ANTHARAS":
 			{

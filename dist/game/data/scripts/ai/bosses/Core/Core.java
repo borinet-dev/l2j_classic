@@ -107,14 +107,7 @@ public class Core extends AbstractNpcAI
 			{
 				_firstAttacked = true;
 			}
-			final int loc_x = info.getInt("loc_x");
-			final int loc_y = info.getInt("loc_y");
-			final int loc_z = info.getInt("loc_z");
-			final int heading = info.getInt("heading");
-			final double hp = info.getDouble("currentHP");
-			final double mp = info.getDouble("currentMP");
-			final GrandBoss core = (GrandBoss) addSpawn(CORE, loc_x, loc_y, loc_z, heading, false, 0);
-			core.setCurrentHpMp(hp, mp);
+			final GrandBoss core = (GrandBoss) addSpawn(CORE, 17736, 108910, -6530, 0, false, 0);
 			spawnBoss(core);
 		}
 	}

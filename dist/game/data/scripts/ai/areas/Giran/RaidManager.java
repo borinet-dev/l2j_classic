@@ -117,10 +117,12 @@ public class RaidManager extends AbstractNpcAI
 		{
 			player.getVariables().remove("여왕개미");
 			player.getVariables().remove("오르펜");
+			player.getVariables().remove("베레스");
 		}
 		
 		String deleteQueenAntQuery = "DELETE FROM character_variables WHERE var = '여왕개미'";
 		String deleteOrfenQuery = "DELETE FROM character_variables WHERE var = '오르펜'";
+		String deleteBelethQuery = "DELETE FROM character_variables WHERE var = '베레스'";
 		
 		try (Connection con = DatabaseFactory.getConnection())
 		{
@@ -132,10 +134,14 @@ public class RaidManager extends AbstractNpcAI
 			{
 				ps.execute();
 			}
+			try (PreparedStatement ps = con.prepareStatement(deleteBelethQuery))
+			{
+				ps.execute();
+			}
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.WARNING, "캐릭터 변수를 삭제하는데 실패했습니다.");
+			LOGGER.log(Level.WARNING, "변수를 삭제하는데 실패했습니다.");
 		}
 	}
 	

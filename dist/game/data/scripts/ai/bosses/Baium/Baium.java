@@ -21,6 +21,7 @@ import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.util.CommonUtil;
+import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.enums.ChatType;
@@ -126,14 +127,7 @@ public class Baium extends AbstractNpcAI
 			}
 			case IN_FIGHT:
 			{
-				final double curr_hp = info.getDouble("currentHP");
-				final double curr_mp = info.getDouble("currentMP");
-				final int loc_x = info.getInt("loc_x");
-				final int loc_y = info.getInt("loc_y");
-				final int loc_z = info.getInt("loc_z");
-				final int heading = info.getInt("heading");
-				_baium = (GrandBoss) addSpawn(BAIUM, loc_x, loc_y, loc_z, heading, false, 0);
-				_baium.setCurrentHpMp(curr_hp, curr_mp);
+				_baium = (GrandBoss) addSpawn(BAIUM, BAIUM_LOC, false, 0);
 				_lastAttack = System.currentTimeMillis();
 				addBoss(_baium);
 				
@@ -254,7 +248,7 @@ public class Baium extends AbstractNpcAI
 			}
 			case "teleportOut":
 			{
-				player.teleToLocation(81929 + getRandom(300), 149309 + getRandom(300), -3464);
+				player.teleToLocation(81929 + getRandom(Rnd.get(1, 300)), 149309 + getRandom(Rnd.get(-100, 100)), -3464);
 				break;
 			}
 			case "wakeUp":

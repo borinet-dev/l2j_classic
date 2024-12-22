@@ -40,7 +40,8 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 		"gotoAnt",
 		"bossLvl",
 		"gotoGiran",
-		"gotoMine"
+		"gotoMine",
+		"gotoBeleth"
 	};
 	
 	@Override
@@ -69,8 +70,11 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 			case "gotoAnt":
 				gotoBoss(player, 29001);
 				break;
+			case "gotoBeleth":
+				gotoBoss(player, 29244);
+				break;
 			case "gotoGiran":
-				player.teleToLocation(81929 + getRandom(300), 149309 + getRandom(300), -3464);
+				player.teleToLocation(81929 + getRandom(Rnd.get(1, 300)), 149309 + getRandom(Rnd.get(-100, 100)), -3464);
 				break;
 			case "gotoMine":
 				player.teleToLocation(BorinetUtil.MITHRIL_RAID_ZONE_POINT[Rnd.get(BorinetUtil.MITHRIL_RAID_ZONE_POINT.length)]);
@@ -96,6 +100,10 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 			case 29001:
 				korName = "여왕개미";
 				deadName = "여왕개미가";
+				break;
+			case 29244:
+				korName = "베레스";
+				deadName = "베레스가";
 				break;
 		}
 		String htmltext = null;
@@ -152,6 +160,23 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 						Broadcast.toPlayerScreenMessageS(player, "입장가능 최소인원은 " + MIN_PEOPLE_ORFEN + "명 입니다.");
 					}
 					break;
+				case 29244:
+					if (!isInCC)
+					{
+						Broadcast.toPlayerScreenMessageS(player, "연합채널만 입장가능 합니다.");
+					}
+					else
+					{
+						if (!isPartyLeader)
+						{
+							Broadcast.toPlayerScreenMessageS(player, "파티장만이 입장시도를 할 수 있습니다.");
+						}
+						else if (members.size() < Config.ANTHARAS_MIN_MEMBER)
+						{
+							Broadcast.toPlayerScreenMessageS(player, "입장가능 최소인원은 " + Config.ANTHARAS_MIN_MEMBER + "명 입니다.");
+						}
+					}
+					break;
 			}
 			
 			String leaderName = isInCC ? party.getCommandChannel().getLeader().getName() : party.getLeader().getName();
@@ -162,13 +187,13 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 	
 	public void teleport(Player player, int bossId, String korName, boolean CC, String leaderName, List<Player> members)
 	{
-		Location TELEPORT_IN_LOC = bossId == 29001 ? new Location(-21583, 180554, -5816) : bossId == 29014 ? new Location(54050, 18435, -5376) : new Location(16698, 111837, -6576);
+		Location TELEPORT_IN_LOC = bossId == 29001 ? new Location(-21583, 180554, -5816) : bossId == 29014 ? new Location(54050, 18435, -5376) : bossId == 29244 ? new Location(80713, -56313, -6136) : new Location(16698, 111837, -6576);
 		
 		if (EnterRaidCheck.ConditionCheck(player, CC, members))
 		{
 			for (Player member : members)
 			{
-				if ((bossId == 29001) || (bossId == 29014))
+				if ((bossId == 29001) || (bossId == 29014) || (bossId == 29244))
 				{
 					member.getVariables().set(korName, 1);
 				}
@@ -191,6 +216,7 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 		String html = null;
 		html = HtmCache.getInstance().getHtm(player, "data/html/guide/RaidManager-level.htm");
 		html = html.replace("%Antharas%", Integer.toString(Config.ANTHARAS_MIN_MEMBER));
+		html = html.replace("%Beleth%", Integer.toString(Config.ANTHARAS_MIN_MEMBER));
 		html = html.replace("%Baium%", Integer.toString(Config.BAIUM_MIN_MEMBER));
 		html = html.replace("%Core%", Integer.toString(Config.CORE_MIN_MEMBER));
 		html = html.replace("%Orfen%", Integer.toString(Config.ORFEN_MIN_MEMBER));
@@ -214,6 +240,7 @@ public class EpicBossStatus extends AbstractNpcAI implements IVoicedCommandHandl
 			29068,
 			25283,
 			25286,
+			// 29244,
 		};
 		
 		String html = HtmCache.getInstance().getHtm(null, "data/html/guide/epicBoss.htm");
