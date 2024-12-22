@@ -58,6 +58,11 @@ public class CaptchaHandler
 		long captchaInterval = Rnd.get(Config.LAST_CAPTCHA_TIME_MIN, Config.LAST_CAPTCHA_TIME_MAX) * 60000;
 		
 		// Captcha 발동 조건 확인
+		if (player.getLevel() < 40)
+		{
+			return false;
+		}
+		
 		if ((lastCaptchaTime + captchaInterval) > System.currentTimeMillis())
 		{
 			return false;
