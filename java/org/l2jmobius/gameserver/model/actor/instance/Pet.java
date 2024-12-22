@@ -591,7 +591,7 @@ public class Pet extends Summon
 				handler.useItem(this, target, false);
 			}
 			
-			ItemTable.getInstance().destroyItem("Consume", target, getOwner(), null);
+			ItemTable.getInstance().destroyItem("Consume", target, getOwner(), null, true);
 			broadcastStatusUpdate();
 		}
 		else

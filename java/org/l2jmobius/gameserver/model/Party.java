@@ -769,7 +769,7 @@ public class Party extends AbstractPlayerGroup
 		if (item.getId() == Inventory.ADENA_ID)
 		{
 			distributeAdena(player, item.getCount(), player);
-			ItemTable.getInstance().destroyItem("Party", item, player, null);
+			ItemTable.getInstance().destroyItem("Party", item, player, null, true);
 			return;
 		}
 		

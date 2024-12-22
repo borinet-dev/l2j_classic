@@ -64,7 +64,7 @@ public class PlayerRefund extends ItemContainer
 				final Item removedItem = _items.stream().findFirst().get();
 				if (_items.remove(removedItem))
 				{
-					ItemTable.getInstance().destroyItem("ClearRefund", removedItem, getOwner(), null);
+					ItemTable.getInstance().destroyItem("무시", removedItem, getOwner(), null, false);
 					removedItem.updateDatabase(true);
 				}
 			}
@@ -87,7 +87,7 @@ public class PlayerRefund extends ItemContainer
 		{
 			for (Item item : _items)
 			{
-				ItemTable.getInstance().destroyItem("ClearRefund", item, getOwner(), null);
+				ItemTable.getInstance().destroyItem("무시", item, getOwner(), null, false);
 				item.updateDatabase(true);
 			}
 		}

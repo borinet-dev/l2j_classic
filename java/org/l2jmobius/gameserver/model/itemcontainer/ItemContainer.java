@@ -205,7 +205,7 @@ public abstract class ItemContainer
 			olditem.setLastChange(Item.MODIFIED);
 			
 			// And destroys the item
-			ItemTable.getInstance().destroyItem(process, newItem, actor, reference);
+			ItemTable.getInstance().destroyItem(process, newItem, actor, reference, true);
 			newItem.updateDatabase();
 			newItem = olditem;
 		}
@@ -341,7 +341,7 @@ public abstract class ItemContainer
 				else // Otherwise destroy old item
 				{
 					removeItem(sourceitem);
-					ItemTable.getInstance().destroyItem(process, sourceitem, actor, reference);
+					ItemTable.getInstance().destroyItem(process, sourceitem, actor, reference, true);
 				}
 				
 				if (targetitem != null) // If possible, only update counts
@@ -489,7 +489,7 @@ public abstract class ItemContainer
 					return null;
 				}
 				
-				ItemTable.getInstance().destroyItem(process, item, actor, reference);
+				ItemTable.getInstance().destroyItem(process, item, actor, reference, true);
 				item.updateDatabase();
 				refreshWeight();
 				
