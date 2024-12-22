@@ -1282,7 +1282,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 					rateChance *= 0;
 				}
 				
-				if (item.isArmors() || item.isWeapons() || item.isAccessorys())
+				if (item.isArmors() || item.isWeapons() || item.isAccessories())
 				{
 					if (!isSpecialBoss())
 					{
@@ -1323,7 +1323,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 					}
 					else
 					{
-						if (item.isArmors() || item.isWeapons() || item.isAccessorys())
+						if (item.isArmors() || item.isWeapons() || item.isAccessories())
 						{
 							if (!isSpecialBoss())
 							{
@@ -1525,6 +1525,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 			case 29106:
 			case 29107:
 			case 29108:
+			case 29244:
 				return true;
 		}
 		return false;

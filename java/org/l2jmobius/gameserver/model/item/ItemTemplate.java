@@ -273,7 +273,7 @@ public abstract class ItemTemplate extends ListenersContainer implements IIdenti
 		return getType2() == ItemTemplate.TYPE2_SHIELD_ARMOR;
 	}
 	
-	public boolean isAccessorys()
+	public boolean isAccessories()
 	{
 		return getType2() == ItemTemplate.TYPE2_ACCESSORY;
 	}

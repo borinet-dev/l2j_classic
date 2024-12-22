@@ -34,7 +34,7 @@ public class DropCalculate
 		}
 		else
 		{
-			if (item.isArmors() || item.isWeapons() || item.isAccessorys())
+			if (item.isArmors() || item.isWeapons() || item.isAccessories())
 			{
 				rateChance *= (BorinetTask.SpecialEvent() ? Config.CUSTOM_EVENT_RATE_FINISHED_ITEM : (BorinetTask.WeekendCheck() || BorinetTask.MemorialDayCheck()) ? Config.RATE_FINISHED_ITEM_WEEKEND : Config.RATE_FINISHED_ITEM);
 			}
@@ -88,7 +88,7 @@ public class DropCalculate
 				}
 				else
 				{
-					rateChance *= (item.isArmors() || item.isWeapons() || item.isAccessorys()) ? Config.PREMIUM_RATE_FINISHED_ITEM : Config.PREMIUM_RATE_DROP_CHANCE;
+					rateChance *= (item.isArmors() || item.isWeapons() || item.isAccessories()) ? Config.PREMIUM_RATE_FINISHED_ITEM : Config.PREMIUM_RATE_DROP_CHANCE;
 				}
 				
 				if (Config.PREMIUM_RATE_DROP_AMOUNT_BY_ID.get(cbDropHolder.itemId) != null)
@@ -139,7 +139,7 @@ public class DropCalculate
 		{
 			boolean usingPole = (player.getActiveWeaponItem() != null) && (player.getActiveWeaponItem().getItemType() == WeaponType.POLE);
 			
-			if (item.isArmors() || item.isWeapons() || item.isAccessorys())
+			if (item.isArmors() || item.isWeapons() || item.isAccessories())
 			{
 				rateChance *= Config.RATE_FINISHED_ITEM;
 			}
