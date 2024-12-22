@@ -55,7 +55,9 @@ import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.instance.Fisherman;
+import org.l2jmobius.gameserver.model.actor.instance.GrandBoss;
 import org.l2jmobius.gameserver.model.actor.instance.Merchant;
+import org.l2jmobius.gameserver.model.actor.instance.RaidBoss;
 import org.l2jmobius.gameserver.model.actor.instance.Teleporter;
 import org.l2jmobius.gameserver.model.actor.instance.Warehouse;
 import org.l2jmobius.gameserver.model.actor.stat.NpcStat;
@@ -195,7 +197,10 @@ public class Npc extends Creature
 		_currentChestId = getTemplate().getChestId();
 		_currentLHandId = getTemplate().getLHandId();
 		_currentRHandId = getTemplate().getRHandId();
-		_currentEnchant = Config.ENABLE_RANDOM_ENCHANT_EFFECT ? Rnd.get(4, 21) : getTemplate().getWeaponEnchant();
+		if ((this instanceof RaidBoss) || (this instanceof GrandBoss) || getTemplate().getType().equals("GrandBoss") || getTemplate().getType().equals("RaidBoss"))
+		{
+			_currentEnchant = Config.ENABLE_RANDOM_ENCHANT_EFFECT ? Rnd.get(7, 16) : getTemplate().getWeaponEnchant();
+		}
 		
 		// initialize the "current" collisions
 		_currentCollisionHeight = getTemplate().getFCollisionHeight();
