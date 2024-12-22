@@ -29,7 +29,7 @@ public class SpecialEvents
 	public static boolean _SpecialEventStarted = false;
 	public static boolean _ChristmasStarted = false;
 	
-	private static final int NPC = Config.CUSTOM_EVENT_NAME == 3 ? 40023 : (Config.CUSTOM_EVENT_NAME == 4 ? Config.CUSTOM_EVENT_NPC_ID : 34330);
+	private static int NPC = Config.CUSTOM_EVENT_NAME == 3 ? 40023 : (Config.CUSTOM_EVENT_NAME == 4 ? Config.CUSTOM_EVENT_NPC_ID : 34330);
 	private static List<Npc> _npclist;
 	
 	protected SpecialEvents()
@@ -80,10 +80,13 @@ public class SpecialEvents
 		final long currentTime = System.currentTimeMillis();
 		if (BorinetTask.getInstance().ChristmasEventStart().getTimeInMillis() > currentTime)
 		{
+			NPC = 13185;
 			ThreadPool.schedule(this::startChristmasEvent, BorinetTask.getInstance().ChristmasEventStart().getTimeInMillis() - currentTime);
 		}
 		else if ((BorinetTask.getInstance().ChristmasEventStart().getTimeInMillis() <= System.currentTimeMillis()) && (BorinetTask.getInstance().ChristmasEventEnd().getTimeInMillis() > System.currentTimeMillis()))
 		{
+			NPC = 13185;
+			npcSpawn();
 			_SpecialEventStarted = true;
 			_ChristmasStarted = true;
 			BorinetUtil.getInstance().reloadEventData();
@@ -152,10 +155,12 @@ public class SpecialEvents
 		final long currentTime = System.currentTimeMillis();
 		if (BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() > currentTime)
 		{
+			NPC = 34330;
 			ThreadPool.schedule(this::NewYearStart, BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() - currentTime);
 		}
 		else if ((BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() <= System.currentTimeMillis()) && (BorinetTask.getInstance().NewYearEventEnd().getTimeInMillis() > System.currentTimeMillis()))
 		{
+			NPC = 34330;
 			npcSpawn();
 			_SpecialEventStarted = true;
 			BorinetUtil.getInstance().reloadEventData();
@@ -166,6 +171,7 @@ public class SpecialEvents
 	
 	private void NewYearStart()
 	{
+		NPC = 34330;
 		final long currentTime = System.currentTimeMillis();
 		_SpecialEventStarted = true;
 		BorinetUtil.getInstance().reloadEventData();
