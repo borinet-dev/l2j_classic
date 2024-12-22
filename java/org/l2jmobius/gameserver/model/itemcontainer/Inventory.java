@@ -292,7 +292,16 @@ public abstract class Inventory extends ItemContainer
 			}
 			else if (item.getItemType() == WeaponType.FISHINGROD)
 			{
-				final Item lure = inventory.findEquippedLure();
+				Item lure = null;
+				if (item.getId() == 46286)
+				{
+					lure = inventory.findChristmasLure(46284); // 특정 미끼를 찾음
+				}
+				else
+				{
+					lure = inventory.findEquippedLure();
+				}
+				
 				if (lure != null)
 				{
 					inventory.setPaperdollItem(PAPERDOLL_LHAND, lure);
@@ -2121,7 +2130,10 @@ public abstract class Inventory extends ItemContainer
 						}
 						
 						Player owner = (Player) getOwner();
-						owner.getVariables().set("LastLure", String.valueOf(item.getObjectId()));
+						if (newItem.getId() != 46284)
+						{
+							owner.getVariables().set("LastLure", String.valueOf(item.getObjectId()));
+						}
 					}
 					else
 					{
@@ -2400,6 +2412,21 @@ public abstract class Inventory extends ItemContainer
 		}
 		
 		// Get the Item corresponding to the item identifier and return it
+		return lure;
+	}
+	
+	public Item findChristmasLure(int lureId)
+	{
+		Item lure = null;
+		for (Item item : _items)
+		{
+			// 아이템이 미끼 종류이고, 주어진 lureId와 일치하는지 확인
+			if (item.isEtcItem() && (item.getEtcItem().getItemType() == EtcItemType.LURE) && (item.getId() == lureId))
+			{
+				lure = item;
+				break;
+			}
+		}
 		return lure;
 	}
 	

@@ -992,15 +992,27 @@
 		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="PAPER" />
 	</item>
+	<item id="45495" name="일반 미끼" type="EtcItem">
+		<set name="icon" val="icon.etc_huge_lure" />
+		<set name="bodypart" val="lhand" />
+		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="price" val="7" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
 	<item id="46284" name="크리스마스 전용 미끼" type="EtcItem">
 		<set name="icon" val="icon.etc_bait_i00" />
-		<set name="is_tradable" val="false" />
-		<set name="is_dropable" val="false" />
-		<set name="is_sellable" val="false" />
-		<set name="etcitem_type" val="LURE" />
-		<set name="is_stackable" val="true" />
+		<set name="bodypart" val="lhand" />
 		<set name="default_action" val="EQUIP" />
+		<set name="etcitem_type" val="LURE" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
+		<set name="price" val="7" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
 	</item>
 	<item id="46285" name="크리스마스 전용 미끼 상자" type="EtcItem">
 		<set name="icon" val="icon.etc_treasure_box_i03" />
@@ -1021,6 +1033,10 @@
 		<set name="bodypart" val="lrhand" />
 		<set name="weight" val="1000" />
 		<set name="material" val="BONE" />
+		<skills>
+			<skill id="13826" level="1" type="ON_EQUIP" /> 
+			<skill id="30301" level="1" type="ON_UNEQUIP" /> 
+		</skills>
 		<stats>
 			<stat type="pAtk">1</stat>
 			<stat type="mAtk">1</stat>
@@ -1030,13 +1046,18 @@
 			<stat type="randomDamage">1</stat>
 		</stats>
 	</item>
-	<item id="46287" name="선물 상자를 삼킨 물고기" type="EtcItem">
+	<item id="46287" name="Fish Gift Box" type="EtcItem">
+		<!-- Double-click to obtain Santa's Small Gift Box. -->
 		<set name="icon" val="icon.fish_swallowing_gift_i00" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="46290" min="1" max="1" chance="100" /> <!-- Santa's Small Gift Box -->
+		</capsuled_items>
 	</item>
 	<item id="46288" name="크리스마스의 축복" type="EtcItem">
 		<set name="icon" val="BranchSys.icon.br_xmas_miracle_i00" />
@@ -1051,11 +1072,11 @@
 	</item>
 	<item id="46289" name="기적의 크리스마스 선물 상자" type="EtcItem">
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
-		<set name="is_sellable" val="false" />
-		<set name="etcitem_type" val="SCROLL" />
-		<set name="is_stackable" val="true" />
-		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="reuse_delay" val="1000" /> <!-- 1 초 -->
 		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="handler" val="EventItem" />
 	</item>
 	<item id="46290" name="산타의 작은 선물 상자" type="EtcItem">
 		<set name="icon" val="icon.event_six_party_box_i00" />
@@ -1103,7 +1124,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13828" level="1" /> 
@@ -1120,7 +1141,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13829" level="1" /> 
@@ -1137,7 +1158,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13830" level="1" /> 
@@ -1154,7 +1175,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13831" level="1" /> 
@@ -1171,7 +1192,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13832" level="1" /> 
@@ -1188,7 +1209,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13833" level="1" /> 
@@ -1205,7 +1226,7 @@
 		<set name="useSkillDisTime" val="6" />
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
-		<set name="time" val="3600" />
+		<set name="time" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="13834" level="1" /> 

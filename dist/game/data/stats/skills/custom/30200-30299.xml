@@ -4559,4 +4559,21 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="30301" toLevel="1" name="크리스마스 기념 낚싯대">
+		<icon>BranchSys3.lcon.s_g_ring_of_uthanka</icon>
+		<effectPoint>204</effectPoint>
+		<hitTime>1500</hitTime>
+		<magicLevel>64</magicLevel>
+		<mpConsume>59</mpConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>CHRISTMAS_ROD,-1</dispel>
+			</effect>
+		</effects>
+	</skill>
 </list>

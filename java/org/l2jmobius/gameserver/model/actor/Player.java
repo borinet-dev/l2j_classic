@@ -2247,6 +2247,15 @@ public class Player extends Playable
 			return;
 		}
 		
+		if (item.getId() == 46284)
+		{
+			if (!isUsingChristmasRod(46286))
+			{
+				sendMessage("크리스마스 기념 낚싯대 전용 미끼입니다. 장착할 수 없습니다.");
+				return;
+			}
+		}
+		
 		// Equip or unEquip
 		List<Item> items = null;
 		final boolean isEquiped = item.isEquipped();
@@ -2295,6 +2304,7 @@ public class Player extends Playable
 					sm.addItemName(item);
 				}
 				sendPacket(sm);
+				
 				if (getCurrentHp() >= (getMaxHp() * 0.9))
 				{
 					ThreadPool.schedule(() ->
@@ -2320,6 +2330,7 @@ public class Player extends Playable
 			}
 		}
 		
+		skillEffectReload();
 		refreshExpertisePenalty();
 		broadcastUserInfo();
 		
@@ -2336,6 +2347,25 @@ public class Player extends Playable
 		{
 			sendPacket(new ExStorageMaxCount(this));
 		}
+	}
+	
+	public void skillEffectReload()
+	{
+		ThreadPool.schedule(() ->
+		{
+			SkillData.getInstance().getSkill(491, 1).applyEffects(this, this, false, -1);
+			stopSkillEffects(SkillFinishType.REMOVED, 491);
+		}, 100); // (단위: 밀리초)
+	}
+	
+	// 플레이어가 특정 낚싯대(46286)를 착용 중인지 확인
+	public boolean isUsingChristmasRod(int rodId)
+	{
+		// 플레이어가 착용 중인 오른손 아이템(낚싯대) 확인
+		Item equippedRod = getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND);
+		
+		// 착용한 아이템이 존재하고, 그것이 특정 낚싯대(rodId)인지 확인
+		return (equippedRod != null) && (equippedRod.getId() == rodId) && (equippedRod.getItemType() == WeaponType.FISHINGROD);
 	}
 	
 	private double healItem(Item item)
@@ -4623,7 +4653,7 @@ public class Player extends Playable
 			{
 				handler.useItem(this, target, false);
 			}
-			ItemTable.getInstance().destroyItem("Consume", target, this, null);
+			ItemTable.getInstance().destroyItem("Consume", target, this, null, true);
 		}
 		// Cursed Weapons are not distributed
 		else if (CursedWeaponsManager.getInstance().isCursed(target.getId()))
@@ -4664,7 +4694,7 @@ public class Player extends Playable
 			else if ((target.getId() == Inventory.ADENA_ID) && (_inventory.getAdenaInstance() != null))
 			{
 				addAdena("습득", target.getCount(), null, true);
-				ItemTable.getInstance().destroyItem("Pickup", target, this, null);
+				ItemTable.getInstance().destroyItem("Pickup", target, this, null, true);
 			}
 			else
 			{

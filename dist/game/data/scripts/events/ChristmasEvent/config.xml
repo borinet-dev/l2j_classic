@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<event name="Christmas Event" active="2023 12 18 07 00-2023 12 26 22 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+<event name="Christmas Event" active="2024 12 16 07 00-2024 12 30 06 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
 	<droplist>
 		<add item="5556" min="1" max="1" chance="0.92%" minLevel="10" maxLevel="99" />
 		<add item="5557" min="1" max="1" chance="0.92%" minLevel="10" maxLevel="99" />
 		<add item="5558" min="1" max="1" chance="0.92%" minLevel="10" maxLevel="99" />
 		<add item="5559" min="1" max="1" chance="0.92%" minLevel="10" maxLevel="99" />
-		<add item="5562" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5563" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5564" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5565" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5583" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5584" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5585" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5586" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
-		<add item="5587" min="1" max="1" chance="2.22%" minLevel="10" maxLevel="99" />
+		<add item="5562" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5563" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5564" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5565" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5583" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5584" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5585" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5586" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
+		<add item="5587" min="1" max="1" chance="2.12%" minLevel="10" maxLevel="99" />
 	</droplist>
 	<spawnlist>
 		<add npc="34279" x="83644" y="148383" z="-3400" heading="29608" /> <!-- 2015 크리스마스 트리 중형 -->
 		<add npc="34279" x="83654" y="148863" z="-3400" heading="15350" /> <!-- 2015 크리스마스 트리 중형 -->
 		<add npc="34280" x="83307" y="149336" z="-3400" heading="15377" /> <!-- 2015 크리스마스 트리 소형 -->
-		<add npc="34280" x="83390" y="149338" z="-3400" heading="251" /> <!-- 2015 크리스마스 트리 소형 -->
+		<!-- <add npc="34280" x="83390" y="149338" z="-3400" heading="251" /> 2015 크리스마스 트리 소형 -->
 		<add npc="34279" x="82844" y="149400" z="-3464" heading="38341" /> <!-- 2015 크리스마스 트리 중형 -->
 		<add npc="34280" x="82289" y="148677" z="-3440" heading="13028" /> <!-- 2015 크리스마스 트리 소형 -->
 		<add npc="34280" x="82299" y="148553" z="-3440" heading="49991" /> <!-- 2015 크리스마스 트리 소형 -->
@@ -50,5 +50,12 @@
 		<item id="5585" />
 		<item id="5586" />
 		<item id="5587" />
+		<item id="46284" />
+		<item id="46285" />
+		<item id="46286" />
+		<item id="46287" />
+		<item id="46288" />
+		<item id="46289" />
+		<item id="46290" />
 	</destroyItemsOnEnd>
 </event>

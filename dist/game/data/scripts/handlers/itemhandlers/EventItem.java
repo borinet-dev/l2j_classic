@@ -104,6 +104,10 @@ public class EventItem implements IItemHandler
 	{
 		48497, 41235, 29014, 70110, 70111, 23768, 10649
 	};
+	private static final int[] 크리스마스선물상자 =
+	{
+		46293, 46294, 46295, 46296, 46297, 46298, 46299, 46300, 46301
+	};
 	// @formatter:on
 	
 	@Override
@@ -510,6 +514,11 @@ public class EventItem implements IItemHandler
 				
 				// 아이템 지급
 				giveItem(player, "한가위 선물 주머니", 41382, rewardId, itemCount, msg);
+				break;
+			}
+			case 46289:
+			{
+				giveItem(player, "기적의 크리스마스 선물 상자", 46289, 크리스마스선물상자[Rnd.get(크리스마스선물상자.length)], 1, false);
 				break;
 			}
 			default:

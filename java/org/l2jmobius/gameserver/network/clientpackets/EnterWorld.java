@@ -63,6 +63,7 @@ import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
 import org.l2jmobius.gameserver.model.siege.FortSiege;
 import org.l2jmobius.gameserver.model.siege.Siege;
+import org.l2jmobius.gameserver.model.skill.AbnormalType;
 import org.l2jmobius.gameserver.model.skill.AbnormalVisualEffect;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
@@ -585,11 +586,11 @@ public class EnterWorld implements IClientIncomingPacket
 		// Remove demonic weapon if character is not cursed weapon equipped.
 		if ((player.getInventory().getItemByItemId(8190) != null) && !player.isCursedWeaponEquipped())
 		{
-			player.destroyItem("Zariche", player.getInventory().getItemByItemId(8190), null, true);
+			player.destroyItem("자리체", player.getInventory().getItemByItemId(8190), null, true);
 		}
 		if ((player.getInventory().getItemByItemId(8689) != null) && !player.isCursedWeaponEquipped())
 		{
-			player.destroyItem("Akamanah", player.getInventory().getItemByItemId(8689), null, true);
+			player.destroyItem("아카마나프", player.getInventory().getItemByItemId(8689), null, true);
 		}
 		
 		if (Config.ALLOW_MAIL)
@@ -831,6 +832,11 @@ public class EnterWorld implements IClientIncomingPacket
 			iu.addModifiedItem(ticket);
 			player.sendInventoryUpdate(iu);
 			player.addItem("정기선 배표 보상", 57, amount, null, true);
+		}
+		
+		if (!player.isUsingChristmasRod(46286))
+		{
+			player.getEffectList().stopEffects(AbnormalType.CHRISTMAS_FESTIVAL);
 		}
 	}
 	

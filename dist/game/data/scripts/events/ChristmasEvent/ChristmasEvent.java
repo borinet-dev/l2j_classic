@@ -2,7 +2,9 @@ package events.ChristmasEvent;
 
 import java.util.Arrays;
 import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Logger;
@@ -10,6 +12,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.data.sql.ItemNameTable;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.instancemanager.GlobalVariablesManager;
@@ -27,7 +30,6 @@ import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.NpcSay;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.Broadcast;
 
@@ -80,7 +82,6 @@ public class ChristmasEvent extends LongTimeEvent
 		}
 		else if ((BorinetTask.getInstance().ChristmasEventStart().getTimeInMillis() <= System.currentTimeMillis()) && (BorinetTask.getInstance().ChristmasEventEnd().getTimeInMillis() > System.currentTimeMillis()))
 		{
-			santaSpawn();
 			_snowmanState = SnowmanState.SAVED;
 			final long randomTime = (getRandom(1, 2)) * 3600000;
 			ThreadPool.schedule(this::eventStart, randomTime);
@@ -147,7 +148,6 @@ public class ChristmasEvent extends LongTimeEvent
 	// @formatter:on
 	private void spawnNpc()
 	{
-		santaSpawn();
 		_snowmanState = SnowmanState.SAVED;
 		final long randomTime = (getRandom(1, 2)) * 3600000;
 		ThreadPool.schedule(this::eventStart, randomTime);
@@ -267,6 +267,11 @@ public class ChristmasEvent extends LongTimeEvent
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		if (event.startsWith("coupon"))
 		{
 			final String fullBypass = event.replace("coupon ", "");
@@ -296,7 +301,7 @@ public class ChristmasEvent extends LongTimeEvent
 			{
 				item_id = WEAPONSA[num];
 			}
-			else if ((player.getLevel() >= 76) && (player.getLevel() < 80))
+			else if ((player.getLevel() >= 75) && (player.getLevel() < 80))
 			{
 				item_id = WEAPONSS[num];
 			}
@@ -309,7 +314,6 @@ public class ChristmasEvent extends LongTimeEvent
 			Item item = ItemTemplate.createItem(item_id);
 			item.setEnchantLevel(enchant);
 			player.addItem("크리스마스이벤트", item, null, true);
-			player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_OBTAINED_A_S1_S2).addInt(enchant).addItemName(item_id));
 			takeItems(player, 20107, 1);
 		}
 		if (event.startsWith("multisell"))
@@ -380,6 +384,22 @@ public class ChristmasEvent extends LongTimeEvent
 				player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
 				break;
 			}
+			case "5":
+			{
+				htmltext = "13185-11.htm";
+				break;
+			}
+			case "6":
+			{
+				if (getQuestItemsCount(player, 5560) >= 30)
+				{
+					takeItems(player, 5560, 30);
+					player.addItem("ChristmasChange", 46286, 1, null, true);
+					break;
+				}
+				player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS);
+				break;
+			}
 			case "change":
 			{
 				htmltext = "13185-1.htm";
@@ -430,60 +450,99 @@ public class ChristmasEvent extends LongTimeEvent
 					break;
 				}
 				
-				takeItems(player, 57, 100000);
-				player.getVariables().set("ChristmasLotteryTime", System.currentTimeMillis() + SANTA_LOTTERY_REUSE);
-				
-				int chance = Rnd.get(1000000);
+				int chance = Rnd.get(100); // 0~100 사이 난수 생성
+				int itemId = 0; // 획득한 아이템 ID를 저장
+				int obtainedItemCount = 1; // 기본 아이템 개수는 1개
 				
 				// 크리스마스 트리 30%
-				if (chance < 300000)
+				if (chance < 30)
 				{
-					player.addItem("ChristmasLottery", 5561, 1, null, true);
+					itemId = 5561; // 크리스마스 트리 30%
 				}
-				else if (chance < 480000)
+				else if (chance < 39)
 				{
-					player.addItem("ChristmasLottery", 20102, 1, null, true);
+					itemId = 20102; // 산타클로스의 선물 세트 9%
 				}
-				else if (chance < 630000)
+				else if (chance < 47)
 				{
-					player.addItem("ChristmasLottery", 20107, 1, null, true);
+					if (getQuestItemsCount(player, 20107) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 20107; // 산타클로스의 무기 교환권 8%
 				}
-				else if (chance < 680000)
+				else if (chance < 55)
 				{
-					player.addItem("ChristmasLottery", 14616, 1, null, true);
+					itemId = 14616; // 산타클로스의 선물 8%
 				}
-				else if ((chance < 730000) && (getQuestItemsCount(player, 14611) == 0))
+				else if (chance < 62)
 				{
-					player.addItem("ChristmasLottery", 14611, 1, null, true);
+					if (getQuestItemsCount(player, 14611) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 14611; // 루돌프 코 7%
 				}
-				else if ((chance < 780000) && (getQuestItemsCount(player, 7836) == 0))
+				else if (chance < 69)
 				{
-					player.addItem("ChristmasLottery", 7836, 1, null, true);
+					if (getQuestItemsCount(player, 7836) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 7836; // 산타 모자 7%
 				}
-				else if ((chance < 830000) && (getQuestItemsCount(player, 8936) == 0))
+				else if (chance < 76)
 				{
-					player.addItem("ChristmasLottery", 8936, 1, null, true);
+					if (getQuestItemsCount(player, 8936) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 8936; // 산타 뿔 모자 7%
 				}
-				else if ((chance < 880000) && (getQuestItemsCount(player, 10606) == 0))
+				else if (chance < 82)
 				{
-					player.addItem("ChristmasLottery", 10606, 1, null, true);
+					if (getQuestItemsCount(player, 10606) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 10606; // 아가시온 봉인 팔찌 - 루돌프(시간제) 6%
 				}
-				else if ((chance < 930000) && (getQuestItemsCount(player, 20094) == 0))
+				else if (chance < 88)
 				{
-					player.addItem("ChristmasLottery", 20094, 1, null, true);
+					if (getQuestItemsCount(player, 20094) > 0)
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 20094; // 아가시온 봉인 팔찌 - 루돌프 6%
 				}
-				else if (chance < 960000)
+				else if (chance < 94)
 				{
-					player.addItem("ChristmasLottery", 20575, 1, null, true);
+					itemId = 20575; // 경험치 달인 - 이벤트 6%
 				}
-				else if ((chance < 985000) && ((getQuestItemsCount(player, 9177) == 0) || (getQuestItemsCount(player, 9204) == 0)))
+				else if (chance < 99)
 				{
-					player.addItem("ChristmasLottery", 9204, 1, null, true);
+					if ((getQuestItemsCount(player, 9177) > 0) || (getQuestItemsCount(player, 9204) > 0))
+					{
+						startQuestTimer("gamble", 0, npc, null);
+						break;
+					}
+					itemId = 9204; // 투영병기 - 강철의 서클릿 5%
 				}
-				else if (chance < 1000000)
+				else if (chance <= 100)
 				{
-					player.addItem("ChristmasLottery", 29010, 5, null, true);
+					itemId = 29010;
+					obtainedItemCount = 5; // EXP/SP 부스트 주문서 - 상급은 2%
 				}
+				
+				takeItems(player, 57, 100000);
+				player.addItem("ChristmasLottery", itemId, obtainedItemCount, null, true);
+				player.getVariables().set("ChristmasLotteryTime", System.currentTimeMillis() + SANTA_LOTTERY_REUSE);
 				break;
 			}
 			case "SPAM_TEXT":
@@ -513,6 +572,169 @@ public class ChristmasEvent extends LongTimeEvent
 				startQuestTimer("SPAM_TEXT_SNOWMAN", (min * 60 * 1000), npc, null);
 				break;
 			}
+			case "letmego":
+			{
+				htmltext = "13185-9.htm";
+				break;
+			}
+			case "giftbox":
+			{
+				int itemCount = (int) getQuestItemsCount(player, 46290);
+				
+				// 아이템이 15개 이상 있어야 진행 가능
+				if (itemCount < 15)
+				{
+					htmltext = "13185-10.htm";
+					break;
+				}
+				
+				// 몇 번 진행 가능한지 계산
+				int iterations = itemCount / 15; // 진행 가능한 횟수
+				int totalItemsToRemove = iterations * 15; // 제거할 총 아이템 수
+				Map<Integer, Integer> itemTotals = new HashMap<>();
+				int missCount = 0; // 꽝 횟수 추적
+				
+				// **아이템을 한 번에 제거**
+				takeItems(player, 46290, totalItemsToRemove);
+				
+				synchronized (player) // 동시성 제어
+				{
+					for (int i = 0; i < iterations; i++)
+					{
+						int chance = Rnd.get(100); // 0~100 사이 난수 생성
+						int itemId = 0; // 획득한 아이템 ID를 저장
+						int obtainedItemCount = 1; // 기본 아이템 개수는 1개
+						
+						if (chance < 2)
+						{
+							// 꽝 5%
+							player.sendMessage("꽝. 다음 기회에...");
+							missCount++;
+							continue;
+						}
+						else if (chance < 20)
+						{
+							itemId = 5561; // 크리스마스 트리
+						}
+						else if (chance < 28)
+						{
+							itemId = 20102; // 산타클로스의 선물 세트
+						}
+						else if (chance < 37)
+						{
+							itemId = 46289; // 기적의 크리스마스 선물 상자
+						}
+						else if (chance < 46)
+						{
+							if (getQuestItemsCount(player, 20107) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 20107; // 산타클로스의 무기 교환권
+						}
+						else if (chance < 54)
+						{
+							itemId = 14616; // 산타클로스의 선물
+						}
+						else if (chance < 60)
+						{
+							if (getQuestItemsCount(player, 14611) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 14611; // 루돌프 코
+						}
+						else if (chance < 68)
+						{
+							if (getQuestItemsCount(player, 7836) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 7836; // 산타 모자
+						}
+						else if (chance < 75)
+						{
+							if (getQuestItemsCount(player, 8936) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 8936; // 산타 뿔 모자
+						}
+						else if (chance < 80)
+						{
+							if (getQuestItemsCount(player, 10606) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 10606; // 아가시온 봉인 팔찌 - 루돌프(시간제)
+						}
+						else if (chance < 86)
+						{
+							if (getQuestItemsCount(player, 20094) > 0)
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 20094; // 아가시온 봉인 팔찌 - 루돌프
+						}
+						else if (chance < 92)
+						{
+							itemId = 20575; // 경험치 달인 - 이벤트
+						}
+						else if (chance < 98)
+						{
+							if ((getQuestItemsCount(player, 9177) > 0) || (getQuestItemsCount(player, 9204) > 0))
+							{
+								// 이미 아이템이 있으면 꽝 처리
+								missCount++;
+								continue;
+							}
+							itemId = 9204; // 투영병기 - 강철의 서클릿
+						}
+						else if (chance <= 100)
+						{
+							itemId = 29010;
+							obtainedItemCount = 5; // EXP/SP 부스트 주문서 - 상급
+						}
+						
+						// 아이템 지급
+						if (itemId > 0)
+						{
+							player.addItem("ChristmasLottery", itemId, obtainedItemCount, null, true);
+							itemTotals.put(itemId, itemTotals.getOrDefault(itemId, 0) + obtainedItemCount);
+						}
+					}
+				}
+				
+				// 결과 생성 및 출력
+				StringBuilder itemList = new StringBuilder();
+				for (Map.Entry<Integer, Integer> entry : itemTotals.entrySet())
+				{
+					String itemName = ItemNameTable.getInstance().getItemNameKor(entry.getKey());
+					itemList.append(itemName).append(" x").append(entry.getValue()).append(" 개<br1>");
+				}
+				
+				if (iterations > 1)
+				{
+					htmltext = getHtm(player, "13185-multiple.htm");
+					htmltext = htmltext.replace("%iterations%", String.valueOf(iterations));
+					htmltext = htmltext.replace("%items%", itemList.toString());
+					htmltext = htmltext.replace("%missCount%", String.valueOf(missCount));
+				}
+				break;
+			}
+			
 		}
 		return htmltext;
 	}
@@ -671,29 +893,6 @@ public class ChristmasEvent extends LongTimeEvent
 		public int getZ()
 		{
 			return _z;
-		}
-	}
-	
-	private void santaSpawn()
-	{
-		addSanta(산타클로스, 83452, 148622, -3457, 32324); // <!-- 기란 -->
-		addSanta(산타클로스, -83810, 243137, -3678, 14970); // <!-- 말섬 -->
-		addSanta(산타클로스, 18272, 145158, -3064, 6316); // <!-- 디온 -->
-		addSanta(산타클로스, -14587, 124003, -3112, 53029); // <!-- 글성 -->
-		addSanta(산타클로스, 117165, 76746, -2688, 38521); // <!-- 사냥꾼 -->
-		addSanta(산타클로스, 147449, 25875, -2008, 15813); // <!-- 아덴 -->
-		addSanta(산타클로스, 82752, 53573, -1488, 32767); // <!-- 오렌 -->
-		addSanta(산타클로스, -80782, 150146, -3040, 32257); // <!-- 글루딘 -->
-		addSanta(산타클로스, 17723, 170096, -3504, 36948); // <!-- 플로란 -->
-		addSanta(산타클로스, 147689, -55393, -2728, 49356); // <!-- 고다드 -->
-	}
-	
-	private static void addSanta(int npcId, int x, int y, int z, int h)
-	{
-		Npc npc = addSpawn(npcId, x, y, z, h, false, 0);
-		if (npc != null)
-		{
-			_santa.add(npc);
 		}
 	}
 	

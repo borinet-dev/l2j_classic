@@ -588,21 +588,21 @@
 	<skill id="35020" toLevel="1" name="Talisman of Baium">
 		<!-- Imbues with Talisman of Baium power. -->
 		<icon>icon.tallisman_baium</icon>
+		<abnormalLevel>99</abnormalLevel>
+		<abnormalTime>-1</abnormalTime>
 		<abnormalType>SEED_TALISMAN1</abnormalType>
 		<abnormalVisualEffect>SEED_TALISMAN4</abnormalVisualEffect>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>-1</magicLevel>
 		<operateType>A2</operateType>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
-		<specialLevel>-2</specialLevel>
+		<specialLevel>-1</specialLevel>
 		<hitCancelTime>0</hitCancelTime>
-		<buffProtectLevel>31</buffProtectLevel>
-		<magicLevel>40</magicLevel>
-		<abnormalLevel>6</abnormalLevel>
-		<abnormalTime>-1</abnormalTime>
 		<blockActionUseSkill>true</blockActionUseSkill>
 		<stayAfterDeath>true</stayAfterDeath>
 		<canBeDispelled>false</canBeDispelled>
-		<isMagic>3</isMagic>
+		<irreplacableBuff>true</irreplacableBuff>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 	</skill>
@@ -614,16 +614,12 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<hitCancelTime>0</hitCancelTime>
 		<magicLevel>40</magicLevel>
-		<trait>HOLD</trait>
 		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="DispelBySlot">
 				<dispel>SEED_TALISMAN1,-1</dispel>
-			</effect>
-			<effect name="DefenceTrait">
-				<HOLD>100</HOLD>
 			</effect>
 		</effects>
 	</skill>
