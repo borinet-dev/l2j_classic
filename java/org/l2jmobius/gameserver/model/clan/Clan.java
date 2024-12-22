@@ -333,12 +333,9 @@ public class Clan implements IIdentifiable, INamable
 	
 	private void insertDB(int ex_objId, String ex_name, int new_objId, String new_name)
 	{
-		Connection con = null;
-		PreparedStatement statement = null;
-		try
+		try (Connection con = DatabaseFactory.getConnection();
+			PreparedStatement statement = con.prepareStatement("REPLACE INTO clanLeader_history(clanId, clan_name, ex_objId, ex_name, new_objId, new_name) VALUES (?, ?, ?, ?, ?, ?)"))
 		{
-			con = DatabaseFactory.getConnection();
-			statement = con.prepareStatement("REPLACE INTO clanLeader_history(clanId, clan_name, ex_objId, ex_name, new_objId, new_name) VALUES (?, ?, ?, ?, ?, ?)");
 			statement.setInt(1, getId());
 			statement.setString(2, getName());
 			statement.setInt(3, ex_objId);
@@ -2262,7 +2259,7 @@ public class Clan implements IIdentifiable, INamable
 		}
 		if (Config.ALT_DISABLE_DOUBLE_JOIN_CLAN && !Config.ALLOWED_CREATE_JOIN_HWID.contains(target.getHWID()))
 		{
-			if (BorinetUtil.getInstance().conditionClan(player, player.getClanId()))
+			if (BorinetUtil.getInstance().conditionClan(target, player.getClanId()))
 			{
 				player.sendMessage("상대방은 현재 다른 혈맹소속입니다. (이중 가입 금지)");
 				return false;

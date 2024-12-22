@@ -31,6 +31,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
@@ -233,6 +234,7 @@ public class DailyTaskManager
 		resetHeavenlyRift();
 		resetCharVar();
 		resetVarEvent();
+		cleanUpExpiredData();
 	}
 	
 	private void resetSchedule()
@@ -774,13 +776,12 @@ public class DailyTaskManager
 	
 	private static void resetVarEvent()
 	{
+		List<String> variablesToRemove = List.of("CUSTOM_EVENT_BOX", "CHUSEOK_ITEM", "MAPLE_ITEM", "문자수집가의선물");
 		for (Player player : World.getInstance().getPlayers())
 		{
-			player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
-			player.getAccountVariables().remove("CHUSEOK_ITEM");
-			player.getAccountVariables().remove("MAPLE_ITEM");
-			player.getAccountVariables().remove("문자수집가의선물");
+			variablesToRemove.forEach(player.getAccountVariables()::remove);
 		}
+		
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
 		{
@@ -792,6 +793,63 @@ public class DailyTaskManager
 		catch (Exception e)
 		{
 			LOGGER.warning("커스텀이벤트 데이터베이스 정리 오류" + e);
+		}
+	}
+	
+	public static void cleanUpExpiredData()
+	{
+		long currentTimeMillis = System.currentTimeMillis();
+		
+		String deleteReuseDelayQuery = "DELETE FROM character_item_reuse_save WHERE reuseDelay < ?";
+		String deleteVariablesQuery = "DELETE FROM character_variables WHERE var LIKE ? AND val < ?";
+		String selectPlayerVariablesQuery = "SELECT charId, var FROM character_variables WHERE var LIKE ? AND val < ?";
+		
+		try (Connection con = DatabaseFactory.getConnection())
+		{
+			// character_item_reuse_save 테이블 데이터 삭제
+			try (PreparedStatement ps = con.prepareStatement(deleteReuseDelayQuery))
+			{
+				ps.setLong(1, currentTimeMillis);
+				int rowsDeleted = ps.executeUpdate();
+				LOGGER.info("cleanUpExpiredData: character_item_reuse_save 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
+			}
+			
+			// character_variables 테이블에서 만료된 데이터 삭제
+			try (PreparedStatement ps = con.prepareStatement(deleteVariablesQuery))
+			{
+				ps.setString(1, "%재사용시간%");
+				ps.setLong(2, currentTimeMillis);
+				int rowsDeleted = ps.executeUpdate();
+				LOGGER.info("cleanUpExpiredData: character_variables 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
+			}
+			
+			// 플레이어별 변수 삭제 처리
+			try (PreparedStatement ps = con.prepareStatement(selectPlayerVariablesQuery))
+			{
+				ps.setString(1, "%재사용시간%");
+				ps.setLong(2, currentTimeMillis);
+				
+				try (ResultSet rs = ps.executeQuery())
+				{
+					// ResultSet을 순회하며 즉시 변수 삭제 처리
+					while (rs.next())
+					{
+						int charId = rs.getInt("charId");
+						String variable = rs.getString("var");
+						
+						// 해당 charId를 가진 플레이어 가져오기
+						Player player = World.getInstance().getPlayer(charId);
+						if (player != null)
+						{
+							player.getVariables().remove(variable);
+						}
+					}
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			LOGGER.log(Level.SEVERE, "cleanUpExpiredData: 데이터베이스 작업 중 오류 발생", e);
 		}
 	}
 	
@@ -818,20 +876,21 @@ public class DailyTaskManager
 			LOGGER.warning("이벤트 데이터베이스 정리 오류" + e);
 		}
 		
+		List<String> variablesToRemove = List.of("Lollipop_41258", "Lollipop_41259");
+		List<String> AccountvariablesToRemove = List.of("SPRING_BUFF");
+		List<String> AccountvariablesToFebruary = List.of("발렌타인데이선물", "CUPON_L2DRAGON");
+		List<String> AccountvariablesToMarch = List.of("삼일절선물", "화이트데이선물");
 		for (Player player : World.getInstance().getPlayers())
 		{
-			player.getVariables().remove("Lollipop_41258");
-			player.getVariables().remove("Lollipop_41259");
-			player.getAccountVariables().remove("SPRING_BUFF");
+			variablesToRemove.forEach(player.getVariables()::remove);
+			AccountvariablesToRemove.forEach(player.getAccountVariables()::remove);
 			if ((BorinetTask.Month() != Calendar.FEBRUARY))
 			{
-				player.getAccountVariables().remove("발렌타인데이선물");
-				player.getAccountVariables().remove("CUPON_L2DRAGON");
+				AccountvariablesToFebruary.forEach(player.getAccountVariables()::remove);
 			}
 			if ((BorinetTask.Month() != Calendar.MARCH))
 			{
-				player.getAccountVariables().remove("삼일절선물");
-				player.getAccountVariables().remove("화이트데이선물");
+				AccountvariablesToMarch.forEach(player.getAccountVariables()::remove);
 			}
 		}
 	}
@@ -1197,29 +1256,29 @@ public class DailyTaskManager
 		
 		File Chatfile = new File("log/chat.log");
 		File newChatfile = new File("log/chat/chat_" + today + ".log");
-		File Itemfile = new File("log/item.log");
-		File newItemfile = new File("log/item/item_" + today + ".log");
+		// File Itemfile = new File("log/item.log");
+		// File newItemfile = new File("log/item/item_" + today + ".log");
 		
 		File chat = new File("log/chat");
-		File item = new File("log/item");
+		// File item = new File("log/item");
 		
 		if (!chat.exists())
 		{
 			new File("log/chat").mkdirs();
 			LOGGER.info("log/chat 폴더를 생성했습니다.");
 		}
-		if (!item.exists())
-		{
-			new File("log/item").mkdirs();
-			LOGGER.info("log/item 폴더를 생성했습니다.");
-		}
+		// if (!item.exists())
+		// {
+		// new File("log/item").mkdirs();
+		// LOGGER.info("log/item 폴더를 생성했습니다.");
+		// }
 		
 		try
 		{
 			Files.copy(Chatfile.toPath(), newChatfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-			Files.copy(Itemfile.toPath(), newItemfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+			// Files.copy(Itemfile.toPath(), newItemfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 			new FileOutputStream("log/chat.log").close();
-			new FileOutputStream("log/item.log").close();
+			// new FileOutputStream("log/item.log").close();
 			LOGGER.info("로그 파일을 초기화 하였습니다.");
 		}
 		catch (IOException e)

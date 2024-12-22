@@ -18,6 +18,7 @@ package handlers.admincommandhandlers;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -625,14 +626,20 @@ public class AdminEditChar implements IAdminCommandHandler
 				
 				final boolean changeCreateExpiryTime = st.nextToken().equalsIgnoreCase("create");
 				final String playerName = st.nextToken();
-				Player player = null;
-				player = World.getInstance().getPlayer(playerName);
+				Player player = World.getInstance().getPlayer(playerName);
 				if (player == null)
 				{
-					final Connection con = DatabaseFactory.getConnection();
-					final PreparedStatement ps = con.prepareStatement("UPDATE characters SET " + (changeCreateExpiryTime ? "clan_create_expiry_time" : "clan_join_expiry_time") + " WHERE char_name=? LIMIT 1");
-					ps.setString(1, playerName);
-					ps.execute();
+					try (Connection con = DatabaseFactory.getConnection();
+						PreparedStatement ps = con.prepareStatement("UPDATE characters SET " + (changeCreateExpiryTime ? "clan_create_expiry_time" : "clan_join_expiry_time") + " WHERE char_name=? LIMIT 1"))
+					{
+						ps.setString(1, playerName);
+						ps.execute();
+					}
+					catch (SQLException e)
+					{
+						System.err.println("Database error while updating character: " + e.getMessage());
+						e.printStackTrace();
+					}
 				}
 				else if (changeCreateExpiryTime) // removing penalty
 				{

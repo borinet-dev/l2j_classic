@@ -46,25 +46,21 @@ public class BackReward extends LongTimeEvent
 			case "reward":
 			{
 				int rewardItem = player.getVariables().getInt("백섭 보상", 0);
-				// Database connection setup
-				Connection con = null;
-				PreparedStatement ps = null;
-				ResultSet rs = null;
 				
 				if (rewardItem >= 1)
 				{
 					player.sendMessage("이미 보상을 수령하였습니다.");
+					return null;
 				}
-				else
+				
+				// Database connection with try-with-resources
+				String query = "SELECT charId, createDate FROM characters WHERE STR_TO_DATE(createDate, '%Y-%m-%d') < '2024-10-01' AND charId = ?";
+				try (Connection con = DatabaseFactory.getConnection();
+					PreparedStatement ps = con.prepareStatement(query))
 				{
-					try
+					ps.setInt(1, player.getObjectId());
+					try (ResultSet rs = ps.executeQuery())
 					{
-						con = DatabaseFactory.getConnection();
-						String query = "SELECT charId, createDate FROM characters WHERE STR_TO_DATE(createDate, '%Y-%m-%d') < '2024-10-01' AND charId = ?";
-						ps = con.prepareStatement(query);
-						ps.setInt(1, player.getObjectId());
-						rs = ps.executeQuery();
-						
 						if (rs.next())
 						{
 							rewardItems(player);
@@ -74,32 +70,12 @@ public class BackReward extends LongTimeEvent
 							player.sendMessage("보상을 받을 조건에 맞지 않습니다.");
 						}
 					}
-					catch (SQLException e)
-					{
-						e.printStackTrace();
-					}
-					finally
-					{
-						try
-						{
-							if (rs != null)
-							{
-								rs.close();
-							}
-							if (ps != null)
-							{
-								ps.close();
-							}
-							if (con != null)
-							{
-								con.close();
-							}
-						}
-						catch (SQLException e)
-						{
-							e.printStackTrace();
-						}
-					}
+				}
+				catch (SQLException e)
+				{
+					// 예외를 로그로 남기는 방식으로 변경
+					System.err.println("Database error while processing reward event: " + e.getMessage());
+					e.printStackTrace();
 				}
 				return null;
 			}
