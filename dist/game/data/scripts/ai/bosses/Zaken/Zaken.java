@@ -71,14 +71,7 @@ public class Zaken extends AbstractNpcAI
 			}
 			case IN_FIGHT:
 			{
-				final double curr_hp = info.getDouble("currentHP");
-				final double curr_mp = info.getDouble("currentMP");
-				final int loc_x = info.getInt("loc_x");
-				final int loc_y = info.getInt("loc_y");
-				final int loc_z = info.getInt("loc_z");
-				final int heading = info.getInt("heading");
-				_zaken = (GrandBoss) addSpawn(ZAKEN, loc_x, loc_y, loc_z, heading, false, 0);
-				_zaken.setCurrentHpMp(curr_hp, curr_mp);
+				_zaken = (GrandBoss) addSpawn(ZAKEN, ZAKEN_LOC, false, 0);
 				_lastAttack = System.currentTimeMillis();
 				addBoss(_zaken);
 				
