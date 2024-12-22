@@ -16,8 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import java.util.logging.Logger;
-
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
@@ -38,8 +36,6 @@ import org.l2jmobius.gameserver.util.OfflineTradeUtil;
  */
 public class RequestRestart implements IClientIncomingPacket
 {
-	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
-	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
@@ -95,7 +91,6 @@ public class RequestRestart implements IClientIncomingPacket
 		{
 			player.setName(player.getVariables().getString("저주받은무기_이름", ""));
 		}
-		LOGGER_ACCOUNTING.info("Logged out, " + client);
 		
 		if (!OfflineTradeUtil.enteredOfflineMode(player))
 		{

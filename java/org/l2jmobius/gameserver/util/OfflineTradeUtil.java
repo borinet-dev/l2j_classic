@@ -16,8 +16,6 @@
  */
 package org.l2jmobius.gameserver.util;
 
-import java.util.logging.Logger;
-
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.data.sql.OfflineTraderTable;
 import org.l2jmobius.gameserver.instancemanager.AntiFeedManager;
@@ -34,8 +32,6 @@ import org.l2jmobius.gameserver.network.serverpackets.ServerClose;
  */
 public class OfflineTradeUtil
 {
-	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
-	
 	private OfflineTradeUtil()
 	{
 		// utility class
@@ -154,7 +150,6 @@ public class OfflineTradeUtil
 		}
 		
 		player.storeMe();
-		LOGGER_ACCOUNTING.info("Entering offline mode, " + client);
 		return true;
 	}
 }

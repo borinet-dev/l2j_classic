@@ -17,7 +17,6 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.util.Date;
-import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
@@ -50,8 +49,6 @@ import org.l2jmobius.gameserver.util.BorinetUtil;
  */
 public class CharacterSelect implements IClientIncomingPacket
 {
-	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
-	
 	// cd
 	private int _charSlot;
 	
@@ -239,8 +236,6 @@ public class CharacterSelect implements IClientIncomingPacket
 			{
 				client.getPlayerLock().unlock();
 			}
-			
-			LOGGER_ACCOUNTING.info("Logged in, " + client);
 		}
 	}
 }

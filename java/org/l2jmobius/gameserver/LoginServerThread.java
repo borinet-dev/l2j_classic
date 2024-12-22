@@ -79,7 +79,6 @@ import org.l2jmobius.gameserver.util.BorinetUtil;
 public class LoginServerThread extends Thread
 {
 	protected static final Logger LOGGER = Logger.getLogger(LoginServerThread.class.getName());
-	protected static final Logger ACCOUNTING_LOGGER = Logger.getLogger("accounting");
 	
 	/**
 	 * @see org.l2jmobius.loginserver.LoginServer#PROTOCOL_REV
@@ -583,7 +582,6 @@ public class LoginServerThread extends Thread
 			else
 			{
 				Disconnection.of(client).defaultSequence(new SystemMessage(SystemMessageId.YOU_ARE_LOGGED_IN_TO_TWO_PLACES_IF_YOU_SUSPECT_ACCOUNT_THEFT_WE_RECOMMEND_CHANGING_YOUR_PASSWORD_SCANNING_YOUR_COMPUTER_FOR_VIRUSES_AND_USING_AN_ANTI_VIRUS_SOFTWARE));
-				ACCOUNTING_LOGGER.info("Kicked by login, " + client);
 			}
 		}
 		sendLogout(account);

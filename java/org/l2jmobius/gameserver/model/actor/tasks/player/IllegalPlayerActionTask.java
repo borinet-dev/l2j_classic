@@ -16,8 +16,6 @@
  */
 package org.l2jmobius.gameserver.model.actor.tasks.player;
 
-import java.util.logging.Logger;
-
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
@@ -33,8 +31,6 @@ import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
  */
 public class IllegalPlayerActionTask implements Runnable
 {
-	private static final Logger LOGGER = Logger.getLogger("audit");
-	
 	private final String _message;
 	private final IllegalActionPunishmentType _punishment;
 	private final Player _actor;
@@ -74,8 +70,6 @@ public class IllegalPlayerActionTask implements Runnable
 	@Override
 	public void run()
 	{
-		LOGGER.info("AUDIT, " + _message + ", " + _actor + ", " + _punishment);
-		
 		// Enable line bellow to get spammed by bot users.
 		// AdminData.getInstance().broadcastMessageToGMs(_message);
 		if (!_actor.isGM())

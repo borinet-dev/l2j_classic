@@ -129,7 +129,7 @@ public class CursedWeapon implements INamable
 					}
 					
 					// Restore the reputation
-					ps.setString(1, _playerName);
+					ps.setString(1, (_player.getVariables().getString("저주받은무기_이름", "")));
 					ps.setInt(2, _playerReputation);
 					ps.setInt(3, _playerPkKills);
 					ps.setInt(4, _playerId);

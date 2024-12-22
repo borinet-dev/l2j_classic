@@ -291,4 +291,173 @@
 			<height normal="40" grown="48" />
 		</collision>
 	</npc>
+	<npc id="25671" level="84" type="GrandBoss" name="Queen Shyeed">
+		<parameters>
+			<param name="RaidSpawnMusic" value="Rm02_A" />
+			<skill name="RangeHold_a" id="4197" level="9" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="4292368" sp="580689" />
+		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+			<vitals hp="153409375" hpRegen="319.2293199" mp="2331191.426" mpRegen="3" />
+			<attack physical="5096.60522653545" magical="4586.68871108008" random="10" critical="40" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="4857.43930635838" magical="1006.438002560395" />
+			<attribute>
+				<attack type="EARTH" value="200" />
+				<defence fire="170" water="170" wind="120" earth="200" holy="170" dark="170" />
+			</attribute>
+			<speed>
+				<walk ground="58" />
+				<run ground="307" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="230" magical="230" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Full Magic Attack Resistance -->			
+			<skill id="4197" level="9" /> <!-- Hold -->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4494" level="1" /> <!-- Raid Boss -->
+			<skill id="5465" level="1" /> <!-- Earth Attack -->
+			<skill id="6227" level="1" /> <!-- Raid Boss (Lv. 84) -->
+			<skill id="14765" level="4" /> <!-- Blood Siphon Resistance -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="300">
+			<clanList>
+				<clan>QUEEN_SHYEED</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="9524" min="1" max="1" chance="0.75" /> <!-- Sealed Dynasty Tunic -->
+				<item id="9525" min="1" max="1" chance="1.223" /> <!-- Sealed Dynasty Stockings -->
+				<item id="9540" min="2" max="4" chance="1.931" /> <!-- Sealed Dynasty Tunic Piece -->
+				<item id="9541" min="4" max="12" chance="4.088" /> <!-- Sealed Dynasty Stockings Piece -->
+				
+				<item id="9514" min="1" max="1" chance="1.04" /> <!-- Sealed Dynasty Breastplate -->
+				<item id="9515" min="1" max="1" chance="1.67" /> <!-- Sealed Dynasty Gaiters -->
+				<item id="9530" min="2" max="6" chance="6.953" /> <!-- Sealed Dynasty Breastplate Piece -->
+				<item id="9531" min="4" max="12" chance="11.77" /> <!-- Sealed Dynasty Gaiters Piece -->
+				
+				<item id="959" min="1" max="1" chance="8.953" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+				<item id="960" min="1" max="1" chance="19.963" /> <!-- Scroll: Enchant Armor (S-grade) -->
+				<item id="6577" min="1" max="1" chance="1.49" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+				
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="45" />
+			<height normal="50.8" />
+		</collision>
+	</npc>
+	<npc id="25672" level="82" type="Monster" name="Spiked Stakato">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="DDMagic_a" id="4195" level="9" />
+			<skill name="Debuff_a" id="4198" level="9" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="123" /> <!-- Saber -->
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="33502" hpRegen="96.0880871925918" mp="1812" mpRegen="3" />
+			<attack physical="8257.61720452678" magical="4164.59167011675" random="10" critical="40" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="929.800845" magical="1006.74" />
+			<attribute>
+				<attack type="EARTH" value="200" />
+				<defence fire="200" water="200" wind="150" earth="200" holy="200" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="40" />
+				<run ground="209" />
+			</speed>
+			<hitTime>710</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4195" level="9" /> <!-- BOSS Twister -->
+			<skill id="4198" level="9" /> <!-- Poison -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5465" level="1" /> <!-- Earth Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300">
+			<clanList>
+				<clan>QUEEN_SHYEED</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13" />
+			<height normal="21" />
+		</collision>
+	</npc>
+	<npc id="25673" level="82" type="Monster" name="Spiked Stakato">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<skill name="PhysicalSpecial_a" id="4726" level="9" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="50003" hpRegen="96.0880871925918" mp="1812" mpRegen="3" />
+			<attack physical="12385.07620869539" magical="9370.54001263823" random="10" critical="40" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="929.800845" magical="1006.74" />
+			<attribute>
+				<attack type="EARTH" value="200" />
+				<defence fire="200" water="200" wind="150" earth="200" holy="200" dark="200" default="150" />
+			</attribute>
+			<speed>
+				<walk ground="23" />
+				<run ground="190" />
+			</speed>
+			<hitTime>710</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4726" level="9" /> <!-- Stun -->
+			<skill id="5465" level="1" /> <!-- Earth Attacks -->
+		</skillList>
+		<exCrtEffect>true</exCrtEffect>
+		<ai clanHelpRange="300">
+			<clanList>
+				<clan>QUEEN_SHYEED</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13" />
+			<height normal="22.2" />
+		</collision>
+	</npc>
 </list>

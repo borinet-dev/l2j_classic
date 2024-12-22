@@ -69,7 +69,6 @@ import io.netty.channel.ChannelHandlerContext;
 public class GameClient extends ChannelInboundHandler<GameClient>
 {
 	protected static final Logger LOGGER = Logger.getLogger(GameClient.class.getName());
-	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
 	
 	private final FloodProtectors _floodProtectors = new FloodProtectors(this);
 	private final ReentrantLock _playerLock = new ReentrantLock();
@@ -97,13 +96,11 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 		final InetSocketAddress address = (InetSocketAddress) ctx.channel().remoteAddress();
 		_addr = address.getAddress();
 		_channel = ctx.channel();
-		LOGGER_ACCOUNTING.finer("Client Connected: " + ctx.channel());
 	}
 	
 	@Override
 	public void channelInactive(ChannelHandlerContext ctx)
 	{
-		LOGGER_ACCOUNTING.finer("Client Disconnected: " + ctx.channel());
 		LoginServerThread.getInstance().sendLogout(getAccountName());
 		
 		if ((_player == null) || !_player.isInOfflineMode())
@@ -354,7 +351,6 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 			}
 		}
 		
-		LOGGER_ACCOUNTING.info("Delete, " + objectId + ", " + this);
 		return CharacterDeleteFailType.NONE;
 	}
 	
@@ -377,7 +373,6 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 			LOGGER.log(Level.SEVERE, "Error restoring character.", e);
 		}
 		
-		LOGGER_ACCOUNTING.info("Restore, " + objectId + ", " + this);
 	}
 	
 	public static void deleteCharByObjId(int objid)

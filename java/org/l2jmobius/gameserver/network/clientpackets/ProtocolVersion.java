@@ -16,8 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import java.util.logging.Logger;
-
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -28,8 +26,6 @@ import org.l2jmobius.gameserver.network.serverpackets.KeyPacket;
  */
 public class ProtocolVersion implements IClientIncomingPacket
 {
-	private static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
-	
 	private int _version;
 	
 	@Override
@@ -50,7 +46,6 @@ public class ProtocolVersion implements IClientIncomingPacket
 		}
 		else if (!Config.PROTOCOL_LIST.contains(_version))
 		{
-			LOGGER_ACCOUNTING.warning("Wrong protocol version " + _version + ", " + client);
 			client.setProtocolOk(false);
 			client.close(new KeyPacket(client.enableCrypt(), 0));
 		}

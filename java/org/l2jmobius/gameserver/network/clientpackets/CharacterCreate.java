@@ -21,7 +21,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -61,8 +60,6 @@ import org.l2jmobius.gameserver.util.Util;
 @SuppressWarnings("unused")
 public class CharacterCreate implements IClientIncomingPacket
 {
-	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
-	
 	// cSdddddddddddd
 	private String _name;
 	private int _race;
@@ -282,8 +279,6 @@ public class CharacterCreate implements IClientIncomingPacket
 		client.sendPacket(CharCreateOk.STATIC_PACKET);
 		
 		initNewChar(client, newChar);
-		
-		LOGGER_ACCOUNTING.info("Created new character, " + newChar + ", " + client);
 	}
 	
 	private void initNewChar(GameClient client, Player newChar)
@@ -312,6 +307,7 @@ public class CharacterCreate implements IClientIncomingPacket
 			if (title != null)
 			{
 				newChar.setTitle(title);
+				newChar.getAppearance().setTitleColor(Integer.decode("0x00FFFF"));
 			}
 			else
 			{
