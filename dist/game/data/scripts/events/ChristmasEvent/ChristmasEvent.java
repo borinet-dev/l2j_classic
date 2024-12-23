@@ -568,7 +568,7 @@ public class ChristmasEvent extends LongTimeEvent
 			case "SPAM_TEXT_SNOWMAN":
 			{
 				int min = Rnd.get(1, 2);
-				npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, "도와주세요! 살려주세요!!!"));
+				npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, "도와주세요! 살려주세요!!!"));
 				startQuestTimer("SPAM_TEXT_SNOWMAN", (min * 60 * 1000), npc, null);
 				break;
 			}
@@ -605,9 +605,9 @@ public class ChristmasEvent extends LongTimeEvent
 						int itemId = 0; // 획득한 아이템 ID를 저장
 						int obtainedItemCount = 1; // 기본 아이템 개수는 1개
 						
-						if (chance < 2)
+						if (chance < 5)
 						{
-							// 꽝 5%
+							// 꽝 2%
 							player.sendMessage("꽝. 다음 기회에...");
 							missCount++;
 							continue;
@@ -628,8 +628,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 20107) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 20107; // 산타클로스의 무기 교환권
@@ -642,8 +642,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 14611) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 14611; // 루돌프 코
@@ -652,8 +652,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 7836) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 7836; // 산타 모자
@@ -662,8 +662,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 8936) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 8936; // 산타 뿔 모자
@@ -672,8 +672,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 10606) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 10606; // 아가시온 봉인 팔찌 - 루돌프(시간제)
@@ -682,8 +682,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if (getQuestItemsCount(player, 20094) > 0)
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 20094; // 아가시온 봉인 팔찌 - 루돌프
@@ -696,8 +696,8 @@ public class ChristmasEvent extends LongTimeEvent
 						{
 							if ((getQuestItemsCount(player, 9177) > 0) || (getQuestItemsCount(player, 9204) > 0))
 							{
-								// 이미 아이템이 있으면 꽝 처리
-								missCount++;
+								// 이미 아이템이 있으면 반복을 다시 시도
+								i--;
 								continue;
 							}
 							itemId = 9204; // 투영병기 - 강철의 서클릿
@@ -734,7 +734,6 @@ public class ChristmasEvent extends LongTimeEvent
 				}
 				break;
 			}
-			
 		}
 		return htmltext;
 	}
@@ -748,20 +747,20 @@ public class ChristmasEvent extends LongTimeEvent
 			{
 				if (attacker.getActiveWeaponItem() == null)
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, noWeapon[Rnd.get(noWeapon.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, noWeapon[Rnd.get(noWeapon.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(true);
 				}
 				else if (CHRONO_LIST.contains(attacker.getActiveWeaponItem().getId()))
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, attacked[Rnd.get(attacked.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, attacked[Rnd.get(attacked.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(false);
 					npc.getStatus().reduceHp(10, attacker);
 				}
 				else
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, noCrono[Rnd.get(noCrono.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, noCrono[Rnd.get(noCrono.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(true);
 				}
@@ -780,7 +779,7 @@ public class ChristmasEvent extends LongTimeEvent
 			
 			Broadcast.toAllOnlinePlayersOnScreen("크리스마스 이벤트: 눈사람을 구출했습니다!");
 			Broadcast.toAllOnlinePlayers("크리스마스 이벤트: 눈사람을 구출했습니다!");
-			npc.broadcastPacket(new NpcSay(_snowman, ChatType.NPC_GENERAL, "고맙습니다! 저를 구해주셔서 감사합니다."));
+			npc.broadcastPacket(new NpcSay(_snowman, ChatType.GENERAL, "고맙습니다! 저를 구해주셔서 감사합니다."));
 			_snowmanState = SnowmanState.SAVED;
 			
 			for (Player b : World.getInstance().getPlayers())
