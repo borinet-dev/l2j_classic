@@ -349,7 +349,7 @@ public class PetitionManager
 	public void sendPendingPetitionList(Player player)
 	{
 		final StringBuilder htmlContent = new StringBuilder(600 + (_pendingPetitions.size() * 300));
-		htmlContent.append("<html><body><center><table width=270><tr><td width=45><button value=\"메인\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td width=180><center>진정 메뉴</center></td><td width=45><button value=\"뒤로\" action=\"bypass -h admin_admin7\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br><table width=\"270\"><tr><td><table width=\"270\"><tr><td><button value=\"새로고침\" action=\"bypass -h admin_view_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br></td></tr>");
+		htmlContent.append("<html><body><center><table width=292><tr><td width=45><button value=\"메인\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td width=180><center>진정 메뉴</center></td><td width=45><button value=\"뒤로\" action=\"bypass -h admin_admin7\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br><table width=\"292\"><tr><td><table width=\"292\"><tr><td><button value=\"새로고침\" action=\"bypass -h admin_view_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br></td></tr>");
 		
 		if (_pendingPetitions.isEmpty())
 		{
@@ -369,7 +369,7 @@ public class PetitionManager
 				continue;
 			}
 			
-			htmlContent.append("<tr><td width=\"270\"><table width=\"270\" cellpadding=\"2\" bgcolor=" + (color ? "131210" : "444444") + "><tr><td width=\"130\">" + BorinetUtil.dataDateFormatKor.format(new Date(currPetition.getSubmitTime())));
+			htmlContent.append("<tr><td width=\"290\"><table width=\"292\" cellpadding=\"2\" bgcolor=" + (color ? "131210" : "444444") + "><tr><td width=\"130\">" + BorinetUtil.dataDateFormatKor.format(new Date(currPetition.getSubmitTime())));
 			htmlContent.append("</td><td width=\"140\" align=right><font color=\"" + (currPetition.getPetitioner().isOnline() ? "00FF00" : "999999") + "\">" + currPetition.getPetitioner().getName() + "</font></td></tr>");
 			htmlContent.append("<tr><td width=\"130\">");
 			if (currPetition.getState() != PetitionState.IN_PROCESS)
