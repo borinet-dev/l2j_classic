@@ -136,7 +136,8 @@ public class ItemLog
 			return;
 		}
 		
-		if (process == "Fishing Reward")
+		// 낚시로 습득하는 아이템 로그기록 조건문
+		if (!Config.FISING_REWARD_ITEM_LOG_ENABLE && (process == "Fishing Reward"))
 		{
 			return;
 		}
