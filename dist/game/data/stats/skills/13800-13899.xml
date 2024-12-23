@@ -24,6 +24,154 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 	</skill>
+	<skill id="13828" toLevel="1" name="Christmas Talisman - P. Skill Critical Damage">
+		<!-- P. Skill Critical Damage +7%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillCriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13829" toLevel="1" name="Christmas Talisman - M. Skill Critical Damage">
+		<!-- M. Skill Critical Damage +7%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13830" toLevel="1" name="Christmas Talisman - Ultimate Defense">
+		<!-- When used, P. Def. +5000, M. Def. +5000 for 15 sec. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<abnormalVisualEffect>ULTIMATE_DEFENCE</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<mpConsume>50</mpConsume>
+		<hitTime>500</hitTime>
+		<effectPoint>532</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="BlockMove" />
+			<effect name="MagicalDefence">
+				<amount>5000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13831" toLevel="1" name="Christmas Talisman - Debuff Resistance">
+		<!-- For 15 sec., blocks up to 5 debuffs when used. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>50</mpConsume>
+		<hitTime>500</hitTime>
+		<effectPoint>532</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AbnormalShield">
+				<times>5</times>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13832" toLevel="1" name="Christmas Talisman - P. Atk.">
+		<!-- P. Atk. +5%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13833" toLevel="1" name="Christmas Talisman - M. Atk.">
+		<!-- M. Atk. +5%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13834" toLevel="1" name="Christmas Talisman - P. Def">
+		<!-- P. Def. +7%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13835" toLevel="1" name="Christmas Talisman - M. Def.">
+		<!-- M. Def. +7%, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13836" toLevel="1" name="Christmas Talisman - Attribute Resistance">
+		<!-- Attribute Resistance +30, when the talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
 	<skill id="13837" toLevel="13" name="Shadow Cutter">
 		<!-- Atk. Spd +$s1. -->
 		<icon>
