@@ -17197,6 +17197,12 @@ public class SystemMessageId
 	@ClientString(id = 7516, message = "$s1")
 	public static SystemMessageId S1_M;
 	
+	@ClientString(id = 7517, message = "You have submitted $s1 petition(s).")
+	public static SystemMessageId YOU_HAVE_SUBMITTED_S1_PETITION;
+	
+	@ClientString(id = 7518, message = "You may submit $s1 more petition(s) today.")
+	public static SystemMessageId YOU_MAY_SUBMIT_S1_MORE_PETITION_S_TODAY;
+	
 	static
 	{
 		buildFastLookupTable();
