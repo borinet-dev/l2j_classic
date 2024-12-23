@@ -66,7 +66,7 @@ public class TimakOrcTroopLeader extends AbstractNpcAI
 					}
 					if (!found)
 					{
-						npc.broadcastSay(ChatType.NPC_GENERAL, getRandomEntry(ON_ATTACK_MSG));
+						npc.broadcastSay(ChatType.GENERAL, getRandomEntry(ON_ATTACK_MSG));
 						addMinion(monster, is.getId());
 						break;
 					}

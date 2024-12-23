@@ -831,7 +831,7 @@ public class LastImperialTomb extends AbstractInstance
 		{
 			if ((npc.getId() == HALL_ALARM) && (world.getStatus() == 1))
 			{
-				npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.ALARM_SYSTEM_DESTROYED_INTRUDER_EXCLUDED);
+				npc.broadcastSay(ChatType.GENERAL, NpcStringId.ALARM_SYSTEM_DESTROYED_INTRUDER_EXCLUDED);
 				startQuestTimer("FIRST_ROOM_KILL", 1500, null, killer, false);
 				cancelQuestTimer("FIRST_ROOM_SPAWN", npc, killer);
 			}

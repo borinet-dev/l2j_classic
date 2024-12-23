@@ -110,7 +110,7 @@ public class Q00316_DestroyPlagueCarriers extends Quest
 	{
 		if (npc.isScriptValue(0))
 		{
-			npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, NpcStringId.WHY_DO_YOU_OPPRESS_US_SO));
+			npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, NpcStringId.WHY_DO_YOU_OPPRESS_US_SO));
 			npc.setScriptValue(1);
 		}
 		return super.onAttack(npc, attacker, damage, isSummon);

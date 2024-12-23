@@ -101,19 +101,19 @@ public class SevenSigns extends AbstractNpcAI
 					npc.setInvul(false);
 					if ((npc.getCurrentHp() < (npc.getMaxHp() * 0.5)) && (docast < 1))
 					{
-						npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, DOCAST[Rnd.get(DOCAST.length)]));
+						npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, DOCAST[Rnd.get(DOCAST.length)]));
 						npc.doCast(SKILL.getSkill());
 						CAST.put(npc, 1);
 						LAST_SAY.put(npc, System.currentTimeMillis());
 					}
 					else if (npc.getCurrentHp() < (npc.getMaxHp() * 0.07))
 					{
-						npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, LOWHP[Rnd.get(LOWHP.length)]));
+						npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, LOWHP[Rnd.get(LOWHP.length)]));
 						LAST_SAY.put(npc, System.currentTimeMillis());
 					}
 					else if ((System.currentTimeMillis() - lastSay) > 40000)
 					{
-						npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, HASPARTY[Rnd.get(HASPARTY.length)]));
+						npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, HASPARTY[Rnd.get(HASPARTY.length)]));
 						LAST_SAY.put(npc, System.currentTimeMillis());
 					}
 				}
@@ -127,7 +127,7 @@ public class SevenSigns extends AbstractNpcAI
 	{
 		if (player.getParty() == null)
 		{
-			npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, NOPARTY[Rnd.get(NOPARTY.length)]));
+			npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, NOPARTY[Rnd.get(NOPARTY.length)]));
 			LAST_SAY.put(npc, System.currentTimeMillis());
 			return false;
 		}
@@ -139,7 +139,7 @@ public class SevenSigns extends AbstractNpcAI
 		{
 			if (!member.isInsideRadius3D(player, 1200))
 			{
-				npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, NOPARTYRADAR[Rnd.get(NOPARTYRADAR.length)]));
+				npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, NOPARTYRADAR[Rnd.get(NOPARTYRADAR.length)]));
 				LAST_SAY.put(npc, System.currentTimeMillis());
 				return false;
 			}
