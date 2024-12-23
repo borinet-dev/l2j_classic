@@ -136,6 +136,11 @@ public class ItemLog
 			return;
 		}
 		
+		if (process == "Fishing Reward")
+		{
+			return;
+		}
+		
 		// 로그 기록에서 제외할 아이템 필터링
 		// MATERIAL 및 RECIPE면 로그 기록하지 않음
 		// 특정 ID 또는 이름이 제외 목록에 있는 경우 로그 기록하지 않음

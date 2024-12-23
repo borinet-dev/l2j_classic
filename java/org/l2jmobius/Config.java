@@ -311,6 +311,7 @@ public class Config
 	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
 	public static List<Integer> NO_SELL_ALL_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_SELL_ALL_ITEM_NAMES = new ArrayList<>();
+	public static boolean FISING_REWARD_ITEM_LOG_ENABLE;
 	
 	/** 보리넷 커스텀 이벤트 **/
 	public static boolean CUSTOM_EVENT_ENABLE;
@@ -2188,6 +2189,8 @@ public class Config
 			final String noSellAllNames = parseItemsConfig.getString("NoSellAllItemNames", "");
 			NO_SELL_ALL_ITEM_IDS = noSellAllIds.isEmpty() ? new ArrayList<>() : parseItemIds(noSellAllIds);
 			NO_SELL_ALL_ITEM_NAMES = noSellAllNames.isEmpty() ? new ArrayList<>() : parseItemNames(noSellAllNames);
+			
+			FISING_REWARD_ITEM_LOG_ENABLE = parseItemsConfig.getBoolean("FishingRewardItemLogEnable", true);
 			
 			/** 후원 메일 **/
 			final PropertiesParser donationMail = new PropertiesParser(DONATION_MAIL_FILE);
