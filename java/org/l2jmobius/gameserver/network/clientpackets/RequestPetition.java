@@ -99,8 +99,11 @@ public class RequestPetition implements IClientIncomingPacket
 		
 		PetitionManager.getInstance().submitPetition(player, _content, _type);
 		
-		SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_SUBMITTED_S1_PETITION_S_NYOU_MAY_SUBMIT_S2_MORE_PETITION_S_TODAY);
+		SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_SUBMITTED_S1_PETITION);
 		sm.addInt(totalPetitions);
+		player.sendPacket(sm);
+		
+		sm = new SystemMessage(SystemMessageId.YOU_MAY_SUBMIT_S1_MORE_PETITION_S_TODAY);
 		sm.addInt(Config.MAX_PETITIONS_PER_PLAYER - totalPetitions);
 		player.sendPacket(sm);
 		
