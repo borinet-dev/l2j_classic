@@ -810,8 +810,9 @@ public class DailyTaskManager
 			try (PreparedStatement ps = con.prepareStatement(deleteReuseDelayQuery))
 			{
 				ps.setLong(1, currentTimeMillis);
-				int rowsDeleted = ps.executeUpdate();
-				LOGGER.info("cleanUpExpiredData: character_item_reuse_save 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
+				ps.executeUpdate();
+				// int rowsDeleted = ps.executeUpdate();
+				// LOGGER.info("character_item_reuse_save 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
 			}
 			
 			// character_variables 테이블에서 만료된 데이터 삭제
@@ -819,8 +820,9 @@ public class DailyTaskManager
 			{
 				ps.setString(1, "%재사용시간%");
 				ps.setLong(2, currentTimeMillis);
-				int rowsDeleted = ps.executeUpdate();
-				LOGGER.info("cleanUpExpiredData: character_variables 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
+				ps.executeUpdate();
+				// int rowsDeleted = ps.executeUpdate();
+				// LOGGER.info("character_variables 테이블에서 " + rowsDeleted + "개의 데이터가 삭제되었습니다.");
 			}
 			
 			// 플레이어별 변수 삭제 처리
