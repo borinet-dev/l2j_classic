@@ -367,22 +367,35 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 	
 	private void listCharacters(Player activeChar, int page)
 	{
-		final List<Player> players = new ArrayList<>(World.getInstance().getPlayers());
+		final List<Player> players = new ArrayList<>(World.getInstance().getPlayers().stream().filter(player -> !player.isGM()).toList());
+		// final List<Player> players = World.getInstance().getPlayers().stream().filter(player -> !player.isGM()).toList();
 		players.sort(Comparator.comparingLong(Player::getUptime));
 		
 		final NpcHtmlMessage html = new NpcHtmlMessage(0, 1);
 		html.setFile(activeChar, "data/html/guide/charlist.htm");
 		
-		final PageResult result = PageBuilder.newBuilder(players, 15, "bypass -h voice .접속유저보기").currentPage(page).bodyHandler((pages, player, sb) ->
+		// 한 페이지에 표시할 최대 플레이어 수
+		final int maxPlayersPerPage = 15;
+		
+		final PageResult result = PageBuilder.newBuilder(players, maxPlayersPerPage, "bypass -h voice .접속유저보기").currentPage(page).bodyHandler((pages, player, sb) ->
 		{
-			if (!player.isGM())
-			{
-				sb.append("<tr>");
-				sb.append("<td width=100><font color=00A5FF>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + player.getName() + "</font>") : player.getName()) + "</font></td>"));
-				sb.append("<td width=100>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + ClassListData.getInstance().getClass(player.getClassId()).getClientCode() + "</font>") : ClassListData.getInstance().getClass(player.getClassId()).getClientCode()) + "</td><td width=40>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + player.getLevel() + "</font>") : player.getLevel()) + "</td>")));
-				sb.append("</tr>");
-			}
+			sb.append("<tr>");
+			sb.append("<td width=100><font color=00A5FF>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + player.getName() + "</font>") : player.getName()) + "</font></td>"));
+			sb.append("<td width=100>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + ClassListData.getInstance().getClass(player.getClassId()).getClientCode() + "</font>") : ClassListData.getInstance().getClass(player.getClassId()).getClientCode()) + "</td><td width=40>" + ((player.isInOfflineMode() ? ("<font color=\"808080\">" + player.getLevel() + "</font>") : player.getLevel()) + "</td>")));
+			sb.append("</tr>");
 		}).build();
+		
+		// 현재 페이지의 플레이어 수 계산
+		int startIndex = page * maxPlayersPerPage;
+		int endIndex = Math.min(startIndex + maxPlayersPerPage, players.size());
+		int itemsOnPage = endIndex - startIndex;
+		
+		// 빈 줄로 채우기
+		StringBuilder emptyRows = new StringBuilder();
+		for (int i = 0; i < (maxPlayersPerPage - itemsOnPage); i++)
+		{
+			emptyRows.append("<tr><td width=100 height=20></td></tr>");
+		}
 		
 		int previous = page - 1;
 		int next = page + 1;
@@ -406,6 +419,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 		html.replace("%previous%", page > 0 ? "<button value=\"이전\" action=\"bypass -h voice .접속유저보기 " + previous + " \" width=\"120\" height=22 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">" : "");
 		html.replace("%next%", ((result.getPages() > 0) && (next < result.getPages())) ? "<button value=\"다음\" action=\"bypass -h voice .접속유저보기 " + next + " \" width=\"120\" height=22 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">" : "");
 		html.replace("%players%", result.getBodyTemplate().toString());
+		html.replace("%empty_rows%", emptyRows.toString());
 		html.replace("%online%", online);
 		html.replace("%offline%", offline);
 		activeChar.sendPacket(html);
