@@ -16,8 +16,6 @@
  */
 package events.LetterCollector;
 
-import java.time.LocalDateTime;
-import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,6 +23,7 @@ import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 /**
  * Event: Letter Collector
@@ -457,7 +456,7 @@ public class LetterCollector extends LongTimeEvent
 		
 		htmlBuilder.append("</tr></table></td></tr></table></center>");
 		int Letter_Gift = player.getAccountVariables().getInt("문자수집가의선물", 0);
-		if (isWinterActive() && (Letter_Gift == 0))
+		if (BorinetUtil.getInstance().isWinterActive() && (Letter_Gift == 0))
 		{
 			htmlBuilder.append("<br><Button ALIGN=LEFT ICON=\"NORMAL\" action=\"bypass -h Quest LetterCollector take_Gift\"><font color=LEVEL>\"겨울이에요. 선물을 주세요!\"</font></Button>");
 		}
@@ -469,15 +468,6 @@ public class LetterCollector extends LongTimeEvent
 		htmlBuilder.append("</body></html>");
 		
 		return htmlBuilder.toString();
-	}
-	
-	private boolean isWinterActive()
-	{
-		LocalDateTime now = LocalDateTime.now();
-		LocalDateTime start = LocalDateTime.of(now.getYear(), Month.NOVEMBER, 1, 1, 0); // 10월 8일 오전 7시
-		LocalDateTime end = LocalDateTime.of(now.getYear(), Month.DECEMBER, 31, 23, 59); // 10월 10일 오후 8시
-		
-		return now.isAfter(start) && now.isBefore(end);
 	}
 	
 	public String createDynamicHtml(Player player)

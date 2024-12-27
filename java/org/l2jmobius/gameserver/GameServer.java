@@ -174,6 +174,7 @@ import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.ItemLog;
+import org.l2jmobius.gameserver.util.TreeSpawn;
 import org.l2jmobius.gameserver.util.Util;
 
 import smartguard.core.properties.GuardProperties;
@@ -246,7 +247,7 @@ public class GameServer
 			}
 			else
 			{
-				if (BorinetUtil.getInstance().CheckLicense() == "보유 중")
+				if (BorinetUtil.getInstance().CheckLicense().equals("보유 중"))
 				{
 					checkLicense = true;
 				}
@@ -295,6 +296,7 @@ public class GameServer
 		LongTimeEvent._isSpawned = true;
 		EventDispatcher.getInstance();
 		ScriptEngineManager.getInstance();
+		BorinetUtil.deleteEname();
 		
 		BorinetUtil.getInstance().printSection("World - 로드..");
 		World.getInstance();
@@ -548,6 +550,8 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("쿠폰 시스템");
 		CouponManager.getInstance().loadCoupon();
+		// 크리스마스 트리 스폰
+		TreeSpawn.spawnTrees();
 		
 		if (Config.ALLOW_BOAT)
 		{

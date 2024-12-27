@@ -11,6 +11,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -136,16 +138,43 @@ public class BorinetUtil
 		return true;
 	}
 	
-	public void insertDB(Player player, String name)
+	public long getReuseTime(Player player, String name)
+	{
+		String hwid = player.getHWID();
+		String query = "SELECT reuse FROM event_hwid WHERE name = ? AND HWID = ?";
+		
+		try (Connection con = DatabaseFactory.getConnection();
+			PreparedStatement ps = con.prepareStatement(query))
+		{
+			ps.setString(1, name);
+			ps.setString(2, hwid);
+			
+			try (ResultSet rs = ps.executeQuery())
+			{
+				if (rs.next())
+				{
+					return rs.getLong("reuse"); // reuse 값을 반환
+				}
+			}
+		}
+		catch (SQLException e)
+		{
+			LOGGER.log(Level.WARNING, "HWID를 검사할 수 없습니다. 계정 이름: " + name + ", HWID: " + hwid, e);
+		}
+		return 0L; // 데이터가 없거나 오류가 발생하면 0 반환
+	}
+	
+	public void insertDB(Player player, String name, long reuse)
 	{
 		player.getAccountVariables().set(name, 1);
-		String query = "INSERT INTO event_hwid (name, HWID) VALUES (?, ?)";
+		String query = "REPLACE INTO event_hwid (name, HWID, reuse) VALUES (?, ?, ?)";
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement ps = con.prepareStatement(query))
 		{
 			ps.setString(1, name);
 			ps.setString(2, player.getHWID());
+			ps.setLong(3, reuse);
 			ps.executeUpdate();
 		}
 		catch (SQLException e)
@@ -173,19 +202,38 @@ public class BorinetUtil
 		}
 	}
 	
-	public static void insertEname(String eName)
+	public static void deleteEname()
 	{
-		String query = "REPLACE INTO event_name (name) VALUES (?)";
+		// DELETE 쿼리로 테이블 초기화
+		String deleteQuery = "DELETE FROM event_name";
 		
 		try (Connection con = DatabaseFactory.getConnection();
-			PreparedStatement statement = con.prepareStatement(query))
+			PreparedStatement deleteStatement = con.prepareStatement(deleteQuery))
 		{
-			statement.setString(1, eName);
-			statement.execute();
+			// 테이블 비우기
+			deleteStatement.executeUpdate();
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.WARNING, "이벤트 이름 데이터 저장에 실패했습니다. 이름: " + eName);
+			LOGGER.log(Level.WARNING, "이벤트 이름 데이터 삭제에 실패했습니다.", e);
+		}
+	}
+	
+	public static void insertEname(String eName)
+	{
+		// INSERT 쿼리로 데이터 삽입
+		String insertQuery = "INSERT INTO event_name (name) VALUES (?)";
+		
+		try (Connection con = DatabaseFactory.getConnection();
+			PreparedStatement insertStatement = con.prepareStatement(insertQuery))
+		{
+			// 새로운 데이터 삽입
+			insertStatement.setString(1, eName);
+			insertStatement.execute();
+		}
+		catch (SQLException e)
+		{
+			LOGGER.log(Level.WARNING, "이벤트 이름 데이터 저장에 실패했습니다. 이름: " + eName, e);
 		}
 	}
 	
@@ -459,7 +507,7 @@ public class BorinetUtil
 		player.sendMessage("" + charMsg);
 		player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, charMsg));
 		player.getAccountVariables().set("신규자선물", 1);
-		insertDB(player, "신규자선물");
+		insertDB(player, "신규자선물", 0);
 	}
 	
 	public void checkGift(Player player)
@@ -935,7 +983,7 @@ public class BorinetUtil
 		player.getAccountVariables().set(evenName, 1);
 		if (DBsave)
 		{
-			insertDB(player, evenName);
+			insertDB(player, evenName, 0);
 		}
 	}
 	
@@ -1137,6 +1185,15 @@ public class BorinetUtil
 				Broadcast.toPlayerScreenMessageS(player, "조건에 맞지않아 이동할 수 없습니다.");
 			}
 		}
+	}
+	
+	public boolean isWinterActive()
+	{
+		LocalDateTime now = LocalDateTime.now();
+		LocalDateTime start = LocalDateTime.of(now.getYear(), Month.DECEMBER, 1, 0, 0);
+		LocalDateTime end = LocalDateTime.of(now.getMonthValue() >= Month.DECEMBER.getValue() ? now.getYear() + 1 : now.getYear(), Month.FEBRUARY, 15, 23, 59);
+		
+		return now.isAfter(start) && now.isBefore(end);
 	}
 	
 	public static BorinetUtil getInstance()
