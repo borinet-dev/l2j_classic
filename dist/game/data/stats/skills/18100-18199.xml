@@ -1040,6 +1040,8 @@
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
+		<abnormalType>FREYA_SCROLL_VIT</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
 		<itemConsumeId>
 			<value level="1">40227</value>
 			<value level="2">47428</value>
@@ -1049,6 +1051,7 @@
 		<isMagic>4</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
 			<effect name="ExpModify">
 				<amount>
