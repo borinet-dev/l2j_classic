@@ -197,7 +197,7 @@ public class RequestAcquireSkill implements IClientIncomingPacket
 					{
 						for (ItemHolder item : s.getRequiredItems())
 						{
-							if (!player.destroyItemByItemId("Consume", item.getId(), item.getCount(), trainer, false))
+							if (!player.destroyItemByItemId("사용", item.getId(), item.getCount(), trainer, false))
 							{
 								// Doesn't have required item.
 								player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ITEMS_TO_LEARN_THIS_SKILL);

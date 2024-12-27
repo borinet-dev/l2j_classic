@@ -34,6 +34,7 @@ import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.cache.HtmCache;
@@ -50,6 +51,7 @@ import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionBuyItem;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionDelete;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionInfo;
@@ -64,12 +66,6 @@ public class ItemCommissionManager
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemCommissionManager.class.getName());
 	
-	private static final int INTERACTION_DISTANCE = 250;
-	private static final int ITEMS_LIMIT_PER_REQUEST = 999;
-	private static final int MAX_ITEMS_REGISTRED_PER_PLAYER = 10;
-	private static final long MIN_REGISTRATION_AND_SALE_FEE = 1000;
-	private static final double REGISTRATION_FEE_PER_DAY = 0.0001;
-	private static final double SALE_FEE_PER_DAY = 0.005;
 	private static final int[] DURATION =
 	{
 		1,
@@ -149,7 +145,7 @@ public class ItemCommissionManager
 			if (filter.test(item.getItemInfo().getItem()))
 			{
 				commissionItems.add(item);
-				if (commissionItems.size() >= ITEMS_LIMIT_PER_REQUEST)
+				if (commissionItems.size() >= Config.ITEMS_LIMIT_PER_REQUEST)
 				{
 					break;
 				}
@@ -186,7 +182,7 @@ public class ItemCommissionManager
 			if (c.getItemInstance().getOwnerId() == player.getObjectId())
 			{
 				commissionItems.add(c);
-				if (commissionItems.size() == MAX_ITEMS_REGISTRED_PER_PLAYER)
+				if (commissionItems.size() == Config.MAX_ITEMS_REGISTRED_PER_PLAYER)
 				{
 					break;
 				}
@@ -222,7 +218,7 @@ public class ItemCommissionManager
 		}
 		
 		final long totalPrice = itemCount * pricePerUnit;
-		if (totalPrice <= MIN_REGISTRATION_AND_SALE_FEE)
+		if (totalPrice <= Config.MIN_REGISTRATION_AND_SALE_FEE)
 		{
 			player.sendPacket(SystemMessageId.THE_ITEM_CANNOT_BE_REGISTERED_BECAUSE_REQUIREMENTS_ARE_NOT_MET);
 			player.sendPacket(ExResponseCommissionRegister.FAILED);
@@ -237,7 +233,7 @@ public class ItemCommissionManager
 			return;
 		}
 		
-		final byte durationInDays = (byte) DURATION[durationType];
+		final int durationInDays = DURATION[durationType];
 		
 		synchronized (this)
 		{
@@ -250,14 +246,15 @@ public class ItemCommissionManager
 				}
 			}
 			
-			if (playerRegisteredItems >= MAX_ITEMS_REGISTRED_PER_PLAYER)
+			// 플레이어당 등록 가능한 최대 아이템
+			if (playerRegisteredItems >= Config.MAX_ITEMS_REGISTRED_PER_PLAYER)
 			{
-				player.sendPacket(SystemMessageId.THE_MAXIMUM_NUMBER_OF_AUCTION_HOUSE_ITEMS_FOR_REGISTRATION_IS_10);
+				player.sendPacket(new SystemMessage(SystemMessageId.THE_MAXIMUM_NUMBER_OF_AUCTION_HOUSE_ITEMS_FOR_REGISTRATION_IS_S1).addInt(Config.MAX_ITEMS_REGISTRED_PER_PLAYER));
 				player.sendPacket(ExResponseCommissionRegister.FAILED);
 				return;
 			}
 			
-			final long registrationFee = (long) Math.max(MIN_REGISTRATION_AND_SALE_FEE, (totalPrice * REGISTRATION_FEE_PER_DAY) * Math.min(durationInDays, 7));
+			final long registrationFee = (long) Math.max(Config.MIN_REGISTRATION_AND_SALE_FEE, (totalPrice * Config.REGISTRATION_FEE_PER_DAY) * Math.min(durationInDays, 7));
 			if (!player.getInventory().reduceAdena("Commission Registration Fee", registrationFee, player, null))
 			{
 				player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ADENA_TO_REGISTER_THE_ITEM);
@@ -305,7 +302,7 @@ public class ItemCommissionManager
 				ps.setInt(1, itemInstance.getObjectId());
 				ps.setLong(2, pricePerUnit);
 				ps.setTimestamp(3, Timestamp.from(startTime));
-				ps.setByte(4, durationInDays);
+				ps.setInt(4, durationInDays);
 				ps.setByte(5, discountInPercentage);
 				ps.executeUpdate();
 				try (ResultSet rs = ps.getGeneratedKeys())
@@ -430,7 +427,7 @@ public class ItemCommissionManager
 		{
 			final float discountFee = (float) commissionItem.getDiscountInPercentage() / 100;
 			
-			final long saleFee = (long) Math.max(MIN_REGISTRATION_AND_SALE_FEE, (totalPrice * SALE_FEE_PER_DAY) * Math.min(commissionItem.getDurationInDays(), 7));
+			final long saleFee = (long) Math.max(Config.MIN_REGISTRATION_AND_SALE_FEE, (totalPrice * Config.SALE_FEE_PER_DAY) * Math.min(commissionItem.getDurationInDays(), 7));
 			final long addDiscount = (long) (saleFee * discountFee);
 			String subject = "판매 등록한 물품이 판매되었습니다.";
 			String body = "판매된 아이템: ";
@@ -552,7 +549,7 @@ public class ItemCommissionManager
 		final Npc npc = player.getLastFolkNPC();
 		if (npc instanceof CommissionManager)
 		{
-			return npc.calculateDistance3D(player) <= INTERACTION_DISTANCE;
+			return npc.calculateDistance3D(player) <= Config.INTERACTION_DISTANCE;
 		}
 		return false;
 	}

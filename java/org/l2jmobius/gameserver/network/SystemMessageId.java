@@ -17203,6 +17203,9 @@ public class SystemMessageId
 	@ClientString(id = 7518, message = "You may submit $s1 more petition(s) today.")
 	public static SystemMessageId YOU_MAY_SUBMIT_S1_MORE_PETITION_S_TODAY;
 	
+	@ClientString(id = 7519, message = "The maximum number of auction house items for registration is $s1.")
+	public static SystemMessageId THE_MAXIMUM_NUMBER_OF_AUCTION_HOUSE_ITEMS_FOR_REGISTRATION_IS_S1;
+	
 	static
 	{
 		buildFastLookupTable();

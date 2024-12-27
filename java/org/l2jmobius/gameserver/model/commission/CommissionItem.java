@@ -33,11 +33,11 @@ public class CommissionItem
 	private final ItemInfo _itemInfo;
 	private final long _pricePerUnit;
 	private final Instant _startTime;
-	private final byte _durationInDays;
+	private final int _durationInDays;
 	private final byte _discountInPercentage;
 	private ScheduledFuture<?> _saleEndTask;
 	
-	public CommissionItem(long commissionId, Item itemInstance, long pricePerUnit, Instant startTime, byte durationInDays, byte discountInPercentage)
+	public CommissionItem(long commissionId, Item itemInstance, long pricePerUnit, Instant startTime, int durationInDays, byte discountInPercentage)
 	{
 		_commissionId = commissionId;
 		_itemInstance = itemInstance;
@@ -97,7 +97,7 @@ public class CommissionItem
 	 * Gets the duration in days.
 	 * @return the duration in days
 	 */
-	public byte getDurationInDays()
+	public int getDurationInDays()
 	{
 		return _durationInDays;
 	}

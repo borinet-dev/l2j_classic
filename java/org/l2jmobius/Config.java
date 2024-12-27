@@ -152,6 +152,7 @@ public class Config
 	private static final String GOLDEN_PIG_CONFIG_FILE = "./config/Custom/GoldenPigEvents.ini";
 	private static final String BOAT_CONFIG_FILE = "./config/Custom/boat.ini";
 	private static final String PARSE_ITEMS_CONFIG_FILE = "./config/Custom/ParseItems.ini";
+	private static final String ITEM_COMMISSION_CONFIG_FILE = "./config/Custom/ItemCommission.ini";
 	
 	// --------------------------------------------------
 	// Variable Definitions
@@ -312,6 +313,14 @@ public class Config
 	public static List<Integer> NO_SELL_ALL_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_SELL_ALL_ITEM_NAMES = new ArrayList<>();
 	public static boolean FISING_REWARD_ITEM_LOG_ENABLE;
+	
+	/** 판매 대행 **/
+	public static int INTERACTION_DISTANCE;
+	public static int ITEMS_LIMIT_PER_REQUEST;
+	public static int MAX_ITEMS_REGISTRED_PER_PLAYER;
+	public static long MIN_REGISTRATION_AND_SALE_FEE;
+	public static double REGISTRATION_FEE_PER_DAY;
+	public static double SALE_FEE_PER_DAY;
 	
 	/** 보리넷 커스텀 이벤트 **/
 	public static boolean CUSTOM_EVENT_ENABLE;
@@ -2191,6 +2200,21 @@ public class Config
 			NO_SELL_ALL_ITEM_NAMES = noSellAllNames.isEmpty() ? new ArrayList<>() : parseItemNames(noSellAllNames);
 			
 			FISING_REWARD_ITEM_LOG_ENABLE = parseItemsConfig.getBoolean("FishingRewardItemLogEnable", true);
+			
+			/** 판매 대행 **/
+			final PropertiesParser ItemsCommissionConfig = new PropertiesParser(ITEM_COMMISSION_CONFIG_FILE);
+			// 상호작용 거리
+			INTERACTION_DISTANCE = ItemsCommissionConfig.getInt("InteractionDistance", 250);
+			// 요청당 아이템 제한
+			ITEMS_LIMIT_PER_REQUEST = ItemsCommissionConfig.getInt("ItemsLimitPerRequest", 999);
+			// 플레이어당 등록 가능한 최대 아이템
+			MAX_ITEMS_REGISTRED_PER_PLAYER = ItemsCommissionConfig.getInt("MaxItemsRegistredPerPlayer", 10);
+			// 최소 등록 및 판매 수수료
+			MIN_REGISTRATION_AND_SALE_FEE = ItemsCommissionConfig.getLong("MinRegistrationAndSaleFee", 1000);
+			// 하루당 등록 수수료
+			REGISTRATION_FEE_PER_DAY = ItemsCommissionConfig.getDouble("RegistrationFeePerDay", 0.0001);
+			// 하루당 판매 수수료
+			SALE_FEE_PER_DAY = ItemsCommissionConfig.getDouble("SaleFeePerDay", 0.005);
 			
 			/** 후원 메일 **/
 			final PropertiesParser donationMail = new PropertiesParser(DONATION_MAIL_FILE);

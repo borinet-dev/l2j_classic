@@ -73,7 +73,7 @@ public class RequestChangeNicknameColor implements IClientIncomingPacket
 			return;
 		}
 		
-		if (player.destroyItem("Consume", item, 1, null, true))
+		if (player.destroyItem("사용", item, 1, null, true))
 		{
 			player.setTitle(_title);
 			player.getAppearance().setTitleColor(COLORS[_colorNum]);
