@@ -652,7 +652,7 @@ public class EventItem implements IItemHandler
 			return false;
 		}
 		
-		if (!castor.destroyItem("Consume", item, 1, castor, true))
+		if (!castor.destroyItem("사용", item, 1, castor, true))
 		{
 			return false;
 		}

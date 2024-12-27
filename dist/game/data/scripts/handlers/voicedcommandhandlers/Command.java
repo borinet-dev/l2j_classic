@@ -110,7 +110,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.destroyItemByItemId("NEWBIE_TICKETC", 41000, 100, activeChar, true);
 				activeChar.addItem("NEWBIE_TICKETC", 41017, 1, activeChar, true);
 				activeChar.addItem("NEWBIE_TICKETC", 41018, 1, activeChar, true);
-				BorinetUtil.getInstance().insertDB(activeChar, "NEWBIE_SUPPORT");
+				BorinetUtil.getInstance().insertDB(activeChar, "NEWBIE_SUPPORT", 0);
 			}
 			else
 			{
@@ -135,7 +135,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				}
 				activeChar.destroyItemByItemId("무기교환권사용C", 41003, 15, activeChar, true);
 				activeChar.addItem("무기교환권사용C", 41019, 1, activeChar, true);
-				BorinetUtil.getInstance().insertDB(activeChar, "WeaponC");
+				BorinetUtil.getInstance().insertDB(activeChar, "WeaponC", 0);
 			}
 			else
 			{
@@ -154,7 +154,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				}
 				activeChar.destroyItemByItemId("방어구교환권사용C", 41003, 15, activeChar, true);
 				activeChar.addItem("방어구교환권사용C", 41020, 1, activeChar, true);
-				BorinetUtil.getInstance().insertDB(activeChar, "ArmorC");
+				BorinetUtil.getInstance().insertDB(activeChar, "ArmorC", 0);
 			}
 			else
 			{
@@ -173,7 +173,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				}
 				activeChar.destroyItemByItemId("무기교환권사용B", 41003, 20, activeChar, true);
 				activeChar.addItem("무기교환권사용B", 41021, 1, activeChar, true);
-				BorinetUtil.getInstance().insertDB(activeChar, "WeaponB");
+				BorinetUtil.getInstance().insertDB(activeChar, "WeaponB", 0);
 			}
 			else
 			{
@@ -192,7 +192,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				}
 				activeChar.destroyItemByItemId("방어구교환권사용B", 41003, 20, activeChar, true);
 				activeChar.addItem("방어구교환권사용B", 41022, 1, activeChar, true);
-				BorinetUtil.getInstance().insertDB(activeChar, "ArmorB");
+				BorinetUtil.getInstance().insertDB(activeChar, "ArmorB", 0);
 			}
 			else
 			{

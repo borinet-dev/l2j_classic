@@ -166,7 +166,7 @@ public class ItemSkillsTemplate implements IItemHandler
 			}
 		}
 		
-		if (successfulUse && checkConsume(item, hasConsumeSkill) && !playable.destroyItem("Consume", item.getObjectId(), 1, playable, false))
+		if (successfulUse && checkConsume(item, hasConsumeSkill) && !playable.destroyItem("사용", item.getObjectId(), 1, playable, false))
 		{
 			playable.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 			return false;

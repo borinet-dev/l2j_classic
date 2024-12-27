@@ -666,7 +666,7 @@ public class Fort extends AbstractResidence
 		{
 			return false;
 		}
-		if ((lease > 0) && !player.destroyItemByItemId("Consume", Inventory.ADENA_ID, lease, null, true))
+		if ((lease > 0) && !player.destroyItemByItemId("사용", Inventory.ADENA_ID, lease, null, true))
 		{
 			return false;
 		}

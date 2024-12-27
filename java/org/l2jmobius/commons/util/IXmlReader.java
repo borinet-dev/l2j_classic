@@ -86,7 +86,7 @@ public interface IXmlReader
 	{
 		if (!getCurrentFileFilter().accept(f))
 		{
-			LOGGER.warning("Could not parse " + f.getName() + " is not a file or it doesn't exist!");
+			LOGGER.warning("구문 분석 실패: " + f.getAbsolutePath() + " - 파일이 아니거나 존재하지 않습니다!");
 			return;
 		}
 		

@@ -2463,7 +2463,7 @@ public abstract class Inventory extends ItemContainer
 						// If stackable item is found in inventory just add to current quantity
 						if (item.isStackable() && (getItemByItemId(item.getId()) != null))
 						{
-							addItem("복구1", item, getOwner().getActingPlayer(), null);
+							addItem("아이템정렬", item, getOwner().getActingPlayer(), null);
 						}
 						else
 						{

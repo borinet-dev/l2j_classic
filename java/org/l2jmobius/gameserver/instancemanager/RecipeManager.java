@@ -618,7 +618,7 @@ public class RecipeManager
 			{
 				for (TempItem tmp : materials)
 				{
-					inv.destroyItemByItemId("Manufacture", tmp.getItemId(), tmp.getQuantity(), _target, _player);
+					inv.destroyItemByItemId("제작-사용", tmp.getItemId(), tmp.getQuantity(), _target, _player);
 					if (tmp.getQuantity() > 1)
 					{
 						sm = new SystemMessage(SystemMessageId.S2_S1_S_DISAPPEARED);
@@ -667,7 +667,7 @@ public class RecipeManager
 				_player.sendPacket(new SystemMessage(SystemMessageId.CRAFTING_CRITICAL));
 			}
 			
-			_target.getInventory().addItem("Manufacture", itemId, itemCount, _target, _player);
+			_target.getInventory().addItem("제작-획득", itemId, itemCount, _target, _player);
 			
 			// inform customer of earned item
 			SystemMessage sm = null;

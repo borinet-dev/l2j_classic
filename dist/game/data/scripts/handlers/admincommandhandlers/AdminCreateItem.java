@@ -196,7 +196,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 			{
 				if ((activeChar != onlinePlayer) && onlinePlayer.isOnline() && ((onlinePlayer.getClient() != null) && !onlinePlayer.getClient().isDetached()))
 				{
-					onlinePlayer.getInventory().addItem("Admin", idval, numval, onlinePlayer, activeChar);
+					onlinePlayer.getInventory().addItem("운영자가 지급", idval, numval, onlinePlayer, activeChar);
 					if (numval > 1)
 					{
 						onlinePlayer.sendMessage("운영자가 아이템 [" + template.getName() + "] " + numval + "개를 지급하였습니다.");
@@ -323,7 +323,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 			return;
 		}
 		
-		target.getInventory().addItem("Admin", id, num, activeChar, null);
+		target.getInventory().addItem("운영자가 지급", id, num, activeChar, null);
 		BuilderUtil.sendSysMessage(activeChar, "아이템 생성: " + num + " " + template.getName() + "(" + id + ") -> " + target.getName());
 		target.sendPacket(new ExAdenaInvenCount(target));
 		if (!target.isGM())
