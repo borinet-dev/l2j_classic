@@ -9,4 +9,55 @@
 <!-- npcStringId = to use String IDs from client NpcString-e.dat -->
 <!-- string = to use any custom text, example: string="Hello World" -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="xsd/Routes.xsd">
+	<!-- Leandro -->
+	<route name="scribe_leandro" repeat="true" repeatStyle="back">
+		<target id="31357" spawnX="-82428" spawnY="245203" spawnZ="-3712" />
+		<point npcStringId="1010206" X="-82428" Y="245204" Z="-3712" delay="0" run="false" />
+		<point X="-82198" Y="245361" Z="-3712" delay="0" run="false" />
+		<point npcStringId="1010207" X="-82091" Y="245028" Z="-3720" delay="0" run="false" />
+		<point X="-82381" Y="244911" Z="-3720" delay="0" run="false" />
+		<point X="-82935" Y="244481" Z="-3728" delay="0" run="false" />
+		<point npcStringId="1010205" X="-83980" Y="242776" Z="-3728" delay="5" run="false" />
+		<point X="-85966" Y="241371" Z="-3728" delay="0" run="false" />
+		<point npcStringId="1010206" X="-86079" Y="240868" Z="-3720" delay="5" run="false" />
+		<point X="-86076" Y="240392" Z="-3712" delay="0" run="false" />
+		<point X="-86519" Y="240706" Z="-3704" delay="0" run="false" />
+		<point npcStringId="1010207" X="-86343" Y="241130" Z="-3728" delay="5" run="false" />
+	</route>
+	<!-- Remy -->
+	<route name="porter_remy" repeat="true" repeatStyle="cycle">
+		<target id="31356" spawnX="-81920" spawnY="243892" spawnZ="-3714" />
+		<point X="-81926" Y="243894" Z="-3712" delay="3" run="true" />
+		<point npcStringId="1010204" X="-82134" Y="243600" Z="-3728" delay="0" run="true" />
+		<point X="-83182" Y="243723" Z="-3728" delay="0" run="true" />
+		<point npcStringId="1010202" X="-84486" Y="243236" Z="-3728" delay="5" run="true" />
+		<point X="-85205" Y="243187" Z="-3728" delay="0" run="true" />
+		<point X="-86152" Y="242898" Z="-3728" delay="0" run="true" />
+		<point X="-86288" Y="242962" Z="-3720" delay="0" run="true" />
+		<point npcStringId="1010203" X="-86352" Y="243207" Z="-3720" delay="5" run="true" />
+		<point X="-86501" Y="242762" Z="-3720" delay="0" run="true" />
+		<point npcStringId="1010204" X="-86500" Y="242615" Z="-3728" delay="0" run="true" />
+		<point X="-86123" Y="241606" Z="-3728" delay="0" run="true" />
+		<point X="-85207" Y="240698" Z="-3728" delay="0" run="true" />
+		<point npcStringId="1010204" X="-84066" Y="241285" Z="-3728" delay="5" run="true" />
+		<point X="-83215" Y="241170" Z="-3728" delay="0" run="true" />
+		<point npcStringId="1010204" X="-82364" Y="242944" Z="-3720" delay="0" run="true" />
+		<point X="-82392" Y="242982" Z="-3729" delay="0" run="true" /> <!-- extra point -->
+		<point npcStringId="1010201" X="-81674" Y="243391" Z="-3712" delay="5" run="true" />
+		<point X="-81926" Y="243894" Z="-3712" delay="0" run="true" />
+	</route>
+	<!-- Prophet (Sinister) - Giran -->
+	<route name="prophet_giran" repeat="true" repeatStyle="cycle">
+		<target id="4310" spawnX="84858" spawnY="147764" spawnZ="-3400" />
+		<point X="84858" Y="147764" Z="-3400" delay="10" run="false" />
+		<point npcStringId="1010221" X="83623" Y="147705" Z="-3400" delay="0" run="false" />
+		<point X="83626" Y="149551" Z="-3400" delay="5" run="false" />
+		<point npcStringId="1010222" X="83839" Y="149549" Z="-3400" delay="0" run="false" />
+		<point X="83626" Y="149551" Z="-3400" delay="5" run="false" />
+		<point npcStringId="1010223" X="83623" Y="147705" Z="-3400" delay="0" run="false" />
+		<point X="84858" Y="147764" Z="-3400" delay="10" run="false" />
+		<point npcStringId="1010224" X="83679" Y="147701" Z="-3400" delay="6" run="false" />
+		<point X="83510" Y="148636" Z="-3400" delay="0" run="false" />
+		<point npcStringId="1010225" X="83679" Y="147701" Z="-3400" delay="6" run="false" />
+	</route>
 </routes>

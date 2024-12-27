@@ -113,6 +113,39 @@
 			<height normal="15" />
 		</collision>
 	</npc>
+	<npc id="4310" level="70" type="Folk" name="Follower" title="Sinister">
+		<!-- TODO: Must be confirmed -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="120" />
+		</parameters>
+		<race>HUMAN</race>
+		<sex>MALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="2444" mp="1345" hpRegen="7.5" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" attackSpeed="253" range="40" type="SWORD" distance="80" width="120" random="10" critical="4" accuracy="5" />
+			<defence physical="295.91597" magical="216.53847" />
+			<attribute>
+				<defence fire="150" water="150" wind="150" earth="150" holy="150" dark="150" />
+			</attribute>
+			<speed>
+				<walk ground="50" />
+				<run ground="120" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status attackable="false" targetable="false" />
+		<skillList>
+			<skill id="4416" level="14" /> <!-- Humans -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+		</skillList>
+		<ai clanHelpRange="300" aggroRange="450" />
+		<collision>
+			<radius normal="8" />
+			<height normal="22" />
+		</collision>
+	</npc>
 	<npc id="4315" level="70" type="Warehouse" name="창고지기" title="Fantasy Isle Warehouse Keeper">
 		<!-- TODO: Must be confirmed -->
 		<race>DWARF</race>
