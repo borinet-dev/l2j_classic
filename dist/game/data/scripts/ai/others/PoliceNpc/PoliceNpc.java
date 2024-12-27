@@ -84,6 +84,7 @@ public class PoliceNpc extends AbstractNpcAI
 			Npc npc = addSpawn(npcId, x, y, -3357, 0, true, 0);
 			if (npc != null)
 			{
+				npc.setWalking();
 				_npcList.add(npc);
 				spawnedNpcIds.add(npcId);
 			}
