@@ -626,7 +626,7 @@
 			<item id="23304" min="1" max="1" minEnchant="8" maxEnchant="8" chance="100" /> <!-- 에바의 티셔츠 -->
 			<item id="27521" min="1" max="1" chance="100" /> <!-- 탐험가의 팔찌 -->
 			<item id="29587" min="1" max="1" chance="100" /> <!-- 아가시온 봉인팔찌 - 싱어댄서 -->
-			<item id="90731" min="1" max="1" chance="100" /> <!-- 한복 -->
+			<item id="41394" min="1" max="1" chance="100" /> <!-- 한복 -->
 			<!-- <item id="49844" min="5" max="5" chance="100" /> 사이하의 축복 상자 -->
 			<item id="41000" min="300" max="500" chance="100" /> <!-- 루나 -->
 		</capsuled_items>
@@ -3226,6 +3226,90 @@
 		<set name="material" val="PAPER" />
 		<skills>
 			<skill id="30300" level="1" /> 
+		</skills>
+	</item>
+	<item id="41393" name="새해 행운 티켓" type="EtcItem">
+		<set name="icon" val="nIcon.lucky_ticket" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="material" val="PAPER" />
+		<skills>
+			<skill id="30302" level="1" /> 
+		</skills>
+	</item>
+	<item id="41394" name="한복" additionalName="설날" type="EtcItem">
+		<set name="icon" val="icon.ev_kr_traditional_dress" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_freightable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="reuse_delay" val="300000" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18791" level="1" />
+		</skills>
+	</item>
+	<item id="41395" name="떡국 레시피" type="EtcItem">
+		<set name="icon" val="icon.etc_recipe_black_i00" />
+		<set name="default_action" val="RECIPE" />
+		<set name="etcitem_type" val="RECIPE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="30" />
+		<set name="price" val="250" />
+		<set name="recipe_id" val="3002" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="RECIPE" />
+		<set name="handler" val="Recipes" />
+	</item>
+	<item id="41396" name="떡국떡" type="EtcItem">
+		<set name="icon" val="nIcon.event_gujung_etc_1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41397" name="소고기" type="EtcItem">
+		<set name="icon" val="nIcon.event_gujung_etc_3" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41398" name="달걀" type="EtcItem">
+		<set name="icon" val="nIcon.event_gujung_etc_2" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41399" name="대파" type="EtcItem">
+		<set name="icon" val="nIcon.event_gujung_etc_4" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41400" name="오이" type="EtcItem">
+		<set name="icon" val="nIcon.blackdays-cucumber" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="41401" name="떡국" type="EtcItem">
+		<set name="icon" val="nIcon.event_gujung_etc_end" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="600000" />
+		<skills>
+			<skill id="30303" level="1" />
 		</skills>
 	</item>
 </list>

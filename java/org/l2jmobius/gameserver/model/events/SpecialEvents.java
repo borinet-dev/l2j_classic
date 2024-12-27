@@ -13,15 +13,22 @@ import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.enums.ChatType;
+import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.enums.SkillFinishType;
+import org.l2jmobius.gameserver.instancemanager.IdManager;
+import org.l2jmobius.gameserver.instancemanager.MailManager;
+import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.holders.ItemHolder;
+import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jmobius.gameserver.util.Util;
 
 public class SpecialEvents
 {
@@ -293,6 +300,7 @@ public class SpecialEvents
 						AMPA = "오전";
 					}
 					player.sendMessage("지금부터 " + (Config.CUSTOM_EVENT_LAST_MONTH) + "월 " + Config.CUSTOM_EVENT_LAST_DAY + "일 " + AMPA + " " + Config.CUSTOM_EVENT_LAST_TIME + "시 까지 진행됩니다!");
+					ThreadPool.schedule(() -> checkEventDay(player), 1000);
 					break;
 				}
 				case 2:
@@ -396,7 +404,7 @@ public class SpecialEvents
 		}
 	}
 	
-	public static void resetVar(Player player)
+	private static void resetVar(Player player)
 	{
 		player.getAccountVariables().remove("묵찌빠");
 		player.getAccountVariables().remove("CUSTOM_EVENT_GIFT");
@@ -406,9 +414,11 @@ public class SpecialEvents
 		player.getAccountVariables().remove("CUSTOM_EVENT_ARMOR_C");
 		player.getAccountVariables().remove("CUSTOM_EVENT_WEAPON_B");
 		player.getAccountVariables().remove("CUSTOM_EVENT_ARMOR_B");
-		player.getAccountVariables().remove("CUSTOM_EVENT_GIFT_SCROLL_TIMES");
+		player.getAccountVariables().remove("CUSTOM_EVENT_BUY_SCROLL");
+		player.getAccountVariables().remove("CUSTOM_EVENT_LUCKY_SCROLL");
 		player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
 		player.getAccountVariables().remove("CHUSEOK_ITEM");
+		player.getAccountVariables().remove("CUSTOM_EVENT_RECIPES");
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
@@ -422,6 +432,56 @@ public class SpecialEvents
 		{
 			LOGGER.warning("커스텀이벤트 데이터베이스 정리 오류" + e);
 		}
+	}
+	
+	public static void checkEventDay(Player player)
+	{
+		int checkGift = player.getVariables().getInt("CUSTOM_EVENT_RECIPES", 0);
+		
+		if (checkGift != 1)
+		{
+			sendEventMail(player);
+		}
+	}
+	
+	public static void sendEventMail(Player player)
+	{
+		int msgId = IdManager.getInstance().getNextId();
+		String charMsg = "선물이 배달 왔어요. 어서 확인해 주세요!";
+		String topic = "설날 이벤트!";
+		String body = "설날 이벤트를 맞이하여 " + Config.SERVER_NAME_KOR + "에서 즐거운 시간 보내시기 바랍니다.\n\n레시피를 등록하고, 떡국 재료를 모아서 떡국을 만들어 보세요!\n\n아이템을 첨부하였으니 반드시 수령하시기 바랍니다.";
+		String items = "41395,1";
+		
+		Message msg = new Message(msgId, player.getObjectId(), topic, body, 7, MailType.PRIME_SHOP_GIFT, false);
+		final List<ItemHolder> itemHolders = new ArrayList<>();
+		for (String str : items.split(";"))
+		{
+			if (str.contains(","))
+			{
+				final String itemId = str.split(",")[0];
+				final String itemCount = str.split(",")[1];
+				if (Util.isDigit(itemId) && Util.isDigit(itemCount))
+				{
+					itemHolders.add(new ItemHolder(Integer.parseInt(itemId), Long.parseLong(itemCount)));
+				}
+			}
+			else if (Util.isDigit(str))
+			{
+				itemHolders.add(new ItemHolder(Integer.parseInt(str), 1));
+			}
+		}
+		if (!itemHolders.isEmpty())
+		{
+			final Mail attachments = msg.createAttachments();
+			for (ItemHolder itemHolder : itemHolders)
+			{
+				attachments.addItem("CUSTOM_EVENT_RECIPES" + " 메일발송", itemHolder.getId(), itemHolder.getCount(), null, null);
+			}
+		}
+		MailManager.getInstance().sendMessage(msg);
+		player.sendMessage("" + charMsg);
+		player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, charMsg));
+		player.getVariables().set("CUSTOM_EVENT_RECIPES", 1);
 	}
 	
 	public static SpecialEvents getInstance()

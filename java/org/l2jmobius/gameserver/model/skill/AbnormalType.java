@@ -62,6 +62,7 @@ public enum AbnormalType
 	ROLLIPOP_BUFF1(-1),
 	ROLLIPOP_BUFF2(-1),
 	HANBOK_BUFF(-1),
+	DDUCKUK_BUFF(-1),
 	RESURRECTION_BUFF1(-1),
 	BRIGHTNESS_BLESS(-1),
 	BUFF_MENTEE1(-1),
@@ -244,6 +245,7 @@ public enum AbnormalType
 	CLAN_TEAMWORK(-1),
 	SONG_OF_ARCHERY(-1),
 	DANCE_OF_SAGE(-1),
+	FREYA_SCROLL_VIT(-1),
 	SAYHA_BLESSING(-1),
 	SAYHA_BUFF(-1),
 	SONG_WEAPON(-1),
@@ -585,6 +587,7 @@ public enum AbnormalType
 	FIVE_COLOR_SONGPYEON(-1),
 	FULL_MOON(-1),
 	LETTER_COLLECTOR_GIFT(-1),
+	LUCKY_TICKET(-1),
 	PROVOKE(-1);
 	
 	private int _clientId;
