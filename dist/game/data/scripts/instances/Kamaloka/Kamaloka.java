@@ -638,6 +638,11 @@ public class Kamaloka extends AbstractInstance
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (player == null)
+		{
+			return null;
+		}
+		
 		int lvl = player.getLevel();
 		// @formatter:off
         Map<String, int[][]> levelRanges = new HashMap<>();
@@ -677,11 +682,23 @@ public class Kamaloka extends AbstractInstance
 				enterInstance(player, Labyrinth);
 				break;
 			}
+			case "HoleNo":
+			{
+				player.sendMessage("심연의 홀은 레벨이 초과되어 입장할 수 없습니다.");
+				startQuestTimer("show", 0, null, player);
+				break;
+			}
+			case "LabyrinthNo":
+			{
+				player.sendMessage("심연의 미궁은 레벨이 초과되어 입장할 수 없습니다.");
+				startQuestTimer("show", 0, null, player);
+				break;
+			}
 			case "show":
 			{
 				String result;
-				String holeFinal = (HoleLvl > 0) ? "대상레벨: " + HoleLvl : "입장불가";
-				String labyFinal = (LabyrinthLvl > 0) ? "대상레벨: " + LabyrinthLvl : "입장불가";
+				String holeFinal = (HoleLvl > 0) ? "<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h Quest Kamaloka Hole\">심연의 홀에 들어간다 (대상레벨: " + HoleLvl + ")</Button>" : "<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h Quest Kamaloka HoleNo\">심연의 홀에 들어간다 (입장불가)</Button>";
+				String labyFinal = (LabyrinthLvl > 0) ? "<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h Quest Kamaloka Labyrinth\">심연의 미궁에 들어간다 (대상레벨: " + LabyrinthLvl + ")</Button>" : "<Button ALIGN=LEFT ICON=\"TELEPORT\" action=\"bypass -h Quest Kamaloka LabyrinthNo\">심연의 미궁에 들어간다 (입장불가)</Button>";
 				Instance world = getPlayerInstance(player);
 				
 				if ((world != null) && isInstanceAllowed(world.getTemplateId()))
