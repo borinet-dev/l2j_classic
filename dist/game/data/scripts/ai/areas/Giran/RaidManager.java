@@ -3,7 +3,6 @@ package ai.areas.Giran;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Calendar;
 import java.util.logging.Level;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -12,6 +11,7 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
+import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
 
@@ -31,30 +31,18 @@ public class RaidManager extends AbstractNpcAI
 	
 	private RaidManager()
 	{
-		scheduleSatrtEvent();
-		scheduleStopEvent();
-		
 		addStartNpc(MANAGER);
 		addFirstTalkId(MANAGER);
+		
+		ThreadPool.scheduleAtFixedRate(this::startAnnount, BorinetTask.specialRaidSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
+		ThreadPool.scheduleAtFixedRate(this::stopAnnount, BorinetTask.specialRaidSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
 	}
 	
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
-		final long currentTime = System.currentTimeMillis();
-		
-		final Calendar starttime = Calendar.getInstance();
-		starttime.set(Calendar.MINUTE, 30);
-		starttime.set(Calendar.SECOND, 0);
-		starttime.set(Calendar.HOUR_OF_DAY, 19);
-		
-		final Calendar endtime = Calendar.getInstance();
-		endtime.set(Calendar.MINUTE, 0);
-		endtime.set(Calendar.SECOND, 0);
-		endtime.set(Calendar.HOUR_OF_DAY, 01);
-		
 		final long reuse = player.getVariables().getLong("RaidVoice", 0);
-		if ((currentTime > endtime.getTimeInMillis()) && (currentTime < starttime.getTimeInMillis()))
+		if (!BorinetTask.getInstance().specialRaidTime())
 		{
 			if (reuse <= System.currentTimeMillis())
 			{
@@ -69,40 +57,6 @@ public class RaidManager extends AbstractNpcAI
 			player.getVariables().set("RaidVoice", System.currentTimeMillis() + 6000);
 		}
 		return "data/html/guide/RaidManager.htm";
-	}
-	
-	private void scheduleSatrtEvent()
-	{
-		final long currentTime = System.currentTimeMillis();
-		final Calendar starttime = Calendar.getInstance();
-		starttime.set(Calendar.MINUTE, 30);
-		starttime.set(Calendar.SECOND, 0);
-		starttime.set(Calendar.HOUR_OF_DAY, 19);
-		
-		if (starttime.getTimeInMillis() < currentTime)
-		{
-			starttime.add(Calendar.DAY_OF_YEAR, 1);
-		}
-		
-		final long startDelay = Math.max(0, starttime.getTimeInMillis() - currentTime);
-		ThreadPool.scheduleAtFixedRate(this::startAnnount, startDelay, BorinetUtil.MILLIS_PER_DAY);
-	}
-	
-	private void scheduleStopEvent()
-	{
-		final long currentTime = System.currentTimeMillis();
-		final Calendar endtime = Calendar.getInstance();
-		endtime.set(Calendar.MINUTE, 0);
-		endtime.set(Calendar.SECOND, 0);
-		endtime.set(Calendar.HOUR_OF_DAY, 01);
-		
-		if (endtime.getTimeInMillis() < currentTime)
-		{
-			endtime.add(Calendar.DAY_OF_YEAR, 1);
-		}
-		
-		final long endDelay = Math.max(0, endtime.getTimeInMillis() - currentTime);
-		ThreadPool.scheduleAtFixedRate(this::stopAnnount, endDelay, BorinetUtil.MILLIS_PER_DAY);
 	}
 	
 	protected void startAnnount()
