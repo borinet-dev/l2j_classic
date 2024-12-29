@@ -97,6 +97,7 @@ public class WaterMelonBuff extends Event
 				{
 					player.addItem("왕수박이벤트", 47822, 1, player, true);
 					BorinetUtil.getInstance().insertDB(player, "왕수박이벤트", 0);
+					player.getAccountVariables().set("왕수박이벤트", 1);
 				}
 				else
 				{

@@ -166,7 +166,6 @@ public class BorinetUtil
 	
 	public void insertDB(Player player, String name, long reuse)
 	{
-		player.getAccountVariables().set(name, 1);
 		String query = "REPLACE INTO event_hwid (name, HWID, reuse) VALUES (?, ?, ?)";
 		
 		try (Connection con = DatabaseFactory.getConnection();
