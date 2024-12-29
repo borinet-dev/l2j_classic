@@ -496,18 +496,11 @@ public class Q00255_Tutorial extends Quest
 		final QuestState qs = getQuestState(killer, false);
 		if ((qs != null) && (qs.getMemoState() <= 3) && !hasQuestItems(killer, BLUE_GEM))
 		{
-			if (getRandom(100) < 30)
+			if (getRandom(100) < 45)
 			{
-				// check for too many gems on ground
-				int counter = 0;
-				for (Item item : World.getInstance().getVisibleObjectsInRange(killer, Item.class, 1500))
-				{
-					if (item.getId() == BLUE_GEM)
-					{
-						counter++;
-					}
-				}
-				if (counter < 10) // do not drop if more than 10
+				// 정확한 카운트 로직
+				long counter = World.getInstance().getVisibleObjectsInRange(killer, Item.class, 1500).stream().filter(item -> item.getId() == BLUE_GEM).count();
+				if (counter < 5) // 5개 이하일 때만 드랍
 				{
 					npc.dropItem(killer, BLUE_GEM, 1);
 				}
