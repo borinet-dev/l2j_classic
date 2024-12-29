@@ -129,6 +129,11 @@ public class MithrilMine extends AbstractNpcAI
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		if (npc == null)
+		{
+			return null;
+		}
+		
 		switch (event)
 		{
 			case "SPAWN_RAID":
@@ -162,7 +167,7 @@ public class MithrilMine extends AbstractNpcAI
 					"이 근처에 요즘 설치고 다니는 놈들이 있다던데..."
 				};
 				
-				int sec = Rnd.get(60, 180) * 1000;
+				int sec = Rnd.get(20, 90) * 1000;
 				String selectedSaying = npcSayings[Rnd.get(0, npcSayings.length - 1)];
 				npc.broadcastSay(ChatType.NPC_GENERAL, selectedSaying);
 				startQuestTimer("TALK_TEXT", sec, npc, null);
