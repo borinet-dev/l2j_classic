@@ -16,6 +16,7 @@
  */
 package ai.areas.FantasyIsle;
 
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
@@ -24,7 +25,6 @@ import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.util.BorinetTask;
 
 import ai.AbstractNpcAI;
 
@@ -34,6 +34,7 @@ import ai.AbstractNpcAI;
  */
 public class Parade extends AbstractNpcAI
 {
+	
 	// @formatter:off
 	final int[] ACTORS =
 	{
@@ -61,7 +62,7 @@ public class Parade extends AbstractNpcAI
 		32423,	0,	32422,
 		0,	0,	0,
 		32420,	32419,	32417,
-		32418,	0,	32416,
+		32450,	0,	32448,
 		0,	0,	0,
 		32414,	0,	32414,
 		0,	32413,	0,
@@ -85,7 +86,7 @@ public class Parade extends AbstractNpcAI
 		32397,	32398,	32396,
 		0,	0,	0,
 		0,	32450,	0,
-		32448,	32449,	32447,
+		32448,	32449,	32407,
 		0,	0,	0,
 		32380,	0,	32380,
 		32380,	32381,	32380,
@@ -127,17 +128,25 @@ public class Parade extends AbstractNpcAI
 	
 	public Parade()
 	{
-		// Starts at 8:00 and repeats every 6 hours.
-		// final long diff = timeLeftMilli(8, 0, 0);
-		// final long cycle = 3600000;
-		// ThreadPool.scheduleAtFixedRate(new Start(), diff, cycle);
+		Calendar now = Calendar.getInstance();
 		
-		// Test - Starts 10 secs after server startup and repeats every 10 minutes.
-		// final long diff = timeLeftMilli(8, 0, 0), cycle = 300000;
-		final long cycle = 300000;
-		ThreadPool.scheduleAtFixedRate(new Start(), 10000, cycle);
+		// 다음 10분 단위 정각 시간 계산
+		int currentMinute = now.get(Calendar.MINUTE);
+		int nextMinute = ((currentMinute / 10) + 1) * 10; // 10분 단위로 올림
+		if (nextMinute >= 60)
+		{
+			now.add(Calendar.HOUR_OF_DAY, 1); // 시간이 넘어갈 경우 시간 +1
+			nextMinute = 0;
+		}
+		now.set(Calendar.MINUTE, nextMinute);
+		now.set(Calendar.SECOND, 0);
+		now.set(Calendar.MILLISECOND, 0);
 		
-		// LOGGER.info("Fantasy Isle: Parade starting at " + new SimpleDateFormat("yyyy/MM/dd HH:mm").format(System.currentTimeMillis() + diff) + " and is scheduled each next " + (cycle / 3600000) + " hours.");
+		// 첫 실행까지 남은 시간 계산
+		long delay = now.getTimeInMillis() - System.currentTimeMillis();
+		
+		// 퍼레이드 스케줄 설정
+		ThreadPool.scheduleAtFixedRate(new Start(), delay, 1800000);
 	}
 	
 	void load()
@@ -157,8 +166,12 @@ public class Parade extends AbstractNpcAI
 		spawns.clear();
 	}
 	
-	class Start implements Runnable
+	private class Start implements Runnable
 	{
+		public Start()
+		{
+		}
+		
 		@Override
 		public void run()
 		{
@@ -169,8 +182,12 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	class Spawn implements Runnable
+	private class Spawn implements Runnable
 	{
+		public Spawn()
+		{
+		}
+		
 		@Override
 		public void run()
 		{
@@ -199,8 +216,12 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	class Delete implements Runnable
+	private class Delete implements Runnable
 	{
+		public Delete()
+		{
+		}
+		
 		@Override
 		public void run()
 		{
@@ -214,11 +235,8 @@ public class Parade extends AbstractNpcAI
 				{
 					if (actor.calculateDistanceSq2D(actor.getXdestination(), actor.getYdestination(), 0) < (100 * 100))
 					{
-						if (actor.getWorldRegion() != null)
-						{
-							actor.deleteMe();
-							spawns.remove(actor);
-						}
+						actor.deleteMe();
+						spawns.remove(actor);
 					}
 					else if (!actor.isMoving())
 					{
@@ -233,8 +251,12 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	class Clean implements Runnable
+	private class Clean implements Runnable
 	{
+		public Clean()
+		{
+		}
+		
 		@Override
 		public void run()
 		{
@@ -256,10 +278,6 @@ public class Parade extends AbstractNpcAI
 	
 	public static void main(String[] args)
 	{
-		if (BorinetTask._isActive)
-		{
-			return;
-		}
 		new Parade();
 	}
 }

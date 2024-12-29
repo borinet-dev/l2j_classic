@@ -16,18 +16,20 @@
  */
 package ai.areas.FantasyIsle;
 
+import java.util.Calendar;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.Location;
+import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.NpcSay;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
-import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 import org.l2jmobius.gameserver.util.BorinetTask;
 
 import ai.AbstractNpcAI;
@@ -38,6 +40,8 @@ import ai.AbstractNpcAI;
  */
 public class TalentShow extends AbstractNpcAI
 {
+	private long lastShowStartTime = 0; // 공연 시작 시간을 기록
+	
 	private static int MC = 32433;
 	// @formatter:off
 	private static int[] SINGERS =
@@ -57,7 +61,7 @@ public class TalentShow extends AbstractNpcAI
 		32424, 32425, 32426, 32427, 32428
 	};
 	// @formatter:on
-	private static boolean IS_STARTED = false;
+	public static boolean IS_STARTED = false;
 	private static NpcStringId[] MESSAGES =
 	{
 		NpcStringId.LADIES_AND_GENTLEMEN_THE_SHOW_IS_ABOUT_TO_BEGIN,
@@ -167,6 +171,7 @@ public class TalentShow extends AbstractNpcAI
 	
 	private TalentShow()
 	{
+		addFirstTalkId(33667);
 		addSpawnId(32433, 32431, 32432, 32442, 32443, 32444, 32445, 32446, 32424, 32425, 32426, 32427, 32428);
 		load();
 		scheduleTimer();
@@ -285,27 +290,22 @@ public class TalentShow extends AbstractNpcAI
 	
 	private void scheduleTimer()
 	{
-		final int gameTime = GameTimeTaskManager.getInstance().getGameTime();
-		final int hours = (gameTime / 60) % 24;
-		final int minutes = gameTime % 60;
-		int hourDiff;
-		int minDiff;
-		hourDiff = 20 - hours;
-		if (hourDiff < 0)
+		Calendar now = Calendar.getInstance();
+		int currentMinute = now.get(Calendar.MINUTE);
+		int nextMinute = ((currentMinute / 10) + 1) * 10; // 다음 10분 단위
+		if (nextMinute >= 60)
 		{
-			hourDiff = 24 - (hourDiff *= -1);
+			now.add(Calendar.HOUR_OF_DAY, 1); // 시간이 넘어갈 경우 시간 +1
+			nextMinute = 0;
 		}
-		minDiff = 30 - minutes;
-		if (minDiff < 0)
-		{
-			minDiff = 60 - (minDiff *= -1);
-		}
-		// long diff;
-		hourDiff *= 3600000;
-		minDiff *= 60000;
-		// diff = hourDiff + minDiff;
-		// LOGGER.info("Fantasy Isle: MC show script starting at " + (new SimpleDateFormat("yyyy/MM/dd HH:mm:ss")).format(System.currentTimeMillis() + diff) + " and is scheduled each next 4 hours.");
-		startQuestTimer("Start", 1000, null, null); // first start
+		now.set(Calendar.MINUTE, nextMinute);
+		now.set(Calendar.SECOND, 0);
+		now.set(Calendar.MILLISECOND, 0);
+		
+		// 다음 실행 시간까지 남은 밀리초 계산
+		long delay = now.getTimeInMillis() - System.currentTimeMillis();
+		// 첫 실행 시간에 맞추어 스케줄링
+		startQuestTimer("Start", delay, null, null); // 첫 실행
 	}
 	
 	private void autoChat(Npc npc, NpcStringId npcString, ChatType type)
@@ -322,7 +322,19 @@ public class TalentShow extends AbstractNpcAI
 			{
 				case 32433:
 				{
-					autoChat(npc, MESSAGES[0], ChatType.NPC_SHOUT);
+					List<Player> playersInRadius = World.getInstance().getVisibleObjectsInRange(npc, Player.class, 1000);
+					// 플레이어 수 확인
+					int playerCount = playersInRadius.size();
+					
+					// 조건에 따라 다른 대사 출력
+					if (playerCount >= 10)
+					{
+						npc.broadcastSay(ChatType.GENERAL, "와~ 사람들이 많이 모였네요! 헉... 울렁증이... 끙");
+					}
+					else
+					{
+						autoChat(npc, MESSAGES[0], ChatType.GENERAL);
+					}
 					startQuestTimer("1", 30000, npc, null);
 					break;
 				}
@@ -377,6 +389,7 @@ public class TalentShow extends AbstractNpcAI
 		{
 			IS_STARTED = true;
 			addSpawn(MC, -56698, -56430, -2008, 32768, false, 0);
+			lastShowStartTime = System.currentTimeMillis(); // 공연 시작 시간 기록
 			startQuestTimer("Start", 1800000L, null, null); // repeat
 		}
 		else if ((npc != null) && IS_STARTED)
@@ -384,7 +397,7 @@ public class TalentShow extends AbstractNpcAI
 			// TODO switch on event
 			if (event.equalsIgnoreCase("6"))
 			{
-				autoChat(npc, MESSAGES[6], ChatType.NPC_SHOUT);
+				autoChat(npc, MESSAGES[6], ChatType.GENERAL);
 				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56511, -56647, -2008, 36863));
 				npc.broadcastPacket(new PlaySound(1, "NS22_F", 0, 0, 0, 0, 0));
 				addSpawn(SINGERS[0], -56344, -56328, -2008, 32768, false, 224000);
@@ -402,7 +415,7 @@ public class TalentShow extends AbstractNpcAI
 				{
 					case 32433:
 					{
-						autoChat(npc, MESSAGES[7], ChatType.NPC_SHOUT);
+						autoChat(npc, MESSAGES[7], ChatType.GENERAL);
 						npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56698, -56430, -2008, 32768));
 						startQuestTimer("8", 12000, npc, null);
 						break;
@@ -436,7 +449,7 @@ public class TalentShow extends AbstractNpcAI
 				{
 					case 32433:
 					{
-						autoChat(npc, MESSAGES[11], ChatType.NPC_SHOUT);
+						autoChat(npc, MESSAGES[11], ChatType.GENERAL);
 						npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56698, -56430, -2008, 32768));
 						startQuestTimer("12", 5000, npc, null);
 						break;
@@ -455,7 +468,7 @@ public class TalentShow extends AbstractNpcAI
 			}
 			else if (event.equalsIgnoreCase("17"))
 			{
-				autoChat(npc, MESSAGES[16], ChatType.NPC_SHOUT);
+				autoChat(npc, MESSAGES[16], ChatType.GENERAL);
 				startQuestTimer("social1", 2000, addSpawn(INDIVIDUALS[1], -56700, -56340, -2008, 32768, false, 32000), null);
 				startQuestTimer("18", 9000, npc, null);
 			}
@@ -499,7 +512,7 @@ public class TalentShow extends AbstractNpcAI
 				final ShoutInfo si = TALKS.get(event);
 				if (si != null)
 				{
-					autoChat(npc, si.getNpcStringId(), ChatType.NPC_SHOUT);
+					autoChat(npc, si.getNpcStringId(), ChatType.GENERAL);
 					startQuestTimer(si.getNextEvent(), si.getTime(), npc, null);
 				}
 			}
@@ -514,6 +527,66 @@ public class TalentShow extends AbstractNpcAI
 			}
 		}
 		return null;
+	}
+	
+	private int[] calculateNextShowTime()
+	{
+		if (lastShowStartTime == 0)
+		{
+			// 공연이 아직 시작되지 않은 경우
+			Calendar now = Calendar.getInstance();
+			int currentMinute = now.get(Calendar.MINUTE);
+			
+			// 다음 10분 단위 정각 계산
+			int nextMinute = ((currentMinute / 10) + 1) * 10;
+			if (nextMinute >= 60)
+			{
+				now.add(Calendar.HOUR_OF_DAY, 1); // 다음 시간으로 넘어감
+				nextMinute = 0;
+			}
+			
+			now.set(Calendar.MINUTE, nextMinute);
+			now.set(Calendar.SECOND, 0);
+			now.set(Calendar.MILLISECOND, 0);
+			
+			// 다음 공연 시작 시간 반환
+			return new int[]
+			{
+				now.get(Calendar.HOUR_OF_DAY),
+				nextMinute
+			};
+		}
+		
+		// 공연 시작 시간을 기준으로 다음 공연 시간 계산
+		long nextShowMillis = lastShowStartTime + 1800000L; // 30분 후
+		Calendar nextShow = Calendar.getInstance();
+		nextShow.setTimeInMillis(nextShowMillis);
+		
+		return new int[]
+		{
+			nextShow.get(Calendar.HOUR_OF_DAY),
+			nextShow.get(Calendar.MINUTE)
+		};
+	}
+	
+	@Override
+	public String onFirstTalk(Npc npc, Player player)
+	{
+		String htmltext = getHtm(player, npc.getId() + ".htm");
+		htmltext = htmltext.replace("%npcname%", "해아 " + npc.getName());
+		
+		if (!IS_STARTED) // 공연 중이 아닐 경우
+		{
+			int[] nextShowTime = calculateNextShowTime();
+			String nextTimeString = "다음 공연과 퍼레이드 시간: <font color=\"LEVEL\">" + nextShowTime[0] + "시 " + nextShowTime[1] + "분</font>";
+			htmltext = htmltext.replace("%nextshowtime%", nextTimeString);
+		}
+		else // 공연 중일 경우
+		{
+			htmltext = htmltext.replace("%nextshowtime%", "");
+		}
+		
+		return htmltext;
 	}
 	
 	public static void main(String[] args)

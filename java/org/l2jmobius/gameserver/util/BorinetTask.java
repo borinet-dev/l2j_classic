@@ -446,6 +446,119 @@ public class BorinetTask
 		}
 	}
 	
+	public boolean blockCheckerTime()
+	{
+		final long currentTime = System.currentTimeMillis();
+		
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		starttime.set(Calendar.MINUTE, 0);
+		starttime.set(Calendar.SECOND, 0);
+		
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.HOUR_OF_DAY, 23);
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		
+		if ((currentTime < starttime.getTimeInMillis()) || (currentTime > endtime.getTimeInMillis()))
+		{
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public static long blockCheckerSatrtEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		starttime.set(Calendar.MINUTE, 0);
+		starttime.set(Calendar.SECOND, 5);
+		
+		if (starttime.getTimeInMillis() < currentTime)
+		{
+			starttime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		final long startDelay = Math.max(0, starttime.getTimeInMillis() - currentTime);
+		
+		return startDelay;
+	}
+	
+	public static long blockCheckerStopEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.HOUR_OF_DAY, 23);
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		
+		if (endtime.getTimeInMillis() < currentTime)
+		{
+			endtime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		final long stopDelay = Math.max(0, endtime.getTimeInMillis() - currentTime);
+		
+		return stopDelay;
+	}
+	
+	public boolean specialRaidTime()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.MINUTE, 30);
+		starttime.set(Calendar.SECOND, 0);
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		endtime.set(Calendar.HOUR_OF_DAY, 01);
+		
+		if ((currentTime > endtime.getTimeInMillis()) && (currentTime < starttime.getTimeInMillis()))
+		{
+			return false;
+		}
+		
+		return true;
+	}
+	
+	public static long specialRaidSatrtEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.MINUTE, 30);
+		starttime.set(Calendar.SECOND, 0);
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		
+		if (starttime.getTimeInMillis() < currentTime)
+		{
+			starttime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		
+		final long startDelay = Math.max(0, starttime.getTimeInMillis() - currentTime);
+		
+		return startDelay;
+	}
+	
+	public static long specialRaidStopEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		endtime.set(Calendar.HOUR_OF_DAY, 01);
+		
+		if (endtime.getTimeInMillis() < currentTime)
+		{
+			endtime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		
+		final long endDelay = Math.max(0, endtime.getTimeInMillis() - currentTime);
+		
+		return endDelay;
+	}
+	
 	private void setCalendar(Calendar calendar, int minute, int second)
 	{
 		calendar.set(Calendar.MINUTE, minute);
