@@ -57,7 +57,7 @@ public abstract class WorldObject extends ListenersContainer implements IIdentif
 	/** Object ID */
 	private int _objectId;
 	/** World Region */
-	private WorldRegion _worldRegion;
+	public WorldRegion _worldRegion;
 	/** Location */
 	private final Location _location = new Location(0, 0, -10000);
 	/** Instance */
