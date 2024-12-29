@@ -1898,7 +1898,10 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		cancelBuffFinishTask();
 		
 		// Set world region to null.
-		setWorldRegion(null);
+		if (_worldRegion != null)
+		{
+			setWorldRegion(null);
+		}
 		
 		return true;
 	}

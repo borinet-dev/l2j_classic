@@ -363,6 +363,26 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="8307" toLevel="1" name="Boing Hammer's Mysterious Effect">
+		<!-- With a certain chance, increases the size of the target's head after a basic attack. -->
+		<icon>icon.weapon_bbyong_hammer_a_i00</icon>
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Effect of Doubt -->
+				<attackerType>Playable</attackerType>
+				<minDamage>1</minDamage>
+				<chance>33</chance>
+				<targetType>TARGET</targetType>
+				<isCritical>false</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>5994</skillId> <!-- Mysterious Effect -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
 	<skill id="8310" toLevel="1" name="Arcana Sigil">
 		<!-- Increases Magic Damage Resistance by 2% and decreases magic canceling damage by 13. -->
 		<icon>icon.arcana_sigil_i00</icon>

@@ -925,4 +925,16 @@
 			<item id="41391" count="60" />
 		</items>
 	</reward> -->
+	<reward id="1174" reward_id="860" name="블록체커는 못참지" classRace="0" isMainClassOnly="false" requiredCompletion="1" missionMania="true" isAccountMission="true">
+		<handler name="BlockChecker" />
+		<items>
+			<item id="13067" count="20" />
+		</items>
+	</reward>
+	<reward id="1175" reward_id="861" name="블록체커? 언제나 우승!" classRace="0" isMainClassOnly="false" requiredCompletion="1" missionMania="true" isAccountMission="true">
+		<handler name="BlockCheckerWin" />
+		<items>
+			<item id="13067" count="100" />
+		</items>
+	</reward>
 </list>

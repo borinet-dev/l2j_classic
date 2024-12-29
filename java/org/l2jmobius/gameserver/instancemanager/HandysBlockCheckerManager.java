@@ -24,6 +24,7 @@ import java.util.Set;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.Team;
 import org.l2jmobius.gameserver.instancemanager.tasks.PenaltyRemoveTask;
 import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
@@ -32,8 +33,11 @@ import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameAddPlayer;
 import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameChangeTeam;
+import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameChangeTimeToStart;
+import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameCloseUI;
 import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameRemovePlayer;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
@@ -64,33 +68,6 @@ public class HandysBlockCheckerManager
 	public synchronized int getArenaVotes(int arenaId)
 	{
 		return _arenaVotes.get(arenaId);
-	}
-	
-	/**
-	 * Add a new vote to start the event for the specified arena id
-	 * @param arena
-	 */
-	public synchronized void increaseArenaVotes(int arena)
-	{
-		final int newVotes = _arenaVotes.get(arena) + 1;
-		final ArenaParticipantsHolder holder = _arenaPlayers[arena];
-		if ((newVotes > (holder.getAllPlayers().size() / 2)) && !holder.getEvent().isStarted())
-		{
-			clearArenaVotes(arena);
-			if ((holder.getBlueTeamSize() == 0) || (holder.getRedTeamSize() == 0))
-			{
-				return;
-			}
-			if (Config.HBCE_FAIR_PLAY)
-			{
-				holder.checkAndShuffle();
-			}
-			ThreadPool.execute(holder.getEvent().new StartEvent());
-		}
-		else
-		{
-			_arenaVotes.put(arena, newVotes);
-		}
 	}
 	
 	/**
@@ -170,7 +147,7 @@ public class HandysBlockCheckerManager
 			
 			if (player.isOnEvent() || player.isInOlympiadMode())
 			{
-				player.sendMessage("Couldnt register you due other event participation.");
+				player.sendMessage("다른 이벤트에 참여 중이기 때문에 등록할 수 없습니다.");
 				return false;
 			}
 			
@@ -178,21 +155,19 @@ public class HandysBlockCheckerManager
 			{
 				OlympiadManager.getInstance().unRegisterNoble(player);
 				player.sendPacket(SystemMessageId.APPLICANTS_FOR_THE_OLYMPIAD_UNDERGROUND_COLISEUM_OR_KRATEI_S_CUBE_MATCHES_CANNOT_REGISTER);
+				return false;
 			}
 			
-			// if(UnderGroundColiseum.getInstance().isRegisteredPlayer(player))
-			// {
-			// UngerGroundColiseum.getInstance().removeParticipant(player);
-			// player.sendPacket(SystemMessageId.APPLICANTS_FOR_THE_OLYMPIAD_UNDERGROUND_COLISEUM_OR_KRATEI_S_CUBE_MATCHES_CANNOT_REGISTER));
-			// }
-			// if(KrateiCubeManager.getInstance().isRegisteredPlayer(player))
-			// {
-			// KrateiCubeManager.getInstance().removeParticipant(player);
-			// player.sendPacket(SystemMessageId.APPLICANTS_FOR_THE_OLYMPIAD_UNDERGROUND_COLISEUM_OR_KRATEI_S_CUBE_MATCHES_CANNOT_REGISTER));
-			// }
 			if (_registrationPenalty.contains(player.getObjectId()))
 			{
 				player.sendPacket(SystemMessageId.YOU_MUST_WAIT_10_SECONDS_BEFORE_ATTEMPTING_TO_REGISTER_AGAIN);
+				return false;
+			}
+			
+			if (player.getAccountVariables().getInt("BLOCK_CHECKER", 0) == 1)
+			{
+				player.sendMessage("오늘은 이미 경기를 진행했습니다. 하루에 한번만 참가 가능합니다.");
+				player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 경기를 진행했습니다. 하루에 한번만 참가 가능합니다."));
 				return false;
 			}
 			
@@ -226,16 +201,57 @@ public class HandysBlockCheckerManager
 			holder.removePlayer(player, team);
 			holder.broadCastPacketToTeam(new ExCubeGameRemovePlayer(player, isRed));
 			
-			// End event if theres an empty team
-			final int teamSize = isRed ? holder.getRedTeamSize() : holder.getBlueTeamSize();
-			if (teamSize == 0)
-			{
-				holder.getEvent().endEventAbnormally();
-			}
-			
 			_registrationPenalty.add(player.getObjectId());
 			schedulePenaltyRemoval(player.getObjectId());
+			
+			// Check if teams meet conditions to restart countdown
+			final int countBlue = holder.getBlueTeamSize();
+			final int countRed = holder.getRedTeamSize();
+			final int minMembers = Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS;
+			if ((countBlue >= minMembers) && (countRed >= minMembers) && (countBlue == countRed))
+			{
+				holder.updateEvent();
+				holder.broadCastPacketToTeam(new ExCubeGameChangeTimeToStart(10));
+				// 카운트다운을 서버에서 관리
+				startCountdown(arenaId);
+			}
 		}
+	}
+	
+	public void startCountdown(int arenaId)
+	{
+		final ArenaParticipantsHolder holder = getHolder(arenaId);
+		if (holder == null)
+		{
+			return;
+		}
+		
+		new Thread(() ->
+		{
+			try
+			{
+				for (int i = 10; i > 0; i--)
+				{
+					if (holder.getEvent().isStarted() || (holder.getBlueTeamSize() != holder.getRedTeamSize()) || (holder.getBlueTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS) || (holder.getRedTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS))
+					{
+						return;
+					}
+					Thread.sleep(1000); // 1초 대기
+				}
+				
+				// 0초가 되었을 때 경기를 실행
+				if (Config.HBCE_FAIR_PLAY)
+				{
+					holder.checkAndShuffle();
+				}
+				// 경기 시작
+				ThreadPool.execute(holder.getEvent().new StartEvent());
+			}
+			catch (InterruptedException e)
+			{
+				System.err.println("카운트다운 스레드가 중단되었습니다: " + e.getMessage());
+			}
+		}).start();
 	}
 	
 	/**
@@ -252,12 +268,12 @@ public class HandysBlockCheckerManager
 			final boolean isFromRed = holder.getRedPlayers().contains(player);
 			if (isFromRed && (holder.getBlueTeamSize() == 6))
 			{
-				player.sendMessage("The team is full");
+				player.sendMessage("팀이 가득 찼습니다.");
 				return;
 			}
 			else if (!isFromRed && (holder.getRedTeamSize() == 6))
 			{
-				player.sendMessage("The team is full");
+				player.sendMessage("팀이 가득 찼습니다.");
 				return;
 			}
 			
@@ -344,6 +360,8 @@ public class HandysBlockCheckerManager
 				inv.destroyItemByItemId("Handys Block Checker", 13788, count, player, player);
 			}
 			player.setInsideZone(ZoneId.PVP, false);
+			
+			player.sendPacket(ExCubeGameCloseUI.STATIC_PACKET);
 			// Teleport Back
 			player.teleToLocation(-57478, -60367, -2370);
 		}

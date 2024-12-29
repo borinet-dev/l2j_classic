@@ -776,7 +776,7 @@ public class DailyTaskManager
 	
 	private static void resetVarEvent()
 	{
-		List<String> variablesToRemove = List.of("CUSTOM_EVENT_BOX", "CHUSEOK_ITEM", "MAPLE_ITEM", "문자수집가의선물");
+		List<String> variablesToRemove = List.of("CUSTOM_EVENT_BOX", "CHUSEOK_ITEM", "MAPLE_ITEM", "문자수집가의선물", "BLOCK_CHECKER");
 		for (Player player : World.getInstance().getPlayers())
 		{
 			variablesToRemove.forEach(player.getAccountVariables()::remove);
@@ -789,6 +789,7 @@ public class DailyTaskManager
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'CUSTOM_EVENT_BOX';");
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'MAPLE_ITEM';");
 			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = '문자수집가의선물';");
+			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'BLOCK_CHECKER';");
 		}
 		catch (Exception e)
 		{

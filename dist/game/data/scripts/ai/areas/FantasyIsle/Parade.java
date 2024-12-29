@@ -214,8 +214,11 @@ public class Parade extends AbstractNpcAI
 				{
 					if (actor.calculateDistanceSq2D(actor.getXdestination(), actor.getYdestination(), 0) < (100 * 100))
 					{
-						actor.deleteMe();
-						spawns.remove(actor);
+						if (actor.getWorldRegion() != null)
+						{
+							actor.deleteMe();
+							spawns.remove(actor);
+						}
 					}
 					else if (!actor.isMoving())
 					{

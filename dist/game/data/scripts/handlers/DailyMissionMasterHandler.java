@@ -18,6 +18,8 @@ package handlers;
 
 import org.l2jmobius.gameserver.handler.DailyMissionHandler;
 
+import handlers.dailymissionhandlers.BlockCheckerDailyMissionHandler;
+import handlers.dailymissionhandlers.BlockCheckerWinDailyMissionHandler;
 import handlers.dailymissionhandlers.BoatManiaDailyMissionHandler;
 import handlers.dailymissionhandlers.BossDailyMissionHandler;
 import handlers.dailymissionhandlers.ClanDailyMissionHandler;
@@ -78,6 +80,8 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("boatMania", BoatManiaDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("MiniGame", MiniGameDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("missionEvent", MissionEventDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("BlockChecker", BlockCheckerDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("BlockCheckerWin", BlockCheckerWinDailyMissionHandler::new);
 		//
 		// LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ": Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}

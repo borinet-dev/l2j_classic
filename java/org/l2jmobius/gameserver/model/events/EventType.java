@@ -61,6 +61,8 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnElementalSpi
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayableExpChanged;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerAbilityPointsChanged;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerAugment;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBlockChecker;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBlockCheckerWin;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBoatComplete;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBypass;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerCallToChangeClass;
@@ -299,6 +301,8 @@ public enum EventType
 	ON_PLAYER_KAMALOKA_MANIA(OnPlayerKamalokaMania.class, void.class),
 	ON_PLAYER_BOAT_COMPLETE(OnPlayerBoatComplete.class, void.class),
 	ON_PLAYER_MINIGAME(OnPlayerMiniGame.class, void.class),
+	ON_PLAYER_BLOCKCHECKER(OnPlayerBlockChecker.class, void.class),
+	ON_PLAYER_BLOCKCHECKER_WIN(OnPlayerBlockCheckerWin.class, void.class),
 	
 	// Trap events
 	ON_TRAP_ACTION(OnTrapAction.class, void.class),

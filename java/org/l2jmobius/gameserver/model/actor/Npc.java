@@ -1364,6 +1364,10 @@ public class Npc extends Creature
 	@Override
 	public boolean deleteMe()
 	{
+		if (_worldRegion == null)
+		{
+			return false;
+		}
 		try
 		{
 			onDecay();

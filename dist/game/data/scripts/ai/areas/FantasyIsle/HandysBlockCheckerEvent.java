@@ -16,17 +16,26 @@
  */
 package ai.areas.FantasyIsle;
 
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.Calendar;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.commons.database.DatabaseFactory;
+import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.instancemanager.HandysBlockCheckerManager;
 import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
+import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameChangeTimeToStart;
-import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameRequestReady;
 import org.l2jmobius.gameserver.network.serverpackets.ExCubeGameTeamList;
+import org.l2jmobius.gameserver.util.BorinetUtil;
+import org.l2jmobius.gameserver.util.Broadcast;
 
 import ai.AbstractNpcAI;
 
@@ -46,6 +55,9 @@ public class HandysBlockCheckerEvent extends AbstractNpcAI
 	
 	public HandysBlockCheckerEvent()
 	{
+		scheduleSatrtEvent();
+		scheduleStopEvent();
+		
 		addFirstTalkId(A_MANAGER_1, A_MANAGER_2, A_MANAGER_3, A_MANAGER_4);
 		HandysBlockCheckerManager.getInstance().startUpParticipantsQueue();
 	}
@@ -53,9 +65,25 @@ public class HandysBlockCheckerEvent extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(Npc npc, Player player)
 	{
+		final long currentTime = System.currentTimeMillis();
+		
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		starttime.set(Calendar.MINUTE, 0);
+		starttime.set(Calendar.SECOND, 0);
+		
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.HOUR_OF_DAY, 23);
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		
 		if ((npc == null) || (player == null))
 		{
 			return null;
+		}
+		if ((currentTime < starttime.getTimeInMillis()) || (currentTime > endtime.getTimeInMillis()))
+		{
+			return "data/html/guide/HandyEvent-no.htm";
 		}
 		
 		final int arena = npc.getId() - A_MANAGER_1;
@@ -79,11 +107,11 @@ public class HandysBlockCheckerEvent extends AbstractNpcAI
 			final int countBlue = holder.getBlueTeamSize();
 			final int countRed = holder.getRedTeamSize();
 			final int minMembers = Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS;
-			if ((countBlue >= minMembers) && (countRed >= minMembers))
+			if ((countBlue >= minMembers) && (countRed >= minMembers) && (countBlue == countRed))
 			{
 				holder.updateEvent();
-				holder.broadCastPacketToTeam(ExCubeGameRequestReady.STATIC_PACKET);
 				holder.broadCastPacketToTeam(new ExCubeGameChangeTimeToStart(10));
+				HandysBlockCheckerManager.getInstance().startCountdown(arena);
 			}
 		}
 		return null;
@@ -92,6 +120,73 @@ public class HandysBlockCheckerEvent extends AbstractNpcAI
 	private boolean eventIsFull(int arena)
 	{
 		return HandysBlockCheckerManager.getInstance().getHolder(arena).getAllPlayers().size() == 12;
+	}
+	
+	private void scheduleSatrtEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar starttime = Calendar.getInstance();
+		starttime.set(Calendar.HOUR_OF_DAY, 19);
+		starttime.set(Calendar.MINUTE, 0);
+		starttime.set(Calendar.SECOND, 5);
+		
+		if (starttime.getTimeInMillis() < currentTime)
+		{
+			starttime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		
+		final long startDelay = Math.max(0, starttime.getTimeInMillis() - currentTime);
+		ThreadPool.scheduleAtFixedRate(this::startAnnount, startDelay, BorinetUtil.MILLIS_PER_DAY);
+	}
+	
+	private void scheduleStopEvent()
+	{
+		final long currentTime = System.currentTimeMillis();
+		final Calendar endtime = Calendar.getInstance();
+		endtime.set(Calendar.HOUR_OF_DAY, 23);
+		endtime.set(Calendar.MINUTE, 0);
+		endtime.set(Calendar.SECOND, 0);
+		
+		if (endtime.getTimeInMillis() < currentTime)
+		{
+			endtime.add(Calendar.DAY_OF_YEAR, 1);
+		}
+		
+		final long endDelay = Math.max(0, endtime.getTimeInMillis() - currentTime);
+		ThreadPool.scheduleAtFixedRate(this::stopAnnount, endDelay, BorinetUtil.MILLIS_PER_DAY);
+	}
+	
+	protected void startAnnount()
+	{
+		Broadcast.toAllOnlinePlayersOnScreenS("핸디의 블록체커 경기 진행이 가능합니다!");
+		for (Player player : World.getInstance().getPlayers())
+		{
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "핸디의 블록체커 경기 진행이 가능합니다!"));
+		}
+	}
+	
+	protected void stopAnnount()
+	{
+		Broadcast.toAllOnlinePlayersOnScreenS("핸디의 블록체커 경기가 종료되었습니다.");
+		for (Player player : World.getInstance().getPlayers())
+		{
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "핸디의 블록체커 경기가 종료되었습니다."));
+		}
+		
+		for (Player player : World.getInstance().getPlayers())
+		{
+			player.getAccountVariables().remove("BLOCK_CHECKER");
+		}
+		
+		try (Connection con = DatabaseFactory.getConnection();
+			Statement statement = con.createStatement())
+		{
+			statement.executeUpdate("DELETE FROM account_gsdata WHERE var = 'BLOCK_CHECKER';");
+		}
+		catch (Exception e)
+		{
+			LOGGER.warning("커스텀이벤트 데이터베이스 정리 오류" + e);
+		}
 	}
 	
 	public static void main(String[] args)

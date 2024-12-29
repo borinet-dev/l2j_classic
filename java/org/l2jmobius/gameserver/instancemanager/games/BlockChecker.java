@@ -16,13 +16,15 @@
  */
 package org.l2jmobius.gameserver.instancemanager.games;
 
+import java.util.Collection;
 import java.util.Map;
-import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Stream;
 
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
@@ -37,6 +39,9 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.instance.Block;
 import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBlockChecker;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBlockCheckerWin;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.model.skill.Skill;
@@ -415,7 +420,7 @@ public class BlockChecker
 			// Wrong arena passed, stop event
 			if (_arena == -1)
 			{
-				LOGGER.severe("Couldnt set up the arena Id for the Block Checker event, cancelling event...");
+				LOGGER.severe("Block Checker 이벤트의 아레나 ID를 설정할 수 없어 이벤트를 취소합니다...");
 				return;
 			}
 			_isStarted = true;
@@ -628,84 +633,59 @@ public class BlockChecker
 			}
 			else
 			{
-				rewardAsLooser(true);
-				rewardAsLooser(false);
+				rewardAsDraw();
+				final SystemMessage msg = new SystemMessage(SystemMessageId.THE_DUEL_HAS_ENDED_IN_A_TIE);
+				_holder.broadCastPacketToTeam(msg);
 			}
 		}
 		
 		/**
-		 * Reward the specified team as a winner team 1) Higher score - 8 extra 2) Higher score - 5 extra
+		 * 승리팀 보상
 		 * @param isRed
 		 */
 		private void rewardAsWinner(boolean isRed)
 		{
-			final Map<Player, Integer> tempPoints = isRed ? _redTeamPoints : _blueTeamPoints;
-			
-			// Main give
-			for (Entry<Player, Integer> points : tempPoints.entrySet())
+			for (Player player : (isRed ? _redTeamPoints.keySet() : _blueTeamPoints.keySet()))
 			{
-				if (points.getKey() == null)
+				if (player != null)
 				{
-					continue;
+					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
+					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockCheckerWin(player), player);
+					player.getAccountVariables().set("BLOCK_CHECKER", 1);
+					// player.addItem("블록체커 이벤트 보상", 13067, 10, player, true);
 				}
-				
-				if (points.getValue() >= 10)
-				{
-					points.getKey().addItem("Block Checker", 13067, 2, points.getKey(), true);
-				}
-				else
-				{
-					tempPoints.remove(points.getKey());
-				}
-			}
-			
-			int first = 0;
-			int second = 0;
-			Player winner1 = null;
-			Player winner2 = null;
-			for (Entry<Player, Integer> entry : tempPoints.entrySet())
-			{
-				final Player pc = entry.getKey();
-				final int pcPoints = entry.getValue();
-				if (pcPoints > first)
-				{
-					// Move old data
-					second = first;
-					winner2 = winner1;
-					// Set new data
-					first = pcPoints;
-					winner1 = pc;
-				}
-				else if (pcPoints > second)
-				{
-					second = pcPoints;
-					winner2 = pc;
-				}
-			}
-			if (winner1 != null)
-			{
-				winner1.addItem("Block Checker", 13067, 8, winner1, true);
-			}
-			if (winner2 != null)
-			{
-				winner2.addItem("Block Checker", 13067, 5, winner2, true);
 			}
 		}
 		
 		/**
-		 * Will reward the looser team with the predefined rewards Player got >= 10 points: 2 coins Player got < 10 points: 0 coins
+		 * 패배팀 보상
 		 * @param isRed
 		 */
 		private void rewardAsLooser(boolean isRed)
 		{
-			for (Entry<Player, Integer> entry : (isRed ? _redTeamPoints : _blueTeamPoints).entrySet())
+			for (Player player : (isRed ? _redTeamPoints.keySet() : _blueTeamPoints.keySet()))
 			{
-				final Player player = entry.getKey();
-				if ((player != null) && (entry.getValue() >= 10))
+				if (player != null)
 				{
-					player.addItem("Block Checker", 13067, 2, player, true);
+					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
+					player.getAccountVariables().set("BLOCK_CHECKER", 1);
+					// player.addItem("블록체커 이벤트 보상", 13067, 2, player, true);
 				}
 			}
+		}
+		
+		// 무승부 보상 메서드
+		private void rewardAsDraw()
+		{
+			Stream.of(_redTeamPoints.keySet(), _blueTeamPoints.keySet()) // 두 팀의 키셋(플레이어 목록) 스트림 생성
+				.flatMap(Collection::stream) // 두 컬렉션을 단일 스트림으로 병합
+				.filter(Objects::nonNull) // null 값 필터링
+				.forEach(player ->
+				{
+					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
+					player.getAccountVariables().set("BLOCK_CHECKER", 1);
+					// player.addItem("Block Checker", 13067, 1, player, true); // 각 플레이어에게 아이템 지급
+				});
 		}
 		
 		/**

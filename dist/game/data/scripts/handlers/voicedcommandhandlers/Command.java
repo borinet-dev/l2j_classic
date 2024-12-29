@@ -13,6 +13,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.html.PageBuilder;
 import org.l2jmobius.gameserver.model.html.PageResult;
 import org.l2jmobius.gameserver.model.item.LunaShopItemInfo;
+import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
@@ -111,6 +112,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.addItem("NEWBIE_TICKETC", 41017, 1, activeChar, true);
 				activeChar.addItem("NEWBIE_TICKETC", 41018, 1, activeChar, true);
 				BorinetUtil.getInstance().insertDB(activeChar, "NEWBIE_SUPPORT", 0);
+				activeChar.getAccountVariables().set("NEWBIE_SUPPORT", 1);
 			}
 			else
 			{
@@ -136,6 +138,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.destroyItemByItemId("무기교환권사용C", 41003, 15, activeChar, true);
 				activeChar.addItem("무기교환권사용C", 41019, 1, activeChar, true);
 				BorinetUtil.getInstance().insertDB(activeChar, "WeaponC", 0);
+				activeChar.getAccountVariables().set("WeaponC", 1);
 			}
 			else
 			{
@@ -155,6 +158,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.destroyItemByItemId("방어구교환권사용C", 41003, 15, activeChar, true);
 				activeChar.addItem("방어구교환권사용C", 41020, 1, activeChar, true);
 				BorinetUtil.getInstance().insertDB(activeChar, "ArmorC", 0);
+				activeChar.getAccountVariables().set("ArmorC", 1);
 			}
 			else
 			{
@@ -174,6 +178,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.destroyItemByItemId("무기교환권사용B", 41003, 20, activeChar, true);
 				activeChar.addItem("무기교환권사용B", 41021, 1, activeChar, true);
 				BorinetUtil.getInstance().insertDB(activeChar, "WeaponB", 0);
+				activeChar.getAccountVariables().set("WeaponB", 1);
 			}
 			else
 			{
@@ -193,6 +198,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 				activeChar.destroyItemByItemId("방어구교환권사용B", 41003, 20, activeChar, true);
 				activeChar.addItem("방어구교환권사용B", 41022, 1, activeChar, true);
 				BorinetUtil.getInstance().insertDB(activeChar, "ArmorB", 0);
+				activeChar.getAccountVariables().set("ArmorB", 1);
 			}
 			else
 			{
@@ -437,7 +443,7 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 			player.sendMessage("전투 중에는 사용할 수 없습니다.");
 			return true;
 		}
-		if (player.isInOlympiadMode() || player.isInCombat())
+		if (player.isInOlympiadMode() || player.isInCombat() || OlympiadManager.getInstance().isRegistered(player))
 		{
 			player.sendMessage("올림피아드 게임 중에는 사용할 수 없습니다.");
 			return true;
@@ -447,10 +453,15 @@ public class Command extends AbstractNpcAI implements IVoicedCommandHandler
 			player.sendMessage("인스턴트 던전 이용 중에는 사용할 수 없습니다.");
 			return true;
 		}
-		if (player.isCursedWeaponEquipped())
+		if (player.isCursedWeaponEquipped() || (player.getReputation() < 0))
 		{
 			player.sendMessage("저주받은 무기를 소유한 상태에서는 사용할 수 없습니다.");
 			return true;
+		}
+		if ((player.getBlockCheckerArena() > -1) || player.isOnEvent())
+		{
+			player.sendMessage("이벤트 참가 중에는 사용할 수 없습니다.");
+			return false;
 		}
 		boolean isCaptchaActive = player.getQuickVarB("IsCaptchaActive", false);
 		if (isCaptchaActive)
