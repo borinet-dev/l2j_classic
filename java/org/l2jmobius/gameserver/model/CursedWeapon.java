@@ -161,7 +161,7 @@ public class CursedWeapon implements INamable
 				_item.decayMe();
 			}
 		}
-		LOGGER.info(_name + "가 소멸되었습니다.");
+		// LOGGER.info(_name + "가 소멸되었습니다.");
 		
 		// Delete infos from table if any
 		CursedWeaponsManager.removeFromDb(_itemId);
@@ -221,7 +221,7 @@ public class CursedWeapon implements INamable
 		{
 			_item = attackable.dropItem(player, _itemId, 1);
 			_item.setDropTime(0); // Prevent item from being removed by ItemsAutoDestroy
-			LOGGER.info(_name + "가 등장하였습니다!");
+			// LOGGER.info(_name + "가 등장하였습니다!");
 			
 			// RedSky and Earthquake
 			final ExRedSky rs = new ExRedSky(10);
@@ -480,7 +480,7 @@ public class CursedWeapon implements INamable
 			// Unequip & Drop
 			dropIt(null, null, killer, false);
 			
-			LOGGER.info(_name + "가 드롭되었습니다.");
+			// LOGGER.info(_name + "가 드롭되었습니다.");
 		}
 	}
 	
