@@ -26,7 +26,7 @@ public class ItemLog
 	private static final Logger LOGGER = Logger.getLogger(ItemLog.class.getName());
 	private final ReentrantLock _dbLock = new ReentrantLock();
 	
-	protected ItemLog()
+	public void deleteOldLogTable()
 	{
 		final long currentTime = System.currentTimeMillis();
 		final Calendar calendar = Calendar.getInstance();
@@ -131,13 +131,13 @@ public class ItemLog
 	
 	public void insertItemInDB(String process, Player player, Item item, long old, Object reference)
 	{
-		if (item == null)
+		if ((item == null) || (process == null))
 		{
 			return;
 		}
 		
 		// 낚시로 습득하는 아이템 로그기록 조건문
-		if (!Config.FISING_REWARD_ITEM_LOG_ENABLE && (process == "Fishing Reward"))
+		if (!Config.FISING_REWARD_ITEM_LOG_ENABLE && process.equals("Fishing Reward"))
 		{
 			return;
 		}

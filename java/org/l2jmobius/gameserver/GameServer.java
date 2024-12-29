@@ -515,7 +515,7 @@ public class GameServer
 		SiegeGuardManager.getInstance();
 		
 		BorinetUtil.getInstance().printSection("아이템 로그");
-		ItemLog.getInstance();
+		ItemLog.getInstance().deleteOldLogTable();
 		DailyTaskManager.cleanUpExpiredData();
 		
 		BorinetUtil.getInstance().printSection("오프라인 상점");
