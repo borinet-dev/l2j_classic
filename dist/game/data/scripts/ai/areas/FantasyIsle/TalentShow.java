@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.Location;
@@ -40,8 +41,6 @@ import ai.AbstractNpcAI;
  */
 public class TalentShow extends AbstractNpcAI
 {
-	private long lastShowStartTime = 0; // 공연 시작 시간을 기록
-	
 	private static int MC = 32433;
 	// @formatter:off
 	private static int[] SINGERS =
@@ -290,22 +289,12 @@ public class TalentShow extends AbstractNpcAI
 	
 	private void scheduleTimer()
 	{
-		Calendar now = Calendar.getInstance();
-		int currentMinute = now.get(Calendar.MINUTE);
-		int nextMinute = ((currentMinute / 10) + 1) * 10; // 다음 10분 단위
-		if (nextMinute >= 60)
-		{
-			now.add(Calendar.HOUR_OF_DAY, 1); // 시간이 넘어갈 경우 시간 +1
-			nextMinute = 0;
-		}
-		now.set(Calendar.MINUTE, nextMinute);
-		now.set(Calendar.SECOND, 0);
-		now.set(Calendar.MILLISECOND, 0);
-		
-		// 다음 실행 시간까지 남은 밀리초 계산
-		long delay = now.getTimeInMillis() - System.currentTimeMillis();
-		// 첫 실행 시간에 맞추어 스케줄링
-		startQuestTimer("Start", delay, null, null); // 첫 실행
+		ThreadPool.scheduleAtFixedRate(this::scheduleStart, BorinetTask.fantasyEventDelay(), 1800000);
+	}
+	
+	private void scheduleStart()
+	{
+		startQuestTimer("Start", 0, null, null); // 즉시 실행
 	}
 	
 	private void autoChat(Npc npc, NpcStringId npcString, ChatType type)
@@ -389,8 +378,6 @@ public class TalentShow extends AbstractNpcAI
 		{
 			IS_STARTED = true;
 			addSpawn(MC, -56698, -56430, -2008, 32768, false, 0);
-			lastShowStartTime = System.currentTimeMillis(); // 공연 시작 시간 기록
-			startQuestTimer("Start", 1800000L, null, null); // repeat
 		}
 		else if ((npc != null) && IS_STARTED)
 		{
@@ -531,41 +518,25 @@ public class TalentShow extends AbstractNpcAI
 	
 	private int[] calculateNextShowTime()
 	{
-		if (lastShowStartTime == 0)
+		Calendar now = Calendar.getInstance();
+		int currentMinute = now.get(Calendar.MINUTE);
+		
+		// 다음 공연 시간 계산: 30분 또는 정각
+		int nextMinute = (currentMinute < 30) ? 30 : 0;
+		if (nextMinute == 0)
 		{
-			// 공연이 아직 시작되지 않은 경우
-			Calendar now = Calendar.getInstance();
-			int currentMinute = now.get(Calendar.MINUTE);
-			
-			// 다음 10분 단위 정각 계산
-			int nextMinute = ((currentMinute / 10) + 1) * 10;
-			if (nextMinute >= 60)
-			{
-				now.add(Calendar.HOUR_OF_DAY, 1); // 다음 시간으로 넘어감
-				nextMinute = 0;
-			}
-			
-			now.set(Calendar.MINUTE, nextMinute);
-			now.set(Calendar.SECOND, 0);
-			now.set(Calendar.MILLISECOND, 0);
-			
-			// 다음 공연 시작 시간 반환
-			return new int[]
-			{
-				now.get(Calendar.HOUR_OF_DAY),
-				nextMinute
-			};
+			now.add(Calendar.HOUR_OF_DAY, 1); // 정각이면 다음 시간으로 넘어감
 		}
 		
-		// 공연 시작 시간을 기준으로 다음 공연 시간 계산
-		long nextShowMillis = lastShowStartTime + 1800000L; // 30분 후
-		Calendar nextShow = Calendar.getInstance();
-		nextShow.setTimeInMillis(nextShowMillis);
+		now.set(Calendar.MINUTE, nextMinute);
+		now.set(Calendar.SECOND, 0);
+		now.set(Calendar.MILLISECOND, 0);
 		
+		// 다음 공연 시작 시간 반환
 		return new int[]
 		{
-			nextShow.get(Calendar.HOUR_OF_DAY),
-			nextShow.get(Calendar.MINUTE)
+			now.get(Calendar.HOUR_OF_DAY),
+			nextMinute
 		};
 	}
 	
@@ -578,7 +549,17 @@ public class TalentShow extends AbstractNpcAI
 		if (!IS_STARTED) // 공연 중이 아닐 경우
 		{
 			int[] nextShowTime = calculateNextShowTime();
-			String nextTimeString = "다음 공연과 퍼레이드 시간: <font color=\"LEVEL\">" + nextShowTime[0] + "시 " + nextShowTime[1] + "분</font>";
+			String nextTimeString;
+			if (nextShowTime[1] == 0)
+			{
+				// 분이 0일 경우 "시"까지만 표시
+				nextTimeString = "다음 공연과 퍼레이드 시간: <font color=\"LEVEL\">" + nextShowTime[0] + "시</font>";
+			}
+			else
+			{
+				// 분이 0이 아닐 경우 "시 분" 표시
+				nextTimeString = "다음 공연과 퍼레이드 시간: <font color=\"LEVEL\">" + nextShowTime[0] + "시 " + nextShowTime[1] + "분</font>";
+			}
 			htmltext = htmltext.replace("%nextshowtime%", nextTimeString);
 		}
 		else // 공연 중일 경우

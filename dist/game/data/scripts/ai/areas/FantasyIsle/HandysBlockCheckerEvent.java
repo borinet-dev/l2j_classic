@@ -59,7 +59,7 @@ public class HandysBlockCheckerEvent extends AbstractNpcAI
 		HandysBlockCheckerManager.getInstance().startUpParticipantsQueue();
 		
 		ThreadPool.scheduleAtFixedRate(this::startAnnount, BorinetTask.blockCheckerSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
-		ThreadPool.scheduleAtFixedRate(this::stopAnnount, BorinetTask.blockCheckerSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
+		ThreadPool.scheduleAtFixedRate(this::stopAnnount, BorinetTask.blockCheckerStopEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
 	}
 	
 	@Override

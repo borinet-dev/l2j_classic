@@ -35,7 +35,7 @@ public class RaidManager extends AbstractNpcAI
 		addFirstTalkId(MANAGER);
 		
 		ThreadPool.scheduleAtFixedRate(this::startAnnount, BorinetTask.specialRaidSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
-		ThreadPool.scheduleAtFixedRate(this::stopAnnount, BorinetTask.specialRaidSatrtEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
+		ThreadPool.scheduleAtFixedRate(this::stopAnnount, BorinetTask.specialRaidStopEvent(), BorinetUtil.MILLIS_PER_DAY); // 1 day
 	}
 	
 	@Override

@@ -16,7 +16,6 @@
  */
 package ai.areas.FantasyIsle;
 
-import java.util.Calendar;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
@@ -25,6 +24,7 @@ import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Npc;
+import org.l2jmobius.gameserver.util.BorinetTask;
 
 import ai.AbstractNpcAI;
 
@@ -128,25 +128,8 @@ public class Parade extends AbstractNpcAI
 	
 	public Parade()
 	{
-		Calendar now = Calendar.getInstance();
-		
-		// 다음 10분 단위 정각 시간 계산
-		int currentMinute = now.get(Calendar.MINUTE);
-		int nextMinute = ((currentMinute / 10) + 1) * 10; // 10분 단위로 올림
-		if (nextMinute >= 60)
-		{
-			now.add(Calendar.HOUR_OF_DAY, 1); // 시간이 넘어갈 경우 시간 +1
-			nextMinute = 0;
-		}
-		now.set(Calendar.MINUTE, nextMinute);
-		now.set(Calendar.SECOND, 0);
-		now.set(Calendar.MILLISECOND, 0);
-		
-		// 첫 실행까지 남은 시간 계산
-		long delay = now.getTimeInMillis() - System.currentTimeMillis();
-		
 		// 퍼레이드 스케줄 설정
-		ThreadPool.scheduleAtFixedRate(new Start(), delay, 1800000);
+		ThreadPool.scheduleAtFixedRate(new Start(), BorinetTask.fantasyEventDelay(), 1800000);
 	}
 	
 	void load()
@@ -166,7 +149,7 @@ public class Parade extends AbstractNpcAI
 		spawns.clear();
 	}
 	
-	private class Start implements Runnable
+	public class Start implements Runnable
 	{
 		public Start()
 		{

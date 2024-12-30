@@ -559,6 +559,25 @@ public class BorinetTask
 		return endDelay;
 	}
 	
+	public static long fantasyEventDelay()
+	{
+		Calendar now = Calendar.getInstance();
+		int currentMinute = now.get(Calendar.MINUTE);
+		int nextMinute = (currentMinute < 30) ? 30 : 0; // 다음 실행 시간: 30분 또는 정각
+		if (nextMinute == 0)
+		{
+			now.add(Calendar.HOUR_OF_DAY, 1); // 정각을 넘어가면 다음 시간으로
+		}
+		now.set(Calendar.MINUTE, nextMinute);
+		now.set(Calendar.SECOND, 0);
+		now.set(Calendar.MILLISECOND, 0);
+		
+		// 다음 실행 시간까지 남은 밀리초 계산
+		long delay = now.getTimeInMillis() - System.currentTimeMillis();
+		
+		return delay;
+	}
+	
 	private void setCalendar(Calendar calendar, int minute, int second)
 	{
 		calendar.set(Calendar.MINUTE, minute);
