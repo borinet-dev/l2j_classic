@@ -4653,7 +4653,7 @@ public class Player extends Playable
 			{
 				handler.useItem(this, target, false);
 			}
-			ItemTable.getInstance().destroyItem("Consume", target, this, null, true);
+			ItemTable.getInstance().destroyItem("사용", target, this, null, true);
 		}
 		// Cursed Weapons are not distributed
 		else if (CursedWeaponsManager.getInstance().isCursed(target.getId()))
@@ -5922,13 +5922,17 @@ public class Player extends Playable
 	/**
 	 * Set the _clan object, _clanId, _clanLeader Flag and title of the Player.
 	 * @param clan
+	 * @param delTitle
 	 */
-	public void setClan(Clan clan)
+	public void setClan(Clan clan, boolean delTitle)
 	{
 		_clan = clan;
 		if (clan == null)
 		{
-			setTitle("");
+			if (delTitle)
+			{
+				setTitle("");
+			}
 			_clanId = 0;
 			_clanPrivileges = new EnumIntBitmask<>(ClanPrivilege.class, false);
 			_pledgeType = 0;
@@ -5944,7 +5948,7 @@ public class Player extends Playable
 		if (!clan.isMember(getObjectId()))
 		{
 			// char has been kicked from clan
-			setClan(null);
+			setClan(null, true);
 			return;
 		}
 		
@@ -6704,7 +6708,7 @@ public class Player extends Playable
 					
 					if (clanId > 0)
 					{
-						player.setClan(ClanTable.getInstance().getClan(clanId));
+						player.setClan(ClanTable.getInstance().getClan(clanId), false);
 					}
 					
 					if (player.getClan() != null)
@@ -12533,7 +12537,7 @@ public class Player extends Playable
 		final TeleportBookmark bookmark = _tpbookmarks.get(id);
 		if (bookmark != null)
 		{
-			destroyItem("Consume", _inventory.getItemByItemId(13016).getObjectId(), 1, null, false);
+			destroyItem("사용", _inventory.getItemByItemId(13016).getObjectId(), 1, null, false);
 			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_DISAPPEARED);
 			sm.addItemName(13016);
 			sendPacket(sm);
@@ -12647,7 +12651,7 @@ public class Player extends Playable
 				return;
 			}
 			
-			destroyItem("Consume", _inventory.getItemByItemId(Config.BOOKMARK_CONSUME_ITEM_ID).getObjectId(), 1, null, true);
+			destroyItem("사용", _inventory.getItemByItemId(Config.BOOKMARK_CONSUME_ITEM_ID).getObjectId(), 1, null, true);
 		}
 		
 		int id;

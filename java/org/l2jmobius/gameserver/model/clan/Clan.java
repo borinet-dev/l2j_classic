@@ -400,7 +400,7 @@ public class Clan implements IIdentifiable, INamable
 		// store in memory
 		addClanMember(member);
 		member.setPlayer(player);
-		player.setClan(this);
+		player.setClan(this, false);
 		player.setPledgeClass(ClanMember.calculatePledgeClass(player));
 		player.sendPacket(new PledgeShowMemberListUpdate(player));
 		player.sendPacket(new PledgeSkillList(this));
@@ -513,7 +513,7 @@ public class Clan implements IIdentifiable, INamable
 		if (exMember.isOnline())
 		{
 			final Player player = exMember.getPlayer();
-			if (!player.isNoble())
+			if (!player.isNoble() && !player.getClan().getName().equals("신규자혈맹"))
 			{
 				player.setTitle("");
 			}
@@ -550,7 +550,7 @@ public class Clan implements IIdentifiable, INamable
 			}
 			player.sendSkillList();
 			
-			player.setClan(null);
+			player.setClan(null, player.getClan().getName().equals("신규자혈맹") ? false : true);
 			
 			// players leaving from clan academy have no penalty
 			if (exMember.getPledgeType() != -1)

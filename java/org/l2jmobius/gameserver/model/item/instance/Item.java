@@ -1556,7 +1556,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update item " + this + " in DB: Reason: " + e.getMessage(), e);
+			LOGGER.log(Level.SEVERE, "Could not update item " + this + " in DB: Reason: " + e.getMessage());
 		}
 	}
 	
