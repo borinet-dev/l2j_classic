@@ -1748,7 +1748,7 @@ public class Npc extends Creature
 				return null;
 			}
 			
-			item = ItemTable.getInstance().createItem("Loot", itemId, itemCount, creature, this, true);
+			item = ItemTable.getInstance().createItem("Loot", itemId, itemCount, creature, this);
 			if (item == null)
 			{
 				return null;

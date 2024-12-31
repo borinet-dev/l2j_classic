@@ -308,10 +308,10 @@ public class Config
 	/** PARSE 아이템 **/
 	public static List<Integer> NO_SCREEN_MSG_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_SCREEN_MSG_ITEM_NAMES = new ArrayList<>();
-	public static List<Integer> NO_ITEM_LOG_ITEM_IDS = new ArrayList<>();
-	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
 	public static List<Integer> NO_SELL_ALL_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_SELL_ALL_ITEM_NAMES = new ArrayList<>();
+	public static List<Integer> NO_ITEM_LOG_ITEM_IDS = new ArrayList<>();
+	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
 	public static boolean FISING_REWARD_ITEM_LOG_ENABLE;
 	
 	/** 판매 대행 **/
@@ -1744,7 +1744,7 @@ public class Config
 			REQUEST_ID = serverConfig.getInt("RequestServerID", 0);
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
-			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2_server");
+			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2jserver");
 			DATABASE_LOG_URL = serverConfig.getString("LOG_URL", "jdbc:mariadb://localhost/item_log");
 			DATABASE_LOGIN = serverConfig.getString("Login", "root");
 			DATABASE_PASSWORD = serverConfig.getString("Password", "");
@@ -2187,18 +2187,17 @@ public class Config
 			NO_SCREEN_MSG_ITEM_IDS = noScreenIds.isEmpty() ? new ArrayList<>() : parseItemIds(noScreenIds);
 			NO_SCREEN_MSG_ITEM_NAMES = noScreenNames.isEmpty() ? new ArrayList<>() : parseItemNames(noScreenNames);
 			
-			// 아이템로그에 제외될 아이템 이름
-			final String noLogIds = parseItemsConfig.getString("NoItemLogItemIds", "");
-			final String noLogNames = parseItemsConfig.getString("NoItemLogItemNames", "");
-			NO_ITEM_LOG_ITEM_IDS = noLogIds.isEmpty() ? new ArrayList<>() : parseItemIds(noLogIds);
-			NO_ITEM_LOG_NAMES = noLogNames.isEmpty() ? new ArrayList<>() : parseItemNames(noLogNames);
-			
 			// 한방판매에 제외될 아이템
 			final String noSellAllIds = parseItemsConfig.getString("NoSellAllItemIds", "");
 			final String noSellAllNames = parseItemsConfig.getString("NoSellAllItemNames", "");
 			NO_SELL_ALL_ITEM_IDS = noSellAllIds.isEmpty() ? new ArrayList<>() : parseItemIds(noSellAllIds);
 			NO_SELL_ALL_ITEM_NAMES = noSellAllNames.isEmpty() ? new ArrayList<>() : parseItemNames(noSellAllNames);
 			
+			// 아이템로그에 제외될 아이템 이름
+			final String noLogIds = parseItemsConfig.getString("NoItemLogItemIds", "");
+			final String noLogNames = parseItemsConfig.getString("NoItemLogItemNames", "");
+			NO_ITEM_LOG_ITEM_IDS = noLogIds.isEmpty() ? new ArrayList<>() : parseItemIds(noLogIds);
+			NO_ITEM_LOG_NAMES = noLogNames.isEmpty() ? new ArrayList<>() : parseItemNames(noLogNames);
 			FISING_REWARD_ITEM_LOG_ENABLE = parseItemsConfig.getBoolean("FishingRewardItemLogEnable", true);
 			
 			/** 판매 대행 **/

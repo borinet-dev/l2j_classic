@@ -28,7 +28,7 @@ public class Gremlin extends AbstractNpcAI
 			Location pos = new Location(npc.getX() + Rnd.get(-200, 200), npc.getY() + Rnd.get(-200, 200), npc.getZ());
 			if (GeoEngine.getInstance().canMoveToTarget(npc.getX(), npc.getY(), npc.getZ(), pos.getX(), pos.getY(), pos.getZ(), null))
 			{
-				npc.broadcastSay(ChatType.GENERAL, NpcStringId.getNpcStringId(getRandom(1000007, 1000027)));
+				npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.getNpcStringId(getRandom(1000007, 1000027)));
 				npc.setRunning();
 				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, pos); // Changed to MOVE_TO
 			}

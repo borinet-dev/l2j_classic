@@ -45,7 +45,7 @@ public class CombatFlag
 	public synchronized void spawnMe()
 	{
 		// Init the dropped ItemInstance and add it in the world as a visible object at the position where mob was last
-		_itemInstance = ItemTable.getInstance().createItem("Combat", _itemId, 1, null, null, true);
+		_itemInstance = ItemTable.getInstance().createItem("Combat", _itemId, 1, null, null);
 		_itemInstance.dropMe(null, _location.getX(), _location.getY(), _location.getZ());
 	}
 	

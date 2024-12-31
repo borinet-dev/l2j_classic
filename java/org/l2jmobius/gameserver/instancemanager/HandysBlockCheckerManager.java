@@ -125,52 +125,51 @@ public class HandysBlockCheckerManager
 	{
 		final ArenaParticipantsHolder holder = _arenaPlayers[arenaId];
 		
+		// 중복 등록 확인
+		if (isPlayerAlreadyRegistered(player))
+		{
+			player.sendPacket(new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_ON_THE_MATCH_WAITING_LIST).addString(player.getName()));
+			return false;
+		}
+		
+		// 금지된 상태 확인
+		if (player.isCursedWeaponEquipped())
+		{
+			player.sendPacket(SystemMessageId.YOU_CANNOT_REGISTER_WHILE_IN_POSSESSION_OF_A_CURSED_WEAPON);
+			return false;
+		}
+		
+		if (player.isOnEvent() || player.isInOlympiadMode())
+		{
+			player.sendMessage("다른 이벤트에 참여 중이기 때문에 등록할 수 없습니다.");
+			return false;
+		}
+		
+		if (OlympiadManager.getInstance().isRegistered(player))
+		{
+			OlympiadManager.getInstance().unRegisterNoble(player);
+			player.sendPacket(SystemMessageId.APPLICANTS_FOR_THE_OLYMPIAD_UNDERGROUND_COLISEUM_OR_KRATEI_S_CUBE_MATCHES_CANNOT_REGISTER);
+			player.sendMessage("올림피아드 등록이 해제되었습니다. 다시 시도해주세요.");
+			return false;
+		}
+		
+		if (_registrationPenalty.contains(player.getObjectId()))
+		{
+			player.sendPacket(SystemMessageId.YOU_MUST_WAIT_10_SECONDS_BEFORE_ATTEMPTING_TO_REGISTER_AGAIN);
+			return false;
+		}
+		
+		if (player.getAccountVariables().getBoolean("BLOCK_CHECKER", false))
+		{
+			String message = "오늘은 이미 경기를 진행했습니다. 하루에 한번만 참가 가능합니다.";
+			player.sendMessage(message);
+			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, message));
+			return false;
+		}
+		
 		synchronized (holder)
 		{
 			boolean isRed;
-			for (int i = 0; i < 4; i++)
-			{
-				if (_arenaPlayers[i].getAllPlayers().contains(player))
-				{
-					final SystemMessage msg = new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_ON_THE_MATCH_WAITING_LIST);
-					msg.addString(player.getName());
-					player.sendPacket(msg);
-					return false;
-				}
-			}
-			
-			if (player.isCursedWeaponEquipped())
-			{
-				player.sendPacket(SystemMessageId.YOU_CANNOT_REGISTER_WHILE_IN_POSSESSION_OF_A_CURSED_WEAPON);
-				return false;
-			}
-			
-			if (player.isOnEvent() || player.isInOlympiadMode())
-			{
-				player.sendMessage("다른 이벤트에 참여 중이기 때문에 등록할 수 없습니다.");
-				return false;
-			}
-			
-			if (OlympiadManager.getInstance().isRegistered(player))
-			{
-				OlympiadManager.getInstance().unRegisterNoble(player);
-				player.sendPacket(SystemMessageId.APPLICANTS_FOR_THE_OLYMPIAD_UNDERGROUND_COLISEUM_OR_KRATEI_S_CUBE_MATCHES_CANNOT_REGISTER);
-				return false;
-			}
-			
-			if (_registrationPenalty.contains(player.getObjectId()))
-			{
-				player.sendPacket(SystemMessageId.YOU_MUST_WAIT_10_SECONDS_BEFORE_ATTEMPTING_TO_REGISTER_AGAIN);
-				return false;
-			}
-			
-			if (player.getAccountVariables().getInt("BLOCK_CHECKER", 0) == 1)
-			{
-				player.sendMessage("오늘은 이미 경기를 진행했습니다. 하루에 한번만 참가 가능합니다.");
-				player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "오늘은 이미 경기를 진행했습니다. 하루에 한번만 참가 가능합니다."));
-				return false;
-			}
-			
 			if (holder.getBlueTeamSize() < holder.getRedTeamSize())
 			{
 				holder.addPlayer(player, 1);
@@ -181,9 +180,24 @@ public class HandysBlockCheckerManager
 				holder.addPlayer(player, 0);
 				isRed = true;
 			}
+			
+			// 팀에 플레이어 추가를 알림
 			holder.broadCastPacketToTeam(new ExCubeGameAddPlayer(player, isRed));
 			return true;
 		}
+	}
+	
+	// 플레이어가 이미 등록되었는지 확인
+	private boolean isPlayerAlreadyRegistered(Player player)
+	{
+		for (int i = 0; i < _arenaPlayers.length; i++)
+		{
+			if (_arenaPlayers[i].getAllPlayers().contains(player))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -198,22 +212,54 @@ public class HandysBlockCheckerManager
 		synchronized (holder)
 		{
 			final boolean isRed = team == 0;
+			
+			// 플레이어 제거
 			holder.removePlayer(player, team);
 			holder.broadCastPacketToTeam(new ExCubeGameRemovePlayer(player, isRed));
 			
-			_registrationPenalty.add(player.getObjectId());
-			schedulePenaltyRemoval(player.getObjectId());
+			// 페널티 등록 및 제거 스케줄
+			if (!_registrationPenalty.contains(player.getObjectId()))
+			{
+				_registrationPenalty.add(player.getObjectId());
+				schedulePenaltyRemoval(player.getObjectId());
+			}
 			
-			// Check if teams meet conditions to restart countdown
+			// 팀 상태 확인
 			final int countBlue = holder.getBlueTeamSize();
 			final int countRed = holder.getRedTeamSize();
 			final int minMembers = Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS;
+			
+			// 팀 조건 만족 여부 판단
 			if ((countBlue >= minMembers) && (countRed >= minMembers) && (countBlue == countRed))
 			{
-				holder.updateEvent();
-				holder.broadCastPacketToTeam(new ExCubeGameChangeTimeToStart(10));
-				// 카운트다운을 서버에서 관리
-				startCountdown(arenaId);
+				// 이미 카운트다운이 진행 중인 경우 중복 실행 방지
+				if (!holder.isCountdownRunning())
+				{
+					holder.setCountdownRunning(true); // 플래그 설정
+					holder.updateEvent();
+					holder.broadCastPacketToTeam(new ExCubeGameChangeTimeToStart(10));
+					
+					// 새로운 스레드에서 카운트다운 시작
+					new Thread(() ->
+					{
+						try
+						{
+							startCountdown(arenaId);
+						}
+						finally
+						{
+							holder.setCountdownRunning(false); // 플래그 해제
+						}
+					}).start();
+				}
+			}
+			else
+			{
+				// 조건 미충족 시 진행 중인 이벤트를 종료할 수도 있음 (옵션)
+				if (holder.isCountdownRunning())
+				{
+					holder.setCountdownRunning(false); // 플래그 해제
+				}
 			}
 		}
 	}
@@ -232,7 +278,10 @@ public class HandysBlockCheckerManager
 			{
 				for (int i = 10; i > 0; i--)
 				{
-					if (holder.getEvent().isStarted() || (holder.getBlueTeamSize() != holder.getRedTeamSize()) || (holder.getBlueTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS) || (holder.getRedTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS))
+					if (holder.getEvent().isStarted() || //
+					(holder.getBlueTeamSize() != holder.getRedTeamSize()) || //
+					(holder.getBlueTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS) || //
+					(holder.getRedTeamSize() < Config.MIN_BLOCK_CHECKER_TEAM_MEMBERS))
 					{
 						return;
 					}

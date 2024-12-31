@@ -4653,7 +4653,7 @@ public class Player extends Playable
 			{
 				handler.useItem(this, target, false);
 			}
-			ItemTable.getInstance().destroyItem("사용", target, this, null, true);
+			ItemTable.getInstance().destroyItem("사용", target, this, null);
 		}
 		// Cursed Weapons are not distributed
 		else if (CursedWeaponsManager.getInstance().isCursed(target.getId()))
@@ -4694,7 +4694,7 @@ public class Player extends Playable
 			else if ((target.getId() == Inventory.ADENA_ID) && (_inventory.getAdenaInstance() != null))
 			{
 				addAdena("습득", target.getCount(), null, true);
-				ItemTable.getInstance().destroyItem("Pickup", target, this, null, true);
+				ItemTable.getInstance().destroyItem("Pickup", target, this, null);
 			}
 			else
 			{
@@ -8271,7 +8271,7 @@ public class Player extends Playable
 	
 	public boolean canLogout()
 	{
-		if (hasItemRequest())
+		if (hasItemRequest() || (getBlockCheckerArena() > -1))
 		{
 			sendMessage("현재 로그아웃 할 수 없습니다. 잠시 후 다시 시도해주세요.");
 			return false;
@@ -8339,7 +8339,7 @@ public class Player extends Playable
 	
 	public boolean canRestart()
 	{
-		if (hasItemRequest())
+		if (hasItemRequest() || (getBlockCheckerArena() > -1))
 		{
 			sendMessage("현재 리스타트 할 수 없습니다. 잠시 후 다시 시도해주세요.");
 			return false;

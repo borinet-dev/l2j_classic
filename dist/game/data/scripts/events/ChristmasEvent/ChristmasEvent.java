@@ -568,7 +568,7 @@ public class ChristmasEvent extends LongTimeEvent
 			case "SPAM_TEXT_SNOWMAN":
 			{
 				int min = Rnd.get(1, 2);
-				npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, "도와주세요! 살려주세요!!!"));
+				npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, "도와주세요! 살려주세요!!!"));
 				startQuestTimer("SPAM_TEXT_SNOWMAN", (min * 60 * 1000), npc, null);
 				break;
 			}
@@ -747,20 +747,20 @@ public class ChristmasEvent extends LongTimeEvent
 			{
 				if (attacker.getActiveWeaponItem() == null)
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, noWeapon[Rnd.get(noWeapon.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, noWeapon[Rnd.get(noWeapon.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(true);
 				}
 				else if (CHRONO_LIST.contains(attacker.getActiveWeaponItem().getId()))
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, attacked[Rnd.get(attacked.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, attacked[Rnd.get(attacked.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(false);
 					npc.getStatus().reduceHp(10, attacker);
 				}
 				else
 				{
-					npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, noCrono[Rnd.get(noCrono.length)]));
+					npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, noCrono[Rnd.get(noCrono.length)]));
 					_lastSay = System.currentTimeMillis();
 					npc.setInvul(true);
 				}
@@ -779,7 +779,7 @@ public class ChristmasEvent extends LongTimeEvent
 			
 			Broadcast.toAllOnlinePlayersOnScreen("크리스마스 이벤트: 눈사람을 구출했습니다!");
 			Broadcast.toAllOnlinePlayers("크리스마스 이벤트: 눈사람을 구출했습니다!");
-			npc.broadcastPacket(new NpcSay(_snowman, ChatType.GENERAL, "고맙습니다! 저를 구해주셔서 감사합니다."));
+			npc.broadcastPacket(new NpcSay(_snowman, ChatType.NPC_GENERAL, "고맙습니다! 저를 구해주셔서 감사합니다."));
 			_snowmanState = SnowmanState.SAVED;
 			
 			for (Player b : World.getInstance().getPlayers())

@@ -31,6 +31,7 @@ import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
+import org.l2jmobius.commons.database.DatabaseFactoryLog;
 import org.l2jmobius.commons.enums.ServerMode;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.DeadLockDetector;
@@ -173,7 +174,6 @@ import org.l2jmobius.gameserver.util.BoatUtil;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
-import org.l2jmobius.gameserver.util.ItemLog;
 import org.l2jmobius.gameserver.util.TreeSpawn;
 import org.l2jmobius.gameserver.util.Util;
 
@@ -277,6 +277,7 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("Database");
 		DatabaseFactory.init();
+		DatabaseFactoryLog.init();
 		
 		BorinetUtil.getInstance().printSection("Thread Pool");
 		ThreadPool.init();
@@ -513,9 +514,6 @@ public class GameServer
 		
 		CastleManorManager.getInstance();
 		SiegeGuardManager.getInstance();
-		
-		BorinetUtil.getInstance().printSection("아이템 로그");
-		ItemLog.getInstance().deleteOldLogTable();
 		DailyTaskManager.cleanUpExpiredData();
 		
 		BorinetUtil.getInstance().printSection("오프라인 상점");
@@ -583,7 +581,7 @@ public class GameServer
 		BorinetUtil.getInstance().printSection("오토방지 문자 시스템");
 		if (Config.ENABLE_CAPTCHA_SYSTEM)
 		{
-			LOGGER.info("오토방지 문자 자동팝업이 활성화 되었습니다.");
+			LOGGER.info("오토방지 문자 시스템이 활성화 되었습니다.");
 		}
 		else
 		{

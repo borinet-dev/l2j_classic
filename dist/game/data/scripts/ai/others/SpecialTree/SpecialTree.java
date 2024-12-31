@@ -1,30 +1,15 @@
 package ai.others.SpecialTree;
 
-import org.l2jmobius.commons.time.RndSelector;
-import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 
 import ai.AbstractNpcAI;
 
 public class SpecialTree extends AbstractNpcAI
 {
-	private static final RndSelector<Integer> SOUNDS;
-	
-	static
-	{
-		SOUNDS = new RndSelector<>(5);
-		SOUNDS.add(2140, 20);
-		SOUNDS.add(2142, 20);
-		SOUNDS.add(2145, 20);
-		SOUNDS.add(2147, 20);
-		SOUNDS.add(2149, 20);
-	}
-	
 	// NPCs
 	private static final int[] CHRISTMAS_TREES =
 	{
@@ -53,11 +38,6 @@ public class SpecialTree extends AbstractNpcAI
 				{
 					SkillCaster.triggerCast(npc, npc, BUFF.getSkill());
 					startQuestTimer("BUFF", 15000, npc, null);
-					
-					if (Rnd.chance(33))
-					{
-						npc.broadcastPacket(new MagicSkillUse(npc, npc, SOUNDS.select(), 1, 500, 0));
-					}
 				}
 			}
 		}

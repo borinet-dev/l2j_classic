@@ -16,6 +16,8 @@
  */
 package org.l2jmobius.gameserver.data;
 
+import static org.l2jmobius.gameserver.model.itemcontainer.Inventory.ADENA_ID;
+
 import java.io.File;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -38,6 +40,7 @@ import org.l2jmobius.gameserver.data.xml.EnchantItemHPBonusData;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
 import org.l2jmobius.gameserver.model.World;
+import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Attackable;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -50,7 +53,7 @@ import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.Weapon;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.util.DocumentItem;
-import org.l2jmobius.gameserver.util.ItemLog;
+import org.l2jmobius.gameserver.util.GMAudit;
 
 /**
  * This class serves as a container for all item templates in the game.
@@ -58,6 +61,7 @@ import org.l2jmobius.gameserver.util.ItemLog;
 public class ItemTable
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemTable.class.getName());
+	private static final Logger LOGGER_ITEMS = Logger.getLogger("item");
 	
 	private ItemTemplate[] _allTemplates;
 	private final Map<Integer, EtcItem> _etcItems = new HashMap<>();
@@ -260,10 +264,9 @@ public class ItemTable
 	 * @param count : int Quantity of items to be created for stackable items
 	 * @param actor : Creature requesting the item creation
 	 * @param reference : Object Object referencing current action like NPC selling item or previous item in transformation
-	 * @param log : 아이템로그에 기록
 	 * @return Item corresponding to the new item
 	 */
-	public Item createItem(String process, int itemId, long count, Creature actor, Object reference, boolean log)
+	public Item createItem(String process, int itemId, long count, Creature actor, Object reference)
 	{
 		// Create and Init the Item corresponding to the Item Identifier
 		final Item item = new Item(IdManager.getInstance().getNextId(), itemId);
@@ -304,9 +307,56 @@ public class ItemTable
 			item.setCount(count);
 		}
 		
-		if (log)
+		if (Config.LOG_ITEMS && !process.equals("Reset"))
 		{
-			ItemLog.getInstance().insertItemInDB(process, (Player) actor, item, 0, reference);
+			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (item.isEquipable() || (item.getId() == ADENA_ID))))
+			{
+				if (item.getEnchantLevel() > 0)
+				{
+					LOGGER_ITEMS.info("생성: " + String.valueOf(process) // in case of null
+						+ ", item " + item.getObjectId() //
+						+ ":+" + item.getEnchantLevel() //
+						+ " " + item.getTemplate().getName() //
+						+ "(" + item.getCount() //
+						+ "), " + String.valueOf(actor) // in case of null
+						+ ", " + String.valueOf(reference)); // in case of null
+				}
+				else
+				{
+					LOGGER_ITEMS.info("생성: " + String.valueOf(process) // in case of null
+						+ ", item " + item.getObjectId() //
+						+ ":" + item.getTemplate().getName() //
+						+ "(" + item.getCount() //
+						+ "), " + String.valueOf(actor) // in case of null
+						+ ", " + String.valueOf(reference)); // in case of null
+				}
+			}
+			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), (Player) actor, item, 0, String.valueOf(reference));
+		}
+		
+		if ((actor != null) && actor.isGM())
+		{
+			String referenceName = "no-reference";
+			if (reference instanceof WorldObject)
+			{
+				referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
+			}
+			else if (reference instanceof String)
+			{
+				referenceName = (String) reference;
+			}
+			final String targetName = (actor.getTarget() != null ? actor.getTarget().getName() : "no-target");
+			if (Config.GMAUDIT)
+			{
+				GMAudit.auditGMAction(actor.getName() + " [" + actor.getObjectId() + "]" //
+					, String.valueOf(process) // in case of null
+						+ "(id: " + itemId //
+						+ " 수랑: " + count //
+						+ " 이름: " + item.getItemName() //
+						+ " objId: " + item.getObjectId() + ")" //
+					, targetName //
+					, "Object referencing this action is: " + referenceName);
+			}
 		}
 		
 		// Notify to scripts
@@ -316,7 +366,7 @@ public class ItemTable
 	
 	public Item createItem(String process, int itemId, int count, Player actor)
 	{
-		return createItem(process, itemId, count, actor, null, true);
+		return createItem(process, itemId, count, actor, null);
 	}
 	
 	/**
@@ -332,9 +382,8 @@ public class ItemTable
 	 * @param item the item instance to be destroyed.
 	 * @param actor the player requesting the item destroy.
 	 * @param reference the object referencing current action like NPC selling item or previous item in transformation.
-	 * @param log 로그 테이블에 기록할지 선택
 	 */
-	public void destroyItem(String process, Item item, Player actor, Object reference, boolean log)
+	public void destroyItem(String process, Item item, Player actor, Object reference)
 	{
 		synchronized (item)
 		{
@@ -347,9 +396,58 @@ public class ItemTable
 			World.getInstance().removeObject(item);
 			IdManager.getInstance().releaseId(item.getObjectId());
 			
-			if (Config.LOG_ITEMS && log)
+			if (Config.LOG_ITEMS)
 			{
-				ItemLog.getInstance().insertItemInDB(process, actor, item, old, reference);
+				if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (item.isEquipable() || (item.getId() == ADENA_ID))))
+				{
+					if (item.getEnchantLevel() > 0)
+					{
+						LOGGER_ITEMS.info("삭제: " + String.valueOf(process) // in case of null
+							+ ", item " + item.getObjectId() //
+							+ ":+" + item.getEnchantLevel() //
+							+ " " + item.getTemplate().getName() //
+							+ " 보유-(" + item.getCount() //
+							+ "), 기존-(" + old //
+							+ "), " + String.valueOf(actor) // in case of null
+							+ ", " + String.valueOf(reference)); // in case of null
+					}
+					else
+					{
+						LOGGER_ITEMS.info("삭제: " + String.valueOf(process) // in case of null
+							+ ", item " + item.getObjectId() //
+							+ ": " + item.getTemplate().getName() //
+							+ " 보유-(" + item.getCount() //
+							+ "), 기존-(" + old //
+							+ "), " + String.valueOf(actor) // in case of null
+							+ ", " + String.valueOf(reference)); // in case of null
+					}
+				}
+				// ItemLog.getInstance().insertItemInDB(String.valueOf(process), actor, item, old, String.valueOf(reference));
+			}
+			
+			if ((actor != null) && actor.isGM())
+			{
+				String referenceName = "no-reference";
+				if (reference instanceof WorldObject)
+				{
+					referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
+				}
+				else if (reference instanceof String)
+				{
+					referenceName = (String) reference;
+				}
+				final String targetName = (actor.getTarget() != null ? actor.getTarget().getName() : "no-target");
+				if (Config.GMAUDIT)
+				{
+					GMAudit.auditGMAction(actor.getName() + " [" + actor.getObjectId() + "]" //
+						, String.valueOf(process) // in case of null
+							+ "(id: " + item.getId() //
+							+ " 수량: " + item.getCount() //
+							+ " itemObjId: " //
+							+ item.getObjectId() + ")" //
+						, targetName //
+						, "Object referencing this action is: " + referenceName);
+				}
 			}
 			
 			// if it's a pet control item, delete the pet as well

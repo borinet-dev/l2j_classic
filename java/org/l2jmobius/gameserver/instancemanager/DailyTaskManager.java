@@ -1259,29 +1259,29 @@ public class DailyTaskManager
 		
 		File Chatfile = new File("log/chat.log");
 		File newChatfile = new File("log/chat/chat_" + today + ".log");
-		// File Itemfile = new File("log/item.log");
-		// File newItemfile = new File("log/item/item_" + today + ".log");
+		File Itemfile = new File("log/item.log");
+		File newItemfile = new File("log/item/item_" + today + ".log");
 		
 		File chat = new File("log/chat");
-		// File item = new File("log/item");
+		File item = new File("log/item");
 		
 		if (!chat.exists())
 		{
 			new File("log/chat").mkdirs();
 			LOGGER.info("log/chat 폴더를 생성했습니다.");
 		}
-		// if (!item.exists())
-		// {
-		// new File("log/item").mkdirs();
-		// LOGGER.info("log/item 폴더를 생성했습니다.");
-		// }
+		if (!item.exists())
+		{
+			new File("log/item").mkdirs();
+			LOGGER.info("log/item 폴더를 생성했습니다.");
+		}
 		
 		try
 		{
 			Files.copy(Chatfile.toPath(), newChatfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-			// Files.copy(Itemfile.toPath(), newItemfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+			Files.copy(Itemfile.toPath(), newItemfile.toPath(), StandardCopyOption.REPLACE_EXISTING);
 			new FileOutputStream("log/chat.log").close();
-			// new FileOutputStream("log/item.log").close();
+			new FileOutputStream("log/item.log").close();
 			LOGGER.info("로그 파일을 초기화 하였습니다.");
 		}
 		catch (IOException e)

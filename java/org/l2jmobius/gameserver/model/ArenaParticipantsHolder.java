@@ -35,6 +35,7 @@ public class ArenaParticipantsHolder
 	private final List<Player> _redPlayers;
 	private final List<Player> _bluePlayers;
 	private final BlockChecker _engine;
+	private boolean countdownRunning = false;
 	
 	public ArenaParticipantsHolder(int arena)
 	{
@@ -172,5 +173,17 @@ public class ArenaParticipantsHolder
 				HandysBlockCheckerManager.getInstance().changePlayerToTeam(plr, _arena);
 			}
 		}
+	}
+	
+	// 카운트다운 실행 여부 확인
+	public boolean isCountdownRunning()
+	{
+		return countdownRunning;
+	}
+	
+	// 카운트다운 실행 상태 설정
+	public void setCountdownRunning(boolean running)
+	{
+		countdownRunning = running;
 	}
 }

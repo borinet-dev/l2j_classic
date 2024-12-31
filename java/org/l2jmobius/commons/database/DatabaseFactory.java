@@ -15,33 +15,19 @@ public class DatabaseFactory
 {
 	private static final Logger LOGGER = Logger.getLogger(DatabaseFactory.class.getName());
 	
-	private static final MariaDbPoolDataSource DATABASE_POOL;
-	private static final MariaDbPoolDataSource DATABASE_LOG;
-	
-	static
-	{
-		try
-		{
-			DATABASE_POOL = new MariaDbPoolDataSource(Config.DATABASE_URL + "&user=" + Config.DATABASE_LOGIN + "&password=" + Config.DATABASE_PASSWORD + "&maxPoolSize=" + Config.DATABASE_MAX_CONNECTIONS);
-			DATABASE_LOG = new MariaDbPoolDataSource(Config.DATABASE_LOG_URL + "&user=" + Config.DATABASE_LOGIN + "&password=" + Config.DATABASE_PASSWORD + "&maxPoolSize=" + Config.DATABASE_MAX_CONNECTIONS);
-		}
-		catch (Exception e) // SQLException 대신 Exception 사용
-		{
-			throw new RuntimeException("Failed to initialize MariaDbPoolDataSource", e);
-		}
-	}
+	private static final MariaDbPoolDataSource DATABASE_POOL = new MariaDbPoolDataSource(Config.DATABASE_URL + "&user=" + Config.DATABASE_LOGIN + "&password=" + Config.DATABASE_PASSWORD + "&maxPoolSize=" + Config.DATABASE_MAX_CONNECTIONS);
 	
 	public static void init()
 	{
+		// Test if connection is valid.
 		try
 		{
 			DATABASE_POOL.getConnection().close();
-			DATABASE_LOG.getConnection().close();
-			LOGGER.info("데이터베이스에 정상적으로 연결되었습니다.");
+			LOGGER.info("GameServer: 데이터베이스에 정상적으로 연결되었습니다.");
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("데이터베이스에 접속할 수 없습니다!");
+			LOGGER.warning("GameServer: 데이터베이스에 접속할 수 없습니다!");
 		}
 	}
 	
@@ -62,33 +48,15 @@ public class DatabaseFactory
 		return con;
 	}
 	
-	public static Connection getConnectionLog()
-	{
-		Connection con = null;
-		while (con == null)
-		{
-			try
-			{
-				con = DATABASE_LOG.getConnection();
-			}
-			catch (Exception e)
-			{
-				LOGGER.warning("Item Log: 데이터베이스에 연결할 수 없습니다.");
-			}
-		}
-		return con;
-	}
-	
 	public static void close()
 	{
 		try
 		{
 			DATABASE_POOL.close();
-			DATABASE_LOG.close();
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("DatabaseFactory: 데이터베이스 소스를 닫는 동안 문제가 발생했습니다.");
+			LOGGER.warning("GameServer: 데이터베이스 소스를 닫는 동안 문제가 발생했습니다.");
 		}
 	}
 }

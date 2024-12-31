@@ -96,7 +96,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.ItemAppearanceTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemLifeTimeTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemManaTaskManager;
-import org.l2jmobius.gameserver.util.ItemLog;
+import org.l2jmobius.gameserver.util.GMAudit;
 
 /**
  * This class manages items.
@@ -105,6 +105,7 @@ import org.l2jmobius.gameserver.util.ItemLog;
 public class Item extends WorldObject
 {
 	private static final Logger LOGGER = Logger.getLogger(Item.class.getName());
+	private static final Logger LOG_ITEMS = Logger.getLogger("item");
 	
 	/** Owner */
 	private int _ownerId;
@@ -323,7 +324,47 @@ public class Item extends WorldObject
 		
 		if (Config.LOG_ITEMS)
 		{
-			ItemLog.getInstance().insertItemInDB(process, creator, this, 0, reference);
+			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
+			{
+				if (_enchantLevel > 0)
+				{
+					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
+						+ ", item " + getObjectId() //
+						+ ": +" + _enchantLevel //
+						+ " " + _itemTemplate.getName() //
+						+ " 보유-(" + _count + "), " //
+						+ String.valueOf(creator) + ", " // in case of null
+						+ String.valueOf(reference)); // in case of null
+				}
+				else
+				{
+					LOG_ITEMS.info("변경 :" + String.valueOf(process) // in case of null
+						+ ", item " + getObjectId() //
+						+ ": " + _itemTemplate.getName() //
+						+ " 보유-(" + _count + "), " //
+						+ String.valueOf(creator) + ", " // in case of null
+						+ String.valueOf(reference)); // in case of null
+				}
+			}
+			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), creator, this, _count, String.valueOf(reference));
+		}
+		
+		if ((creator != null) && creator.isGM())
+		{
+			String referenceName = "no-reference";
+			if (reference instanceof WorldObject)
+			{
+				referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
+			}
+			else if (reference instanceof String)
+			{
+				referenceName = (String) reference;
+			}
+			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
+			if (Config.GMAUDIT)
+			{
+				GMAudit.auditGMAction(creator.getName() + " [" + creator.getObjectId() + "]", process + "(id: " + _itemId + " name: " + getName() + ")", targetName, "Object referencing this action is: " + referenceName);
+			}
 		}
 	}
 	
@@ -428,11 +469,10 @@ public class Item extends WorldObject
 	 * @param count : int
 	 * @param creator : Player Player requesting the item creation
 	 * @param reference : Object Object referencing current action like NPC selling item or previous item in transformation
-	 * @param log : Object Object referencing current action like NPC selling item or previous item in transformation
 	 */
-	public void changeCount(String process, long count, Player creator, Object reference, boolean log)
+	public void changeCount(String process, long count, Player creator, Object reference)
 	{
-		if (count == 0)
+		if ((count == 0) || (creator == null))
 		{
 			return;
 		}
@@ -455,16 +495,58 @@ public class Item extends WorldObject
 		
 		_storedInDb = false;
 		
-		if (log)
+		if (Config.LOG_ITEMS && (process != null))
 		{
-			ItemLog.getInstance().insertItemInDB(process, creator, this, old, reference);
+			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
+			{
+				if (_enchantLevel > 0)
+				{
+					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
+						+ ", item " + getObjectId() //
+						+ ": +" + _enchantLevel //
+						+ " " + _itemTemplate.getName() //
+						+ " 보유-(" + _count + "), 기존-(" //
+						+ String.valueOf(old) + "), " // in case of null
+						+ String.valueOf(creator.getName() + ", " // in case of null
+							+ String.valueOf(reference))); // in case of null
+				}
+				else
+				{
+					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
+						+ ", item " + getObjectId() //
+						+ ": " + _itemTemplate.getName() //
+						+ " 보유-(" + _count + "), 기존-(" //
+						+ String.valueOf(old) + "), " // in case of null
+						+ String.valueOf(creator.getName() + ", " // in case of null
+							+ String.valueOf(reference))); // in case of null
+				}
+			}
+			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), creator, this, old, String.valueOf(reference));
+		}
+		
+		if (creator.isGM())
+		{
+			String referenceName = "no-reference";
+			if (reference instanceof WorldObject)
+			{
+				referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
+			}
+			else if (reference instanceof String)
+			{
+				referenceName = (String) reference;
+			}
+			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
+			if (Config.GMAUDIT)
+			{
+				GMAudit.auditGMAction(creator.getName() + " [" + creator.getObjectId() + "]", process + "(id: " + _itemId + " objId: " + getObjectId() + " name: " + getName() + " count: " + count + ")", targetName, "Object referencing this action is: " + referenceName);
+			}
 		}
 	}
 	
 	// No logging (function designed for shots only)
 	public void changeCountWithoutTrace(int count, Player creator, Object reference)
 	{
-		changeCount(null, count, creator, reference, true);
+		changeCount(null, count, creator, reference);
 	}
 	
 	/**

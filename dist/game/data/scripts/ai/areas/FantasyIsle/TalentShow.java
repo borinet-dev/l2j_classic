@@ -318,11 +318,11 @@ public class TalentShow extends AbstractNpcAI
 					// 조건에 따라 다른 대사 출력
 					if (playerCount >= 10)
 					{
-						npc.broadcastSay(ChatType.GENERAL, "와~ 사람들이 많이 모였네요! 헉... 울렁증이... 끙");
+						npc.broadcastSay(ChatType.NPC_GENERAL, "와~ 사람들이 많이 모였네요! 헉... 울렁증이... 끙");
 					}
 					else
 					{
-						autoChat(npc, MESSAGES[0], ChatType.GENERAL);
+						autoChat(npc, MESSAGES[0], ChatType.NPC_GENERAL);
 					}
 					startQuestTimer("1", 30000, npc, null);
 					break;
@@ -384,7 +384,7 @@ public class TalentShow extends AbstractNpcAI
 			// TODO switch on event
 			if (event.equalsIgnoreCase("6"))
 			{
-				autoChat(npc, MESSAGES[6], ChatType.GENERAL);
+				autoChat(npc, MESSAGES[6], ChatType.NPC_GENERAL);
 				npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56511, -56647, -2008, 36863));
 				npc.broadcastPacket(new PlaySound(1, "NS22_F", 0, 0, 0, 0, 0));
 				addSpawn(SINGERS[0], -56344, -56328, -2008, 32768, false, 224000);
@@ -402,7 +402,7 @@ public class TalentShow extends AbstractNpcAI
 				{
 					case 32433:
 					{
-						autoChat(npc, MESSAGES[7], ChatType.GENERAL);
+						autoChat(npc, MESSAGES[7], ChatType.NPC_GENERAL);
 						npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56698, -56430, -2008, 32768));
 						startQuestTimer("8", 12000, npc, null);
 						break;
@@ -436,7 +436,7 @@ public class TalentShow extends AbstractNpcAI
 				{
 					case 32433:
 					{
-						autoChat(npc, MESSAGES[11], ChatType.GENERAL);
+						autoChat(npc, MESSAGES[11], ChatType.NPC_GENERAL);
 						npc.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(-56698, -56430, -2008, 32768));
 						startQuestTimer("12", 5000, npc, null);
 						break;
@@ -455,7 +455,7 @@ public class TalentShow extends AbstractNpcAI
 			}
 			else if (event.equalsIgnoreCase("17"))
 			{
-				autoChat(npc, MESSAGES[16], ChatType.GENERAL);
+				autoChat(npc, MESSAGES[16], ChatType.NPC_GENERAL);
 				startQuestTimer("social1", 2000, addSpawn(INDIVIDUALS[1], -56700, -56340, -2008, 32768, false, 32000), null);
 				startQuestTimer("18", 9000, npc, null);
 			}
@@ -499,7 +499,7 @@ public class TalentShow extends AbstractNpcAI
 				final ShoutInfo si = TALKS.get(event);
 				if (si != null)
 				{
-					autoChat(npc, si.getNpcStringId(), ChatType.GENERAL);
+					autoChat(npc, si.getNpcStringId(), ChatType.NPC_GENERAL);
 					startQuestTimer(si.getNextEvent(), si.getTime(), npc, null);
 				}
 			}

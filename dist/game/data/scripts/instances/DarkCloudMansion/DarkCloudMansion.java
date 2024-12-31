@@ -148,7 +148,7 @@ public class DarkCloudMansion extends AbstractInstance
 				}
 				case "CHAT":
 				{
-					world.getNpcs(BELETH_SAMPLE).stream().filter(n -> n.isScriptValue(1)).forEach(n -> n.broadcastSay(ChatType.GENERAL, getRandomEntry(DECAY_CHAT)));
+					world.getNpcs(BELETH_SAMPLE).stream().filter(n -> n.isScriptValue(1)).forEach(n -> n.broadcastSay(ChatType.NPC_GENERAL, getRandomEntry(DECAY_CHAT)));
 					break;
 				}
 			}
@@ -430,7 +430,7 @@ public class DarkCloudMansion extends AbstractInstance
 		final List<Npc> npcs = world.spawnGroup("roomE");
 		for (Npc n : npcs)
 		{
-			n.broadcastSay(ChatType.GENERAL, getRandomEntry(SPAWN_CHAT));
+			n.broadcastSay(ChatType.NPC_GENERAL, getRandomEntry(SPAWN_CHAT));
 		}
 		for (int i = 0; i < 3; i++)
 		{
@@ -451,7 +451,7 @@ public class DarkCloudMansion extends AbstractInstance
 					final int found = params.getInt("found", 0) + 1;
 					world.setParameter("found", found);
 					npc.setScriptValue(-1);
-					npc.broadcastSay(ChatType.GENERAL, getRandomEntry(SUCCESS_CHAT));
+					npc.broadcastSay(ChatType.NPC_GENERAL, getRandomEntry(SUCCESS_CHAT));
 					
 					world.setStatus(10);
 					world.getNpcs().forEach(Npc::deleteMe);
@@ -461,7 +461,7 @@ public class DarkCloudMansion extends AbstractInstance
 				{
 					world.setParameter("blocked", true);
 					world.setParameter("found", 0);
-					npc.broadcastSay(ChatType.GENERAL, getRandomEntry(FAIL_CHAT));
+					npc.broadcastSay(ChatType.NPC_GENERAL, getRandomEntry(FAIL_CHAT));
 					npc.setScriptValue(-1);
 					startQuestTimer("CHAT", 4000, npc, null);
 					startQuestTimer("DELETE", 4500, npc, null);

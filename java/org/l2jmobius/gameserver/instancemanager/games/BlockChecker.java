@@ -16,15 +16,12 @@
  */
 package org.l2jmobius.gameserver.instancemanager.games;
 
-import java.util.Collection;
 import java.util.Map;
-import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Stream;
 
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
@@ -611,6 +608,10 @@ public class BlockChecker
 		{
 			if (_redPoints == _bluePoints)
 			{
+				final SystemMessage msg = new SystemMessage(SystemMessageId.THE_DUEL_HAS_ENDED_IN_A_TIE);
+				_holder.broadCastPacketToTeam(msg);
+				rewardAsLooser(true);
+				rewardAsLooser(false);
 				return;
 			}
 			
@@ -631,12 +632,6 @@ public class BlockChecker
 				msg.addString("Blue Team");
 				_holder.broadCastPacketToTeam(msg);
 			}
-			else
-			{
-				rewardAsDraw();
-				final SystemMessage msg = new SystemMessage(SystemMessageId.THE_DUEL_HAS_ENDED_IN_A_TIE);
-				_holder.broadCastPacketToTeam(msg);
-			}
 		}
 		
 		/**
@@ -651,8 +646,7 @@ public class BlockChecker
 				{
 					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
 					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockCheckerWin(player), player);
-					player.getAccountVariables().set("BLOCK_CHECKER", 1);
-					// player.addItem("블록체커 이벤트 보상", 13067, 10, player, true);
+					player.getAccountVariables().set("BLOCK_CHECKER", true);
 				}
 			}
 		}
@@ -668,24 +662,9 @@ public class BlockChecker
 				if (player != null)
 				{
 					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
-					player.getAccountVariables().set("BLOCK_CHECKER", 1);
-					// player.addItem("블록체커 이벤트 보상", 13067, 2, player, true);
+					player.getAccountVariables().set("BLOCK_CHECKER", true);
 				}
 			}
-		}
-		
-		// 무승부 보상 메서드
-		private void rewardAsDraw()
-		{
-			Stream.of(_redTeamPoints.keySet(), _blueTeamPoints.keySet()) // 두 팀의 키셋(플레이어 목록) 스트림 생성
-				.flatMap(Collection::stream) // 두 컬렉션을 단일 스트림으로 병합
-				.filter(Objects::nonNull) // null 값 필터링
-				.forEach(player ->
-				{
-					EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBlockChecker(player), player);
-					player.getAccountVariables().set("BLOCK_CHECKER", 1);
-					// player.addItem("Block Checker", 13067, 1, player, true); // 각 플레이어에게 아이템 지급
-				});
 		}
 		
 		/**

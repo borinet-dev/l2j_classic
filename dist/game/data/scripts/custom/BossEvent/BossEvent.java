@@ -242,7 +242,7 @@ public class BossEvent extends AbstractNpcAI
 			};
 			
 			String selectedSaying = npcSayings[Rnd.get(0, npcSayings.length - 1)];
-			npc.broadcastSay(ChatType.GENERAL, selectedSaying);
+			npc.broadcastSay(ChatType.NPC_GENERAL, selectedSaying);
 			
 			dropitems(npc, killer);
 			if (_counts < 3)

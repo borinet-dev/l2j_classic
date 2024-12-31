@@ -129,7 +129,7 @@ public class Nos extends AbstractNpcAI
 		if (npc.getTarget() != null)
 		{
 			String bossText = String.format(BOSS_TEXT[Rnd.get(0, BOSS_TEXT.length - 1)], player.getName());
-			npc.broadcastPacket(new NpcSay(npc, ChatType.GENERAL, bossText));
+			npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, bossText));
 		}
 		
 		List<Npc> spawnedMonsters = new ArrayList<>();
@@ -144,7 +144,7 @@ public class Nos extends AbstractNpcAI
 			{
 				for (int j = 0; (j <= i) && (j < spawnedMonsters.size()); j++)
 				{
-					spawnedMonsters.get(j).broadcastPacket(new NpcSay(spawnedMonsters.get(j), ChatType.GENERAL, MINION_TEXT[Rnd.get(0, MINION_TEXT.length - 1)]));
+					spawnedMonsters.get(j).broadcastPacket(new NpcSay(spawnedMonsters.get(j), ChatType.NPC_GENERAL, MINION_TEXT[Rnd.get(0, MINION_TEXT.length - 1)]));
 				}
 				break;
 			}

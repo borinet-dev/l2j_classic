@@ -355,12 +355,12 @@ public class Q00255_Tutorial extends Quest
 				player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, "와썹", "계속하기 전에 모든 필드를 채우십시오."));
 			}
 		}
-		if (event.startsWith("NoChangeName"))
+		if (event.equals("NoChangeName"))
 		{
 			player.getVariables().set("캐릭터명 무료 변경", 1);
 			checkEmail(player);
 		}
-		if (event.startsWith("JoinToClan"))
+		if (event.equals("JoinToClan"))
 		{
 			final Clan clan = ClanTable.getInstance().getClan(269357273);
 			if (clan != null)
@@ -393,14 +393,14 @@ public class Q00255_Tutorial extends Quest
 				startQuestTimer("WELCOM_MESSEGES", 100, null, player);
 			}
 		}
-		if (event.startsWith("NoJoin"))
+		if (event.equals("NoJoin"))
 		{
 			player.sendMessage("신규자 혈맹 아카데미에 가입하지 않았습니다.");
 			player.sendPacket(new CreatureSay(null, ChatType.BATTLEFIELD, Config.SERVER_NAME_KOR, "신규자 혈맹 아카데미에 가입하지 않았습니다."));
 			player.getVariables().set("신규자 혈맹 아카데미", 1);
 			player.sendPacket(TutorialCloseHtml.STATIC_PACKET);
 		}
-		if (event.startsWith("WELCOM_MESSEGES"))
+		if (event.equals("WELCOM_MESSEGES"))
 		{
 			player.sendMessage("신규자 혈맹 아카데미에 가입하였습니다.");
 			player.sendMessage("신규자 혈맹 가입 후 7일이 경과하면 자동으로 제명됩니다.");

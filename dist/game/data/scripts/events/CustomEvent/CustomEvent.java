@@ -402,6 +402,7 @@ public class CustomEvent extends LongTimeEvent
 		{
 			htmltext = getHtm(player, "34330_new.htm");
 			htmltext = htmltext.replace("%year%", Integer.toString(calendar.get(Calendar.YEAR)));
+			htmltext = htmltext.replace("%eventName%", eventName);
 		}
 		else
 		{

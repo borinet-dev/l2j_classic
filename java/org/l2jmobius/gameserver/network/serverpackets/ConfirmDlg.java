@@ -7,13 +7,13 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage.SMParam;
 
 /**
  * ConfirmDlg server packet implementation.
+ * @author kombat
  */
 public class ConfirmDlg implements IClientOutgoingPacket
 {
 	private int _time;
 	private int _requesterId;
 	private final SystemMessage _systemMessage;
-	private Runnable _yesAction;
 	
 	public ConfirmDlg(SystemMessageId smId)
 	{
@@ -40,12 +40,6 @@ public class ConfirmDlg implements IClientOutgoingPacket
 	public ConfirmDlg addRequesterId(int id)
 	{
 		_requesterId = id;
-		return this;
-	}
-	
-	public ConfirmDlg setYesAction(Runnable action)
-	{
-		_yesAction = action;
 		return this;
 	}
 	
@@ -123,13 +117,5 @@ public class ConfirmDlg implements IClientOutgoingPacket
 		packet.writeD(_time);
 		packet.writeD(_requesterId);
 		return true;
-	}
-	
-	public void doYesAction()
-	{
-		if (_yesAction != null)
-		{
-			_yesAction.run();
-		}
 	}
 }
