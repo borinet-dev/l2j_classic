@@ -7,6 +7,7 @@ import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
 import org.l2jmobius.gameserver.model.skill.Skill;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 public class Dano extends LongTimeEvent
 {
@@ -26,15 +27,16 @@ public class Dano extends LongTimeEvent
 		if ("give".equalsIgnoreCase(event))
 		{
 			int account = player.getAccountVariables().getInt("여름이벤트", 0);
-			if (account != 1)
+			if (!BorinetUtil.getInstance().checkDB(player, "여름이벤트") || (account == 1))
 			{
-				player.getAccountVariables().set("여름이벤트", 1);
-				player.addItem("여름이벤트", 41374, 1, player, true);
-				playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
+				player.sendMessage("선물상자는 계정 및 PC에서 한번만 받을 수 있습니다.");
 			}
 			else
 			{
-				player.sendMessage("이미 지급받은 계정입니다.");
+				player.getAccountVariables().set("여름이벤트", 1);
+				BorinetUtil.getInstance().insertDB(player, "광복절이벤트", 0);
+				player.addItem("여름이벤트", 41374, 1, player, true);
+				playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
 			}
 		}
 		if ("hair".equalsIgnoreCase(event))

@@ -8,6 +8,7 @@ import org.l2jmobius.gameserver.enums.QuestSound;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
 public class LiberationDay extends LongTimeEvent
 {
@@ -27,9 +28,9 @@ public class LiberationDay extends LongTimeEvent
 		if ("taekuk".equalsIgnoreCase(event))
 		{
 			int checkGift = player.getAccountVariables().getInt("광복절이벤트", 0);
-			if (checkGift == 1)
+			if (!BorinetUtil.getInstance().checkDB(player, "광복절이벤트") || (checkGift == 1))
 			{
-				player.sendMessage("이미 참여한 계정입니다.");
+				player.sendMessage("이벤트 참여는 계정 및 PC에서 한번만 할 수 있습니다.");
 				return null;
 			}
 			return generateTaekukPage();
@@ -38,6 +39,7 @@ public class LiberationDay extends LongTimeEvent
 		{
 			player.sendMessage("태극기를 정확하게 찾으셨어요!");
 			player.getAccountVariables().set("광복절이벤트", 1);
+			BorinetUtil.getInstance().insertDB(player, "광복절이벤트", 0);
 			
 			player.addItem("광복절이벤트", 41365, 1, player, true);
 			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
@@ -45,6 +47,7 @@ public class LiberationDay extends LongTimeEvent
 		if ("failed".equalsIgnoreCase(event))
 		{
 			player.getAccountVariables().set("광복절이벤트", 1);
+			BorinetUtil.getInstance().insertDB(player, "광복절이벤트", 0);
 			return npc.getId() + "-1.htm";
 		}
 		if ("stone".equalsIgnoreCase(event))

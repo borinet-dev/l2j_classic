@@ -412,6 +412,8 @@ public class SpecialEvents
 		player.getAccountVariables().remove("CUSTOM_EVENT_BOX");
 		player.getAccountVariables().remove("CHUSEOK_ITEM");
 		player.getAccountVariables().remove("CUSTOM_EVENT_RECIPES");
+		player.getAccountVariables().remove("광복절이벤트");
+		player.getAccountVariables().remove("여름이벤트");
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			Statement statement = con.createStatement())
@@ -420,6 +422,8 @@ public class SpecialEvents
 			statement.executeUpdate("DELETE from account_gsdata WHERE var LIKE '%CUSTOM_EVENT_%';");
 			statement.executeUpdate("DELETE from event_hwid WHERE name LIKE '%CUSTOM_EVENT_%';");
 			statement.executeUpdate("DELETE from account_gsdata WHERE var = 'CHUSEOK_ITEM';");
+			statement.executeUpdate("DELETE from account_gsdata WHERE var = '광복절이벤트';");
+			statement.executeUpdate("DELETE from account_gsdata WHERE var = '여름이벤트';");
 		}
 		catch (Exception e)
 		{
