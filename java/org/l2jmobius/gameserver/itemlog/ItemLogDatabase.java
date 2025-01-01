@@ -1,7 +1,6 @@
-package org.l2jmobius.gameserver.util;
+package org.l2jmobius.gameserver.itemlog;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -9,21 +8,16 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Logger;
-import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.database.DatabaseFactoryLog;
+import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
-import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.model.item.type.EtcItemType;
+import org.l2jmobius.gameserver.util.BorinetUtil;
 
-public class ItemLog
+public class ItemLogDatabase
 {
-	private static final Logger LOGGER = Logger.getLogger(ItemLog.class.getName());
-	private final ReentrantLock _dbLock = new ReentrantLock();
+	private static final Logger LOGGER = Logger.getLogger(ItemLogDatabase.class.getName());
 	private static String currentTableName;
 	
 	public void Item_Log()
@@ -36,11 +30,19 @@ public class ItemLog
 	
 	private void updateTable()
 	{
+		if (!Config.LOG_TABLE_ITEMS)
+		{
+			return;
+		}
 		currentTableName = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
 	}
 	
 	private void scheduleTask(Runnable task, int hour, int minute)
 	{
+		if (!Config.LOG_TABLE_ITEMS)
+		{
+			return;
+		}
 		final long currentTime = System.currentTimeMillis();
 		final Calendar calendar = Calendar.getInstance();
 		calendar.set(Calendar.HOUR_OF_DAY, hour);
@@ -56,66 +58,6 @@ public class ItemLog
 		ThreadPool.scheduleAtFixedRate(task, startDelay, BorinetUtil.MILLIS_PER_DAY);
 	}
 	
-	public void insertItemInDB(String process, Player player, Item item, long old, String reference)
-	{
-		if (item == null)
-		{
-			return;
-		}
-		
-		// 낚시로 습득하는 아이템 로그기록 조건문
-		if (!Config.FISING_REWARD_ITEM_LOG_ENABLE && (process.equals("Fishing Reward")))
-		{
-			return;
-		}
-		
-		// 로그 기록에서 제외할 아이템 필터링
-		// MATERIAL 및 RECIPE면 로그 기록하지 않음
-		// 특정 ID 또는 이름이 제외 목록에 있는 경우 로그 기록하지 않음
-		if ((item.getItemType() == EtcItemType.MATERIAL) || (item.getItemType() == EtcItemType.RECIPE) || //
-			Config.NO_ITEM_LOG_ITEM_IDS.contains(item.getId()) || //
-			((item.getName() != null) && Config.NO_ITEM_LOG_NAMES.stream().anyMatch(name -> item.getName().matches(".*\\b" + Pattern.quote(name) + "\\b.*"))))
-		{
-			return;
-		}
-		
-		if (player != null)
-		{
-			_dbLock.lock();
-			try
-			{
-				logItem(process, player, item, old, reference);
-			}
-			finally
-			{
-				_dbLock.unlock();
-			}
-		}
-	}
-	
-	private void logItem(String process, Player player, Item item, long old, String reference)
-	{
-		// DB에 로그 기록
-		String query = "INSERT INTO " + currentTableName + " (process_status, character_name, character_id, item_name, current_quantity, previous_quantity, npc_name) VALUES (?, ?, ?, ?, ?, ?, ?)";
-		
-		try (Connection connection = DatabaseFactoryLog.getConnection();
-			PreparedStatement ps = connection.prepareStatement(query))
-		{
-			ps.setString(1, process);
-			ps.setString(2, player.getName());
-			ps.setInt(3, player.getObjectId());
-			ps.setString(4, item.getEnchantLevel() > 0 ? "+" + item.getEnchantLevel() + " " + item.getName() : item.getName());
-			ps.setLong(5, item.getCount());
-			ps.setLong(6, old);
-			ps.setString(7, (reference != null) ? reference : "None");
-			ps.executeUpdate();
-		}
-		catch (SQLException e)
-		{
-			LOGGER.warning("아이템 로그 기록 중 오류 발생: " + e.getMessage());
-		}
-	}
-	
 	private void deleteOldTables()
 	{
 		// 7일 전의 날짜를 yyyy_MM_dd 형식으로 가져옴
@@ -124,7 +66,7 @@ public class ItemLog
 		
 		String dropTableQuery = "DROP TABLE IF EXISTS " + oldTableName;
 		
-		try (Connection connection = DatabaseFactoryLog.getConnection();
+		try (Connection connection = DatabaseFactory.getConnection();
 			Statement statement = connection.createStatement())
 		{
 			statement.executeUpdate(dropTableQuery);
@@ -139,6 +81,10 @@ public class ItemLog
 	
 	private void createTableIfNotExists(boolean nextDay)
 	{
+		if (!Config.LOG_TABLE_ITEMS)
+		{
+			return;
+		}
 		// 내일 날짜 계산
 		Calendar calendar = Calendar.getInstance();
 		if (nextDay)
@@ -149,16 +95,18 @@ public class ItemLog
 		
 		// 테이블이 존재하지 않을 경우 테이블 생성
 		String createTableQuery = "CREATE TABLE IF NOT EXISTS " + tableName + " (" + //
-			"log_id INT AUTO_INCREMENT PRIMARY KEY, " + //
-			"log_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP, " + //
-			"process_status VARCHAR(255), " + //
-			"character_name VARCHAR(255), " + //
-			"character_id INT, " + //
+			"id INT AUTO_INCREMENT PRIMARY KEY, " + //
+			"timestamp DATETIME DEFAULT CURRENT_TIMESTAMP, " + //
+			"process VARCHAR(50), " + //
+			"item_id INT, " + //
+			"enchant_level INT DEFAULT 0, " + //
 			"item_name VARCHAR(255), " + //
-			"current_quantity BIGINT, " + //
-			"previous_quantity BIGINT, " + //
-			"npc_name VARCHAR(255))";
-		try (Connection con = DatabaseFactoryLog.getConnection())
+			"old_count BIGINT DEFAULT 0, " + //
+			"new_count BIGINT DEFAULT 0, " + //
+			"actor_name VARCHAR(100), " + //
+			"actor_id INT, " + //
+			"reference_name VARCHAR(255))";
+		try (Connection con = DatabaseFactory.getConnection())
 		{
 			// 테이블 존재 여부 확인
 			boolean tableExists;
@@ -186,13 +134,18 @@ public class ItemLog
 		}
 	}
 	
-	public static ItemLog getInstance()
+	public String getTableName()
+	{
+		return currentTableName;
+	}
+	
+	public static ItemLogDatabase getInstance()
 	{
 		return SingletonHolder.INSTANCE;
 	}
 	
 	private static class SingletonHolder
 	{
-		protected static final ItemLog INSTANCE = new ItemLog();
+		protected static final ItemLogDatabase INSTANCE = new ItemLogDatabase();
 	}
 }

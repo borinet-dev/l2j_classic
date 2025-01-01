@@ -52,6 +52,7 @@ import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
 import org.l2jmobius.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2jmobius.gameserver.instancemanager.SiegeGuardManager;
+import org.l2jmobius.gameserver.itemlog.ItemLogManager;
 import org.l2jmobius.gameserver.model.DropProtection;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.VariationInstance;
@@ -346,7 +347,10 @@ public class Item extends WorldObject
 						+ String.valueOf(reference)); // in case of null
 				}
 			}
-			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), creator, this, _count, String.valueOf(reference));
+		}
+		if (!process.contains("Mail"))
+		{
+			ItemLogManager.addLog(process, this, 0, _count, creator.getName(), creator.getObjectId(), String.valueOf(reference));
 		}
 		
 		if ((creator != null) && creator.isGM())
@@ -521,7 +525,10 @@ public class Item extends WorldObject
 							+ String.valueOf(reference))); // in case of null
 				}
 			}
-			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), creator, this, old, String.valueOf(reference));
+		}
+		if (!process.contains("Mail"))
+		{
+			ItemLogManager.addLog(process, this, old, _count, creator.getName(), creator.getObjectId(), String.valueOf(reference));
 		}
 		
 		if (creator.isGM())

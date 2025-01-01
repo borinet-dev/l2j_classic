@@ -153,6 +153,7 @@ public class Config
 	private static final String BOAT_CONFIG_FILE = "./config/Custom/boat.ini";
 	private static final String PARSE_ITEMS_CONFIG_FILE = "./config/Custom/ParseItems.ini";
 	private static final String ITEM_COMMISSION_CONFIG_FILE = "./config/Custom/ItemCommission.ini";
+	private static final String ITEM_LOG_CONFIG_FILE = "./config/ItemLog.ini";
 	
 	// --------------------------------------------------
 	// Variable Definitions
@@ -310,6 +311,13 @@ public class Config
 	public static List<String> NO_SCREEN_MSG_ITEM_NAMES = new ArrayList<>();
 	public static List<Integer> NO_SELL_ALL_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_SELL_ALL_ITEM_NAMES = new ArrayList<>();
+	
+	/** 아이템 로그 **/
+	public static boolean LOG_ITEMS;
+	public static boolean LOG_ITEMS_SMALL_LOG;
+	public static boolean LOG_ITEM_ENCHANTS;
+	public static boolean LOG_SKILL_ENCHANTS;
+	public static boolean LOG_TABLE_ITEMS;
 	public static List<Integer> NO_ITEM_LOG_ITEM_IDS = new ArrayList<>();
 	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
 	public static boolean FISING_REWARD_ITEM_LOG_ENABLE;
@@ -717,10 +725,6 @@ public class Config
 	public static boolean USE_SUPER_HASTE_AS_GM_SPEED;
 	public static boolean LOG_CHAT;
 	public static boolean LOG_AUTO_ANNOUNCEMENTS;
-	public static boolean LOG_ITEMS;
-	public static boolean LOG_ITEMS_SMALL_LOG;
-	public static boolean LOG_ITEM_ENCHANTS;
-	public static boolean LOG_SKILL_ENCHANTS;
 	public static boolean GMAUDIT;
 	public static boolean SKILL_CHECK_ENABLE;
 	public static boolean SKILL_CHECK_REMOVE;
@@ -2193,12 +2197,18 @@ public class Config
 			NO_SELL_ALL_ITEM_IDS = noSellAllIds.isEmpty() ? new ArrayList<>() : parseItemIds(noSellAllIds);
 			NO_SELL_ALL_ITEM_NAMES = noSellAllNames.isEmpty() ? new ArrayList<>() : parseItemNames(noSellAllNames);
 			
-			// 아이템로그에 제외될 아이템 이름
-			final String noLogIds = parseItemsConfig.getString("NoItemLogItemIds", "");
-			final String noLogNames = parseItemsConfig.getString("NoItemLogItemNames", "");
+			/** 아이템로그 **/
+			final PropertiesParser ItemLogConfig = new PropertiesParser(ITEM_LOG_CONFIG_FILE);
+			LOG_ITEMS = ItemLogConfig.getBoolean("LogItems", false);
+			LOG_ITEMS_SMALL_LOG = ItemLogConfig.getBoolean("LogItemsSmallLog", false);
+			LOG_ITEM_ENCHANTS = ItemLogConfig.getBoolean("LogItemEnchants", false);
+			LOG_SKILL_ENCHANTS = ItemLogConfig.getBoolean("LogSkillEnchants", false);
+			LOG_TABLE_ITEMS = ItemLogConfig.getBoolean("LogTableItems", false);
+			final String noLogIds = ItemLogConfig.getString("NoItemLogItemIds", "");
+			final String noLogNames = ItemLogConfig.getString("NoItemLogItemNames", "");
 			NO_ITEM_LOG_ITEM_IDS = noLogIds.isEmpty() ? new ArrayList<>() : parseItemIds(noLogIds);
 			NO_ITEM_LOG_NAMES = noLogNames.isEmpty() ? new ArrayList<>() : parseItemNames(noLogNames);
-			FISING_REWARD_ITEM_LOG_ENABLE = parseItemsConfig.getBoolean("FishingRewardItemLogEnable", true);
+			FISING_REWARD_ITEM_LOG_ENABLE = ItemLogConfig.getBoolean("FishingRewardItemLogEnable", true);
 			
 			/** 판매 대행 **/
 			final PropertiesParser ItemsCommissionConfig = new PropertiesParser(ITEM_COMMISSION_CONFIG_FILE);
@@ -2684,10 +2694,6 @@ public class Config
 			USE_SUPER_HASTE_AS_GM_SPEED = generalConfig.getBoolean("UseSuperHasteAsGMSpeed", false);
 			LOG_CHAT = generalConfig.getBoolean("LogChat", false);
 			LOG_AUTO_ANNOUNCEMENTS = generalConfig.getBoolean("LogAutoAnnouncements", false);
-			LOG_ITEMS = generalConfig.getBoolean("LogItems", false);
-			LOG_ITEMS_SMALL_LOG = generalConfig.getBoolean("LogItemsSmallLog", false);
-			LOG_ITEM_ENCHANTS = generalConfig.getBoolean("LogItemEnchants", false);
-			LOG_SKILL_ENCHANTS = generalConfig.getBoolean("LogSkillEnchants", false);
 			GMAUDIT = generalConfig.getBoolean("GMAudit", false);
 			SKILL_CHECK_ENABLE = generalConfig.getBoolean("SkillCheckEnable", false);
 			SKILL_CHECK_REMOVE = generalConfig.getBoolean("SkillCheckRemove", false);

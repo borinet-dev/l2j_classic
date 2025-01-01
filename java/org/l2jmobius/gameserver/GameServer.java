@@ -31,7 +31,6 @@ import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.database.DatabaseFactoryLog;
 import org.l2jmobius.commons.enums.ServerMode;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.DeadLockDetector;
@@ -151,6 +150,7 @@ import org.l2jmobius.gameserver.instancemanager.WalkingManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.instancemanager.events.EventDropManager;
 import org.l2jmobius.gameserver.instancemanager.games.MiniGameScoreManager;
+import org.l2jmobius.gameserver.itemlog.ItemLogDatabase;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventResetCheck;
@@ -277,7 +277,6 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("Database");
 		DatabaseFactory.init();
-		DatabaseFactoryLog.init();
 		
 		BorinetUtil.getInstance().printSection("Thread Pool");
 		ThreadPool.init();
@@ -297,7 +296,6 @@ public class GameServer
 		LongTimeEvent._isSpawned = true;
 		EventDispatcher.getInstance();
 		ScriptEngineManager.getInstance();
-		BorinetUtil.deleteEname();
 		
 		BorinetUtil.getInstance().printSection("World - 로드..");
 		World.getInstance();
@@ -548,6 +546,8 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("쿠폰 시스템");
 		CouponManager.getInstance().loadCoupon();
+		// 아이템 로그
+		ItemLogDatabase.getInstance().Item_Log();
 		// 크리스마스 트리 스폰
 		TreeSpawn.spawnTrees();
 		

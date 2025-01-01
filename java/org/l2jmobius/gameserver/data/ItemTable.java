@@ -39,6 +39,7 @@ import org.l2jmobius.commons.util.file.filter.XMLFilter;
 import org.l2jmobius.gameserver.data.xml.EnchantItemHPBonusData;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
+import org.l2jmobius.gameserver.itemlog.ItemLogManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Attackable;
@@ -331,7 +332,10 @@ public class ItemTable
 						+ ", " + String.valueOf(reference)); // in case of null
 				}
 			}
-			// ItemLog.getInstance().insertItemInDB(String.valueOf(process), (Player) actor, item, 0, String.valueOf(reference));
+		}
+		if (!process.contains("Mail"))
+		{
+			ItemLogManager.addLog(process, item, 0, item.getCount(), actor.getName(), actor.getObjectId(), String.valueOf(reference));
 		}
 		
 		if ((actor != null) && actor.isGM())
@@ -422,7 +426,10 @@ public class ItemTable
 							+ ", " + String.valueOf(reference)); // in case of null
 					}
 				}
-				// ItemLog.getInstance().insertItemInDB(String.valueOf(process), actor, item, old, String.valueOf(reference));
+			}
+			if (!process.contains("Mail"))
+			{
+				ItemLogManager.addLog(process, item, old, item.getCount(), actor.getName(), actor.getObjectId(), String.valueOf(reference));
 			}
 			
 			if ((actor != null) && actor.isGM())
