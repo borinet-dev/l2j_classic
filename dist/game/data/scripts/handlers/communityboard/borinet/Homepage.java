@@ -186,13 +186,13 @@ public class Homepage implements IParseBoardHandler
 			switch (times)
 			{
 				case 1:
-					itemCount = 1;
-					break;
-				case 2:
 					itemCount = 3;
 					break;
+				case 2:
+					itemCount = 7;
+					break;
 				case 3:
-					itemCount = 10;
+					itemCount = 15;
 					break;
 				case 4:
 					itemCount = 30;
