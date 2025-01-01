@@ -201,34 +201,17 @@ public class BorinetUtil
 		}
 	}
 	
-	public static void deleteEname()
-	{
-		// DELETE 쿼리로 테이블 초기화
-		String deleteQuery = "DELETE FROM event_name";
-		
-		try (Connection con = DatabaseFactory.getConnection();
-			PreparedStatement deleteStatement = con.prepareStatement(deleteQuery))
-		{
-			// 테이블 비우기
-			deleteStatement.executeUpdate();
-		}
-		catch (SQLException e)
-		{
-			LOGGER.log(Level.WARNING, "이벤트 이름 데이터 삭제에 실패했습니다.", e);
-		}
-	}
-	
 	public static void insertEname(String eName)
 	{
 		// INSERT 쿼리로 데이터 삽입
-		String insertQuery = "INSERT INTO event_name (name) VALUES (?)";
+		String replaceQuery = "REPLACE INTO event_name (id, name) VALUES (1, ?)";
 		
 		try (Connection con = DatabaseFactory.getConnection();
-			PreparedStatement insertStatement = con.prepareStatement(insertQuery))
+			PreparedStatement replaceStatement = con.prepareStatement(replaceQuery))
 		{
 			// 새로운 데이터 삽입
-			insertStatement.setString(1, eName);
-			insertStatement.execute();
+			replaceStatement.setString(1, eName);
+			replaceStatement.execute();
 		}
 		catch (SQLException e)
 		{

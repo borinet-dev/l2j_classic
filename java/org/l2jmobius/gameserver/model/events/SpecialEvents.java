@@ -56,7 +56,6 @@ public class SpecialEvents
 		}
 		if (month == Calendar.JANUARY)
 		{
-			NewYearStart();
 			NewYearEvent();
 		}
 	}
@@ -162,17 +161,11 @@ public class SpecialEvents
 		final long currentTime = System.currentTimeMillis();
 		if (BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() > currentTime)
 		{
-			NPC = 34330;
 			ThreadPool.schedule(this::NewYearStart, BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() - currentTime);
 		}
 		else if ((BorinetTask.getInstance().NewYearEventStart().getTimeInMillis() <= System.currentTimeMillis()) && (BorinetTask.getInstance().NewYearEventEnd().getTimeInMillis() > System.currentTimeMillis()))
 		{
-			NPC = 34330;
-			npcSpawn();
-			_SpecialEventStarted = true;
-			BorinetUtil.getInstance().reloadEventData();
-			ThreadPool.schedule(this::NewYearStop, BorinetTask.getInstance().NewYearEventEnd().getTimeInMillis() - currentTime);
-			BorinetUtil.insertEname(BorinetUtil.getInstance().sendEventName());
+			NewYearStart();
 		}
 	}
 	
