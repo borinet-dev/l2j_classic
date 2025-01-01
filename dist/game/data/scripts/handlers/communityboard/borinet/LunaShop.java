@@ -247,6 +247,14 @@ public class LunaShop implements IWriteBoardHandler
 		}
 		else if (command.equals("buyItemAgain"))
 		{
+			try (Connection con = DatabaseFactory.getConnection())
+			{
+				PreparedStatement rsc = con.prepareStatement("UPDATE auto_lunabuy SET checked = 3, reward_time = 0 WHERE charId = '" + player.getObjectId() + "' AND checked = 0");
+				rsc.executeUpdate();
+			}
+			catch (SQLException e)
+			{
+			}
 			LunaShopItemInfo.removeItemVariables(player);
 			BorinetHtml.showHtml(player, "LunaShop/buyLuna/selectList.htm", 0, "");
 		}
