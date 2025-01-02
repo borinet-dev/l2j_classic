@@ -23,11 +23,11 @@ public class DatabaseFactory
 		try
 		{
 			DATABASE_POOL.getConnection().close();
-			LOGGER.info("GameServer: 데이터베이스에 정상적으로 연결되었습니다.");
+			LOGGER.info("데이터베이스에 정상적으로 연결되었습니다.");
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("GameServer: 데이터베이스에 접속할 수 없습니다!");
+			LOGGER.warning("데이터베이스에 연결할 수 없습니다!");
 		}
 	}
 	
@@ -42,7 +42,7 @@ public class DatabaseFactory
 			}
 			catch (Exception e)
 			{
-				LOGGER.warning("GameServer: 데이터베이스에 연결할 수 없습니다.");
+				LOGGER.warning("데이터베이스에 연결할 수 없습니다.");
 			}
 		}
 		return con;
@@ -56,7 +56,7 @@ public class DatabaseFactory
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("GameServer: 데이터베이스 소스를 닫는 동안 문제가 발생했습니다.");
+			LOGGER.warning("데이터베이스를 닫는 동안 문제가 발생했습니다.");
 		}
 	}
 }

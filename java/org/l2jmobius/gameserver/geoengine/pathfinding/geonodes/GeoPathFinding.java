@@ -391,7 +391,7 @@ public class GeoPathFinding extends PathFinding
 				loadPathNodeFile((byte) regionX, (byte) regionY);
 			}
 		}
-		LOGGER.info("총 " + _loadedPathNode + "개의 PathNode 파일을 로드하였습니다.");
+		LOGGER.info(_loadedPathNode + "개의 PathNode 파일을 로드하였습니다.");
 	}
 	
 	private void loadPathNodeFile(byte rx, byte ry)

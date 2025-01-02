@@ -72,7 +72,10 @@ public class MailManager
 		{
 			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": 데이터베이스에서 로드하는 중 오류 발생:", e);
 		}
-		LOGGER.info("총 " + count + "개의 우편을 로드하였습니다.");
+		if (count > 0)
+		{
+			LOGGER.info(count + "개의 우편을 로드하였습니다.");
+		}
 	}
 	
 	public Message getMessage(int msgId)

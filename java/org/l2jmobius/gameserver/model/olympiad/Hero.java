@@ -141,7 +141,7 @@ public class Hero
 			LOGGER.warning("Hero System: Couldnt load Heroes: " + e.getMessage());
 		}
 		
-		LOGGER.info("올림피아드: " + HEROES.size() + "명의 영웅을 로드하였습니다.");
+		LOGGER.info(HEROES.size() + "명의 영웅을 로드하였습니다.");
 	}
 	
 	private void processHeros(PreparedStatement ps, int charId, StatSet hero) throws SQLException

@@ -1090,11 +1090,11 @@ public class DailyTaskManager
 			
 			if (cleanCount > 0)
 			{
-				LOGGER.info("데이터베이스 정리: " + cleanCount + "개의 데이터 베이스를 정리하였습니다. 소요시간: " + ((System.currentTimeMillis() - cleanupStart) / 1000) + "초");
+				LOGGER.info(cleanCount + "개의 데이터 베이스를 정리하였습니다. 소요시간: " + ((System.currentTimeMillis() - cleanupStart) / 1000) + "초");
 			}
 			else
 			{
-				LOGGER.info("데이터베이스 정리: 정리할 데이터 베이스가 없습니다!");
+				LOGGER.info("정리할 데이터 베이스가 없습니다!");
 			}
 		}
 		catch (Exception e)
@@ -1116,11 +1116,11 @@ public class DailyTaskManager
 			}
 			if (cleanCount > 0)
 			{
-				LOGGER.info("데이터베이스 정리: " + cleanCount + "개의 만료된 타임스템프를 정리하였습니다.");
+				LOGGER.info(cleanCount + "개의 만료된 타임스템프를 정리하였습니다.");
 			}
 			else
 			{
-				LOGGER.info("데이터베이스 정리: 만료된 타임스템프가 없습니다.");
+				LOGGER.info("만료된 타임스템프가 없습니다.");
 			}
 		}
 		catch (Exception e)

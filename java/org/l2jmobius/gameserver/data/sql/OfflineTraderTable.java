@@ -306,7 +306,7 @@ public class OfflineTraderTable
 			}
 			
 			World.OFFLINE_TRADE_COUNT = nTraders;
-			LOGGER.info("총 " + nTraders + "개의 오프라인 상점을 로드하였습니다.");
+			LOGGER.info(nTraders + "개의 오프라인 상점을 로드하였습니다.");
 			
 			if (!Config.STORE_OFFLINE_TRADE_IN_REALTIME)
 			{

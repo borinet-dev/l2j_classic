@@ -57,7 +57,7 @@ public class ClanHallData implements IXmlReader
 	public void load()
 	{
 		parseDatapackDirectory("data/residences/clanHalls", true);
-		LOGGER.info("총 " + _clanHalls.size() + "개의 아지트를 로드하였습니다.");
+		LOGGER.info(_clanHalls.size() + "개의 아지트를 로드하였습니다.");
 	}
 	
 	@Override

@@ -62,7 +62,7 @@ public class CharInfoTable
 		{
 			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Couldn't retrieve all char id/name/access: " + e.getMessage(), e);
 		}
-		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _names.size() + " char names.");
+		LOGGER.info("현재 " + _names.size() + "개의 캐릭터가 생성되어 있습니다.");
 	}
 	
 	public void addName(Player player)

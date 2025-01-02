@@ -152,9 +152,8 @@ public class SpawnData implements IXmlReader
 	 */
 	public void despawnAll()
 	{
-		LOGGER.info(getClass().getSimpleName() + ": Removing all spawns...");
 		_spawns.forEach(SpawnTemplate::despawnAll);
-		LOGGER.info(getClass().getSimpleName() + ": All spawns has been removed!");
+		LOGGER.info(getClass().getSimpleName() + ": 모든 NPC가 디스폰 되었습니다!");
 	}
 	
 	public Collection<SpawnTemplate> getSpawns()

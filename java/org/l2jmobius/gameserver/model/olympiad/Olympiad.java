@@ -214,12 +214,7 @@ public class Olympiad extends ListenersContainer
 			LOGGER.log(Level.WARNING, "Olympiad System: Error loading noblesse data from database: ", e);
 		}
 		
-		synchronized (this)
-		{
-			LOGGER.info("올림피아드: 로딩 중....");
-		}
-		
-		LOGGER.info("올림피아드: " + NOBLES.size() + "명의 노블레스를 로드하였습니다.");
+		LOGGER.info(NOBLES.size() + "명의 노블레스를 로드하였습니다.");
 	}
 	
 	public int getOlympiadRank(Player player)
@@ -433,9 +428,9 @@ public class Olympiad extends ListenersContainer
 			final int numHours = (int) Math.floor(countDown % 24);
 			final int numDays = (int) Math.floor((countDown - numHours) / 24);
 			
-			LOGGER.info("올림피아드: " + numDays + "일 " + numHours + "시간 " + numMins + "분 후 경기가 시작됩니다.");
+			LOGGER.info(numDays + "일 " + numHours + "시간 " + numMins + "분 후 경기가 시작됩니다.");
 			String date = BorinetUtil.dataDateFormatKor.format(new Date(_compStart.getTimeInMillis()));
-			LOGGER.info("올림피아드: 경기 시작시간: " + date);
+			LOGGER.info("경기 시작시간: " + date);
 		}
 		
 		_scheduledCompStart = ThreadPool.schedule(() ->
@@ -448,7 +443,7 @@ public class Olympiad extends ListenersContainer
 			_inCompPeriod = true;
 			
 			Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.SHARPEN_YOUR_SWORDS_TIGHTEN_THE_STITCHING_IN_YOUR_ARMOR_AND_MAKE_HASTE_TO_A_OLYMPIAD_MANAGER_BATTLES_IN_THE_OLYMPIAD_GAMES_ARE_NOW_TAKING_PLACE));
-			LOGGER.info("올림피아드: 올림피아드 게임이 시작되었습니다.");
+			LOGGER.info("올림피아드 게임이 시작되었습니다.");
 			LOGGER_OLYMPIAD.info("Result,Player1,Player2,Player1 HP,Player2 HP,Player1 Damage,Player2 Damage,Points,Classed");
 			
 			_gameManager = ThreadPool.scheduleAtFixedRate(OlympiadGameManager.getInstance(), 30000, 30000);
@@ -471,7 +466,7 @@ public class Olympiad extends ListenersContainer
 				// }
 				_inCompPeriod = false;
 				Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.MUCH_CARNAGE_HAS_BEEN_LEFT_FOR_THE_CLEANUP_CREW_OF_THE_OLYMPIAD_STADIUM_BATTLES_IN_THE_OLYMPIAD_GAMES_ARE_NOW_OVER));
-				LOGGER.info("올림피아드: 올림피아드 경기가 종료되었습니다.");
+				LOGGER.info("올림피아드 경기가 종료되었습니다.");
 				
 				while (OlympiadGameManager.getInstance().isBattleStarted()) // cleared in game manager
 				{

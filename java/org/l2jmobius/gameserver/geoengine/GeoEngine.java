@@ -66,7 +66,7 @@ public class GeoEngine
 			System.exit(1);
 		}
 		
-		LOGGER.info("총 " + loadedRegions + "개의 GeoData를 로드하였습니다.");
+		LOGGER.info(loadedRegions + "개의 GeoData를 로드하였습니다.");
 	}
 	
 	public boolean hasGeoPos(int geoX, int geoY)
