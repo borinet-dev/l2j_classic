@@ -348,7 +348,7 @@ public class Item extends WorldObject
 				}
 			}
 		}
-		if (!process.contains("Mail"))
+		if (!process.contains("Mail") && (creator != null))
 		{
 			ItemLogManager.addLog(process, this, 0, _count, creator.getName(), creator.getObjectId(), String.valueOf(reference));
 		}

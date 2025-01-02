@@ -333,7 +333,7 @@ public class ItemTable
 				}
 			}
 		}
-		if (!process.contains("Mail"))
+		if (!process.contains("Mail") && (actor != null))
 		{
 			ItemLogManager.addLog(process, item, 0, item.getCount(), actor.getName(), actor.getObjectId(), String.valueOf(reference));
 		}
@@ -427,7 +427,7 @@ public class ItemTable
 					}
 				}
 			}
-			if (!process.contains("Mail"))
+			if (!process.contains("Mail") && (actor != null))
 			{
 				ItemLogManager.addLog(process, item, old, item.getCount(), actor.getName(), actor.getObjectId(), String.valueOf(reference));
 			}
