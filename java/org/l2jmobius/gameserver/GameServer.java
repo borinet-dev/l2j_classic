@@ -174,6 +174,7 @@ import org.l2jmobius.gameserver.util.BoatUtil;
 import org.l2jmobius.gameserver.util.BorinetTask;
 import org.l2jmobius.gameserver.util.BorinetUtil;
 import org.l2jmobius.gameserver.util.Broadcast;
+import org.l2jmobius.gameserver.util.MailSystemOptimizer;
 import org.l2jmobius.gameserver.util.TreeSpawn;
 import org.l2jmobius.gameserver.util.Util;
 
@@ -538,6 +539,10 @@ public class GameServer
 		if (Config.ALLOW_MAIL)
 		{
 			MailManager.getInstance();
+			if (Config.ALLOW_MAIL_CLEANER)
+			{
+				MailSystemOptimizer.getInstance();
+			}
 		}
 		if (Config.CUSTOM_MAIL_MANAGER_ENABLED)
 		{
@@ -556,9 +561,9 @@ public class GameServer
 			BorinetUtil.getInstance().printSection("정기선 시스템");
 			if (BoatManager.npcSpawned)
 			{
-				LOGGER.info("정기선 시스템: 선착장 관리인을 로드하였습니다.");
+				LOGGER.info("선착장 관리인을 로드하였습니다.");
 			}
-			LOGGER.info("정기선 시스템: " + BoatManager.getInstance()._boats.size() + "개의 정기선을 로드하였습니다.");
+			LOGGER.info(BoatManager.getInstance()._boats.size() + "개의 정기선을 로드하였습니다.");
 		}
 		
 		BorinetUtil.getInstance().printSection("라이센스");

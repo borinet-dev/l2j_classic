@@ -80,8 +80,8 @@ public class MessageDeletionTaskManager implements Runnable
 					}
 					MailManager.getInstance().sendMessage(new Message(msg, "대금청구 아이템이 수신대기 시간초과로 반송되었습니다.", "확인 후 반송된 아이템을 수령하시기 바랍니다."));
 				}
-				MailManager.getInstance().deleteMessageInDb(msgId.intValue());
-				PENDING_MESSAGES.remove(msgId);
+				// MailManager.getInstance().deleteMessageInDb(msgId.intValue());
+				// PENDING_MESSAGES.remove(msgId);
 			}
 		}
 		

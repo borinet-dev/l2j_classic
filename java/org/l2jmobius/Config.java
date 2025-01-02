@@ -216,6 +216,7 @@ public class Config
 	public static boolean ENCHANT_LEVEL_FOR_ABILITY;
 	public static int AUTO_FOLLOW_TELEPORT_PEE;
 	public static boolean ENABLE_SHOUT_CLAN_WAR;
+	public static boolean ALLOW_MAIL_CLEANER;
 	
 	/** 후원 메일 설정 **/
 	public static String DONATE_EMAIL_SMTP;
@@ -2044,6 +2045,7 @@ public class Config
 			ENCHANT_LEVEL_FOR_ABILITY = borinetConfig.getBoolean("AbilityForEnchantLvl", true);
 			AUTO_FOLLOW_TELEPORT_PEE = borinetConfig.getInt("AutoFollowTeleportFee", 50000);
 			ENABLE_SHOUT_CLAN_WAR = borinetConfig.getBoolean("EnableShoutClanWar", false);
+			ALLOW_MAIL_CLEANER = borinetConfig.getBoolean("AllowMailCleaner", false);
 			
 			// 레이스 이벤트
 			RACE_EVENT_ENABLE = borinetConfig.getBoolean("RaceEventEnable", false);
