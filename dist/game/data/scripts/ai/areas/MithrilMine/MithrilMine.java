@@ -151,25 +151,32 @@ public class MithrilMine extends AbstractNpcAI
 			}
 			case "TALK_TEXT":
 			{
-				String[] npcSayings =
-				{
-					"하찮은 것들이 채굴을 하러와?",
-					"나를 쓰러트리기 전에는 네놈들이 원하는 채굴은 할 수 없을것이다!!",
-					"누군가? 누가 방금 소리를 내었지?",
-					"나는 미스릴 광산을 지키는 보스다!!",
-					"도망갈 수 있을때 도망가도록!!",
-					"세상을 저주하는 자들이여, 내가 왔도다!",
-					"내 앞을 가로막는 자! 모두 무사하지 못할 것이다!",
-					"나의 권위에 도전하는 하찮은 무리들은 앞으로 나서라!",
-					"살육의 희열! 강탈의 쾌감! 얘들아, 오늘도 한바탕 해보자!",
-					"겁도 없이 채굴을 하러 들어온 대가를 치르게 해주마!",
-					"최근 내 구역 안에서 멋 모르고 날뛰는 놈들이 있다던데...",
-					"이 근처에 요즘 설치고 다니는 놈들이 있다던데..."
-				};
+				// 보스의 어그로 범위 내에 플레이어가 있는지 확인
+				boolean hasPlayersInAggroRange = ZONE.getCharactersInside().stream() //
+					.anyMatch(creature -> creature.isPlayer() && !creature.isInvisible() && creature.isInsideRadius3D(npc, 2000));
 				
-				int sec = Rnd.get(20, 90) * 1000;
-				String selectedSaying = npcSayings[Rnd.get(0, npcSayings.length - 1)];
-				npc.broadcastSay(ChatType.NPC_GENERAL, selectedSaying);
+				if (hasPlayersInAggroRange)
+				{
+					String[] npcSayings =
+					{
+						"하찮은 것들이 채굴을 하러와?",
+						"나를 쓰러트리기 전에는 네놈들이 원하는 채굴은 할 수 없을것이다!!",
+						"누군가? 누가 방금 소리를 내었지?",
+						"나는 미스릴 광산을 지키는 보스다!!",
+						"도망갈 수 있을때 도망가도록!!",
+						"세상을 저주하는 자들이여, 내가 왔도다!",
+						"내 앞을 가로막는 자! 모두 무사하지 못할 것이다!",
+						"나의 권위에 도전하는 하찮은 무리들은 앞으로 나서라!",
+						"살육의 희열! 강탈의 쾌감! 얘들아, 오늘도 한바탕 해보자!",
+						"겁도 없이 채굴을 하러 들어온 대가를 치르게 해주마!",
+						"최근 내 구역 안에서 멋 모르고 날뛰는 놈들이 있다던데...",
+						"이 근처에 요즘 설치고 다니는 놈들이 있다던데..."
+					};
+					
+					String selectedSaying = npcSayings[Rnd.get(0, npcSayings.length - 1)];
+					npc.broadcastSay(ChatType.NPC_GENERAL, selectedSaying);
+				}
+				int sec = Rnd.get(10, 30) * 1000;
 				startQuestTimer("TALK_TEXT", sec, npc, null);
 				break;
 			}
@@ -377,6 +384,11 @@ public class MithrilMine extends AbstractNpcAI
 	{
 		cancelQuestTimers("TALK_TEXT");
 		Npc npc = addSpawn(36706, 176525, -185195, -3720, 64554, false, 0);
+		if (npc == null)
+		{
+			ThreadPool.schedule(this::spawnBoss, 10000); // 10초 후 재시도
+			return;
+		}
 		if (!Config.BOSS_HAS_IMMUNITY)
 		{
 			int[] selectedSkills = BorinetUtil.getSkillLevel();
@@ -393,8 +405,7 @@ public class MithrilMine extends AbstractNpcAI
 				creature.spawnMe(creature.getX(), creature.getY(), creature.getZ());
 			}
 		}
-		int sec = Rnd.get(10, 90) * 1000;
-		startQuestTimer("TALK_TEXT", sec, npc, null);
+		startQuestTimer("TALK_TEXT", 1000, npc, null); // TALK_TEXT 실행
 	}
 	
 	@Override
