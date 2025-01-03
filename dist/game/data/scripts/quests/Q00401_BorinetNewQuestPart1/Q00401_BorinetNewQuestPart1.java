@@ -233,9 +233,10 @@ public class Q00401_BorinetNewQuestPart1 extends Quest
 			return;
 		}
 		
-		final QuestState qs = player.getQuestState(this.getClass().getSimpleName());
+		final QuestState qs = getQuestState(player, false);
+		final QuestState bqs = player.getQuestState("Q11005_PerfectLeatherArmor3");
 		
-		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && player.isInCategory(CategoryType.SECOND_CLASS_GROUP) && canStartQuest(player))
+		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && player.isInCategory(CategoryType.SECOND_CLASS_GROUP) && (bqs != null) && bqs.isCompleted())
 		{
 			final String html = getHtm(player, "popup.html");
 			player.sendPacket(new TutorialShowHtml(html));

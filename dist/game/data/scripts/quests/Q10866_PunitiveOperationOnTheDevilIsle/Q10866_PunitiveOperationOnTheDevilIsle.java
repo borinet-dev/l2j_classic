@@ -86,7 +86,7 @@ public class Q10866_PunitiveOperationOnTheDevilIsle extends Quest
 				if (qs.isStarted())
 				{
 					addExpAndSp(player, 150000, 4500);
-					giveAdena(player, 13136, true);
+					giveAdena(player, 1313600, true);
 					qs.exitQuest(false, true);
 					htmltext = event;
 				}

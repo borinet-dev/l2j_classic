@@ -310,10 +310,10 @@ public class Q11005_PerfectLeatherArmor3 extends Quest
 		}
 		
 		final Player player = event.getPlayer();
-		final QuestState qs = player.getQuestState(this.getClass().getSimpleName());
+		final QuestState qs = getQuestState(player, false);
 		final QuestState bqs = player.getQuestState("Q11004_PerfectLeatherArmor2");
 		
-		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < 20) && (bqs != null) && bqs.isCompleted() && (qs == null) && canStartQuest(player))
+		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < 20) && (bqs != null) && bqs.isCompleted() && (qs == null))
 		{
 			final String html = getHtm(player, "popup.htm");
 			player.sendPacket(new TutorialShowHtml(html));

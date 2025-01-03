@@ -235,10 +235,10 @@ public class Q00402_BorinetNewQuestPart2 extends Quest
 			return;
 		}
 		
-		final QuestState qs = player.getQuestState(this.getClass().getSimpleName());
-		final QuestState qs2 = player.getQuestState("Q11000_MoonKnight");
+		final QuestState qs = getQuestState(player, false);
+		final QuestState bqs = player.getQuestState("Q00401_BorinetNewQuestPart1");
 		
-		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && (qs2 != null) && qs2.isCompleted() && canStartQuest(player))
+		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && (bqs != null) && bqs.isCompleted())
 		{
 			final String html = getHtm(player, "popup.html");
 			player.sendPacket(new TutorialShowHtml(html));

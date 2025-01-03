@@ -233,8 +233,8 @@ public class Q00404_BorinetNewQuestPart4 extends Quest
 		}
 		
 		final QuestState qs = getQuestState(player, false);
-		
-		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && canStartQuest(player))
+		final QuestState bqs = player.getQuestState("Q00403_BorinetNewQuestPart3");
+		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && (bqs != null) && bqs.isCompleted())
 		{
 			final String html = getHtm(player, "popup.html");
 			player.sendPacket(new TutorialShowHtml(html));

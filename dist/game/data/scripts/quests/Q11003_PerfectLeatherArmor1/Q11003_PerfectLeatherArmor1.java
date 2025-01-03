@@ -307,9 +307,10 @@ public class Q11003_PerfectLeatherArmor1 extends Quest
 		}
 		
 		final Player player = event.getPlayer();
-		final QuestState qs = player.getQuestState(this.getClass().getSimpleName());
+		final QuestState qs = getQuestState(player, false);
+		final QuestState bqs = player.getQuestState("Q11002_HelpWithTempleRestoration");
 		
-		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && canStartQuest(player))
+		if ((player.getLevel() >= MIN_LEVEL) && (player.getLevel() < MAX_LEVEL) && (qs == null) && (bqs != null) && bqs.isCompleted())
 		{
 			final String html = getHtm(player, "popup.htm");
 			player.sendPacket(new TutorialShowHtml(html));
