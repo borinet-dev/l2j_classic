@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event name="CustomEvent" active="2025 01 22 17 00-2025 02 03 06 00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/eventConfig.xsd">
+	<droplist>
+		<add item="90916" min="1" max="1" chance="5.32%" minLevel="5" maxLevel="50" isDrop="true" /> <!-- 포장된 떡국 -->
+		<add item="90916" min="1" max="1" chance="2.22%" minLevel="51" maxLevel="80" isDrop="true" /> <!-- 포장된 떡국 -->
+		<add item="90916" min="1" max="1" chance="1.02%" minLevel="81" maxLevel="99" isDrop="true" /> <!-- 포장된 떡국 -->
+		<add item="41396" min="1" max="1" chance="4.12%" minLevel="20" maxLevel="99" />
+		<add item="41397" min="1" max="1" chance="3.22%" minLevel="20" maxLevel="99" />
+		<add item="41398" min="1" max="1" chance="2.22%" minLevel="20" maxLevel="99" />
+		<add item="41399" min="1" max="1" chance="3.72%" minLevel="20" maxLevel="99" />
+		<add item="41400" min="1" max="1" chance="3.72%" minLevel="20" maxLevel="99" />
+	</droplist>
+	<destroyItemsOnEnd>
+		<item id="41395" />
+		<item id="41396" />
+		<item id="41397" />
+		<item id="41398" />
+		<item id="41399" />
+		<item id="41400" />
+	</destroyItemsOnEnd>
+</event>
