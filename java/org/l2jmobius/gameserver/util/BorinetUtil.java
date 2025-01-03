@@ -1175,6 +1175,12 @@ public class BorinetUtil
 		LocalDateTime start = LocalDateTime.of(now.getYear(), Month.DECEMBER, 1, 0, 0);
 		LocalDateTime end = LocalDateTime.of(now.getMonthValue() >= Month.DECEMBER.getValue() ? now.getYear() + 1 : now.getYear(), Month.FEBRUARY, 15, 23, 59);
 		
+		// Adjust start and end year logic
+		if (now.isBefore(start))
+		{
+			start = start.minusYears(1);
+		}
+		
 		return now.isAfter(start) && now.isBefore(end);
 	}
 	
