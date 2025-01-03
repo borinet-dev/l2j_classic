@@ -4691,11 +4691,6 @@ public class Player extends Playable
 			{
 				_party.distributeItem(this, target);
 			}
-			else if ((target.getId() == Inventory.ADENA_ID) && (_inventory.getAdenaInstance() != null))
-			{
-				addAdena("습득", target.getCount(), null, true);
-				ItemTable.getInstance().destroyItem("Pickup", target, this, null);
-			}
 			else
 			{
 				addItem("습득", target, null, true);
@@ -6785,7 +6780,7 @@ public class Player extends Playable
 						// a possible restart-while-modifysubclass cheat has been attempted.
 						// Switching to use base class
 						player.setClassId(player.getBaseClass());
-						LOGGER.warning(player + " reverted to base class. Possibly has tried a relogin exploit while subclassing.");
+						// LOGGER.warning(player + " reverted to base class. Possibly has tried a relogin exploit while subclassing.");
 					}
 					else
 					{

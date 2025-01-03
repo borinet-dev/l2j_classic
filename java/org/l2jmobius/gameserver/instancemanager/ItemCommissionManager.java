@@ -37,10 +37,11 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
-import org.l2jmobius.gameserver.cache.HtmCache;
+import org.l2jmobius.gameserver.data.sql.CharInfoTable;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.model.Message;
+import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.CommissionManager;
@@ -50,7 +51,6 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionBuyItem;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionDelete;
@@ -58,6 +58,7 @@ import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommi
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionList;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionList.CommissionListReplyType;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionRegister;
+import org.l2jmobius.gameserver.util.Util;
 
 /**
  * @author NosBit, Ren
@@ -65,6 +66,7 @@ import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommi
 public class ItemCommissionManager
 {
 	private static final Logger LOGGER = Logger.getLogger(ItemCommissionManager.class.getName());
+	private static final Logger LOGGER_ITEMS = Logger.getLogger("item");
 	
 	private static final int[] DURATION =
 	{
@@ -255,7 +257,7 @@ public class ItemCommissionManager
 			}
 			
 			final long registrationFee = (long) Math.max(Config.MIN_REGISTRATION_AND_SALE_FEE, (totalPrice * Config.REGISTRATION_FEE_PER_DAY) * Math.min(durationInDays, 7));
-			if (!player.getInventory().reduceAdena("Commission Registration Fee", registrationFee, player, null))
+			if (!player.getInventory().reduceAdena("판매대행 등록 수수료", registrationFee, player, null))
 			{
 				player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ADENA_TO_REGISTER_THE_ITEM);
 				player.sendPacket(ExResponseCommissionRegister.FAILED);
@@ -270,6 +272,14 @@ public class ItemCommissionManager
 				player.sendPacket(ExResponseCommissionRegister.FAILED);
 				return;
 			}
+			
+			LOGGER_ITEMS.info("판매대행 아이템 등록" // in case of null
+				+ ", " + itemInstance.getObjectId() //
+				+ ": " + (itemInstance.getEnchantLevel() > 0 ? "+" + itemInstance.getEnchantLevel() + " " : "") // 인챈트 레벨이 0보다 클 경우 추가
+				+ itemInstance.getTemplate().getName() //
+				+ "(" + Util.formatAdena(itemInstance.getCount()) //
+				+ "), " + String.valueOf(player) // in case of null
+				+ ", " + String.valueOf("판매대행")); // in case of null
 			
 			switch (Math.max(durationType, discountInPercentage))
 			{
@@ -366,7 +376,7 @@ public class ItemCommissionManager
 		
 		if (deleteItemFromDB(commissionId))
 		{
-			player.getInventory().addItem("Commission Cancellation", commissionItem.getItemInstance(), player, null);
+			player.getInventory().addItem("판매대행 등록취소", commissionItem.getItemInstance(), player, null);
 			player.sendPacket(SystemMessageId.CANCELLATION_OF_SALE_FOR_THE_ITEM_IS_SUCCESSFUL);
 			player.sendPacket(ExResponseCommissionDelete.SUCCEED);
 		}
@@ -408,7 +418,7 @@ public class ItemCommissionManager
 		}
 		
 		final long totalPrice = itemInstance.getCount() * commissionItem.getPricePerUnit();
-		if (!player.getInventory().reduceAdena("Commission Registration Fee", totalPrice, player, null))
+		if (!player.getInventory().reduceAdena("판매대행 아이템 구매금액", totalPrice, player, null))
 		{
 			player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ADENA);
 			player.sendPacket(ExResponseCommissionBuyItem.FAILED);
@@ -434,12 +444,15 @@ public class ItemCommissionManager
 			String bodyEnd = "\n\n판매 대행 시스템을 이용해주셔서 감사드립니다.";
 			final Message mail = new Message(itemInstance.getOwnerId(), subject, body, bodyEnd, itemInstance, MailType.COMMISSION_SOLD_ITEM);
 			final Mail attachement = mail.createAttachments();
-			attachement.addItem("판매대행 대금", Inventory.ADENA_ID, (totalPrice - saleFee) + addDiscount, player, null);
+			
+			String sellerName = CharInfoTable.getInstance().getNameById(itemInstance.getOwnerId());
+			Player seller = World.getInstance().getPlayer(sellerName);
+			attachement.addItem("판매대행 대금 발송", Inventory.ADENA_ID, (totalPrice - saleFee) + addDiscount, player, seller);
 			MailManager.getInstance().sendMessage(mail);
 			
 			player.sendPacket(new ExResponseCommissionBuyItem(commissionItem));
 			player.getInventory().addItem("판매대행 아이템 구매", itemInstance, player, null);
-			showHtml(player, itemInstance.getItemName());
+			// showHtml(player, itemInstance.getItemName());
 		}
 		else
 		{
@@ -448,14 +461,14 @@ public class ItemCommissionManager
 		}
 	}
 	
-	private void showHtml(Player player, String itemName)
-	{
-		String html = HtmCache.getInstance().getHtm(player, "data/html/Commission.htm");
-		html = html.replace("%itemName%", itemName);
-		
-		player.sendPacket(new NpcHtmlMessage(html));
-		
-	}
+	// private void showHtml(Player player, String itemName)
+	// {
+	// String html = HtmCache.getInstance().getHtm(player, "data/html/Commission.htm");
+	// html = html.replace("%itemName%", itemName);
+	//
+	// player.sendPacket(new NpcHtmlMessage(html));
+	//
+	// }
 	
 	/**
 	 * Deletes a commission item from database.

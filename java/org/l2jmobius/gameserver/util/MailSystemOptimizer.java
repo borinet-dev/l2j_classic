@@ -1,20 +1,16 @@
 package org.l2jmobius.gameserver.util;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 
 /**
@@ -23,57 +19,34 @@ import org.l2jmobius.commons.database.DatabaseFactory;
 public class MailSystemOptimizer
 {
 	private static final Logger LOGGER = Logger.getLogger(MailSystemOptimizer.class.getName());
-	private final String backupDate = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
 	
-	protected MailSystemOptimizer()
+	public void MailSystemOptimizer_start()
 	{
-		if (!setupBackupFolders())
-		{
-			LOGGER.info("백업 폴더가 생성되지 않아 백업을 진행할 수 없습니다.");
-			return;
-		}
-		
+		backupTablesToSqlFile(); // 백업 데이터를 파일로 저장
+		truncateBackupTables(); // 초기화
+		createIndexes(); // 작업 전 인덱스 생성
 		try
 		{
-			backupDatabase();
+			optimizeAndDeleteMessagesWithoutItemsBatch();
+			optimizeAndDeleteItemsWithoutMessagesBatch();
 		}
 		finally
 		{
-			backupTablesToSqlFile(); // 백업 데이터를 파일로 저장
-			truncateBackupTables(); // 초기화
-			createIndexes(); // 작업 전 인덱스 생성
-			try
-			{
-				optimizeAndDeleteMessagesWithoutItemsBatch();
-				optimizeAndDeleteItemsWithoutMessagesBatch();
-			}
-			finally
-			{
-				dropIndexes(); // 작업 종료 후 인덱스 삭제
-			}
+			dropIndexes(); // 작업 종료 후 인덱스 삭제
 		}
-	}
-	
-	private boolean setupBackupFolders()
-	{
-		File rootDir = new File("backup");
-		File dateDir = new File(rootDir, backupDate);
-		
-		// 실제로 폴더를 생성
-		return dateDir.exists() || dateDir.mkdirs();
 	}
 	
 	private void backupTablesToSqlFile()
 	{
-		exportTableToSqlFile("messages_backup", "messages_backup.sql");
-		exportTableToSqlFile("items_backup", "items_backup.sql");
+		exportTableToSqlFile("messages_backup", "messages_backup");
+		exportTableToSqlFile("items_backup", "items_backup");
 	}
 	
 	private void exportTableToSqlFile(String tableName, String fileName)
 	{
 		String query = "SELECT * FROM " + tableName;
-		String backup_date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy_MM_dd"));
-		String fullPath = "backup/" + backup_date + "/" + fileName;
+		String backup_date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy_MM_dd HH_mm"));
+		String fullPath = "backup/" + fileName + "_" + backup_date + ".sql";
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement stmt = con.prepareStatement(query);
@@ -245,37 +218,6 @@ public class MailSystemOptimizer
 		{
 			LOGGER.log(Level.SEVERE, "우편 시스템: 첨부 아이템 최적화 정리 중 오류 발생:", e);
 		}
-	}
-	
-	private void backupDatabase()
-	{
-		ExecutorService executor = Executors.newSingleThreadExecutor(); // 병렬 실행 스레드 풀
-		executor.submit(() ->
-		{
-			String backupDir = "backup/" + backupDate;
-			String backupFile = backupDir + "/l2jserver.sql";
-			
-			String mysqldumpPath = "C:/Program Files/MariaDB 11.4/bin/mysqldump.exe";
-			String username = "root";
-			String password = Config.DATABASE_PASSWORD;
-			String database = "l2jserver";
-			String charset = "--default-character-set=euckr";
-			String dumpCommand = String.format( //
-				"%s -u%s -p%s %s --result-file=\"%s\" %s", //
-				mysqldumpPath, username, password, charset, backupFile, database //
-			);
-			
-			try
-			{
-				Runtime.getRuntime().exec(dumpCommand);
-			}
-			catch (IOException e)
-			{
-				LOGGER.log(Level.SEVERE, "백업 작업 중 예외 발생", e);
-			}
-		});
-		
-		executor.shutdown(); // 스레드 풀 종료
 	}
 	
 	public static MailSystemOptimizer getInstance()

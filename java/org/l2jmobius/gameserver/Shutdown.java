@@ -16,6 +16,7 @@
  */
 package org.l2jmobius.gameserver;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -230,6 +231,7 @@ public class Shutdown extends Thread
 			// Backup database.
 			if (Config.BACKUP_DATABASE)
 			{
+				new File("backup").mkdirs();
 				DatabaseBackup.performBackup();
 			}
 			

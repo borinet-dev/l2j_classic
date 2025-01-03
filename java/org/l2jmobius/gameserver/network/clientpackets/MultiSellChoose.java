@@ -447,7 +447,7 @@ public class MultiSellChoose implements IClientIncomingPacket
 					else
 					{
 						// Take a regular item.
-						final Item destroyedItem = inventory.destroyItemByItemId("아이템 구매", ingredient.getId(), totalCount, player, npc);
+						final Item destroyedItem = inventory.destroyItemByItemId("아이템 구매 대금", ingredient.getId(), totalCount, player, npc);
 						if (destroyedItem != null)
 						{
 							iu.addItem(destroyedItem);
@@ -516,7 +516,7 @@ public class MultiSellChoose implements IClientIncomingPacket
 				else
 				{
 					// Give item.
-					final Item addedItem = inventory.addItem("멀티셀", product.getId(), totalCount, player, npc, false);
+					final Item addedItem = inventory.addItem("아이템 구매", product.getId(), totalCount, player, npc, false);
 					
 					// Check if the newly given item should be enchanted.
 					if (itemEnchantmentProcessed && list.isMaintainEnchantment() && (itemEnchantment != null) && addedItem.isEquipable() && addedItem.getTemplate().getClass().equals(itemEnchantment.getItem().getClass()))

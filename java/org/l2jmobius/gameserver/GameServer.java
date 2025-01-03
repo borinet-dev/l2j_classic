@@ -150,7 +150,6 @@ import org.l2jmobius.gameserver.instancemanager.WalkingManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.instancemanager.events.EventDropManager;
 import org.l2jmobius.gameserver.instancemanager.games.MiniGameScoreManager;
-import org.l2jmobius.gameserver.itemlog.ItemLogDatabase;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventResetCheck;
@@ -541,7 +540,8 @@ public class GameServer
 			MailManager.getInstance();
 			if (Config.ALLOW_MAIL_CLEANER)
 			{
-				MailSystemOptimizer.getInstance();
+				MailSystemOptimizer.getInstance().MailSystemOptimizer_start();
+				new File("backup").mkdirs();
 			}
 		}
 		if (Config.CUSTOM_MAIL_MANAGER_ENABLED)
@@ -551,8 +551,6 @@ public class GameServer
 		
 		BorinetUtil.getInstance().printSection("쿠폰 시스템");
 		CouponManager.getInstance().loadCoupon();
-		// 아이템 로그
-		ItemLogDatabase.getInstance().Item_Log();
 		// 크리스마스 트리 스폰
 		TreeSpawn.spawnTrees();
 		

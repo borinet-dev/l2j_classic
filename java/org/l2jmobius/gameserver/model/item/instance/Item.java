@@ -52,7 +52,6 @@ import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
 import org.l2jmobius.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2jmobius.gameserver.instancemanager.SiegeGuardManager;
-import org.l2jmobius.gameserver.itemlog.ItemLogManager;
 import org.l2jmobius.gameserver.model.DropProtection;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.VariationInstance;
@@ -97,7 +96,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.ItemAppearanceTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemLifeTimeTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemManaTaskManager;
-import org.l2jmobius.gameserver.util.GMAudit;
+import org.l2jmobius.gameserver.util.Util;
 
 /**
  * This class manages items.
@@ -323,51 +322,25 @@ public class Item extends WorldObject
 	{
 		setOwnerId(ownerId);
 		
-		if (Config.LOG_ITEMS)
+		if (Config.LOG_ITEMS && (process != null) && !process.equals("Fishing Reward"))
 		{
 			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
 			{
-				if (_enchantLevel > 0)
+				String proName = String.valueOf(process);
+				if (process.equals("SendMail"))
 				{
-					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
-						+ ", item " + getObjectId() //
-						+ ": +" + _enchantLevel //
-						+ " " + _itemTemplate.getName() //
-						+ " 보유-(" + _count + "), " //
-						+ String.valueOf(creator) + ", " // in case of null
-						+ String.valueOf(reference)); // in case of null
+					proName = "우편 발신";
 				}
-				else
+				else if (process.equals("Mail"))
 				{
-					LOG_ITEMS.info("변경 :" + String.valueOf(process) // in case of null
-						+ ", item " + getObjectId() //
-						+ ": " + _itemTemplate.getName() //
-						+ " 보유-(" + _count + "), " //
-						+ String.valueOf(creator) + ", " // in case of null
-						+ String.valueOf(reference)); // in case of null
+					proName = "우편 수신";
 				}
-			}
-		}
-		if (!process.contains("Mail") && (creator != null))
-		{
-			ItemLogManager.addLog(process, this, 0, _count, creator.getName(), creator.getObjectId(), String.valueOf(reference));
-		}
-		
-		if ((creator != null) && creator.isGM())
-		{
-			String referenceName = "no-reference";
-			if (reference instanceof WorldObject)
-			{
-				referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
-			}
-			else if (reference instanceof String)
-			{
-				referenceName = (String) reference;
-			}
-			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
-			if (Config.GMAUDIT)
-			{
-				GMAudit.auditGMAction(creator.getName() + " [" + creator.getObjectId() + "]", process + "(id: " + _itemId + " name: " + getName() + ")", targetName, "Object referencing this action is: " + referenceName);
+				LOG_ITEMS.info(proName // in case of null
+					+ ", 1, " + getObjectId() //
+					+ ": " + (_enchantLevel > 0 ? "+" + _enchantLevel + " " : "") + _itemTemplate.getName() //
+					+ "-(" + Util.formatAdena(_count) + "), " //
+					+ String.valueOf(creator) + ", " // in case of null
+					+ String.valueOf(reference)); // in case of null
 			}
 		}
 	}
@@ -476,7 +449,7 @@ public class Item extends WorldObject
 	 */
 	public void changeCount(String process, long count, Player creator, Object reference)
 	{
-		if ((count == 0) || (creator == null))
+		if (count == 0)
 		{
 			return;
 		}
@@ -499,53 +472,35 @@ public class Item extends WorldObject
 		
 		_storedInDb = false;
 		
-		if (Config.LOG_ITEMS && (process != null))
+		if (Config.LOG_ITEMS && (process != null) && !(process.equals("Commission Registration") || process.equals("Fishing Reward") || process.equals("FunctionFee")))
 		{
 			if (!Config.LOG_ITEMS_SMALL_LOG || (Config.LOG_ITEMS_SMALL_LOG && (_itemTemplate.isEquipable() || (_itemTemplate.getId() == ADENA_ID))))
 			{
-				if (_enchantLevel > 0)
+				String proName = String.valueOf(process);
+				if (process.equals("아이템 판매") && _itemTemplate.getName().equals("아데나"))
 				{
-					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
-						+ ", item " + getObjectId() //
-						+ ": +" + _enchantLevel //
-						+ " " + _itemTemplate.getName() //
-						+ " 보유-(" + _count + "), 기존-(" //
-						+ String.valueOf(old) + "), " // in case of null
-						+ String.valueOf(creator.getName() + ", " // in case of null
-							+ String.valueOf(reference))); // in case of null
+					proName = "아이템 판매 대금";
 				}
-				else
+				else if (process.equals("Buy") && _itemTemplate.getName().equals("아데나"))
 				{
-					LOG_ITEMS.info("변경: " + String.valueOf(process) // in case of null
-						+ ", item " + getObjectId() //
-						+ ": " + _itemTemplate.getName() //
-						+ " 보유-(" + _count + "), 기존-(" //
-						+ String.valueOf(old) + "), " // in case of null
-						+ String.valueOf(creator.getName() + ", " // in case of null
-							+ String.valueOf(reference))); // in case of null
+					proName = "아이템 구매 대금";
 				}
-			}
-		}
-		if (!process.contains("Mail"))
-		{
-			ItemLogManager.addLog(process, this, old, _count, creator.getName(), creator.getObjectId(), String.valueOf(reference));
-		}
-		
-		if (creator.isGM())
-		{
-			String referenceName = "no-reference";
-			if (reference instanceof WorldObject)
-			{
-				referenceName = (((WorldObject) reference).getName() != null ? ((WorldObject) reference).getName() : "no-name");
-			}
-			else if (reference instanceof String)
-			{
-				referenceName = (String) reference;
-			}
-			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
-			if (Config.GMAUDIT)
-			{
-				GMAudit.auditGMAction(creator.getName() + " [" + creator.getObjectId() + "]", process + "(id: " + _itemId + " objId: " + getObjectId() + " name: " + getName() + " count: " + count + ")", targetName, "Object referencing this action is: " + referenceName);
+				else if (process.equals("SendMail"))
+				{
+					proName = "우편 발신";
+				}
+				else if (process.equals("Mail"))
+				{
+					proName = "우편 수신";
+				}
+				
+				LOG_ITEMS.info(proName // in case of null
+					+ ", 2, " + getObjectId() //
+					+ ": " + (_enchantLevel > 0 ? "+" + _enchantLevel + " " : "") + _itemTemplate.getName() //
+					+ " 보유-(" + Util.formatAdena(_count) + "), 기존-(" //
+					+ String.valueOf(Util.formatAdena(old)) + "), " // in case of null
+					+ String.valueOf(creator) + ", " // in case of null
+					+ String.valueOf(reference)); // in case of null
 			}
 		}
 	}

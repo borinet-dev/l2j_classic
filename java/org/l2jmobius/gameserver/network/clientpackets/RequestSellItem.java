@@ -160,17 +160,17 @@ public class RequestSellItem implements IClientIncomingPacket
 			
 			if (Config.ALLOW_REFUND)
 			{
-				player.getInventory().transferItem("상점판매", i.getObjectId(), i.getCount(), player.getRefund(), player, merchant);
+				player.getInventory().transferItem("아이템 판매", i.getObjectId(), i.getCount(), player.getRefund(), player, merchant);
 			}
 			else
 			{
-				player.getInventory().destroyItem("상점판매", i.getObjectId(), i.getCount(), player, merchant);
+				player.getInventory().destroyItem("아이템 판매", i.getObjectId(), i.getCount(), player, merchant);
 			}
 		}
 		
 		if (!Config.MERCHANT_ZERO_SELL_PRICE)
 		{
-			player.addAdena("상점판매", totalPrice, merchant, false);
+			player.addAdena("아이템 판매", totalPrice, merchant, false);
 		}
 		
 		// Update current load as well

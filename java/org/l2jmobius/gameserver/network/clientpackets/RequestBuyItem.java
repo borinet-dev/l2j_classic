@@ -237,12 +237,12 @@ public class RequestBuyItem implements IClientIncomingPacket
 			{
 				if (product.decreaseCount(i.getCount()))
 				{
-					player.getInventory().addItem("Buy", i.getId(), i.getCount(), player, merchant);
+					player.getInventory().addItem("아이템 구매", i.getId(), i.getCount(), player, merchant);
 				}
 			}
 			else
 			{
-				player.getInventory().addItem("Buy", i.getId(), i.getCount(), player, merchant);
+				player.getInventory().addItem("아이템 구매", i.getId(), i.getCount(), player, merchant);
 			}
 		}
 		

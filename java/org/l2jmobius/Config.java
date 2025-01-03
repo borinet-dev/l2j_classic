@@ -216,7 +216,6 @@ public class Config
 	public static boolean ENCHANT_LEVEL_FOR_ABILITY;
 	public static int AUTO_FOLLOW_TELEPORT_PEE;
 	public static boolean ENABLE_SHOUT_CLAN_WAR;
-	public static boolean ALLOW_MAIL_CLEANER;
 	
 	/** 후원 메일 설정 **/
 	public static String DONATE_EMAIL_SMTP;
@@ -318,10 +317,6 @@ public class Config
 	public static boolean LOG_ITEMS_SMALL_LOG;
 	public static boolean LOG_ITEM_ENCHANTS;
 	public static boolean LOG_SKILL_ENCHANTS;
-	public static boolean LOG_TABLE_ITEMS;
-	public static List<Integer> NO_ITEM_LOG_ITEM_IDS = new ArrayList<>();
-	public static List<String> NO_ITEM_LOG_NAMES = new ArrayList<>();
-	public static boolean FISING_REWARD_ITEM_LOG_ENABLE;
 	
 	/** 판매 대행 **/
 	public static int INTERACTION_DISTANCE;
@@ -1079,15 +1074,14 @@ public class Config
 	public static String GAMESERVER_HOSTNAME;
 	public static String DATABASE_DRIVER;
 	public static String DATABASE_URL;
-	public static String DATABASE_LOG_URL;
 	public static String DATABASE_LOGIN;
 	public static String DATABASE_PASSWORD;
+	public static String MARIADB_DUMP_PATH;
+	public static boolean ALLOW_MAIL_CLEANER;
+	public static int BACKUP_DAYS;
 	public static int DATABASE_MAX_CONNECTIONS;
 	public static boolean SERVER_GMONLY;
 	public static boolean BACKUP_DATABASE;
-	public static String MYSQL_BIN_PATH;
-	public static String BACKUP_PATH;
-	public static int BACKUP_DAYS;
 	public static int MAXIMUM_ONLINE_USERS;
 	public static boolean HARDWARE_INFO_ENABLED;
 	public static boolean KICK_MISSING_HWID;
@@ -1750,15 +1744,14 @@ public class Config
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
 			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2jserver");
-			DATABASE_LOG_URL = serverConfig.getString("LOG_URL", "jdbc:mariadb://localhost/item_log");
 			DATABASE_LOGIN = serverConfig.getString("Login", "root");
 			DATABASE_PASSWORD = serverConfig.getString("Password", "");
+			MARIADB_DUMP_PATH = serverConfig.getString("MariadbDumpPath", "C:/Program Files/MariaDB 10.6/bin/mysqldump.exe");
+			BACKUP_DAYS = serverConfig.getInt("BackupDays", 30);
+			ALLOW_MAIL_CLEANER = serverConfig.getBoolean("AllowMailCleaner", false);
 			DATABASE_MAX_CONNECTIONS = serverConfig.getInt("MaximumDbConnections", 10);
 			SERVER_GMONLY = serverConfig.getBoolean("ServerGMOnly", false);
 			BACKUP_DATABASE = serverConfig.getBoolean("BackupDatabase", false);
-			MYSQL_BIN_PATH = serverConfig.getString("MySqlBinLocation", "C:/xampp/mysql/bin/");
-			BACKUP_PATH = serverConfig.getString("BackupPath", "../backup/");
-			BACKUP_DAYS = serverConfig.getInt("BackupDays", 30);
 			try
 			{
 				DATAPACK_ROOT = new File(serverConfig.getString("DatapackRoot", ".").replaceAll("\\\\", "/")).getCanonicalFile();
@@ -2045,7 +2038,6 @@ public class Config
 			ENCHANT_LEVEL_FOR_ABILITY = borinetConfig.getBoolean("AbilityForEnchantLvl", true);
 			AUTO_FOLLOW_TELEPORT_PEE = borinetConfig.getInt("AutoFollowTeleportFee", 50000);
 			ENABLE_SHOUT_CLAN_WAR = borinetConfig.getBoolean("EnableShoutClanWar", false);
-			ALLOW_MAIL_CLEANER = borinetConfig.getBoolean("AllowMailCleaner", false);
 			
 			// 레이스 이벤트
 			RACE_EVENT_ENABLE = borinetConfig.getBoolean("RaceEventEnable", false);
@@ -2205,12 +2197,6 @@ public class Config
 			LOG_ITEMS_SMALL_LOG = ItemLogConfig.getBoolean("LogItemsSmallLog", false);
 			LOG_ITEM_ENCHANTS = ItemLogConfig.getBoolean("LogItemEnchants", false);
 			LOG_SKILL_ENCHANTS = ItemLogConfig.getBoolean("LogSkillEnchants", false);
-			LOG_TABLE_ITEMS = ItemLogConfig.getBoolean("LogTableItems", false);
-			final String noLogIds = ItemLogConfig.getString("NoItemLogItemIds", "");
-			final String noLogNames = ItemLogConfig.getString("NoItemLogItemNames", "");
-			NO_ITEM_LOG_ITEM_IDS = noLogIds.isEmpty() ? new ArrayList<>() : parseItemIds(noLogIds);
-			NO_ITEM_LOG_NAMES = noLogNames.isEmpty() ? new ArrayList<>() : parseItemNames(noLogNames);
-			FISING_REWARD_ITEM_LOG_ENABLE = ItemLogConfig.getBoolean("FishingRewardItemLogEnable", true);
 			
 			/** 판매 대행 **/
 			final PropertiesParser ItemsCommissionConfig = new PropertiesParser(ITEM_COMMISSION_CONFIG_FILE);
@@ -4382,10 +4368,6 @@ public class Config
 			DATABASE_LOGIN = loginConfig.getString("Login", "root");
 			DATABASE_PASSWORD = loginConfig.getString("Password", "");
 			DATABASE_MAX_CONNECTIONS = loginConfig.getInt("MaximumDbConnections", 10);
-			BACKUP_DATABASE = loginConfig.getBoolean("BackupDatabase", false);
-			MYSQL_BIN_PATH = loginConfig.getString("MySqlBinLocation", "C:/xampp/mysql/bin/");
-			BACKUP_PATH = loginConfig.getString("BackupPath", "../backup/");
-			BACKUP_DAYS = loginConfig.getInt("BackupDays", 30);
 			SHOW_LICENCE = loginConfig.getBoolean("ShowLicence", true);
 			SHOW_PI_AGREEMENT = loginConfig.getBoolean("ShowPIAgreement", false);
 			AUTO_CREATE_ACCOUNTS = loginConfig.getBoolean("AutoCreateAccounts", true);

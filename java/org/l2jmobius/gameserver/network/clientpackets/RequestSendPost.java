@@ -25,7 +25,6 @@ import org.l2jmobius.gameserver.data.sql.CharInfoTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.itemlog.ItemLogManager;
 import org.l2jmobius.gameserver.model.BlockList;
 import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -279,7 +278,7 @@ public class RequestSendPost implements IClientIncomingPacket
 		}
 		
 		// Check if enough adena and charge the fee
-		if ((currentAdena < fee) || !player.reduceAdena("MailFee", fee, null, false))
+		if ((currentAdena < fee) || !player.reduceAdena("우편 수수료", fee, null, false))
 		{
 			player.sendPacket(SystemMessageId.YOU_CANNOT_FORWARD_BECAUSE_YOU_DON_T_HAVE_ENOUGH_ADENA);
 			return false;
@@ -328,12 +327,6 @@ public class RequestSendPost implements IClientIncomingPacket
 					playerIU.addRemovedItem(oldItem);
 				}
 			}
-			long newcount = oldItem.getCount();
-			if (oldItem.getCount() == newItem.getCount())
-			{
-				newcount = 0;
-			}
-			ItemLogManager.addLog("메일 발신", newItem, newItem.getCount(), newcount, player.getName(), player.getObjectId(), msg.getReceiverName() + "[" + msg.getReceiverId() + "]");
 		}
 		
 		// Send updated item list to the player

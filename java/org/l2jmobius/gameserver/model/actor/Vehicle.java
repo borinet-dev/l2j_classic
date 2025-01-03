@@ -386,7 +386,7 @@ public abstract class Vehicle extends Creature
 					player.sendPacket(confirmDlg);
 					return;
 				}
-				player.getInventory().destroyItemByItemId(getName(), ticketId, 1, player, null);
+				player.getInventory().destroyItemByItemId("정기선 배표 지급", ticketId, 1, player, null);
 				iu.addModifiedItem(ticket);
 				player.sendInventoryUpdate(iu);
 				addPassenger(player);

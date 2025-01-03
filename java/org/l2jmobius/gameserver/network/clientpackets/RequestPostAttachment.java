@@ -31,7 +31,6 @@ import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
-import org.l2jmobius.gameserver.itemlog.ItemLogManager;
 import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -192,6 +191,7 @@ public class RequestPostAttachment implements IClientIncomingPacket
 			return;
 		}
 		
+		final Player sender = World.getInstance().getPlayer(msg.getSenderId());
 		// Proceed to the transfer
 		final InventoryUpdate playerIU = Config.FORCE_INVENTORY_UPDATE ? null : new InventoryUpdate();
 		for (Item item : attachments.getItems())
@@ -208,7 +208,7 @@ public class RequestPostAttachment implements IClientIncomingPacket
 			}
 			
 			final long count = item.getCount();
-			final Item newItem = attachments.transferItem(attachments.getName(), item.getObjectId(), item.getCount(), player.getInventory(), player, null);
+			final Item newItem = attachments.transferItem(attachments.getName(), item.getObjectId(), item.getCount(), player.getInventory(), player, sender);
 			if (newItem == null)
 			{
 				return;
@@ -225,7 +225,6 @@ public class RequestPostAttachment implements IClientIncomingPacket
 					playerIU.addNewItem(newItem);
 				}
 			}
-			ItemLogManager.addLog("메일 수신", item, 0, count, player.getName(), player.getObjectId(), msg.getSenderName() + "[" + msg.getSenderId() + "]");
 			
 			final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S2_S1);
 			sm.addItemName(item.getId());
@@ -244,7 +243,6 @@ public class RequestPostAttachment implements IClientIncomingPacket
 		msg.removeAttachments();
 		
 		SystemMessage sm;
-		final Player sender = World.getInstance().getPlayer(msg.getSenderId());
 		if (adena > 0)
 		{
 			if (sender != null)

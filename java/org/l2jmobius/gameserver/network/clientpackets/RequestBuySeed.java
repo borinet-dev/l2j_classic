@@ -177,7 +177,7 @@ public class RequestBuySeed implements IClientIncomingPacket
 			final long price = sp.getPrice() * i.getCount();
 			
 			// Take Adena and decrease seed amount
-			if (!sp.decreaseAmount(i.getCount()) || !player.reduceAdena("Buy", price, player, false))
+			if (!sp.decreaseAmount(i.getCount()) || !player.reduceAdena("구매", price, player, false))
 			{
 				// failed buy, reduce total price
 				totalPrice -= price;
@@ -185,7 +185,7 @@ public class RequestBuySeed implements IClientIncomingPacket
 			}
 			
 			// Add item to player's inventory
-			player.addItem("Buy", i.getId(), i.getCount(), manager, true);
+			player.addItem("구매", i.getId(), i.getCount(), manager, true);
 		}
 		
 		// Adding to treasury for Manor Castle
