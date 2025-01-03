@@ -50,9 +50,8 @@ import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jmobius.gameserver.util.TreeSpawn;
 import org.l2jmobius.gameserver.util.Util;
-
-import ai.areas.Giran.TreeSpawn;
 
 /**
  * This class handles following admin commands: - show_spawns = shows menu - spawn_index lvl = shows menu for monsters with respective level - spawn_monster id = spawns monster id on target
@@ -105,7 +104,7 @@ public class AdminSpawn implements IAdminCommandHandler
 		}
 		else if (command.equals("admin_unspawns_trees"))
 		{
-			TreeSpawn.eventEnd();
+			TreeSpawn.unspawnTrees();
 		}
 		else if (command.startsWith("admin_spawn_debug_print"))
 		{
