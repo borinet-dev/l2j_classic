@@ -11,7 +11,7 @@ import ai.AbstractNpcAI;
 public class SpecialTree extends AbstractNpcAI
 {
 	// NPCs
-	private static final int[] CHRISTMAS_TREES =
+	private static final int[] SPECIAL_TREES =
 	{
 		13006,
 		13007,
@@ -24,7 +24,7 @@ public class SpecialTree extends AbstractNpcAI
 	
 	private SpecialTree()
 	{
-		addSpawnId(CHRISTMAS_TREES);
+		addSpawnId(SPECIAL_TREES);
 	}
 	
 	@Override
