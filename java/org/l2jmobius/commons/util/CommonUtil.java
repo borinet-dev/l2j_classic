@@ -38,8 +38,11 @@ import java.util.StringJoiner;
 import java.util.StringTokenizer;
 import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
+import java.util.regex.Pattern;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.gameserver.model.item.instance.Item;
+import org.l2jmobius.gameserver.model.item.type.EtcItemType;
 
 public class CommonUtil
 {
@@ -625,5 +628,47 @@ public class CommonUtil
 	public static <T> boolean falseIfNullOrElse(T obj, Predicate<T> predicate)
 	{
 		return nonNull(obj) && predicate.test(obj);
+	}
+	
+	public static String transferProcess(String process)
+	{
+		String processName = String.valueOf(process);
+		
+		if (processName.equals("SendMail"))
+		{
+			processName = "우편 발신";
+		}
+		else if (processName.equals("Mail"))
+		{
+			processName = "우편 수신";
+		}
+		
+		return processName;
+	}
+	
+	public static boolean logException(Item item, String process)
+	{
+		// 낚시로 습득하는 아이템 로그기록 조건문
+		if (!Config.FISING_REWARD_ITEM_LOG_ENABLE && (process.equals("Fishing Reward")))
+		{
+			return false;
+		}
+		
+		if (process.equals("FunctionFee") || process.equals("무시"))
+		{
+			return false;
+		}
+		
+		// 로그 기록에서 제외할 아이템 필터링
+		// MATERIAL 및 RECIPE면 로그 기록하지 않음
+		// 특정 ID 또는 이름이 제외 목록에 있는 경우 로그 기록하지 않음
+		if ((item.getItemType() == EtcItemType.MATERIAL) || (item.getItemType() == EtcItemType.RECIPE) || //
+			Config.NO_ITEM_LOG_ITEM_IDS.contains(item.getId()) || //
+			((item.getName() != null) && Config.NO_ITEM_LOG_NAMES.stream().anyMatch(name -> item.getName().matches(".*\\b" + Pattern.quote(name) + "\\b.*"))))
+		{
+			return false;
+		}
+		
+		return true;
 	}
 }
